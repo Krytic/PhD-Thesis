@@ -1,0 +1,225 @@
+\documentclass[twoside, openany]{book}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{pgffor}
+\usepackage{epigraph, varwidth}
+\usepackage{titling}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{natbib}
+\usepackage{ifthen}
+
+\title{The Next Generation: Refining the Standard Population Synthesis Model to Better Predict Stellar Population Properties}
+\author{Sean Richards}
+\date{August 2024}
+
+\bibliographystyle{apalike}
+\setcitestyle{authoryear}
+
+\makeatletter
+\newcommand{\openingquote}[2]{\gdef\@openquote{#1}\gdef\@openauthor{#2}}
+\newcommand{\openingquotealign}{center}
+\newcommand{\placeopeningquote}{%
+\newpage
+\begingroup
+    \vspace*{\fill}
+    \begin{\openingquotealign}
+    \LARGE
+    \@openquote \\
+    \flushright -- \@openauthor
+	\end{\openingquotealign}
+	\vspace*{\fill}
+\endgroup}
+\makeatother
+
+\makeatletter
+\newcommand{\closingquote}[2]{\gdef\@closequote{#1}\gdef\@closeauthor{#2}}
+\newcommand{\closingquotealign}{center}
+\newcommand{\placeclosingquote}{%
+\newpage
+\begingroup
+    \vspace*{\fill}
+    \begin{\closingquotealign}
+    \LARGE
+    \@closequote \\
+    \flushright -- \@closeauthor
+	\end{\closingquotealign}
+	\vspace*{\fill}
+\endgroup}
+\makeatother
+
+\makeatletter
+\newcommand{\dedication}[1]{\gdef\@dedicate{#1}}
+\newcommand{\dedicationalign}{center}
+\newcommand{\placededication}{%
+\newpage
+\begingroup
+    \vspace*{\fill}
+    \begin{\dedicationalign}
+    \LARGE
+    \@dedicate
+	\end{\dedicationalign}
+	\vspace*{\fill}
+\endgroup}
+\makeatother
+
+\dedication{This thesis is dedicated to everyone who started, but could not finish.}
+
+% \openingquote{I don't know how much value I have in this universe, but I do know I made a few people happier than they would have been without me. And as long as I know that, I'm as rich as I ever need to be.}{Robin Williams}
+
+% \openingquote{Courage need not be remembered, for it is never forgotten.}{Princess Zelda of Hyrule}
+
+% \openingquote{To the glistening eastern sea, I give you Queen Lucy the Valiant. To the great western woods, King Edmund the Just. To the radiant southern sun, Queen Susan the Gentle. And to the clear northern skies, I give you King Peter the Magnificent. Once a King or Queen of Narnia, always a King or Queen of Narnia.}{Aslan the Lion}
+
+% \openingquote{As you wish.}{Westley, \textit{The Princess Bride}}
+
+% \openingquote{It suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth. I didn't feel like a giant. I felt very, very small.}{Neil Armstrong}
+
+% \openingquote{Of course it is happening inside your head, Harry, but why on earth should that mean that it is not real?}{Albus Dumbledore}
+
+% \openingquote{Before we begin our banquet, I would like to say a few words. And here they are: Nitwit! Blubber! Oddment! Tweak!}{Albus Dumbledore}
+
+% \openingquote{Well... here we go again.}{Brigadier Lethbridge-Stewart}
+
+% \openingquote{Let me make this abundantly clear: My name is Molly. That person is \textit{dead}, and \textit{not me}. It's just a person who had this body. They abandoned it. It's mine now.}{Mollymauk Tealeaf}
+
+% \openingquote{Kua tawhiti k\=e to haerenga mai, kia kore e haere tonu. He nui rawa o mahi, kia kore e mahi tonu. \\ You have come too far not to go further, you have done too much not to do more.}{M\=aori Whakatauk\=i}
+
+% \openingquote{All right, I've been thinking when life gives you lemons, don't make lemonade! Make life take the lemons back! Get mad! I don't want your damn lemons! What am I supposed to do with these? Demand to see life's manager. Make life rue the day it thought it could give Cave Johnson lemons! Do you know who I am? I'm the man who's gonna burn your house down- with those lemons! I'm gonna get my engineers to invent a combustible lemon that burns down your house.}{Cave Johnson}
+
+% \openingquote{\textit{A murderer becomes a serial killer with just two more kills.}
+
+% That is a motivational quote. I’d put that up on my wall. I prefer that to ‘Live Laugh Love’. I could put it right up here....}{Kevin O'Reilly}
+
+% \openingquote{Tatou o tagata folau e vala'auina,
+% E le atua o le sami tele e o mai,
+% Ia ava'e le lu'itau e lelei,
+% Tapenapena!}{from \textit{Moana}}
+
+% \openingquote{Someday, I'll be living in a big old city.
+% And all you're ever gonna be is mean.
+% Someday, I'll be big enough so you can't hit me.
+% And all you're ever gonna be is mean.
+% Why you gotta be so mean?}{Taylor Swift. A sentiment I share.\\\\Fuck you, Meg.}
+
+% \openingquote{please my dear friends understand that ur actually twice as smart as u think u are, unless ur a middle-class white man in which case ur half as smart as u think u are}{m\=atua godfery}
+
+\openingquote{Lives of great men all remind us\\
+   We can make our lives sublime,\\
+And, departing, leave behind us\\
+   Footprints on the sands of time.}{Henry Wadsworth Longfellow}
+
+% \openingquote{If there were an answer I could give you to how the universe works, it wouldn't be special. It would just be machinery fulfilling its cosmic design. It would just be a big, dumb food processor. But since nothing seems to make sense, when you find something or someone that does, it's euphoria.}{Janet, \textit{The Good Place}}
+
+\closingquote{E pala ma'a, 'ae l\=e pala 'upu.
+\\
+Even stones erode away, but words will never decay.}{S\=amoan proverb}
+
+\input{glossary.tex}
+
+\usepackage[explicit]{titlesec}
+
+\renewcommand{\arraystretch}{1.6}
+
+% title format for the chapter
+\titleformat{\chapter}[display] {\filcenter{\large\scshape\chaptertitlename\ \thechapter}\\\vspace{5pt}\titlerule\normalfont\huge\bfseries}{\ #1}{20pt}{\vspace{-80pt}}
+\titleformat{name=\chapter,numberless}[block] {\normalfont\huge\filcenter\bfseries}{}{0pt}{\huge#1}[\addcontentsline{toc}{chapter}{#1}]
+\renewcommand{\contentsname}{Table of Contents}
+
+\renewcommand{\epigraphsize}{\small}
+\setlength{\epigraphwidth}{0.75\textwidth}
+\renewcommand{\textflush}{flushright}
+\renewcommand{\sourceflush}{flushright}
+\renewcommand{\epigraphflush}{flushright}
+% A useful addition
+\newcommand{\epitextfont}{\itshape}
+\newcommand{\episourcefont}{\scshape}
+
+\makeatletter
+\newsavebox{\epi@textbox}
+\newsavebox{\epi@sourcebox}
+\newlength\epi@finalwidth
+\renewcommand{\epigraph}[2]{%
+  \vspace{\beforeepigraphskip}
+  {\epigraphsize\begin{\epigraphflush}
+  \epi@finalwidth=\z@
+  \sbox\epi@textbox{%
+     \varwidth{\epigraphwidth}
+     \begin{\textflush}\epitextfont#1\end{\textflush}
+     \endvarwidth
+  }%
+  \epi@finalwidth=\wd\epi@textbox
+  \sbox\epi@sourcebox{%
+     \varwidth{\epigraphwidth}
+     \begin{\sourceflush}\episourcefont#2\end{\sourceflush}%
+     \endvarwidth
+  }%
+  \ifdim\wd\epi@sourcebox>\epi@finalwidth 
+     \epi@finalwidth=\wd\epi@sourcebox
+  \fi
+  \leavevmode\vbox{
+     \hb@xt@\epi@finalwidth{\hfil\box\epi@textbox}
+     \vskip1.75ex
+     \hrule height \epigraphrule
+     \vskip.75ex
+     \hb@xt@\epi@finalwidth{\hfil\box\epi@sourcebox}
+  }%
+  \end{\epigraphflush}
+  \vspace{\afterepigraphskip}}}
+\makeatother
+
+\newcommand{\makefancy}{%
+\pagestyle{fancy}
+\renewcommand{\footrulewidth}{0.1pt}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[LE,LO]{}
+\fancyhead[CE,CO]{}
+\fancyhead[RE,RO]{}
+\fancyfoot[LE,LO]{}
+\fancyfoot[CE,CO]{Page \thepage\ of \pageref{LastPage}}
+\fancyfoot[RE,RO]{}
+}
+
+\linespread{1.25}
+
+\fancypagestyle{plain}{\makefancy}
+
+\newenvironment{abstract}{\newpage\begin{center}\textbf{\Large Abstract}\\\vspace{3em}}{\end{center}\newpage}
+\newenvironment{acknowledgements}{\newpage\begin{center}\textbf{\Large Acknowledgements}\end{center}\vspace{3em}}{}
+
+\usepackage{hyperref}
+
+\hypersetup{colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan}
+
+\begin{document}
+    \makefancy
+    \input{titlematter.tex}
+
+    \foreach \i in {00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, ...,19} {%
+        \edef\FileName{chapters/chapter\i}%     The % here are necessary to eliminate any
+        \IfFileExists{\FileName}{\input{\FileName}}
+    }
+    
+    % \index{Appendices}
+    
+    \appendix % From here onwards, chapters are numbered with letters, as is the appendix convention
+    
+    \foreach \i in {A, B, ..., Z} {%
+        \edef\FileName{chapters/appendices/appendix\i}%     The % here are necessary to eliminate any
+        \IfFileExists{\FileName}{%  spurious spaces that may get inserted
+           \input{\FileName}%       at these points
+        }
+    }
+    
+    \backmatter % Denotes the end of the main document content
+    \bibliography{phd_thesis.bib}
+    
+    \placeclosingquote
+
+\end{document}
