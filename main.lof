@@ -1,0 +1,21 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces A rough outline of supernova classification.}}{14}{figure.2.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces A schematic of a simple binary star system.}}{15}{figure.2.2}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces The dimensionless Roche potential as a function of mass ratio $q$.}}{17}{figure.2.3}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Control flow of a grid calculation performed by \textsc {Kaitiaki}.}}{28}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The evolution of an \SI {10}{\msun } (leftmost) and \SI {8}{\msun } (centermost) star as both single stars and as a binary with a period of \SI {30}{\day } (rightmost).}}{29}{figure.3.2}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The merger rate as a function of kick parameters $\alpha $ and $\beta $.}}{35}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The \acrshort {pdf} and \acrshort {cdf} of the distributions using kicks from \citet {hobbs_statistical_2005,bray_neutron_2018,willcox_constraints_2021}.}}{37}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces The \acrshort {ks} statistic for \textsc {FineGrid} and \textsc {WideGrid}.}}{38}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces The \acrshortpl {pdf} and \acrshortpl {cdf} of four systems, alongside the Hobbs \acrshort {cdf} and \citet {willcox_constraints_2021} \acrshort {cdf}.}}{39}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces The four constraints we apply overlaid on our \textsc {FineGrid} parameter space.}}{41}{figure.4.5}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces The \acrshort {cdf} for a population of isolated pulsars and the period-eccentricity distribution for $\alpha =\SI {115}{\km \per \s }, \beta =\SI {15}{\km \per \s }$.}}{42}{figure.4.6}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces The peak of the event rate $\mathcal {R}(t)$ as a function of $\alpha $ and $\beta $.}}{43}{figure.4.7}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces The period-eccentricity distributions of populations governed by Bray kicks across the \acrshort {ligo} \acrshort {o3} contour.}}{58}{figure.a.B.1}%
+\addvspace {10\p@ }

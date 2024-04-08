@@ -1,7 +1,7 @@
-\documentclass[twoside, openany]{book}
+\documentclass[twoside]{book}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[margin=1in]{geometry}
+\usepackage{geometry}
 \usepackage{pgffor}
 \usepackage{epigraph, varwidth}
 \usepackage{titling}
@@ -10,15 +10,102 @@
 \usepackage{lastpage}
 \usepackage{natbib}
 \usepackage{ifthen}
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tensor}
+\usepackage{bm}
+\usepackage{tikz}
+\usepackage{etoolbox}
+\usepackage{xpatch}
+\usepackage{nicefrac}
+\usepackage{pdfpages}
+\usepackage{csquotes}
+\usepackage[toc,page]{appendix}
+\usepackage[most]{tcolorbox}
+\usepackage{listing, minted}
+\usepackage{xcolor}
+
+\tcbuselibrary{minted}
+
+\AddToHookNext{shipout/background}{
+  \begin{tikzpicture}[remember picture,overlay]
+  \node at (current page.center) {
+    \includegraphics[width=\paperwidth]{images/Cover.png}
+  };
+  \end{tikzpicture}
+}
+
+\makeatletter
+\newcommand\tcb@cnt@pythonfileautorefname{Code Sample}
+\makeatother
+
+\definecolor{main-accent}{RGB}{0,45,97}
+
+% \let\ovec\vec
+% \newcommand{\vui}{{\bm{\hat{\textnormal{\bfseries\i}}}}}
+% \newcommand{\vuj}{{\bm{\hat{\textnormal{\bfseries\j}}}}}
+% \DeclareRobustCommand{\vu}[1]{{%
+%   \ifcsname vu#1\endcsname
+%      \csname vu#1\endcsname
+%    \else
+%     \bm{\hat{\mathbf{#1}}}%
+%    \fi
+% }}
+
+\DeclareRobustCommand{\VAN}[3]{#2}
+\let\VANthebibliography\thebibliography
+\def\thebibliography{\DeclareRobustCommand{\VAN}[3]{##3}\VANthebibliography}
+
+\DeclareRobustCommand{\DE}[3]{#2}
+\let\DEthebibliography\thebibliography
+\def\thebibliography{\DeclareRobustCommand{\DE}[3]{##3}\DEthebibliography}
+
+\DeclareRobustCommand{\UD}[3]{#2}
+\let\UDthebibliography\thebibliography
+\def\thebibliography{\DeclareRobustCommand{\UD}[3]{##3}\UDthebibliography}
+
+\DeclareSIUnit \electronvolt {eV}
+\DeclareSIUnit \msun {\ensuremath{M_\odot}}
+\DeclareSIUnit \lsun {\ensuremath{L_\odot}}
+\DeclareSIUnit \rsun {\ensuremath{R_\odot}}
+\DeclareSIUnit \pc {pc}
+\DeclareSIUnit \AU {AU}
+\DeclareSIUnit \year {yr}
+\DeclareSIUnit \mweg {MWEG}
+\DeclareSIPrefix\ronna{R}{27}
 
 \title{The Next Generation: Refining the Standard Population Synthesis Model to Better Predict Stellar Population Properties}
 \author{Sean Richards}
 \date{August 2024}
 
-\bibliographystyle{apalike}
+\newtoggle{isdraft}
+
+\togglefalse{isdraft} % false = version for jan, true = version w acknowledgements
+
+% \bibliographystyle{apalike}
 \setcitestyle{authoryear}
 
+\newcommand{\noopsort}[1]{}
+
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{3}
+\usepackage[titles]{tocloft}
 \makeatletter
+\renewcommand*\l@subsubsection{\@dottedtocline{3}{9.5em}{3.0em}}
+
+\newcolumntype{"}{@{\hskip\tabcolsep\vrule width 1pt\hskip\tabcolsep}}
+\makeatother
+
+\input{commands.tex}
+
+\makeatletter
+\newcommand\flex[1]{\@firstwordupper#1 \@nil}
+\newcommand\@firstwordupper{}
+\def\@firstwordupper#1. #2\@nil{{\scshape{#1}. #2}\unskip}
+
 \newcommand{\openingquote}[2]{\gdef\@openquote{#1}\gdef\@openauthor{#2}}
 \newcommand{\openingquotealign}{center}
 \newcommand{\placeopeningquote}{%
@@ -27,14 +114,13 @@
     \vspace*{\fill}
     \begin{\openingquotealign}
     \LARGE
-    \@openquote \\
-    \flushright -- \@openauthor
+    {\@openquote}
+    \flushright {\normalsize-- \@openauthor}
 	\end{\openingquotealign}
 	\vspace*{\fill}
 \endgroup}
-\makeatother
 
-\makeatletter
+
 \newcommand{\closingquote}[2]{\gdef\@closequote{#1}\gdef\@closeauthor{#2}}
 \newcommand{\closingquotealign}{center}
 \newcommand{\placeclosingquote}{%
@@ -44,13 +130,12 @@
     \begin{\closingquotealign}
     \LARGE
     \@closequote \\
-    \flushright -- \@closeauthor
+    \flushright {\normalsize-- \@closeauthor}
 	\end{\closingquotealign}
 	\vspace*{\fill}
 \endgroup}
-\makeatother
 
-\makeatletter
+
 \newcommand{\dedication}[1]{\gdef\@dedicate{#1}}
 \newcommand{\dedicationalign}{center}
 \newcommand{\placededication}{%
@@ -65,71 +150,34 @@
 \endgroup}
 \makeatother
 
-\dedication{This thesis is dedicated to everyone who started, but could not finish.}
-
-% \openingquote{I don't know how much value I have in this universe, but I do know I made a few people happier than they would have been without me. And as long as I know that, I'm as rich as I ever need to be.}{Robin Williams}
-
-% \openingquote{Courage need not be remembered, for it is never forgotten.}{Princess Zelda of Hyrule}
-
-% \openingquote{To the glistening eastern sea, I give you Queen Lucy the Valiant. To the great western woods, King Edmund the Just. To the radiant southern sun, Queen Susan the Gentle. And to the clear northern skies, I give you King Peter the Magnificent. Once a King or Queen of Narnia, always a King or Queen of Narnia.}{Aslan the Lion}
-
-% \openingquote{As you wish.}{Westley, \textit{The Princess Bride}}
-
-% \openingquote{It suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth. I didn't feel like a giant. I felt very, very small.}{Neil Armstrong}
-
-% \openingquote{Of course it is happening inside your head, Harry, but why on earth should that mean that it is not real?}{Albus Dumbledore}
-
-% \openingquote{Before we begin our banquet, I would like to say a few words. And here they are: Nitwit! Blubber! Oddment! Tweak!}{Albus Dumbledore}
-
-% \openingquote{Well... here we go again.}{Brigadier Lethbridge-Stewart}
-
-% \openingquote{Let me make this abundantly clear: My name is Molly. That person is \textit{dead}, and \textit{not me}. It's just a person who had this body. They abandoned it. It's mine now.}{Mollymauk Tealeaf}
-
-% \openingquote{Kua tawhiti k\=e to haerenga mai, kia kore e haere tonu. He nui rawa o mahi, kia kore e mahi tonu. \\ You have come too far not to go further, you have done too much not to do more.}{M\=aori Whakatauk\=i}
-
-% \openingquote{All right, I've been thinking when life gives you lemons, don't make lemonade! Make life take the lemons back! Get mad! I don't want your damn lemons! What am I supposed to do with these? Demand to see life's manager. Make life rue the day it thought it could give Cave Johnson lemons! Do you know who I am? I'm the man who's gonna burn your house down- with those lemons! I'm gonna get my engineers to invent a combustible lemon that burns down your house.}{Cave Johnson}
-
-% \openingquote{\textit{A murderer becomes a serial killer with just two more kills.}
-
-% That is a motivational quote. I’d put that up on my wall. I prefer that to ‘Live Laugh Love’. I could put it right up here....}{Kevin O'Reilly}
-
-% \openingquote{Tatou o tagata folau e vala'auina,
-% E le atua o le sami tele e o mai,
-% Ia ava'e le lu'itau e lelei,
-% Tapenapena!}{from \textit{Moana}}
-
-% \openingquote{Someday, I'll be living in a big old city.
-% And all you're ever gonna be is mean.
-% Someday, I'll be big enough so you can't hit me.
-% And all you're ever gonna be is mean.
-% Why you gotta be so mean?}{Taylor Swift. A sentiment I share.\\\\Fuck you, Meg.}
-
-% \openingquote{please my dear friends understand that ur actually twice as smart as u think u are, unless ur a middle-class white man in which case ur half as smart as u think u are}{m\=atua godfery}
-
-\openingquote{Lives of great men all remind us\\
-   We can make our lives sublime,\\
-And, departing, leave behind us\\
-   Footprints on the sands of time.}{Henry Wadsworth Longfellow}
-
-% \openingquote{If there were an answer I could give you to how the universe works, it wouldn't be special. It would just be machinery fulfilling its cosmic design. It would just be a big, dumb food processor. But since nothing seems to make sense, when you find something or someone that does, it's euphoria.}{Janet, \textit{The Good Place}}
-
-\closingquote{E pala ma'a, 'ae l\=e pala 'upu.
-\\
-Even stones erode away, but words will never decay.}{S\=amoan proverb}
+\input{dedications.tex}
 
 \input{glossary.tex}
 
-\usepackage[explicit]{titlesec}
+\usepackage[explicit,calcwidth]{titlesec}
 
 \renewcommand{\arraystretch}{1.6}
 
 % title format for the chapter
-\titleformat{\chapter}[display] {\filcenter{\large\scshape\chaptertitlename\ \thechapter}\\\vspace{5pt}\titlerule\normalfont\huge\bfseries}{\ #1}{20pt}{\vspace{-80pt}}
-\titleformat{name=\chapter,numberless}[block] {\normalfont\huge\filcenter\bfseries}{}{0pt}{\huge#1}[\addcontentsline{toc}{chapter}{#1}]
+\titleformat{\chapter}[display] {\vspace{-60pt}\filcenter{\large\scshape\chaptertitlename\ \thechapter}\\\vspace{5pt}\titlerule\normalfont\huge\bfseries}{\ #1}{20pt}{\vspace{-80pt}}
+\titleformat{name=\chapter,numberless}[block] {\vspace{-60pt}\normalfont\huge\filcenter\bfseries}{}{0pt}{\huge#1}[\addcontentsline{toc}{chapter}{#1}]
+
+\titleformat{\section}
+  {\addtolength{\titlewidth}{4pc}\normalfont\Large\bfseries}
+  {\llap{\colorbox{main-accent}{\parbox{2cm}{\strut\color{white}\hfill\thesection}}\hspace{20pt}}}
+  {0em}{#1}
+  [{\titleline*[l]{\hspace*{\dimexpr-2cm-20pt-2\fboxsep\relax}\color{main-accent}\titlerule[1.5pt]}}]
+\titleformat{\subsection}
+  {\addtolength{\titlewidth}{2pc}\normalfont\large}
+  {\llap{\colorbox{main-accent}{\parbox{2cm}{\strut\color{white}\hfill\thesubsection}}\hspace{20pt}}}
+  {0em}{#1}
+  [{\titleline*[l]{\hspace*{\dimexpr-2cm-20pt-2\fboxsep\relax}\color{main-accent}\titlerule[1.5pt]}}]
+
+
 \renewcommand{\contentsname}{Table of Contents}
 
 \renewcommand{\epigraphsize}{\small}
-\setlength{\epigraphwidth}{0.75\textwidth}
+\setlength{\epigraphwidth}{0.65\textwidth}
 \renewcommand{\textflush}{flushright}
 \renewcommand{\sourceflush}{flushright}
 \renewcommand{\epigraphflush}{flushright}
@@ -156,7 +204,7 @@ Even stones erode away, but words will never decay.}{S\=amoan proverb}
      \begin{\sourceflush}\episourcefont#2\end{\sourceflush}%
      \endvarwidth
   }%
-  \ifdim\wd\epi@sourcebox>\epi@finalwidth 
+  \ifdim\wd\epi@sourcebox>\epi@finalwidth
      \epi@finalwidth=\wd\epi@sourcebox
   \fi
   \leavevmode\vbox{
@@ -168,6 +216,50 @@ Even stones erode away, but words will never decay.}{S\=amoan proverb}
   }%
   \end{\epigraphflush}
   \vspace{\afterepigraphskip}}}
+\makeatother
+
+\makeatletter
+\newcommand{\inplaceEpigraph}[4][\fill]{%
+  \vspace{#1}
+  {\epigraphsize\begin{center}
+     \begin{center}\epitextfont#2\end{center}
+     \vspace{-5px}
+     \rule{#4\textwidth}{.4pt}
+     \vspace{-10px}
+     \begin{center}\episourcefont#3\end{center}%
+	  \end{center}
+  }%
+  \vspace{#1}
+  }
+\makeatother
+
+% \newcommand{\mediaepigraph}[3]{\epigraph{#1}{\textit{#2}, by #3}}
+\newcommand{\mediaepigraph}[4][by]{\epigraph{#2}{\textit{#3}, #1\ #4}}
+\newcommand{\showepigraph}[3]{\epigraph{#1}{\textit{#2}, ``#3''}}
+
+\makeatletter
+\newcommand{\translationEpigraph}[3]{%
+  \vspace{\beforeepigraphskip}
+  \vbox{%
+    \setlength{\epigraphwidth}{0.48\textwidth}
+    \xpatchcmd{\@epitext}{{minipage}}{{minipage}[t]}{}{}%
+    \xpatchcmd{\@epitext}{1\\}{1}{}{}%
+    \epigraphsize
+    \begin{\epigraphflush}
+    \begin{minipage}[b]{0.48\textwidth}
+      \@epitext{\epitextfont#1}
+      \@episource{\episourcefont#3\strut}%
+    \end{minipage}\hfill\vline\hfill
+    \begin{minipage}[b]{0.48\textwidth}
+      \@epitext{\begin{flushleft}\epitextfont#2\end{flushleft}}
+      \@episource{\begin{flushleft}\episourcefont#3\strut\end{flushleft}}%
+    \end{minipage}%
+    \end{\epigraphflush}%
+  }%
+  \nointerlineskip
+  \vspace*{\afterepigraphskip}%
+  \ifepigraphnoindent\@afterheading\fi
+}
 \makeatother
 
 \newcommand{\makefancy}{%
@@ -182,6 +274,44 @@ Even stones erode away, but words will never decay.}{S\=amoan proverb}
 \fancyfoot[RE,RO]{}
 }
 
+\makeatletter
+\renewcommand{\@chap@pppage}{%
+  \clear@ppage
+  \thispagestyle{plain}%
+  \if@twocolumn\onecolumn\@tempswatrue\else\@tempswafalse\fi
+  \null\vfil
+  \markboth{}{}%
+  {\centering
+   \interlinepenalty \@M
+   \normalfont
+   \Huge \bfseries \appendixpagename\par}%
+%    \end{macrocode}
+% Add to ToC if requested
+%    \begin{macrocode}
+  \if@dotoc@pp
+    \addappheadtotoc
+  \fi
+%    \end{macrocode}
+% In the \Lpack{book} class the |\part| command is finished off by calling
+% |\@endpart|. There are two problems with this in this package. (1)
+% |\@endpart| is not defined in \Lpack{article} style classes and (2)
+% it always throws a blank page which does not look good if the \Lopt{openany}
+% option is used. So, code it all up here.
+%    \begin{macrocode}
+  \vfil\newpage
+  \if@twoside
+    \if@openright
+      \null
+      % \thispagestyle{empty}%
+      \newpage
+    \fi
+  \fi
+  \if@tempswa
+    \twocolumn
+  \fi
+}%
+\makeatother
+
 \linespread{1.25}
 
 \fancypagestyle{plain}{\makefancy}
@@ -189,37 +319,112 @@ Even stones erode away, but words will never decay.}{S\=amoan proverb}
 \newenvironment{abstract}{\newpage\begin{center}\textbf{\Large Abstract}\\\vspace{3em}}{\end{center}\newpage}
 \newenvironment{acknowledgements}{\newpage\begin{center}\textbf{\Large Acknowledgements}\end{center}\vspace{3em}}{}
 
+% TODO REMOVE
+\usepackage[titles]{tocloft}
+
+\newcommand{\listtodotitle}{Thesis To-do List}
+\newlistof{todos}{tod}{\listtodotitle}
+\newcommand{\todolist}[1]{%
+	\refstepcounter{todos}
+	\addcontentsline{tod}{todos}
+	{\protect\numberline{\thechapter.\thetodos} #1}}
+
+\newcommand{\listepigraphtitle}{Thesis Epigraphs}
+\newlistof{epigraphs}{toe}{\listepigraphtitle}
+\newcommand{\epigraphlist}[2]{%
+	\refstepcounter{epigraphs}
+	\addcontentsline{toe}{epigraphs}
+	{\\#1\\(#2)}}
+
+\let\oepi\epigraph
+\renewcommand{\epigraph}[2]{\epigraphlist{#1}{#2}\oepi{#1}{#2}}
+
+\newcommand{\todo}[1]{\todolist{#1}{\color{red}\textbf{[TODO: #1]}}}
+\newcommand{\NickNote}[1]{{\color{green}\textbf{(Note to Nick: #1)}}}
+
+\definecolor{block-gray}{HTML}{D81E5B}
+
+\newtcolorbox{fanciful}[1][]{%
+    colback=main-accent!20!white,
+    grow to right by=-10mm,
+    grow to left by=-10mm,
+    boxrule=0pt,
+    boxsep=0pt,
+    breakable,
+    enhanced jigsaw,
+    borderline west={4pt}{0pt}{main-accent},
+    title={\phantom{ }\\},
+    colbacktitle={main-accent},
+    coltitle={black},
+    fonttitle={\large\bfseries},
+    attach title to upper={},
+    #1,
+}
+
+\newcommand{\codename}[1]{\texorpdfstring{\textsc{\MakeLowercase{#1}}}{\textsc{#1}}}
+
 \usepackage{hyperref}
 
 \hypersetup{colorlinks=true,
-    linkcolor=blue,
-    citecolor=blue,
-    filecolor=magenta,      
-    urlcolor=cyan}
+    linkcolor=black, % blue
+    citecolor=blue, % blue
+    filecolor=black, % magenta
+    urlcolor=black}  % cyan
+
+\newtcbinputlisting[auto counter, number within=chapter, list inside=lol,list type={lstlisting}]{\pythonfile}[3][]{%
+  listing engine=minted,
+  listing file={#3},
+  minted language=Python,
+  minted options={breaklines,
+                  autogobble,
+                  linenos,
+                  numbersep=2mm},
+  listing only,
+  left=5mm,
+  title={Code Sample \thetcbcounter: {#2}},
+  overlay={%
+    \begin{tcbclipinterior}
+        \fill[gray!25] (frame.south west) rectangle ([xshift=5mm]frame.north west);
+    \end{tcbclipinterior}
+  }
+  colback=gray!25,
+  colframe=black!70,
+  coltitle=white,
+  before skip=5pt plus 2pt,
+  breakable,
+  % boxrule=0pt,
+  sharp corners,
+  enhanced,% <-- put other tcolorbox options here
+  #1
+}
 
 \begin{document}
-    \makefancy
     \input{titlematter.tex}
 
     \foreach \i in {00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, ...,19} {%
         \edef\FileName{chapters/chapter\i}%     The % here are necessary to eliminate any
         \IfFileExists{\FileName}{\input{\FileName}}
     }
-    
+
+    \newpage
+
     % \index{Appendices}
-    
-    \appendix % From here onwards, chapters are numbered with letters, as is the appendix convention
-    
-    \foreach \i in {A, B, ..., Z} {%
-        \edef\FileName{chapters/appendices/appendix\i}%     The % here are necessary to eliminate any
-        \IfFileExists{\FileName}{%  spurious spaces that may get inserted
-           \input{\FileName}%       at these points
+
+    % \appendix % From here onwards, chapters are numbered with letters, as is the appendix convention
+
+    \begin{appendices}
+        \foreach \i in {A, B, ..., Z} {%
+            \edef\FileName{chapters/appendices/appendix\i}%     The % here are necessary to eliminate any
+            \IfFileExists{\FileName}{%  spurious spaces that may get inserted
+               \input{\FileName}%       at these points
+            }
         }
-    }
-    
+    \end{appendices}
+
     \backmatter % Denotes the end of the main document content
-    \bibliography{phd_thesis.bib}
-    
+    \bibliographystyle{mnras}
+    \bibliography{thesis.bib}
+
     \placeclosingquote
 
 \end{document}

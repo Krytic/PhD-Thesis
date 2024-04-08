@@ -3,32 +3,62 @@
 \frontmatter % Denotes the start of the pre-document content, uses roman numerals
 
 \begin{titlepage}
+    \thispagestyle{empty}
+    \newgeometry{margin=1in}
     \begin{center}
+        {\fontfamily{lmss}\selectfont\Huge\thetitle}\\
         \vspace*{\fill}
-        \Huge\thetitle\\
+
+        % \includegraphics[width=0.25\textwidth]{images/uoa_crest.jpg} \\
+
         \vspace*{\fill}
-        \LARGE\theauthor\\
+        \phantom{ }\\
         \vspace*{\fill}
+        {\color{white}\fontfamily{lmss}\selectfont\LARGE\theauthor}\\
+        \vspace*{\fill}
+
         \Large
-        A thesis submitted in fulfilment of the requirements of the degree of Doctor of Philosophy in Physics, The University of Auckland, 2024.
+        {\fontfamily{lmss}\selectfont\color{white}A thesis submitted in fulfilment of the requirements of the degree of Doctor of Philosophy in Physics, the University of Auckland, 2024. This thesis is for examination purposes only and is confidential to the examination process.}
         \vspace*{\fill}
     \end{center}
 \end{titlepage}
 
+\clearpage
+\newgeometry{inner=30mm,
+             outer=20mm,
+             top=1.5in,
+             bottom=20mm}
+\makefancy
+
 \begin{abstract}
-    
+    \input{abstract.tex}
+
+    \vspace*{\fill}
+
+    {\small\textbf{Cover Image:} The mass profile of a \SI{10}{\msun} star from zero-age main sequence until the end of the asymptotic giant branch. Author's own work.}
 \end{abstract}
+
+\newpage
+\phantom{ }
+\newpage
 
 \placededication
 
 \placeopeningquote
 
-\begin{acknowledgements}
-    
-\end{acknowledgements}
+\IfFileExists{acknowledgements.tex}{\input{acknowledgements.tex}}
 
 \tableofcontents % Output the table of contents
 \listoffigures % Output the list of figures
 \listoftables % Output the list of tables
 \printglossary[type=\acronymtype, nonumberlist]
+
+\listoftodos
+\listofepigraphs
+
+\foreach \i in {00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, ...,19} {%
+    \edef\DecFileName{declaration_forms/Chapter\i.pdf}%     The % here are necessary to eliminate any
+    \IfFileExists{\DecFileName}{\includepdf[pages=-]{\DecFileName}}
+}
+
 \mainmatter % Denotes the start of the main document content, resets page numbering and uses arabic numbers

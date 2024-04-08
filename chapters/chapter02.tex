@@ -1,5 +1,733 @@
-\chapter{Background}
+% !TEX root = ../main.tex
+\chapter{Theoretical Background}
 
-\epigraph{Alea iacta est (the die is cast).}{Julius Caesar}
+\epigraph{Se'i lua'i lou le 'ulu taumamao. (Pick the breadfruits on the far-off branches first)}{S\=amoan proverb}
 
-\epigraph{Though my soul may set in darkness, it will rise in perfect light; I have loved the stars too fondly to be fearful of the night.}{Sarah Williams}
+In this chapter, we provide a brief account of the evolution of a star from a theoretical perspective, from its formation to post-supernova. We will discuss both the case of a single isolated star, and an isolated binary. It is pertinent to note that our binaries will be assumed to have formed at birth, rather than by, for example, the dynamical capture of a runaway star in a globular cluster, which introduces extra effects and considerations. This process can be modelled by evolving a single star to a certain point, and then enabling binary evolution.
+
+\section{Stellar Formation}\label{sec:stellar_formation}
+
+\epigraph{Nature and nature's laws lay hid in night: God said, \textit{Let Newton be!} and all was light.}{Alexander Pope}
+
+From the point of view of stellar evolution, which starts in earnest at the \gls{zams}, the formation of stars is interesting but ultimately broadly unimportant. We provide a short recap of stellar formation here as scene-setting, but our stellar evolution models assume that a gas cloud has already collapsed and we have a star at its \gls{zams}.
+
+Stars are born in clouds of dust in rich H(II) regions of space. Due to inhomegeneities in the dust formation, some regions become more dense than others. When a region of this gas with adiabatic constant $\gamma$ and mean molecular weight $\mu$ reaches the so-called Jeans Mass,
+
+\begin{equation}
+    M_\text{J} = \pqty{\frac{10k_\text{B}T}{3\pqty{\gamma-1}\mu m_\text{H}G}}^\frac32 \pqty{\frac{3}{4\pi\rho}}^\frac12 \sim \pqty{\frac{10k_\text{B}T}{G}R}^\frac32 \pqty{\frac{1}{M}}^\frac12
+\end{equation}
+
+where the similarity is taking $\gamma=\frac53, \mu=\frac12$ for an adiabatic gas composed of H(II), then gravity becomes the dominant force in the clumps of gas. This causes a protostar to form. This protostar slowly gains more mass from its surroundings and, as it does so, increases in temperature. When the core temperature reaches $\SI[parse-numbers=false]{10^7}{\kelvin}$, the hydrogen in the core begins to fuse into helium via the reaction chain
+
+\begin{align*}
+    \ce{^2_1H + ^2_1H &-> ^3_2He + ^1_0n + \SI{3.27}{\mega\electronvolt}} \\
+    \ce{^2_1H + ^3_2He &-> ^4_2He + ^1_1H + \SI{18.3}{\mega\electronvolt}}
+\end{align*}
+
+This is aided by two further hydrogen to helium reactions:
+
+\begin{align*}
+    \ce{^2_1H + ^2_1H &-> ^3_1He + ^1_1H + \SI{4.03}{\mega\electronvolt}} \\
+    \ce{^2_1H + ^3_1H &-> ^4_2He + ^1_0n + \SI{17.59}{\mega\electronvolt}}
+\end{align*}
+
+or, via a master equation,
+
+\begin{equation}
+    \ce{6^2_1H -> 2^4_2He + 2^1_1H + 2^1_0n + \SI{43.2}{\mega\electronvolt}},
+\end{equation}
+
+with intermediate products which remain stable and are thus omitted for simplicity. This energy release will sustain the star throughout it's lifetime, providing outwards pressure resisting gravity pulling the star inwards, in a balance termed \textit{hydrostatic equilibrium}. Once hydrogen fusion has begun, we say that the star has reached \gls{zams}, and is now on the \textit{main sequence}, where it will spend approximately 90\% of its lifetime.
+
+\section{Stellar Evolution}
+
+\mediaepigraph{It did not last: the Devil howling "Ho! Let Einstein be!" restored the status quo.}{Answer to Pope's Epitaph for Sir Isaac Newton}{J. C. Squire}
+
+Now that our protostar has evolved onto the main sequence, it has become a star in its own right. Over the next few million years, it will continue to burn hydrogen into helium, forming a Helium core. It is at this point that the evolution encounters a number of bifurcation points, depending on the mass and chemical composition of the star. In general, while the star lives, the four equations of stellar structure hold:
+
+\begin{equation}
+    \left.\begin{array}{ll}
+        \dv{m}{r} &= 4\pi r^2\rho \\
+        \dv{p}{r} &= -\frac{GM\rho}{r^2} \\
+        \dv{T}{r} &= -\frac{3\kappa\rho L}{64\pi r^2\sigma T^3} \\
+        \dv{L}{r} &= 4\pi r^2\rho\epsilon
+    \end{array}\right\}
+    \label{eq:stellar_structure}
+\end{equation}
+
+where $\epsilon$ is the rate of energy energation per unit mass, $\kappa$ is the opacity of the material, $\sigma$ is the Stefann-Boltzmann constant, and all other symbols have their usual meanings.
+
+These equations represent conservation of mass, hydrostatic equilibrium, energy transport, and thermal equilibrium, respectively. Knowing constants $\epsilon, \kappa$, we have four equations for four unknowns. It is usually convenient to take the \textit{Rosseland mean} opacity,
+
+\begin{equation}
+    \frac{1}{\kappa} = \frac{\pi}{acT^3}\int_0^\infty \frac{1}{\kappa_\nu}\pdv{B}{T}~\mathrm{d}\nu
+\end{equation}
+
+where $B$ is the black-body intensity at frequency $\nu$ and temperature $T$. The function $\kappa_\nu$ is obtainable from nuclear physics: it is intimately related to the scattering cross-section $\sigma$:
+
+\begin{equation}
+    \frac{1}{\kappa_\nu \rho} = \frac{1}{\sigma n}
+\end{equation}
+
+where $\rho$ is the mass density of the star, and $n$ is the particle number density.
+
+On the other hand, $\epsilon$ is obtainable from knowing the nuclear reactions occurring in the star's core:
+
+\begin{equation}
+    \epsilon = \sum_{i}^N \text{energy output of reaction } i
+\end{equation}
+
+All told, in the simplest sense, the internal \textit{structure} of the star can be modelled by hand by solving \autoref{eq:stellar_structure} from $m=0$ to $m=M$.
+
+\subsection{The chemical composition of stars}
+
+A star contains at its core a complex nuclear furnace. Since stars are born in regions of space rich in H(II) -- molecular hydrogen -- and obtain high enough pressures in the core to ignite fusion, the star will be sustained by the burning of predominantly Hydrogen and Helium. We thus group the three main stages into Hydrogen, Helium, and Metals (which we define as anything with atomic number $\geq3$, i.e., Lithium and heavier elements). It is convenient to speak of the mass fraction of the element, i.e., the fraction by mass of a star that is a certain element. For our purposes, this is expressible as
+
+\begin{equation}
+	X+Y+\sum_{i=0}^{115} \mathcal{Z}_i = 1, \label{eq:mass_fracs}
+\end{equation}
+
+where $X$ is the mass fraction of Hydrogen, $Y$ of Helium, and $\mathcal{Z}_i$ as the metal\footnote{It is custom in astronomy to refer to anything with an atomic number greater than 2 as a metal, rather than the conventional definition of a material conductive at absolute zero, including most of the d-block, s-block, f-block, and about half of the p-block on the periodic table.} with atomic number $i+3$. When speaking about the chemical composition of a star it is also convenient to speak of the \textit{metallicity}, the fraction at \gls{zams} of the star that is metal. For this, we define the metallicity as
+
+\begin{equation}
+    Z \equiv \sum_{i=0}^{115} \mathcal{Z}_i,
+\end{equation}
+
+such that \autoref{eq:mass_fracs} becomes
+
+\begin{equation}
+    X+Y+Z = 1.
+\end{equation}
+
+\subsubsection{Hydrogen burning: the \acrshort{pp_chain}}
+
+A star spends $\sim90\%$ of its lifetime on the main sequence, which is where it burns protons (bare hydrogen atoms) into helium. This reaction is called the \gls{pp_chain}, and can be broken up into three potential paths. All three paths begin with the reaction \todo{finish}
+
+\begin{enumerate}
+    \item \gls{pp1}:
+    \item \gls{pp2}:
+    \item \gls{pp3}:
+\end{enumerate}
+
+\subsubsection{The metallicity of the Sun}
+
+It is often convenient to index our metallicities relative to that of the Sun. To do this, we of course need to know the chemical composition of the Sun. We ignore virtually every isotope of every element in favour of \ce{^56_26Fe} in particular. This is for a few reasons: it is the most stable element of fusion (nuclides higher than \ce{^56_26Fe} will undergo fission to it and nuclides lower than \ce{^56_26Fe} will fuse towards it), it is very abundant observationally, and its absorption lines in spectra are easily distinguishable. Thus we can base our metallicity calculations via a quantity known as the iron-abundance ratio,
+
+\begin{equation}
+    \left[\text{Fe/H}\right] = \left.\log_{10}\pqty{\frac{N_\text{Fe}}{N_\text{H}}}\right|_\text{star}-\left.\log_{10}\pqty{\frac{N_\text{Fe}}{N_\text{H}}}\right|_\text{sun},
+\end{equation}
+
+where $N_\text{H}$ ($N_\text{Fe}$) is the number of Hydrogen (Iron) atoms per unit volume of the sun or star. Mechanically this is represented by
+
+\begin{equation}
+    N_\text{X} = N_A \frac{M}{m_\text{X}}
+\end{equation}
+
+where $N_A$ is Avogadro's constant ($\sim\SI{6.022e23}{\per\mol}$), $M$ is the mass of element X in the star, and $m_\text{X}$ is the relevant molar mass. For instance, imagining a hypothetical iron-rich star of mass $M$ consisting of 50\% hydrogen and 50\% iron, the [Fe/H] would be
+
+\begin{align*}
+    \text{[Fe/H]} &= \left.\log_{10}\pqty{\frac{N_A \frac{M_\text{Fe}}{m_\text{Fe}}}{N_A \frac{M_\text{H}}{m_\text{H}}}}\right|_\text{star}-\left.\log_{10}\pqty{\frac{N_A \frac{M_\text{Fe}}{m_\text{Fe}}}{N_A \frac{M_\text{H}}{m_\text{H}}}}\right|_\text{sun} \\
+    &= \left.\log_{10}\pqty{\frac{M_\text{Fe}m_\text{H}}{m_\text{Fe}M_\text{H}}}\right|_\text{star}-\left.\log_{10}\pqty{\frac{M_\text{Fe}m_\text{H}}{m_\text{Fe}M_\text{H}}}\right|_\text{sun} \\
+    &= \left.\log_{10}\pqty{\frac{0.5M m_\text{H}}{m_\text{Fe}\times0.5 M}}\right|_\text{star}-\left.\log_{10}\pqty{\frac{0.002 M_\odot m_\text{H}}{m_\text{Fe}\times0.92 M_\odot}}\right|_\text{sun} \\
+    &= \left.\log_{10}\pqty{\frac{m_\text{H}}{m_\text{Fe}}}\right|_\text{star}-\left.\log_{10}\pqty{\frac{0.002 M_\odot m_\text{H}}{m_\text{Fe}\times0.92 M_\odot}}\right|_\text{sun} \\
+    &\sim 2.66
+\end{align*}
+
+\todo{if this bit stays, 92\% of the sun being hydrogen and 0.2\% being iron needs a source}
+
+In this regime, we can express the metallicity as approximately
+
+\begin{equation}
+    \mathcal{Z} = 10^{\left[\text{Fe/H}\right]} \mathcal{Z}_\odot,
+\end{equation}
+{}
+and thus by knowing the simple iron content of the Sun or star, we can approximate the metallicity. Our iron-rich ``star'' would thus have a metallicity of approximately 460 times that of the sun.
+
+\citet{asplund_chemical_2021} presents an estimate \todo{finish sentence}
+
+\subsection{Evolutionary Pathways}
+
+In this section, we examine the four major regimes of stellar evolution for single-stars. The precise boundaries are debatable \todo{cite?}, but are generally accepted to be logarithmically spaced.
+
+\subsubsection{Low-Mass Stars: \texorpdfstring{$\SI{0.08}{\msun} < M < \SI{2}{\msun}$}{Stars with between 0.08 and 2 times the mass of the sun}}
+
+Low-mass stars ignite helium degenerately in their cores, leading to thermal runaway. The star can peak at a luminosity close to $10^{11} L_\odot$ (approximately 100 times the peak luminosity of SN 1987A, per Figure 5 of \citet{arnett_supernova_1989}). However, this peak in luminosity is attributable to nuclear fusion in the core, and the energy does not reach the surface, let alone escape into the \gls{ism} -- rather, it is absorbed into the outer layers of the star. During this extremely brief thermal runaway, the luminosity begins to settle and the star is able to continue evolving. Models of low mass stars fail at this stage and care is required to evolve them.
+
+After the ignition of helium, these stars cross the so-called Hertzsprung Gap -- the region where very few stars are observed empirically. This region is bounded (on a colour-magnitude diagram, which is a transform of the HR diagram)\footnote{The relationship between a colour-magnitude diagram and the HR diagram is that $\log L=0.4\pqty{M_{\text{bol},\odot}-M_{\text{bol},*}}\simeq0.4\pqty{4.74-M_{v,*}-\text{BC}}$, $\log T=\log\pqty{4600\pqty{\frac{1}{0.92\pqty{B-V}+1.7}+\frac{1}{0.92\pqty{B-V}+0.62}}}$, where BC is a bolometric correction which depends on the stellar type. This expression for the temperature is a fit provided by \citet{ballesteros_new_2012}.} by the points $\pqty{M_v, B-V}=\left\{\pqty{2,0.5}, \pqty{-7, 0.1}, \pqty{-6, 1.6}\right\}$ \citep{hoyle_main-sequence_1960}, where $M_v$ is the V-band magnitude (magnitude in the visual band), and $B-V$ is the colour index of the star. The phenomenon of a gap existing is attributable to the fact that stars cross this gap exceedingly quickly: whereas it spends $\sim90\%$ of its life on the main sequence, it spends $\sim2\%$ of its life crossing the Hertzsprung gap \citep{hoyle_main-sequence_1960}.
+
+\subsubsection{Intermediate-Mass Stars: \texorpdfstring{$\SI{2}{\msun} < M < \SI{8}{\msun}$}{Stars with between 2 and 8 times the mass of the sun}}
+
+\subsubsection{Massive Stars: \texorpdfstring{$\SI{8}{\msun} < M < \SI{80}{\msun}$}{Stars with between 8 and 80 times the mass of the sun}}
+
+\subsubsection{Very Massive Stars: \texorpdfstring{$\SI{80}{\msun} < M < \SI{300}{\msun}$}{Stars with between 80 and 300 times the mass of the sun}}
+
+\subsection{Relativistic corrections}
+
+This analysis has presumed Newtonian mechanics. However, the mass of stars puts them formally into the general relativistic regime, and thus strictly speaking we should treat this as a problem in full GR. In this approach, we would solve the Einstein Field Equations for the interior of the star:
+
+\begin{equation}
+    G_{\mu\nu} + \Lambda g_{\mu\nu} = \kappa T_{\mu\nu}
+\end{equation}
+
+with cosmological constant $\Lambda$, stress-energy $T_{\mu\nu}$, and the Einstein tensor $G_{\mu\nu}$ given by
+
+\begin{align}
+    G_{\mu\nu} &= R_{\mu\nu}-\frac12 g_{\mu\nu}R \\
+    &= \tensor{R}{^\lambda_{\mu\lambda\nu}}-\frac12 g_{\mu\nu}\tensor{R}{^\sigma_\sigma} \\
+    &= \tensor{R}{^\lambda_{\mu\lambda\nu}}-\frac12 g_{\mu\nu}g^{\sigma\gamma}R_{\sigma\gamma} \\
+    &= \sum_\lambda\tensor{R}{^\lambda_{\mu\lambda\nu}}-\frac12 g_{\mu\nu}\sum_\sigma\sum_\gamma\sum_\alpha g^{\sigma\gamma}\tensor{R}{^\alpha_{\sigma\alpha\gamma}}\label{eq:reintroduce_summands} \\
+    &= \sum_\lambda\pqty{\tensor{\Gamma}{^\lambda_{\mu\nu,\lambda}}-\tensor{\Gamma}{^\lambda_{\mu\lambda,\nu}}+\sum_\xi\tensor{\Gamma}{^\lambda_{\xi\lambda}}\tensor{\Gamma}{^ \xi_{\mu\nu}}-\sum_\xi\tensor{\Gamma}{^\lambda_{\xi\nu}}\tensor{\Gamma}{^\xi_{\mu\lambda}}} \notag\\
+    &\phantom{=}-\frac12 g_{\mu\nu}\sum_\sigma\sum_\gamma\sum_\alpha g^{\sigma\gamma}\pqty{\tensor{\Gamma}{^\alpha_{\sigma\gamma,\alpha}}-\tensor{\Gamma}{^\alpha_{\sigma\alpha,\gamma}}+\sum_\xi\tensor{\Gamma}{^\alpha_{\xi\alpha}}\tensor{\Gamma}{^\xi_{\sigma\gamma}}-\sum_\xi\tensor{\Gamma}{^\alpha_{\xi\gamma}}\tensor{\Gamma}{^\xi_{\sigma\alpha}}},
+\end{align}
+
+where there is still tensorial shorthand:
+
+\begin{equation}
+    \tensor{\Gamma}{^\gamma_{\beta\mu}} \equiv \frac12\sum_\alpha g^{\alpha\gamma}\pqty{g_{\alpha\beta,\mu}+g_{\alpha\mu,\beta}-g_{\beta\mu,\alpha}}
+\end{equation}
+
+and the comma-derivative notation is
+
+\begin{equation}
+    \phi_{,\mu} \equiv \pdv{\phi}{x^\alpha},
+\end{equation}
+
+such that, for example,
+
+\begin{equation*}
+    g_{\alpha\beta,\mu} = \pdv{g_{\alpha\beta}}{x^\mu}.
+\end{equation*}
+
+In \autoref{eq:reintroduce_summands}, we explicitly reinsert the summation symbols to illustrate the number of simultaneous summations that are taking place implicitly. As one can see, this reasonably simple expression balloons quickly into something intractable by hand and time-consuming to evaluate computationally. Although the metric tensor is generally four-dimensional,\footnote{And thus the summation indices run from 1 to 4} such as the Friedmann-Lema\^itre-Robertson-Walker metric \citep{friedmann_uber_1922,lemaitre_homogeneous_1931,robertson_kinematics_1935,walker_milnes_1937} describing the expansion of the Universe,
+
+
+\begin{equation*}
+    g_{\mu\nu} = \begin{pmatrix}
+            -1 & 0 & 0 & 0 \\
+            0 & a(t)^2 & 0 & 0 \\
+            0 & 0 & r^2 & 0 \\
+            0 & 0 & 0 & r^2\sin^2\theta
+    \end{pmatrix},
+\end{equation*}
+
+it often lacks a closed form, especially on large-scale chaotic behaviour that cannot be locally ``washed out'' (such as how on Universal scales, individual stars can be ignored to describe the homogeneity and isotropy of the Universe), and is obtained via numerical methods.
+
+This is also not considering complications of writing the stress-energy tensor $T_{\mu\nu}$, which may have its own complex form (again, assuming a closed-form solution \textit{exists}) determined via fluid-mechanical processes. All told, there are 64 equations to be solved instead of 4. In addition, the 64 solutions are ``worse'' to solve: harder to integrate by hand, and requiring greater time complexity. Numerical relativity codes typically simulate one star for the order of kiloseconds of its lifetime \citep[see, for an example,][]{ud-doula_first_2013}, and even the most efficient codes take longer than our codes to run. For instance, the \codename{Phantom} \gls{mhd} code \citep{price_phantom_2018} can take several days to run high-resolution models. Consequently, for the number of stars we wish to simulate, we choose to adopt a Newtonian framework.
+
+\section{Supernovae}
+
+% \epigraph{He went to the Door and they all followed him. He raised his head and roared "Now it is time!" then louder "Time!"; then so loud that it could have shaken the stars, "\textit{TIME}." The Door flew open.}{C.S Lewis, \textit{The Last Battle}}
+
+% \mediaepigraph{And on the pedestal these words appear:\\
+% ``My name is Ozymandias, king of kings:\\
+% Look on my works, ye Mighty, and despair!''\\
+% Nothing beside remains.}{Ozymandias}{Percy Bysshe Shelley}
+
+\epigraph{Pallida mors {\ae}quo pulsat pede pauperum tabernas Regumque turres.\\\phantom{ }\\
+Pale death knocks with the same tempo\\upon the huts of the poor and the towers of kings.}{Horace}
+
+A star's lifetime is, unfortunately, not infinite. The key assumption underpinning stellar evolution is that of hydrostatic equilibrium: the counterplay of gravity against outwards pressure. Whilst this equilibrium holds, the star is stable and resists explosion. It is when this equilibrium is broken -- with gravity the dominant force in this scenario -- that the star implodes in a \gls{ccsne}. From a thermodynamic perspective, as the star evolves, it shrinks as energy is bled off into the interstellar medium. This shrinkage compresses and heats the core, meaning the star's specific heat capacity is negative. This system is thermodynamically unstable, and thus every star either collapses into a remnant (c.f. black holes, neutron stars) or is sustained in some form by quantum mechanical phenomena (c.f. White Dwarfs, Thorne-\.Zytkow objects, and other exotica).
+
+In any case, the breaking of hydrostatic equilibrium results generally results in\footnote{The extent of the veracity of this statement is an area of active research: \citet{reynolds_gone_2015} presents a short recap.} a supernova, which can be classified into subtypes, as shown in \autoref{fig:supernova_taxonomy}. In this event, gravity pulls the stellar core inwards, before ``bouncing'' and ejecting the envelope into the interstellar medium. The physics of this approximately second-long event are highly uncertain, and are in general unable to be modelled by detailed stellar evolution codes. All models we generate -- assuming they have not been terminated earlier -- will terminate at the moment of supernova.
+
+\begin{figure}[!htbp]
+    \centering
+    \begin{tikzpicture}
+        \usetikzlibrary{arrows.meta,arrows,positioning}
+        \newcommand{\XScale}{1.65}
+        \newcommand{\YScale}{3}
+
+        \tikzstyle{decisionpoint} = [draw,rectangle,text centered]
+        \tikzstyle{leaf} = [text width=5cm,text centered,font=\bfseries]
+        \tikzstyle{yes} = [color=black!30!green,font=\bfseries]
+        \tikzstyle{no} = [color=red!75,font=\bfseries]
+        \tikzstyle{ambig} = [color=black!30!orange,font=\bfseries]
+
+        \node[text width=4cm,align=center,decisionpoint] (hydrogen) at (1*\XScale,0*\YScale) {Hydrogen present?};
+        \node[text width=4cm,align=center,decisionpoint,fill=black!20] (supernova) at (-2*\XScale,0*\YScale) {Supernova\\occurs};
+
+        \node[text width=4cm,align=center,decisionpoint] (typeI) at (-1*\XScale,-1*\YScale) {Silicon present?};
+        \node[text width=4cm,align=center,leaf] (typeIa) at (-2*\XScale,-2*\YScale) {Type Ia};
+        \node[text width=4cm,align=center,decisionpoint] (typeIbc) at (0*\XScale,-2*\YScale) {Helium present?};
+        \node[text width=4cm,align=center,leaf] (typeIb) at (-1*\XScale,-3*\YScale) {Type Ib};
+        \node[text width=4cm,align=center,leaf] (typeIc) at (1*\XScale,-3*\YScale) {Type Ic};
+
+        \node[text width=4cm,align=center,decisionpoint] (typeII) at (3*\XScale,-1*\YScale) {Does the hydrogen line\\stay there over time?};
+        \node[text width=4cm,align=center,leaf] (typeIIb) at (2*\XScale,-2*\YScale) {Type IIb};
+        \node[text width=4cm,align=center,decisionpoint] (typeIIpln) at (4*\XScale,-2*\YScale) {Are the hydrogen lines narrow?};
+        \node[text width=4cm,align=center,leaf] (typeIIn) at (3*\XScale,-3*\YScale) {Type IIn};
+        \node[text width=4cm,align=center,decisionpoint] (typeIIpl) at (5*\XScale,-3*\YScale) {Does the light curve plateau, or decrease linearly?};
+        \node[text width=4cm,align=center,leaf] (typeIIp) at (4*\XScale,-4*\YScale) {Type II-P};
+        \node[text width=4cm,align=center,leaf] (typeIIl) at (6*\XScale,-4*\YScale) {Type II-L};
+
+        \node[text width=4cm,align=center,decisionpoint] (wacky) at (-2*\XScale,-4*\YScale) {Does not fit into other categories};
+        \node[leaf,text width=2cm,align=center] (typeIIpec) at (1*\XScale,-4*\YScale) {Type IIpec};
+
+        \draw[-{Stealth[length=3mm, width=2mm]}] (hydrogen) -> (typeI) node[above,sloped,midway,no] {No};
+        \draw[-{Stealth[length=3mm, width=2mm]}] (typeI) -> (typeIa) node[above,sloped,midway,yes] {Yes};
+        \draw[-{Stealth[length=3mm, width=2mm]}] (typeI) -> (typeIbc) node[above,sloped,midway,no] {No};
+        \draw[-{Stealth[length=3mm, width=2mm]}] (typeIbc) -> (typeIb) node[above,sloped,midway,yes] {Yes};
+        \draw[-{Stealth[length=3mm, width=2mm]}] (typeIbc) -> (typeIc) node[above,sloped,midway,no] {No};
+
+        \draw[-{Stealth[length=3mm, width=2mm]}] (hydrogen) -> (typeII) node[above,sloped,midway,yes] {Yes};
+        \draw[-{Stealth[length=3mm, width=2mm]}] (typeII) -> (typeIIb) node[above,sloped,midway,no] {No};
+        \draw[-{Stealth[length=3mm, width=2mm]}] (typeII) -> (typeIIpln) node[above,sloped,midway,yes] {Yes};
+        \draw[-{Stealth[length=3mm, width=2mm]}] (typeIIpln) -> (typeIIn) node[above,sloped,midway,yes] {Yes};
+        \draw[-{Stealth[length=3mm, width=2mm]}] (typeIIpln) -> (typeIIpl) node[above,sloped,midway,no] {No};
+        \draw[-{Stealth[length=3mm, width=2mm]}] (typeIIpl) -> (typeIIp) node[above,sloped,midway,ambig] {Plateau};
+        \draw[-{Stealth[length=3mm, width=2mm]}] (typeIIpl) -> (typeIIl) node[above,sloped,midway,ambig] {Decrease};
+
+        \draw[-{Stealth[length=3mm, width=2mm]}] (wacky) -> (typeIIpec);
+        \draw[-{Stealth[length=3mm, width=2mm]}] (supernova) -> (hydrogen);
+        \draw[-{Stealth[length=3mm, width=2mm]}] (supernova) to [bend right] (wacky);
+        \draw[-{Stealth[length=3mm, width=2mm]}] (typeIIpl) -> (typeIIpec) node[above,sloped,midway,ambig] {Something else};
+    \end{tikzpicture}
+    \caption[A rough outline of supernova classification.]{A rough outline of supernova classification. One can see that the presence of hydrogen lines distinguishes a Type I from Type II supernova. Type II supernova subtypes are determined by the behaviour of their light curves -- how the apparent magnitude changes against time -- and thus are determined by the luminosity of the supernova, something detailed models are not able to model. On the other hand, the presence of hydrogen/silicon/helium in the supernova is something that detailed codes \textit{are} able to model.}
+    \label{fig:supernova_taxonomy}
+\end{figure}
+
+Importantly for the nucleosynthesis of heavier-than-Iron elements, the supernova shockwave propagating through the core causes a new phase of nucleosynthesis, albeit briefly.
+
+\section{Two to tango: Binary Evolution}\label{sec:binary_evolution}
+
+Introducing a second star into the mix complicates the evolution. Whereas before a star losing mass (through, for example, a \gls{cme}) was assumed to eject it into the \gls{ism}, it may now accrete that material directly onto its companion. In addition, either star may in principle increase in radius enough to overlap with its companion, or even touch surfaces -- introducing new dynamics into the mix.
+
+\subsection{Binary star kinematics}
+
+There are several formation channels for a binary star system. Binaries may be formed from birth (as discussed in \autoref{sec:stellar_formation}, with the caveat that in this scenario two clumps of gas form near each other), via fragmentation of a protostar's disc, dynamical capture of one star by another (comparable to one of the suggested origins of Phobos and Deimos, per \citet{burns_dynamical_1978}), or via a higher multiplicity system ejecting one or more of its constituent stars, perhaps via a natal supernova kick.
+
+In any case, once formed and the orbit is stabilised, binary systems obey Kepler's three laws. In the generalised binary regime, however, the assumption that $M_1\gg M_2$ (which underpins most statements of Kepler's laws) is not necessarily true -- for instance, the system LSS 3074 has two stellar components with \gls{zams} masses of approximately \SI{30}{\msun} and \SI{10}{\msun} \citep[][and \autoref{sec:close_contact} of this thesis]{raucq_observational_2017}. Moreover, the fact that there are two stars in orbit rather that one object orbiting another means that Kepler's laws must be stated more precisely. Formally, they can be expressed as
+
+\begin{enumerate}
+    \item All orbits are ellipses, with both stars orbiting a common barycentre at the focus of the ellipse,
+    \item A line segment joining the two stars sweeps out equal areas in equal times,
+    \item The square of the period of the system is proportional to the cube of the semimajor axis of the ellipse (the binary separation), with the proportionality term dependent on the sum of the masses.
+\end{enumerate}
+
+The third law can be stated more precisely as,
+
+\begin{equation}
+    T^2 = \frac{4\pi^2}{G(M_1+M_2)}a^3,
+\end{equation}
+
+and a schematic of the orbit of a binary system is given in \autoref{fig:bss_schematic}.
+
+\begin{figure}[!htbp]
+    \centering
+    \begin{tikzpicture}
+        \draw[gray, thick] (-3, 0) -- (0, 0);
+        \draw[gray, thick] (1.5, 0) -- (0, 0);
+        \filldraw[blue] (0, 0) circle (2pt);
+
+        \node (a) at (-1.5,0.4) {$x_2$};
+        \draw[<-] (-3, 0.4) -- (a);
+        \draw[->] (a) -- (0,0.4);
+
+        \node (b) at (0.75,-0.4) {$x_1$};
+        \draw[<-] (0, -0.4) -- (b);
+        \draw[->] (b) -- (1.5, -0.4);
+
+        \filldraw[black] (-3,0) circle (2pt) node[anchor=east] {$M_2$};
+        \filldraw[black] (1.5, 0) circle (2pt) node[anchor=west] {$M_1$};
+
+        \node (drawtoB) at (1.1,0.4) {$v_1$};
+        \node (drawtoA) at (-2.6,-0.4) {$v_2$};
+
+        \draw[->] (-3, 0) edge[bend right] (drawtoA);
+        \draw[->] (1.5, 0) edge[bend right] (drawtoB);
+    \end{tikzpicture}
+    \caption[A schematic of a simple binary star system.]{A schematic of a simple binary star system. The centre of mass (barycentre) is shown as a blue dot. Here, $M_1$ is the heavier star, which orbits at a greater distance $x_1$ to the barycentre by Kepler's first and Newton's second laws. Figure adapted from \citet{richards_missing_2021}.}
+    \label{fig:bss_schematic}
+\end{figure}
+
+\subsection{Mass Transfer Efficiency}
+
+Whilst mass-loss from a single star is effectively 100 per cent lossy -- that is, that 100 per cent of the material ejected from the star is lost to the \gls{ism} -- the same is not necessarily true in a binary. Suppose star A (called the ``donor'') with mass $M_\text{donor}$ grows to exceed its Roche Lobe, the equipotential surface which is tear-drop shaped, with an apex at the inner Lagrangian point $\mathcal{L}_1$. The excess mass will begin to accrete onto star B (the ``accretor'') which initially has mass $M_\text{acc}$. Suppose that the mass lost by the donor is $\delta M$. After the mass transfer phase is finished, the mass of both stars will be
+
+\begin{equation}
+    \left.\begin{array}{ll}
+        M'_\text{donor} &= M_\text{donor} - \delta M \\
+        M'_\text{acc} &= M_\text{acc} + \kappa\delta M \\
+    \end{array}\right\}
+    \label{eq:binary_mass_transfer}
+\end{equation}
+
+where $\kappa\in\left[0,1\right]$ is the mass transfer efficiency. $\kappa=0$ corresponds to perfectly lossy -- all mass accreted from the donor is lost to the \gls{ism} -- whereas $\kappa=1$ is perfect efficiency -- all mass accreted from the donor is accepted by the accretor, with none lost to the \gls{ism}. The total mass is now
+
+\begin{equation}
+    M \equiv M'_\text{donor} + M'_\text{acc} = M_\text{donor} + M_\text{acc} - (1-\kappa)\delta M
+\end{equation}
+
+Alternatively, we can construct a more complex model of mass transfer, allowing for a variable efficiency. For transfer from star $a$ to $b$ in a binary, this is
+
+\begin{equation}
+    % 0.5D0*(VX+DABS(VX)) = PS(VX)
+    \dot{M}_a = \frac{M_a - \exp\left(L_a-\delta L_a\right)}{\mathrm{d}{t}}-\mathcal{R}_1M_a + f(a) + \min\left|\mathcal{R}_2\left(\frac{\log{R_\text{a}}-\log\left(a\frac{0.49q^\frac23}{0.6q^\frac23 \ln\left(1+q^\frac13\right)}\right)}{2}\right)^3,\SI[retain-unity-mantissa=false]{1e-2}{\msun\per\year}\right|,
+\end{equation}
+
+where $f(a)$ is a given mass loss prescription.
+
+\subsection{Roche Lobes}
+
+\mediaepigraph[in]{Algebra’s like sheet music. The important thing isn’t can you read music, it’s can you \textit{hear} it. Can you hear the music, Robert?}{Niels Bohr}{Oppenheimer}
+
+A binary system is complicated by the presence of its companions in several different ways. As alluded to in the previous section, the presence of a companion warps space-time in such a way that material can be quite distorted from a sphere or oblate spheroid but still remain gravitationally bound to the system. In the extremal case, a star can grow to fill or even exceed its Roche Lobe, which is the tear-drop equipotential shaped surface within which material remains gravitationally bound to its star. In \autoref{fig:roche_potentials} we display these equipotential surfaces for a range of different mass ratios. It is pertinent to note that the shape of all of the Roche Lobes change rapidly at low mass rations, however at higher mass ratios the shapes change less rapidly. In an equal-mass ratio binary, the binary configuration has rotational symmetry about the $\mathcal{L}_1$ point, and reflectional symmetry about the $x$-axis and the line $y=\mathcal{L}_1$.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.85\textwidth]{images/TheorySection/roche_potentials.png}
+    \caption[The dimensionless Roche potential as a function of mass ratio $q$.]{The dimensionless Roche potential as a function of mass ratio $q$. Note that the shape of the Roche potential changes markedly at low mass ratio, and changes more slowly as the mass ratio approaches unity. Distances have been normalised such that the primary star is at $(x,y,z)=(0,0,0)$ and the secondary star is at $(x,y,z)=(1,0,0)$, i.e., we measure distances in units of separation and that the coordinate system is centered on the primary star.}
+    \label{fig:roche_potentials}
+\end{figure}
+
+There are two primary Roche Lobe points we consider: the $\mathcal{L}_1$ point and the $\mathcal{L}_2$ point. The $\mathcal{L}_1$ point (also known as the inner Lagrangian point) is the nexus between the two stars, the $\mathcal{L}_2$ point (the outer Lagrangian point) is located on the other side of the secondary to the inner point.
+
+We follow the derivation given in \citet{rose_advanced_1998} to find an expression for the Roche potential. First we note that in a rotating reference frame in Cartesian coordinates, we have
+
+\begin{equation}
+    \overbrace{\frac{GM_1 M_2}{a^2}\vu{x}}^\text{gravitational force}=\underbrace{-M_1 \vec{\omega}\times\pqty{\vec{\omega}\times\vec{r}_1}}_\text{centrifugal force},
+\end{equation}
+
+where $\vu{x}$ is the line between the center of mass of both stars, $a$ the separation, $\vec{\omega}$ the angular velocity, and $\vec{r}_1$ the position vector of the primary star. The x-ordinates of the centres of mass are given by
+
+\begin{equation}
+    \left.\begin{array}{ll}
+        x_1 &= \frac{M_2}{M_1+M_2}a \\
+        x_2 &= \frac{-M_1}{M_1+M_2}a
+    \end{array}\right\}
+\end{equation}
+
+Since we are considering a rotating coordinate system we have that the centrifugal force is given by
+
+\begin{equation}
+    -M_1 \vec{\omega}\times\pqty{\vec{\omega}\times\vec{r}_1} = M_1\omega^2 x_1
+\end{equation}
+
+and hence
+
+\begin{align}
+    \frac{GM_1 M_2}{a^2}\vu{x} &= M_1\omega^2 x_1 \notag\\
+    \omega^2 &= \frac{GM_1 M_2}{M_1 x_1 a^2}\vu{x} \notag\\
+    &= \frac{GM_2}{x_1 a^2}\vu{x} \notag\\
+    &= \frac{GM_2\pqty{M_1+M_2}}{M_2 \cdot a\cdot a^2}\vu{x} \notag\\
+    &= \frac{G\pqty{M_1+M_2}}{a^3}\vu{x}.
+\end{align}
+
+The centrifugal potential of a test mass $m$ at $(x,y)$ is hence
+
+\begin{equation}
+    V = -\frac12 m\omega^2\pqty{x^2+y^2} = -\frac{Gm\pqty{M_1+M_2}\pqty{x^2+y^2}}{2a^3},
+\end{equation}
+
+and thus its energy is
+
+\begin{equation}
+    E = \frac12 m\pqty{\dot{x}^2+\dot{y}^2} + V(x,y),
+\end{equation}
+
+where
+
+\begin{equation}
+    V(x,y) = \overbrace{-\frac{GmM_1}{\sqrt{\pqty{x-x_1}^2+y^2}}}^\text{G.P.E. due to primary}-\overbrace{\frac{GmM_2}{\sqrt{\pqty{x-x_2}^2+y^2}}}^\text{G.P.E. due to secondary}-\overbrace{\frac{Gm\pqty{M_1+M_2}\pqty{x^2+y^2}}{2a^3}}^\text{centrifugal potential}.
+\end{equation}
+
+We introduce the dimensionless coordinates measured in units of the separation of the binary (or reduced masses)
+
+\begin{equation}
+    \xi = \frac{x}{a},\quad\eta=\frac{y}{a},\quad\xi_1=\frac{M_2}{M_1+M_2},\quad\xi_2=\frac{M_1}{M_1+M_2}
+\end{equation}
+
+Our potential now becomes
+
+\begin{equation}
+    V(\xi,\eta) = -\frac{Gm\pqty{M_1+M_2}}{a}\times\bqty{\frac{\xi_2}{\sqrt{\pqty{\xi-\xi_1}^2+\eta^2}}+\frac{\xi_1}{\sqrt{\pqty{\xi-\xi_2}^2+\eta^2}}+\frac12\pqty{\xi^2+\eta^2}}.
+\end{equation}
+
+Taking the partial derivative along the $\xi$-axis (the rescaled $x$-axis), we get
+
+\begin{equation}
+    \pdv{V}{\xi} = -\frac{Gm\pqty{M_1+M_2}}{a}\times\bqty{-\frac{\xi_2\pqty{\xi-\xi_1}}{\pqty{\pqty{\xi-\xi_1}^2+\eta^2}^\frac32}-\frac{\xi_1\pqty{\xi-\xi_2}}{\pqty{\pqty{\xi-\xi_2}^2+\eta^2}^\frac32}+\xi}
+\end{equation}
+
+Hence the extrema of the potential $V$ are at the points $\xi$ where (taking $\eta=0$ on the $\xi$-axis)
+
+% -ve sign on first two terms dumbass
+
+\begin{equation}
+    0=\xi-\frac{\xi_2}{\pqty{\xi-\xi_1}^2}-\frac{\xi_1}{\pqty{\xi-\xi_2}^2}.\label{eq:roche_lobe_condition}
+\end{equation}
+
+% i.e.,
+
+% \begin{equation}
+%     0=\frac{\xi_2\xi-\xi_2\xi_1}{\pqty{\xi^2+\xi_1^2-2\xi\xi_1+\eta^2}^\frac32}+\frac{\xi_1\xi-\xi_1\xi_2}{\pqty{\xi^2+\xi_2^2-2\xi\xi_2+\eta^2}^\frac32}+\xi,
+% \end{equation}
+
+No analytical function for $\xi$ exists unless either or both of $\xi_1, \xi_2$ are zero (which would only be the case for a single star), thus we must make approximations. First, we note that if $q=\frac{M_2}{M_1}$ the $\xi_1, \xi_2$ coefficients can be written as
+
+\begin{equation}
+    \xi_1 = \frac{q}{1+q},\qquad\xi_2 = \frac{1}{q+1}.
+\end{equation}
+
+Define $z=1+q$, and then \autoref{eq:roche_lobe_condition} becomes
+
+\begin{align}
+    0 &= \xi-\frac{1}{z}\frac{1}{\pqty{\xi-\frac{q}{z}}^2}-\frac{q}{z}\frac{1}{\pqty{\xi-\frac{1}{z}}^2} \\
+    &= \xi-\frac{z}{\pqty{z\xi-q}^2}-\frac{qz}{\pqty{z\xi-1}^2},
+\end{align}
+
+which may be rearranged to
+
+\begin{equation}
+    \xi=\frac{z}{\pqty{z\xi-q}^2}+\frac{qz}{\pqty{z\xi-1}^2}.
+\end{equation}
+
+With tedious algebra it can be shown that this condition is equivalent to a quintic in $\xi$ with coefficients
+
+\begin{equation}
+    0=\sum_{n=0}^5 \pqty{-1}^{n+1} a_n\xi^n~\text{where}~\left\{\begin{array}{rl}
+        a_0 &= q^4+q^3+q+1 \\
+        a_1 &= 2q^3 +7q^2+6q+2 \\
+        a_2 &= 4q^3 +9q^2+6q+1 \\
+        a_3 &= q^2+2q+1\\
+        a_4 &= 2q^4+8q^3+12q^2+8q+2\\
+        a_5 &= q^4+4q^3 +6q^2+4q+1
+    \end{array}\right.
+\end{equation}
+
+with solutions given by the eigenvalues of the companion matrix, i.e., $\xi$ obeys
+
+\begin{equation}
+    0 = \det\begin{pmatrix}
+       -\xi & 0 & 0 & 0 &  \frac{q^4+q^3+q+1}{q^4+4q^3+6q^2+4q+1} \\
+        1 & -\xi & 0 & 0 & -\frac{2q^3+7q^2+6q+2}{q^4+4q^3+6q^2+4q+1} \\
+        0 & 1 & -\xi & 0 &  \frac{4q^3 +9q^2+6q+1}{q^4+4q^3+6q^2+4q+1} \\
+        0 & 0 & 1 & -\xi & -\frac{q^2+2q+1}{q^4+4q^3+6q^2+4q+1} \\
+        0 & 0 & 0 & 1 &  \frac{2q^4+8q^3+12q^2+8q+2}{q^4+4q^3+6q^2+4q+1}-\xi \\
+    \end{pmatrix},
+\end{equation}
+
+which may be written more conveniently as
+
+\begin{equation}
+    0 = \det\begin{pmatrix}{}
+       -\xi & 0 & 0 & 0 &  -2z \\
+        1 & -\xi & 0 & 0 & \frac{-2z^3-q^2}{z^4} \\
+        0 & 1 & -\xi & 0 &  \frac{4q+1}{z^2} \\
+        0 & 0 & 1 & -\xi & -\frac{1}{z^2} \\
+        0 & 0 & 0 & 1 &  2-\xi \\
+    \end{pmatrix}.\label{eq:determinant_formula_for_RL}
+\end{equation}
+
+This reduces to the quintic
+
+\begin{equation}
+    \xi^5 - 2\xi^4+\frac{1}{z^2}\xi^3-\frac{4q+1}{z^2}\xi^2-\frac{-2z^3-q^2}{z^4}+2z = 0.\label{eq:quintic_formula_for_RL}
+\end{equation}
+
+Solving either \autoref{eq:determinant_formula_for_RL} or \autoref{eq:quintic_formula_for_RL} admits an exact solution for
+
+
+\subsubsection{Roche Lobe Overflow -- the \texorpdfstring{$\mathcal{L}_1$}{inner Lagrangian} point}
+
+The inner Lagrangian point has the approximation from \citet{eggleton_aproximations_1983}, which in our notation, is
+
+\begin{equation}
+    \xi = \frac{R_\text{L}}{a} = \frac{0.49\pqty{\frac{\xi_1}{\xi_2}}^\frac23}{0.6\pqty{\frac{\xi_1}{\xi_2}}^\frac23+\ln\pqty{1+\pqty{\frac{\xi_1}{\xi_2}}^\frac13}}
+\end{equation}
+
+
+
+\subsubsection{Roche Lobe Overflow -- the \texorpdfstring{$\mathcal{L}_2$}{outer Lagrangian} point}
+
+\subsection{Common Envelope Evolution}
+
+Now we turn to one of the highly uncertain phases of binary evolution. If one star's radius $R_1$ grows enough such that the radius is greater than the separation between the two binaries, i.e., $R_1 > a$, we say that the star has entered \gls{cee}. There are several effects that occur here. Firstly, due to orbital drag from the donor star (*1), the recipient star (*2) will shrink in orbit, i.e., the stars will come closer together. The relationship between the initial separation and the final separation is debated, and here we review some of the most common prescriptions.
+
+First, the condition for \gls{cee} to occur is that $R_1 > a$. For a star to reach this radius its Roche Lobe, denoted $R_\text{L}$, must also be greater than this radius.% The Roche Lobe is the tear-drop shaped equipotential surface whose apex is at the inner Lagrangian point $\mathcal{L}_1$. To motivate this claim, consider a star whose Roche Lobe is less than the separation
+
+The formula approximating the Roche Lobe (to 1\% error in mass ratio $q$) is, per \citet{eggleton_aproximations_1983},
+
+\begin{equation}
+    \frac{R_\text{L}}{a} = \frac{R_\text{L}}{a} = \frac{0.49q^\frac23}{0.6q^\frac23+\ln\pqty{1+q^\frac13}}
+\end{equation}
+
+Note that the condition that $R_1 > a$ can be manipulated to $R_\text{L} > a$, or $\frac{R_\text{L}}{a}>1$. This is true over the reals for $0.21 < q < 0.29$. Note that this $q$ is not the \textit{initial} (\gls{zams}) mass ratio, but is instead the mass ratio at a given instant. Moreover, this is not a sufficient condition for \gls{cee} to occur (that is, we are not claiming that if this mass ratio is met, the star must be undergoing \gls{cee}), but rather a necessary condition for when \gls{cee} is even possible in the first instance.
+
+\subsubsection{The \texorpdfstring{$\alpha-\lambda$}{alpha-lambda} prescription}
+
+The most common \gls{cee} prescription is the $\alpha-\lambda$ prescription, which takes
+
+\begin{equation}
+        \frac{m_1m_{1,\text{env}}}{\lambda R_1} = \alpha_\text{CE} \pqty{-\frac{Gm_1m_2}{2a_\text{i}}+\frac{Gm_{1,\text{c}}m_2}{2a_\text{f}}}
+\end{equation}
+
+where a subscript ``c'' denotes a core mass and a subscript ``env'' denotes an envelope mass. There are apparently two free parameters: $\alpha_\text{CE}$, the fraction of the orbital energy used to eject the envelope (or ``common envelope efficiency'' parameter):
+
+\begin{equation}
+    \Delta E_\text{orb} = \alpha_\text{CE} E_\text{bind}
+\end{equation}
+
+and $\lambda$, a structure constant related to the density distribution \citep{de_kool_common_1990}. $\lambda$ is a local parameter -- dependent on the structure of the star -- and $\alpha_\text{CE}$ is commonly taken as a global parameter $\sim$ 1 \citep{ivanova_common_2013}, though \citet{scherbak_white_2023} has recently suggested $\alpha_\text{CE}\sim\frac13$ is more appropriate. It is common, though unphysical, to take the combined parameter $\alpha_\text{CE}\lambda$ as the \textit{global} free parameter. We will in general not follow this approach; as defined, $\lambda$ depends on the stellar structure and the stellar binding energy. Hence, assuming it free to vary let alone able to be globally affixed is not a logical choice other than to save computational time.
+
+\subsubsection{The \texorpdfstring{$\gamma$}{gamma} prescription}
+
+The $\gamma$ prescription arises as a consideration of conservation of angular momentum. Let $J$ be the orbital angular momentum of the binary. Then the $\gamma$ prescription takes
+
+\begin{equation}
+    \frac{\Delta J_\text{lost}}{J_\text{i}} = \frac{J_\text{i}-J_\text{f}}{J_\text{i}} = \gamma\frac{m_1-m_{1,\text{c}}}{m_1+m_2}.
+\end{equation}
+
+Once an expression for $J_\text{f}$ is found, one can transform it into the period via
+
+\begin{equation}
+    a_\text{f} = \frac{m_1 m_2 \sqrt{1-e^2} P_0}{J_\text{f}},
+\end{equation}
+
+where masses are in solar masses, the orbital period is in years, and the semi-major axis is in \si{\AU} \citep{eggen_angular_1963}.
+
+\subsection{Chemical Pollution \& Enrichment}
+
+Consider an extremal case where a star composed entirely of helium exists in a binary with a main sequence star. The simple computational regime of taking mass from one star and adding it to the second breaks down, as this would reduce the amount of one element in the binary and increase the amount of the secondary.
+
+\section{Post-Supernova}\label{sec:post_SN}
+
+\mediaepigraph{Wit nodded.\\
+``Oh, is this the place where I talk?'' Kaladin said.\\
+``If you wish.''\\
+``I don’t wish. Get on with the story.''}{Rhythm of War}{Brandon Sanderson}
+
+After a supernova, the star leaves behind its core as a compact remnant. Generally, these are either white dwarves, black holes, or neutron stars. The interior structure of each is either complicated or, in the case of black holes, impossible to observationally probe without violating causality. Their orbital motions are now deterministic from four initial parameters: $m_1, m_2, a$, and $e$. Motion is now wholly determined by the emission of gravitational radiation through (detectable) gravitational waves. The pertinent equations of motion are given by \citet{peters_gravitational_1964}, namely,
+
+\begin{align}
+    \dv{a}{t} &= \frac{-\beta}{a^3\left(1-e^2\right)^\frac72}\left(1+\frac{73}{24}e^2+\frac{37}{96}e^4\right) \label{eq:dadt}\\
+    \dv{e}{t} &= -\frac{19}{12}\frac{\beta}{a^4\left(1-e^2\right)^\frac52}\left(e+\frac{121}{304}e^3\right)\label{eq:dedt}
+\end{align}
+
+with the constant $\beta$ defined as
+
+\begin{equation}
+    \beta \equiv \frac{64}{5}\frac{G^3mM\pqty{m+M}}{c^5}.
+\end{equation}
+
+Now if one defines the constant $c_0$ through
+
+\begin{equation}
+    c_0 = a_0\pqty{1-e_0^2}e_0^{-\frac{12}{19}}\pqty{1+\frac{121}{304}e_0^2}^{-\frac{870}{2299}},
+\end{equation}
+
+then the time from the second supernova to the conclusion of the inspiral, termed the \textit{coalescence time}, will be given by
+
+\begin{equation}
+    T_\text{c}(a_0, e_0) = \frac{12}{19}\frac{c_0^4}{\beta}\int_0^{e_0} \frac{e^\frac{22}{19}\left(1+\frac{121}{304}e^2\right)^\frac{1181}{2299}}{\left(1-e^2\right)^\frac32}{ \mathrm{d}e}.\label{eq:coalescence_time}
+\end{equation}
+
+The integral has no clean closed-form solution, and a numerical integrator is typically used to compute the coalescence time. However, some approximations such as \citet{mandel_accurate_2021} do exist and approximate the coalescence time rather well over the entire range of mass ratios.
+
+\subsection{Merger Rates of compact binaries}
+
+The merger rate of a population of compact binaries at time $t$ after formation can be formalised via the heuristic
+
+\begin{equation}
+    m(t) = \text{\# of binaries for which $T_\text{c} + T_\text{rej} + T_\text{evo} < t$},\label{eq:definition_of_merger_rate}
+\end{equation}
+
+where $T_\text{C}$ is the coalescence time, $T_\text{rej}$ is the rejuvenation age (the age at which the primary star last accreted mass), and $T_\text{evo}$ is the evolution time-scale (the length of time the primary spends on the main sequence). $m(t)$ is called the \gls{dtd} of a population.
+
+However, the underlying assumption in this is that the population was formed after an instantaneous burst of star-forming activity at time $t=0$, which is clearly unphysical. We must account for the so-called \gls{sfrd} $\psi(z)$, assumed to be taken from \citet{madau_cosmic_2014}:
+
+\begin{equation}
+    \psi(z) = 0.015\frac{(1+z)^{2.7}}{1+\left(\frac{1+z}{2.9}\right)^{5.6}}~\unit{\msun\per\year\per\mega\pc\cubed},
+\end{equation}
+
+where $z$ is the redshift. For the purposes of converting between lookback time $t$ and redshift $z$, we assume a standard LCDM cosmology with $\Omega_\text{M}=0.3, \Omega_\Lambda=0.7, \Omega_k = 0, H_0=\SI{69.6}{\km\per\second\per\mega\pc}$.
+
+Of course, this ignores the effect of mixed-metallicity models, which we account for using the presciption of \citet{langer_collapsar_2006}, whereupon the \gls{sfrd} is multiplied by a factor $\chi$:
+
+\begin{equation}
+    \chi\left(z,Z\right) = \frac{\hat{\Gamma}\left[0.84, \left(\frac{Z}{Z_\odot}\right)^2\cdot 10^{0.3z}\right]}{\Gamma\left(0.84\right)},
+\end{equation}
+
+where $\hat{\Gamma}$ and $\Gamma$ are the upper incomplete and complete Gamma functions respectively. This means our \gls{sfh} -- which takes into account both redshift and metallicity -- denoted $\Psi(z,Z)$, is given by
+
+\begin{equation}
+    \Psi(z,Z) = 0.015\int_{z_1}^{z_2} \frac{(1+z)^{2.7}}{1+\left(\frac{1+z}{2.9}\right)^{5.6}}\frac{\hat{\Gamma}\left[0.84, \left(\frac{Z}{Z_\odot}\right)^2\cdot 10^{0.3z}\right]}{\Gamma\left(0.84\right)}~\mathrm{d}z,
+\end{equation}
+
+where $z_1$ and $z_2$ are the redshifts of our bin edges. The event rate as a function of time, $\mathcal{R}(t)$, is therefore given by
+
+\begin{equation}
+    \mathcal{R}(t) = \Psi(z_t) * m(t),\label{eq:event_rate_distribution} %= \int_0^\infty m(z_t) \cdot 0.015\int_{z_1}^{z_2} \frac{(1+z-z')^{2.7}}{1+\left(\frac{1+z-z'}{2.9}\right)^{5.6}}\frac{\hat{\Gamma}\left[0.84, \left(\frac{Z}{Z_\odot}\right)^2\cdot 10^{0.3(z-z')}\right]}{\Gamma\left(0.84\right)}~\mathrm{d}z~\mathrm{d}z',
+\end{equation}
+
+where $z_t$ is the redshift corresponding to lookback time $t$. Detail on how this convolution is computed may be found in \citet{richards_missing_2021}.
+
+\section{A Final Note: Stellar Atmospheres}
+
+A star is not a planet -- there is no firm boundary demarcating the inner of a star from the outer. The common definition of the ``surface'' of a star is the surface of last scattering (photosphere), which is the point radially in which the mean free path of a photon emitted from the core of the star becomes meaningfully long (internally, $\ell_\gamma\sim\SI{2}{\cm}$, externally, $\ell_\gamma\sim\SI{4.4}{\pc}$).\footnote{The mean free path is a function of the particle under consideration: for a neutrino, internally $\ell_\nu\sim\SI{3.68}{\pc}$ and externally $\ell_\nu\sim\SI{81}{\ronna\pc}\sim 3\times10^{18}$ times the diameter of the observable Universe.} However, outflows from the star as well as the potential interaction of a partner in a common-envelope event mean that this surface is not necessarily firm: there is no sharp turn from stellar material to empty space. Thus, the simulation of stellar atmospheres is of interest to the stellar astrophysicist. However, this introduces another rather large layer of complexity. The synthesis of a stellar spectra, for example, is not a trivial task, as well as simulating the matter content. This thesis is concerned with detailed modelling of the stellar \textit{interior}, and thus the atmosphere is an interesting sidenote, but one we shall not pursue.
+
+\section{Numerical implementation}
+
+\epigraph{I think there is a world market for maybe five computers.}{Thomas Watson, President of IBM, 1943}
+
+In this section, we provide an overview of the four codes we either use extensively or have developed to carry out the work of this thesis. These four codes are:
+
+\begin{enumerate}
+    \item The Cambridge \codename{stars} code (\autoref{chap:numerical_methods_stars}), developed by Peter Eggleton, which we use to solve the equations of stellar structure and evolution,
+    \item The \codename{Tui} code (\autoref{chap:numerical_methods_tui}), which performs our binary population synthesis,
+    \item The \codename{Kaitiaki} code (\autoref{chap:numerical_methods_kaitiaki}), which is our grid-manager code and allows modification of the input parameters to the Cambridge \codename{stars} code programmatically, and
+    \item The \codename{Takahe} code (\autoref{chap:numerical_methods_takahe}), which is our binary compact remnant evolution code.
+\end{enumerate}
+
+\subsection{The Cambridge \codename{stars} code}\label{chap:numerical_methods_stars}
+
+% \mediaepigraph{She emerged into the open air, like a fish leaping from the water. Beneath her, the mists covered the nighttime land like an enormous white blanket. Around her, there was only open air. Unsettling, strange. Above her, a million stars -- normally visible only to Allomancers -- watched her like the eyes of those long dead.}{The Hero of Ages}{Brandon Sanderson}
+
+\subsubsection{Brief History}
+
+\mediaepigraph{And through the night, behind the wheel, the mileage clicking west\\I think upon Mackenzie, David Thompson and the rest\\Who cracked the mountain ramparts and did show a path for me\\To race the roaring Fraser to the sea.}{Northwest Passage}{Stan Rogers}
+
+Stellar modelling became a field of active research in the 1950s. Prior to the invention of the computer, a model was treated as a mathematical process and thus was computed -- often labouriously -- by hand. For instance, in \citet{eggleton_structure_1967}, Eggleton writes that
+
+\begin{fanciful}
+    Since we have seen in Section 3 that the structure of the flame zone can be obtained independently (almost) of the rest of the star, it is reasonable to expect that instabilities of the type considered by Schwarzchild \& H\"arm can also be examined in this way, so that the considerable labour of computing the structure of an entire star can be avoided.
+    \begin{flushright}
+        -- \citet{eggleton_structure_1967}
+    \end{flushright}
+\end{fanciful}
+
+The Cambridge \codename{stars} code (hereafter simply \codename{stars}) was one of the first detailed stellar evolution codes to be written, though initially it only modelled one star in detail. To model a binary system, tweaks were made whereupon the primary would be modelled in detail whilst approximating the secondary with the equations of \citet{hurley_evolution_2002} until the primary supernova, at which point the secondary would be evolved in detail. This had its merits; notably computation time was saved, and the results were generally accurate anyway.
+
+However, \citet{stancliffe_modelling_2009} introduced detailed modelling of \textit{both} stars in a binary system into the \codename{stars} code -- that is, the interiors of both stars were computed in detail, alongside the simualtaneous computation of the orbital parameters. Since then, a wide array of improvements have been made to the numerical stability of the code, as well as introducing or refining new physics.
+
+\subsubsection{Matrix Inversion}
+
+The heart of \codename{stars} is a matrix inversion algorithm. Although computing the inverse of a matrix is a polynomial time process, it can still take considerable time to invert. \codename{stars} implements a Henyey matrix \citep{henyey_new_1964}, which is of size $n=(4+n_\text{comp})N_\text{mesh}$, with $n_\text{comp}$ the number of equations to be solved and $N_\text{mesh}$ the number of meshpoints in the model. An individual element of the Henyey matrix is given by
+
+\begin{equation}
+    \mat{H} = \pdv{\pqty{\text{equation } i}}{\pqty{\text{variable } j}}.
+\end{equation}
+
+For a ``typical'' binary computation, with $n_\text{comp}=30$ equations and $N_\text{mesh}=199$ meshpoints, the matrix is already $6766\times6766$, for a binary which evolves up the AGB (the theoretically most complex calculation we perform) with $N_\text{mesh}=999$, the matrix is $33966\times33966$. Introducing $k$ new equations into the code causes the runtime of the matrix inversion calculation to scale like $\mathcal{O}(n^3+k^3N_\text{mesh}^3)$.
+
+The matrix inversion is simple Gauss-Jordan inversion, which is of complexity class (for an $n\times n$ matrix) $\mathcal{O}(n^3)$. \citet{coppersmith_matrix_1987} showed that this could be optimised to $\mathcal{O}(n^{2.376})$ and conjectured reducibility to $\mathcal{O}(n^2)$. Since our code is embarassingly parallelisable, and can be executed in parallel simply by increasing the number of cores available, the payoff for decreasing the runtime by one polynomial order is inconsequential, and thus we use the straightforward implementation.
+
+\subsubsection{Initial Condition Selection}
+
+In this section we provide an account for the selection of our general initial conditions, unless otherwise noted in this thesis.
+
+In our implementation of \gls{mlt} \citep{vitense_wasserstoffkonvektionszone_1953,bohm-vitense_uber_1958,cox_principles_1968}, we use an \gls{mlt} parameter of $\alpha_\text{\gls{mlt}}=1.985$, selected via calibration against a model of the Sun. This is effectively a dissipativity parameter, and represents the depth at which a parcel of matter penetrates into a lower layer before becoming fully dissipated. The value was selected by modelling a \SI{1}{\msun} star and varying only the mixing length parameter until it had a lumonosity of \SI{1}{\lsun} and a radius of \SI{1}{\rsun}, at the present age of the Sun.
+
+\subsubsection{Timestep control}
+
+\subsubsection{Computational considerations}
+
+\subsubsection{Numerical instabilities}
+
+\subsection{The \codename{Tui} code}\label{chap:numerical_methods_tui}
+
+\codename{Tui} is the core population synthesis code within the BPASS project. \codename{Tui} takes as input the output from the \codename{stars} code.
+
+\section{Chapter Summary}
+
+\mediaepigraph{Looking up, he saw a thousand stars glittering in the deep velvet of a night with no moon. He knew them all, their stories and their names. He knew them in a familiar way, the way he knew his own hands.}{The Name of the Wind}{Patrick Rothfuss}

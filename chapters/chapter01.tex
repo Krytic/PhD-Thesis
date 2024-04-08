@@ -1,4 +1,123 @@
+% !TEX root = ../main.tex
 \chapter{Introduction}
 
-\epigraph{And through the night, behind the wheel, the mileage clicking west -- I think upon Mackenzie, David Thompson and the rest -- Who cracked the mountain ramparts and did show a path for me -- To race the roaring Fraser to the sea.}{Stan Rogers}
+% \epigraph{What's so amazing that keeps us stargazing? And what do we think we might see?}{Kermit the Frog}
 
+% \epigraph{If the stars should appear one night in a thousand years, how would men believe and adore; and preserve for many generations the remembrance of the city of God which had been shown! But every night come out these envoys of beauty, and light the universe with their admonishing smile.}{Ralph Waldo Emerson}
+
+\translationEpigraph{Una volta che avrai\\
+Spiccato il volo, deciderai\\
+Sguardo verso il ciel saprai:\\
+L\`i a casa il cuore sentirai.}{Once you have taken flight\\
+You'll decide\\
+Gaze towards the sky, you'll know that:\\
+That is where your heart will feel at home.}{Leonardo da Vinci}
+
+% \epigraph{``If you're in a bath at the bottom of a lake, are you in a bath, or in a canoe?'' Then you're in a bath, because if its sunk, its a shit canoe}{KatDoesMaths}
+
+On September 14, 2015, the \gls{ligo} Collaboration made the first direct detection of gravitational waves, from the merger of a binary black hole with masses $m_1=\SI[parse-numbers=false]{36^{+5}_{-4}}{\msun}$ and $m_2=\SI[parse-numbers=false]{29^{+4}_{-4}}{\msun}$ \citep{abbott_observation_2016}. This detection sparked the so-called ``gravitational wave era'', with detections in \gls{o4} reading a cadence of hundreds per year. These detections afford researchers probes of various physical phenomena. For instance, these merger events are some of the most energetic events in the Universe (GW150914 released over 50 times the energy of all stars in the observable Universe, per \citet{abbott_observation_2016}), and the merger of binary neutron stars are the predominant formation channels for most of the elements heavier than iron \citep[see, among others,][]{eichler_nucleosynthesis_1989,arcavi_optical_2017,pian_spectroscopic_2017,smartt_kilonova_2017}. In addition, the stochastic background of gravitational waves is a direct probe on early-Universe cosmology \citep{christensen_stochastic_2018}, though the frequency band that these gravitational waves span is between $10^{-9}$ and $\SI[parse-numbers=false]{10^{14}}{\hertz}$ \citep{christensen_measuring_1992, christensen_stochastic_2018}, making detection of the stochastic background difficult \citep{agazie_nanograv_2023,antoniadis_second_2023,reardon_search_2023,xu_searching_2023}.
+
+Any attempt at understanding gravitational waves must be founded in a strong theoretical understanding of stellar structure and evolution. Without theory, any observation is no more than a curiosity; it is with theoretical underpinning and models that insight can be gained. As most astrophysical sources of gravitational waves (i.e., not the stochastic background) are formed by the merger of two ``compact remnants'' -- black holes, white dwarfs, and neutron stars -- one must understand their formation, and thus the evolution of progenitor stars into these remnants, as well.
+
+Furthermore, a sound understanding of the evolution of stars has impacts beyond gravitational wave astronomy. As the interiors of stars are complex nuclear furnaces, they are responsible for producing most of the elements in the Universe heavier than Hydrogen \citep{burbidge_synthesis_1957}. In fact, of the elements lighter than Uranium, the only elements not produced in stellar processes (such as through kilonovae or in supernovae) are technetium, promethium (which both lack stable isotopes), boron, beryllium (which both are produced via cosmic ray fission), and some formation channels of lithium. Stars are also the focal point of planetary systems, and provide the theoretical right conditions for the formation of life.
+
+However, this diversity and complexity of stellar interiors demands a careful and varied approach. One cannot abstract away much of the important physics. Although it is common to use approximations such as spherical symmetry to reduce the dimensionality of the problem, and to only evaluate the equations of stellar structure at a fixed number of locations in this one remaining dimension, chosen sufficiently intelligently, a complex computational effort must be undertaken.
+
+\section{A brief history of astronomy}
+
+\mediaepigraph{If the stars should appear one night in a thousand years, how would men believe and adore; and preserve for many generations the remembrance of the city of God which had been shown! But every night come out these envoys of beauty, and light the universe with their admonishing smile.}{Nature}{Ralph Waldo Emerson}
+
+Observational astronomy can essentially be traced back to the earliest cultures. Babylonia knew of Halley's comet and tracked observations of it as late as 87 BCE \citep{stephenson_records_1985}. Records of eclipses in Chinese culture exist as far back as 1600 BCE \citep{fang_past_2015}. Knowledge of the movements of stars guided Polynesian wayfarers as they crossed the South Pacific \citep{buck_vikings_1938, hamacher_first_2022}.
+
+Even in the arts, the knowledge of the lunar perigee was written into \textit{Othello} by Shakespeare:
+
+\begin{fanciful}
+	It is the very error of the moon; \\
+	She comes more near the earth than she was wont, \\
+	And makes men mad.
+	\begin{flushright}
+		-- \citet{shakespeare_othello_1603}
+	\end{flushright}
+\end{fanciful}
+
+Knowledge of oceanic tides was posited by Ptolemy, writing that ``the tides of the sea are ruled by [the moon's] risings and settings'' (original work \citet{ptolemy_2005_tetrabiblos}, summary provided by \citet{tabarroni_1989}), which influenced the writings of Dante:
+
+\begin{fanciful}
+	E come 'l volger del ciel de la luna \\
+	cuopre e discuopre i liti sanza posa, \\
+	così fa di Fiorenza la Fortuna: \\
+	\vspace{5pt}%
+	\hrule
+	\vspace{15pt}%
+	And, as the turning of the lunar sphere covers \\
+	and endlessly uncovers the edges of the shore, \\
+	thus does fortune deal with Florence.
+	\begin{flushright}
+		-- \citet{dante_paradiso_1317}
+	\end{flushright}
+\end{fanciful}
+
+In religious scripture, celestial navigation has oft been a fixture, such as in Chapter 2 of the Gospel according to Matthew:
+
+\begin{fanciful}
+	2:7 -- Then Herod, when he had priuily called the Wise men, enquired of them diligently what time the Starre appeared: \\
+	2:8 -- And he sent them to Bethlehem, and said, Goe, and search diligently for the yong child, and when ye haue found him, bring me word againe, that I may come and worship him also. \\
+	2:9 -- When they had heard the King, they departed, and loe, the Starre which they saw in the East, went before them, till it came and stood ouer where the young childe was.
+	\begin{flushright}
+		-- \citet{kingjames1611}
+	\end{flushright}
+\end{fanciful}
+
+Despite this deep cultural connection to the stars, what we would now call Astronomy is a somewhat recent invention. Arguably it arose in the 16th century CE with Copernicus proposing the heliocentric model of the solar system, which was confirmed by Galileo in the 17th century CE \citep{carroll_introduction_2017} -- although Gailileo's claims did result in his being convicted of heresy for 300 years.
+
+The early 20th century saw a veritable renaissance in both the observational and theoretical spheres. On the one hand, developments such as the theories of Special Relativity in 1905 \citep{einstein_zur_1905}, \gls{gr} in 1917 \citep{einstein_kosmologische_1917}, and the predictions of gravitational waves \citep{poincare_sur_1906, einstein_naherungsweise_1916} led to theoretical revolutions. On the other hand, the innovations of \citet{payne_stellar_1925} in showing that stars are composed of mostly Hydrogen and Helium, \citet{baade_super-novae_1934} in distinguishing ``super-novae'' from ``common novae'', \citet{hoyle_synthesis_1946} in developing the foundation of the nuclear reaction of elements heavier than Hydrogen in stars, \citet{salpeter_luminosity_1955} in developing the \gls{imf}, \citet{burbidge_synthesis_1957} in truly developing the theory of stellar nucleosynthesis, \citet{henyey_early_1955} and \citet{hayashi_stellar_1961} in exploring the pre-main sequence evolution of stars were key to kickstarting entire branches of astronomy such as spectroscopy and computational astrophysics.
+
+The pace of discovery of new and exotic astronomical phenomena has not slowed into the 21st century. Thorne-\.{Z}ytkow objects -- giant stars with Neutron star cores \citep{thorne_stars_1977} -- once only existed as theoretical curiosities, yet now have credible observational candidates in \citet{levesque_discovery_2014}. The aforementioned gravitational waves were detected in 2015  \citep{ligo_scientific_collaboration_and_virgo_collaboration_observation_2016}, a century after they were demonstrated by \citet{einstein_naherungsweise_1916} to be a central prediction of \gls{gr}. More recently, \citet{lau_nested_2022} directly imaged 17 carbon-rich dust rings around WR140 with \gls{jwst}, enriching the \gls{ism} with carbon-rich compounds. In the coming years, the Vera C. Rubin Observatory \citep{ivezic_lsst_2019} and \gls{lisa} are expected to vastly increase the number of short-period eclipsing double white dwarfs \citep{burdge_88_2020}, with the latter able to detect gravitational waves with frequencies between \SI{0.1}{\milli\hertz} and \SI{1}{\hertz} \citep{amaro-seoane_low-frequency_2012}, compared to the $\sim \SI{10}{\hertz}-\SI{1000}{\hertz}$ that \gls{lvk} can detect \citep{schmitz_new_2021}.
+
+Astronomy has evolved from the era of the naked-eye, to the era of the telescope, to the era of the observatory, and now the gravitational wave era. The next era of astronomy is the big data era. With observations reaching sub-day cadences, a large array of theoretical models, and perhaps the development of ``on-demand'' detailed models is required.
+
+\section{Stellar Modelling}
+
+Modelling the evolution of a star is a nontrivial endeavour. Stars as objects obey \gls{gr} owing to their masses and sizes, and reach internal temperatures, pressures, and densities unsustainable on Earth. For instance, the core of a star is capable of nuclear fusion, which has not been recreated on Earth. Moreover, the density of Sirius B (a \gls{wd} in the constellation of Canis Major) is \SI{2.14e10}{\kg\per\meter\cubed} \citep{barstow_hubble_2005} and the mean density of the Sun is $\sim\SI{1410}{\kg\per\meter\cubed}$ \citep{eddy_new_1979}. On Earth, the highest density measured in a laboratory is $\sim\SI{27000}{\kg\per\meter\cubed}$, requiring pressures on the order of \SI{2.3}{\tera\pascal} \citep{fratanduono_probing_2020}, and observed for only nanoseconds.
+
+Because of these factors, one often turns to computer simulations to model the interiors of stars, as it is nigh impossible to achieve and sustain these conditions to experimentally test any physical phenomena. That said, missions such as the Parkes Solar Probe \todo{cite} have made flyby missions into the atmosphere of the Sun, though broadening the sample size to two stars -- using Proxima Centauri, the nearest star to Earth aside from the Sun -- would require travelling at approximately 0.1$c$ for 40 years to reach. If instead we were to send the Parker Solar Probe travelling at a constant velocity of its top velocity of $\sim\SI{176471}{\meter\per\second}$, it would take approximately 7200 years to reach Proxima Centauri. Needless to say, physical experimentation with a star is difficult.
+
+\subsection{Population Synthesis Codes}
+
+Broadly speaking, there are three approaches to modelling stars, all of which have both merits and drawbacks. These three methods are:
+
+\begin{enumerate}
+    \item Rapid Population Synthesis,
+    \item Detailed Population Synthesis, and
+    \item \gls{mhd} Simulations.
+\end{enumerate}
+
+Each of these approaches informs the other two, and all play important roles in stellar modelling. Although we focus on detailed methods, we will briefly outline all three approaches here.
+
+\subsubsection{Detailed Population Synthesis}
+
+Detailed stellar models explicitly solve the equations of hydrostatic equilibrium, usually via some form of matrix-inversion method. For instance, as will be discussed in \autoref{chap:numerical_methods_stars}, the Cambridge \codename{STARS} code inverts the Henyey matrix $\mat{H}=\pdv{\pqty{\text{equation } i}}{\pqty{\text{variable } j}}$. \codename{Mesa} \citep{paxton_modules_2011, paxton_modules_2013, paxton_modules_2015, paxton_modules_2018, paxton_modules_2019, jermyn_modules_2023} uses a Newton-Raphson solver in order to converge to a solution. In particular, we use a variant of the Cambridge \codename{STARS} code, which solves the equations of \textit{both} stars simultaneously.
+
+\subsubsection{Rapid Population Synthesis}
+
+Rapid population synthesis methods exploit the statistical properties of stars in order to rapidly infer properties of populations of stars. However, they still require as input detailed population synthesis models -- for example, \codename{Compas} \citep{team_compas_riley_rapid_2022} uses \codename{Mesa} \citep{paxton_modules_2011, paxton_modules_2013, paxton_modules_2015, paxton_modules_2018, paxton_modules_2019, jermyn_modules_2023} models as its input models.
+
+\subsubsection[3D MHD Simulations]{\acrshort{mhd} Simulations}
+
+\acrfull{mhd} and \gls{sph} simulations are the most detailed method of stellar modelling. The base principle is that the star is evaluated as a network of particles in a continuous media, and the evolution of the star is followed in theoretically atomic detail. For example, \codename{Phantom} \citep{price_phantom_2018} is a \gls{sph} code which essentially models the star as a fluid, where the Lagrangian hydrodynamical equations are solved for in two-dimensional cells (termed ``particles''). Although these present the most detailed models, they are also the most time-intensive to solve. For a \gls{sph} code, the famous Navier-Stokes equation is invoked, which has no analytical solution and is computed in excruciating detail. As a result, most \gls{sph} models take weeks to run and simulate a star for kiloseconds of its lifetime, rather than for the millions of years detailed models are able to compute.
+
+Though it may seem that they serve the same niche and are therefore competing to be the ``better'' method of stellar modelling, detailed 1D models and \gls{mhd}/\gls{sph} models exist harmoniously with each other. The advancements in \gls{mhd}/\gls{sph} modelling inform the evolution of 1D models in a process known as ``3-to-1'', and the computational flexibility of 1D models offers insights into where 3D models wish to target to evolve.
+
+% However, before the \gls{ccsne} occurs, there is a host of complex phenomena that occur in the interior of the star. A star is a nuclear furnace, with even the simplest reaction, the fusion of two hydrogen atoms into helium,
+
+% \begin{equation}
+%     \ce{^2_1H + ^2_1H -> ^3_2He + ^1_0n}
+% \end{equation}
+
+% releasing approximately \SI{3.27}{\mega\electronvolt} of energy per reaction, or approximately 650 million times New Zealand's energy consumption per year, every second.
+
+\section{Thesis Outline}
+
+\mediaepigraph{Come with me, and you'll be, in a world of pure imagination.}{Pure Imagination}{Gene Wilder}
+
+This thesis is, broadly, a tour of stellar evolution from \gls{zams} to the eventual merger of two compact objects, with a few omissions along the way (such as the moment of supernova). The thesis is structured as follows. In Chapter 2, we provide the necessary theoretical background for future chapters. In Chapter 3, we critically examine the pieces of software and numerical methods employed in this work, and discuss the logistics of running this single-thread grid-based code as a multiprocessed code on a distributed cluster. In Chapter 4, we present the results of our stellar evolution codes: both as results for single and binary star evolution, as well as the interesting case when both stars almost (or in some instances, do) touch. In Chapter 5, we examine the kinematics of the post-supernova inspiral and the mechanics of the natal supernova kick. In Chapter 6, we review the thesis and conclude. Finally in the appendices, we provide the \codename{Kaitiaki} code necessary to generate the models for the stellar evolution plots throughout the thesis.
