@@ -339,7 +339,16 @@
 \let\oepi\epigraph
 \renewcommand{\epigraph}[2]{\epigraphlist{#1}{#2}\oepi{#1}{#2}}
 
-\newcommand{\todo}[1]{\todolist{#1}{\color{red}\textbf{[TODO: #1]}}}
+\makeatletter
+\newwrite\myfile
+\immediate\openout\myfile=\jobname.todos
+\newcommand{\todo}[1]{%
+\todolist{#1}%
+{\color{red}\textbf{[TODO: #1]}}%
+\protected@write\myfile{}{\gdef\string\@todo{Chapter \thechapter\ -- #1}}
+}
+\makeatother
+
 \newcommand{\NickNote}[1]{{\color{green}\textbf{(Note to Nick: #1)}}}
 
 \definecolor{block-gray}{HTML}{D81E5B}
