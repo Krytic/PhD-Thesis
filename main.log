@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.18)  9 APR 2024 14:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.18)  10 APR 2024 16:02
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1612,8 +1612,8 @@ LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 ] [19
 
 ]) [20] (./main.tod
-Overfull \hbox (5.27649pt too wide) detected at line 10
-\T1/cmr/m/n/10 A.10 
+Overfull \hbox (0.27771pt too wide) detected at line 7
+\T1/cmr/m/n/10 A.7 
  []
 
 )
@@ -1631,7 +1631,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \tf@toe=\write14
 \openout14 = `main.toe'.
 
-<declaration_forms/Chapter05.pdf, id=739, 597.53635pt x 845.04686pt>
+<declaration_forms/Chapter05.pdf, id=737, 597.53635pt x 845.04686pt>
 File: declaration_forms/Chapter05.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter05.pdf>
 Package pdftex.def Info: declaration_forms/Chapter05.pdf  used on input line 62
@@ -1642,7 +1642,7 @@ File: declaration_forms/Chapter05.pdf Graphic file (type pdf)
 Package pdftex.def Info: declaration_forms/Chapter05.pdf  used on input line 62
 .
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
-<declaration_forms/Chapter05.pdf, id=742, page=1, 597.53635pt x 845.04686pt>
+<declaration_forms/Chapter05.pdf, id=740, page=1, 597.53635pt x 845.04686pt>
 File: declaration_forms/Chapter05.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter05.pdf, page 1>
 Package pdftex.def Info: declaration_forms/Chapter05.pdf , page1 used on input 
@@ -1747,7 +1747,7 @@ Package siunitx Info: Option "retain-unity-mantissa" has been deprecated in
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 372.
 
-<images/TheorySection/roche_potentials.png, id=1190, 444.4605pt x 602.25pt>
+<images/TheorySection/roche_potentials.png, id=1188, 444.4605pt x 602.25pt>
 File: images/TheorySection/roche_potentials.png Graphic file (type png)
 <use images/TheorySection/roche_potentials.png>
 Package pdftex.def Info: images/TheorySection/roche_potentials.png  used on inp
@@ -1777,12 +1777,12 @@ Chapter 3.
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 4.
 
-<images/KaitiakiFlow.pdf, id=1367, 661.47928pt x 684.53845pt>
+<images/KaitiakiFlow.pdf, id=1365, 661.47928pt x 684.53845pt>
 File: images/KaitiakiFlow.pdf Graphic file (type pdf)
 <use images/KaitiakiFlow.pdf>
 Package pdftex.def Info: images/KaitiakiFlow.pdf  used on input line 14.
 (pdftex.def)             Requested size: 472.03123pt x 488.49078pt.
-<images/StellarSynthesis/single_vs_binary.png, id=1370, 509.0217pt x 237.5274pt
+<images/StellarSynthesis/single_vs_binary.png, id=1368, 509.0217pt x 237.5274pt
 >
 File: images/StellarSynthesis/single_vs_binary.png Graphic file (type png)
 <use images/StellarSynthesis/single_vs_binary.png>
@@ -1797,7 +1797,7 @@ ary.png>] [30
 ]
 Chapter 4.
 [31]
-Overfull \hbox (3.04678pt too wide) in paragraph at lines 31--40
+Overfull \hbox (3.04678pt too wide) in paragraph at lines 33--42
  [][] 
  []
 
@@ -1833,78 +1833,92 @@ File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 
 (./_minted-main/22C35DF1C79DCF62B811E4D4364954605BD9CFCE54A68914ACB2DCF71641ADB
 0.pygtex) [33]
-<images/NatalKicks/EventRate_Distribution_Both.png, id=1556, 493.00185pt x 304.
+<images/NatalKicks/varying_de.png, id=1549, 527.20966pt x 319.4334pt>
+File: images/NatalKicks/varying_de.png Graphic file (type png)
+<use images/NatalKicks/varying_de.png>
+Package pdftex.def Info: images/NatalKicks/varying_de.png  used on input line 9
+9.
+(pdftex.def)             Requested size: 472.03123pt x 286.01051pt.
+ [34 <./images/NatalKicks/varying_de.png>]
+<images/NatalKicks/EventRate_Distribution_Both.png, id=1571, 493.00185pt x 304.
 2567pt>
 File: images/NatalKicks/EventRate_Distribution_Both.png Graphic file (type png)
 
 <use images/NatalKicks/EventRate_Distribution_Both.png>
 Package pdftex.def Info: images/NatalKicks/EventRate_Distribution_Both.png  use
-d on input line 101.
+d on input line 111.
 (pdftex.def)             Requested size: 472.03123pt x 291.31244pt.
- [34] [35 <./images/NatalKicks/EventRate_Distribution_Both.png>]
-Overfull \hbox (2.31754pt too wide) in paragraph at lines 130--143
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35 <./images/NatalKicks/EventRate_Distribution_Both.png>]
+Overfull \hbox (2.31754pt too wide) in paragraph at lines 140--153
  [][] 
  []
 
 [36]
-<images/NatalKicks/bray_vs_hobbs_pdf.png, id=1670, 441.8106pt x 320.03564pt>
+<images/NatalKicks/bray_vs_hobbs_pdf.png, id=1663, 441.8106pt x 320.03564pt>
 File: images/NatalKicks/bray_vs_hobbs_pdf.png Graphic file (type png)
 <use images/NatalKicks/bray_vs_hobbs_pdf.png>
 Package pdftex.def Info: images/NatalKicks/bray_vs_hobbs_pdf.png  used on input
- line 163.
+ line 173.
 (pdftex.def)             Requested size: 472.03123pt x 341.94641pt.
-<images/NatalKicks/ks_test_with_hobbs.png, id=1695, 459.1554pt x 296.18655pt>
+<images/NatalKicks/ks_test_with_hobbs.png, id=1688, 459.1554pt x 296.18655pt>
 File: images/NatalKicks/ks_test_with_hobbs.png Graphic file (type png)
 <use images/NatalKicks/ks_test_with_hobbs.png>
 Package pdftex.def Info: images/NatalKicks/ks_test_with_hobbs.png  used on inpu
-t line 172.
+t line 182.
 (pdftex.def)             Requested size: 472.03123pt x 304.51062pt.
-<images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png, id=1701, 480.71594pt
+<images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png, id=1694, 480.71594pt
  x 334.1283pt>
 File: images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png Graphic file (ty
 pe png)
 <use images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png>
 Package pdftex.def Info: images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.p
-ng  used on input line 181.
+ng  used on input line 191.
 (pdftex.def)             Requested size: 472.03123pt x 328.10628pt.
- [37 <./images/NatalKicks/bray_vs_hobbs_pdf.png>] [38 <./images/NatalKicks/ks_t
-est_with_hobbs.png>] [39 <./images/NatalKicks/individual_pdfs_with_cdf_and_hobb
-s.png>] [40]
-<images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png, id=1764
+ [37] [38 <./images/NatalKicks/bray_vs_hobbs_pdf.png>] [39 <./images/NatalKicks
+/ks_test_with_hobbs.png>] [40 <./images/NatalKicks/individual_pdfs_with_cdf_and
+_hobbs.png>]
+<images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png, id=1767
 , 457.2282pt x 319.9152pt>
 File: images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png Gra
 phic file (type png)
 <use images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png>
 Package pdftex.def Info: images/NatalKicks/All_Three_Constraints_with_USSNe_and
-_modeltype2.png  used on input line 210.
+_modeltype2.png  used on input line 220.
 (pdftex.def)             Requested size: 472.03123pt x 330.27785pt.
-<images/NatalKicks/Best_Model_Params.png, id=1769, 847.968pt x 377.7312pt>
+<images/NatalKicks/Best_Model_Params.png, id=1772, 847.968pt x 377.7312pt>
 File: images/NatalKicks/Best_Model_Params.png Graphic file (type png)
 <use images/NatalKicks/Best_Model_Params.png>
 Package pdftex.def Info: images/NatalKicks/Best_Model_Params.png  used on input
- line 219.
+ line 229.
 (pdftex.def)             Requested size: 472.03123pt x 210.27153pt.
- [41 <./images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png>]
-<images/NatalKicks/grid_shifting_peaks.png, id=1789, 497.2176pt x 298.4751pt>
+ [41] [42 <./images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.
+png>]
+<images/NatalKicks/grid_shifting_peaks.png, id=1803, 497.2176pt x 298.4751pt>
 File: images/NatalKicks/grid_shifting_peaks.png Graphic file (type png)
 <use images/NatalKicks/grid_shifting_peaks.png>
 Package pdftex.def Info: images/NatalKicks/grid_shifting_peaks.png  used on inp
-ut line 228.
+ut line 238.
 (pdftex.def)             Requested size: 472.03123pt x 283.37212pt.
-) (./chapters/chapter19.tex [42 <./images/NatalKicks/Best_Model_Params.png>] [4
-3 <./images/NatalKicks/grid_shifting_peaks.png>] [44]
+) (./chapters/chapter19.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [43 <./images/NatalKicks/Best_Model_Params.png>] [44 <./images/NatalKicks/grid
+_shifting_peaks.png>] [45] [46
+
+]
 Chapter 5.
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 11.
 
-) [45
+) [47] [48
 
-] [46
+] [49
 
-] [47
-
-] [48] (./chapters/appendices/appendixA.tex
+] [50] (./chapters/appendices/appendixA.tex
 Appendix A.
 \openout5 = `main.pyg'.
 
@@ -1926,7 +1940,7 @@ Missing character: There is no k in font nullfont!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49
+ [51
 
 ]
 Missing character: There is no c in font nullfont!
@@ -1937,7 +1951,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
 
-[50]
+[52]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -1967,7 +1981,7 @@ Missing character: There is no k in font nullfont!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [51]
+ [53]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -1976,7 +1990,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
 
-[52]
+[54]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -1994,7 +2008,7 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
- [53]
+ [55]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -2002,7 +2016,7 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
- [54]
+ [56]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -2010,7 +2024,7 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
-) (./chapters/appendices/appendixB.tex [55] [56
+) (./chapters/appendices/appendixB.tex [57] [58
 
 ]
 Appendix B.
@@ -2022,7 +2036,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrshort' on input line 2.
 
-<images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png, id=1880, 427.5975p
+<images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png, id=1900, 427.5975p
 t x 606.8271pt>
 File: images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png Graphic file (
 type png)
@@ -2030,33 +2044,33 @@ type png)
 Package pdftex.def Info: images/NatalKicks/PeriodEccentricityDiagrams-O3Contour
 .png  used on input line 8.
 (pdftex.def)             Requested size: 399.3188pt x 566.68968pt.
-) (./chapters/appendices/appendixC.tex [57] [58 <./images/NatalKicks/PeriodEcce
+) (./chapters/appendices/appendixC.tex [59] [60 <./images/NatalKicks/PeriodEcce
 ntricityDiagrams-O3Contour.png>]
 Appendix C.
-) [59
+) [61
 
-] [60
+] [62
 
 ] (./main.bbl
 LaTeX Info: Redefining \UD on input line 1.
 LaTeX Info: Redefining \DE on input line 1.
 LaTeX Info: Redefining \VAN on input line 1.
- [61
+ [63
 
-] [62] [63] [64] [65]) [66]
+] [64] [65] [66] [67]) [68]
 
 AED: lastpage setting LastPage
-[67] (./main.aux)
+[69] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: BFCA47662CD6E7351D7CB1BC971595DC;15837.
 runsystem(rm main.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 44799 strings out of 478512
- 903274 string characters out of 5849625
- 1320592 words of memory out of 5000000
- 61332 multiletter control sequences out of 15000+600000
+ 44809 strings out of 478512
+ 903573 string characters out of 5849625
+ 1320795 words of memory out of 5000000
+ 61341 multiletter control sequences out of 15000+600000
  453513 words of font info for 126 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  96i,20n,97p,1507b,2041s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2112,10 +2126,10 @@ st/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2021/texmf-dist
 /fonts/type1/public/cm-super/sfti1728.pfb></usr/local/texlive/2021/texmf-dist/f
 onts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2021/texmf-dist/fon
 ts/type1/public/cm-super/sfxc1440.pfb>
-Output written on main.pdf (93 pages, 8442252 bytes).
+Output written on main.pdf (95 pages, 8580341 bytes).
 PDF statistics:
- 2369 PDF objects out of 2487 (max. 8388607)
- 2052 compressed objects within 21 object streams
+ 2388 PDF objects out of 2487 (max. 8388607)
+ 2066 compressed objects within 21 object streams
  447 named destinations out of 1000 (max. 500000)
- 901 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 906 words of extra memory for PDF output out of 10000 (max. 10000000)
 

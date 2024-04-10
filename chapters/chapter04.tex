@@ -17,9 +17,11 @@ As a consequence of conservation of momentum, it can be shown that if the ejecta
     v_\text{k} = \alpha\left(\frac{M_\text{ej}}{M_\text{rem}}\right)+\beta\left(\frac{M_\text{NS}}{M_\text{rem}}\right),\label{eq:bray_kick_pure}
 \end{equation}
 
-for free parameters $\alpha$ and $\beta$ (both measured in $\si{\km\per\second}$). This introduces, effectively, four free parameters in $\alpha, \beta, \theta, \phi$ (the latter two being azimuthal and equatorial angles of the ejecta mass). We assume that the preferential axis is sampled uniformly across the $4\pi$ steradians of the star, and that our only two free parameters are $\alpha$ and $\beta$. It is pertinent to note two things due to this assumption: firstly, we are not assuming that the ejection occurs along one axis and that the kick is aligned along a different, random, axis. Rather, we are assuming that the ejection occurs randomly and that the kick is antialigned to that. The second note is that there is considerable uncertainty around the nature of the kick and the precise mechanism that causes it to eject along a given axis. Due to this we must take a random approach, however we will simulate sufficiently many systems (on the order of $\mathcal{O}(10^12)$) that this will be marginalised over. \todo{shit reasoning}
+for free parameters $\alpha$ and $\beta$ (both measured in $\si{\km\per\second}$). Here, $M_\text{NS}$ is the mass of a \gls{ns}; if the kick is applied to a \gls{ns}, then $M_\text{NS}=M_\text{rem}$ and the coefficient reduces to unity. If the kick is applied to a \gls{bh}, then we can take $M_\text{NS}=\SI{1.4}{\msun}$, which serves to convert the distribution from one in velocity-space to one in momentum-space; see \citet{bray_neutron_2016,bray_neutron_2018,richards_new_2023} for further detail.
 
-The ``traditional'' way to refine the two free parameters, as outlined in \citet{bray_neutron_2016, bray_neutron_2018}, is to refine based on isolated pulsar velocities. This methodology, however, has significant drawbacks. Notably, the reliance on one observation can engender biases in the result at the expense of no longer predicting accurate results for other observables. For instance, in the limit of \glspl{ussne} where the ejecta-remnant mass ratio becomes small, the fiducial Bray kick in \citet{bray_neutron_2018} would produce kick velocities that are strongly negative, contrasted with the weak kicks we expect from these supernovae \citep[e.g.,][]{willcox_constraints_2021}. It becomes evident that a new pipeline is needed, whereupon more constraints than simply pulsar velocities are tested. In this Chapter, we outline four such tests that form the basis of the work performed in \citet{richards_new_2023}.
+This parameterization introduces, effectively, four free parameters in $\alpha, \beta, \theta, \phi$ (the latter two being azimuthal and equatorial angles of the ejecta mass). We assume that the preferential axis is sampled uniformly across the $4\pi$ steradians of the star, and that our only two free parameters are $\alpha$ and $\beta$. It is pertinent to note two things due to this assumption: firstly, we are not assuming that the ejection occurs along one axis and that the kick is aligned along a different, random, axis. Rather, we are assuming that the ejection occurs randomly and that the kick is antialigned to that. The second note, explored further in \autoref{sec:natal_kick_prescriptions}, is that there is considerable uncertainty around the nature of the kick and the precise mechanism that causes it to eject along a given axis. This is the reason we sample the kick direction uniformly, though we will simulate sufficiently many systems (on the order of $\mathcal{O}(10^{12})$) that this will be marginalised over.
+
+The ``traditional'' way to refine the two free parameters, as outlined in \citet{bray_neutron_2016, bray_neutron_2018}, is to refine based on isolated pulsar velocities. This methodology, however, has significant drawbacks. Notably, the reliance on one observation can engender biases in the result at the expense of no longer predicting accurate results for other observables. For instance, in the limit of \glspl{ussne} where the ejecta-remnant mass ratio becomes small, the fiducial kick in \citet{bray_neutron_2018} would produce kick velocities that are strongly negative, contrasted with the weak kicks we expect from these supernovae \citep[e.g.,][]{willcox_constraints_2021}. It becomes evident that a new pipeline is needed, whereupon more constraints than simply pulsar velocities are tested. In this Chapter, we outline four such tests that form the basis of the work performed in \citet{richards_new_2023}.
 
 \subsection{Parameter space}
 
@@ -42,7 +44,7 @@ We perform our computation on three populations, outlined in \autoref{tab:popula
     \label{tab:populations}
 \end{table}
 
-\subsection{Natal Kick Prescriptions}
+\subsection{Natal Kick Prescriptions}\label{sec:natal_kick_prescriptions}
 
 It is pertinent to note that there are conflicting accounts as to the cause of the kick \citep[see, for example,][]{fryer_population_1998,arzoumanian_velocity_2002,bombaci_nature_2004,hobbs_statistical_2005,bray_neutron_2016,verbunt_observed_2017}, there are conflicting accounts as to the form and distribution of the kick too, as discussed in, for example, \citet{blaauw_origin_1961,gunn_nature_1970,de_loore_evolution_1975,sutantyo_asymmetric_1978,hobbs_statistical_2005,baker_modeling_2008,wongwathanarat_three-dimensional_2013,bray_neutron_2018,giacobbo_revising_2020,mandel_simple_2020}.
 
@@ -86,11 +88,19 @@ Algorithmically, both codes employ a simple Euler integration routine (where $f_
     where all symbols have the same meaning as in \autoref{sec:post_SN}. The integral in the intermediate case is evaluated numerically, taking a fixed timestep of $\mathrm{d}e=\frac{e_0}{10000}$ such that the discretised sum becomes nothing more than
 
     \begin{equation}
-        T(e_0) = \frac{e_0}{10000}\sum_{e=0}^{e_0} \frac{e^\frac{22}{19}\left(1+\frac{121}{304}e^2\right)^\frac{1181}{2299}}{\left(1-e^2\right)^\frac32},
+        T(e_0) = \frac{e_0}{10000}\sum_{e=0}^{e_0} \frac{e^\frac{22}{19}\left(1+\frac{121}{304}e^2\right)^\frac{1181}{2299}}{\left(1-e^2\right)^\frac32},\label{eq:discrete_sum}
     \end{equation}
 
-    and dependence of the coalescence time $t_\text{c}$ on the initial separation $a_0$ is handled through the $c_0$ term.
+    and dependence of the coalescence time $t_\text{c}$ on the initial separation $a_0$ is handled through the $c_0$ term. Since the step size is an arbitrary choice, a tradeoff can be made between accuracy and runtime. \autoref{fig:vary_de} shows the effect of changing the step size ($\frac{e_0}{10000}$ in \autoref{eq:discrete_sum}) on convergence to a final result.
 \end{enumerate}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{images/NatalKicks/varying_de.png}
+    \caption[The effect of varying $\mathrm{d}e$ in \autoref{eq:discrete_sum}.]{The effect of varying $\mathrm{d}e$ in \autoref{eq:discrete_sum} on the coalescence time. Although hard to see, the pink line does oscillate above and below the brown line. This binary was assumed to have $m_1=m_2=\SI{1.44}{\msun}$ and $a_0=\SI{1970.5}{\rsun}$ (the mean separation of a sample of binaries with $\alpha=\SI{100}{\km\per\s}, \beta=\SI{-170}{\km\per\s}$).}
+    \label{fig:vary_de}
+\end{figure}
+
 
 \section{Merger Rates of BNS systems}
 
@@ -199,11 +209,11 @@ To account for these supernova kicks, we introduce a new constraint onto our par
     \item The envelope mass $m_\text{env}\leq\SI{0.2}{\msun}$.
 \end{enumerate}
 
-For every combination $\alpha, \beta$, we record whether it is capable of producing one \gls{ussne}. The constraint is that this heuristic is met. This constraint is extremely conservative, insofar as we do not constrain on the prevalence of \glspl{ussne} in our sample, but rather by whether or not they are possible at all. The reason for the conservatism here is that the rates of Type Ic \glspl{ussne} are expected to be very low. In the BPASS dataset, they comprise 1.8 per cent of all \glspl{ccsne} \citep{stevance_ussne_2022}. The paucity of data alongside the paucity of observational evidence suggests a low rate, but since the prevalence is unknown, we place the conservative constraint of at least one \gls{ussne} to be agnostic as to the prevalence. This will effectively widen our error bars such that when the \glspl{ussne} rate is narrowed down, it will shrink the parameter space. \todo{blegh wording}
+For every combination $\alpha, \beta$, we record whether it is capable of producing one \gls{ussne}. The constraint is that this heuristic is met. This constraint is extremely conservative, insofar as we do not constrain on the prevalence of \glspl{ussne} in our sample, but rather by whether or not they are possible at all. The reason for the conservatism here is that the rates of Type Ic \glspl{ussne} are expected to be very low. In the BPASS dataset, they comprise 1.8 per cent of all \glspl{ccsne} \citep{stevance_ussne_2022}. The paucity of data alongside the paucity of observational evidence suggests a low rate, but since the prevalence is unknown, we place the conservative constraint of at least one \gls{ussne} to be agnostic. This effectively widens our error bars such that when the \glspl{ussne} rate is refined further, it will shrink the parameter space.
 
 \section{Refinement of the parameter space}
 
-The constraints above can be overlaid onto our parameter space, which is shown in \autoref{fig:all_four_constraints_on_kicks}. The center of mass of our fit region is located at $\alpha=\SI[parse-numbers = false]{117^{+36}_{-51}}{\km\per\s}, \beta=\SI[parse-numbers = false]{13^{+8}_{-14}}{\km\per\s}$, however this value is computed on a finer grid than the parameter space and is thus likely to be an overfit to the data. We thus report the final recommended model value to the nearest half-bin-width of the parameter space, broadening error bars where necessary, \todo{explain why?} and find $\alpha=\SI[parse-numbers = false]{115^{+40}_{-55}}{\km\per\s}, \beta=\SI[parse-numbers = false]{15^{+10}_{-15}}{\km\per\s}$ as the recommended model value.
+The constraints above can be overlaid onto our parameter space, which is shown in \autoref{fig:all_four_constraints_on_kicks}. The center of mass of our fit region is located at $\alpha=\SI[parse-numbers = false]{117^{+36}_{-51}}{\km\per\s}, \beta=\SI[parse-numbers = false]{13^{+8}_{-14}}{\km\per\s}$, however this value is computed on a finer grid than the parameter space and is thus likely to be an overfit to the data. We thus report the final recommended model value to the nearest half-bin-width of the parameter space, broadening error bars where necessary, and find $\alpha=\SI[parse-numbers = false]{115^{+40}_{-55}}{\km\per\s}, \beta=\SI[parse-numbers = false]{15^{+10}_{-15}}{\km\per\s}$ as the recommended model value. Error bars are always broadened here; traditional rounding would result in the upper bound on $\alpha$ (being \SI{153}{\km\per\s}) becoming \SI{150}{\km\per\s}, which artifically removes potentially permissible regions of the parameter space. Broadening the bars removes this at the cost of potentially admitting values that do not belong within the ``acceptable'' zone. Further constraints, however, will shrink the region, so this is an acceptable tradeoff.
 
 \begin{figure}[!htbp]
     \centering

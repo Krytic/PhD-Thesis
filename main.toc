@@ -64,20 +64,20 @@
 \contentsline {subsection}{\numberline {4.1.1}Parameter space}{32}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Natal Kick Prescriptions}{32}{subsection.4.1.2}%
 \contentsline {subsection}{\numberline {4.1.3}The \textsc {\MakeLowercase {Takahe}} binary evolution code}{33}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Merger Rates of BNS systems}{34}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Period-Eccentricity Distributions}{34}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Log-Likelihood calculations}{34}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.2}Merger Rates of BNS systems}{35}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Period-Eccentricity Distributions}{36}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Log-Likelihood calculations}{36}{subsection.4.3.1}%
 \contentsline {section}{\numberline {4.4}Single-Star Kick Velocities}{36}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}Pulsar dataset}{37}{subsection.4.4.1}%
-\contentsline {section}{\numberline {4.5}Production of Ultra-Stripped Supernovae}{40}{section.4.5}%
+\contentsline {section}{\numberline {4.5}Production of Ultra-Stripped Supernovae}{41}{section.4.5}%
 \contentsline {section}{\numberline {4.6}Refinement of the parameter space}{41}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Chapter Summary}{42}{section.4.7}%
-\contentsline {chapter}{\numberline {5}Conclusion}{45}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Summary}{45}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Limitations}{45}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Suggested Future Work}{45}{section.5.3}%
-\contentsline {chapter}{Appendices}{47}{section*.27}%
-\contentsline {chapter}{\numberline {A}Code Samples}{49}{appendix.a.A}%
-\contentsline {chapter}{\numberline {B}Period-Eccentricity distributions along the \acrshort {lvk} \acrshort {o3} contour}{57}{appendix.a.B}%
-\contentsline {chapter}{\numberline {C}Supplementary Maths (if necessary)}{59}{appendix.a.C}%
-\contentsline {chapter}{Bibliography\ttl@gmk {\@mkboth {\MakeUppercase {Bibliography}}{\MakeUppercase {Bibliography}}}}{61}{appendix*.28}%
+\contentsline {section}{\numberline {4.7}Chapter Summary}{45}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Conclusion}{47}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Summary}{47}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Limitations}{47}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Suggested Future Work}{47}{section.5.3}%
+\contentsline {chapter}{Appendices}{49}{section*.27}%
+\contentsline {chapter}{\numberline {A}Code Samples}{51}{appendix.a.A}%
+\contentsline {chapter}{\numberline {B}Period-Eccentricity distributions along the \acrshort {lvk} \acrshort {o3} contour}{59}{appendix.a.B}%
+\contentsline {chapter}{\numberline {C}Supplementary Maths (if necessary)}{61}{appendix.a.C}%
+\contentsline {chapter}{Bibliography\ttl@gmk {\@mkboth {\MakeUppercase {Bibliography}}{\MakeUppercase {Bibliography}}}}{63}{appendix*.28}%
