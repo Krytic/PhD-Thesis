@@ -88,7 +88,7 @@ Algorithmically, both codes employ a simple Euler integration routine (where $f_
     where all symbols have the same meaning as in \autoref{sec:post_SN}. The integral in the intermediate case is evaluated numerically, taking a fixed timestep of $\mathrm{d}e=\frac{e_0}{10000}$ such that the discretised sum becomes nothing more than
 
     \begin{equation}
-        T(e_0) = \frac{e_0}{10000}\sum_{e=0}^{e_0} \frac{e^\frac{22}{19}\left(1+\frac{121}{304}e^2\right)^\frac{1181}{2299}}{\left(1-e^2\right)^\frac32},\label{eq:discrete_sum}
+        t_\text{c}\pqty{0.01\leq e_0\leq 0.99} = \frac{e_0}{10000}\frac{12}{19}\frac{c_0^4}{\beta}\sum_{e=0}^{e_0} \frac{e^\frac{22}{19}\left(1+\frac{121}{304}e^2\right)^\frac{1181}{2299}}{\left(1-e^2\right)^\frac32},\label{eq:discrete_sum}
     \end{equation}
 
     and dependence of the coalescence time $t_\text{c}$ on the initial separation $a_0$ is handled through the $c_0$ term. Since the step size is an arbitrary choice, a tradeoff can be made between accuracy and runtime. \autoref{fig:vary_de} shows the effect of changing the step size ($\frac{e_0}{10000}$ in \autoref{eq:discrete_sum}) on convergence to a final result.

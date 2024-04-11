@@ -457,88 +457,115 @@ Hence the extrema of the potential $V$ are at the points $\xi$ where (taking $\e
     0=\xi-\frac{\xi_2}{\pqty{\xi-\xi_1}^2}-\frac{\xi_1}{\pqty{\xi-\xi_2}^2}.\label{eq:roche_lobe_condition}
 \end{equation}
 
-% i.e.,
+i.e.,
 
 % \begin{equation}
 %     0=\frac{\xi_2\xi-\xi_2\xi_1}{\pqty{\xi^2+\xi_1^2-2\xi\xi_1+\eta^2}^\frac32}+\frac{\xi_1\xi-\xi_1\xi_2}{\pqty{\xi^2+\xi_2^2-2\xi\xi_2+\eta^2}^\frac32}+\xi,
 % \end{equation}
 
-No analytical function for $\xi$ exists unless either or both of $\xi_1, \xi_2$ are zero (which would only be the case for a single star), thus we must make approximations. First, we note that if $q=\frac{M_2}{M_1}$ the $\xi_1, \xi_2$ coefficients can be written as
+No analytical function for $\xi$ exists unless either or both of $\xi_1, \xi_2$ are zero (which would only be the case for a single star), thus we must make approximations.
 
-\begin{equation}
-    \xi_1 = \frac{q}{1+q},\qquad\xi_2 = \frac{1}{q+1}.
-\end{equation}
+%First, we note that if $q=\frac{M_2}{M_1}$ the $\xi_1, \xi_2$ coefficients can be written as
 
-Define $z=1+q$, and then \autoref{eq:roche_lobe_condition} becomes
+% \begin{equation}
+%     \xi_1 = \frac{q}{1+q},\qquad\xi_2 = \frac{1}{q+1}.
+% \end{equation}
 
-\begin{align}
-    0 &= \xi-\frac{1}{z}\frac{1}{\pqty{\xi-\frac{q}{z}}^2}-\frac{q}{z}\frac{1}{\pqty{\xi-\frac{1}{z}}^2} \\
-    &= \xi-\frac{z}{\pqty{z\xi-q}^2}-\frac{qz}{\pqty{z\xi-1}^2},
-\end{align}
+% Define $z=1+q$, and then \autoref{eq:roche_lobe_condition} becomes
 
-which may be rearranged to
+% \begin{align}
+%     0 &= \xi-\frac{1}{z}\frac{1}{\pqty{\xi-\frac{q}{z}}^2}-\frac{q}{z}\frac{1}{\pqty{\xi-\frac{1}{z}}^2} \\
+%     &= \xi-\frac{z}{\pqty{z\xi-q}^2}-\frac{qz}{\pqty{z\xi-1}^2},
+% \end{align}
 
-\begin{equation}
-    \xi=\frac{z}{\pqty{z\xi-q}^2}+\frac{qz}{\pqty{z\xi-1}^2}.
-\end{equation}
+% which may be rearranged to
 
-With tedious algebra it can be shown that this condition is equivalent to a quintic in $\xi$ with coefficients
+% \begin{equation}
+%     \xi=\frac{z}{\pqty{z\xi-q}^2}+\frac{qz}{\pqty{z\xi-1}^2}.
+% \end{equation}
 
-\begin{equation}
-    0=\sum_{n=0}^5 \pqty{-1}^{n+1} a_n\xi^n~\text{where}~\left\{\begin{array}{rl}
-        a_0 &= q^4+q^3+q+1 \\
-        a_1 &= 2q^3 +7q^2+6q+2 \\
-        a_2 &= 4q^3 +9q^2+6q+1 \\
-        a_3 &= q^2+2q+1\\
-        a_4 &= 2q^4+8q^3+12q^2+8q+2\\
-        a_5 &= q^4+4q^3 +6q^2+4q+1
-    \end{array}\right.
-\end{equation}
+% With tedious algebra it can be shown that this condition is equivalent to a quintic in $\xi$ with coefficients
 
-with solutions given by the eigenvalues of the companion matrix, i.e., $\xi$ obeys
+% \begin{equation}
+%     0=\sum_{n=0}^5 \pqty{-1}^{n+1} a_n\xi^n~\text{where}~\left\{\begin{array}{rl}
+%         a_0 &= q^4+q^3+q+1 \\
+%         a_1 &= 2q^3 +7q^2+6q+2 \\
+%         a_2 &= 4q^3 +9q^2+6q+1 \\
+%         a_3 &= q^2+2q+1\\
+%         a_4 &= 2q^4+8q^3+12q^2+8q+2\\
+%         a_5 &= q^4+4q^3 +6q^2+4q+1
+%     \end{array}\right.
+% \end{equation}
 
-\begin{equation}
-    0 = \det\begin{pmatrix}
-       -\xi & 0 & 0 & 0 &  \frac{q^4+q^3+q+1}{q^4+4q^3+6q^2+4q+1} \\
-        1 & -\xi & 0 & 0 & -\frac{2q^3+7q^2+6q+2}{q^4+4q^3+6q^2+4q+1} \\
-        0 & 1 & -\xi & 0 &  \frac{4q^3 +9q^2+6q+1}{q^4+4q^3+6q^2+4q+1} \\
-        0 & 0 & 1 & -\xi & -\frac{q^2+2q+1}{q^4+4q^3+6q^2+4q+1} \\
-        0 & 0 & 0 & 1 &  \frac{2q^4+8q^3+12q^2+8q+2}{q^4+4q^3+6q^2+4q+1}-\xi \\
-    \end{pmatrix},
-\end{equation}
+% with solutions given by the eigenvalues of the companion matrix, i.e., $\xi$ obeys
 
-which may be written more conveniently as
+% \begin{equation}
+%     0 = \det\begin{pmatrix}
+%        -\xi & 0 & 0 & 0 &  \frac{q^4+q^3+q+1}{q^4+4q^3+6q^2+4q+1} \\
+%         1 & -\xi & 0 & 0 & -\frac{2q^3+7q^2+6q+2}{q^4+4q^3+6q^2+4q+1} \\
+%         0 & 1 & -\xi & 0 &  \frac{4q^3 +9q^2+6q+1}{q^4+4q^3+6q^2+4q+1} \\
+%         0 & 0 & 1 & -\xi & -\frac{q^2+2q+1}{q^4+4q^3+6q^2+4q+1} \\
+%         0 & 0 & 0 & 1 &  \frac{2q^4+8q^3+12q^2+8q+2}{q^4+4q^3+6q^2+4q+1}-\xi \\
+%     \end{pmatrix},
+% \end{equation}
 
-\begin{equation}
-    0 = \det\begin{pmatrix}{}
-       -\xi & 0 & 0 & 0 &  -2z \\
-        1 & -\xi & 0 & 0 & \frac{-2z^3-q^2}{z^4} \\
-        0 & 1 & -\xi & 0 &  \frac{4q+1}{z^2} \\
-        0 & 0 & 1 & -\xi & -\frac{1}{z^2} \\
-        0 & 0 & 0 & 1 &  2-\xi \\
-    \end{pmatrix}.\label{eq:determinant_formula_for_RL}
-\end{equation}
+% which may be written more conveniently as
 
-This reduces to the quintic
+% \begin{equation}
+%     0 = \det\begin{pmatrix}{}
+%        -\xi & 0 & 0 & 0 &  -2z \\
+%         1 & -\xi & 0 & 0 & \frac{-2z^3-q^2}{z^4} \\
+%         0 & 1 & -\xi & 0 &  \frac{4q+1}{z^2} \\
+%         0 & 0 & 1 & -\xi & -\frac{1}{z^2} \\
+%         0 & 0 & 0 & 1 &  2-\xi \\
+%     \end{pmatrix}.\label{eq:determinant_formula_for_RL}
+% \end{equation}
 
-\begin{equation}
-    \xi^5 - 2\xi^4+\frac{1}{z^2}\xi^3-\frac{4q+1}{z^2}\xi^2-\frac{-2z^3-q^2}{z^4}+2z = 0.\label{eq:quintic_formula_for_RL}
-\end{equation}
+% This reduces to the quintic
 
-Solving either \autoref{eq:determinant_formula_for_RL} or \autoref{eq:quintic_formula_for_RL} admits an exact solution for
+% \begin{equation}
+%     \xi^5 - 2\xi^4+\frac{1}{z^2}\xi^3-\frac{4q+1}{z^2}\xi^2-\frac{-2z^3-q^2}{z^4}+2z = 0.\label{eq:quintic_formula_for_RL}
+% \end{equation}
+
+% Solving either \autoref{eq:determinant_formula_for_RL} or \autoref{eq:quintic_formula_for_RL} admits an exact solution for
 
 
 \subsubsection{Roche Lobe Overflow -- the \texorpdfstring{$\mathcal{L}_1$}{inner Lagrangian} point}
 
-The inner Lagrangian point has the approximation from \citet{eggleton_aproximations_1983}, which in our notation, is
+The inner Lagrangian point has the approximation from \citet{eggleton_aproximations_1983}, which is
 
 \begin{equation}
-    \xi = \frac{R_\text{L}}{a} = \frac{0.49\pqty{\frac{\xi_1}{\xi_2}}^\frac23}{0.6\pqty{\frac{\xi_1}{\xi_2}}^\frac23+\ln\pqty{1+\pqty{\frac{\xi_1}{\xi_2}}^\frac13}}
+    \frac{R_\text{L}}{a} \approx \frac{0.49q^\frac23}{0.6q^\frac23+\ln\pqty{1+q^\frac13}}.\label{eq:RL1_eggleton}
 \end{equation}
 
+A plot of this approximation against a numerical integration of the volume of the true Roche lobe is given in \autoref{fig:eggleton_approx}. Eggleton's formula is a volume-equivalent one; although his radius $R_\text{L} < \xi$, the volume of an Eggleton-Roche sphere $\frac43 \pi R_\text{L}^3$ is approximately equal (to within 1 per cent) of the numerically integrated volume.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{images/TheorySection/eggleton_justification.png}
+    \caption[The volume of the Roche Lobe computed numerically through Monte-Carlo integration vs the volume assuming \autoref{eq:RL1_eggleton}.]{The volume of the Roche Lobe computed numerically through Monte-Carlo integration (orange) vs the volume assuming \autoref{eq:RL1_eggleton} (blue). The Eggleton approximation fits well to the volume, with around 1 per cent error across the entire mass ratio range (truncated here to $q\leq 1$).}
+    \label{fig:eggleton_approx}
+\end{figure}
 
 
 \subsubsection{Roche Lobe Overflow -- the \texorpdfstring{$\mathcal{L}_2$}{outer Lagrangian} point}
+
+The outer Lagrangian point, $\mathcal{L}_2$, is given by a different zero of the potential function. The approximation we use is that of \citet{marchant_new_2016}, where
+
+\begin{equation}
+    R_\text{L2} = R_\text{L}(q) \pqty{1+\frac{0.299\arctan\pqty{\frac{1.84}{q^{0.397}}}}{q^{0.520}}},\label{eq:RL2_marchant}
+\end{equation}
+
+and $R_\text{L}(q)$ is given by \autoref{eq:RL1_eggleton}.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{images/TheorySection/marchant_justification.png}
+    \caption[As for \autoref{fig:eggleton_approx}, but for the $\mathcal{L}_2$ point.]{As for \autoref{fig:eggleton_approx}, but for the $\mathcal{L}_2$ point with formula given by \autoref{eq:RL2_marchant} \citep{marchant_new_2016}.}
+    \label{fig:marchant_approx}
+\end{figure}
+
+We note that \citet{marchant_new_2016} uses an inverse mass ratio definition compared to \citet{eggleton_aproximations_1983}, that is, \citet{marchant_new_2016} takes $q_\text{Marchant}=\frac{M_1}{M_2}$ whereas \citet{eggleton_aproximations_1983} takes $q_\text{Eggleton}=\frac{M_2}{M_1}=\frac{1}{q_\text{Marchant}}$. This is accounted for in \autoref{eq:RL2_marchant} such that the mass ratios are consistent (and we take $q=q_\text{Eggleton}$), but other texts do not necessarily differentiate or describe the difference.
 
 \subsection{Common Envelope Evolution}
 

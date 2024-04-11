@@ -3,6 +3,8 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces A rough outline of supernova classification.}}{14}{figure.2.1}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces A schematic of a simple binary star system.}}{15}{figure.2.2}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces The dimensionless Roche potential as a function of mass ratio $q$.}}{17}{figure.2.3}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces The volume of the Roche Lobe computed numerically through Monte-Carlo integration vs the volume assuming \autoref {eq:RL1_eggleton}.}}{20}{figure.2.4}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces As for \autoref {fig:eggleton_approx}, but for the $\mathcal {L}_2$ point.}}{20}{figure.2.5}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Control flow of a grid calculation performed by \textsc {Kaitiaki}.}}{28}{figure.3.1}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces The evolution of an \SI {10}{\msun } (leftmost) and \SI {8}{\msun } (centermost) star as both single stars and as a binary with a period of \SI {30}{\day } (rightmost).}}{29}{figure.3.2}%
