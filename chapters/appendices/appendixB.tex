@@ -1,11 +1,24 @@
 % !TEX root = ../../main.tex
-\chapter{Period-Eccentricity distributions along the \acrshort{lvk} \acrshort{o3} contour}\label{chap:ligo_contour_results}
+\chapter{Code Versions}
 
-In \autoref{fig:o3a_contour_figure} we display the period-eccentricity distributions along the \gls{lvk} \gls{o3} contour. We also display a white dashed line corresponding to a merger time contour of the Hubble time. Most plots have a white region in the lower right corner of the plot, which corresponds to no systems passing through those bins. We use the definition of a \gls{mweg} from \citet{kasen_origin_2017}, namely that there is one \gls{mweg} per $(\SI{4.4}{\mega\pc})^3$.
-
-\begin{figure}[!htbp]
+\begin{table*}[!htbp]
     \centering
-    \includegraphics[height=0.9\textheight]{images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png}
-    \caption[The period-eccentricity distributions of populations governed by Bray kicks across the \acrshort{ligo} \acrshort{o3} contour.]{The period-eccentricity distributions of populations governed by Bray kicks across the \gls{ligo} \gls{o3} contour. The combination of $\alpha$ and $\beta$ used in the kick prescription is given in white along the left side of each plot. White regions denote no systems passing through those bins.}
-    \label{fig:o3a_contour_figure}
-\end{figure}
+    \begin{tabular}{l|cc}
+        \toprule
+            \textbf{Code Name} & \textbf{Version} & \textbf{Reference} \\
+        \midrule%begin-replace
+            \codename{Hoki}       & 1.7.1  & \citet{stevance_hoki_2020}            \\
+            \codename{Kaitiaki}   & 1.0.0  &                                       \\
+            \codename{Matplotlib} & 3.8.2  & \citet{hunter_matplotlib_2007}        \\
+            \codename{Numba}      & 0.58.1 & \citet{lam_numba_2015}                \\
+            \codename{Numpy}      & 1.26.3 & \citet{harris_array_2020}             \\
+            \codename{Pandas}     & 2.1.4  & \citet{mckinney_data_2010}            \\
+            \codename{Python}     & 3.11.5 &                                       \\
+            \codename{Scipy}      & 1.11.4 & \citet{virtanen_scipy_2020}           \\
+            \codename{Takahe}     & 1.0.0  & \citet{richards_new_2023}             \\
+            \codename{Tui}        & 8      & \citet{ghodla_evaluating_2023}$^\ast$ \\
+        \bottomrule%end-replace
+    \end{tabular}
+    \caption{The code versions we use in this thesis. $^\ast$\codename{Tui} was described in earlier papers, but \citet{ghodla_evaluating_2023} was the first to name it.}
+    \label{tab:code_version}
+\end{table*}

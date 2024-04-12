@@ -2,9 +2,11 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces The populations under study.}}{32}{table.4.1}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces The systems we use in our study.}}{37}{table.4.2}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces The populations under study.}}{34}{table.4.1}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces The systems we use in our study.}}{39}{table.4.2}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {B.1}{\ignorespaces The code versions we use in this thesis. $^\ast $\textsc {\MakeLowercase {Tui}} was described in earlier papers, but \citet {ghodla_evaluating_2023} was the first to name it.}}{61}{table.a.B.1}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

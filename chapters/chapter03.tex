@@ -5,9 +5,15 @@
 
 As discussed in \autoref{sec:binary_evolution}, the presence of a companion measurably alters the evolution of a star.
 
-This chapter is structured as follows. First, we will discuss the grid-watcher code we have developed to both manage the \codename{stars} code, namely \codename{kaitiaki}. We will then briefly explore some of the general features of binary evolution before moving into two areas of particular interest: the close-contact regime (where the binary period can be as short as \SI{85}{\minute}), and variable composition accretion, where material being accreted is allowed to vary.
+This chapter is structured as follows. First, we will discuss the grid-watcher code we have developed to both manage the \codename{stars} code and interpret its output, namely \codename{kaitiaki}. We will then briefly explore some of the general features of binary evolution before moving into two areas of particular interest: the close-contact regime (where the binary period can be as short as \SI{85}{\minute}), and variable composition accretion, where material being accreted is allowed to vary.
 
 \section{The \codename{Kaitiaki} grid-watcher code}\label{chap:numerical_methods_kaitiaki}
+
+\codename{Kaitiaki} is a grid-watcher code that sits atop the \codename{STARS} code and manages its execution. It was developed primarily to manipulate the fixed-width text files that \codename{STARS} uses, in contrast to the ``typical'' manipulation done through the command line.
+
+The core of \codename{Kaitiaki} is \mintinline{Python}{STARSController()} interface. The most na\"ive run would be to initialise a model of, say, \SI{8}{\msun} and evolve it until it evolves up the \gls{agb}. A sample of code for this is shown in \autoref{kaitiaki_runs}.
+
+\pythonfile[label=kaitiaki_runs]{The \codename{Kaitiaki} function \mintinline{Python}{run_default_evolution()}}{chapters/listings/Kaitiaki-Run-Default.py}
 
 \begin{figure}[!htbp]
     \centering
