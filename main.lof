@@ -2,24 +2,25 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces A rough outline of supernova classification.}}{14}{figure.2.1}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces A schematic of a simple binary star system.}}{15}{figure.2.2}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces The dimensionless Roche potential as a function of mass ratio $q$.}}{17}{figure.2.3}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces The volume of the Roche Lobe computed numerically through Monte-Carlo integration vs the volume assuming \autoref {eq:RL1_eggleton}.}}{19}{figure.2.4}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces As for \autoref {fig:eggleton_approx}, but for the $\mathcal {L}_2$ point.}}{20}{figure.2.5}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces The dimensionless Roche potential as a function of mass ratio $q$.}}{18}{figure.2.3}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces A schematic of the Roche lobe formula \autoref {eq:RL1_eggleton}.}}{20}{figure.2.4}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces The volume of the Roche Lobe computed numerically through Monte-Carlo integration vs the volume assuming \autoref {eq:RL1_eggleton}.}}{20}{figure.2.5}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces As for \autoref {fig:eggleton_approx}, but for the $\mathcal {L}_2$ point.}}{21}{figure.2.6}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Control flow of a grid calculation performed by \textsc {Kaitiaki}.}}{30}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces The evolution of an \SI {10}{\msun } (leftmost) and \SI {8}{\msun } (centermost) star as both single stars and as a binary with a period of \SI {30}{\day } (rightmost).}}{31}{figure.3.2}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Control flow of a grid calculation performed by \textsc {Kaitiaki}.}}{31}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The evolution of an \SI {10}{\msun } (leftmost) and \SI {8}{\msun } (centermost) star as both single stars and as a binary with a period of \SI {30}{\day } (rightmost).}}{32}{figure.3.2}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces The effect of varying $\mathrm {d}e$ in \autoref {eq:discrete_sum}.}}{36}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces The merger rate as a function of kick parameters $\alpha $ and $\beta $.}}{37}{figure.4.2}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces The \acrshort {pdf} and \acrshort {cdf} of the distributions using kicks from \citet {hobbs_statistical_2005,bray_neutron_2018,willcox_constraints_2021}.}}{40}{figure.4.3}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces The \acrshort {ks} statistic for \textsc {FineGrid} and \textsc {WideGrid}.}}{41}{figure.4.4}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces The \acrshortpl {pdf} and \acrshortpl {cdf} of four systems, alongside the Hobbs \acrshort {cdf} and \citet {willcox_constraints_2021} \acrshort {cdf}.}}{42}{figure.4.5}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces The four constraints we apply overlaid on our \textsc {FineGrid} parameter space.}}{44}{figure.4.6}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces The \acrshort {cdf} for a population of isolated pulsars and the period-eccentricity distribution for $\alpha =\SI {115}{\km \per \s }, \beta =\SI {15}{\km \per \s }$.}}{45}{figure.4.7}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces The peak of the event rate $\mathcal {R}(t)$ as a function of $\alpha $ and $\beta $.}}{46}{figure.4.8}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The effect of varying $\mathrm {d}e$ in \autoref {eq:discrete_sum}.}}{38}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The merger rate as a function of kick parameters $\alpha $ and $\beta $.}}{39}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces The \acrshort {pdf} and \acrshort {cdf} of the distributions using kicks from \citet {hobbs_statistical_2005,bray_neutron_2018,willcox_constraints_2021}.}}{42}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces The \acrshort {ks} statistic for \textsc {FineGrid} and \textsc {WideGrid}.}}{43}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces The \acrshortpl {pdf} and \acrshortpl {cdf} of four systems, alongside the Hobbs \acrshort {cdf} and \citet {willcox_constraints_2021} \acrshort {cdf}.}}{44}{figure.4.5}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces The four constraints we apply overlaid on our \textsc {FineGrid} parameter space.}}{46}{figure.4.6}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces The \acrshort {cdf} for a population of isolated pulsars and the period-eccentricity distribution for $\alpha =\SI {115}{\km \per \s }, \beta =\SI {15}{\km \per \s }$.}}{47}{figure.4.7}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces The peak of the event rate $\mathcal {R}(t)$ as a function of $\alpha $ and $\beta $.}}{48}{figure.4.8}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces The period-eccentricity distributions of populations governed by Bray kicks across the \acrshort {ligo} \acrshort {o3} contour.}}{64}{figure.a.C.1}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces The period-eccentricity distributions of populations governed by Bray kicks across the \acrshort {ligo} \acrshort {o3} contour.}}{66}{figure.a.C.1}%
 \addvspace {10\p@ }

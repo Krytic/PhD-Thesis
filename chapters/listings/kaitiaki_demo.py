@@ -28,7 +28,6 @@ STARS.configure_parameters({
     'DT1': 0.1,  # Fraction of timestep to allow for lower variation
                  # (if the timestep is cut, it can be cut to 10% of its
                  # present value)
-    'NM2': 499,  # Number of meshpoints.
     'DDD': 2,    # Modulus of total desired timestep
     'IML1': 5,   # WR mass-loss rates
     'RML': 0,    # This was set to 10 Msun during inflation -- should be

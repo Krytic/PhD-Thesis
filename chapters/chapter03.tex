@@ -11,9 +11,9 @@ This chapter is structured as follows. First, we will discuss the grid-watcher c
 
 \codename{Kaitiaki} is a grid-watcher code that sits atop the \codename{STARS} code and manages its execution. It was developed primarily to manipulate the fixed-width text files that \codename{STARS} uses, in contrast to the ``typical'' manipulation done through the command line.
 
-The core of \codename{Kaitiaki} is \mintinline{Python}{STARSController()} interface. The most na\"ive run would be to initialise a model of, say, \SI{8}{\msun} and evolve it until it evolves up the \gls{agb}. A sample of code for this is shown in \autoref{kaitiaki_runs}.
+The core of \codename{Kaitiaki} is \mintinline{Python}{STARSController()} interface. The most na\"ive run would be to initialise a model of, say, \SI{8}{\msun} and evolve it until it evolves up the \gls{agb}. A sample of code for this is shown in \autoref{kaitiaki_runs} which evolves a \SI{10}{\msun} star.
 
-\pythonfile[label=kaitiaki_runs]{The \codename{Kaitiaki} function \mintinline{Python}{run_default_evolution()}}{chapters/listings/Kaitiaki-Run-Default.py}
+\pythonfile[label=kaitiaki_runs]{A \codename{Kaitiaki} script to evolve a \SI{10}{\msun} star}{chapters/listings/kaitiaki_demo.py}
 
 \begin{figure}[!htbp]
     \centering

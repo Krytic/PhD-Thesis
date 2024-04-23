@@ -1,12 +1,13 @@
 % !TEX root = ../../main.tex
+% !versioning-file
 \chapter{Code Versions}
 
 \begin{table*}[!htbp]
     \centering
-    \begin{tabular}{l|cc}
+    \begin{tabular}{r|ll}
         \toprule
             \textbf{Code Name} & \textbf{Version} & \textbf{Reference} \\
-        \midrule%begin-replace
+        \midrule%!begin-replace
             \codename{Hoki}       & 1.7.1  & \citet{stevance_hoki_2020}            \\
             \codename{Kaitiaki}   & 1.0.0  &                                       \\
             \codename{Matplotlib} & 3.8.2  & \citet{hunter_matplotlib_2007}        \\
@@ -17,7 +18,7 @@
             \codename{Scipy}      & 1.11.4 & \citet{virtanen_scipy_2020}           \\
             \codename{Takahe}     & 1.0.0  & \citet{richards_new_2023}             \\
             \codename{Tui}        & 8      & \citet{ghodla_evaluating_2023}$^\ast$ \\
-        \bottomrule%end-replace
+        \bottomrule%!end-replace
     \end{tabular}
     \caption{The code versions we use in this thesis. $^\ast$\codename{Tui} was described in earlier papers, but \citet{ghodla_evaluating_2023} was the first to name it.}
     \label{tab:code_version}

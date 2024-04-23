@@ -218,13 +218,13 @@ This is also not considering complications of writing the stress-energy tensor $
 
 % \epigraph{He went to the Door and they all followed him. He raised his head and roared "Now it is time!" then louder "Time!"; then so loud that it could have shaken the stars, "\textit{TIME}." The Door flew open.}{C.S Lewis, \textit{The Last Battle}}
 
-% \mediaepigraph{And on the pedestal these words appear:\\
-% ``My name is Ozymandias, king of kings:\\
-% Look on my works, ye Mighty, and despair!''\\
-% Nothing beside remains.}{Ozymandias}{Percy Bysshe Shelley}
+\mediaepigraph{And on the pedestal these words appear:\\
+``My name is Ozymandias, king of kings:\\
+Look on my works, ye Mighty, and despair!''\\
+Nothing beside remains.}{Ozymandias}{Percy Bysshe Shelley}
 
-\epigraph{Pallida mors {\ae}quo pulsat pede pauperum tabernas Regumque turres.\\\phantom{ }\\
-Pale death knocks with the same tempo\\upon the huts of the poor and the towers of kings.}{Horace}
+\epigraph{Pallida mors {\ae}quo pulsat pede pauperum tabernas Regumque turres.\\
+Pale death knocks with the same tempo upon the huts of the poor and the towers of kings.}{Horace}
 
 A star's lifetime is, unfortunately, not infinite. The key assumption underpinning stellar evolution is that of hydrostatic equilibrium: the counterplay of gravity against outwards pressure. Whilst this equilibrium holds, the star is stable and resists explosion. It is when this equilibrium is broken -- with gravity the dominant force in this scenario -- that the star implodes in a \gls{ccsne}. From a thermodynamic perspective, as the star evolves, it shrinks as energy is bled off into the interstellar medium. This shrinkage compresses and heats the core, meaning the star's specific heat capacity is negative. This system is thermodynamically unstable, and thus every star either collapses into a remnant (c.f. black holes, neutron stars) or is sustained in some form by quantum mechanical phenomena (c.f. White Dwarfs, Thorne-\.Zytkow objects, and other exotica).
 
@@ -538,7 +538,14 @@ The inner Lagrangian point has the approximation from \citet{eggleton_aproximati
     \frac{R_\text{L}}{a} \approx \frac{0.49q^\frac23}{0.6q^\frac23+\ln\pqty{1+q^\frac13}}.\label{eq:RL1_eggleton}
 \end{equation}
 
-A plot of this approximation against a numerical integration of the volume of the true Roche lobe is given in \autoref{fig:eggleton_approx}. Eggleton's formula is a volume-equivalent one; although his radius $R_\text{L} < \xi$, the volume of an Eggleton-Roche sphere $\frac43 \pi R_\text{L}^3$ is approximately equal (to within 1 per cent) of the numerically integrated volume.
+We show the circle with this radius $R_\text{L}$ in \autoref{fig:eggleton_approx_schematic} plotted against the exact solution for $\eta=\mathcal{L}_1$. Eggleton's formula is a volume-equivalent one; although his radius $R_\text{L} < \xi$, the volume of an Eggleton-Roche sphere $\frac43 \pi R_\text{L}^3$ is approximately equal (to within 1 per cent) of the numerically integrated volume, as is shown in \autoref{fig:eggleton_approx}.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{images/TheorySection/RLs_Eggleton_Formula.png}
+    \caption[A schematic of the Roche lobe formula \autoref{eq:RL1_eggleton}.]{A schematic of the Roche lobe formula \autoref{eq:RL1_eggleton}. Here, the exact solution to the Roche lobe formula $\xi$ in \autoref{eq:roche_lobe_condition} (orange) vs the fit provided by \citet{eggleton_aproximations_1983} (blue). Although precise details of the Roche lobe, such as the apex of the teardrop at the point $\xi$, are lost, the volume is preserved to within 1 per cent accuracy over all mass ratios.}
+    \label{fig:eggleton_approx_schematic}
+\end{figure}
 
 \begin{figure}[!htbp]
     \centering
