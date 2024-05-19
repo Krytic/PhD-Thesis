@@ -1,12 +1,14 @@
+\babel@toc {english}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces The populations under study.}}{36}{table.4.1}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces The systems we use in our study.}}{41}{table.4.2}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces The populations under study.}}{45}{table.4.1}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces The systems we use in our study.}}{51}{table.4.2}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {B.1}{\ignorespaces The code versions we use in this thesis. $^\ast $\textsc {\MakeLowercase {Tui}} was described in earlier papers, but \citet {ghodla_evaluating_2023} was the first to name it.}}{63}{table.a.B.1}%
+\contentsline {table}{\numberline {B.1}{\ignorespaces The code versions we use in this thesis. $^\ast $\textsc {\MakeLowercase {Tui}} was described in earlier papers, but \citet {ghodla_evaluating_2023} was the first to name it.}}{77}{table.a.B.1}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {D.1}{\ignorespaces Our general initial conditions.}}{81}{table.a.D.1}%

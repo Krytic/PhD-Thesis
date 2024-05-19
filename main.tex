@@ -26,14 +26,25 @@
 \usepackage[toc,page]{appendix}
 \usepackage[most]{tcolorbox}
 \usepackage{listing, minted}
+\usepackage[greek,english]{babel}
+\languageattribute{greek}{ancient}
 \usepackage{xcolor}
+\usepackage{ccaption}
+\usepackage{setspace}
+
+
+%% SUPERVISOR COPY ONLY :)
+\doublespacing
+
+% \linespread{1.25}
 
 \tcbuselibrary{minted}
 
 \AddToHookNext{shipout/background}{
   \begin{tikzpicture}[remember picture,overlay]
   \node at (current page.center) {
-    \includegraphics[width=\paperwidth]{images/Cover.png}
+    % \includegraphics[width=\paperwidth]{images/Cover.png}
+    \includegraphics[width=\paperwidth]{images/Alt_Cover_Page.jpg}
   };
   \end{tikzpicture}
 }
@@ -260,6 +271,31 @@
   \vspace*{\afterepigraphskip}%
   \ifepigraphnoindent\@afterheading\fi
 }
+
+\newcommand{\fancifulepigraph}[4]{%
+  \begin{fanciful}
+  \vspace{\beforeepigraphskip}
+  \vbox{%
+    \setlength{\epigraphwidth}{0.48\textwidth}
+    \xpatchcmd{\@epitext}{{minipage}}{{minipage}[t]}{}{}%
+    \xpatchcmd{\@epitext}{1\\}{1}{}{}%
+    \epigraphsize
+    \begin{\epigraphflush}
+    \begin{minipage}[b]{0.48\textwidth}
+      \@epitext{\epitextfont#1}
+      \@episource{\citet{#3}\strut}%
+    \end{minipage}\hfill\vline\hfill
+    \begin{minipage}[b]{0.48\textwidth}
+      \@epitext{\begin{flushleft}\epitextfont#2\end{flushleft}}
+      \@episource{\begin{flushleft}\citet{#4}\strut\end{flushleft}}%
+    \end{minipage}%
+    \end{\epigraphflush}%
+  }%
+  % \nointerlineskip
+  % \vspace*{\afterepigraphskip}%
+  % \ifepigraphnoindent\@afterheading\fi
+  \end{fanciful}
+}
 \makeatother
 
 \newcommand{\makefancy}{%
@@ -312,8 +348,6 @@
 }%
 \makeatother
 
-\linespread{1.25}
-
 \fancypagestyle{plain}{\makefancy}
 
 \newenvironment{abstract}{\newpage\begin{center}\textbf{\Large Abstract}\\\vspace{3em}}{\end{center}\newpage}
@@ -336,6 +370,9 @@
 	\addcontentsline{toe}{epigraphs}
 	{\\#1\\(#2)}}
 
+
+\newcommand{\NickNote}[1]{{\todolist{NJR: #1}\color{green}\textbf{[Note from Nick: #1]}}}
+
 \let\oepi\epigraph
 \renewcommand{\epigraph}[2]{\epigraphlist{#1}{#2}\oepi{#1}{#2}}
 
@@ -348,8 +385,6 @@
 \protected@write\myfile{}{\gdef\string\@todo{Chapter \thechapter\ -- #1}}
 }
 \makeatother
-
-\newcommand{\NickNote}[1]{{\color{green}\textbf{(Note to Nick: #1)}}}
 
 \definecolor{block-gray}{HTML}{D81E5B}
 

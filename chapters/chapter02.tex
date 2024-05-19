@@ -742,21 +742,68 @@ The heart of \codename{stars} is a matrix inversion algorithm. Although computin
     \mat{H} = \pdv{\pqty{\text{equation } i}}{\pqty{\text{variable } j}}.
 \end{equation}
 
-For a ``typical'' binary computation, with $n_\text{comp}=30$ equations and $N_\text{mesh}=199$ meshpoints, the matrix is already $6766\times6766$, for a binary which evolves up the AGB (the theoretically most complex calculation we perform) with $N_\text{mesh}=999$, the matrix is $33966\times33966$. Introducing $k$ new equations into the code causes the runtime of the matrix inversion calculation to scale like $\mathcal{O}(n^3+k^3N_\text{mesh}^3)$.
+For a ``typical'' binary computation, with $n_\text{comp}=30$ equations and $N_\text{mesh}=199$ meshpoints, the matrix is already $6766\times6766$, for a binary which evolves up the \gls{agb} (the theoretically most complex calculation we perform) with $N_\text{mesh}=999$, the matrix is $33966\times33966$. Introducing $k$ new equations into the code causes the runtime of the matrix inversion calculation to scale like $\mathcal{O}(n^3+k^3N_\text{mesh}^3)$.
 
-The matrix inversion is simple Gauss-Jordan inversion, which is of complexity class (for an $n\times n$ matrix) $\mathcal{O}(n^3)$. \citet{coppersmith_matrix_1987} showed that this could be optimised to $\mathcal{O}(n^{2.376})$ and conjectured reducibility to $\mathcal{O}(n^2)$. Since our code is embarassingly parallelisable, and can be executed in parallel simply by increasing the number of cores available, the payoff for decreasing the runtime by one polynomial order is inconsequential, and thus we use the straightforward implementation.
+The matrix inversion is simple Gauss-Jordan inversion, which is of complexity class (for an $n\times n$ matrix) $\mathcal{O}(n^3)$. \citet{coppersmith_matrix_1987} showed that this could be optimised to $\mathcal{O}(n^{2.376})$ and conjectured reducibility to $\mathcal{O}(n^2)$.\footnote{The current ``best'' optimisation is $\mathcal{O}(n^{2.3727})$ \citep{williams_multiplying_2012}. DeepMind's AlphaTensor has claimed a faster result in \citet{fawzi_discovering_2022}, though they do not state a complexity class. This is because ``...this does not yield
+practical algorithms.''} Since our code is embarassingly parallelisable, and can be executed in parallel simply by increasing the number of cores available, the payoff for decreasing the runtime by one polynomial order is inconsequential, and thus we use the straightforward implementation.
 
 \subsubsection{Initial Condition Selection}
 
-In this section we provide an account for the selection of our general initial conditions, unless otherwise noted in this thesis.
+In this section we provide an account for the selection of our general initial conditions. Unless otherwise noted in this thesis, it is assumed that the values will be using the parameters described here and in \autoref{chap:param_config}.
 
 In our implementation of \gls{mlt} \citep{vitense_wasserstoffkonvektionszone_1953,bohm-vitense_uber_1958,cox_principles_1968}, we use an \gls{mlt} parameter of $\alpha_\text{\gls{mlt}}=1.985$, selected via calibration against a model of the Sun. This is effectively a dissipativity parameter, and represents the depth at which a parcel of matter penetrates into a lower layer before becoming fully dissipated. The value was selected by modelling a \SI{1}{\msun} star and varying only the mixing length parameter until it had a lumonosity of \SI{1}{\lsun} and a radius of \SI{1}{\rsun}, at the present age of the Sun.
 
 \subsubsection{Timestep control}
 
-\subsubsection{Computational considerations}
+The \codename{STARS} code utilises an adaptive timestep control mechanism, whereby the timestep is allowed to shrink to model rapid changes or grow if the star is broadly inert and unchanging. The core computation is a parameter $\Delta$, given by
+
+\begin{equation}
+    \Delta = \frac{d_\text{opt}}{\sum_i \sum_j \left|\delta x_{ij}\right|}\label{eq:timestep_selection}
+\end{equation}
+
+where $d_\text{opt}$ is a pre-defined target timestep (typically taken to be $\sim 1$, unless otherwise specified; see \autoref{chap:param_config} for our selections), and $\delta x_{ij}$ is the change in variable $x_i$ at meshpoint $j$. In this calculation, luminosity is explicity excluded as this would cause the timestep to explode during certain points of the star's life-time. A new timestep, $d^\prime$, is selected from the previous timestep $d$ by
+
+\begin{equation}
+    d^\prime = \begin{cases}
+        \min\left[d_1, \Delta\right]d & \Delta < 1 \\
+        d & \Delta = 1 \\
+        \max\left[d_2, \Delta\right]d & \Delta > 1
+    \end{cases}
+\end{equation}
+
+$d_1$ and $d_2$ are pre-determined control parameters, most commonly we take $d_1=0.1$ and $d_2=1.2$ unless otherwise specified.
 
 \subsubsection{Numerical instabilities}
+
+Stellar modelling is a nontrivial endeavour and there are many cases where the code can fail seemingly arbitrarily. The largest cause of numerical instability is the helium flash, which occurs in low-mass stars between about $\SI{0.8}{\msun} \lesssim M_\text{ZAMS} \lesssim \SI{2.5}{\msun}$. In this band, the triple-$\alpha$ process, given by the reactions \citep{carroll_introduction_2017}\footnote{The reversible reaction is due to Beryllium-8 being unstable; its half-life is on the order of $\SI{1e-16}{\second}$, and it decays back to 2$^4_2$He if it does not react further.}
+
+\begin{align*}
+    \ce{^4_2He + ^4_2He &\rightleftharpoons ^8_4Be - \SI{0.0918}{\mega\electronvolt}} \\
+    \ce{^8_4Be + ^4_2He &-> ^12_6C + 2\gamma{} + \SI{7.367}{\mega\electronvolt}} \\
+    \ce{^12_6C + ^4_2He &-> ^16_8O + \gamma{} + \SI{7.162}{\mega\electronvolt}}
+\end{align*}
+
+occurs within a highly degenerate helium core. As a result, the temperature of the star increases sharply during this process, leading to thermal runaway. This temperature increase in turn results in an increase in the luminosity (which peaks at $\sim\SI{1e10}{\lsun}$). The flash itself -- being the period of thermal runaway -- occurs on the order of a few minutes, though the spike in luminosity lasts approximately $\SI{7}{\mega\year}$ (for the $\SI{2.51}{\msun}$ star shown in \autoref{fig:thermal_pulses_he_flash}).
+
+A method termed ``pseudoevolution'' can be used to overcome this source of error. Briefly, a complete model (termed the \textit{reference model}) of a \SI{3}{\msun} star is evolved with a full model description saved at every timestep. When the helium flash occurs in a model (heuristically, $0.1 \leq M_\text{He} / \unit{\msun} \leq 0.55$ and $\log T_\text{c} / \unit{\kelvin} > 7.9$), we query the reference model for a model with the same helium core mass as the failed model. Using a custom subroutine in \codename{stars}, we turn off all nuclear and thermal burning and remove mass from the reference model to match the mass of the failed model. This model is then allowed to evolve as per normal, having overcome the helium flash. We note that this is not a \textit{perfect} method, as this does induce discontinuities in the plots, as shown in \autoref{fig:pseudoevolved_kippenhahn}, though these are essentially insignificant.
+
+The other stage where low-mass stars are prone to fail is during a thermal pulse \citep{schwarzschild_thermal_1965,schwarzschild_hydrogen_1967}. The mass range for thermal pulses is broader, from $\sim\SI{0.8}{\msun}$ to $\sim\SI{8}{\msun}$. A thermal pulse occurs as a star ascends the \gls{agb}; as a \gls{CO_core} or \gls{ONe_core} has developed, shells of burning helium and hydrogen (separated by a region of almost pure helium) sit atop the core \citep{pols_thermal_2001}. As the intershell region dissipates due to dredge up or helium burning, hydrogen burning reignites in the hydrogen shell. As both shells burn (at the same rate), the helium-burning shell becomes unstable and eventually a process of thermal runaway begins (similar to the helium flash, except off-core). This causes a spike in the luminosity, termed a thermal pulse. This can persist for many pulses -- \citet{stancliffe_numerical_2006} observes pulses before model termination, while \citet{stancliffe_evolution_2005} observes 17 pulses for a model similar to those in \autoref{fig:thermal_pulses_he_flash}.
+
+The method to overcome this numerical instability is involved and not fully implemented in \codename{STARS}. Briefly, the number of meshpoints must be drastically increases near the onset of thermal pulses; up to 999 instead of the typical 199/499. The timestep must also be forcibly decreased; thermal pulses typically last for around a year \citep{pols_thermal_2001} so the timestep must be reduced to not miss them (and to not have the modulus of the change in parameters -- $\sum_i \sum_j \left|\delta x_{ij}\right|$ in \autoref{eq:timestep_selection} -- and thus the error, increase too much). This method was implemented to generate \autoref{fig:thermal_pulses_he_flash}, though only two pulses were achievable.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{images/TheorySection/thermal_pulses_and_he_flash.png}
+    \caption[Two stars of a similar mass that undergo a helium flash and two thermal pulses.]{Two stars of a similar mass that undergo a helium flash and two thermal pulses. Shown in the inset is a zoomed-in helium flash that lasts $\sim\SI{7}{\mega\year}$. Both stars undergo two thermal pulses before the code crases due to the relative error in the calculation increasing too rapidly. The two stars could, in principle, undergo many more thermal pulses before their deaths.}
+    \label{fig:thermal_pulses_he_flash}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{images/TheorySection/helium_flash_kippenhahn.png}
+    \caption[The helium flash shown on a Kippenhahn diagram.]{The helium flash (gray dashed line) shown on a Kippenhahn diagram. There is a slight discontinuity in the helium core mass (blue) due to a perfect match not existing in the $\SI{3}{\msun}$ reference model. The total mass is shown as the solid gray line, and the \acrshort{CO_core} mass is shown in red. The green lines show the boundaries of the convective regions of the star.}
+    \label{fig:pseudoevolved_kippenhahn}
+\end{figure}
 
 \subsection{The \codename{Tui} code}\label{chap:numerical_methods_tui}
 

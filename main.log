@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.18)  23 APR 2024 16:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.18)  19 MAY 2024 15:22
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -982,47 +982,447 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 runsystem(mkdir -p _minted-main)...executed.
 
 
+(/usr/local/texlive/2021/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2021/06/02 3.60 The Babel package
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2021/06/02 3.60 Babel common definitions
+\babel@savecnt=\count377
+\U@D=\dimen327
+\l@unhyphenated=\language87
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read6
+)
+\bbl@dirlevel=\count378
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/babel-greek/greek.ldf
+Language: greek 2020/11/10 v1.10 Greek support for the babel system
+\bbl@monogreek=\count379
+\bbl@polygreek=\count380
+\bbl@ancientgreek=\count381
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/greek-fontenc/lgrenc.def
+File: lgrenc.def 2020/10/13 2.0 LGR Greek font encoding definitions
+Now handling font encoding LGR ...
+... processing UTF-8 mapping file for font encoding LGR
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/greek-inputenc/lgrenc.dfu
+File: lgrenc.dfu 2019/07/11 1.7 UTF-8 support for Greek
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+0259 (decimal 601)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+0374 (decimal 884)
+   defining Unicode char U+0375 (decimal 885)
+   defining Unicode char U+037A (decimal 890)
+   defining Unicode char U+037E (decimal 894)
+   defining Unicode char U+0384 (decimal 900)
+   defining Unicode char U+0385 (decimal 901)
+   defining Unicode char U+0386 (decimal 902)
+   defining Unicode char U+0387 (decimal 903)
+   defining Unicode char U+0388 (decimal 904)
+   defining Unicode char U+0389 (decimal 905)
+   defining Unicode char U+038A (decimal 906)
+   defining Unicode char U+038C (decimal 908)
+   defining Unicode char U+038E (decimal 910)
+   defining Unicode char U+038F (decimal 911)
+   defining Unicode char U+0390 (decimal 912)
+   defining Unicode char U+0391 (decimal 913)
+   defining Unicode char U+0392 (decimal 914)
+   defining Unicode char U+0393 (decimal 915)
+   defining Unicode char U+0394 (decimal 916)
+   defining Unicode char U+0395 (decimal 917)
+   defining Unicode char U+0396 (decimal 918)
+   defining Unicode char U+0397 (decimal 919)
+   defining Unicode char U+0398 (decimal 920)
+   defining Unicode char U+0399 (decimal 921)
+   defining Unicode char U+039A (decimal 922)
+   defining Unicode char U+039B (decimal 923)
+   defining Unicode char U+039C (decimal 924)
+   defining Unicode char U+039D (decimal 925)
+   defining Unicode char U+039E (decimal 926)
+   defining Unicode char U+039F (decimal 927)
+   defining Unicode char U+03A0 (decimal 928)
+   defining Unicode char U+03A1 (decimal 929)
+   defining Unicode char U+03A3 (decimal 931)
+   defining Unicode char U+03A4 (decimal 932)
+   defining Unicode char U+03A5 (decimal 933)
+   defining Unicode char U+03A6 (decimal 934)
+   defining Unicode char U+03A7 (decimal 935)
+   defining Unicode char U+03A8 (decimal 936)
+   defining Unicode char U+03A9 (decimal 937)
+   defining Unicode char U+03AA (decimal 938)
+   defining Unicode char U+03AB (decimal 939)
+   defining Unicode char U+03AC (decimal 940)
+   defining Unicode char U+03AD (decimal 941)
+   defining Unicode char U+03AE (decimal 942)
+   defining Unicode char U+03AF (decimal 943)
+   defining Unicode char U+03B0 (decimal 944)
+   defining Unicode char U+03B1 (decimal 945)
+   defining Unicode char U+03B2 (decimal 946)
+   defining Unicode char U+03B3 (decimal 947)
+   defining Unicode char U+03B4 (decimal 948)
+   defining Unicode char U+03B5 (decimal 949)
+   defining Unicode char U+03B6 (decimal 950)
+   defining Unicode char U+03B7 (decimal 951)
+   defining Unicode char U+03B8 (decimal 952)
+   defining Unicode char U+03B9 (decimal 953)
+   defining Unicode char U+03BA (decimal 954)
+   defining Unicode char U+03BB (decimal 955)
+   defining Unicode char U+03BC (decimal 956)
+   defining Unicode char U+03BD (decimal 957)
+   defining Unicode char U+03BE (decimal 958)
+   defining Unicode char U+03BF (decimal 959)
+   defining Unicode char U+03C0 (decimal 960)
+   defining Unicode char U+03C1 (decimal 961)
+   defining Unicode char U+03C2 (decimal 962)
+   defining Unicode char U+03C3 (decimal 963)
+   defining Unicode char U+03C4 (decimal 964)
+   defining Unicode char U+03C5 (decimal 965)
+   defining Unicode char U+03C6 (decimal 966)
+   defining Unicode char U+03C7 (decimal 967)
+   defining Unicode char U+03C8 (decimal 968)
+   defining Unicode char U+03C9 (decimal 969)
+   defining Unicode char U+03CA (decimal 970)
+   defining Unicode char U+03CB (decimal 971)
+   defining Unicode char U+03CC (decimal 972)
+   defining Unicode char U+03CD (decimal 973)
+   defining Unicode char U+03CE (decimal 974)
+   defining Unicode char U+03D0 (decimal 976)
+   defining Unicode char U+03D1 (decimal 977)
+   defining Unicode char U+03D5 (decimal 981)
+   defining Unicode char U+03D6 (decimal 982)
+   defining Unicode char U+03D8 (decimal 984)
+   defining Unicode char U+03D9 (decimal 985)
+   defining Unicode char U+03DA (decimal 986)
+   defining Unicode char U+03DB (decimal 987)
+   defining Unicode char U+03DC (decimal 988)
+   defining Unicode char U+03DD (decimal 989)
+   defining Unicode char U+03DF (decimal 991)
+   defining Unicode char U+03E0 (decimal 992)
+   defining Unicode char U+03E1 (decimal 993)
+   defining Unicode char U+03F0 (decimal 1008)
+   defining Unicode char U+03F1 (decimal 1009)
+   defining Unicode char U+03F4 (decimal 1012)
+   defining Unicode char U+03F5 (decimal 1013)
+   defining Unicode char U+1F00 (decimal 7936)
+   defining Unicode char U+1F01 (decimal 7937)
+   defining Unicode char U+1F02 (decimal 7938)
+   defining Unicode char U+1F03 (decimal 7939)
+   defining Unicode char U+1F04 (decimal 7940)
+   defining Unicode char U+1F05 (decimal 7941)
+   defining Unicode char U+1F06 (decimal 7942)
+   defining Unicode char U+1F07 (decimal 7943)
+   defining Unicode char U+1F08 (decimal 7944)
+   defining Unicode char U+1F09 (decimal 7945)
+   defining Unicode char U+1F0A (decimal 7946)
+   defining Unicode char U+1F0B (decimal 7947)
+   defining Unicode char U+1F0C (decimal 7948)
+   defining Unicode char U+1F0D (decimal 7949)
+   defining Unicode char U+1F0E (decimal 7950)
+   defining Unicode char U+1F0F (decimal 7951)
+   defining Unicode char U+1F10 (decimal 7952)
+   defining Unicode char U+1F11 (decimal 7953)
+   defining Unicode char U+1F12 (decimal 7954)
+   defining Unicode char U+1F13 (decimal 7955)
+   defining Unicode char U+1F14 (decimal 7956)
+   defining Unicode char U+1F15 (decimal 7957)
+   defining Unicode char U+1F18 (decimal 7960)
+   defining Unicode char U+1F19 (decimal 7961)
+   defining Unicode char U+1F1A (decimal 7962)
+   defining Unicode char U+1F1B (decimal 7963)
+   defining Unicode char U+1F1C (decimal 7964)
+   defining Unicode char U+1F1D (decimal 7965)
+   defining Unicode char U+1F20 (decimal 7968)
+   defining Unicode char U+1F21 (decimal 7969)
+   defining Unicode char U+1F22 (decimal 7970)
+   defining Unicode char U+1F23 (decimal 7971)
+   defining Unicode char U+1F24 (decimal 7972)
+   defining Unicode char U+1F25 (decimal 7973)
+   defining Unicode char U+1F26 (decimal 7974)
+   defining Unicode char U+1F27 (decimal 7975)
+   defining Unicode char U+1F28 (decimal 7976)
+   defining Unicode char U+1F29 (decimal 7977)
+   defining Unicode char U+1F2A (decimal 7978)
+   defining Unicode char U+1F2B (decimal 7979)
+   defining Unicode char U+1F2C (decimal 7980)
+   defining Unicode char U+1F2D (decimal 7981)
+   defining Unicode char U+1F2E (decimal 7982)
+   defining Unicode char U+1F2F (decimal 7983)
+   defining Unicode char U+1F30 (decimal 7984)
+   defining Unicode char U+1F31 (decimal 7985)
+   defining Unicode char U+1F32 (decimal 7986)
+   defining Unicode char U+1F33 (decimal 7987)
+   defining Unicode char U+1F34 (decimal 7988)
+   defining Unicode char U+1F35 (decimal 7989)
+   defining Unicode char U+1F36 (decimal 7990)
+   defining Unicode char U+1F37 (decimal 7991)
+   defining Unicode char U+1F38 (decimal 7992)
+   defining Unicode char U+1F39 (decimal 7993)
+   defining Unicode char U+1F3A (decimal 7994)
+   defining Unicode char U+1F3B (decimal 7995)
+   defining Unicode char U+1F3C (decimal 7996)
+   defining Unicode char U+1F3D (decimal 7997)
+   defining Unicode char U+1F3E (decimal 7998)
+   defining Unicode char U+1F3F (decimal 7999)
+   defining Unicode char U+1F40 (decimal 8000)
+   defining Unicode char U+1F41 (decimal 8001)
+   defining Unicode char U+1F42 (decimal 8002)
+   defining Unicode char U+1F43 (decimal 8003)
+   defining Unicode char U+1F44 (decimal 8004)
+   defining Unicode char U+1F45 (decimal 8005)
+   defining Unicode char U+1F48 (decimal 8008)
+   defining Unicode char U+1F49 (decimal 8009)
+   defining Unicode char U+1F4A (decimal 8010)
+   defining Unicode char U+1F4B (decimal 8011)
+   defining Unicode char U+1F4C (decimal 8012)
+   defining Unicode char U+1F4D (decimal 8013)
+   defining Unicode char U+1F50 (decimal 8016)
+   defining Unicode char U+1F51 (decimal 8017)
+   defining Unicode char U+1F52 (decimal 8018)
+   defining Unicode char U+1F53 (decimal 8019)
+   defining Unicode char U+1F54 (decimal 8020)
+   defining Unicode char U+1F55 (decimal 8021)
+   defining Unicode char U+1F56 (decimal 8022)
+   defining Unicode char U+1F57 (decimal 8023)
+   defining Unicode char U+1F59 (decimal 8025)
+   defining Unicode char U+1F5B (decimal 8027)
+   defining Unicode char U+1F5D (decimal 8029)
+   defining Unicode char U+1F5F (decimal 8031)
+   defining Unicode char U+1F60 (decimal 8032)
+   defining Unicode char U+1F61 (decimal 8033)
+   defining Unicode char U+1F62 (decimal 8034)
+   defining Unicode char U+1F63 (decimal 8035)
+   defining Unicode char U+1F64 (decimal 8036)
+   defining Unicode char U+1F65 (decimal 8037)
+   defining Unicode char U+1F66 (decimal 8038)
+   defining Unicode char U+1F67 (decimal 8039)
+   defining Unicode char U+1F68 (decimal 8040)
+   defining Unicode char U+1F69 (decimal 8041)
+   defining Unicode char U+1F6A (decimal 8042)
+   defining Unicode char U+1F6B (decimal 8043)
+   defining Unicode char U+1F6C (decimal 8044)
+   defining Unicode char U+1F6D (decimal 8045)
+   defining Unicode char U+1F6E (decimal 8046)
+   defining Unicode char U+1F6F (decimal 8047)
+   defining Unicode char U+1F70 (decimal 8048)
+   defining Unicode char U+1F71 (decimal 8049)
+   defining Unicode char U+1F72 (decimal 8050)
+   defining Unicode char U+1F73 (decimal 8051)
+   defining Unicode char U+1F74 (decimal 8052)
+   defining Unicode char U+1F75 (decimal 8053)
+   defining Unicode char U+1F76 (decimal 8054)
+   defining Unicode char U+1F77 (decimal 8055)
+   defining Unicode char U+1F78 (decimal 8056)
+   defining Unicode char U+1F79 (decimal 8057)
+   defining Unicode char U+1F7A (decimal 8058)
+   defining Unicode char U+1F7B (decimal 8059)
+   defining Unicode char U+1F7C (decimal 8060)
+   defining Unicode char U+1F7D (decimal 8061)
+   defining Unicode char U+1F80 (decimal 8064)
+   defining Unicode char U+1F81 (decimal 8065)
+   defining Unicode char U+1F82 (decimal 8066)
+   defining Unicode char U+1F83 (decimal 8067)
+   defining Unicode char U+1F84 (decimal 8068)
+   defining Unicode char U+1F85 (decimal 8069)
+   defining Unicode char U+1F86 (decimal 8070)
+   defining Unicode char U+1F87 (decimal 8071)
+   defining Unicode char U+1F88 (decimal 8072)
+   defining Unicode char U+1F89 (decimal 8073)
+   defining Unicode char U+1F8A (decimal 8074)
+   defining Unicode char U+1F8B (decimal 8075)
+   defining Unicode char U+1F8C (decimal 8076)
+   defining Unicode char U+1F8D (decimal 8077)
+   defining Unicode char U+1F8E (decimal 8078)
+   defining Unicode char U+1F8F (decimal 8079)
+   defining Unicode char U+1F90 (decimal 8080)
+   defining Unicode char U+1F91 (decimal 8081)
+   defining Unicode char U+1F92 (decimal 8082)
+   defining Unicode char U+1F93 (decimal 8083)
+   defining Unicode char U+1F94 (decimal 8084)
+   defining Unicode char U+1F95 (decimal 8085)
+   defining Unicode char U+1F96 (decimal 8086)
+   defining Unicode char U+1F97 (decimal 8087)
+   defining Unicode char U+1F98 (decimal 8088)
+   defining Unicode char U+1F99 (decimal 8089)
+   defining Unicode char U+1F9A (decimal 8090)
+   defining Unicode char U+1F9B (decimal 8091)
+   defining Unicode char U+1F9C (decimal 8092)
+   defining Unicode char U+1F9D (decimal 8093)
+   defining Unicode char U+1F9E (decimal 8094)
+   defining Unicode char U+1F9F (decimal 8095)
+   defining Unicode char U+1FA0 (decimal 8096)
+   defining Unicode char U+1FA1 (decimal 8097)
+   defining Unicode char U+1FA2 (decimal 8098)
+   defining Unicode char U+1FA3 (decimal 8099)
+   defining Unicode char U+1FA4 (decimal 8100)
+   defining Unicode char U+1FA5 (decimal 8101)
+   defining Unicode char U+1FA6 (decimal 8102)
+   defining Unicode char U+1FA7 (decimal 8103)
+   defining Unicode char U+1FA8 (decimal 8104)
+   defining Unicode char U+1FA9 (decimal 8105)
+   defining Unicode char U+1FAA (decimal 8106)
+   defining Unicode char U+1FAB (decimal 8107)
+   defining Unicode char U+1FAC (decimal 8108)
+   defining Unicode char U+1FAD (decimal 8109)
+   defining Unicode char U+1FAE (decimal 8110)
+   defining Unicode char U+1FAF (decimal 8111)
+   defining Unicode char U+1FB0 (decimal 8112)
+   defining Unicode char U+1FB1 (decimal 8113)
+   defining Unicode char U+1FB2 (decimal 8114)
+   defining Unicode char U+1FB3 (decimal 8115)
+   defining Unicode char U+1FB4 (decimal 8116)
+   defining Unicode char U+1FB6 (decimal 8118)
+   defining Unicode char U+1FB7 (decimal 8119)
+   defining Unicode char U+1FB8 (decimal 8120)
+   defining Unicode char U+1FB9 (decimal 8121)
+   defining Unicode char U+1FBA (decimal 8122)
+   defining Unicode char U+1FBB (decimal 8123)
+   defining Unicode char U+1FBC (decimal 8124)
+   defining Unicode char U+1FBD (decimal 8125)
+   defining Unicode char U+1FBE (decimal 8126)
+   defining Unicode char U+1FBF (decimal 8127)
+   defining Unicode char U+1FC0 (decimal 8128)
+   defining Unicode char U+1FC1 (decimal 8129)
+   defining Unicode char U+1FC2 (decimal 8130)
+   defining Unicode char U+1FC3 (decimal 8131)
+   defining Unicode char U+1FC4 (decimal 8132)
+   defining Unicode char U+1FC6 (decimal 8134)
+   defining Unicode char U+1FC7 (decimal 8135)
+   defining Unicode char U+1FC8 (decimal 8136)
+   defining Unicode char U+1FC9 (decimal 8137)
+   defining Unicode char U+1FCA (decimal 8138)
+   defining Unicode char U+1FCB (decimal 8139)
+   defining Unicode char U+1FCC (decimal 8140)
+   defining Unicode char U+1FCD (decimal 8141)
+   defining Unicode char U+1FCE (decimal 8142)
+   defining Unicode char U+1FCF (decimal 8143)
+   defining Unicode char U+1FD0 (decimal 8144)
+   defining Unicode char U+1FD1 (decimal 8145)
+   defining Unicode char U+1FD2 (decimal 8146)
+   defining Unicode char U+1FD3 (decimal 8147)
+   defining Unicode char U+1FD6 (decimal 8150)
+   defining Unicode char U+1FD7 (decimal 8151)
+   defining Unicode char U+1FD8 (decimal 8152)
+   defining Unicode char U+1FD9 (decimal 8153)
+   defining Unicode char U+1FDA (decimal 8154)
+   defining Unicode char U+1FDB (decimal 8155)
+   defining Unicode char U+1FDD (decimal 8157)
+   defining Unicode char U+1FDE (decimal 8158)
+   defining Unicode char U+1FDF (decimal 8159)
+   defining Unicode char U+1FE0 (decimal 8160)
+   defining Unicode char U+1FE1 (decimal 8161)
+   defining Unicode char U+1FE2 (decimal 8162)
+   defining Unicode char U+1FE3 (decimal 8163)
+   defining Unicode char U+1FE4 (decimal 8164)
+   defining Unicode char U+1FE5 (decimal 8165)
+   defining Unicode char U+1FE6 (decimal 8166)
+   defining Unicode char U+1FE7 (decimal 8167)
+   defining Unicode char U+1FE8 (decimal 8168)
+   defining Unicode char U+1FE9 (decimal 8169)
+   defining Unicode char U+1FEA (decimal 8170)
+   defining Unicode char U+1FEB (decimal 8171)
+   defining Unicode char U+1FEC (decimal 8172)
+   defining Unicode char U+1FED (decimal 8173)
+   defining Unicode char U+1FEE (decimal 8174)
+   defining Unicode char U+1FEF (decimal 8175)
+   defining Unicode char U+1FF2 (decimal 8178)
+   defining Unicode char U+1FF3 (decimal 8179)
+   defining Unicode char U+1FF4 (decimal 8180)
+   defining Unicode char U+1FF6 (decimal 8182)
+   defining Unicode char U+1FF7 (decimal 8183)
+   defining Unicode char U+1FF8 (decimal 8184)
+   defining Unicode char U+1FF9 (decimal 8185)
+   defining Unicode char U+1FFA (decimal 8186)
+   defining Unicode char U+1FFB (decimal 8187)
+   defining Unicode char U+1FFC (decimal 8188)
+   defining Unicode char U+1FFD (decimal 8189)
+   defining Unicode char U+1FFE (decimal 8190)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+10144 (decimal 65860)
+   defining Unicode char U+10145 (decimal 65861)
+   defining Unicode char U+10146 (decimal 65862)
+   defining Unicode char U+10147 (decimal 65863)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/greek-fontenc/greek-fontenc.def
+File: greek-fontenc.def 2020/10/30 2.0 Common Greek font encoding definitions
+))
+LaTeX Info: Redefining \& on input line 125.
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language21). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language21). Reported on input line 108.
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/ccaption/ccaption.sty
+Package: ccaption 2011/08/07 v3.2c Extended captioning and new floats
+\@contcwidth=\skip90
+\@contindw=\skip91
+\abovelegendskip=\skip92
+\belowlegendskip=\skip93
+\c@newflo@tctr=\count382
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcbminted.code.tex
 Library (tcolorbox): 'tcbminted.code.tex' version '4.51'
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
-\cftparskip=\skip90
-\cftbeforetoctitleskip=\skip91
-\cftaftertoctitleskip=\skip92
-\cftbeforepartskip=\skip93
-\cftpartnumwidth=\skip94
-\cftpartindent=\skip95
-\cftbeforechapskip=\skip96
-\cftchapindent=\skip97
-\cftchapnumwidth=\skip98
-\cftbeforesecskip=\skip99
-\cftsecindent=\skip100
-\cftsecnumwidth=\skip101
-\cftbeforesubsecskip=\skip102
-\cftsubsecindent=\skip103
-\cftsubsecnumwidth=\skip104
-\cftbeforesubsubsecskip=\skip105
-\cftsubsubsecindent=\skip106
-\cftsubsubsecnumwidth=\skip107
-\cftbeforeparaskip=\skip108
-\cftparaindent=\skip109
-\cftparanumwidth=\skip110
-\cftbeforesubparaskip=\skip111
-\cftsubparaindent=\skip112
-\cftsubparanumwidth=\skip113
-\cftbeforeloftitleskip=\skip114
-\cftafterloftitleskip=\skip115
-\cftbeforefigskip=\skip116
-\cftfigindent=\skip117
-\cftfignumwidth=\skip118
-\c@lofdepth=\count377
-\c@lotdepth=\count378
-\cftbeforelottitleskip=\skip119
-\cftafterlottitleskip=\skip120
-\cftbeforetabskip=\skip121
-\cfttabindent=\skip122
-\cfttabnumwidth=\skip123
+\cftparskip=\skip94
+\cftbeforetoctitleskip=\skip95
+\cftaftertoctitleskip=\skip96
+\cftbeforepartskip=\skip97
+\cftpartnumwidth=\skip98
+\cftpartindent=\skip99
+\cftbeforechapskip=\skip100
+\cftchapindent=\skip101
+\cftchapnumwidth=\skip102
+\cftbeforesecskip=\skip103
+\cftsecindent=\skip104
+\cftsecnumwidth=\skip105
+\cftbeforesubsecskip=\skip106
+\cftsubsecindent=\skip107
+\cftsubsecnumwidth=\skip108
+\cftbeforesubsubsecskip=\skip109
+\cftsubsubsecindent=\skip110
+\cftsubsubsecnumwidth=\skip111
+\cftbeforeparaskip=\skip112
+\cftparaindent=\skip113
+\cftparanumwidth=\skip114
+\cftbeforesubparaskip=\skip115
+\cftsubparaindent=\skip116
+\cftsubparanumwidth=\skip117
+\cftbeforeloftitleskip=\skip118
+\cftafterloftitleskip=\skip119
+\cftbeforefigskip=\skip120
+\cftfigindent=\skip121
+\cftfignumwidth=\skip122
+\c@lofdepth=\count383
+\c@lotdepth=\count384
+\cftbeforelottitleskip=\skip123
+\cftafterlottitleskip=\skip124
+\cftbeforetabskip=\skip125
+\cfttabindent=\skip126
+\cfttabnumwidth=\skip127
 )
 (./commands.tex) (./dedications.tex) (./glossary.tex
 (/usr/local/texlive/2021/texmf-dist/tex/latex/glossaries/base/glossaries.sty
@@ -1036,7 +1436,7 @@ Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 \XKV@toks=\toks53
 \XKV@tempa@toks=\toks54
 )
-\XKV@depth=\count379
+\XKV@depth=\count385
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/local/texlive/2021/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
@@ -1055,7 +1455,7 @@ Package: datatool-base 2019/09/27 v2.32 (NLCT)
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/substr/substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count380
+\c@su@anzahl=\count386
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/datatool/datatool-fp.sty
 Package: datatool-fp 2019/09/27 v2.32 (NLCT)
@@ -1066,19 +1466,19 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count381
+\actioncount=\count387
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count382
-\FP@xia=\count383
-\FP@xib=\count384
-\FP@xfa=\count385
-\FP@xfb=\count386
-\FP@rega=\count387
-\FP@regb=\count388
-\FP@regs=\count389
-\FP@times=\count390
+\FP@xs=\count388
+\FP@xia=\count389
+\FP@xib=\count390
+\FP@xfa=\count391
+\FP@xfb=\count392
+\FP@rega=\count393
+\FP@regb=\count394
+\FP@regs=\count395
+\FP@times=\count396
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
@@ -1097,7 +1497,7 @@ Package: fp-pas 1994/08/29
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count391
+\FPseed=\count397
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
@@ -1109,22 +1509,39 @@ Package: fp-upn 1996/10/21
 Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks57
-\@dtl@tmpcount=\count392
-\dtl@tmplength=\skip124
-\dtl@sortresult=\count393
-\@dtl@numgrpsepcount=\count394
-\@dtl@datatype=\count395
-\dtl@codeA=\count396
-\dtl@codeB=\count397
-\@dtl@foreach@level=\count398
+\@dtl@tmpcount=\count398
+\dtl@tmplength=\skip128
+\dtl@sortresult=\count399
+\@dtl@numgrpsepcount=\count400
+\@dtl@datatype=\count401
+\dtl@codeA=\count402
+\dtl@codeB=\count403
+\@dtl@foreach@level=\count404
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/glossaries/base/glossaries-compat
 ible-307.sty
 Package: glossaries-compatible-307 2020/03/19 v4.46 (NLCT)
 )
-\gls@level=\count399
+(/usr/local/texlive/2021/texmf-dist/tex/latex/tracklang/tracklang.sty
+Package: tracklang 2020/06/30 v1.5 (NLCT) Track Languages
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/tracklang/tracklang.tex))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/translator/translator.sty
+Package: translator 2021-05-31 v1.12d Easy translation of strings in LaTeX
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/glossaries-english/glossaries-eng
+lish.ldf
+File: glossaries-english.ldf 2014/11/23 v1.0
+)
+
+Package glossaries Warning: No language module detected for `greek'.
+(glossaries)                Language modules need to be installed separately.
+(glossaries)                Please check on CTAN for a bundle called
+(glossaries)                `glossaries-greek' or similar.
+
+\gls@level=\count405
 \@gls@tmpb=\toks58
-\gls@tmplen=\skip125
+\gls@tmplen=\skip129
 \glskeylisttok=\toks59
 \glslabeltok=\toks60
 \glsshorttok=\toks61
@@ -1137,58 +1554,58 @@ Package: glossary-hypernav 2020/03/19 v4.46 (NLCT)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/glossaries/styles/glossary-list.s
 ty
 Package: glossary-list 2020/03/19 v4.46 (NLCT)
-\glslistdottedwidth=\skip126
+\glslistdottedwidth=\skip130
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/glossaries/styles/glossary-long.s
 ty
 Package: glossary-long 2020/03/19 v4.46 (NLCT)
  (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2021-05-07 v4.16 Multi-page Table package (DPC)
-\LTleft=\skip127
-\LTright=\skip128
-\LTpre=\skip129
-\LTpost=\skip130
-\LTchunksize=\count400
-\LTcapwidth=\dimen327
+\LTleft=\skip131
+\LTright=\skip132
+\LTpre=\skip133
+\LTpost=\skip134
+\LTchunksize=\count406
+\LTcapwidth=\dimen328
 \LT@head=\box99
 \LT@firsthead=\box100
 \LT@foot=\box101
 \LT@lastfoot=\box102
 \LT@gbox=\box103
-\LT@cols=\count401
-\LT@rows=\count402
-\c@LT@tables=\count403
-\c@LT@chunks=\count404
+\LT@cols=\count407
+\LT@rows=\count408
+\c@LT@tables=\count409
+\c@LT@chunks=\count410
 \LT@p@ftn=\toks63
 )
-\glsdescwidth=\skip131
-\glspagelistwidth=\skip132
+\glsdescwidth=\skip135
+\glspagelistwidth=\skip136
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/glossaries/styles/glossary-super.
 sty
 Package: glossary-super 2020/03/19 v4.46 (NLCT)
  (/usr/local/texlive/2021/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2020/02/02 v4.1g the supertabular environment
-\c@tracingst=\count405
-\ST@wd=\dimen328
-\ST@rightskip=\skip133
-\ST@leftskip=\skip134
-\ST@parfillskip=\skip135
-\ST@pageleft=\dimen329
-\ST@headht=\dimen330
-\ST@tailht=\dimen331
-\ST@pagesofar=\dimen332
-\ST@pboxht=\dimen333
-\ST@lineht=\dimen334
-\ST@prevht=\dimen335
-\ST@toadd=\dimen336
-\ST@dimen=\dimen337
+\c@tracingst=\count411
+\ST@wd=\dimen329
+\ST@rightskip=\skip137
+\ST@leftskip=\skip138
+\ST@parfillskip=\skip139
+\ST@pageleft=\dimen330
+\ST@headht=\dimen331
+\ST@tailht=\dimen332
+\ST@pagesofar=\dimen333
+\ST@pboxht=\dimen334
+\ST@lineht=\dimen335
+\ST@prevht=\dimen336
+\ST@toadd=\dimen337
+\ST@dimen=\dimen338
 \ST@pbox=\box104
 ))
 (/usr/local/texlive/2021/texmf-dist/tex/latex/glossaries/styles/glossary-tree.s
 ty
 Package: glossary-tree 2020/03/19 v4.46 (NLCT)
-\glstreeindent=\skip136
+\glstreeindent=\skip140
 ))
 (/usr/local/texlive/2021/texmf-dist/tex/latex/glossaries/styles/glossary-longbo
 oktabs.sty
@@ -1206,34 +1623,34 @@ Package glossaries Info: Writing glossary file main.glo on input line 6.
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \ttl@box=\box105
-\beforetitleunit=\skip137
-\aftertitleunit=\skip138
-\ttl@plus=\dimen338
-\ttl@minus=\dimen339
+\beforetitleunit=\skip141
+\aftertitleunit=\skip142
+\ttl@plus=\dimen339
+\ttl@minus=\dimen340
 \ttl@toksa=\toks64
-\titlewidth=\dimen340
-\titlewidthlast=\dimen341
-\titlewidthfirst=\dimen342
+\titlewidth=\dimen341
+\titlewidthlast=\dimen342
+\titlewidthfirst=\dimen343
 )
-\c@ttlp@side=\count406
-\ttlp@side=\count407
+\c@ttlp@side=\count412
+\ttlp@side=\count413
 \epi@textbox=\box106
 \epi@sourcebox=\box107
-\epi@finalwidth=\skip139
-\c@todos=\count408
-\cftbeforetodosskip=\skip140
-\cfttodosindent=\skip141
-\cfttodosnumwidth=\skip142
-\c@toddepth=\count409
-\cftbeforetodtitleskip=\skip143
-\cftaftertodtitleskip=\skip144
-\c@epigraphs=\count410
-\cftbeforeepigraphsskip=\skip145
-\cftepigraphsindent=\skip146
-\cftepigraphsnumwidth=\skip147
-\c@toedepth=\count411
-\cftbeforetoetitleskip=\skip148
-\cftaftertoetitleskip=\skip149
+\epi@finalwidth=\skip143
+\c@todos=\count414
+\cftbeforetodosskip=\skip144
+\cfttodosindent=\skip145
+\cfttodosnumwidth=\skip146
+\c@toddepth=\count415
+\cftbeforetodtitleskip=\skip147
+\cftaftertodtitleskip=\skip148
+\c@epigraphs=\count416
+\cftbeforeepigraphsskip=\skip149
+\cftepigraphsindent=\skip150
+\cftepigraphsnumwidth=\skip151
+\c@toedepth=\count417
+\cftbeforetoetitleskip=\skip152
+\cftaftertoetitleskip=\skip153
 \myfile=\write8
 \openout8 = `main.todos'.
 
@@ -1252,9 +1669,9 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen343
-\Hy@linkcounter=\count412
-\Hy@pagecounter=\count413
+\@linkdim=\dimen344
+\Hy@linkcounter=\count418
+\Hy@pagecounter=\count419
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
@@ -1267,13 +1684,17 @@ nguages
 ) (/usr/local/texlive/2021/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count414
+\Hy@SavedSpaceFactor=\count420
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
-)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/puenc-greekbasic.def
+File: puenc-greekbasic.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (
+greek block) (HO)
+))
 Package hyperref Info: Hyper figures OFF on input line 4192.
 Package hyperref Info: Link nesting OFF on input line 4197.
 Package hyperref Info: Hyper index ON on input line 4200.
@@ -1281,14 +1702,14 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count415
+\c@Hy@tempcnt=\count421
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen344
+\XeTeXLinkMargin=\dimen345
 
 (/usr/local/texlive/2021/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -1297,9 +1718,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count416
-\Field@Width=\dimen345
-\Fld@charsize=\dimen346
+\Fld@menulength=\count422
+\Field@Width=\dimen346
+\Fld@charsize=\dimen347
 Package hyperref Info: Hyper figures OFF on input line 6076.
 Package hyperref Info: Link nesting OFF on input line 6081.
 Package hyperref Info: Hyper index ON on input line 6084.
@@ -1314,9 +1735,9 @@ LaTeX Info: Redefining \pageref on input line 6150.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count417
-\c@Item=\count418
-\c@Hfootnote=\count419
+\Hy@abspage=\count423
+\c@Item=\count424
+\c@Hfootnote=\count425
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -1328,8 +1749,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
 e
 with kernel methods
 )
-\Fld@listcount=\count420
-\c@bookmark@seq@number=\count421
+\Fld@listcount=\count426
+\c@bookmark@seq@number=\count427
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -1340,14 +1761,14 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip150
+\Hy@SectionHShift=\skip154
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 381.
-\c@tcb@cnt@pythonfile=\count422
-Package translations Info: No language package found. I am going to use `englis
-h' as default language. on input line 410.
+Package hyperref Info: Option `colorlinks' set `true' on input line 416.
+\c@tcb@cnt@pythonfile=\count428
 Package csquotes Info: Checking for multilingual support...
-Package csquotes Info: ... none found.
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'english'.
 runsystem(which pygmentize && touch main.aex)...executed.
 
 runsystem(rm main.aex)...executed.
@@ -1355,24 +1776,32 @@ runsystem(rm main.aex)...executed.
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 410.
-LaTeX Font Info:    ... okay on input line 410.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 410.
-LaTeX Font Info:    ... okay on input line 410.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 410.
-LaTeX Font Info:    ... okay on input line 410.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 410.
-LaTeX Font Info:    ... okay on input line 410.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 410.
-LaTeX Font Info:    ... okay on input line 410.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 410.
-LaTeX Font Info:    ... okay on input line 410.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 410.
-LaTeX Font Info:    ... okay on input line 410.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 410.
-LaTeX Font Info:    ... okay on input line 410.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 410.
-LaTeX Font Info:    ... okay on input line 410.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 445.
+LaTeX Font Info:    ... okay on input line 445.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 445.
+LaTeX Font Info:    ... okay on input line 445.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 445.
+LaTeX Font Info:    ... okay on input line 445.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 445.
+LaTeX Font Info:    ... okay on input line 445.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 445.
+LaTeX Font Info:    ... okay on input line 445.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 445.
+LaTeX Font Info:    ... okay on input line 445.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 445.
+LaTeX Font Info:    ... okay on input line 445.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 445.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 4
+45.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
+File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
+)
+LaTeX Font Info:    ... okay on input line 445.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 445.
+LaTeX Font Info:    ... okay on input line 445.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 445.
+LaTeX Font Info:    ... okay on input line 445.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1408,24 +1837,28 @@ LaTeX Font Info:    ... okay on input line 410.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+
+Package epigraph Warning: flushleftright has been previously defined.
+(epigraph)                Use flushepinormal for epigraphs instead.
+
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 410.
+(lastpage)             ! on input line 445.
 
-Package chemgreek Info: Activating mapping `default' on line 410.
+Package chemgreek Info: Activating mapping `default' on line 445.
 
 (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count423
-\scratchdimen=\dimen347
+\scratchcounter=\count429
+\scratchdimen=\dimen348
 \scratchbox=\box108
-\nofMPsegments=\count424
-\nofMParguments=\count425
+\nofMPsegments=\count430
+\nofMParguments=\count431
 \everyMPshowfont=\toks65
-\MPscratchCnt=\count426
-\MPscratchDim=\dimen348
-\MPnumerator=\count427
-\makeMPintoPDFobject=\count428
+\MPscratchCnt=\count432
+\MPscratchDim=\dimen349
+\MPnumerator=\count433
+\makeMPintoPDFobject=\count434
 \everyMPtoPDFconversion=\toks66
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1442,7 +1875,9 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 410.
+or `english'. on input line 445.
+Package translations Info: no dictionary file `translations-basic-dictionary-gr
+eek.trsl' found. on input line 445.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
@@ -1452,9 +1887,15 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-\c@lstlisting=\count429
-Package hyperref Info: Link coloring ON on input line 410.
+\c@lstlisting=\count435
 
+(/usr/local/texlive/2021/texmf-dist/tex/latex/greek-fontenc/puenc-greek.def
+File: puenc-greek.def 2020/10/18 2.0 Greek LICRs for PDF strings
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/greek-fontenc/greek-fontenc.def
+File: greek-fontenc.def 2020/10/30 2.0 Common Greek font encoding definitions
+))
+Package hyperref Info: Link coloring ON on input line 445.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -1465,12 +1906,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count430
+\c@section@level=\count436
 )
-LaTeX Info: Redefining \ref on input line 410.
-LaTeX Info: Redefining \pageref on input line 410.
-LaTeX Info: Redefining \nameref on input line 410.
- (./main.out) (./main.out)
+LaTeX Info: Redefining \ref on input line 445.
+LaTeX Info: Redefining \pageref on input line 445.
+LaTeX Info: Redefining \nameref on input line 445.
 \@outlinefile=\write9
 \openout9 = `main.out'.
 
@@ -1513,11 +1953,11 @@ LaTeX Font Info:    Trying to load font information for T1+lmss on input line 9
 (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<images/Cover.png, id=380, 463.0098pt x 637.6623pt>
-File: images/Cover.png Graphic file (type png)
-<use images/Cover.png>
-Package pdftex.def Info: images/Cover.png  used on input line 24.
-(pdftex.def)             Requested size: 614.295pt x 846.02719pt.
+<images/Alt_Cover_Page.jpg, id=43, 1430.34375pt x 1927.2pt>
+File: images/Alt_Cover_Page.jpg Graphic file (type jpg)
+<use images/Alt_Cover_Page.jpg>
+Package pdftex.def Info: images/Alt_Cover_Page.jpg  used on input line 24.
+(pdftex.def)             Requested size: 614.295pt x 827.68004pt.
  [1
 
 \openout6 = `main.ist'.
@@ -1526,7 +1966,7 @@ Package pdftex.def Info: images/Cover.png  used on input line 24.
 
 
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./image
-s/Cover.png>]
+s/Alt_Cover_Page.jpg>]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: <default>
@@ -1559,141 +1999,570 @@ s/Cover.png>]
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+ (./abstract.tex)
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 4
+0.
 
-(./abstract.tex)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 38.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 40.
 
- (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 40.
 
- (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [2
+)
+
+LaTeX Warning: Reference `LastPage' on page {\fontencoding {T1}\selectfont ii} 
+undefined on input line 41.
+
+[2
 
 
-] [3]
-[4] (./acknowledgements.tex [5]
+]
 
-LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/it' instead on input line 21.
+LaTeX Warning: Reference `LastPage' on page {\fontencoding {T1}\selectfont iii}
+ undefined on input line 45.
+
+[3]
+
+LaTeX Warning: Reference `LastPage' on page {\fontencoding {T1}\selectfont iv} 
+undefined on input line 49.
+
+[4] (./acknowledgements.tex
+
+LaTeX Warning: Reference `LastPage' on page {\fontencoding {T1}\selectfont v} u
+ndefined on input line 2.
+
+[5]
+
+Package natbib Warning: Citation `eldridge_binary_2017' on page {\fontencoding 
+{T1}\selectfont vi} undefined on input line 9.
+
+
+Package natbib Warning: Citation `stanway_re-evaluating_2018' on page {\fontenc
+oding {T1}\selectfont vi} undefined on input line 9.
+
+
+LaTeX Warning: Reference `LastPage' on page {\fontencoding {T1}\selectfont vi} 
+undefined on input line 21.
 
 [6]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
+(Font)              using `T1/cmr/m/it' instead on input line 21.
+
+
+LaTeX Warning: Reference `LastPage' on page {\fontencoding {T1}\selectfont vii}
+ undefined on input line 32.
+
+[7]
+
+LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 32.
 
-[7] [8]
+
+LaTeX Warning: Reference `LastPage' on page {\fontencoding {T1}\selectfont viii
+} undefined on input line 41.
+
+[8]
+
+LaTeX Warning: Reference `LastPage' on page {\fontencoding {T1}\selectfont ix} 
+undefined on input line 51.
+
+[9]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 54.
 
-) [9] [10
+)
 
-] (./main.toc [11] [12])
+LaTeX Warning: Reference `LastPage' on page {\fontencoding {T1}\selectfont x} u
+ndefined on input line 53.
+
+[10]
 \tf@toc=\write10
 \openout10 = `main.toc'.
 
- [13] [14
 
-] (./main.lof)
+
+LaTeX Warning: Reference `LastPage' on page {\fontencoding {T1}\selectfont xi} 
+undefined on input line 54.
+
+[11
+
+]
+
+LaTeX Warning: Reference `LastPage' on page {\fontencoding {T1}\selectfont xii}
+ undefined on input line 54.
+
+[12
+
+]
 \tf@lof=\write11
 \openout11 = `main.lof'.
 
- [15] [16
 
-] (./main.lot)
+
+LaTeX Warning: Reference `LastPage' on page {\fontencoding {T1}\selectfont xiii
+} undefined on input line 55.
+
+[13]
+
+LaTeX Warning: Reference `LastPage' on page {\fontencoding {T1}\selectfont xiv}
+ undefined on input line 55.
+
+[14
+
+]
 \tf@lot=\write12
 \openout12 = `main.lot'.
 
-(./main.gls [17] [18
 
-] [19
+No file main.gls.
 
-]) [20] (./main.tod
-Overfull \hbox (0.27771pt too wide) detected at line 7
-\T1/cmr/m/n/10 A.7 
- []
+LaTeX Warning: Reference `LastPage' on page {\fontencoding {T1}\selectfont xv} 
+undefined on input line 58.
 
-)
+[15]
+
+LaTeX Warning: Reference `LastPage' on page {\fontencoding {T1}\selectfont xvi}
+ undefined on input line 58.
+
+[16
+
+]
+
+Package hyperref Warning: old tod file detected, not used; run LaTeX again.
+
 \tf@tod=\write13
 \openout13 = `main.tod'.
 
- [21
 
-] [22
+LaTeX Warning: Reference `LastPage' on page {\fontencoding {T1}\selectfont xvii
+} undefined on input line 59.
 
-] (./main.toe [23]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[17]
 
- [24])
+LaTeX Warning: Reference `LastPage' on page {\fontencoding {T1}\selectfont xvii
+i} undefined on input line 59.
+
+[18
+
+]
+
+Package hyperref Warning: old toe file detected, not used; run LaTeX again.
+
 \tf@toe=\write14
 \openout14 = `main.toe'.
 
-<declaration_forms/Chapter05.pdf, id=805, 597.53635pt x 845.04686pt>
+<declaration_forms/Chapter05.pdf, id=144, 597.53635pt x 845.04686pt>
 File: declaration_forms/Chapter05.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter05.pdf>
-Package pdftex.def Info: declaration_forms/Chapter05.pdf  used on input line 62
+Package pdftex.def Info: declaration_forms/Chapter05.pdf  used on input line 64
 .
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
 File: declaration_forms/Chapter05.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter05.pdf>
-Package pdftex.def Info: declaration_forms/Chapter05.pdf  used on input line 62
+Package pdftex.def Info: declaration_forms/Chapter05.pdf  used on input line 64
 .
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
-<declaration_forms/Chapter05.pdf, id=808, page=1, 597.53635pt x 845.04686pt>
+<declaration_forms/Chapter05.pdf, id=147, page=1, 597.53635pt x 845.04686pt>
 File: declaration_forms/Chapter05.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter05.pdf, page 1>
 Package pdftex.def Info: declaration_forms/Chapter05.pdf , page1 used on input 
-line 62.
+line 64.
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
 File: declaration_forms/Chapter05.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter05.pdf, page 1>
 Package pdftex.def Info: declaration_forms/Chapter05.pdf , page1 used on input 
-line 62.
+line 64.
 (pdftex.def)             Requested size: 562.14925pt x 795.00179pt.
 
-[25]
+LaTeX Warning: Reference `LastPage' on page {\fontencoding {T1}\selectfont xix}
+ undefined on input line 64.
+
+[19]
 File: declaration_forms/Chapter05.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter05.pdf, page 1>
 Package pdftex.def Info: declaration_forms/Chapter05.pdf , page1 used on input 
-line 62.
+line 64.
 (pdftex.def)             Requested size: 562.14925pt x 795.00179pt.
 File: declaration_forms/Chapter05.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter05.pdf, page 1>
 Package pdftex.def Info: declaration_forms/Chapter05.pdf , page1 used on input 
-line 62.
+line 64.
 (pdftex.def)             Requested size: 562.14925pt x 795.00179pt.
 File: declaration_forms/Chapter05.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter05.pdf, page 1>
 Package pdftex.def Info: declaration_forms/Chapter05.pdf , page1 used on input 
-line 62.
+line 64.
 (pdftex.def)             Requested size: 562.14925pt x 795.00179pt.
- [26 <./declaration_forms/Chapter05.pdf>]) (./chapters/chapter01.tex
+ [20 <./declaration_forms/Chapter05.pdf>]) (./chapters/chapter01.tex
 Chapter 1.
 
-LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/it' instead on input line 28.
+Package natbib Warning: Citation `abbott_observation_2016' on page 1 undefined 
+on input line 18.
+
+
+Package natbib Warning: Citation `abbott_observation_2016' on page 1 undefined 
+on input line 18.
+
+
+Package natbib Warning: Citation `eichler_nucleosynthesis_1989' on page 1 undef
+ined on input line 18.
+
+
+Package natbib Warning: Citation `arcavi_optical_2017' on page 1 undefined on i
+nput line 18.
+
+
+Package natbib Warning: Citation `pian_spectroscopic_2017' on page 1 undefined 
+on input line 18.
+
+
+Package natbib Warning: Citation `smartt_kilonova_2017' on page 1 undefined on 
+input line 18.
+
+
+Package natbib Warning: Citation `christensen_stochastic_2018' on page 1 undefi
+ned on input line 18.
+
+
+Package natbib Warning: Citation `christensen_measuring_1992' on page 1 undefin
+ed on input line 18.
+
+
+Package natbib Warning: Citation `christensen_stochastic_2018' on page 1 undefi
+ned on input line 18.
+
+
+Package natbib Warning: Citation `agazie_nanograv_2023' on page 1 undefined on 
+input line 18.
+
+
+Package natbib Warning: Citation `antoniadis_second_2023' on page 1 undefined o
+n input line 18.
+
+
+Package natbib Warning: Citation `reardon_search_2023' on page 1 undefined on i
+nput line 18.
+
+
+Package natbib Warning: Citation `xu_searching_2023' on page 1 undefined on inp
+ut line 18.
+
+
+Package natbib Warning: Citation `burbidge_synthesis_1957' on page 1 undefined 
+on input line 22.
+
+
+LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 23.
 
 [1
 
 
-] [2] [3] [4]
+]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/it' instead on input line 121.
+(Font)              using `T1/cmr/m/it' instead on input line 28.
 
-) (./chapters/chapter02.tex [5] [6
+
+Package natbib Warning: Citation `stephenson_records_1985' on page 2 undefined 
+on input line 30.
+
+
+Package natbib Warning: Citation `fang_past_2015' on page 2 undefined on input 
+line 30.
+
+
+Package natbib Warning: Citation `buck_vikings_1938' on page 2 undefined on inp
+ut line 30.
+
+
+Package natbib Warning: Citation `hamacher_first_2022' on page 2 undefined on i
+nput line 30.
+
+
+Package natbib Warning: Citation `shakespeare_othello_1603' on page 2 undefined
+ on input line 37.
+
+
+Package natbib Warning: Citation `ptolemy_2005_tetrabiblos' on page 2 undefined
+ on input line 55.
+
+
+Package natbib Warning: Citation `ptolemy_1940_tetrabiblos' on page 2 undefined
+ on input line 55.
+
+
+Overfull \hbox (2.22168pt too wide) in paragraph at lines 55--55
+[] [] 
+ []
+
+
+Underfull \vbox (badness 2903) has occurred while \output is active []
+
+
+
+LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 55.
+
+[2]
+
+Package natbib Warning: Citation `dante_paradiso_1317' on page 3 undefined on i
+nput line 76.
+
+
+Package natbib Warning: Citation `corbett_vertical_2016' on page 3 undefined on
+ input line 76.
+
+
+Overfull \hbox (2.22168pt too wide) in paragraph at lines 76--76
+[] [] 
+ []
+
+
+Package natbib Warning: Citation `kingjames1611' on page 3 undefined on input l
+ine 85.
+
+
+LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 87.
+
+[3]
+
+Package natbib Warning: Citation `carroll_introduction_2017' on page 4 undefine
+d on input line 89.
+
+
+Package natbib Warning: Citation `einstein_zur_1905' on page 4 undefined on inp
+ut line 91.
+
+
+Package natbib Warning: Citation `einstein_kosmologische_1917' on page 4 undefi
+ned on input line 91.
+
+
+Package natbib Warning: Citation `poincare_sur_1906' on page 4 undefined on inp
+ut line 91.
+
+
+Package natbib Warning: Citation `einstein_naherungsweise_1916' on page 4 undef
+ined on input line 91.
+
+
+Package natbib Warning: Citation `payne_stellar_1925' on page 4 undefined on in
+put line 91.
+
+
+Package natbib Warning: Citation `baade_super-novae_1934' on page 4 undefined o
+n input line 91.
+
+
+Package natbib Warning: Citation `hoyle_synthesis_1946' on page 4 undefined on 
+input line 91.
+
+
+Package natbib Warning: Citation `salpeter_luminosity_1955' on page 4 undefined
+ on input line 91.
+
+
+Package natbib Warning: Citation `burbidge_synthesis_1957' on page 4 undefined 
+on input line 91.
+
+
+Package natbib Warning: Citation `henyey_early_1955' on page 4 undefined on inp
+ut line 91.
+
+
+Package natbib Warning: Citation `hayashi_stellar_1961' on page 4 undefined on 
+input line 91.
+
+
+Package natbib Warning: Citation `thorne_stars_1977' on page 4 undefined on inp
+ut line 93.
+
+
+Package natbib Warning: Citation `levesque_discovery_2014' on page 4 undefined 
+on input line 93.
+
+
+Package natbib Warning: Citation `ligo_scientific_collaboration_and_virgo_colla
+boration_observation_2016' on page 4 undefined on input line 93.
+
+
+Package natbib Warning: Citation `einstein_naherungsweise_1916' on page 4 undef
+ined on input line 93.
+
+
+Package natbib Warning: Citation `lau_nested_2022' on page 4 undefined on input
+ line 93.
+
+
+Package natbib Warning: Citation `ivezic_lsst_2019' on page 4 undefined on inpu
+t line 93.
+
+
+Package natbib Warning: Citation `burdge_88_2020' on page 4 undefined on input 
+line 93.
+
+
+Package natbib Warning: Citation `amaro-seoane_low-frequency_2012' on page 4 un
+defined on input line 93.
+
+
+Package natbib Warning: Citation `schmitz_new_2021' on page 4 undefined on inpu
+t line 93.
+
+
+Package natbib Warning: Citation `agazie_nanograv_2023' on page 4 undefined on 
+input line 93.
+
+
+Package natbib Warning: Citation `antoniadis_second_2023' on page 4 undefined o
+n input line 93.
+
+
+Package natbib Warning: Citation `reardon_search_2023' on page 4 undefined on i
+nput line 93.
+
+
+Package natbib Warning: Citation `xu_searching_2023' on page 4 undefined on inp
+ut line 93.
+
+
+Package natbib Warning: Citation `barstow_hubble_2005' on page 4 undefined on i
+nput line 99.
+
+
+Package natbib Warning: Citation `eddy_new_1979' on page 4 undefined on input l
+ine 99.
+
+
+Package natbib Warning: Citation `fratanduono_probing_2020' on page 4 undefined
+ on input line 99.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 100.
+
+[4]
+
+LaTeX Warning: Reference `chap:numerical_methods_stars' on page 5 undefined on 
+input line 117.
+
+
+Package natbib Warning: Citation `paxton_modules_2011' on page 5 undefined on i
+nput line 117.
+
+
+Package natbib Warning: Citation `paxton_modules_2013' on page 5 undefined on i
+nput line 117.
+
+
+Package natbib Warning: Citation `paxton_modules_2015' on page 5 undefined on i
+nput line 117.
+
+
+Package natbib Warning: Citation `paxton_modules_2018' on page 5 undefined on i
+nput line 117.
+
+
+Package natbib Warning: Citation `paxton_modules_2019' on page 5 undefined on i
+nput line 117.
+
+
+Package natbib Warning: Citation `jermyn_modules_2023' on page 5 undefined on i
+nput line 117.
+
+
+LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 118.
+
+[5]
+
+Package natbib Warning: Citation `team_compas_riley_rapid_2022' on page 6 undef
+ined on input line 121.
+
+
+Package natbib Warning: Citation `paxton_modules_2011' on page 6 undefined on i
+nput line 121.
+
+
+Package natbib Warning: Citation `paxton_modules_2013' on page 6 undefined on i
+nput line 121.
+
+
+Package natbib Warning: Citation `paxton_modules_2015' on page 6 undefined on i
+nput line 121.
+
+
+Package natbib Warning: Citation `paxton_modules_2018' on page 6 undefined on i
+nput line 121.
+
+
+Package natbib Warning: Citation `paxton_modules_2019' on page 6 undefined on i
+nput line 121.
+
+
+Package natbib Warning: Citation `jermyn_modules_2023' on page 6 undefined on i
+nput line 121.
+
+
+Package natbib Warning: Citation `price_phantom_2018' on page 6 undefined on in
+put line 125.
+
+
+LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
+(Font)              using `T1/cmr/m/it' instead on input line 139.
+
+) (./chapters/chapter02.tex
+
+LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 2.
+
+[6]
+
+LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 2.
+
+[7]
+
+LaTeX Warning: Reference `LastPage' on page 8 undefined on input line 2.
+
+[8
 
 ]
 Chapter 2.
-[7]
+
+LaTeX Warning: Reference `LastPage' on page 9 undefined on input line 21.
+
+[9]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 44.
 
-[8]
+
+LaTeX Warning: Reference `LastPage' on page 10 undefined on input line 56.
+
+[10]
+
+LaTeX Warning: Reference `eq:stellar_structure' on page 11 undefined on input l
+ine 80.
+
+
+LaTeX Warning: Reference `LastPage' on page 11 undefined on input line 85.
+
+[11]
+
+LaTeX Warning: Reference `eq:mass_fracs' on page 12 undefined on input line 96.
+
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrshort' on input line 102.
@@ -1702,23 +2571,102 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 102.
 
-[9] [10]
+
+LaTeX Warning: Reference `LastPage' on page 12 undefined on input line 116.
+
+[12]
+
+Package natbib Warning: Citation `asplund_chemical_2021' on page 13 undefined o
+n input line 146.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11]
-[12]
+
+
+LaTeX Warning: Reference `LastPage' on page 13 undefined on input line 152.
+
+[13]
+
+Package natbib Warning: Citation `arnett_supernova_1989' on page 14 undefined o
+n input line 154.
+
+
+Package natbib Warning: Citation `ballesteros_new_2012' on page 14 undefined on
+ input line 156.
+
+
+Package natbib Warning: Citation `hoyle_main-sequence_1960' on page 14 undefine
+d on input line 156.
+
+
+Package natbib Warning: Citation `hoyle_main-sequence_1960' on page 14 undefine
+d on input line 156.
+
+
+LaTeX Warning: Reference `LastPage' on page 14 undefined on input line 174.
+
+[14]
+
+LaTeX Warning: Reference `eq:reintroduce_summands' on page 15 undefined on inpu
+t line 201.
+
+
+Package natbib Warning: Citation `friedmann_uber_1922' on page 15 undefined on 
+input line 201.
+
+
+Package natbib Warning: Citation `lemaitre_homogeneous_1931' on page 15 undefin
+ed on input line 201.
+
+
+Package natbib Warning: Citation `robertson_kinematics_1935' on page 15 undefin
+ed on input line 201.
+
+
+Package natbib Warning: Citation `walker_milnes_1937' on page 15 undefined on i
+nput line 201.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+LaTeX Warning: Reference `LastPage' on page 15 undefined on input line 211.
+
+[15]
+
+Package natbib Warning: Citation `ud-doula_first_2013' on page 16 undefined on 
+input line 215.
+
+
+Package natbib Warning: Citation `price_phantom_2018' on page 16 undefined on i
+nput line 215.
+
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 224.
 
 
+LaTeX Warning: Reference `LastPage' on page 16 undefined on input line 230.
+
+[16]
+
+Package natbib Warning: Citation `reynolds_gone_2015' on page 17 undefined on i
+nput line 231.
+
+
+LaTeX Warning: Reference `fig:supernova_taxonomy' on page 17 undefined on input
+ line 231.
+
+
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowinset=\dimen349
-\pgfarrowlength=\dimen350
-\pgfarrowwidth=\dimen351
-\pgfarrowlinewidth=\dimen352
+\pgfarrowinset=\dimen350
+\pgfarrowlength=\dimen351
+\pgfarrowwidth=\dimen352
+\pgfarrowlinewidth=\dimen353
 )
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryarrows.code.tex
@@ -1727,7 +2675,7 @@ File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 code.tex
 File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\arrowsize=\dimen353
+\arrowsize=\dimen354
 ))
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarypositioning.code.tex
@@ -1737,7 +2685,46 @@ Overfull \hbox (52.47163pt too wide) in paragraph at lines 284--285
  [][] 
  []
 
-[13] [14] [15]
+
+LaTeX Warning: Reference `sec:stellar_formation' on page 17 undefined on input 
+line 297.
+
+
+Package natbib Warning: Citation `burns_dynamical_1978' on page 17 undefined on
+ input line 297.
+
+
+Package natbib Warning: Citation `raucq_observational_2017' on page 17 undefine
+d on input line 299.
+
+
+LaTeX Warning: Reference `sec:close_contact' on page 17 undefined on input line
+ 299.
+
+
+LaTeX Warning: Reference `LastPage' on page 17 undefined on input line 300.
+
+[17]
+
+LaTeX Warning: Reference `LastPage' on page 18 undefined on input line 300.
+
+[18]
+
+LaTeX Warning: Reference `fig:bss_schematic' on page 19 undefined on input line
+ 313.
+
+
+Package natbib Warning: Citation `richards_missing_2021' on page 19 undefined o
+n input line 339.
+
+
+Package natbib Warning: Citation `richards_missing_2021' on page 19 undefined o
+n input line 339.
+
+
+LaTeX Warning: Reference `LastPage' on page 19 undefined on input line 353.
+
+[19]
 
 Package siunitx Info: Option "retain-unity-mantissa" has been deprecated in
 (siunitx)             this release.
@@ -1749,75 +2736,418 @@ Package siunitx Info: Option "retain-unity-mantissa" has been deprecated in
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 372.
 
-<images/TheorySection/roche_potentials.png, id=1214, 444.4605pt x 602.25pt>
+
+LaTeX Warning: Reference `fig:roche_potentials' on page 20 undefined on input l
+ine 374.
+
+
+LaTeX Warning: Reference `LastPage' on page 20 undefined on input line 375.
+
+[20]
+<images/TheorySection/roche_potentials.png, id=378, 444.4605pt x 602.25pt>
 File: images/TheorySection/roche_potentials.png Graphic file (type png)
 <use images/TheorySection/roche_potentials.png>
 Package pdftex.def Info: images/TheorySection/roche_potentials.png  used on inp
 ut line 378.
 (pdftex.def)             Requested size: 401.22942pt x 543.69249pt.
 
-LaTeX Warning: Float too large for page by 0.97697pt on input line 381.
 
-[16] [17] [18 <./images/TheorySection/roche_potentials.png>]
-<images/TheorySection/RLs_Eggleton_Formula.png, id=1251, 399.894pt x 212.7147pt
->
+Package natbib Warning: Citation `rose_advanced_1998' on page 21 undefined on i
+nput line 385.
+
+
+Underfull \vbox (badness 1057) has occurred while \output is active []
+
+
+
+LaTeX Warning: Reference `LastPage' on page 21 undefined on input line 420.
+
+[21]
+
+LaTeX Warning: Reference `LastPage' on page 22 undefined on input line 420.
+
+[22 <./images/TheorySection/roche_potentials.png>]
+
+Package natbib Warning: Citation `eggleton_aproximations_1983' on page 23 undef
+ined on input line 535.
+
+
+LaTeX Warning: Reference `LastPage' on page 23 undefined on input line 539.
+
+[23]
+
+LaTeX Warning: Reference `fig:eggleton_approx_schematic' on page 24 undefined o
+n input line 541.
+
+
+LaTeX Warning: Reference `fig:eggleton_approx' on page 24 undefined on input li
+ne 541.
+
+<images/TheorySection/RLs_Eggleton_Formula.png, id=409, 399.894pt x 212.7147pt>
+
 File: images/TheorySection/RLs_Eggleton_Formula.png Graphic file (type png)
 <use images/TheorySection/RLs_Eggleton_Formula.png>
 Package pdftex.def Info: images/TheorySection/RLs_Eggleton_Formula.png  used on
  input line 545.
 (pdftex.def)             Requested size: 472.03123pt x 251.09529pt.
-<images/TheorySection/eggleton_justification.png, id=1260, 508.299pt x 207.8967
-pt>
+
+LaTeX Warning: Reference `eq:RL1_eggleton' on page 24 undefined on input line 5
+46.
+
+
+LaTeX Warning: Reference `eq:roche_lobe_condition' on page 24 undefined on inpu
+t line 546.
+
+
+Package natbib Warning: Citation `eggleton_aproximations_1983' on page 24 undef
+ined on input line 546.
+
+
+LaTeX Warning: Reference `eq:RL1_eggleton' on page 24 undefined on input line 5
+46.
+
+
+LaTeX Warning: Reference `eq:roche_lobe_condition' on page 24 undefined on inpu
+t line 546.
+
+
+Package natbib Warning: Citation `eggleton_aproximations_1983' on page 24 undef
+ined on input line 546.
+
+<images/TheorySection/eggleton_justification.png, id=410, 508.299pt x 207.8967p
+t>
 File: images/TheorySection/eggleton_justification.png Graphic file (type png)
 <use images/TheorySection/eggleton_justification.png>
 Package pdftex.def Info: images/TheorySection/eggleton_justification.png  used 
 on input line 552.
 (pdftex.def)             Requested size: 472.03123pt x 193.0691pt.
-<images/TheorySection/marchant_justification.png, id=1266, 508.299pt x 207.8967
-pt>
+
+LaTeX Warning: Reference `eq:RL1_eggleton' on page 24 undefined on input line 5
+53.
+
+
+LaTeX Warning: Reference `eq:RL1_eggleton' on page 24 undefined on input line 5
+53.
+
+
+Package natbib Warning: Citation `marchant_new_2016' on page 24 undefined on in
+put line 560.
+
+
+LaTeX Warning: Reference `eq:RL1_eggleton' on page 24 undefined on input line 5
+66.
+
+<images/TheorySection/marchant_justification.png, id=411, 508.299pt x 207.8967p
+t>
 File: images/TheorySection/marchant_justification.png Graphic file (type png)
 <use images/TheorySection/marchant_justification.png>
 Package pdftex.def Info: images/TheorySection/marchant_justification.png  used 
 on input line 570.
 (pdftex.def)             Requested size: 472.03123pt x 193.0691pt.
- [19] [20 <./images/TheorySection/RLs_Eggleton_Formula.png> <./images/TheorySec
-tion/eggleton_justification.png>] [21 <./images/TheorySection/marchant_justific
-ation.png>]
+
+LaTeX Warning: Reference `fig:eggleton_approx' on page 24 undefined on input li
+ne 571.
+
+
+LaTeX Warning: Reference `eq:RL2_marchant' on page 24 undefined on input line 5
+71.
+
+
+Package natbib Warning: Citation `marchant_new_2016' on page 24 undefined on in
+put line 571.
+
+
+LaTeX Warning: Reference `fig:eggleton_approx' on page 24 undefined on input li
+ne 571.
+
+
+LaTeX Warning: Reference `eq:RL2_marchant' on page 24 undefined on input line 5
+71.
+
+
+Package natbib Warning: Citation `marchant_new_2016' on page 24 undefined on in
+put line 571.
+
+
+Package natbib Warning: Citation `marchant_new_2016' on page 24 undefined on in
+put line 575.
+
+
+Package natbib Warning: Citation `eggleton_aproximations_1983' on page 24 undef
+ined on input line 575.
+
+
+Package natbib Warning: Citation `marchant_new_2016' on page 24 undefined on in
+put line 575.
+
+
+Package natbib Warning: Citation `eggleton_aproximations_1983' on page 24 undef
+ined on input line 575.
+
+
+LaTeX Warning: Reference `eq:RL2_marchant' on page 24 undefined on input line 5
+75.
+
+
+LaTeX Warning: Reference `LastPage' on page 24 undefined on input line 576.
+
+[24 <./images/TheorySection/RLs_Eggleton_Formula.png>]
+
+LaTeX Warning: Reference `LastPage' on page 25 undefined on input line 576.
+
+[25 <./images/TheorySection/eggleton_justification.png> <./images/TheorySection
+/marchant_justification.png>]
+
+Package natbib Warning: Citation `eggleton_aproximations_1983' on page 26 undef
+ined on input line 583.
+
+
+Package natbib Warning: Citation `de_kool_common_1990' on page 26 undefined on 
+input line 605.
+
+
+Package natbib Warning: Citation `ivanova_common_2013' on page 26 undefined on 
+input line 605.
+
+
+Package natbib Warning: Citation `scherbak_white_2023' on page 26 undefined on 
+input line 605.
+
+
+LaTeX Warning: Reference `LastPage' on page 26 undefined on input line 606.
+
+[26]
+
+Package natbib Warning: Citation `eggen_angular_1963' on page 27 undefined on i
+nput line 621.
+
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 632.
 
-[22] [23] [24]
+
+Package natbib Warning: Citation `peters_gravitational_1964' on page 27 undefin
+ed on input line 634.
+
+
+LaTeX Warning: Reference `LastPage' on page 27 undefined on input line 635.
+
+[27]
+
+Package natbib Warning: Citation `mandel_accurate_2021' on page 28 undefined on
+ input line 659.
+
+
+LaTeX Warning: Reference `LastPage' on page 28 undefined on input line 670.
+
+[28]
+
+Package natbib Warning: Citation `madau_cosmic_2014' on page 29 undefined on in
+put line 671.
+
+
+Package natbib Warning: Citation `langer_collapsar_2006' on page 29 undefined o
+n input line 679.
+
+
+Package natbib Warning: Citation `richards_missing_2021' on page 29 undefined o
+n input line 697.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+LaTeX Warning: Reference `LastPage' on page 29 undefined on input line 702.
+
+[29]
+
+LaTeX Warning: Reference `chap:numerical_methods_stars' on page 30 undefined on
+ input line 710.
+
+
+LaTeX Warning: Reference `chap:numerical_methods_tui' on page 30 undefined on i
+nput line 711.
+
+
+LaTeX Warning: Reference `chap:numerical_methods_kaitiaki' on page 30 undefined
+ on input line 712.
+
+
+LaTeX Warning: Reference `chap:numerical_methods_takahe' on page 30 undefined o
+n input line 713.
+
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 722.
 
-[25]
-Underfull \vbox (badness 2644) has occurred while \output is active []
 
- [26]
+LaTeX Warning: Reference `LastPage' on page 30 undefined on input line 722.
+
+[30]
+
+Package natbib Warning: Citation `eggleton_structure_1967' on page 31 undefined
+ on input line 724.
+
+
+Package natbib Warning: Citation `eggleton_structure_1967' on page 31 undefined
+ on input line 729.
+
+
+Package natbib Warning: Citation `hurley_evolution_2002' on page 31 undefined o
+n input line 733.
+
+
+Package natbib Warning: Citation `stancliffe_modelling_2009' on page 31 undefin
+ed on input line 735.
+
+
+Package natbib Warning: Citation `henyey_new_1964' on page 31 undefined on inpu
+t line 739.
+
+
+LaTeX Warning: Reference `LastPage' on page 31 undefined on input line 740.
+
+[31]
+
+Package natbib Warning: Citation `coppersmith_matrix_1987' on page 32 undefined
+ on input line 747.
+
+
+Package natbib Warning: Citation `williams_multiplying_2012' on page 32 undefin
+ed on input line 748.
+
+
+Package natbib Warning: Citation `fawzi_discovering_2022' on page 32 undefined 
+on input line 748.
+
+
+LaTeX Warning: Reference `chap:param_config' on page 32 undefined on input line
+ 752.
+
+
+Package natbib Warning: Citation `vitense_wasserstoffkonvektionszone_1953' on p
+age 32 undefined on input line 754.
+
+
+Package natbib Warning: Citation `bohm-vitense_uber_1958' on page 32 undefined 
+on input line 754.
+
+
+Package natbib Warning: Citation `cox_principles_1968' on page 32 undefined on 
+input line 754.
+
+
+LaTeX Warning: Reference `chap:param_config' on page 32 undefined on input line
+ 764.
+
+
+LaTeX Warning: Reference `LastPage' on page 32 undefined on input line 765.
+
+[32]
+
+Package natbib Warning: Citation `carroll_introduction_2017' on page 33 undefin
+ed on input line 778.
+
+
+LaTeX Warning: Reference `fig:thermal_pulses_he_flash' on page 33 undefined on 
+input line 786.
+
+
+LaTeX Warning: Reference `fig:pseudoevolved_kippenhahn' on page 33 undefined on
+ input line 788.
+
+
+LaTeX Warning: Reference `LastPage' on page 33 undefined on input line 789.
+
+[33]
+
+Package natbib Warning: Citation `schwarzschild_thermal_1965' on page 34 undefi
+ned on input line 790.
+
+
+Package natbib Warning: Citation `schwarzschild_hydrogen_1967' on page 34 undef
+ined on input line 790.
+
+
+Package natbib Warning: Citation `pols_thermal_2001' on page 34 undefined on in
+put line 790.
+
+
+Package natbib Warning: Citation `stancliffe_numerical_2006' on page 34 undefin
+ed on input line 790.
+
+
+Package natbib Warning: Citation `stancliffe_evolution_2005' on page 34 undefin
+ed on input line 790.
+
+
+LaTeX Warning: Reference `fig:thermal_pulses_he_flash' on page 34 undefined on 
+input line 790.
+
+
+Package natbib Warning: Citation `pols_thermal_2001' on page 34 undefined on in
+put line 792.
+
+
+LaTeX Warning: Reference `eq:timestep_selection' on page 34 undefined on input 
+line 792.
+
+
+LaTeX Warning: Reference `fig:thermal_pulses_he_flash' on page 34 undefined on 
+input line 792.
+
+<images/TheorySection/thermal_pulses_and_he_flash.png, id=510, 654.40485pt x 59
+9.1183pt>
+File: images/TheorySection/thermal_pulses_and_he_flash.png Graphic file (type p
+ng)
+<use images/TheorySection/thermal_pulses_and_he_flash.png>
+Package pdftex.def Info: images/TheorySection/thermal_pulses_and_he_flash.png  
+used on input line 796.
+(pdftex.def)             Requested size: 472.03123pt x 432.16933pt.
+<images/TheorySection/helium_flash_kippenhahn.png, id=511, 507.69675pt x 211.38
+976pt>
+File: images/TheorySection/helium_flash_kippenhahn.png Graphic file (type png)
+<use images/TheorySection/helium_flash_kippenhahn.png>
+Package pdftex.def Info: images/TheorySection/helium_flash_kippenhahn.png  used
+ on input line 803.
+(pdftex.def)             Requested size: 472.03123pt x 196.54204pt.
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/it' instead on input line 767.
+(Font)              using `T1/cmr/m/it' instead on input line 814.
 
-) (./chapters/chapter03.tex [27] [28
+) (./chapters/chapter03.tex
 
-]
+LaTeX Warning: Reference `LastPage' on page 34 undefined on input line 2.
+
+[34]
+
+LaTeX Warning: Reference `LastPage' on page 35 undefined on input line 2.
+
+[35 <./images/TheorySection/thermal_pulses_and_he_flash.png>]
+
+LaTeX Warning: Reference `LastPage' on page 36 undefined on input line 2.
+
+[36 <./images/TheorySection/helium_flash_kippenhahn.png>]
 Chapter 3.
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 4.
 
+
+LaTeX Warning: Reference `sec:binary_evolution' on page 37 undefined on input l
+ine 6.
+
 \openout5 = `main.pyg'.
 
 (./_minted-main/default-pyg-prefix.pygstyle) (./_minted-main/default.pygstyle)
 (./_minted-main/7A14813D53513F53396BF9685382F2375BD9CFCE54A68914ACB2DCF71641ADB
-0.pygtex
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-))
+0.pygtex)
+
+LaTeX Warning: Reference `kaitiaki_runs' on page 37 undefined on input line 14.
+
+
+
 (./_minted-main/D995CFDA4CD457128004C2CB9676D0B2F69D0D2CCB40A37DBDA8BB228F15F41
 2.pygtex
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
@@ -1835,7 +3165,12 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
 
-[29]
+
+LaTeX Warning: Reference `LastPage' on page 37 undefined on input line 16.
+
+[37
+
+]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -1843,34 +3178,300 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
-<images/KaitiakiFlow.pdf, id=1443, 661.47928pt x 684.53845pt>
+
+
+LaTeX Warning: Reference `LastPage' on page 38 undefined on input line 16.
+
+[38]
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+<images/KaitiakiFlow.pdf, id=548, 661.47928pt x 684.53845pt>
 File: images/KaitiakiFlow.pdf Graphic file (type pdf)
 <use images/KaitiakiFlow.pdf>
 Package pdftex.def Info: images/KaitiakiFlow.pdf  used on input line 20.
 (pdftex.def)             Requested size: 472.03123pt x 488.49078pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30]
-[31 <./images/KaitiakiFlow.pdf>]
-<images/StellarSynthesis/single_vs_binary.png, id=1482, 509.0217pt x 237.5274pt
->
+LaTeX Warning: Reference `fig:single_vs_binary' on page 39 undefined on input l
+ine 33.
+
+
+LaTeX Warning: Reference `binary_generation' on page 39 undefined on input line
+ 33.
+
+<images/StellarSynthesis/single_vs_binary.png, id=549, 509.0217pt x 237.5274pt>
+
 File: images/StellarSynthesis/single_vs_binary.png Graphic file (type png)
 <use images/StellarSynthesis/single_vs_binary.png>
 Package pdftex.def Info: images/StellarSynthesis/single_vs_binary.png  used on 
 input line 37.
 (pdftex.def)             Requested size: 472.03123pt x 220.2748pt.
- [32 <./images/StellarSynthesis/single_vs_binary.png>]) (./chapters/chapter04.t
-ex [33] [34
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+LaTeX Warning: Reference `LastPage' on page 39 undefined on input line 46.
+
+[39]
+
+LaTeX Warning: Reference `LastPage' on page 40 undefined on input line 46.
+
+[40 <./images/KaitiakiFlow.pdf>]) (./chapters/chapter04.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+LaTeX Warning: Reference `LastPage' on page 41 undefined on input line 2.
+
+[41 <./images/StellarSynthesis/single_vs_binary.png>]
+
+LaTeX Warning: Reference `LastPage' on page 42 undefined on input line 2.
+
+[42]
+Chapter 4.
+
+LaTeX Warning: Reference `LastPage' on page 43 undefined on input line 20.
+
+[43
 
 ]
-Chapter 4.
-[35]
-Overfull \hbox (3.04678pt too wide) in paragraph at lines 33--42
+
+Package natbib Warning: Citation `bray_neutron_2016' on page 44 undefined on in
+put line 22.
+
+
+Package natbib Warning: Citation `bray_neutron_2018' on page 44 undefined on in
+put line 22.
+
+
+Package natbib Warning: Citation `richards_new_2023' on page 44 undefined on in
+put line 22.
+
+
+LaTeX Warning: Reference `sec:natal_kick_prescriptions' on page 44 undefined on
+ input line 24.
+
+
+Package natbib Warning: Citation `bray_neutron_2016' on page 44 undefined on in
+put line 26.
+
+
+Package natbib Warning: Citation `bray_neutron_2018' on page 44 undefined on in
+put line 26.
+
+
+Package natbib Warning: Citation `bray_neutron_2018' on page 44 undefined on in
+put line 26.
+
+
+Package natbib Warning: Citation `willcox_constraints_2021' on page 44 undefine
+d on input line 26.
+
+
+Package natbib Warning: Citation `richards_new_2023' on page 44 undefined on in
+put line 26.
+
+
+LaTeX Warning: Reference `tab:populations' on page 44 undefined on input line 3
+2.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+LaTeX Warning: Reference `LastPage' on page 44 undefined on input line 33.
+
+[44]
+Overfull \hbox (3.04678pt too wide) in paragraph at lines 37--46
  [][] 
  []
 
-[36]
+
+Package natbib Warning: Citation `hobbs_statistical_2005' on page 45 undefined 
+on input line 47.
+
+
+Package natbib Warning: Citation `hobbs_statistical_2005' on page 45 undefined 
+on input line 47.
+
+
+Package natbib Warning: Citation `hobbs_statistical_2005' on page 45 undefined 
+on input line 51.
+
+
+Package natbib Warning: Citation `bouffanais_new_2021' on page 45 undefined on 
+input line 51.
+
+
+Package natbib Warning: Citation `broekgaarden_impact_2021' on page 45 undefine
+d on input line 51.
+
+
+Package natbib Warning: Citation `fragione_black-hole-neutron-star_2021' on pag
+e 45 undefined on input line 51.
+
+
+Package natbib Warning: Citation `igoshev_combined_2021' on page 45 undefined o
+n input line 51.
+
+
+Package natbib Warning: Citation `mandel_rates_2021' on page 45 undefined on in
+put line 51.
+
+
+LaTeX Warning: Reference `sec:per_ecc_dist' on page 45 undefined on input line 
+51.
+
+
+Package natbib Warning: Citation `fryer_population_1998' on page 45 undefined o
+n input line 55.
+
+
+Package natbib Warning: Citation `arzoumanian_velocity_2002' on page 45 undefin
+ed on input line 55.
+
+
+Package natbib Warning: Citation `bombaci_nature_2004' on page 45 undefined on 
+input line 55.
+
+
+Package natbib Warning: Citation `hobbs_statistical_2005' on page 45 undefined 
+on input line 55.
+
+
+Package natbib Warning: Citation `bray_neutron_2016' on page 45 undefined on in
+put line 55.
+
+
+Package natbib Warning: Citation `verbunt_observed_2017' on page 45 undefined o
+n input line 55.
+
+
+Package natbib Warning: Citation `blaauw_origin_1961' on page 45 undefined on i
+nput line 55.
+
+
+Package natbib Warning: Citation `gunn_nature_1970' on page 45 undefined on inp
+ut line 55.
+
+
+Package natbib Warning: Citation `de_loore_evolution_1975' on page 45 undefined
+ on input line 55.
+
+
+Package natbib Warning: Citation `sutantyo_asymmetric_1978' on page 45 undefine
+d on input line 55.
+
+
+Package natbib Warning: Citation `hobbs_statistical_2005' on page 45 undefined 
+on input line 55.
+
+
+Package natbib Warning: Citation `baker_modeling_2008' on page 45 undefined on 
+input line 55.
+
+
+Package natbib Warning: Citation `wongwathanarat_three-dimensional_2013' on pag
+e 45 undefined on input line 55.
+
+
+Package natbib Warning: Citation `bray_neutron_2018' on page 45 undefined on in
+put line 55.
+
+
+Package natbib Warning: Citation `giacobbo_revising_2020' on page 45 undefined 
+on input line 55.
+
+
+Package natbib Warning: Citation `mandel_simple_2020' on page 45 undefined on i
+nput line 55.
+
+
+Package natbib Warning: Citation `bray_neutron_2016' on page 45 undefined on in
+put line 57.
+
+
+LaTeX Warning: Reference `sec:per_ecc_dist' on page 45 undefined on input line 
+57.
+
+
+Package natbib Warning: Citation `hobbs_statistical_2005' on page 45 undefined 
+on input line 57.
+
+
+LaTeX Warning: Reference `eq:bray_kick_pure' on page 45 undefined on input line
+ 59.
+
+
+LaTeX Warning: Reference `LastPage' on page 45 undefined on input line 61.
+
+[45]
+
+Package natbib Warning: Citation `hobbs_statistical_2005' on page 46 undefined 
+on input line 71.
+
+
+LaTeX Warning: Reference `eq:dadt' on page 46 undefined on input line 75.
+
+
+LaTeX Warning: Reference `eq:dedt' on page 46 undefined on input line 75.
+
+
+Package natbib Warning: Citation `bezanson_julia_2017' on page 46 undefined on 
+input line 75.
+
+
+Package natbib Warning: Citation `arakaki_juliapypyjulia_2023' on page 46 undef
+ined on input line 75.
+
+\openout5 = `main.pyg'.
+
+
+(./_minted-main/690B020ED0944084D8BD765EE3AAFA805BD9CFCE54A68914ACB2DCF71641ADB
+0.pygtex)
+
+LaTeX Warning: Reference `integrate_eoms' on page 46 undefined on input line 77
+.
+
+
+LaTeX Warning: Reference `eq:dadt' on page 46 undefined on input line 77.
+
+
+LaTeX Warning: Reference `eq:dedt' on page 46 undefined on input line 77.
+
+\openout5 = `main.pyg'.
+
+
+(./_minted-main/22C35DF1C79DCF62B811E4D4364954605BD9CFCE54A68914ACB2DCF71641ADB
+0.pygtex)
+
+LaTeX Warning: Reference `integrate_timescale' on page 46 undefined on input li
+ne 77.
+
+
+LaTeX Warning: Reference `eq:coalescence_time' on page 46 undefined on input li
+ne 77.
+
+
+Package natbib Warning: Citation `lam_numba_2015' on page 46 undefined on input
+ line 77.
+
+\openout5 = `main.pyg'.
+
+
+(./_minted-main/22C35DF1C79DCF62B811E4D4364954605BD9CFCE54A68914ACB2DCF71641ADB
+0.pygtex)
+
+Package natbib Warning: Citation `Tang_2024_lisadataset' on page 46 undefined o
+n input line 77.
+
 \openout5 = `main.pyg'.
 
 
@@ -1881,107 +3482,654 @@ Overfull \hbox (3.04678pt too wide) in paragraph at lines 33--42
 
 (./_minted-main/22C35DF1C79DCF62B811E4D4364954605BD9CFCE54A68914ACB2DCF71641ADB
 0.pygtex)
-\openout5 = `main.pyg'.
+
+LaTeX Warning: Reference `eq:coalescence_time' on page 46 undefined on input li
+ne 83.
 
 
-(./_minted-main/22C35DF1C79DCF62B811E4D4364954605BD9CFCE54A68914ACB2DCF71641ADB
-0.pygtex)
-\openout5 = `main.pyg'.
+LaTeX Warning: Reference `LastPage' on page 46 undefined on input line 84.
+
+[46]
+
+LaTeX Warning: Reference `sec:post_SN' on page 47 undefined on input line 94.
 
 
-(./_minted-main/690B020ED0944084D8BD765EE3AAFA805BD9CFCE54A68914ACB2DCF71641ADB
-0.pygtex)
-\openout5 = `main.pyg'.
+LaTeX Warning: Reference `fig:vary_de' on page 47 undefined on input line 100.
 
 
-(./_minted-main/22C35DF1C79DCF62B811E4D4364954605BD9CFCE54A68914ACB2DCF71641ADB
-0.pygtex) [37]
-<images/NatalKicks/varying_de.png, id=1628, 527.20966pt x 319.4334pt>
+LaTeX Warning: Reference `eq:discrete_sum' on page 47 undefined on input line 1
+00.
+
+
+LaTeX Warning: Reference `fig:algo_runtime' on page 47 undefined on input line 
+100.
+
+<images/NatalKicks/varying_de.png, id=641, 527.20966pt x 319.4334pt>
 File: images/NatalKicks/varying_de.png Graphic file (type png)
 <use images/NatalKicks/varying_de.png>
-Package pdftex.def Info: images/NatalKicks/varying_de.png  used on input line 9
-9.
+Package pdftex.def Info: images/NatalKicks/varying_de.png  used on input line 1
+05.
 (pdftex.def)             Requested size: 472.03123pt x 286.01051pt.
- [38 <./images/NatalKicks/varying_de.png>]
-<images/NatalKicks/EventRate_Distribution_Both.png, id=1650, 493.00185pt x 304.
-2567pt>
+
+LaTeX Warning: Reference `eq:discrete_sum' on page 47 undefined on input line 1
+06.
+
+
+LaTeX Warning: Reference `eq:discrete_sum' on page 47 undefined on input line 1
+06.
+
+<images/NatalKicks/runtime.png, id=642, 545.99985pt x 375.0813pt>
+File: images/NatalKicks/runtime.png Graphic file (type png)
+<use images/NatalKicks/runtime.png>
+Package pdftex.def Info: images/NatalKicks/runtime.png  used on input line 112.
+
+(pdftex.def)             Requested size: 472.03123pt x 324.28061pt.
+
+LaTeX Warning: Reference `eq:discrete_sum' on page 47 undefined on input line 1
+13.
+
+
+Package natbib Warning: Citation `Tang_2024_lisadataset' on page 47 undefined o
+n input line 113.
+
+
+LaTeX Warning: Reference `eq:discrete_sum' on page 47 undefined on input line 1
+13.
+
+
+Package natbib Warning: Citation `Tang_2024_lisadataset' on page 47 undefined o
+n input line 113.
+
+
+Package natbib Warning: Citation `GWTC-2:Data' on page 47 undefined on input li
+ne 120.
+
+
+Package natbib Warning: Citation `GWTC-3:Data' on page 47 undefined on input li
+ne 120.
+
+
+LaTeX Warning: Reference `fig:merger_rates' on page 47 undefined on input line 
+120.
+
+
+Package natbib Warning: Citation `eldridge_consistent_2019' on page 47 undefine
+d on input line 120.
+
+
+Package natbib Warning: Citation `GWTC-2:Data' on page 47 undefined on input li
+ne 120.
+
+
+Package natbib Warning: Citation `GWTC-3:Data' on page 47 undefined on input li
+ne 120.
+
+
+Package natbib Warning: Citation `GWTC-2:Data' on page 47 undefined on input li
+ne 120.
+
+
+Package natbib Warning: Citation `GWTC-2:Data' on page 47 undefined on input li
+ne 122.
+
+
+Package natbib Warning: Citation `GWTC-3:Data' on page 47 undefined on input li
+ne 122.
+
+
+LaTeX Warning: Reference `LastPage' on page 47 undefined on input line 123.
+
+[47]
+
+LaTeX Warning: Reference `LastPage' on page 48 undefined on input line 123.
+
+[48 <./images/NatalKicks/varying_de.png>]
+
+LaTeX Warning: Reference `LastPage' on page 49 undefined on input line 123.
+
+[49 <./images/NatalKicks/runtime.png>]
+<images/NatalKicks/EventRate_Distribution_Both.png, id=664, 493.00185pt x 304.2
+567pt>
 File: images/NatalKicks/EventRate_Distribution_Both.png Graphic file (type png)
 
 <use images/NatalKicks/EventRate_Distribution_Both.png>
 Package pdftex.def Info: images/NatalKicks/EventRate_Distribution_Both.png  use
-d on input line 111.
+d on input line 126.
 (pdftex.def)             Requested size: 472.03123pt x 291.31244pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39 <./images/NatalKicks/EventRate_Distribution_Both.png>]
-Overfull \hbox (2.31754pt too wide) in paragraph at lines 140--153
- [][] 
- []
+Package natbib Warning: Citation `eldridge_consistent_2019' on page 50 undefine
+d on input line 127.
 
-[40]
-<images/NatalKicks/bray_vs_hobbs_pdf.png, id=1742, 441.8106pt x 320.03564pt>
+
+Package natbib Warning: Citation `GWTC-2:Data' on page 50 undefined on input li
+ne 127.
+
+
+Package natbib Warning: Citation `GWTC-3:Data' on page 50 undefined on input li
+ne 127.
+
+
+Package natbib Warning: Citation `GWTC-3:Data' on page 50 undefined on input li
+ne 127.
+
+
+Package natbib Warning: Citation `GWTC-3:Data' on page 50 undefined on input li
+ne 127.
+
+
+Package natbib Warning: Citation `bray_neutron_2018' on page 50 undefined on in
+put line 127.
+
+
+Package natbib Warning: Citation `eldridge_consistent_2019' on page 50 undefine
+d on input line 127.
+
+
+Package natbib Warning: Citation `GWTC-2:Data' on page 50 undefined on input li
+ne 127.
+
+
+Package natbib Warning: Citation `GWTC-3:Data' on page 50 undefined on input li
+ne 127.
+
+
+Package natbib Warning: Citation `GWTC-3:Data' on page 50 undefined on input li
+ne 127.
+
+
+Package natbib Warning: Citation `GWTC-3:Data' on page 50 undefined on input li
+ne 127.
+
+
+Package natbib Warning: Citation `bray_neutron_2018' on page 50 undefined on in
+put line 127.
+
+
+LaTeX Warning: Reference `LastPage' on page 50 undefined on input line 134.
+
+[50 <./images/NatalKicks/EventRate_Distribution_Both.png>]
+
+LaTeX Warning: Reference `chap:ligo_contour_results' on page 51 undefined on in
+put line 137.
+
+
+Package natbib Warning: Citation `vigna-gomez_formation_2018' on page 51 undefi
+ned on input line 149.
+
+
+LaTeX Warning: Reference `tab:observed_BNSes' on page 51 undefined on input lin
+e 149.
+
+
+LaTeX Warning: Reference `eq:log_likelihood_summand' on page 51 undefined on in
+put line 149.
+
+
+Package natbib Warning: Citation `martinez_pulsar_2015' on page 51 undefined on
+ input line 159.
+
+
+Package natbib Warning: Citation `kramer_tests_2006' on page 51 undefined on in
+put line 159.
+
+
+Package natbib Warning: Citation `fonseca_comprehensive_2014' on page 51 undefi
+ned on input line 160.
+
+
+Package natbib Warning: Citation `faulkner_psr_2005' on page 51 undefined on in
+put line 160.
+
+
+Package natbib Warning: Citation `hulse_discovery_1975' on page 51 undefined on
+ input line 161.
+
+
+Package natbib Warning: Citation `lazarus_einsteinhome_2016' on page 51 undefin
+ed on input line 161.
+
+
+Package natbib Warning: Citation `cameron_high_2018' on page 51 undefined on in
+put line 162.
+
+
+Package natbib Warning: Citation `janssen_multi-telescope_2008' on page 51 unde
+fined on input line 162.
+
+
+Package natbib Warning: Citation `corongiu_binary_2007' on page 51 undefined on
+ input line 163.
+
+
+Package natbib Warning: Citation `champion_psr_2004' on page 51 undefined on in
+put line 163.
+
+
+Package natbib Warning: Citation `swiggum_psr_2015' on page 51 undefined on inp
+ut line 164.
+
+
+Package natbib Warning: Citation `keith_psr_2009' on page 51 undefined on input
+ line 164.
+
+
+Package natbib Warning: Citation `martinez_pulsar_2017' on page 51 undefined on
+ input line 165.
+
+
+Package natbib Warning: Citation `stovall_palfa_2018' on page 51 undefined on i
+nput line 165.
+
+
+Package natbib Warning: Citation `vigna-gomez_formation_2018' on page 51 undefi
+ned on input line 168.
+
+
+Package natbib Warning: Citation `vigna-gomez_formation_2018' on page 51 undefi
+ned on input line 168.
+
+
+LaTeX Warning: Reference `LastPage' on page 51 undefined on input line 175.
+
+[51]
+
+Package natbib Warning: Citation `willcox_constraints_2021' on page 52 undefine
+d on input line 184.
+
+
+Package natbib Warning: Citation `willcox_constraints_2021' on page 52 undefine
+d on input line 184.
+
+
+Package natbib Warning: Citation `hobbs_statistical_2005' on page 52 undefined 
+on input line 184.
+
+
+Package natbib Warning: Citation `bray_neutron_2018' on page 52 undefined on in
+put line 184.
+
+
+LaTeX Warning: Reference `fig:bray_vs_hobbs_vs_willcox_pdf' on page 52 undefine
+d on input line 184.
+
+
+Package natbib Warning: Citation `willcox_constraints_2021' on page 52 undefine
+d on input line 186.
+
+
+Package natbib Warning: Citation `bhattacharjee_rotation_2014' on page 52 undef
+ined on input line 186.
+
+
+LaTeX Warning: Reference `fig:bray_vs_hobbs_vs_willcox_pdf' on page 52 undefine
+d on input line 186.
+
+
+Package natbib Warning: Citation `willcox_constraints_2021' on page 52 undefine
+d on input line 186.
+
+
+Package natbib Warning: Citation `willcox_constraints_2021' on page 52 undefine
+d on input line 186.
+
+<images/NatalKicks/bray_vs_hobbs_pdf.png, id=682, 441.8106pt x 320.03564pt>
 File: images/NatalKicks/bray_vs_hobbs_pdf.png Graphic file (type png)
 <use images/NatalKicks/bray_vs_hobbs_pdf.png>
 Package pdftex.def Info: images/NatalKicks/bray_vs_hobbs_pdf.png  used on input
- line 173.
+ line 190.
 (pdftex.def)             Requested size: 472.03123pt x 341.94641pt.
-<images/NatalKicks/ks_test_with_hobbs.png, id=1767, 459.1554pt x 296.18655pt>
+
+Package natbib Warning: Citation `hobbs_statistical_2005' on page 52 undefined 
+on input line 191.
+
+
+Package natbib Warning: Citation `verbunt_observed_2017' on page 52 undefined o
+n input line 191.
+
+
+Package natbib Warning: Citation `bray_neutron_2018' on page 52 undefined on in
+put line 191.
+
+
+Package natbib Warning: Citation `willcox_constraints_2021' on page 52 undefine
+d on input line 191.
+
+
+Package natbib Warning: Citation `hobbs_statistical_2005' on page 52 undefined 
+on input line 191.
+
+
+Package natbib Warning: Citation `hobbs_statistical_2005' on page 52 undefined 
+on input line 191.
+
+
+Package natbib Warning: Citation `verbunt_observed_2017' on page 52 undefined o
+n input line 191.
+
+
+Package natbib Warning: Citation `bray_neutron_2018' on page 52 undefined on in
+put line 191.
+
+
+Package natbib Warning: Citation `willcox_constraints_2021' on page 52 undefine
+d on input line 191.
+
+
+Package natbib Warning: Citation `hobbs_statistical_2005' on page 52 undefined 
+on input line 191.
+
+
+Package natbib Warning: Citation `hobbs_statistical_2005' on page 52 undefined 
+on input line 195.
+
+
+LaTeX Warning: Reference `eq:hobbs_kick' on page 52 undefined on input line 195
+.
+
+
+LaTeX Warning: Reference `fig:bray_vs_hobbs_vs_willcox_pdf' on page 52 undefine
+d on input line 195.
+
+
+Package natbib Warning: Citation `bray_neutron_2018' on page 52 undefined on in
+put line 195.
+
+
+Package natbib Warning: Citation `willcox_constraints_2021' on page 52 undefine
+d on input line 195.
+
+<images/NatalKicks/ks_test_with_hobbs.png, id=683, 459.1554pt x 296.18655pt>
 File: images/NatalKicks/ks_test_with_hobbs.png Graphic file (type png)
 <use images/NatalKicks/ks_test_with_hobbs.png>
 Package pdftex.def Info: images/NatalKicks/ks_test_with_hobbs.png  used on inpu
-t line 182.
+t line 199.
 (pdftex.def)             Requested size: 472.03123pt x 304.51062pt.
-<images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png, id=1773, 480.71594pt
- x 334.1283pt>
+
+LaTeX Warning: Reference `fig:ks_test_with_hobbs' on page 52 undefined on input
+ line 204.
+
+
+Package natbib Warning: Citation `willcox_constraints_2021' on page 52 undefine
+d on input line 204.
+
+
+Package natbib Warning: Citation `bray_neutron_2018' on page 52 undefined on in
+put line 204.
+
+
+LaTeX Warning: Reference `LastPage' on page 52 undefined on input line 205.
+
+[52]
+
+LaTeX Warning: Reference `LastPage' on page 53 undefined on input line 205.
+
+[53 <./images/NatalKicks/bray_vs_hobbs_pdf.png>]
+
+LaTeX Warning: Reference `LastPage' on page 54 undefined on input line 205.
+
+[54 <./images/NatalKicks/ks_test_with_hobbs.png>]
+<images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png, id=704, 480.71594pt 
+x 334.1283pt>
 File: images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png Graphic file (ty
 pe png)
 <use images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png>
 Package pdftex.def Info: images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.p
-ng  used on input line 191.
+ng  used on input line 208.
 (pdftex.def)             Requested size: 472.03123pt x 328.10628pt.
- [41] [42 <./images/NatalKicks/bray_vs_hobbs_pdf.png>] [43 <./images/NatalKicks
-/ks_test_with_hobbs.png>] [44 <./images/NatalKicks/individual_pdfs_with_cdf_and
-_hobbs.png>]
-<images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png, id=1847
-, 457.2282pt x 319.9152pt>
+
+
+Package natbib Warning: Citation `willcox_constraints_2021' on page 55 undefine
+d on input line 209.
+
+
+Package natbib Warning: Citation `willcox_constraints_2021' on page 55 undefine
+d on input line 209.
+
+
+Package natbib Warning: Citation `willcox_constraints_2021' on page 55 undefine
+d on input line 209.
+
+
+Package natbib Warning: Citation `willcox_constraints_2021' on page 55 undefine
+d on input line 209.
+
+
+Package natbib Warning: Citation `willcox_constraints_2021' on page 55 undefine
+d on input line 209.
+
+
+Package natbib Warning: Citation `willcox_constraints_2021' on page 55 undefine
+d on input line 209.
+
+
+LaTeX Warning: Reference `fig:some_individual_pdfs' on page 55 undefined on inp
+ut line 213.
+
+
+Package natbib Warning: Citation `willcox_constraints_2021' on page 55 undefine
+d on input line 213.
+
+
+LaTeX Warning: Reference `fig:some_individual_pdfs' on page 55 undefined on inp
+ut line 213.
+
+
+Package natbib Warning: Citation `richards_new_2023' on page 55 undefined on in
+put line 213.
+
+
+Package natbib Warning: Citation `richards_new_2023' on page 55 undefined on in
+put line 213.
+
+
+LaTeX Warning: Reference `fig:some_individual_pdfs' on page 55 undefined on inp
+ut line 215.
+
+
+LaTeX Warning: Reference `sec:log-likelihood' on page 55 undefined on input lin
+e 215.
+
+
+Package natbib Warning: Citation `bray_neutron_2018' on page 55 undefined on in
+put line 219.
+
+
+Package natbib Warning: Citation `willcox_constraints_2021' on page 55 undefine
+d on input line 219.
+
+
+LaTeX Warning: Reference `LastPage' on page 55 undefined on input line 220.
+
+[55 <./images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png>]
+
+Package natbib Warning: Citation `tauris_ultra-stripped_2015' on page 56 undefi
+ned on input line 221.
+
+
+Package natbib Warning: Citation `yao_sn2019dge_2020' on page 56 undefined on i
+nput line 224.
+
+
+Package natbib Warning: Citation `stevance_ussne_2022' on page 56 undefined on 
+input line 229.
+
+
+LaTeX Warning: Reference `sec:merger_rates' on page 56 undefined on input line 
+236.
+
+
+LaTeX Warning: Reference `sec:per_ecc_dist' on page 56 undefined on input line 
+237.
+
+
+Package natbib Warning: Citation `hobbs_statistical_2005' on page 56 undefined 
+on input line 237.
+
+
+LaTeX Warning: Reference `LastPage' on page 56 undefined on input line 238.
+
+[56]
+
+LaTeX Warning: Reference `sec:ssk_vels' on page 57 undefined on input line 238.
+
+
+
+Package natbib Warning: Citation `willcox_constraints_2021' on page 57 undefine
+d on input line 238.
+
+
+LaTeX Warning: Reference `sec:ussne_production' on page 57 undefined on input l
+ine 239.
+
+
+LaTeX Warning: Reference `fig:all_four_constraints_on_kicks' on page 57 undefin
+ed on input line 242.
+
+<images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png, id=721,
+ 457.2282pt x 319.9152pt>
 File: images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png Gra
 phic file (type png)
 <use images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png>
 Package pdftex.def Info: images/NatalKicks/All_Three_Constraints_with_USSNe_and
-_modeltype2.png  used on input line 220.
+_modeltype2.png  used on input line 246.
 (pdftex.def)             Requested size: 472.03123pt x 330.27785pt.
-<images/NatalKicks/Best_Model_Params.png, id=1852, 847.968pt x 377.7312pt>
+
+LaTeX Warning: Reference `fig:best_model_params' on page 57 undefined on input 
+line 251.
+
+
+Package natbib Warning: Citation `willcox_constraints_2021' on page 57 undefine
+d on input line 251.
+
+
+LaTeX Warning: Reference `tab:observed_BNSes' on page 57 undefined on input lin
+e 251.
+
+<images/NatalKicks/Best_Model_Params.png, id=722, 847.968pt x 377.7312pt>
 File: images/NatalKicks/Best_Model_Params.png Graphic file (type png)
 <use images/NatalKicks/Best_Model_Params.png>
 Package pdftex.def Info: images/NatalKicks/Best_Model_Params.png  used on input
- line 229.
+ line 255.
 (pdftex.def)             Requested size: 472.03123pt x 210.27153pt.
- [45] [46 <./images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.
-png>]
-<images/NatalKicks/grid_shifting_peaks.png, id=1881, 497.2176pt x 298.4751pt>
+
+Package natbib Warning: Citation `willcox_constraints_2021' on page 57 undefine
+d on input line 256.
+
+
+Package natbib Warning: Citation `verbunt_observed_2017' on page 57 undefined o
+n input line 256.
+
+
+Package natbib Warning: Citation `willcox_constraints_2021' on page 57 undefine
+d on input line 256.
+
+
+Package natbib Warning: Citation `verbunt_observed_2017' on page 57 undefined o
+n input line 256.
+
+
+LaTeX Warning: Reference `eq:event_rate_distribution' on page 57 undefined on i
+nput line 260.
+
+
+LaTeX Warning: Reference `eq:definition_of_merger_rate' on page 57 undefined on
+ input line 260.
+
+
+LaTeX Warning: Reference `fig:grid_shifting_peak' on page 57 undefined on input
+ line 260.
+
+
+LaTeX Warning: Reference `fig:grid_shifting_peak_zoomed' on page 57 undefined o
+n input line 262.
+
+<images/NatalKicks/grid_shifting_peaks.png, id=723, 497.2176pt x 298.4751pt>
 File: images/NatalKicks/grid_shifting_peaks.png Graphic file (type png)
 <use images/NatalKicks/grid_shifting_peaks.png>
 Package pdftex.def Info: images/NatalKicks/grid_shifting_peaks.png  used on inp
-ut line 238.
+ut line 266.
 (pdftex.def)             Requested size: 472.03123pt x 283.37212pt.
-) (./chapters/chapter19.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [47 <./images/NatalKicks/Best_Model_Params.png>] [48 <./images/NatalKicks/grid
-_shifting_peaks.png>] [49] [50
+LaTeX Warning: Reference `fig:grid_shifting_peak_zoomed' on page 57 undefined o
+n input line 267.
 
-]
+
+LaTeX Warning: Reference `fig:grid_shifting_peak_zoomed' on page 57 undefined o
+n input line 267.
+
+<images/NatalKicks/event_rate_history_local.png, id=724, 530.4618pt x 505.1673p
+t>
+File: images/NatalKicks/event_rate_history_local.png Graphic file (type png)
+<use images/NatalKicks/event_rate_history_local.png>
+Package pdftex.def Info: images/NatalKicks/event_rate_history_local.png  used o
+n input line 273.
+(pdftex.def)             Requested size: 472.03123pt x 449.53581pt.
+
+LaTeX Warning: Reference `fig:grid_shifting_peak' on page 57 undefined on input
+ line 274.
+
+
+LaTeX Warning: Reference `fig:grid_shifting_peak' on page 57 undefined on input
+ line 274.
+
+
+Package natbib Warning: Citation `van_de_voort_impact_2022' on page 57 undefine
+d on input line 278.
+
+
+LaTeX Warning: Reference `LastPage' on page 57 undefined on input line 279.
+
+[57]
+
+LaTeX Warning: Reference `LastPage' on page 58 undefined on input line 279.
+
+[58 <./images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png>])
+(./chapters/chapter19.tex
+
+LaTeX Warning: Reference `LastPage' on page 59 undefined on input line 2.
+
+[59 <./images/NatalKicks/Best_Model_Params.png>]
+
+LaTeX Warning: Reference `LastPage' on page 60 undefined on input line 2.
+
+[60 <./images/NatalKicks/grid_shifting_peaks.png>]
+
+LaTeX Warning: Reference `LastPage' on page 61 undefined on input line 2.
+
+[61 <./images/NatalKicks/event_rate_history_local.png>]
+
+LaTeX Warning: Reference `LastPage' on page 62 undefined on input line 2.
+
+[62]
 Chapter 5.
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 11.
 
-) [51] [52
+)
 
-] [53
+LaTeX Warning: Reference `LastPage' on page 63 undefined on input line 453.
 
-] [54] (./chapters/appendices/appendixA.tex
+[63
+
+]
+
+LaTeX Warning: Reference `LastPage' on page 64 undefined on input line 459.
+
+[64
+
+]
+
+LaTeX Warning: Reference `LastPage' on page 65 undefined on input line 459.
+
+[65
+
+]
+
+LaTeX Warning: Reference `LastPage' on page 66 undefined on input line 459.
+
+[66] (./chapters/appendices/appendixA.tex
 Appendix A.
 \openout5 = `main.pyg'.
 
@@ -2000,7 +4148,11 @@ Missing character: There is no k in font nullfont!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [55
+
+
+LaTeX Warning: Reference `LastPage' on page 67 undefined on input line 6.
+
+[67
 
 ]
 Missing character: There is no c in font nullfont!
@@ -2011,7 +4163,22 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
 
-[56]
+
+LaTeX Warning: Reference `LastPage' on page 68 undefined on input line 6.
+
+[68]
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+
+
+LaTeX Warning: Reference `LastPage' on page 69 undefined on input line 6.
+
+[69]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -2034,9 +4201,10 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [57]
+LaTeX Warning: Reference `LastPage' on page 70 undefined on input line 8.
+
+[70]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -2045,7 +4213,10 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
 
-[58]
+
+LaTeX Warning: Reference `LastPage' on page 71 undefined on input line 8.
+
+[71]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -2053,6 +4224,23 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
+
+
+LaTeX Warning: Reference `LastPage' on page 72 undefined on input line 8.
+
+[72]
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+
+
+LaTeX Warning: Reference `fig:single_vs_binary' on page 73 undefined on input l
+ine 12.
+
 
 (./_minted-main/3B25C72E4A35D18B6CC8408F07A506CFF69D0D2CCB40A37DBDA8BB228F15F41
 2.pygtex)
@@ -2063,7 +4251,11 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
- [59]
+
+
+LaTeX Warning: Reference `LastPage' on page 73 undefined on input line 12.
+
+[73]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -2071,7 +4263,11 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
- [60]
+
+
+LaTeX Warning: Reference `LastPage' on page 74 undefined on input line 12.
+
+[74]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -2079,11 +4275,67 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
-) (./chapters/appendices/appendixB.tex [61] [62
+) (./chapters/appendices/appendixB.tex
+
+LaTeX Warning: Reference `LastPage' on page 75 undefined on input line 3.
+
+[75]
+
+LaTeX Warning: Reference `LastPage' on page 76 undefined on input line 3.
+
+[76
 
 ]
 Appendix B.
-) (./chapters/appendices/appendixC.tex [63] [64
+
+Package natbib Warning: Citation `stevance_hoki_2020' on page 77 undefined on i
+nput line 11.
+
+
+Package natbib Warning: Citation `hunter_matplotlib_2007' on page 77 undefined 
+on input line 13.
+
+
+Package natbib Warning: Citation `lam_numba_2015' on page 77 undefined on input
+ line 14.
+
+
+Package natbib Warning: Citation `harris_array_2020' on page 77 undefined on in
+put line 15.
+
+
+Package natbib Warning: Citation `mckinney_data_2010' on page 77 undefined on i
+nput line 16.
+
+
+Package natbib Warning: Citation `virtanen_scipy_2020' on page 77 undefined on 
+input line 18.
+
+
+Package natbib Warning: Citation `richards_new_2023' on page 77 undefined on in
+put line 19.
+
+
+Package natbib Warning: Citation `ghodla_evaluating_2023' on page 77 undefined 
+on input line 20.
+
+
+Package natbib Warning: Citation `ghodla_evaluating_2023' on page 77 undefined 
+on input line 23.
+
+
+Package natbib Warning: Citation `ghodla_evaluating_2023' on page 77 undefined 
+on input line 23.
+
+) (./chapters/appendices/appendixC.tex
+
+LaTeX Warning: Reference `LastPage' on page 77 undefined on input line 2.
+
+[77]
+
+LaTeX Warning: Reference `LastPage' on page 78 undefined on input line 2.
+
+[78
 
 ]
 Appendix C.
@@ -2095,46 +4347,142 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrshort' on input line 2.
 
-<images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png, id=2012, 427.5975p
-t x 606.8271pt>
+
+LaTeX Warning: Reference `fig:o3a_contour_figure' on page 79 undefined on input
+ line 4.
+
+
+Package natbib Warning: Citation `kasen_origin_2017' on page 79 undefined on in
+put line 4.
+
+<images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png, id=848, 427.5975pt
+ x 606.8271pt>
 File: images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png Graphic file (
 type png)
 <use images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png>
 Package pdftex.def Info: images/NatalKicks/PeriodEccentricityDiagrams-O3Contour
 .png  used on input line 8.
 (pdftex.def)             Requested size: 399.3188pt x 566.68968pt.
-) (./chapters/appendices/appendixD.tex [65] [66 <./images/NatalKicks/PeriodEcce
-ntricityDiagrams-O3Contour.png>]
+) (./chapters/appendices/appendixD.tex
+
+LaTeX Warning: Reference `LastPage' on page 79 undefined on input line 2.
+
+[79]
+
+LaTeX Warning: Reference `LastPage' on page 80 undefined on input line 2.
+
+[80 <./images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png>]
 Appendix D.
-) [67
 
-] [68
+LaTeX Warning: Reference `chap:numerical_methods_stars' on page 81 undefined on
+ input line 4.
 
-] (./main.bbl
+)
+
+LaTeX Warning: Reference `LastPage' on page 81 undefined on input line 468.
+
+[81
+
+]
+
+LaTeX Warning: Reference `LastPage' on page 82 undefined on input line 468.
+
+[82pdfTeX warning (ext4): destination with the same identifier (name{table.a.D.
+1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.468     \backmatter
+                      % Denotes the end of the main document content]
+(./main.bbl
 LaTeX Info: Redefining \UD on input line 1.
 LaTeX Info: Redefining \DE on input line 1.
 LaTeX Info: Redefining \VAN on input line 1.
- [69
 
-] [70] [71] [72] [73]) [74]
+
+LaTeX Warning: Reference `LastPage' on page 83 undefined on input line 116.
+
+[83
+
+
+]
+
+LaTeX Warning: Reference `LastPage' on page 84 undefined on input line 203.
+
+[84]
+
+LaTeX Warning: Reference `LastPage' on page 85 undefined on input line 299.
+
+[85]
+
+LaTeX Warning: Reference `LastPage' on page 86 undefined on input line 392.
+
+[86]
+
+LaTeX Warning: Reference `LastPage' on page 87 undefined on input line 489.
+
+[87]
+
+LaTeX Warning: Reference `LastPage' on page 88 undefined on input line 587.
+
+[88]
+Underfull \hbox (badness 1194) in paragraph at lines 671--676
+[]\T1/cmr/m/n/10 Williams V. V., 2012, in Pro-ceed-ings of the forty-fourth an-
+nual ACM sym-po-sium on The-ory of
+ []
+
+
+LaTeX Warning: Reference `LastPage' on page 89 undefined on input line 678.
+
+[89])
+
+LaTeX Warning: Reference `LastPage' on page 90 undefined on input line 472.
+
+[90]
+
+Package lastpage Warning: Rerun to get the references right on input line 474.
+
 
 AED: lastpage setting LastPage
-[75] (./main.aux)
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F5B523501D4D5E7935EE656F9FF79429;15952.
+
+LaTeX Warning: Reference `LastPage' on page 91 undefined on input line 474.
+
+[91]
+
+Package natbib Warning: There were undefined citations.
+
+(./main.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  99787A2B5E93323EB3C99646C196EE71;15536.
 runsystem(rm main.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 44889 strings out of 478512
- 906665 string characters out of 5849625
- 1322533 words of memory out of 5000000
- 61397 multiletter control sequences out of 15000+600000
- 452826 words of font info for 125 fonts, out of 8000000 for 9000
+ 49674 strings out of 478512
+ 1005797 string characters out of 5849625
+ 1391178 words of memory out of 5000000
+ 66089 multiletter control sequences out of 15000+600000
+ 455350 words of font info for 128 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 96i,20n,97p,1507b,2041s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{
+ 96i,20n,97p,1507b,2053s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{
 /usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/tex
 live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texl
 ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texli
@@ -2158,36 +4506,40 @@ s/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2021/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2021/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/
-public/lm/lmss12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/
-lmss17.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbi
-0900.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbi10
-00.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx0900
-.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1000.p
-fb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb
-></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><
-/usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></u
-sr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc0800.pfb></usr
-/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc0900.pfb></usr/l
-ocal/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/loc
-al/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local
-/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/t
-exlive/2021/texmf-dist/fonts/type1/public/cm-super/sfit1000.pfb></usr/local/tex
-live/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texli
-ve/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive
-/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2
-021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/202
-1/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2021/
-texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2021/te
-xmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2021/texm
-f-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2021/texmf-
-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texlive/2021/texmf-di
-st/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2021/texmf-dist
-/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2021/texmf-dist/f
-onts/type1/public/cm-super/sfxc1440.pfb>
-Output written on main.pdf (101 pages, 8909180 bytes).
+public/cbfonts/grmi0900.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pub
+lic/lm/lmss12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lms
+s17.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols
+/msam10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfb
+i0900.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbi1
+000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx080
+0.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx0900.
+pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pf
+b></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb>
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></
+usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></us
+r/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc0800.pfb></usr/
+local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc0900.pfb></usr/lo
+cal/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/loca
+l/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/
+texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/te
+xlive/2021/texmf-dist/fonts/type1/public/cm-super/sfit1000.pfb></usr/local/texl
+ive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texliv
+e/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/
+2021/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/20
+21/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2021
+/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2021/t
+exmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2021/tex
+mf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2021/texmf
+-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2021/texmf-d
+ist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texlive/2021/texmf-dis
+t/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2021/texmf-dist/
+fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2021/texmf-dist/fo
+nts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2021/texmf-dist/font
+s/type1/public/cm-super/sfxc1440.pfb>
+Output written on main.pdf (111 pages, 9990511 bytes).
 PDF statistics:
- 2507 PDF objects out of 2984 (max. 8388607)
- 2163 compressed objects within 22 object streams
- 460 named destinations out of 1000 (max. 500000)
- 929 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1520 PDF objects out of 1728 (max. 8388607)
+ 1208 compressed objects within 13 object streams
+ 489 named destinations out of 1000 (max. 500000)
+ 277 words of extra memory for PDF output out of 10000 (max. 10000000)
 
