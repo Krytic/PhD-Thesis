@@ -1,52 +1,53 @@
 \babel@toc {english}{}
 \contentsline {chapter}{Contents\ttl@gmk {\@mkboth {\MakeUppercase {Contents}}{\MakeUppercase {Contents}}}}{{\fontencoding {T1}\selectfont xi}}{chapter*.1}%
-\contentsline {chapter}{List of Figures}{{\fontencoding {T1}\selectfont xiii}}{chapter*.2}%
-\contentsline {chapter}{List of Tables}{{\fontencoding {T1}\selectfont xv}}{chapter*.3}%
-\contentsline {chapter}{Thesis To-do List}{{\fontencoding {T1}\selectfont xvii}}{chapter*.4}%
-\contentsline {chapter}{Thesis Epigraphs}{{\fontencoding {T1}\selectfont xix}}{chapter*.5}%
+\contentsline {chapter}{List of Figures}{{\fontencoding {T1}\selectfont xv}}{chapter*.2}%
+\contentsline {chapter}{List of Tables}{{\fontencoding {T1}\selectfont xvii}}{chapter*.3}%
+\contentsline {chapter}{Glossary}{{\fontencoding {T1}\selectfont xix}}{chapter*.5}%
+\contentsline {chapter}{Thesis To-do List}{{\fontencoding {T1}\selectfont xxiii}}{chapter*.6}%
+\contentsline {chapter}{Thesis Epigraphs}{{\fontencoding {T1}\selectfont xxv}}{chapter*.7}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}A brief history of astronomy}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Stellar Modelling}{5}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Population Synthesis Codes}{5}{subsection.1.2.1}%
-\contentsline {subsubsection}{Detailed Population Synthesis}{5}{subsubsection*.6}%
-\contentsline {subsubsection}{Rapid Population Synthesis}{6}{subsubsection*.7}%
-\contentsline {subsubsection}{3D MHD Simulations}{6}{subsubsection*.8}%
-\contentsline {section}{\numberline {1.3}Thesis Outline}{6}{section.1.3}%
+\contentsline {subsubsection}{Detailed Population Synthesis}{6}{subsubsection*.8}%
+\contentsline {subsubsection}{Rapid Population Synthesis}{6}{subsubsection*.9}%
+\contentsline {subsubsection}{3D MHD Simulations}{6}{subsubsection*.10}%
+\contentsline {section}{\numberline {1.3}Thesis Outline}{7}{section.1.3}%
 \contentsline {chapter}{\numberline {2}Theoretical Background}{9}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Stellar Formation}{9}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Stellar Evolution}{10}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}The chemical composition of stars}{11}{subsection.2.2.1}%
-\contentsline {subsubsection}{Hydrogen burning: the \acrshort {pp_chain}}{12}{subsubsection*.9}%
-\contentsline {subsubsection}{The metallicity of the Sun}{12}{subsubsection*.10}%
+\contentsline {subsubsection}{Hydrogen burning: the \acrshort {pp_chain}}{12}{subsubsection*.11}%
+\contentsline {subsubsection}{The metallicity of the Sun}{12}{subsubsection*.12}%
 \contentsline {subsection}{\numberline {2.2.2}Evolutionary Pathways}{14}{subsection.2.2.2}%
-\contentsline {subsubsection}{Low-Mass Stars: $\SI {0.08}{\msun } < M < \SI {2}{\msun }$}{14}{subsubsection*.11}%
-\contentsline {subsubsection}{Intermediate-Mass Stars: $\SI {2}{\msun } < M < \SI {8}{\msun }$}{14}{subsubsection*.12}%
-\contentsline {subsubsection}{Massive Stars: $\SI {8}{\msun } < M < \SI {80}{\msun }$}{14}{subsubsection*.13}%
-\contentsline {subsubsection}{Very Massive Stars: $\SI {80}{\msun } < M < \SI {300}{\msun }$}{14}{subsubsection*.14}%
+\contentsline {subsubsection}{Low-Mass Stars: $\SI {0.08}{\msun } < M < \SI {2}{\msun }$}{14}{subsubsection*.13}%
+\contentsline {subsubsection}{Intermediate-Mass Stars: $\SI {2}{\msun } < M < \SI {8}{\msun }$}{14}{subsubsection*.14}%
+\contentsline {subsubsection}{Massive Stars: $\SI {8}{\msun } < M < \SI {80}{\msun }$}{14}{subsubsection*.15}%
+\contentsline {subsubsection}{Very Massive Stars: $\SI {80}{\msun } < M < \SI {300}{\msun }$}{14}{subsubsection*.16}%
 \contentsline {subsection}{\numberline {2.2.3}Relativistic corrections}{14}{subsection.2.2.3}%
 \contentsline {section}{\numberline {2.3}Supernovae}{16}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Two to tango: Binary Evolution}{17}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Binary star kinematics}{17}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Mass Transfer Efficiency}{19}{subsection.2.4.2}%
 \contentsline {subsection}{\numberline {2.4.3}Roche Lobes}{20}{subsection.2.4.3}%
-\contentsline {subsubsection}{Roche Lobe Overflow -- the $\mathcal {L}_1$ point}{23}{subsubsection*.15}%
-\contentsline {subsubsection}{Roche Lobe Overflow -- the $\mathcal {L}_2$ point}{24}{subsubsection*.16}%
+\contentsline {subsubsection}{Roche Lobe Overflow -- the $\mathcal {L}_1$ point}{23}{subsubsection*.17}%
+\contentsline {subsubsection}{Roche Lobe Overflow -- the $\mathcal {L}_2$ point}{24}{subsubsection*.18}%
 \contentsline {subsection}{\numberline {2.4.4}Common Envelope Evolution}{26}{subsection.2.4.4}%
-\contentsline {subsubsection}{The $\alpha -\lambda $ prescription}{26}{subsubsection*.17}%
-\contentsline {subsubsection}{The $\gamma $ prescription}{27}{subsubsection*.18}%
+\contentsline {subsubsection}{The $\alpha -\lambda $ prescription}{26}{subsubsection*.19}%
+\contentsline {subsubsection}{The $\gamma $ prescription}{27}{subsubsection*.20}%
 \contentsline {subsection}{\numberline {2.4.5}Chemical Pollution \& Enrichment}{27}{subsection.2.4.5}%
-\contentsline {section}{\numberline {2.5}Post-Supernova}{27}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Merger Rates of compact binaries}{28}{subsection.2.5.1}%
+\contentsline {section}{\numberline {2.5}Post-Supernova}{28}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Merger Rates of compact binaries}{29}{subsection.2.5.1}%
 \contentsline {section}{\numberline {2.6}A Final Note: Stellar Atmospheres}{30}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Numerical implementation}{30}{section.2.7}%
 \contentsline {subsection}{\numberline {2.7.1}The Cambridge \textsc {\MakeLowercase {stars}} code}{31}{subsection.2.7.1}%
-\contentsline {subsubsection}{Brief History}{31}{subsubsection*.19}%
-\contentsline {subsubsection}{Matrix Inversion}{31}{subsubsection*.20}%
-\contentsline {subsubsection}{Initial Condition Selection}{32}{subsubsection*.21}%
-\contentsline {subsubsection}{Timestep control}{32}{subsubsection*.22}%
-\contentsline {subsubsection}{Numerical instabilities}{33}{subsubsection*.23}%
-\contentsline {subsection}{\numberline {2.7.2}The \textsc {\MakeLowercase {Tui}} code}{34}{subsection.2.7.2}%
-\contentsline {section}{\numberline {2.8}Chapter Summary}{34}{section.2.8}%
+\contentsline {subsubsection}{Brief History}{31}{subsubsection*.21}%
+\contentsline {subsubsection}{Matrix Inversion}{32}{subsubsection*.22}%
+\contentsline {subsubsection}{Initial Condition Selection}{32}{subsubsection*.23}%
+\contentsline {subsubsection}{Timestep control}{33}{subsubsection*.24}%
+\contentsline {subsubsection}{Numerical instabilities}{33}{subsubsection*.25}%
+\contentsline {subsection}{\numberline {2.7.2}The \textsc {\MakeLowercase {Tui}} code}{36}{subsection.2.7.2}%
+\contentsline {section}{\numberline {2.8}Chapter Summary}{36}{section.2.8}%
 \contentsline {chapter}{\numberline {3}Stellar Evolution Synthesis: Results}{37}{chapter.3}%
 \contentsline {section}{\numberline {3.1}The \textsc {\MakeLowercase {Kaitiaki}} grid-watcher code}{37}{section.3.1}%
 \contentsline {section}{\numberline {3.2}General Binary Evolution}{39}{section.3.2}%
@@ -65,19 +66,19 @@
 \contentsline {subsection}{\numberline {4.1.3}The \textsc {\MakeLowercase {Takahe}} binary evolution code}{46}{subsection.4.1.3}%
 \contentsline {section}{\numberline {4.2}Merger Rates of BNS systems}{47}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Period-Eccentricity Distributions}{50}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Log-Likelihood calculations}{51}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.1}Log-Likelihood calculations}{50}{subsection.4.3.1}%
 \contentsline {section}{\numberline {4.4}Single-Star Kick Velocities}{52}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Pulsar dataset}{52}{subsection.4.4.1}%
-\contentsline {section}{\numberline {4.5}Production of Ultra-Stripped Supernovae}{56}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Refinement of the parameter space}{56}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Chapter Summary}{59}{section.4.7}%
-\contentsline {chapter}{\numberline {5}Conclusion}{63}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Summary}{63}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Limitations}{63}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Suggested Future Work}{63}{section.5.3}%
-\contentsline {chapter}{Appendices}{65}{section*.24}%
-\contentsline {chapter}{\numberline {A}Code Samples}{67}{appendix.a.A}%
-\contentsline {chapter}{\numberline {B}Code Versions}{77}{appendix.a.B}%
-\contentsline {chapter}{\numberline {C}Period-Eccentricity distributions along the \acrshort {lvk} \acrshort {o3} contour}{79}{appendix.a.C}%
-\contentsline {chapter}{\numberline {D}Parameter Configuration}{81}{appendix.a.D}%
-\contentsline {chapter}{Bibliography\ttl@gmk {\@mkboth {\MakeUppercase {Bibliography}}{\MakeUppercase {Bibliography}}}}{83}{appendix*.25}%
+\contentsline {subsection}{\numberline {4.4.1}Pulsar dataset}{53}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.5}Production of Ultra-Stripped Supernovae}{57}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Refinement of the parameter space}{58}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Chapter Summary}{63}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Conclusion}{65}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Summary}{65}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Limitations}{65}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Suggested Future Work}{65}{section.5.3}%
+\contentsline {chapter}{Appendices}{67}{section*.26}%
+\contentsline {chapter}{\numberline {A}Code Samples}{69}{appendix.a.A}%
+\contentsline {chapter}{\numberline {B}Code Versions}{79}{appendix.a.B}%
+\contentsline {chapter}{\numberline {C}Period-Eccentricity distributions along the \acrshort {lvk} \acrshort {o3} contour}{81}{appendix.a.C}%
+\contentsline {chapter}{\numberline {D}Parameter Configuration}{83}{appendix.a.D}%
+\contentsline {chapter}{Bibliography\ttl@gmk {\@mkboth {\MakeUppercase {Bibliography}}{\MakeUppercase {Bibliography}}}}{85}{appendix*.27}%
