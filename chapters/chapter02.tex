@@ -147,7 +147,7 @@ and thus by knowing the simple iron content of the Sun or star, we can approxima
 
 \subsection{Evolutionary Pathways}
 
-In this section, we examine the four major regimes of stellar evolution for single-stars. The precise boundaries are debatable \todo{cite?}, but are generally accepted to be logarithmically spaced.
+In this section, we examine the four major regimes of stellar evolution for single-stars. The precise boundaries are debatable, but are generally accepted to be logarithmically spaced.
 
 \subsubsection{Low-Mass Stars: \texorpdfstring{$\SI{0.08}{\msun} < M < \SI{2}{\msun}$}{Stars with between 0.08 and 2 times the mass of the sun}}
 
@@ -807,8 +807,26 @@ The method to overcome this numerical instability is involved and not fully impl
 
 \subsection{The \codename{Tui} code}\label{chap:numerical_methods_tui}
 
-\codename{Tui} is the core population synthesis code within the BPASS project. \codename{Tui} takes as input the output from the \codename{stars} code.
+\codename{Tui} is the core population synthesis code within the BPASS project. \codename{Tui} takes as input the output from the \codename{stars} code. \codename{Tui} was first described in \citet{ghodla_evaluating_2023}, and was more fulsomely described in \citet{stevance_end--end_2023}, though we note that their version is technically a refactor of the version we use. The predominant function we use \codename{Tui} for is the matching of pre- and post- supernova models for \autoref{chap:natal_kicks}, and in this section we provide a brief account of that functionality of \codename{Tui} (though the control of the population synthesis models is beyond the scope of this thesis).
+
+\codename{Tui} has precompiled ``input\_'' files which report a \codename{STARS} plot file, an \gls{imf} weight, and a model type (merger/normal primary/normal secondary/single model/quasi-homogeneous evolution binary/single star). After loading in a model, \codename{Tui} applies a given kick and computes the new orbital parameters from \citet{tauris_runaway_1998}. Crucially, a core assumption of \gls{bpass} is that the orbit remains circular after the first supernova and is allowed to be eccentric after the second. Of course, the supernova may cause the binary to become eccentric after the first supernova; \codename{Tui} accounts for this by setting the separation after the first supernova to be the semi-latus rectum of the eccentric binary. \codename{Tui} repeats this process after the second supernova.
+
+For the purposes of \autoref{chap:natal_kicks}, if the binary remains bound after the second supernova, we record the following parameters:
+
+\begin{enumerate}
+    \item The mass of the primary,
+    \item The mass of the secondary,
+    \item The orbital separation,
+    \item The eccentricity,
+    \item A weight term proportional to the \gls{imf} weighting,
+    \item The rejuvenation age, which is the time since the companion last accreted material, if it accreted more than five per cent of its initial mass \citep[see][]{richards_new_2023}, and
+    \item The evolution age, which is the length of time from the secondary's \gls{zams} until its death.
+\end{enumerate}
+
+This provides us with the post-secondary supernova orbital parameters which determine the properties of the merger, such as the event rate $\mathcal{R}(z)$ and its path through period-eccentricity space.
 
 \section{Chapter Summary}
 
 \mediaepigraph{Looking up, he saw a thousand stars glittering in the deep velvet of a night with no moon. He knew them all, their stories and their names. He knew them in a familiar way, the way he knew his own hands.}{The Name of the Wind}{Patrick Rothfuss}
+
+In this Chapter, we have explored the evolution of stars from pre-main sequence evolution to supernova, accounting for the effects of binary interaction. This represents the state of the field as at the commencement of this work. In future chapters we will detail the relevant changes we have made to these prescriptions, motivating the work we have performed.

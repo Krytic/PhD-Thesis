@@ -10,22 +10,22 @@
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Two stars of a similar mass that undergo a helium flash and two thermal pulses.}}{35}{figure.2.7}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces The helium flash shown on a Kippenhahn diagram.}}{36}{figure.2.8}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Control flow of a grid calculation performed by \textsc {Kaitiaki}.}}{40}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces The evolution of an \SI {10}{\msun } (leftmost) and \SI {8}{\msun } (centermost) star as both single stars and as a binary with a period of \SI {30}{\day } (rightmost).}}{41}{figure.3.2}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Control flow of a grid calculation performed by \textsc {Kaitiaki}.}}{42}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The evolution of an \SI {10}{\msun } (leftmost) and \SI {8}{\msun } (centermost) star as both single stars and as a binary with a period of \SI {30}{\day } (rightmost).}}{43}{figure.3.2}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces The effect of varying $\mathrm {d}e$ in \autoref {eq:discrete_sum} on the coalescence time.}}{48}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces The effect of varying $\mathrm {d}e$ in \autoref {eq:discrete_sum} on the runtime and performance.}}{49}{figure.4.2}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces The merger rate as a function of kick parameters $\alpha $ and $\beta $.}}{51}{figure.4.3}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces The \acrshort {pdf} and \acrshort {cdf} of the distributions using kicks from \citet {hobbs_statistical_2005,verbunt_observed_2017,bray_neutron_2018,willcox_constraints_2021}.}}{54}{figure.4.4}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces The \acrshort {ks} statistic for \textsc {FineGrid} and \textsc {WideGrid}.}}{55}{figure.4.5}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces The \acrshortpl {pdf} and \acrshortpl {cdf} of four systems, alongside the Hobbs \acrshort {cdf} and \citet {willcox_constraints_2021} \acrshort {cdf}.}}{56}{figure.4.6}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces The four constraints we apply overlaid on our \textsc {FineGrid} parameter space.}}{59}{figure.4.7}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces The \acrshort {cdf} for a population of isolated pulsars and the period-eccentricity distribution for $\alpha =\SI {115}{\km \per \s }, \beta =\SI {15}{\km \per \s }$.}}{60}{figure.4.8}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces The peak of the event rate $\mathcal {R}(t)$ as a function of $\alpha $ and $\beta $.}}{61}{figure.4.9}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces The event rate $\mathcal {R}(z)$ for a region surrounding $\alpha =330, \beta =-70$ on \textsc {FineGrid}.}}{62}{figure.4.10}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The effect of varying $\mathrm {d}e$ in \autoref {eq:discrete_sum} on the coalescence time.}}{50}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The effect of varying $\mathrm {d}e$ in \autoref {eq:discrete_sum} on the runtime and performance.}}{51}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces The merger rate as a function of kick parameters $\alpha $ and $\beta $.}}{53}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces The \acrshort {pdf} and \acrshort {cdf} of the distributions using kicks from \citet {hobbs_statistical_2005,verbunt_observed_2017,bray_neutron_2018,willcox_constraints_2021}.}}{56}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces The \acrshort {ks} statistic for \textsc {FineGrid} and \textsc {WideGrid}.}}{57}{figure.4.5}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces The \acrshortpl {pdf} and \acrshortpl {cdf} of four systems, alongside the Hobbs \acrshort {cdf} and \citet {willcox_constraints_2021} \acrshort {cdf}.}}{58}{figure.4.6}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces The four constraints we apply overlaid on our \textsc {FineGrid} parameter space.}}{61}{figure.4.7}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces The \acrshort {cdf} for a population of isolated pulsars and the period-eccentricity distribution for $\alpha =\SI {115}{\km \per \s }, \beta =\SI {15}{\km \per \s }$.}}{62}{figure.4.8}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces The peak of the event rate $\mathcal {R}(t)$ as a function of $\alpha $ and $\beta $.}}{63}{figure.4.9}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces The event rate $\mathcal {R}(z)$ for a region surrounding $\alpha =330, \beta =-70$ on \textsc {FineGrid}.}}{64}{figure.4.10}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces The period-eccentricity distributions of populations governed by Bray kicks across the \acrshort {ligo} \acrshort {o3} contour.}}{82}{figure.a.C.1}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces The period-eccentricity distributions of populations governed by Bray kicks across the \acrshort {ligo} \acrshort {o3} contour.}}{84}{figure.a.C.1}%
 \addvspace {10\p@ }
