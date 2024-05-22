@@ -29,7 +29,7 @@ The existence of two free parameters, $\alpha$ and $\beta$, mean that a choice o
 
 \subsection{Parameter space}
 
-We perform our computation on three populations, outlined in \autoref{tab:populations}. These populations simulate 1,000 kicks per system sampled. The aim of the three populations is twofold. Firstly, by generating \textsc{FineGrid} and \textsc{WideGrid}, we are able to look both at fine detail in the region at which the most likely value is expected to lie and also the large-scale behaviour over wider parameter ranges.
+We perform our computation on three populations, termed \textsc{FineGrid}, \textsc{WideGrid}, and \textsc{Hobbs}, whose properties are outlined in \autoref{tab:populations}. These populations simulate 1,000 kicks per system sampled. The aim of the three populations is twofold. Firstly, by generating \textsc{FineGrid} and \textsc{WideGrid}, we are able to look both at fine detail in the region at which the most likely value is expected to lie and also the large-scale behaviour over wider parameter ranges.
 
 \begin{table}[h]
     \centering
@@ -49,6 +49,17 @@ We perform our computation on three populations, outlined in \autoref{tab:popula
 \end{table}
 
 Secondly, by using \citet{hobbs_statistical_2005}, we are able to create a population governed by a kick that has been well-tested in literature \citep[see, for example,][]{bouffanais_new_2021,broekgaarden_impact_2021,fragione_black-hole-neutron-star_2021,igoshev_combined_2021,mandel_rates_2021} which serves as a fiducial comparison. From a Bayesian perspective, we are essentially choosing the \textsc{Hobbs} distribution as our prior for the express purpose of a Bayesian test in \autoref{sec:per_ecc_dist}.
+
+The choice of extremal values for $\alpha$ and $\beta$ are somewhat arbitrary. \autoref{fig:grid_regions} shows a wider parameter space with $\alpha\in\left[0, 1000\right], \beta\in\left[-500, 500\right]$. Regions in the upper right (bottom left) corner of the plot have quite high (low) mean kick velocities. Although both grids encroach on these regions somewhat, there is a tradeoff between exploring the grid space fully and using computational resources efficiently. Our mean kick velocities should not be too extreme; the mean for a \citet{hobbs_statistical_2005} kick is $\sigma=\SI{265}{\km\per\s}$, for a \citet{verbunt_observed_2017} is $\sigma_1=\SI{75}{\km\per\s}$ and $\sigma_2=\SI{316}{\km\per\s}$, and for the observed \citet{willcox_constraints_2021} kick $\sigma_1\approx\SI{30}{\km\per\s}, \sigma_2\approx\SI{230}{\km\per\s}$. These\footnote{Due to the grid size and the random sampling, a true contour is difficult to observe due to sampling noise. The contours shown are thus linear fits to the actual contours.} are shown on the grid as black lines.
+
+Whilst the exact parameters can be shifted somewhat and maintain the statistical integrity given these constraints, there are a few additional heuristic constraints we place on the regions to select. First, we wish to capture low-velocity \gls{ussne} kicks (as will be discussed in \autoref{sec:ussne_production}), necessitating a region near $\alpha=\beta=0$ (where the kick would be identically zero for all ejecta-remnant mass ratios). Secondly, the fiducial work of \citet{bray_neutron_2018} found $\alpha=100, \beta=-170$. Although a goal was to (ideally) remove $\beta<0$ as a possible value (for \gls{ussne} again), to impose that as a prior when the fiducial value sat within that range would have gone contrary to typical Bayesian practices. Thirdly, we expected but could not guarantee that the magnitude of each parameter would shrink with further tests, given the large uncertainty bands that \citet{bray_neutron_2018} found (hence broadening our search area beyond $\left|\alpha\right|=100, \left|\beta\right|=170$). Finally, we elected to increase the grid search region by 75 per cent for \textsc{WideGrid} as this would allow us to just reach $\bar{v}_\text{k}=\SI{700}{\km\per\s}$, which is where the \gls{cdf} of the \citet{hobbs_statistical_2005,verbunt_observed_2017,willcox_constraints_2021} distributions all (approximately) begin to level out (signifying few velocities above those), as shown in \autoref{fig:bray_vs_hobbs_vs_willcox_pdf}.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{images/NatalKicks/Grid_Regions.png}
+    \caption[A schematic of how \textsc{FineGrid} and \textsc{WideGrid} are related.]{A schematic of how \textsc{FineGrid} and \textsc{WideGrid} are related. The mean kick velocity $v_\text{k}$ was computed by averaging the kick velocities of 1,000 simulated kicks for each combination of $\alpha$ and $\beta$, with $m_\text{rem}\in\left[0.1, 2.5\right]$ and $m_\text{ej}\in\left[0.1, m_\text{rem}\right]$ sampled uniformly.}
+    \label{fig:grid_regions}
+\end{figure}
 
 \subsection{Natal Kick Prescriptions}\label{sec:natal_kick_prescriptions}
 

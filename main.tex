@@ -32,11 +32,7 @@
 \usepackage{ccaption}
 \usepackage{setspace}
 
-
-%% SUPERVISOR COPY ONLY :)
-\doublespacing
-
-% \linespread{1.25}
+\def\supervisorcopy{}
 
 \tcbuselibrary{minted}
 
@@ -299,15 +295,14 @@
 \makeatother
 
 \newcommand{\makefancy}{%
-\pagestyle{fancy}
-\renewcommand{\footrulewidth}{0.1pt}
-\renewcommand{\headrulewidth}{0pt}
-\fancyhead[LE,LO]{}
-\fancyhead[CE,CO]{}
-\fancyhead[RE,RO]{}
-\fancyfoot[LE,LO]{}
-\fancyfoot[CE,CO]{Page \thepage\ of \pageref{LastPage}}
-\fancyfoot[RE,RO]{}
+  \pagestyle{fancy}
+  \renewcommand{\footrulewidth}{0.1pt}
+  \fancyhead[LE,LO]{}
+  % \fancyhead[CE,CO]{}
+  \fancyhead[RE,RO]{}
+  \fancyfoot[LE,LO]{}
+  \fancyfoot[CE,CO]{Page \thepage\ of \pageref{LastPage}}
+  \fancyfoot[RE,RO]{}
 }
 
 \makeatletter
@@ -409,11 +404,25 @@
 
 \usepackage{hyperref}
 
-\hypersetup{colorlinks=true,
-    linkcolor=black, % blue
-    citecolor=blue, % blue
-    filecolor=black, % magenta
-    urlcolor=black}  % cyan
+\ifx\supervisorcopy\undefined
+    \linespread{1.25}
+    \fancyhead[CE,CO]{}
+    \renewcommand{\headrulewidth}{0pt}
+    \hypersetup{colorlinks=true,
+        linkcolor=black, % blue
+        citecolor=black, % blue
+        filecolor=black, % magenta
+        urlcolor=black}  % cyan
+\else
+    \doublespacing
+    \fancyhead[CE,CO]{\textsc{Draft Version -- Supervisor Comments}}
+    \renewcommand{\headrulewidth}{0.1pt}
+    \hypersetup{colorlinks=true,
+        linkcolor=black, % blue
+        citecolor=blue, % blue
+        filecolor=black, % magenta
+        urlcolor=black}  % cyan
+\fi
 
 \newtcbinputlisting[auto counter, number within=chapter, list inside=lol,list type={lstlisting}]{\pythonfile}[3][]{%
   listing engine=minted,

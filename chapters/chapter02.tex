@@ -296,7 +296,7 @@ Introducing a second star into the mix complicates the evolution. Whereas before
 
 There are several formation channels for a binary star system. Binaries may be formed from birth (as discussed in \autoref{sec:stellar_formation}, with the caveat that in this scenario two clumps of gas form near each other), via fragmentation of a protostar's disc, dynamical capture of one star by another (comparable to one of the suggested origins of Phobos and Deimos, per \citet{burns_dynamical_1978}), or via a higher multiplicity system ejecting one or more of its constituent stars, perhaps via a natal supernova kick.
 
-In any case, once formed and the orbit is stabilised, binary systems obey Kepler's three laws. In the generalised binary regime, however, the assumption that $M_1\gg M_2$ (which underpins most statements of Kepler's laws) is not necessarily true -- for instance, the system LSS 3074 has two stellar components with \gls{zams} masses of approximately \SI{30}{\msun} and \SI{10}{\msun} \citep[][and \autoref{sec:close_contact} of this thesis]{raucq_observational_2017}. Moreover, the fact that there are two stars in orbit rather that one object orbiting another means that Kepler's laws must be stated more precisely. Formally, they can be expressed as
+In any case, once formed and the orbit is stabilised, binary systems obey Kepler's three laws. In the generalised binary regime, however, the assumption that $M_1\gg M_2$ (which underpins most statements of Kepler's laws) is not necessarily true -- for instance, the system LSS 3074 has two stellar components with \gls{zams} masses of approximately \SI{30}{\msun} and \SI{10}{\msun} \citep[][and \autoref{sec:close_contact} of this thesis]{raucq_observational_2017}. Moreover, the fact that there are two stars in orbit rather that one object orbiting another means that Kepler's laws must be stated more precisely. Formally, they can be expressed as (see the appendix of \citet{richards_missing_2021} for derivations)
 
 \begin{enumerate}
     \item All orbits are ellipses, with both stars orbiting a common barycentre at the focus of the ellipse,
@@ -336,36 +336,102 @@ and a schematic of the orbit of a binary system is given in \autoref{fig:bss_sch
         \draw[->] (-3, 0) edge[bend right] (drawtoA);
         \draw[->] (1.5, 0) edge[bend right] (drawtoB);
     \end{tikzpicture}
-    \caption[A schematic of a simple binary star system.]{A schematic of a simple binary star system. The centre of mass (barycentre) is shown as a blue dot. Here, $M_1$ is the heavier star, which orbits at a greater distance $x_1$ to the barycentre by Kepler's first and Newton's second laws. Figure adapted from \citet{richards_missing_2021}.}
+    \caption[A schematic of a simple binary star system.]{A schematic of a simple binary star system. The centre of mass (barycentre) is shown as a blue dot. Here, $M_1$ is the heavier star, which orbits at a smaller distance $x_1$ to the barycentre by Kepler's first and Newton's second laws. Figure adapted from \citet{richards_missing_2021}.}
     \label{fig:bss_schematic}
 \end{figure}
 
-\subsection{Mass Transfer Efficiency}
+\subsection{Mass Transfer}\label{sec:mass_transfer}
 
-Whilst mass-loss from a single star is effectively 100 per cent lossy -- that is, that 100 per cent of the material ejected from the star is lost to the \gls{ism} -- the same is not necessarily true in a binary. Suppose star A (called the ``donor'') with mass $M_\text{donor}$ grows to exceed its Roche Lobe, the equipotential surface which is tear-drop shaped, with an apex at the inner Lagrangian point $\mathcal{L}_1$. The excess mass will begin to accrete onto star B (the ``accretor'') which initially has mass $M_\text{acc}$. Suppose that the mass lost by the donor is $\delta M$. After the mass transfer phase is finished, the mass of both stars will be
+When two stars are sufficiently close in proximity, events such as \glspl{cme} can cause two stars to exchange mass (whereas in the single-star case, this would be matter lost to the \gls{ism}). The nature of mass transfer is a detailed question; most binary star population synthesis codes typically inherit their mass loss prescriptions from papers such as \citet{bondi_mechanism_1944,hurley_evolution_2002}, and this approach is what we detail in this section.
 
-\begin{equation}
-    \left.\begin{array}{ll}
-        M'_\text{donor} &= M_\text{donor} - \delta M \\
-        M'_\text{acc} &= M_\text{acc} + \kappa\delta M \\
-    \end{array}\right\}
-    \label{eq:binary_mass_transfer}
-\end{equation}
 
-where $\kappa\in\left[0,1\right]$ is the mass transfer efficiency. $\kappa=0$ corresponds to perfectly lossy -- all mass accreted from the donor is lost to the \gls{ism} -- whereas $\kappa=1$ is perfect efficiency -- all mass accreted from the donor is accepted by the accretor, with none lost to the \gls{ism}. The total mass is now
 
-\begin{equation}
-    M \equiv M'_\text{donor} + M'_\text{acc} = M_\text{donor} + M_\text{acc} - (1-\kappa)\delta M
-\end{equation}
+\todo{redo lol}
 
-Alternatively, we can construct a more complex model of mass transfer, allowing for a variable efficiency. For transfer from star $a$ to $b$ in a binary, this is
+
+
+
+The mean accretion rate (in the absence of RLOF) onto the companion is that given in \citet{bondi_mechanism_1944}, namely
+
 
 \begin{equation}
-    % 0.5D0*(VX+DABS(VX)) = PS(VX)
-    \dot{M}_a = \frac{M_a - \exp\left(L_a-\delta L_a\right)}{\mathrm{d}{t}}-\mathcal{R}_1M_a + f(a) + \min\left|\mathcal{R}_2\left(\frac{\log{R_\text{a}}-\log\left(a\frac{0.49q^\frac23}{0.6q^\frac23 \ln\left(1+q^\frac13\right)}\right)}{2}\right)^3,\SI[retain-unity-mantissa=false]{1e-2}{\msun\per\year}\right|,
+    \langle \dot{M}_\text{2A}\rangle = -\frac{1}{\sqrt{1-e^2}}\left(\frac{GM_2}{v_\text{W}^2}\right)^2 \frac{\alpha_\text{W}}{2a^2}\frac{1}{\left(1+v^2\right)^{3/2}}\dot{M}_\text{1W},
 \end{equation}
 
-where $f(a)$ is a given mass loss prescription.
+where we have assumed a circular orbit (as the stars we will be considering have exceptionally short periods), that
+
+\begin{equation}
+    v^2 = \frac{G\left(M_1+M_2\right)}{a v_\text{W}^2},
+\end{equation}
+
+and that
+
+\begin{equation}
+    v_\text{W} = 2\beta_\text{W}\frac{GM_1}{R_1}.
+\end{equation}
+
+The two free accretion parameters are assumed to be $\alpha_\text{W}=\frac32$ \citep{boffin_can_1988}, $\beta_\text{W}=7$ \citep{lamers_terminal_1995} for O-type stars. The total mass loss is given by
+
+\begin{equation}
+    \dot{M}_\text{pre-WR} = \dot{M}_\text{Vink} - \dot{M}_\text{RLF} + \langle \dot{M}_\text{2A}\rangle,\label{eq:pre-wr-ml}
+\end{equation}
+
+where $\dot{M}_\text{Vink}$ is the mass loss rate from \citet{vink_mass-loss_2001} and $\dot{M}_\text{RLF}$ is given by
+
+\begin{equation}
+    \dot{M}_\text{RLF} = \min\left\{\left(\frac{10R}{R_\text{RL}}\right)^3, \frac{M}{T_\text{KH}}\max\left[0, 1-\frac{\omega}{0.8\omega_\text{crit}}\right], 0.01\right\}.
+\end{equation}
+
+The final term in the expression serves to cap the mass loss rate through the RLOF mechanism to \SI{1}{\msun\per 100\year}. We also employ WR mass loss rates as given in \citet{de_jager_mass_1988}, which we have adapted by slowly turning them on for the primary when the surface abundance of hydrogen drops below 0.42. We take
+
+\begin{equation}
+    \mathcal{M} = \sqrt{\frac{Z}{Z_\odot}}\times 10^{-13.6 + 1.63\log\left(\frac{L}{L_\odot}\right)+2.22\log X},
+\end{equation}
+
+where $X$ is the surface hydrogen abundance of the primary, and then define
+
+\begin{equation}
+    \dot{M}_\text{WNL} = \begin{cases}
+        5\left(\mathcal{M}-\dot{M}_\text{pre-WR}\right)\left(0.42-X\right)+\dot{M}_\text{pre-WR} & 0.42 > X > 0.4 \\
+        \mathcal{M} & \text{otherwise}
+    \end{cases}.
+\end{equation}
+
+Our total mass loss (provided the star has not depleted its surface helium, which will be discussed below) is now
+
+\begin{equation}
+    \dot{M}_\text{A} = \begin{cases}
+        10\dot{\mu}\left(\log T-3.9\right) + \dot{M}_\text{pre-WR} & X < 0.42 \text{ and } \log T > 3.9 \\
+        \dot{M}_\text{WNL} & X > 0.42 \text{ and } \log T > 4.0 \\
+        \dot{M}_\text{pre-WR} & \text{otherwise}
+    \end{cases},
+\end{equation}
+
+where $\dot{\mu}=\dot{M}_\text{WNL}-\dot{M}_\text{pre-WR}$ and $T$ is the effective temperature of the primary.
+
+Finally, if the surface helium depletes we modify the mass loss rate further, defining
+
+\begin{equation}
+    \dot{M}_\text{WC} = \sqrt{\frac{Z}{Z_\odot}}\times 10^{-8.3 + 0.84\log\left(\frac{L}{L_\odot}\right) + 2.04\log X_\text{He} + 1.04\log\left(1-X_\text{He}\right)}
+\end{equation}
+
+such that our total mass loss rate becomes (provided $X_\text{H} < 10^{-3}$ and $\log T > 4$)
+
+\begin{equation}
+    \dot{M}_\text{B} = \begin{cases}
+        100\left(\dot{M}_\text{WC} - \dot{M}_\text{WNL}\right)\left(\mathcal{X}-0.02\right)+\dot{M}_\text{WNL} & \mathcal{X} > 0.02 \\
+        \dot{M}_\text{WNL} & \mathcal{X} < 0.02
+    \end{cases},
+\end{equation}
+
+where $\mathcal{X}=\frac{\frac13 X_\text{C}+\frac14 X_\text{O}}{X_\text{He}}$. The total mass loss rate is then
+
+\begin{equation}
+    \dot{M} = \begin{cases}
+        \dot{M}_\text{B} & \text{surface helium depleted} \\
+        \dot{M}_\text{A} & \text{otherwise}
+    \end{cases}.
+\end{equation}
 
 \subsection{Roche Lobes}
 
