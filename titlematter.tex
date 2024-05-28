@@ -48,7 +48,9 @@
 
 \placeopeningquote
 
+\ifx\supervisorcopy\undefined
 \IfFileExists{acknowledgements.tex}{\input{acknowledgements.tex}}
+\fi
 
 \tableofcontents % Output the table of contents
 \listoffigures % Output the list of figures

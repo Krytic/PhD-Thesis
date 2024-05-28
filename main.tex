@@ -81,6 +81,7 @@
 \DeclareSIUnit \pc {pc}
 \DeclareSIUnit \AU {AU}
 \DeclareSIUnit \year {yr}
+\DeclareSIUnit \Kelvin {K}
 \DeclareSIUnit \mweg {MWEG}
 \DeclareSIPrefix\ronna{R}{27}
 
@@ -267,6 +268,36 @@
   \vspace*{\afterepigraphskip}%
   \ifepigraphnoindent\@afterheading\fi
 }
+
+\newcommand{\twinEpigraphs}[4]{%
+  \vspace*{\fill}
+  \noindent
+  \begin{tcbraster}[raster columns=2,raster equal height=rows,valign=bottom,enhanced,opacityfill=0,frame hidden]
+    \begin{tcolorbox}
+    {\epigraphsize\begin{center}
+     \begin{center}\epitextfont#1\end{center}%
+     % \vspace{-5px}
+     \rule{\textwidth}{.4pt}
+     % \vspace{-20px}
+     \begin{center}\episourcefont#2\end{center}%
+    \end{center}
+    }
+    \end{tcolorbox}
+    \begin{tcolorbox}
+    {\epigraphsize\begin{center}
+     \begin{center}\epitextfont#3\end{center}%
+     % \vspace{-5px}
+     \rule{\textwidth}{.4pt}
+     % \vspace{-20px}
+     \begin{center}\episourcefont#4\end{center}%
+    \end{center}
+    }
+    \end{tcolorbox}
+  \end{tcbraster}
+  \vspace*{\fill}
+}
+
+
 
 \newcommand{\fancifulepigraph}[4]{%
   \begin{fanciful}
