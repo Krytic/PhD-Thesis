@@ -1,58 +1,8 @@
 % !TEX root = ../main.tex
-\chapter{Stellar Evolution Synthesis: Results}
+\chapter{Helium Rich Mass Transfer}
 
 \mediaepigraph{Begin at the beginning, the King said, very gravely, and go on till you come to the end: then stop.}{Alice's Adventures in Wonderland}{Lewis Carroll}
 
 As discussed in \autoref{sec:binary_evolution}, the presence of a companion measurably alters the evolution of a star.
-
-This chapter is structured as follows. First, we will discuss the grid-watcher code we have developed to both manage the \codename{stars} code and interpret its output, namely \codename{kaitiaki}. We will then briefly explore some of the general features of binary evolution before moving into two areas of particular interest: the close-contact regime (where the binary period can be as short as \SI{85}{\minute}), and variable composition accretion, where material being accreted is allowed to vary.
-
-\section{The \codename{Kaitiaki} grid-watcher code}\label{chap:numerical_methods_kaitiaki}
-
-\codename{Kaitiaki} is a grid-watcher code that sits atop the \codename{STARS} code and manages its execution. It was developed primarily to manipulate the fixed-width text files that \codename{STARS} uses, in contrast to the ``typical'' manipulation done through the command line.
-
-The core of \codename{Kaitiaki} is \mintinline{Python}{STARSController()} interface. The most na\"ive run would be to initialise a model of, say, \SI{8}{\msun} and evolve it until it evolves up the \gls{agb}. A sample of code for this is shown in \autoref{kaitiaki_runs} which evolves a \SI{10}{\msun} star.
-
-\pythonfile[label=kaitiaki_runs]{A \codename{Kaitiaki} script to evolve a \SI{10}{\msun} star}{chapters/listings/kaitiaki_demo.py}
-
-\begin{figure}[!htbp]
-    \centering
-    \includegraphics[width=\textwidth]{images/KaitiakiFlow.pdf}
-    \caption[Control flow of a grid calculation performed by \textsc{Kaitiaki}.]{Control flow of a grid calculation performed by \textsc{Kaitiaki}.}
-    \label{fig:kaitiaki_control_flow}
-\end{figure}
-
-\section{General Binary Evolution}
-
-\epigraph{\textbf{Captain Holt}: It works! I've never been more proud of you for anything in your life.\\
-\textbf{Terry}: I mean, I've solved a lot of cases for you.\\
-\textbf{Captain Holt}: And yet crime has continued.}{Brooklyn Nine-Nine}
-
-\subsection{Rationale}
-
-In \autoref{fig:single_vs_binary} we display in three subplots the evolution of an \SI{8}{\msun} single star, a \SI{10}{\msun} single star, and an \SI[parse-numbers=false]{8+10}{\msun} binary with a period of \SI{30}{\day}. The code to run this binary model is given in \autoref{binary_generation}.
-
-\begin{figure}[!htbp]
-    \centering
-    \includegraphics[width=\textwidth]{images/StellarSynthesis/single_vs_binary.png}
-    \caption[The evolution of an \SI{10}{\msun} (leftmost) and \SI{8}{\msun} (centermost) star as both single stars and as a binary with a period of \SI{30}{\day} (rightmost).]{The evolution of an \SI{10}{\msun} (leftmost) and \SI{8}{\msun} (centermost) star as both single stars and as a binary with a period of \SI{30}{\day} (rightmost). Roche lobe overflow occurs for the primary when it begins to cross the Hertzsprung gap, and for the secondary shortly off the main sequence.}
-    \label{fig:single_vs_binary}
-\end{figure}
-
-\subsection{Fiducial comparison}
-
-\section{Close-Contact Binaries}\label{sec:close_contact}
-
-\epigraph{All hands, this is the Captain. Begin prepping all stations for first contact.}{Captain Ed Mercer, ``The Orville''}
-
-\subsection{Rationale}
-
-\subsection{Parameter Selection}
-
-% \subsection{The Common Envelope phase of Binary Evolution}
-
-\subsection{Interaction Effects and Roche Lobe overflow}
-
-\section{Stripped Helium Stars}
 
 \section{Chapter Summary}

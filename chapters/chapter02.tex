@@ -292,6 +292,15 @@ Importantly for the nucleosynthesis of heavier-than-Iron elements, the supernova
 
 \section{Two to tango: Binary Evolution}\label{sec:binary_evolution}
 
+% In \autoref{fig:single_vs_binary} we display in three subplots the evolution of an \SI{8}{\msun} single star, a \SI{10}{\msun} single star, and an \SI[parse-numbers=false]{8+10}{\msun} binary with a period of \SI{30}{\day}. The code to run this binary model is given in \autoref{binary_generation}.
+
+% \begin{figure}[!htbp]
+%     \centering
+%     \includegraphics[width=\textwidth]{images/StellarSynthesis/single_vs_binary.png}
+%     \caption[The evolution of an \SI{10}{\msun} (leftmost) and \SI{8}{\msun} (centermost) star as both single stars and as a binary with a period of \SI{30}{\day} (rightmost).]{The evolution of an \SI{10}{\msun} (leftmost) and \SI{8}{\msun} (centermost) star as both single stars and as a binary with a period of \SI{30}{\day} (rightmost). Roche lobe overflow occurs for the primary when it begins to cross the Hertzsprung gap, and for the secondary shortly off the main sequence.}
+%     \label{fig:single_vs_binary}
+% \end{figure}
+
 Introducing a second star into the mix complicates the evolution. Whereas before a star losing mass (through, for example, a \gls{cme}) was assumed to eject it into the \gls{ism}, it may now accrete that material directly onto its companion. In addition, either star may in principle increase in radius enough to overlap with its companion, or even touch surfaces -- introducing new dynamics into the mix.
 
 \subsection{Binary star kinematics}
@@ -361,13 +370,13 @@ Our master mass-loss rate is given by
     &\phantom{=}- \dot{M}_\text{Bondi}\label{eq:mass_loss_full}
 \end{align}
 
-This employs modified versions of the mass loss routines given in \citet{vink_mass-loss_2001}, as well as \citet{bondi_mechanism_1944,hurley_evolution_2002}. We detail the modifications we have made below. We take our accretion rates from \citet{bondi_mechanism_1944,hurley_evolution_2002}, limiting the accretion rate by the Kelvin-Helmholtz time-scale $T_\text{KH}$ of the star and by $1-\frac{\omega}{\omega_\text{crit}}$. The mean accretion rate (in the absence of RLOF) onto the companion is that given in \citet{bondi_mechanism_1944}, namely
+where $\mathcal{R}(x)=\max\left(0, x\right)$ is the ramp function. This employs modified versions of the mass loss routines given in \citet{vink_mass-loss_2001}, as well as \citet{bondi_mechanism_1944,hurley_evolution_2002}. We detail the modifications we have made below. We take our accretion rates from \citet{bondi_mechanism_1944,hurley_evolution_2002}, limiting the accretion rate by the Kelvin-Helmholtz time-scale $T_\text{KH}$ of the star and by $1-\frac{\omega}{\omega_\text{crit}}$. The mean accretion rate (in the absence of RLOF) onto the companion is that given in \citet{bondi_mechanism_1944}, namely
 
 \begin{equation}
-    \dot{M}_\text{Bondi} = \min\left[-\left(\frac{GM_2}{v_\text{W}^2}\right)^2 \frac{\alpha_\text{W}}{2a^2}\frac{1}{\left(1+v^2\right)^{3/2}}\dot{M}_\text{Vink}, 0.8\dot{M}_\text{Vink}\right],\label{eq:bondi}
+    \dot{M}_\text{Bondi} = \min\left[-\frac{1}{\sqrt{1-e^2}}\left(\frac{GM_2}{v_\text{W}^2}\right)^2 \frac{\alpha_\text{W}}{2a^2}\frac{1}{\left(1+v^2\right)^{3/2}}\dot{M}_\text{Vink}, 0.8\dot{M}_\text{Vink}\right],\label{eq:bondi}
 \end{equation}
 
-where we have assumed a circular orbit (as the stars we will be considering have exceptionally short periods), that
+where we have assumed that
 
 \begin{equation}
     v^2 = \frac{G\left(M_1+M_2\right)}{a v_\text{W}^2},
@@ -390,7 +399,7 @@ The two free accretion parameters are assumed to be $\alpha_\text{W}=\frac32$ \c
     \dot{M}_\text{pre-WR} &= \sqrt{\frac{Z}{Z_\odot}}10^{\log\dot{M}_\text{de Jager}},\label{eq:pre-wr-ml}
 \end{align}
 
-where $x_1 = \frac{\log T-4.05}{0.75}$, $x_2=\frac{\log L-4.6}{2.1}$, and the coefficients $a_{ij}$ are given in Table VI of \citet{de_jager_mass_1988}. We interpolate the bi-stability jump around \SI{25}{\kilo\Kelvin} \citep[see, for example,][]{pauldrach_radiation-driven_1990, vink_nature_1999} with the following regime. Define
+where $x_1 = \frac{\log T-4.05}{0.75}$, $x_2=\frac{\log L-4.6}{2.1}$, and the coefficients $a_{ij}$ are given in Table VI of \citet{de_jager_mass_1988}. We interpolate the bi-stability jump around \SI{25}{\kilo\Kelvin} \citep[see, for example,][]{pauldrach_radiation-driven_1990, vink_nature_1999} with the following regime. Define the constants
 
 \begin{align}
     R_1 &= \left(\frac{Z}{Z_\odot}\right)^{0.13},\label{eq:R1}\\
@@ -676,55 +685,51 @@ and $R_\text{L}(q)$ is given by \autoref{eq:RL1_eggleton}.
 
 We note that \citet{marchant_new_2016} uses an inverse mass ratio definition compared to \citet{eggleton_aproximations_1983}, that is, \citet{marchant_new_2016} takes $q_\text{Marchant}=\frac{M_1}{M_2}$ whereas \citet{eggleton_aproximations_1983} takes $q_\text{Eggleton}=\frac{M_2}{M_1}=\frac{1}{q_\text{Marchant}}$. This is accounted for in \autoref{eq:RL2_marchant} such that the mass ratios are consistent (and we take $q=q_\text{Eggleton}$), but other texts do not necessarily differentiate or describe the difference.
 
-\subsection{Common Envelope Evolution}
+% \subsection{Common Envelope Evolution}
 
-Now we turn to one of the highly uncertain phases of binary evolution. If one star's radius $R_1$ grows enough such that the radius is greater than the separation between the two binaries, i.e., $R_1 > a$, we say that the star has entered \gls{cee}. There are several effects that occur here. Firstly, due to orbital drag from the donor star (*1), the recipient star (*2) will shrink in orbit, i.e., the stars will come closer together. The relationship between the initial separation and the final separation is debated, and here we review some of the most common prescriptions.
+% Now we turn to one of the highly uncertain phases of binary evolution. If one star's radius $R_1$ grows enough such that the radius is greater than the separation between the two binaries, i.e., $R_1 > a$, we say that the star has entered \gls{cee}. There are several effects that occur here. Firstly, due to orbital drag from the donor star (*1), the recipient star (*2) will shrink in orbit, i.e., the stars will come closer together. The relationship between the initial separation and the final separation is debated, and here we review some of the most common prescriptions.
 
-First, the condition for \gls{cee} to occur is that $R_1 > a$. For a star to reach this radius its Roche Lobe, denoted $R_\text{L}$, must also be greater than this radius.% The Roche Lobe is the tear-drop shaped equipotential surface whose apex is at the inner Lagrangian point $\mathcal{L}_1$. To motivate this claim, consider a star whose Roche Lobe is less than the separation
+% First, the condition for \gls{cee} to occur is that $R_1 > a$. For a star to reach this radius its Roche Lobe, denoted $R_\text{L}$, must also be greater than this radius.% The Roche Lobe is the tear-drop shaped equipotential surface whose apex is at the inner Lagrangian point $\mathcal{L}_1$. To motivate this claim, consider a star whose Roche Lobe is less than the separation
 
-The formula approximating the Roche Lobe (to 1\% error in mass ratio $q$) is, per \citet{eggleton_aproximations_1983},
+% The formula approximating the Roche Lobe (to 1\% error in mass ratio $q$) is, per \citet{eggleton_aproximations_1983},
 
-\begin{equation}
-    \frac{R_\text{L}}{a} = \frac{R_\text{L}}{a} = \frac{0.49q^\frac23}{0.6q^\frac23+\ln\pqty{1+q^\frac13}}
-\end{equation}
+% \begin{equation}
+%     \frac{R_\text{L}}{a} = \frac{R_\text{L}}{a} = \frac{0.49q^\frac23}{0.6q^\frac23+\ln\pqty{1+q^\frac13}}
+% \end{equation}
 
-Note that the condition that $R_1 > a$ can be manipulated to $R_\text{L} > a$, or $\frac{R_\text{L}}{a}>1$. This is true over the reals for $0.21 < q < 0.29$. Note that this $q$ is not the \textit{initial} (\gls{zams}) mass ratio, but is instead the mass ratio at a given instant. Moreover, this is not a sufficient condition for \gls{cee} to occur (that is, we are not claiming that if this mass ratio is met, the star must be undergoing \gls{cee}), but rather a necessary condition for when \gls{cee} is even possible in the first instance.
+% Note that the condition that $R_1 > a$ can be manipulated to $R_\text{L} > a$, or $\frac{R_\text{L}}{a}>1$. This is true over the reals for $0.21 < q < 0.29$. Note that this $q$ is not the \textit{initial} (\gls{zams}) mass ratio, but is instead the mass ratio at a given instant. Moreover, this is not a sufficient condition for \gls{cee} to occur (that is, we are not claiming that if this mass ratio is met, the star must be undergoing \gls{cee}), but rather a necessary condition for when \gls{cee} is even possible in the first instance.
 
-\subsubsection{The \texorpdfstring{$\alpha-\lambda$}{alpha-lambda} prescription}
+% \subsubsection{The \texorpdfstring{$\alpha-\lambda$}{alpha-lambda} prescription}
 
-The most common \gls{cee} prescription is the $\alpha-\lambda$ prescription, which takes
+% The most common \gls{cee} prescription is the $\alpha-\lambda$ prescription, which takes
 
-\begin{equation}
-        \frac{m_1m_{1,\text{env}}}{\lambda R_1} = \alpha_\text{CE} \pqty{-\frac{Gm_1m_2}{2a_\text{i}}+\frac{Gm_{1,\text{c}}m_2}{2a_\text{f}}}
-\end{equation}
+% \begin{equation}
+%         \frac{m_1m_{1,\text{env}}}{\lambda R_1} = \alpha_\text{CE} \pqty{-\frac{Gm_1m_2}{2a_\text{i}}+\frac{Gm_{1,\text{c}}m_2}{2a_\text{f}}}
+% \end{equation}
 
-where a subscript ``c'' denotes a core mass and a subscript ``env'' denotes an envelope mass. There are apparently two free parameters: $\alpha_\text{CE}$, the fraction of the orbital energy used to eject the envelope (or ``common envelope efficiency'' parameter):
+% where a subscript ``c'' denotes a core mass and a subscript ``env'' denotes an envelope mass. There are apparently two free parameters: $\alpha_\text{CE}$, the fraction of the orbital energy used to eject the envelope (or ``common envelope efficiency'' parameter):
 
-\begin{equation}
-    \Delta E_\text{orb} = \alpha_\text{CE} E_\text{bind}
-\end{equation}
+% \begin{equation}
+%     \Delta E_\text{orb} = \alpha_\text{CE} E_\text{bind}
+% \end{equation}
 
-and $\lambda$, a structure constant related to the density distribution \citep{de_kool_common_1990}. $\lambda$ is a local parameter -- dependent on the structure of the star -- and $\alpha_\text{CE}$ is commonly taken as a global parameter $\sim$ 1 \citep{ivanova_common_2013}, though \citet{scherbak_white_2023} has recently suggested $\alpha_\text{CE}\sim\frac13$ is more appropriate. It is common, though unphysical, to take the combined parameter $\alpha_\text{CE}\lambda$ as the \textit{global} free parameter. We will in general not follow this approach; as defined, $\lambda$ depends on the stellar structure and the stellar binding energy. Hence, assuming it free to vary let alone able to be globally affixed is not a logical choice other than to save computational time.
+% and $\lambda$, a structure constant related to the density distribution \citep{de_kool_common_1990}. $\lambda$ is a local parameter -- dependent on the structure of the star -- and $\alpha_\text{CE}$ is commonly taken as a global parameter $\sim$ 1 \citep{ivanova_common_2013}, though \citet{scherbak_white_2023} has recently suggested $\alpha_\text{CE}\sim\frac13$ is more appropriate. It is common, though unphysical, to take the combined parameter $\alpha_\text{CE}\lambda$ as the \textit{global} free parameter. We will in general not follow this approach; as defined, $\lambda$ depends on the stellar structure and the stellar binding energy. Hence, assuming it free to vary let alone able to be globally affixed is not a logical choice other than to save computational time.
 
-\subsubsection{The \texorpdfstring{$\gamma$}{gamma} prescription}
+% \subsubsection{The \texorpdfstring{$\gamma$}{gamma} prescription}
 
-The $\gamma$ prescription arises as a consideration of conservation of angular momentum. Let $J$ be the orbital angular momentum of the binary. Then the $\gamma$ prescription takes
+% The $\gamma$ prescription arises as a consideration of conservation of angular momentum. Let $J$ be the orbital angular momentum of the binary. Then the $\gamma$ prescription takes
 
-\begin{equation}
-    \frac{\Delta J_\text{lost}}{J_\text{i}} = \frac{J_\text{i}-J_\text{f}}{J_\text{i}} = \gamma\frac{m_1-m_{1,\text{c}}}{m_1+m_2}.
-\end{equation}
+% \begin{equation}
+%     \frac{\Delta J_\text{lost}}{J_\text{i}} = \frac{J_\text{i}-J_\text{f}}{J_\text{i}} = \gamma\frac{m_1-m_{1,\text{c}}}{m_1+m_2}.
+% \end{equation}
 
-Once an expression for $J_\text{f}$ is found, one can transform it into the period via
+% Once an expression for $J_\text{f}$ is found, one can transform it into the period via
 
-\begin{equation}
-    a_\text{f} = \frac{m_1 m_2 \sqrt{1-e^2} P_0}{J_\text{f}},
-\end{equation}
+% \begin{equation}
+%     a_\text{f} = \frac{m_1 m_2 \sqrt{1-e^2} P_0}{J_\text{f}},
+% \end{equation}
 
-where masses are in solar masses, the orbital period is in years, and the semi-major axis is in \si{\AU} \citep{eggen_angular_1963}.
-
-\subsection{Chemical Pollution \& Enrichment}
-
-Consider an extremal case where a star composed entirely of helium exists in a binary with a main sequence star. The simple computational regime of taking mass from one star and adding it to the second breaks down, as this would reduce the amount of one element in the binary and increase the amount of the secondary.
+% where masses are in solar masses, the orbital period is in years, and the semi-major axis is in \si{\AU} \citep{eggen_angular_1963}.
 
 \section{Post-Supernova}\label{sec:post_SN}
 
@@ -832,9 +837,20 @@ Stellar modelling became a field of active research in the 1950s. Prior to the i
     \end{flushright}
 \end{fanciful}
 
-The Cambridge \codename{stars} code (hereafter simply \codename{stars}) was one of the first detailed stellar evolution codes to be written, though initially it only modelled one star in detail. To model a binary system, tweaks were made whereupon the primary would be modelled in detail whilst approximating the secondary with the equations of \citet{hurley_evolution_2002} until the primary supernova, at which point the secondary would be evolved in detail. This had its merits; notably computation time was saved, and the results were generally accurate anyway.
+The Cambridge \codename{stars} code was one of the first detailed stellar evolution codes to be written, though initially it only modelled one star in detail. To model a binary system, tweaks were made whereupon the primary would be modelled in detail whilst approximating the secondary with the equations of \citet{hurley_evolution_2002} until the primary supernova, at which point the secondary would be evolved in detail. This had its merits; notably computation time was saved, and the results were generally accurate anyway.
 
 However, \citet{stancliffe_modelling_2009} introduced detailed modelling of \textit{both} stars in a binary system into the \codename{stars} code -- that is, the interiors of both stars were computed in detail, alongside the simualtaneous computation of the orbital parameters. Since then, a wide array of improvements have been made to the numerical stability of the code, as well as introducing or refining new physics.
+
+There are four variants of this code:
+
+\begin{enumerate}
+    \item The Cambridge \codename{stars} code, which is the version originally developed by Peter Eggleton and originally described in \citet{eggleton_evolution_1971}. This version was originally only capable of solving the equations for a single star.
+    \item The \codename{Eldridge stars} code described in \citet{eldridge_progenitors_2004,Eldridge:2004a, eldridge_binary_2017}, which is the version used to generate the fiducial \gls{bpass} v2 grids. This version models the primary in detail while approximating the secondary using the equations of \citet{hurley_evolution_2002}.
+    \item The \codename{bstars} code, which is the unmodified version lately available from Cambridge, described in \citet{stancliffe_modelling_2009}. This version models both stars in detail throughout their lives.
+    \item The \codename{Aotearoa stars} code, which is the version of the code incorporating the changes we have made.
+\end{enumerate}
+
+Unless context otherwise requires, when we refer to ``the \codename{stars} code'' with no further qualification, we are referring specifically to the \codename{Aotearoa stars} code.
 
 \subsubsection{Matrix Inversion}
 
@@ -896,7 +912,7 @@ The method to overcome this numerical instability is involved and not fully impl
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=\textwidth]{images/TheorySection/thermal_pulses_and_he_flash.png}
-    \caption[Two stars of a similar mass that undergo a helium flash and two thermal pulses.]{Two stars of a similar mass that undergo a helium flash and two thermal pulses. Shown in the inset is a zoomed-in helium flash that lasts $\sim\SI{7}{\mega\year}$. Both stars undergo two thermal pulses before the code crases due to the relative error in the calculation increasing too rapidly. The two stars could, in principle, undergo many more thermal pulses before their deaths.}
+    \caption[Two stars of a similar mass that undergo a helium flash and two thermal pulses.]{Two stars of a similar mass that undergo a helium flash and two thermal pulses. Shown in the inset is a zoomed-in helium flash that lasts $\sim\SI{7}{\mega\year}$. Both stars undergo two thermal pulses before the code crashes due to the relative error in the calculation increasing too rapidly. The two stars could, in principle, undergo many more thermal pulses before their deaths.}
     \label{fig:thermal_pulses_he_flash}
 \end{figure}
 
@@ -926,6 +942,14 @@ For the purposes of \autoref{chap:natal_kicks}, if the binary remains bound afte
 \end{enumerate}
 
 This provides us with the post-secondary supernova orbital parameters which determine the properties of the merger, such as the event rate $\mathcal{R}(z)$ and its path through period-eccentricity space.
+
+\subsection{The \codename{Kaitiaki} grid-watcher code}\label{chap:numerical_methods_kaitiaki}
+
+\codename{Kaitiaki} is a grid-watcher code that sits atop the \codename{STARS} code and manages its execution. It was developed primarily to manipulate the fixed-width text files that \codename{STARS} uses, in contrast to the ``typical'' manipulation done through the command line.
+
+The core of \codename{Kaitiaki} is \mintinline{Python}{STARSController()} interface. The most na\"ive run would be to initialise a model of, say, \SI{8}{\msun} and evolve it until it evolves up the \gls{agb}. A sample of code for this is shown in \autoref{kaitiaki_runs} which evolves a \SI{10}{\msun} star.
+
+\pythonfile[label=kaitiaki_runs]{A \codename{Kaitiaki} script to evolve a \SI{10}{\msun} star}{chapters/listings/kaitiaki_demo.py}
 
 \section{Chapter Summary}
 
