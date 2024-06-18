@@ -1,25 +1,12 @@
 % !TEX root = ../../main.tex
-% !versioning-file
-\chapter{Code Versions}
+\chapter{Code Samples}
 
-\begin{table*}[!htbp]
-    \centering
-    \begin{tabular}{r|ll}
-        \toprule
-            \textbf{Code Name} & \textbf{Version} & \textbf{Reference} \\%!match-indent
-        \midrule%!begin-replace
-                  \codename{Hoki} & 1.7.1  & \citet{stevance_hoki_2020}            \\
-              \codename{Kaitiaki} & 1.0.0  & This work                             \\
-            \codename{Matplotlib} & 3.8.2  & \citet{hunter_matplotlib_2007}        \\
-                 \codename{Numba} & 0.58.1 & \citet{lam_numba_2015}                \\
-                 \codename{Numpy} & 1.26.3 & \citet{harris_array_2020}             \\
-                \codename{Pandas} & 2.1.4  & \citet{mckinney_data_2010}            \\
-                \codename{Python} & 3.11.5 &                                       \\
-                 \codename{Scipy} & 1.11.4 & \citet{virtanen_scipy_2020}           \\
-                \codename{Takahe} & 1.0.0  & \citet{richards_new_2023}             \\
-                   \codename{Tui} & 8      & \citet{ghodla_evaluating_2023}$^\ast$ \\
-        \bottomrule%!end-replace
-    \end{tabular}
-    \caption{The code versions we use in this thesis. $^\ast$\codename{Tui} was described in earlier papers, but \citet{ghodla_evaluating_2023} was the first to name it.}
-    \label{tab:code_version}
-\end{table*}
+% \pythonfile[label=demo]{Simple evolution of a \SI{10}{\msun} star}{chapters/listings/kaitiaki_demo.py}
+
+\pythonfile[label=integrate_eoms]{The \codename{Takahe} function \mintinline{Python}{integrate_eoms()}}{chapters/listings/integrate_eoms.py}
+
+\pythonfile[label=integrate_timescale]{The \codename{Takahe} function \mintinline{Python}{integrate_timescale()}}{chapters/listings/integrate_timescale.py}
+
+\todo{fix label before submission}
+
+\pythonfile[label=binary_generation]{The \codename{Kaitaiki} script required to generate \autoref{fig:single_vs_binary}}{chapters/listings/binary_generation.py}

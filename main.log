@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.18)  18 JUN 2024 14:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.18)  18 JUN 2024 20:08
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1382,47 +1382,173 @@ Package: ccaption 2011/08/07 v3.2c Extended captioning and new floats
 (/usr/local/texlive/2021/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
+(/usr/local/texlive/2021/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks53
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen328
+\captionmargin@=\dimen329
+\captionwidth=\dimen330
+\caption@tempdima=\dimen331
+\caption@indent=\dimen332
+\caption@parindent=\dimen333
+\caption@hangindent=\dimen334
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->\let \@conttempa \relax
+ \ifdim \prevdepth >-99\p@ \vskip \abovecaptionskip \else \def \@conttempa {\vb
+ox to\topskip {}}\fi \let \@contfnote \footnote \renewcommand {\footnote }[2][]
+{} \let \@contfmark \footnotemark \renewcommand {\footnotemark }[1][]{} \let \@
+contlabel \label \renewcommand {\label }[1]{} \sbox \@tempboxa {\@contnfont #1\
+@contdelim \@conttfont #2} \let \footnote \@contfnote \let \footnotemark \@cont
+fmark \let \label \@contlabel \ifdim \wd \@tempboxa <\linewidth \centering \fi 
+\if@contcw \centering \parbox {\@contcwidth }{\fi \if@conthang \sbox \@tempboxa
+ {\@contnfont #1\@contdelim } \@contpre {\@contnfont #1\@contdelim }\@conttempa
+ {\@contcstyle \hangindent =\wd \@tempboxa \hangafter =\@ne \@conttfont #2\par 
+} \else \if@contindent \@contpre {\@contnfont #1\@contdelim }\@conttempa {\@con
+tcstyle \hangindent =\@contindw \hangafter =\@ne \@conttfont #2\par } \else \@c
+ontpre {\@contnfont #1\@contdelim }\@conttempa {\@contcstyle \@conttfont #2\par
+ } \fi \fi \@contpost \if@contcw \par } \fi \vskip \belowcaptionskip  on input 
+line 1139.
+)
+
+Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
+
+\c@caption@flags=\count383
+\c@continuedfloat=\count384
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+)
+\c@subfigure=\count385
+\c@subtable=\count386
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count387
+\mult@box=\box99
+\multicol@leftmargin=\dimen335
+\c@unbalance=\count388
+\c@collectmore=\count389
+\doublecol@number=\count390
+\multicoltolerance=\count391
+\multicolpretolerance=\count392
+\full@width=\dimen336
+\page@free=\dimen337
+\premulticols=\dimen338
+\postmulticols=\dimen339
+\multicolsep=\skip94
+\multicolbaselineskip=\skip95
+\partial@page=\box100
+\last@line=\box101
+\maxbalancingoverflow=\dimen340
+\mult@rightbox=\box102
+\mult@grightbox=\box103
+\mult@gfirstbox=\box104
+\mult@firstbox=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\@tempa=\box114
+\@tempa=\box115
+\@tempa=\box116
+\@tempa=\box117
+\@tempa=\box118
+\@tempa=\box119
+\@tempa=\box120
+\@tempa=\box121
+\@tempa=\box122
+\@tempa=\box123
+\@tempa=\box124
+\@tempa=\box125
+\@tempa=\box126
+\@tempa=\box127
+\@tempa=\box128
+\@tempa=\box129
+\@tempa=\box130
+\@tempa=\box131
+\@tempa=\box132
+\@tempa=\box133
+\@tempa=\box134
+\@tempa=\box135
+\@tempa=\box136
+\@tempa=\box137
+\@tempa=\box138
+\@tempa=\box139
+\@tempa=\box140
+\@tempa=\box141
+\@tempa=\box142
+\c@minrows=\count393
+\c@columnbadness=\count394
+\c@finalcolumnbadness=\count395
+\last@try=\dimen341
+\multicolovershoot=\dimen342
+\multicolundershoot=\dimen343
+\mult@nat@firstbox=\box143
+\colbreak@box=\box144
+\mc@col@check@num=\count396
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip96
+\multirow@cntb=\count397
+\multirow@dima=\skip97
+\bigstrutjot=\dimen344
+)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcbminted.code.tex
 Library (tcolorbox): 'tcbminted.code.tex' version '4.51'
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
-\cftparskip=\skip94
-\cftbeforetoctitleskip=\skip95
-\cftaftertoctitleskip=\skip96
-\cftbeforepartskip=\skip97
-\cftpartnumwidth=\skip98
-\cftpartindent=\skip99
-\cftbeforechapskip=\skip100
-\cftchapindent=\skip101
-\cftchapnumwidth=\skip102
-\cftbeforesecskip=\skip103
-\cftsecindent=\skip104
-\cftsecnumwidth=\skip105
-\cftbeforesubsecskip=\skip106
-\cftsubsecindent=\skip107
-\cftsubsecnumwidth=\skip108
-\cftbeforesubsubsecskip=\skip109
-\cftsubsubsecindent=\skip110
-\cftsubsubsecnumwidth=\skip111
-\cftbeforeparaskip=\skip112
-\cftparaindent=\skip113
-\cftparanumwidth=\skip114
-\cftbeforesubparaskip=\skip115
-\cftsubparaindent=\skip116
-\cftsubparanumwidth=\skip117
-\cftbeforeloftitleskip=\skip118
-\cftafterloftitleskip=\skip119
-\cftbeforefigskip=\skip120
-\cftfigindent=\skip121
-\cftfignumwidth=\skip122
-\c@lofdepth=\count383
-\c@lotdepth=\count384
-\cftbeforelottitleskip=\skip123
-\cftafterlottitleskip=\skip124
-\cftbeforetabskip=\skip125
-\cfttabindent=\skip126
-\cfttabnumwidth=\skip127
+\cftparskip=\skip98
+\cftbeforetoctitleskip=\skip99
+\cftaftertoctitleskip=\skip100
+\cftbeforepartskip=\skip101
+\cftpartnumwidth=\skip102
+\cftpartindent=\skip103
+\cftbeforechapskip=\skip104
+\cftchapindent=\skip105
+\cftchapnumwidth=\skip106
+\cftbeforesecskip=\skip107
+\cftsecindent=\skip108
+\cftsecnumwidth=\skip109
+\cftbeforesubsecskip=\skip110
+\cftsubsecindent=\skip111
+\cftsubsecnumwidth=\skip112
+\cftbeforesubsubsecskip=\skip113
+\cftsubsubsecindent=\skip114
+\cftsubsubsecnumwidth=\skip115
+\cftbeforeparaskip=\skip116
+\cftparaindent=\skip117
+\cftparanumwidth=\skip118
+\cftbeforesubparaskip=\skip119
+\cftsubparaindent=\skip120
+\cftsubparanumwidth=\skip121
+\cftbeforeloftitleskip=\skip122
+\cftafterloftitleskip=\skip123
+\cftbeforefigskip=\skip124
+\cftfigindent=\skip125
+\cftfignumwidth=\skip126
+\c@lofdepth=\count398
+\c@lotdepth=\count399
+\cftbeforelottitleskip=\skip127
+\cftafterlottitleskip=\skip128
+\cftbeforetabskip=\skip129
+\cfttabindent=\skip130
+\cfttabnumwidth=\skip131
 )
 (./commands.tex) (./dedications.tex) (./glossary.tex
 (/usr/local/texlive/2021/texmf-dist/tex/latex/glossaries/base/glossaries.sty
@@ -1433,16 +1559,16 @@ Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 
 (/usr/local/texlive/2021/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/local/texlive/2021/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks53
-\XKV@tempa@toks=\toks54
+\XKV@toks=\toks54
+\XKV@tempa@toks=\toks55
 )
-\XKV@depth=\count385
+\XKV@depth=\count400
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/local/texlive/2021/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
 Package: mfirstuc 2017/11/14 v2.06 (NLCT)
-\@glsmfirst=\toks55
-\@glsmrest=\toks56
+\@glsmfirst=\toks56
+\@glsmrest=\toks57
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2019/09/14 v1.00 Text only upper/lower case changing (DPC)
@@ -1455,7 +1581,7 @@ Package: datatool-base 2019/09/27 v2.32 (NLCT)
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/substr/substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count386
+\c@su@anzahl=\count401
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/datatool/datatool-fp.sty
 Package: datatool-fp 2019/09/27 v2.32 (NLCT)
@@ -1466,19 +1592,19 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count387
+\actioncount=\count402
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count388
-\FP@xia=\count389
-\FP@xib=\count390
-\FP@xfa=\count391
-\FP@xfb=\count392
-\FP@rega=\count393
-\FP@regb=\count394
-\FP@regs=\count395
-\FP@times=\count396
+\FP@xs=\count403
+\FP@xia=\count404
+\FP@xib=\count405
+\FP@xfa=\count406
+\FP@xfb=\count407
+\FP@rega=\count408
+\FP@regb=\count409
+\FP@regs=\count410
+\FP@times=\count411
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
@@ -1497,7 +1623,7 @@ Package: fp-pas 1994/08/29
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count397
+\FPseed=\count412
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
@@ -1508,15 +1634,15 @@ Package: fp-upn 1996/10/21
 (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-eval.sty
 Package: fp-eval 1995/04/03
 )))
-\@dtl@toks=\toks57
-\@dtl@tmpcount=\count398
-\dtl@tmplength=\skip128
-\dtl@sortresult=\count399
-\@dtl@numgrpsepcount=\count400
-\@dtl@datatype=\count401
-\dtl@codeA=\count402
-\dtl@codeB=\count403
-\@dtl@foreach@level=\count404
+\@dtl@toks=\toks58
+\@dtl@tmpcount=\count413
+\dtl@tmplength=\skip132
+\dtl@sortresult=\count414
+\@dtl@numgrpsepcount=\count415
+\@dtl@datatype=\count416
+\dtl@codeA=\count417
+\dtl@codeB=\count418
+\@dtl@foreach@level=\count419
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/glossaries/base/glossaries-compat
 ible-307.sty
@@ -1539,13 +1665,13 @@ Package glossaries Warning: No language module detected for `greek'.
 (glossaries)                Please check on CTAN for a bundle called
 (glossaries)                `glossaries-greek' or similar.
 
-\gls@level=\count405
-\@gls@tmpb=\toks58
-\gls@tmplen=\skip129
-\glskeylisttok=\toks59
-\glslabeltok=\toks60
-\glsshorttok=\toks61
-\glslongtok=\toks62
+\gls@level=\count420
+\@gls@tmpb=\toks59
+\gls@tmplen=\skip133
+\glskeylisttok=\toks60
+\glslabeltok=\toks61
+\glsshorttok=\toks62
+\glslongtok=\toks63
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/glossaries/styles/glossary-hypern
 av.sty
@@ -1554,58 +1680,58 @@ Package: glossary-hypernav 2020/03/19 v4.46 (NLCT)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/glossaries/styles/glossary-list.s
 ty
 Package: glossary-list 2020/03/19 v4.46 (NLCT)
-\glslistdottedwidth=\skip130
+\glslistdottedwidth=\skip134
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/glossaries/styles/glossary-long.s
 ty
 Package: glossary-long 2020/03/19 v4.46 (NLCT)
  (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2021-05-07 v4.16 Multi-page Table package (DPC)
-\LTleft=\skip131
-\LTright=\skip132
-\LTpre=\skip133
-\LTpost=\skip134
-\LTchunksize=\count406
-\LTcapwidth=\dimen328
-\LT@head=\box99
-\LT@firsthead=\box100
-\LT@foot=\box101
-\LT@lastfoot=\box102
-\LT@gbox=\box103
-\LT@cols=\count407
-\LT@rows=\count408
-\c@LT@tables=\count409
-\c@LT@chunks=\count410
-\LT@p@ftn=\toks63
+\LTleft=\skip135
+\LTright=\skip136
+\LTpre=\skip137
+\LTpost=\skip138
+\LTchunksize=\count421
+\LTcapwidth=\dimen345
+\LT@head=\box145
+\LT@firsthead=\box146
+\LT@foot=\box147
+\LT@lastfoot=\box148
+\LT@gbox=\box149
+\LT@cols=\count422
+\LT@rows=\count423
+\c@LT@tables=\count424
+\c@LT@chunks=\count425
+\LT@p@ftn=\toks64
 )
-\glsdescwidth=\skip135
-\glspagelistwidth=\skip136
+\glsdescwidth=\skip139
+\glspagelistwidth=\skip140
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/glossaries/styles/glossary-super.
 sty
 Package: glossary-super 2020/03/19 v4.46 (NLCT)
  (/usr/local/texlive/2021/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2020/02/02 v4.1g the supertabular environment
-\c@tracingst=\count411
-\ST@wd=\dimen329
-\ST@rightskip=\skip137
-\ST@leftskip=\skip138
-\ST@parfillskip=\skip139
-\ST@pageleft=\dimen330
-\ST@headht=\dimen331
-\ST@tailht=\dimen332
-\ST@pagesofar=\dimen333
-\ST@pboxht=\dimen334
-\ST@lineht=\dimen335
-\ST@prevht=\dimen336
-\ST@toadd=\dimen337
-\ST@dimen=\dimen338
-\ST@pbox=\box104
+\c@tracingst=\count426
+\ST@wd=\dimen346
+\ST@rightskip=\skip141
+\ST@leftskip=\skip142
+\ST@parfillskip=\skip143
+\ST@pageleft=\dimen347
+\ST@headht=\dimen348
+\ST@tailht=\dimen349
+\ST@pagesofar=\dimen350
+\ST@pboxht=\dimen351
+\ST@lineht=\dimen352
+\ST@prevht=\dimen353
+\ST@toadd=\dimen354
+\ST@dimen=\dimen355
+\ST@pbox=\box150
 ))
 (/usr/local/texlive/2021/texmf-dist/tex/latex/glossaries/styles/glossary-tree.s
 ty
 Package: glossary-tree 2020/03/19 v4.46 (NLCT)
-\glstreeindent=\skip140
+\glstreeindent=\skip144
 ))
 (/usr/local/texlive/2021/texmf-dist/tex/latex/glossaries/styles/glossary-longbo
 oktabs.sty
@@ -1622,35 +1748,35 @@ Package: glossary-longragged 2020/03/19 v4.46 (NLCT)
 Package glossaries Info: Writing glossary file main.glo on input line 6.
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
-\ttl@box=\box105
-\beforetitleunit=\skip141
-\aftertitleunit=\skip142
-\ttl@plus=\dimen339
-\ttl@minus=\dimen340
-\ttl@toksa=\toks64
-\titlewidth=\dimen341
-\titlewidthlast=\dimen342
-\titlewidthfirst=\dimen343
+\ttl@box=\box151
+\beforetitleunit=\skip145
+\aftertitleunit=\skip146
+\ttl@plus=\dimen356
+\ttl@minus=\dimen357
+\ttl@toksa=\toks65
+\titlewidth=\dimen358
+\titlewidthlast=\dimen359
+\titlewidthfirst=\dimen360
 )
-\c@ttlp@side=\count412
-\ttlp@side=\count413
-\epi@textbox=\box106
-\epi@sourcebox=\box107
-\epi@finalwidth=\skip143
-\c@todos=\count414
-\cftbeforetodosskip=\skip144
-\cfttodosindent=\skip145
-\cfttodosnumwidth=\skip146
-\c@toddepth=\count415
-\cftbeforetodtitleskip=\skip147
-\cftaftertodtitleskip=\skip148
-\c@epigraphs=\count416
-\cftbeforeepigraphsskip=\skip149
-\cftepigraphsindent=\skip150
-\cftepigraphsnumwidth=\skip151
-\c@toedepth=\count417
-\cftbeforetoetitleskip=\skip152
-\cftaftertoetitleskip=\skip153
+\c@ttlp@side=\count427
+\ttlp@side=\count428
+\epi@textbox=\box152
+\epi@sourcebox=\box153
+\epi@finalwidth=\skip147
+\c@todos=\count429
+\cftbeforetodosskip=\skip148
+\cfttodosindent=\skip149
+\cfttodosnumwidth=\skip150
+\c@toddepth=\count430
+\cftbeforetodtitleskip=\skip151
+\cftaftertodtitleskip=\skip152
+\c@epigraphs=\count431
+\cftbeforeepigraphsskip=\skip153
+\cftepigraphsindent=\skip154
+\cftepigraphsnumwidth=\skip155
+\c@toedepth=\count432
+\cftbeforetoetitleskip=\skip156
+\cftaftertoetitleskip=\skip157
 \myfile=\write8
 \openout8 = `main.todos'.
 
@@ -1669,9 +1795,9 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen344
-\Hy@linkcounter=\count418
-\Hy@pagecounter=\count419
+\@linkdim=\dimen361
+\Hy@linkcounter=\count433
+\Hy@pagecounter=\count434
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
@@ -1684,7 +1810,7 @@ nguages
 ) (/usr/local/texlive/2021/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count420
+\Hy@SavedSpaceFactor=\count435
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
@@ -1702,14 +1828,14 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count421
+\c@Hy@tempcnt=\count436
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen345
+\XeTeXLinkMargin=\dimen362
 
 (/usr/local/texlive/2021/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -1718,9 +1844,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count422
-\Field@Width=\dimen346
-\Fld@charsize=\dimen347
+\Fld@menulength=\count437
+\Field@Width=\dimen363
+\Fld@charsize=\dimen364
 Package hyperref Info: Hyper figures OFF on input line 6076.
 Package hyperref Info: Link nesting OFF on input line 6081.
 Package hyperref Info: Hyper index ON on input line 6084.
@@ -1735,9 +1861,9 @@ LaTeX Info: Redefining \pageref on input line 6150.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count423
-\c@Item=\count424
-\c@Hfootnote=\count425
+\Hy@abspage=\count438
+\c@Item=\count439
+\c@Hfootnote=\count440
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -1749,8 +1875,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
 e
 with kernel methods
 )
-\Fld@listcount=\count426
-\c@bookmark@seq@number=\count427
+\Fld@listcount=\count441
+\c@bookmark@seq@number=\count442
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -1761,10 +1887,10 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip154
+\Hy@SectionHShift=\skip158
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 455.
-\c@tcb@cnt@pythonfile=\count428
+Package hyperref Info: Option `colorlinks' set `true' on input line 460.
+\c@tcb@cnt@pythonfile=\count443
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -1776,32 +1902,32 @@ runsystem(rm main.aex)...executed.
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 485.
-LaTeX Font Info:    ... okay on input line 485.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 485.
-LaTeX Font Info:    ... okay on input line 485.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 485.
-LaTeX Font Info:    ... okay on input line 485.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 485.
-LaTeX Font Info:    ... okay on input line 485.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 485.
-LaTeX Font Info:    ... okay on input line 485.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 485.
-LaTeX Font Info:    ... okay on input line 485.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 485.
-LaTeX Font Info:    ... okay on input line 485.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 485.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 490.
+LaTeX Font Info:    ... okay on input line 490.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 490.
+LaTeX Font Info:    ... okay on input line 490.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 490.
+LaTeX Font Info:    ... okay on input line 490.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 490.
+LaTeX Font Info:    ... okay on input line 490.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 490.
+LaTeX Font Info:    ... okay on input line 490.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 490.
+LaTeX Font Info:    ... okay on input line 490.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 490.
+LaTeX Font Info:    ... okay on input line 490.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 490.
 LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 4
-85.
+90.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 485.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 485.
-LaTeX Font Info:    ... okay on input line 485.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 485.
-LaTeX Font Info:    ... okay on input line 485.
+LaTeX Font Info:    ... okay on input line 490.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 490.
+LaTeX Font Info:    ... okay on input line 490.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 490.
+LaTeX Font Info:    ... okay on input line 490.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1843,23 +1969,23 @@ Package epigraph Warning: flushleftright has been previously defined.
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 485.
+(lastpage)             ! on input line 490.
 
-Package chemgreek Info: Activating mapping `default' on line 485.
+Package chemgreek Info: Activating mapping `default' on line 490.
 
 (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count429
-\scratchdimen=\dimen348
-\scratchbox=\box108
-\nofMPsegments=\count430
-\nofMParguments=\count431
-\everyMPshowfont=\toks65
-\MPscratchCnt=\count432
-\MPscratchDim=\dimen349
-\MPnumerator=\count433
-\makeMPintoPDFobject=\count434
-\everyMPtoPDFconversion=\toks66
+\scratchcounter=\count444
+\scratchdimen=\dimen365
+\scratchbox=\box154
+\nofMPsegments=\count445
+\nofMParguments=\count446
+\everyMPshowfont=\toks66
+\MPscratchCnt=\count447
+\MPscratchDim=\dimen366
+\MPnumerator=\count448
+\makeMPintoPDFobject=\count449
+\everyMPtoPDFconversion=\toks67
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1875,9 +2001,9 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 485.
+or `english'. on input line 490.
 Package translations Info: no dictionary file `translations-basic-dictionary-gr
-eek.trsl' found. on input line 485.
+eek.trsl' found. on input line 490.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
@@ -1887,7 +2013,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-\c@lstlisting=\count435
+\c@lstlisting=\count450
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/greek-fontenc/puenc-greek.def
 File: puenc-greek.def 2020/10/18 2.0 Greek LICRs for PDF strings
@@ -1895,7 +2021,16 @@ File: puenc-greek.def 2020/10/18 2.0 Greek LICRs for PDF strings
 (/usr/local/texlive/2021/texmf-dist/tex/latex/greek-fontenc/greek-fontenc.def
 File: greek-fontenc.def 2020/10/30 2.0 Common Greek font encoding definitions
 ))
-Package hyperref Info: Link coloring ON on input line 485.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
+)
+Package caption Info: supertabular package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring ON on input line 490.
+
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -1906,11 +2041,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count436
+\c@section@level=\count451
 )
-LaTeX Info: Redefining \ref on input line 485.
-LaTeX Info: Redefining \pageref on input line 485.
-LaTeX Info: Redefining \nameref on input line 485.
+LaTeX Info: Redefining \ref on input line 490.
+LaTeX Info: Redefining \pageref on input line 490.
+LaTeX Info: Redefining \nameref on input line 490.
  (./main.out) (./main.out)
 \@outlinefile=\write9
 \openout9 = `main.out'.
@@ -1954,7 +2089,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmss on input line 9
 (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<images/Alt_Cover_Page.jpg, id=336, 1430.34375pt x 1927.2pt>
+<images/Alt_Cover_Page.jpg, id=356, 1430.34375pt x 1927.2pt>
 File: images/Alt_Cover_Page.jpg Graphic file (type jpg)
 <use images/Alt_Cover_Page.jpg>
 Package pdftex.def Info: images/Alt_Cover_Page.jpg  used on input line 24.
@@ -2030,14 +2165,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  [9] [10
 
-] (./main.lof)
+] (./main.lof
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11])
 \tf@lof=\write11
 \openout11 = `main.lof'.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11]
 [12] (./main.lot)
 \tf@lot=\write12
 \openout12 = `main.lot'.
@@ -2050,16 +2185,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ] [16]) [17] [18
 
-] (./main.tod
-Overfull \hbox (0.27771pt too wide) detected at line 5
-\T1/cmr/m/n/10 A.5 
- []
-
-)
+] (./main.tod)
 \tf@tod=\write13
 \openout13 = `main.tod'.
 
- [19] [20
+
+[19] [20
 
 ] (./main.toe
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2071,7 +2202,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \tf@toe=\write14
 \openout14 = `main.toe'.
 
-<declaration_forms/Chapter03.pdf, id=714, 597.53635pt x 845.04686pt>
+<declaration_forms/Chapter03.pdf, id=750, 597.53635pt x 845.04686pt>
 File: declaration_forms/Chapter03.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter03.pdf>
 Package pdftex.def Info: declaration_forms/Chapter03.pdf  used on input line 66
@@ -2082,7 +2213,7 @@ File: declaration_forms/Chapter03.pdf Graphic file (type pdf)
 Package pdftex.def Info: declaration_forms/Chapter03.pdf  used on input line 66
 .
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
-<declaration_forms/Chapter03.pdf, id=717, page=1, 597.53635pt x 845.04686pt>
+<declaration_forms/Chapter03.pdf, id=753, page=1, 597.53635pt x 845.04686pt>
 File: declaration_forms/Chapter03.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter03.pdf, page 1>
 Package pdftex.def Info: declaration_forms/Chapter03.pdf , page1 used on input 
@@ -2111,7 +2242,7 @@ Package pdftex.def Info: declaration_forms/Chapter03.pdf , page1 used on input
 line 66.
 (pdftex.def)             Requested size: 562.14925pt x 795.00179pt.
  [24 <./declaration_forms/Chapter03.pdf>]
-<declaration_forms/Chapter04.pdf, id=781, 597.53635pt x 845.04686pt>
+<declaration_forms/Chapter04.pdf, id=819, 597.53635pt x 845.04686pt>
 File: declaration_forms/Chapter04.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter04.pdf>
 Package pdftex.def Info: declaration_forms/Chapter04.pdf  used on input line 66
@@ -2122,7 +2253,7 @@ File: declaration_forms/Chapter04.pdf Graphic file (type pdf)
 Package pdftex.def Info: declaration_forms/Chapter04.pdf  used on input line 66
 .
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
-<declaration_forms/Chapter04.pdf, id=784, page=1, 597.53635pt x 845.04686pt>
+<declaration_forms/Chapter04.pdf, id=822, page=1, 597.53635pt x 845.04686pt>
 File: declaration_forms/Chapter04.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter04.pdf, page 1>
 Package pdftex.def Info: declaration_forms/Chapter04.pdf , page1 used on input 
@@ -2149,7 +2280,7 @@ Package pdftex.def Info: declaration_forms/Chapter04.pdf , page1 used on input
 line 66.
 (pdftex.def)             Requested size: 562.14925pt x 795.00179pt.
  [25 <./declaration_forms/Chapter04.pdf>]
-<declaration_forms/Chapter05.pdf, id=822, 597.53635pt x 845.04686pt>
+<declaration_forms/Chapter05.pdf, id=859, 597.53635pt x 845.04686pt>
 File: declaration_forms/Chapter05.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter05.pdf>
 Package pdftex.def Info: declaration_forms/Chapter05.pdf  used on input line 66
@@ -2160,7 +2291,7 @@ File: declaration_forms/Chapter05.pdf Graphic file (type pdf)
 Package pdftex.def Info: declaration_forms/Chapter05.pdf  used on input line 66
 .
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
-<declaration_forms/Chapter05.pdf, id=825, page=1, 597.53635pt x 845.04686pt>
+<declaration_forms/Chapter05.pdf, id=862, page=1, 597.53635pt x 845.04686pt>
 File: declaration_forms/Chapter05.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter05.pdf, page 1>
 Package pdftex.def Info: declaration_forms/Chapter05.pdf , page1 used on input 
@@ -2191,75 +2322,39 @@ Chapter 1.
 [1
 
 
+] [2] [3]
+
+LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
+(Font)              using `T1/cmr/m/it' instead on input line 62.
+
+[4]) (./chapters/chapter02.tex [5] [6
+
 ]
-<images/Introduction/NightSkyMap.png, id=915, 380.8629pt x 211.38976pt>
-File: images/Introduction/NightSkyMap.png Graphic file (type png)
-<use images/Introduction/NightSkyMap.png>
-Package pdftex.def Info: images/Introduction/NightSkyMap.png  used on input lin
-e 32.
-(pdftex.def)             Requested size: 472.03123pt x 262.00122pt.
-
-
-LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/it' instead on input line 41.
-
-[2] [3 <./images/Introduction/NightSkyMap.png>]
-Overfull \hbox (2.22168pt too wide) in paragraph at lines 56--56
-[] [] 
- []
-
-
-Overfull \hbox (2.22168pt too wide) in paragraph at lines 62--62
-[] [] 
- []
-
-
-Package tcolorbox Warning: Discard zero height first box part due to break prob
-lems (possible loss of zero height content) on input line 62.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4]
-[5] [6] [7]
-
-LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/it' instead on input line 125.
-
-) (./chapters/chapter02.tex [8]
 Chapter 2.
-[9
-
-]
+[7]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 44.
 
-[10] [11]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\acrshort' on input line 102.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 102.
-
-[12] [13]
+[8] [9] [10]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14]
+ [11]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 226.
 
-[15]
+[13]
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowinset=\dimen350
-\pgfarrowlength=\dimen351
-\pgfarrowwidth=\dimen352
-\pgfarrowlinewidth=\dimen353
+\pgfarrowinset=\dimen367
+\pgfarrowlength=\dimen368
+\pgfarrowwidth=\dimen369
+\pgfarrowlinewidth=\dimen370
 )
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryarrows.code.tex
@@ -2268,7 +2363,7 @@ File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 code.tex
 File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\arrowsize=\dimen354
+\arrowsize=\dimen371
 ))
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarypositioning.code.tex
@@ -2279,15 +2374,15 @@ Overfull \hbox (52.47163pt too wide) in paragraph at lines 286--287
  []
 
 
-LaTeX Warning: Reference `sec:close_contact' on page 16 undefined on input line
+LaTeX Warning: Reference `sec:close_contact' on page 14 undefined on input line
  310.
 
-[16] [17] [18]
+[14] [15] [16]
 Underfull \vbox (badness 1748) has occurred while \output is active []
 
- [19]
-[20]
-<images/TheorySection/bistability_jump.png, id=1351, 448.7967pt x 332.80334pt>
+ [17]
+[18]
+<images/TheorySection/bistability_jump.png, id=1252, 448.7967pt x 332.80334pt>
 File: images/TheorySection/bistability_jump.png Graphic file (type png)
 <use images/TheorySection/bistability_jump.png>
 Package pdftex.def Info: images/TheorySection/bistability_jump.png  used on inp
@@ -2298,53 +2393,53 @@ ut line 476.
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 483.
 
-[21] [22 <./images/TheorySection/bistability_jump.png>]
-<images/TheorySection/roche_potentials.png, id=1372, 444.4605pt x 602.25pt>
+[19] [20 <./images/TheorySection/bistability_jump.png>]
+<images/TheorySection/roche_potentials.png, id=1274, 444.4605pt x 602.25pt>
 File: images/TheorySection/roche_potentials.png Graphic file (type png)
 <use images/TheorySection/roche_potentials.png>
 Package pdftex.def Info: images/TheorySection/roche_potentials.png  used on inp
 ut line 489.
 (pdftex.def)             Requested size: 401.22942pt x 543.69249pt.
- [23] [24 <./images/TheorySection/roche_potentials.png>] [25]
-<images/TheorySection/RLs_Eggleton_Formula.png, id=1410, 399.894pt x 212.7147pt
+ [21] [22 <./images/TheorySection/roche_potentials.png>] [23]
+<images/TheorySection/RLs_Eggleton_Formula.png, id=1313, 399.894pt x 212.7147pt
 >
 File: images/TheorySection/RLs_Eggleton_Formula.png Graphic file (type png)
 <use images/TheorySection/RLs_Eggleton_Formula.png>
 Package pdftex.def Info: images/TheorySection/RLs_Eggleton_Formula.png  used on
  input line 656.
 (pdftex.def)             Requested size: 472.03123pt x 251.09529pt.
-<images/TheorySection/eggleton_justification.png, id=1419, 508.299pt x 207.8967
+<images/TheorySection/eggleton_justification.png, id=1322, 508.299pt x 207.8967
 pt>
 File: images/TheorySection/eggleton_justification.png Graphic file (type png)
 <use images/TheorySection/eggleton_justification.png>
 Package pdftex.def Info: images/TheorySection/eggleton_justification.png  used 
 on input line 663.
 (pdftex.def)             Requested size: 472.03123pt x 193.0691pt.
-<images/TheorySection/marchant_justification.png, id=1425, 508.299pt x 207.8967
+<images/TheorySection/marchant_justification.png, id=1328, 508.299pt x 207.8967
 pt>
 File: images/TheorySection/marchant_justification.png Graphic file (type png)
 <use images/TheorySection/marchant_justification.png>
 Package pdftex.def Info: images/TheorySection/marchant_justification.png  used 
 on input line 681.
 (pdftex.def)             Requested size: 472.03123pt x 193.0691pt.
- [26 <./images/TheorySection/RLs_Eggleton_Formula.png>] [27 <./images/TheorySec
+ [24 <./images/TheorySection/RLs_Eggleton_Formula.png>] [25 <./images/TheorySec
 tion/eggleton_justification.png> <./images/TheorySection/marchant_justification
 .png>]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 739.
 
-[28] [29] [30]
+[26] [27] [28]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 829.
 
-[31] [32]
+[29] [30]
 Underfull \vbox (badness 5578) has occurred while \output is active []
 
- [33]
-[34]
-<images/TheorySection/thermal_pulses_and_he_flash.png, id=1610, 654.40485pt x 5
+ [31]
+[32]
+<images/TheorySection/thermal_pulses_and_he_flash.png, id=1513, 654.40485pt x 5
 99.1183pt>
 File: images/TheorySection/thermal_pulses_and_he_flash.png Graphic file (type p
 ng)
@@ -2352,15 +2447,15 @@ ng)
 Package pdftex.def Info: images/TheorySection/thermal_pulses_and_he_flash.png  
 used on input line 914.
 (pdftex.def)             Requested size: 472.03123pt x 432.16933pt.
-<images/TheorySection/helium_flash_kippenhahn.png, id=1611, 507.69675pt x 211.3
+<images/TheorySection/helium_flash_kippenhahn.png, id=1514, 507.69675pt x 211.3
 8976pt>
 File: images/TheorySection/helium_flash_kippenhahn.png Graphic file (type png)
 <use images/TheorySection/helium_flash_kippenhahn.png>
 Package pdftex.def Info: images/TheorySection/helium_flash_kippenhahn.png  used
  on input line 921.
 (pdftex.def)             Requested size: 472.03123pt x 196.54204pt.
- [35] [36 <./images/TheorySection/thermal_pulses_and_he_flash.png>]
-[37 <./images/TheorySection/helium_flash_kippenhahn.png>]
+ [33] [34 <./images/TheorySection/thermal_pulses_and_he_flash.png>]
+[35 <./images/TheorySection/helium_flash_kippenhahn.png>]
 \openout5 = `main.pyg'.
 
 
@@ -2376,6 +2471,7 @@ LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line
  (/usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ))
+[36]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -2384,7 +2480,9 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
 
-[38]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -2395,30 +2493,65 @@ Missing character: There is no k in font nullfont!
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/it' instead on input line 960.
+(Font)              using `T1/cmr/m/it' instead on input line 970.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [39])
-(./chapters/chapter03.tex [40]
+) (./chapters/chapter03.tex [38]
 Chapter 3.
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 4.
 
-) (./chapters/chapter04.tex [41
 
-] [42
+Overfull \hbox (62.63866pt too wide) in paragraph at lines 15--37
+ [][] 
+ []
 
-]
+
+Overfull \hbox (37.77055pt too wide) in paragraph at lines 13--70
+[][]$[]$[] 
+ []
+
+<images/HeliumRich/segmented_composition_profiles.png, id=1596, 370.7451pt x 42
+2.41815pt>
+File: images/HeliumRich/segmented_composition_profiles.png Graphic file (type p
+ng)
+<use images/HeliumRich/segmented_composition_profiles.png>
+Package pdftex.def Info: images/HeliumRich/segmented_composition_profiles.png  
+used on input line 78.
+(pdftex.def)             Requested size: 212.41261pt x 242.01839pt.
+<images/HeliumRich/segmented_composition_profiles_STANDARD_BINARY.png, id=1597,
+ 370.7451pt x 422.41815pt>
+File: images/HeliumRich/segmented_composition_profiles_STANDARD_BINARY.png Grap
+hic file (type png)
+<use images/HeliumRich/segmented_composition_profiles_STANDARD_BINARY.png>
+Package pdftex.def Info: images/HeliumRich/segmented_composition_profiles_STAND
+ARD_BINARY.png  used on input line 83.
+(pdftex.def)             Requested size: 212.41261pt x 242.01839pt.
+[39
+
+] [40]
+<images/HeliumRich/comparison_plot.png, id=1611, 554.3109pt x 741.12885pt>
+File: images/HeliumRich/comparison_plot.png Graphic file (type png)
+<use images/HeliumRich/comparison_plot.png>
+Package pdftex.def Info: images/HeliumRich/comparison_plot.png  used on input l
+ine 99.
+(pdftex.def)             Requested size: 472.03123pt x 631.1499pt.
+
+
+LaTeX Warning: Float too large for page by 83.49042pt on input line 102.
+
+) (./chapters/chapter04.tex [41 <./images/HeliumRich/segmented_composition_prof
+iles.png> <./images/HeliumRich/segmented_composition_profiles_STANDARD_BINARY.p
+ng>] [42 <./images/HeliumRich/comparison_plot.png>]
 Chapter 4.
-) (./chapters/chapter05.tex [43] [44
+) (./chapters/chapter05.tex [43
+
+] [44
 
 ]
 Chapter 5.
 [45]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3199) has occurred while \output is active []
 
  [46]
 Overfull \hbox (3.04678pt too wide) in paragraph at lines 35--44
@@ -2426,7 +2559,7 @@ Overfull \hbox (3.04678pt too wide) in paragraph at lines 35--44
  []
 
 [47]
-<images/NatalKicks/Grid_Regions.png, id=1786, 629.11035pt x 602.0091pt>
+<images/NatalKicks/Grid_Regions.png, id=1714, 629.11035pt x 602.0091pt>
 File: images/NatalKicks/Grid_Regions.png Graphic file (type png)
 <use images/NatalKicks/Grid_Regions.png>
 Package pdftex.def Info: images/NatalKicks/Grid_Regions.png  used on input line
@@ -2458,13 +2591,13 @@ Package pdftex.def Info: images/NatalKicks/Grid_Regions.png  used on input line
 
 (./_minted-main/22C35DF1C79DCF62B811E4D4364954605BD9CFCE54A68914ACB2DCF71641ADB
 0.pygtex) [50]
-<images/NatalKicks/varying_de.png, id=1897, 527.20966pt x 319.4334pt>
+<images/NatalKicks/varying_de.png, id=1825, 527.20966pt x 319.4334pt>
 File: images/NatalKicks/varying_de.png Graphic file (type png)
 <use images/NatalKicks/varying_de.png>
 Package pdftex.def Info: images/NatalKicks/varying_de.png  used on input line 1
 14.
 (pdftex.def)             Requested size: 472.03123pt x 286.01051pt.
-<images/NatalKicks/runtime.png, id=1900, 545.99985pt x 375.0813pt>
+<images/NatalKicks/runtime.png, id=1828, 545.99985pt x 375.0813pt>
 File: images/NatalKicks/runtime.png Graphic file (type png)
 <use images/NatalKicks/runtime.png>
 Package pdftex.def Info: images/NatalKicks/runtime.png  used on input line 121.
@@ -2472,7 +2605,7 @@ Package pdftex.def Info: images/NatalKicks/runtime.png  used on input line 121.
 (pdftex.def)             Requested size: 472.03123pt x 324.28061pt.
  [51] [52 <./images/NatalKicks/varying_de.png>] [53 <./images/NatalKicks/runtim
 e.png>]
-<images/NatalKicks/EventRate_Distribution_Both.png, id=1948, 493.00185pt x 304.
+<images/NatalKicks/EventRate_Distribution_Both.png, id=1875, 493.00185pt x 304.
 2567pt>
 File: images/NatalKicks/EventRate_Distribution_Both.png Graphic file (type png)
 
@@ -2493,19 +2626,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [55]
 [56]
-<images/NatalKicks/bray_vs_hobbs_pdf.png, id=2070, 441.8106pt x 320.03564pt>
+<images/NatalKicks/bray_vs_hobbs_pdf.png, id=1997, 441.8106pt x 320.03564pt>
 File: images/NatalKicks/bray_vs_hobbs_pdf.png Graphic file (type png)
 <use images/NatalKicks/bray_vs_hobbs_pdf.png>
 Package pdftex.def Info: images/NatalKicks/bray_vs_hobbs_pdf.png  used on input
  line 199.
 (pdftex.def)             Requested size: 472.03123pt x 341.94641pt.
-<images/NatalKicks/ks_test.png, id=2099, 773.0481pt x 441.20834pt>
+ [57 <./images/NatalKicks/bray_vs_hobbs_pdf.png>]
+<images/NatalKicks/ks_test.png, id=2033, 773.0481pt x 441.20834pt>
 File: images/NatalKicks/ks_test.png Graphic file (type png)
 <use images/NatalKicks/ks_test.png>
 Package pdftex.def Info: images/NatalKicks/ks_test.png  used on input line 208.
 
 (pdftex.def)             Requested size: 472.03123pt x 269.40598pt.
-<images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png, id=2105, 480.71594pt
+<images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png, id=2039, 480.71594pt
  x 334.1283pt>
 File: images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png Graphic file (ty
 pe png)
@@ -2513,10 +2647,12 @@ pe png)
 Package pdftex.def Info: images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.p
 ng  used on input line 217.
 (pdftex.def)             Requested size: 472.03123pt x 328.10628pt.
- [57] [58 <./images/NatalKicks/bray_vs_hobbs_pdf.png>] [59 <./images/NatalKicks
-/ks_test.png>] [60 <./images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png>
-]
-<images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png, id=2177
+ [58 <./images/NatalKicks/ks_test.png>] [59 <./images/NatalKicks/individual_pdf
+s_with_cdf_and_hobbs.png>]
+Underfull \vbox (badness 1960) has occurred while \output is active []
+
+ [60]
+<images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png, id=2106
 , 457.2282pt x 319.9152pt>
 File: images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png Gra
 phic file (type png)
@@ -2524,31 +2660,32 @@ phic file (type png)
 Package pdftex.def Info: images/NatalKicks/All_Three_Constraints_with_USSNe_and
 _modeltype2.png  used on input line 255.
 (pdftex.def)             Requested size: 472.03123pt x 330.27785pt.
- [61] [62 <./images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.
-png>]
-<images/NatalKicks/Best_Model_Params.png, id=2200, 847.968pt x 377.7312pt>
+<images/NatalKicks/Best_Model_Params.png, id=2111, 847.968pt x 377.7312pt>
 File: images/NatalKicks/Best_Model_Params.png Graphic file (type png)
 <use images/NatalKicks/Best_Model_Params.png>
 Package pdftex.def Info: images/NatalKicks/Best_Model_Params.png  used on input
  line 264.
 (pdftex.def)             Requested size: 472.03123pt x 210.27153pt.
-<images/NatalKicks/grid_shifting_peaks.png, id=2213, 497.33804pt x 299.31825pt>
+
+[61] [62 <./images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.p
+ng>]
+<images/NatalKicks/grid_shifting_peaks.png, id=2140, 497.33804pt x 299.31825pt>
 
 File: images/NatalKicks/grid_shifting_peaks.png Graphic file (type png)
 <use images/NatalKicks/grid_shifting_peaks.png>
 Package pdftex.def Info: images/NatalKicks/grid_shifting_peaks.png  used on inp
 ut line 275.
 (pdftex.def)             Requested size: 472.03123pt x 284.09953pt.
-<images/NatalKicks/event_rate_history_local.png, id=2216, 530.4618pt x 505.1673
+<images/NatalKicks/event_rate_history_local.png, id=2143, 530.4618pt x 505.1673
 pt>
 File: images/NatalKicks/event_rate_history_local.png Graphic file (type png)
 <use images/NatalKicks/event_rate_history_local.png>
 Package pdftex.def Info: images/NatalKicks/event_rate_history_local.png  used o
 n input line 282.
 (pdftex.def)             Requested size: 472.03123pt x 449.53581pt.
- [63 <./images/NatalKicks/Best_Model_Params.png>] [64 <./images/NatalKicks/grid
-_shifting_peaks.png>] [65 <./images/NatalKicks/event_rate_history_local.png>]) 
-(./chapters/chapter19.tex [66]
+) (./chapters/chapter19.tex [63 <./images/NatalKicks/Best_Model_Params.png>] [6
+4 <./images/NatalKicks/grid_shifting_peaks.png>] [65 <./images/NatalKicks/event
+_rate_history_local.png>] [66]
 Chapter 6.
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
@@ -2556,12 +2693,43 @@ LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 
 ) [67
 
-] [68
+] [68] [69
 
-] [69
 
 ] [70] (./chapters/appendices/appendixA.tex
 Appendix A.
+<images/Introduction/NightSkyMap.png, id=2204, 380.8629pt x 211.38976pt>
+File: images/Introduction/NightSkyMap.png Graphic file (type png)
+<use images/Introduction/NightSkyMap.png>
+Package pdftex.def Info: images/Introduction/NightSkyMap.png  used on input lin
+e 10.
+(pdftex.def)             Requested size: 472.03123pt x 262.00122pt.
+[71
+
+ <./images/Introduction/NightSkyMap.png>]
+
+LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
+(Font)              using `T1/cmr/m/it' instead on input line 19.
+
+
+Overfull \hbox (2.22168pt too wide) in paragraph at lines 34--34
+[] [] 
+ []
+
+
+Package tcolorbox Warning: Discard zero height first box part due to break prob
+lems (possible loss of zero height content) on input line 34.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [72]
+Overfull \hbox (2.22168pt too wide) in paragraph at lines 40--40
+[] [] 
+ []
+
+[73]) (./chapters/appendices/appendixB.tex [74]
+Appendix B.
 \openout5 = `main.pyg'.
 
 
@@ -2579,7 +2747,7 @@ Missing character: There is no k in font nullfont!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [71
+ [75
 
 ]
 Missing character: There is no c in font nullfont!
@@ -2590,7 +2758,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
 
-[72]
+[76]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -2598,7 +2766,7 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
- [73]
+ [77]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -2620,7 +2788,7 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
- [74]
+ [78]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -2628,7 +2796,7 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
- [75]
+ [79]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -2636,7 +2804,7 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
- [76]
+ [80]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -2646,7 +2814,7 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
 
 
-LaTeX Warning: Reference `fig:single_vs_binary' on page 77 undefined on input l
+LaTeX Warning: Reference `fig:single_vs_binary' on page 81 undefined on input l
 ine 12.
 
 
@@ -2659,7 +2827,7 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
- [77]
+ [81]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -2667,7 +2835,7 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
- [78]
+ [82]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -2675,14 +2843,14 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
-) (./chapters/appendices/appendixB.tex [79] [80
-
-]
-Appendix B.
-) (./chapters/appendices/appendixC.tex [81] [82
+) (./chapters/appendices/appendixC.tex [83] [84
 
 ]
 Appendix C.
+) (./chapters/appendices/appendixD.tex [85] [86
+
+]
+Appendix D.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrshort' on input line 2.
@@ -2691,7 +2859,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrshort' on input line 2.
 
-<images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png, id=2360, 427.5975p
+<images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png, id=2453, 427.5975p
 t x 606.8271pt>
 File: images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png Graphic file (
 type png)
@@ -2699,49 +2867,43 @@ type png)
 Package pdftex.def Info: images/NatalKicks/PeriodEccentricityDiagrams-O3Contour
 .png  used on input line 8.
 (pdftex.def)             Requested size: 399.3188pt x 566.68968pt.
-) (./chapters/appendices/appendixD.tex [83] [84 <./images/NatalKicks/PeriodEcce
+) (./chapters/appendices/appendixE.tex [87] [88 <./images/NatalKicks/PeriodEcce
 ntricityDiagrams-O3Contour.png>]
-Appendix D.
-) [85
+Appendix E.
+) [89
 
-] [86pdfTeX warning (ext4): destination with the same identifier (name{table.a.
-D.1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.508     \backmatter
-                      % Denotes the end of the main document content]
-(./main.bbl
+] [90] (./main.bbl
 LaTeX Info: Redefining \UD on input line 1.
 LaTeX Info: Redefining \DE on input line 1.
 LaTeX Info: Redefining \VAN on input line 1.
- [87
+ [91
 
 
-] [88] [89] [90] [91] [92] [93]
+] [92] [93] [94] [95] [96] [97]
 Underfull \hbox (badness 1194) in paragraph at lines 746--751
 []\T1/cmr/m/n/10 Williams V. V., 2012, in Pro-ceed-ings of the forty-fourth an-
 nual ACM sym-po-sium on The-ory of
  []
 
-[94]) [95] 
+[98]) [99] 
 AED: lastpage setting LastPage
-[96] (./main.aux)
+[100] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7F20BA4EDF86216F014FEBC2460A3A43;13722.
+(rerunfilecheck)             Checksum: 30A73D31FD338D0DED94EBFFA0B6D9CE;14881.
 runsystem(rm main.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 49881 strings out of 478512
- 1009925 string characters out of 5849625
- 1411473 words of memory out of 5000000
- 66244 multiletter control sequences out of 15000+600000
- 453183 words of font info for 125 fonts, out of 8000000 for 9000
+ 51451 strings out of 478512
+ 1040997 string characters out of 5849625
+ 1434398 words of memory out of 5000000
+ 67761 multiletter control sequences out of 15000+600000
+ 452482 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 96i,20n,97p,1521b,2042s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 96i,20n,97p,1521b,2051s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{
 /usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/tex
@@ -2771,33 +2933,32 @@ public/cbfonts/grmi0900.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pub
 lic/lm/lmss12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lms
 s17.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols
 /msam10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfb
-i1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx0
-900.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx100
-0.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1440.
-pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pf
-b></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb>
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc0800.pfb></
-usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc0900.pfb></us
-r/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/
-local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/lo
-cal/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/loca
-l/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfit1000.pfb></usr/local/
-texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/te
-xlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texl
-ive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texliv
-e/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/
-2021/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/20
-21/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2021
-/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2021/t
-exmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2021/tex
-mf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texlive/2021/texmf
--dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2021/texmf-d
-ist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2021/texmf-dis
-t/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on main.pdf (122 pages, 12689680 bytes).
+x0900.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1
+000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx144
+0.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx2074.
+pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pf
+b></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc0800.pfb>
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc0900.pfb></
+usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></us
+r/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/
+local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/lo
+cal/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfit1000.pfb></usr/loca
+l/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/
+texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/te
+xlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texl
+ive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texliv
+e/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/
+2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/20
+21/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2021
+/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2021/t
+exmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texlive/2021/tex
+mf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2021/texmf
+-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2021/texmf-d
+ist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on main.pdf (126 pages, 13672529 bytes).
 PDF statistics:
- 2919 PDF objects out of 2984 (max. 8388607)
- 2491 compressed objects within 25 object streams
- 525 named destinations out of 1000 (max. 500000)
- 906 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3014 PDF objects out of 3580 (max. 8388607)
+ 2572 compressed objects within 26 object streams
+ 552 named destinations out of 1000 (max. 500000)
+ 961 words of extra memory for PDF output out of 10000 (max. 10000000)
 

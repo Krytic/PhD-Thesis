@@ -99,15 +99,15 @@ such that \autoref{eq:mass_fracs} becomes
     X+Y+Z = 1.
 \end{equation}
 
-\subsubsection{Hydrogen burning: the \acrshort{pp_chain}}
+% \subsubsection{Hydrogen burning: the \acrshort{pp_chain}}
 
-A star spends $\sim90\%$ of its lifetime on the main sequence, which is where it burns protons (bare hydrogen atoms) into helium. This reaction is called the \gls{pp_chain}, and can be broken up into three potential paths. All three paths begin with the reaction \todo{finish}
+% A star spends $\sim90\%$ of its lifetime on the main sequence, which is where it burns protons (bare hydrogen atoms) into helium. This reaction is called the \gls{pp_chain}, and can be broken up into three potential paths. All three paths begin with the reaction \todo{finish}
 
-\begin{enumerate}
-    \item \gls{pp1}:
-    \item \gls{pp2}:
-    \item \gls{pp3}:
-\end{enumerate}
+% \begin{enumerate}
+%     \item \gls{pp1}:
+%     \item \gls{pp2}:
+%     \item \gls{pp3}:
+% \end{enumerate}
 
 % \subsubsection{The metallicity of the Sun}
 
@@ -925,11 +925,21 @@ The method to overcome this numerical instability is involved and not fully impl
 
 \subsubsection{Critical modifications}
 
-\todo{describe modifications made to the STARS code.}
+The major modifications we have made to the \codename{stars} code are as follows.
+
+Firstly, the floating-point precision has been increased to double precision for all variables. This has minor effects on the evolved models, insofar as they are generally able to evolve to slightly further stages. This step has previously been undertaken, however not all variables were correctly converted. This did not invalidate any models previous versions of the \codename{stars} code has generated; rather it means they terminated slightly earlier than they may have been able to evolve to.
+
+As part of this, we also undertook a reasonably extensive refactor of the codebase. Whilst some of the code remains as originally written, it is now more compliant with modern programming practices and is in some sense easier to alter with new routines.
+
+We have also improved mass loss interpolation in the \codename{massloss.f} routine. Whilst not changing the underlying assumption that mass transfer is governed by \citet{de_jager_mass_1988,vink_mass-loss_2001} (\autoref{sec:mass_transfer}), we have improved the transition between typical O-type mass loss and WR mass loss rates by slowing turning on the WR mass loss rate as the surface hydrogen abundance drops below 0.4. The transition was previously abrupt and would cause the code to fail due to numerical instability if a non-WR star entered this regime.
+
+Similarly to this, the code now manually reduces the timestep in the run-up to, during, and after the contact binary phase. Evolution during this phase breaks thermal equilibrium (i.e., the star evolves on a longer timescale than its Kelvin-Helmholtz time-scale) and hence the evolution can change rapidly as the star attempts to adjust back to thermal equilibrium. The contact phase, for example, typically last for between 100-200 \unit{\kilo\year} in our models.
+
+We have also begun implementing an $\alpha-\lambda$ treatment of \gls{cee}, though we stress that this has not been rigorously tested yet, and is thus disabled for the majority of our models.
 
 \subsection{The \codename{Tui} code}\label{chap:numerical_methods_tui}
 
-\codename{Tui} is the core population synthesis code within the BPASS project. \codename{Tui} takes as input the output from the \codename{stars} code. \codename{Tui} was first described in \citet{ghodla_evaluating_2023}, and was more fulsomely described in \citet{stevance_end--end_2023}, though we note that their version is technically a refactor of the version we use. The predominant function we use \codename{Tui} for is the matching of pre- and post- supernova models for \autoref{chap:natal_kicks}, and in this section we provide a brief account of that functionality of \codename{Tui} (though the control of the population synthesis models is beyond the scope of this thesis).
+\codename{Tui} is the core population synthesis code within the \gls{bpass} project. \codename{Tui} takes as input the output from the \codename{stars} code. \codename{Tui} was first described in \citet{ghodla_evaluating_2023}, and was more fulsomely described in \citet{stevance_end--end_2023}, though we note that their version is technically a refactor of the version we use. The predominant function we use \codename{Tui} for is the matching of pre- and post- supernova models for \autoref{chap:natal_kicks}, and in this section we provide a brief account of that functionality of \codename{Tui} (though the control of the population synthesis models is beyond the scope of this thesis).
 
 \codename{Tui} has precompiled ``input\_'' files which report a \codename{STARS} plot file, an \gls{imf} weight, and a model type (merger/normal primary/normal secondary/single model/quasi-homogeneous evolution binary/single star). After loading in a model, \codename{Tui} applies a given kick and computes the new orbital parameters from \citet{tauris_runaway_1998}. Crucially, a core assumption of \gls{bpass} is that the orbit remains circular after the first supernova and is allowed to be eccentric after the second. Of course, the supernova may cause the binary to become eccentric after the first supernova; \codename{Tui} accounts for this by setting the separation after the first supernova to be the semi-latus rectum of the eccentric binary. \codename{Tui} repeats this process after the second supernova.
 

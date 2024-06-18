@@ -23,62 +23,7 @@ Furthermore, a sound understanding of the evolution of stars has impacts beyond 
 
 However, this diversity and complexity of stellar interiors demands a careful and varied approach. One cannot abstract away much of the important physics. Although it is common to use approximations such as spherical symmetry to reduce the dimensionality of the problem, and to only evaluate the equations of stellar structure at a fixed number of locations in this one remaining dimension, chosen sufficiently intelligently, a complex computational effort must be undertaken.
 
-\section{The night sky}
-
-There are approximately 9000 stars visible in the night sky to the naked eye (with magnitude lower than 6.5), across both hemispheres \citep{Hoffleit:1964}, which are displayed in \autoref{fig:naked_night_sky}. The dark-adapted eye can see approximately as far as $\eta$ Carinae,\footnote{This is a debated topic; we use the definition that a ``star'' includes binaries and that the star is in \citet{Hoffleit:1964}, which rules out V762 Cas, the other commonly held ``farthest star''.} which is only approximately \SI{2300}{\pc} away.
-
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=\textwidth]{images/Introduction/NightSkyMap.png}
-	\caption[The locations of the $\sim9000$ stars in the night sky visible to the naked eye.]{The locations of the $\sim9000$ stars in the night sky visible to the naked eye, as reported in \citet{Hoffleit:1964}. The colors are computed by converting the B-V color indices to temperatures using the fits in \citet{ballesteros_new_2012}, and then converted to RGB via the algorithm in this StackOverflow post: \url{https://stackoverflow.com/a/45497817}. Transparency correlates to the magnitude of the stars; fainter stars (higher magnitudes) have high transparency. The Southern Cross (Crucis) is shown fully opaque in blue towards the bottom left of the plot as a point of reference, and $\eta$ Carinae is shown fully opaque in black in the bottom right.}
-	\label{fig:naked_night_sky}
-\end{figure}
-
-\SI{2300}{\pc} pales in comparison to the size of the Galaxy, which is approximately \SI{26.8}{\kilo\pc} in diameter \citep{Goodwin:1998}, which in turn pales in comparison to the Local Group at $\sim$\SI{3}{\mega\pc} \citep{Redd:2018}, and the observable Universe at \SI{28.5}{\giga\pc} \citep{Bars:2010}. There are, in addition, $\sim1.7\times10^{22}$ stars in the observable Universe, assuming $1.7\times10^{11}$ galaxies, with approximately $10^11$ stars in each \citep{Marov:2015}. Thus, the birth, evolution, and death of stars is of fundamental importance to understanding the local structure and evolution of astrophysical objects on any scale.
-
-\section{A brief history of astronomy}
-
-\mediaepigraph{If the stars should appear one night in a thousand years, how would men believe and adore; and preserve for many generations the remembrance of the city of God which had been shown! But every night come out these envoys of beauty, and light the universe with their admonishing smile.}{Nature}{Ralph Waldo Emerson}
-
-Observational astronomy can essentially be traced back to the earliest cultures. Babylonia knew of Halley's comet and tracked observations of it as late as 87 BCE \citep{stephenson_records_1985}. Records of eclipses in Chinese culture exist as far back as 1600 BCE \citep{fang_past_2015}. Knowledge of the movements of stars guided Polynesian wayfarers as they crossed the South Pacific \citep{buck_vikings_1938, hamacher_first_2022}. Even in the arts, the knowledge of the lunar perigee was written into \textit{Othello} by Shakespeare:
-
-\begin{fanciful}
-	It is the very error of the moon; \\
-	She comes more near the earth than she was wont, \\
-	And makes men mad.
-	\begin{flushright}
-		-- \citet{shakespeare_othello_1603}
-	\end{flushright}
-\end{fanciful}
-
-Knowledge of oceanic tides was posited by Ptolemy, writing in \textit{Tetrabiblos} that
-
-\fancifulepigraph{\greekscript ἀμπώτεις καὶ αἱ παλίρροιαι, καὶ αἱ τῶν πνευμάτων δὲ τροπαὶ μάλιστα περὶ τὰς τοιαύτας τῶν φωτῶν κεντρώσεις ἀποτελοῦνται πρὸς οὓς ἂν τῶν ἀνέμων ἐπὶ τὰ αὐτὰ τὸ πλάτος τῆς σελήνης τὰς προσνεύσεις ποιούμενον καταλαμβάνηται.}{For the hour by hour intensifications and relaxations of the weather vary in response to such positions of the stars as these, in the same way that the ebb and flow of the tide respond to the phases of the moon, and the changes in the air-currents are brought about especially at such appearances of the luminaries at the angles, in the direction of those winds towards which the latitude of the moon is found to be inclining.}{ptolemy_2005_tetrabiblos}{ptolemy_1940_tetrabiblos}
-
-% (original work \citet{ptolemy_2005_tetrabiblos}, summary provided by \citet{tabarroni_1989})
-
-This knowledge flowed through to Dante, who wrote in the third part of the Divine Comedy, \textit{Paradiso}:
-
-\fancifulepigraph{E come 'l volger del ciel de la luna \\ cuopre e discuopre i liti sanza posa, \\ così fa di Fiorenza la Fortuna:}{And, as the turning of the lunar sphere covers \\ and endlessly uncovers the edges of the shore, \\	thus does fortune deal with Florence.}{dante_paradiso_1317}{corbett_vertical_2016}
-
-In religious scripture, celestial navigation has oft been a fixture, such as in Chapter 2 of the Gospel according to Matthew:
-
-\begin{fanciful}
-	2:7 -- Then Herod, when he had priuily called the Wise men, enquired of them diligently what time the Starre appeared: \\
-	2:8 -- And he sent them to Bethlehem, and said, Goe, and search diligently for the yong child, and when ye haue found him, bring me word againe, that I may come and worship him also. \\
-	2:9 -- When they had heard the King, they departed, and loe, the Starre which they saw in the East, went before them, till it came and stood ouer where the young childe was.
-	\begin{flushright}
-		-- \citet{kingjames1611}
-	\end{flushright}
-\end{fanciful}
-
-Despite this deep cultural connection to the stars, what we would now call Astronomy is a somewhat recent invention. Arguably it arose in the 16th century CE with Copernicus proposing the heliocentric model of the solar system, which was confirmed by Galileo in the 17th century CE \citep{carroll_introduction_2017} -- although Galileo's claims did result in his being convicted of heresy for 300 years.
-
-The early 20th century saw a veritable renaissance in both the observational and theoretical spheres. On the one hand, developments such as the theories of Special Relativity in 1905 \citep{einstein_zur_1905}, \gls{gr} in 1917 \citep{einstein_kosmologische_1917}, and the predictions of gravitational waves \citep{poincare_sur_1906, einstein_naherungsweise_1916} led to theoretical revolutions. On the other hand, the innovations of \citet{payne_stellar_1925} in showing that stars are composed of mostly Hydrogen and Helium, \citet{baade_super-novae_1934} in distinguishing ``super-novae'' from ``common novae'', \citet{hoyle_synthesis_1946} in developing the foundation of the nuclear reaction of elements heavier than Hydrogen in stars, \citet{salpeter_luminosity_1955} in developing the \gls{imf}, \citet{burbidge_synthesis_1957} in truly developing the theory of stellar nucleosynthesis, \citet{henyey_early_1955} and \citet{hayashi_stellar_1961} in exploring the pre-main sequence evolution of stars were key to kickstarting entire branches of astronomy such as spectroscopy and computational astrophysics.
-
-The pace of discovery of new and exotic astronomical phenomena has not slowed into the 21st century. Thorne-\.{Z}ytkow objects -- giant stars with Neutron star cores \citep{thorne_stars_1977} -- once only existed as theoretical curiosities, yet now have credible observational candidates in \citet{levesque_discovery_2014}. The aforementioned gravitational waves were detected in 2015  \citep{ligo_scientific_collaboration_and_virgo_collaboration_observation_2016}, a century after they were demonstrated by \citet{einstein_naherungsweise_1916} to be a central prediction of \gls{gr}. More recently, \citet{lau_nested_2022} directly imaged 17 carbon-rich dust rings around WR140 with \gls{jwst}, enriching the \gls{ism} with carbon-rich compounds. In the coming years, the Vera C. Rubin Observatory \citep{ivezic_lsst_2019} and \gls{lisa} are expected to vastly increase the number of short-period eclipsing double white dwarfs \citep{burdge_88_2020}, with the latter able to detect gravitational waves with frequencies between \SI{0.1}{\milli\hertz} and \SI{1}{\hertz} \citep{amaro-seoane_low-frequency_2012}, compared to the $\sim \SI{10}{\hertz}-\SI{1000}{\hertz}$ that \gls{lvk} can detect \citep{schmitz_new_2021}. The stochastic gravitational-wave background was detected by \citet{agazie_nanograv_2023,antoniadis_second_2023,reardon_search_2023,xu_searching_2023}, via a search of pulsar-timing arrays.
-
-Astronomy has evolved from the era of the naked-eye, to the era of the telescope, to the era of the observatory, and now the gravitational wave era. The next era of astronomy is the big data era. With observations reaching sub-day cadences, a large array of theoretical models, and perhaps the development of ``on-demand'' detailed models is required.
+Astronomy as a field has blossomed since the naked-eye era (a brief discussion of the vast astronomical history is given as \autoref{chap:history_of_astronomy}) -- entering the era of the telescope, the era of the observatory, and now the gravitational wave era. The next era of astronomy is the big data era. With observations reaching sub-day cadences, a large array of theoretical models, and perhaps the development of ``on-demand'' detailed models is required.
 
 \section{Stellar Modelling}
 
@@ -110,18 +55,42 @@ Rapid population synthesis methods exploit the statistical properties of stars i
 
 \acrfull{mhd} and \gls{sph} simulations are the most detailed method of stellar modelling. The base principle is that the star is evaluated as a network of particles in a continuous media, and the evolution of the star is followed in theoretically atomic detail. For example, \codename{Phantom} \citep{price_phantom_2018} is a \gls{sph} code which essentially models the star as a fluid, where the Lagrangian hydrodynamical equations are solved for in two-dimensional cells (termed ``particles''). Although these present the most detailed models, they are also the most time-intensive to solve. For a \gls{sph} code, the famous Navier-Stokes equation is invoked, which has no analytical solution but is computed in excruciating detail. As a result, most \gls{sph} models take weeks to run and simulate a star for kiloseconds of its lifetime, rather than for the millions of years detailed models are able to compute.
 
-Though it may seem that they serve the same niche and are therefore competing to be the ``better'' method of stellar modelling, detailed 1D models and \gls{mhd}/\gls{sph} models exist harmoniously with each other. The advancements in \gls{mhd}/\gls{sph} modelling inform the evolution of 1D models in a process known as ``3-to-1'', and the computational flexibility of 1D models offers insights into where 3D models wish to target to evolve.
+Though it may seem that they serve the same niche and are therefore competing to be the ``better'' method of stellar modelling, detailed 1D models and \gls{mhd}/\gls{sph} models exist harmoniously with each other. The advancements in \gls{mhd}/\gls{sph} modelling inform the evolution of 1D models in a process known as ``3-to-1'', and the computational flexibility of 1D models offers insights into where 3D models wish to target to evolve, in a lock-step advancement method.
 
-% However, before the \gls{ccsne} occurs, there is a host of complex phenomena that occur in the interior of the star. A star is a nuclear furnace, with even the simplest reaction, the fusion of two hydrogen atoms into helium,
-
-% \begin{equation}
-%     \ce{^2_1H + ^2_1H -> ^3_2He + ^1_0n}
-% \end{equation}
-
-% releasing approximately \SI{3.27}{\mega\electronvolt} of energy per reaction, or approximately 650 million times New Zealand's energy consumption per year, every second.
-
-\section{Thesis Outline}
+\section{This work}
 
 \mediaepigraph{Come with me, and you'll be, in a world of pure imagination.}{Pure Imagination}{Gene Wilder}
 
-This thesis is, broadly, a tour of stellar evolution from \gls{zams} to the eventual merger of two compact objects, with a few omissions along the way (such as the moment of supernova). The thesis is structured as follows. In Chapter 2, we provide the necessary theoretical background for future chapters. In Chapter 3, we critically examine the pieces of software and numerical methods employed in this work, and discuss the logistics of running this single-thread grid-based code as a multiprocessed code on a distributed cluster. In Chapter 4, we present the results of our stellar evolution codes: both as results for single and binary star evolution, as well as the interesting case when both stars almost (or in some instances, do) touch. In Chapter 5, we examine the kinematics of the post-supernova inspiral and the mechanics of the natal supernova kick. In Chapter 6, we review the thesis and conclude. Finally in the appendices, we provide the \codename{Kaitiaki} code necessary to generate the models for the stellar evolution plots throughout the thesis.
+\subsection{Research aims}
+
+There are essentially three major themes guiding this research.
+
+\begin{enumerate}[(I)]
+	\item Can we methodologically overcome the typical cases in which stellar models fail:
+	\begin{enumerate}
+		\item \gls{rlof}
+		\item \gls{cee}
+		\item The helium flash
+	\end{enumerate}
+
+	\item Can we develop a testing regime for the natal supernova kick, which relies on more observations than just isolated pulsar velocities?
+
+	\item What modifications are required to be made to our stellar modelling code in preparation for the next major \acrshort{bpass} release?
+\end{enumerate}
+
+\subsection{Thesis outline}
+
+This thesis is, broadly, a tour of stellar evolution from \gls{zams} to the eventual merger of two compact objects, with a few omissions along the way (such as the moment of supernova). The thesis is structured as follows:
+
+\begin{enumerate}
+	\item In Chapter 2, we provide the necessary theoretical background for future chapters, critically examine the pieces of software and numerical methods employed in this work, and discuss the logistics of running this single-thread grid-based code as a multiprocessed code on a distributed cluster.
+	\item In Chapter 3, we explore the regime in which mass transfer is assumed to become helium-rich, and the effects on the future evolution of these binaries. (Theme I, III)
+	\item In Chapter 4, we present the results of our stellar evolution codes in the interesting case when both stars almost (or in some instances, do) touch. (Theme I)
+	\item In Chapter 5, we examine the kinematics of the post-supernova inspiral and the mechanics of the natal supernova kick. (Theme II)
+	\item In Chapter 6, we review the thesis and conclude. (Themes I, II, III)
+	\item In Appendix A, we present a brief history of observational astronomy for the interested reader.
+	\item In Appendix B, we provide the \codename{Kaitiaki} code necessary to generate the models for certain stellar evolution plots throughout the thesis. (Themes I, III)
+	\item In Appendix C, we list the codes employed and their versions.
+	\item In Appendix D, we present period-eccentricity distributions for the \acrshort{lvk} \acrshort{o3} contour (Theme II)
+	\item In Appendix E, we list the default parameter choices we make for our stellar evolution models (Themes I, III).
+\end{enumerate}
