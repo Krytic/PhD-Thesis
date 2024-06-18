@@ -23,6 +23,19 @@ Furthermore, a sound understanding of the evolution of stars has impacts beyond 
 
 However, this diversity and complexity of stellar interiors demands a careful and varied approach. One cannot abstract away much of the important physics. Although it is common to use approximations such as spherical symmetry to reduce the dimensionality of the problem, and to only evaluate the equations of stellar structure at a fixed number of locations in this one remaining dimension, chosen sufficiently intelligently, a complex computational effort must be undertaken.
 
+\section{The night sky}
+
+There are approximately 9000 stars visible in the night sky to the naked eye (with magnitude lower than 6.5), across both hemispheres \citep{Hoffleit:1964}, which are displayed in \autoref{fig:naked_night_sky}. The dark-adapted eye can see approximately as far as $\eta$ Carinae,\footnote{This is a debated topic; we use the definition that a ``star'' includes binaries and that the star is in \citet{Hoffleit:1964}, which rules out V762 Cas, the other commonly held ``farthest star''.} which is only approximately \SI{2300}{\pc} away.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=\textwidth]{images/Introduction/NightSkyMap.png}
+	\caption[The locations of the $\sim9000$ stars in the night sky visible to the naked eye.]{The locations of the $\sim9000$ stars in the night sky visible to the naked eye, as reported in \citet{Hoffleit:1964}. The colors are computed by converting the B-V color indices to temperatures using the fits in \citet{ballesteros_new_2012}, and then converted to RGB via the algorithm in this StackOverflow post: \url{https://stackoverflow.com/a/45497817}. Transparency correlates to the magnitude of the stars; fainter stars (higher magnitudes) have high transparency. The Southern Cross (Crucis) is shown fully opaque in blue towards the bottom left of the plot as a point of reference, and $\eta$ Carinae is shown fully opaque in black in the bottom right.}
+	\label{fig:naked_night_sky}
+\end{figure}
+
+\SI{2300}{\pc} pales in comparison to the size of the Galaxy, which is approximately \SI{26.8}{\kilo\pc} in diameter \citep{Goodwin:1998}, which in turn pales in comparison to the Local Group at $\sim$\SI{3}{\mega\pc} \citep{Redd:2018}, and the observable Universe at \SI{28.5}{\giga\pc} \citep{Bars:2010}. There are, in addition, $\sim1.7\times10^{22}$ stars in the observable Universe, assuming $1.7\times10^{11}$ galaxies, with approximately $10^11$ stars in each \citep{Marov:2015}. Thus, the birth, evolution, and death of stars is of fundamental importance to understanding the local structure and evolution of astrophysical objects on any scale.
+
 \section{A brief history of astronomy}
 
 \mediaepigraph{If the stars should appear one night in a thousand years, how would men believe and adore; and preserve for many generations the remembrance of the city of God which had been shown! But every night come out these envoys of beauty, and light the universe with their admonishing smile.}{Nature}{Ralph Waldo Emerson}
@@ -40,38 +53,11 @@ Observational astronomy can essentially be traced back to the earliest cultures.
 
 Knowledge of oceanic tides was posited by Ptolemy, writing in \textit{Tetrabiblos} that
 
-% \begin{fanciful}
-% 	{\greekscript
-% 	ἀμπώτεις καὶ αἱ παλίρροιαι, καὶ αἱ τῶν πνευμάτων δὲ τροπαὶ μάλιστα περὶ τὰς τοιαύτας τῶν φωτῶν κεντρώσεις ἀποτελοῦνται πρὸς οὓς ἂν τῶν ἀνέμων ἐπὶ τὰ αὐτὰ τὸ πλάτος τῆς σελήνης τὰς προσνεύσεις ποιούμενον καταλαμβάνηται.}
-% 	\vspace{5pt}%
-% 	\hrule
-% 	\vspace{15pt}%
-% 	For the hour by hour intensifications and relaxations of the weather vary in response to such positions of the stars as these, in the same way that the ebb and flow of the tide respond to the phases of the moon, and the changes in the air-currents are brought about especially at such appearances of the luminaries at the angles, in the direction of those winds towards which the latitude of the moon is found to be inclining.
-% 	\begin{flushright}
-% 		-- \citet{ptolemy_2005_tetrabiblos}, as translated by \citet{ptolemy_1940_tetrabiblos}
-% 	\end{flushright}
-% \end{fanciful}
-
 \fancifulepigraph{\greekscript ἀμπώτεις καὶ αἱ παλίρροιαι, καὶ αἱ τῶν πνευμάτων δὲ τροπαὶ μάλιστα περὶ τὰς τοιαύτας τῶν φωτῶν κεντρώσεις ἀποτελοῦνται πρὸς οὓς ἂν τῶν ἀνέμων ἐπὶ τὰ αὐτὰ τὸ πλάτος τῆς σελήνης τὰς προσνεύσεις ποιούμενον καταλαμβάνηται.}{For the hour by hour intensifications and relaxations of the weather vary in response to such positions of the stars as these, in the same way that the ebb and flow of the tide respond to the phases of the moon, and the changes in the air-currents are brought about especially at such appearances of the luminaries at the angles, in the direction of those winds towards which the latitude of the moon is found to be inclining.}{ptolemy_2005_tetrabiblos}{ptolemy_1940_tetrabiblos}
 
 % (original work \citet{ptolemy_2005_tetrabiblos}, summary provided by \citet{tabarroni_1989})
 
-This knowledge flowed through to Dante, who wrote in \textit{Paradiso}:
-
-% \begin{fanciful}
-% 	E come 'l volger del ciel de la luna \\
-% 	cuopre e discuopre i liti sanza posa, \\
-% 	così fa di Fiorenza la Fortuna: \\
-% 	\vspace{5pt}%
-% 	\hrule
-% 	\vspace{15pt}%
-% 	And, as the turning of the lunar sphere covers \\
-% 	and endlessly uncovers the edges of the shore, \\
-% 	thus does fortune deal with Florence.
-% 	\begin{flushright}
-% 		-- \citet{dante_paradiso_1317}
-% 	\end{flushright}
-% \end{fanciful}
+This knowledge flowed through to Dante, who wrote in the third part of the Divine Comedy, \textit{Paradiso}:
 
 \fancifulepigraph{E come 'l volger del ciel de la luna \\ cuopre e discuopre i liti sanza posa, \\ così fa di Fiorenza la Fortuna:}{And, as the turning of the lunar sphere covers \\ and endlessly uncovers the edges of the shore, \\	thus does fortune deal with Florence.}{dante_paradiso_1317}{corbett_vertical_2016}
 
@@ -98,7 +84,7 @@ Astronomy has evolved from the era of the naked-eye, to the era of the telescope
 
 Modelling the evolution of a star is a nontrivial endeavour. Stars as objects obey \acrfull{gr} owing to their masses and sizes, and reach internal temperatures, pressures, and densities unsustainable on Earth. For instance, the core of a star is capable of nuclear fusion, which has not been sustainably recreated on Earth. Moreover, the density of Sirius B -- a \gls{wd} in the constellation of Canis Major -- is \SI{2.14e10}{\kg\per\meter\cubed} \citep{barstow_hubble_2005} and the mean density of the Sun is $\sim\SI{1410}{\kg\per\meter\cubed}$ \citep{eddy_new_1979}. On Earth, the highest density measured in a laboratory is $\sim\SI{27000}{\kg\per\meter\cubed}$, requiring pressures on the order of \SI{2.3}{\tera\pascal} \citep{fratanduono_probing_2020}, and observed for only nanoseconds.
 
-Because of these factors, one often turns to computer simulations to model the interiors of stars, as it is nigh impossible to achieve and sustain these conditions to experimentally test any physical phenomena. That said, missions such as the Parker Solar Probe \todo{cite} have made flyby missions into the atmosphere of the Sun, though broadening the sample size to two stars -- using Proxima Centauri, the nearest star to Earth aside from the Sun -- would require travelling at approximately 0.1$c$ for 40 years to reach. If instead we were to send the Parker Solar Probe travelling at a constant velocity of its top velocity of $\sim\SI{176471}{\meter\per\second}$, it would take approximately 7200 years to reach Proxima Centauri. Needless to say, physical experimentation with a star is difficult.
+Because of these factors, one often turns to computer simulations to model the interiors of stars, as it is nigh impossible to achieve and sustain these conditions to experimentally test any physical phenomena. That said, missions such as the Parker Solar Probe have made flyby missions into the atmosphere of the Sun, though broadening the sample size to two stars -- using Proxima Centauri, the nearest star to Earth aside from the Sun -- would require travelling at approximately 0.1$c$ for 40 years to reach. If instead we were to send the Parker Solar Probe travelling at a constant velocity of its top velocity of $\sim\SI{176471}{\meter\per\second}$, it would take approximately 7200 years to reach Proxima Centauri. Needless to say, physical experimentation with a star is difficult.
 
 \subsection{Population Synthesis Codes}
 

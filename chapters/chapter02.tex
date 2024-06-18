@@ -109,41 +109,41 @@ A star spends $\sim90\%$ of its lifetime on the main sequence, which is where it
     \item \gls{pp3}:
 \end{enumerate}
 
-\subsubsection{The metallicity of the Sun}
+% \subsubsection{The metallicity of the Sun}
 
-It is often convenient to index our metallicities relative to that of the Sun. To do this, we of course need to know the chemical composition of the Sun. We ignore virtually every isotope of every element in favour of \ce{^56_26Fe} in particular. This is for a few reasons: it is the most stable element of fusion (nuclides higher than \ce{^56_26Fe} will undergo fission to it and nuclides lower than \ce{^56_26Fe} will fuse towards it), it is very abundant observationally, and its absorption lines in spectra are easily distinguishable. Thus we can base our metallicity calculations via a quantity known as the iron-abundance ratio,
+% It is often convenient to index our metallicities relative to that of the Sun. To do this, we of course need to know the chemical composition of the Sun. We ignore virtually every isotope of every element in favour of \ce{^56_26Fe} in particular. This is for a few reasons: it is the most stable element of fusion (nuclides higher than \ce{^56_26Fe} will undergo fission to it and nuclides lower than \ce{^56_26Fe} will fuse towards it), it is very abundant observationally, and its absorption lines in spectra are easily distinguishable. Thus we can base our metallicity calculations via a quantity known as the iron-abundance ratio,
 
-\begin{equation}
-    \left[\text{Fe/H}\right] = \left.\log_{10}\pqty{\frac{N_\text{Fe}}{N_\text{H}}}\right|_\text{star}-\left.\log_{10}\pqty{\frac{N_\text{Fe}}{N_\text{H}}}\right|_\text{sun},
-\end{equation}
+% \begin{equation}
+%     \left[\text{Fe/H}\right] = \left.\log_{10}\pqty{\frac{N_\text{Fe}}{N_\text{H}}}\right|_\text{star}-\left.\log_{10}\pqty{\frac{N_\text{Fe}}{N_\text{H}}}\right|_\text{sun},
+% \end{equation}
 
-where $N_\text{H}$ ($N_\text{Fe}$) is the number of Hydrogen (Iron) atoms per unit volume of the sun or star. Mechanically this is represented by
+% where $N_\text{H}$ ($N_\text{Fe}$) is the number of Hydrogen (Iron) atoms per unit volume of the sun or star. Mechanically this is represented by
 
-\begin{equation}
-    N_\text{X} = N_A \frac{M}{m_\text{X}}
-\end{equation}
+% \begin{equation}
+%     N_\text{X} = N_A \frac{M}{m_\text{X}}
+% \end{equation}
 
-where $N_A$ is Avogadro's constant ($\sim\SI{6.022e23}{\per\mol}$), $M$ is the mass of element X in the star, and $m_\text{X}$ is the relevant molar mass. For instance, imagining a hypothetical iron-rich star of mass $M$ consisting of 50\% hydrogen and 50\% iron, the [Fe/H] would be
+% where $N_A$ is Avogadro's constant ($\sim\SI{6.022e23}{\per\mol}$), $M$ is the mass of element X in the star, and $m_\text{X}$ is the relevant molar mass. For instance, imagining a hypothetical iron-rich star of mass $M$ consisting of 50\% hydrogen and 50\% iron, the [Fe/H] would be
 
-\begin{align*}
-    \text{[Fe/H]} &= \left.\log_{10}\pqty{\frac{N_A \frac{M_\text{Fe}}{m_\text{Fe}}}{N_A \frac{M_\text{H}}{m_\text{H}}}}\right|_\text{star}-\left.\log_{10}\pqty{\frac{N_A \frac{M_\text{Fe}}{m_\text{Fe}}}{N_A \frac{M_\text{H}}{m_\text{H}}}}\right|_\text{sun} \\
-    &= \left.\log_{10}\pqty{\frac{M_\text{Fe}m_\text{H}}{m_\text{Fe}M_\text{H}}}\right|_\text{star}-\left.\log_{10}\pqty{\frac{M_\text{Fe}m_\text{H}}{m_\text{Fe}M_\text{H}}}\right|_\text{sun} \\
-    &= \left.\log_{10}\pqty{\frac{0.5M m_\text{H}}{m_\text{Fe}\times0.5 M}}\right|_\text{star}-\left.\log_{10}\pqty{\frac{0.002 M_\odot m_\text{H}}{m_\text{Fe}\times0.92 M_\odot}}\right|_\text{sun} \\
-    &= \left.\log_{10}\pqty{\frac{m_\text{H}}{m_\text{Fe}}}\right|_\text{star}-\left.\log_{10}\pqty{\frac{0.002 M_\odot m_\text{H}}{m_\text{Fe}\times0.92 M_\odot}}\right|_\text{sun} \\
-    &\sim 2.66
-\end{align*}
+% \begin{align*}
+%     \text{[Fe/H]} &= \left.\log_{10}\pqty{\frac{N_A \frac{M_\text{Fe}}{m_\text{Fe}}}{N_A \frac{M_\text{H}}{m_\text{H}}}}\right|_\text{star}-\left.\log_{10}\pqty{\frac{N_A \frac{M_\text{Fe}}{m_\text{Fe}}}{N_A \frac{M_\text{H}}{m_\text{H}}}}\right|_\text{sun} \\
+%     &= \left.\log_{10}\pqty{\frac{M_\text{Fe}m_\text{H}}{m_\text{Fe}M_\text{H}}}\right|_\text{star}-\left.\log_{10}\pqty{\frac{M_\text{Fe}m_\text{H}}{m_\text{Fe}M_\text{H}}}\right|_\text{sun} \\
+%     &= \left.\log_{10}\pqty{\frac{0.5M m_\text{H}}{m_\text{Fe}\times0.5 M}}\right|_\text{star}-\left.\log_{10}\pqty{\frac{0.002 M_\odot m_\text{H}}{m_\text{Fe}\times0.92 M_\odot}}\right|_\text{sun} \\
+%     &= \left.\log_{10}\pqty{\frac{m_\text{H}}{m_\text{Fe}}}\right|_\text{star}-\left.\log_{10}\pqty{\frac{0.002 M_\odot m_\text{H}}{m_\text{Fe}\times0.92 M_\odot}}\right|_\text{sun} \\
+%     &\sim 2.66
+% \end{align*}
 
-\todo{if this bit stays, 92\% of the sun being hydrogen and 0.2\% being iron needs a source}
+% \todo{if this bit stays, 92\% of the sun being hydrogen and 0.2\% being iron needs a source}
 
-In this regime, we can express the metallicity as approximately
+% In this regime, we can express the metallicity as approximately
 
-\begin{equation}
-    \mathcal{Z} = 10^{\left[\text{Fe/H}\right]} \mathcal{Z}_\odot,
-\end{equation}
-{}
-and thus by knowing the simple iron content of the Sun or star, we can approximate the metallicity. Our iron-rich ``star'' would thus have a metallicity of approximately 460 times that of the sun.
+% \begin{equation}
+%     \mathcal{Z} = 10^{\left[\text{Fe/H}\right]} \mathcal{Z}_\odot,
+% \end{equation}
+% {}
+% and thus by knowing the simple iron content of the Sun or star, we can approximate the metallicity. Our iron-rich ``star'' would thus have a metallicity of approximately 460 times that of the sun.
 
-\citet{asplund_chemical_2021} presents an estimate \todo{finish sentence}
+% \citet{asplund_chemical_2021} presents an estimate \todo{finish sentence}
 
 \subsection{Evolutionary Pathways}
 
@@ -922,6 +922,10 @@ The method to overcome this numerical instability is involved and not fully impl
     \caption[The helium flash shown on a Kippenhahn diagram.]{The helium flash (gray dashed line) shown on a Kippenhahn diagram. There is a slight discontinuity in the helium core mass (blue) due to a perfect match not existing in the $\SI{3}{\msun}$ reference model. The total mass is shown as the solid gray line, and the \acrshort{CO_core} mass is shown in red. The green lines show the boundaries of the convective regions of the star.}
     \label{fig:pseudoevolved_kippenhahn}
 \end{figure}
+
+\subsubsection{Critical modifications}
+
+\todo{describe modifications made to the STARS code.}
 
 \subsection{The \codename{Tui} code}\label{chap:numerical_methods_tui}
 
