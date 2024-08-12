@@ -1,36 +1,39 @@
 \babel@toc {english}{}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces The locations of the $\sim 9000$ stars in the night sky visible to the naked eye.}}{2}{figure.caption.8}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces A rough outline of supernova classification.}}{15}{figure.caption.15}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces A schematic of a simple binary star system.}}{16}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces An illustration of the bi-stability jump at $\qopname \relax o{log}~T\approx 4.4$.}}{20}{figure.caption.17}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces The dimensionless Roche potential as a function of mass ratio $q$.}}{22}{figure.caption.18}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces A schematic of the Roche lobe formula \autoref {eq:RL1_eggleton}.}}{24}{figure.caption.20}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces The volume of the Roche Lobe computed numerically through Monte-Carlo integration vs the volume assuming \autoref {eq:RL1_eggleton}.}}{25}{figure.caption.21}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces As for \autoref {fig:eggleton_approx}, but for the $\mathcal {L}_2$ point.}}{25}{figure.caption.23}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Two stars of a similar mass that undergo a helium flash and two thermal pulses.}}{34}{figure.caption.29}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces The helium flash shown on a Kippenhahn diagram.}}{35}{figure.caption.30}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The evolution of stars in the range $10-80\unit {\msun }$.}}{12}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces The evolution of an \SI {8}{\msun } star.}}{13}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces A rough outline of supernova classification.}}{17}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces A schematic of a simple binary star system.}}{19}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces The dimensionless Roche potential as a function of mass ratio $q$.}}{20}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces A schematic of the Roche lobe formula \autoref {eq:RL1_eggleton}.}}{23}{figure.caption.22}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces The volume of the Roche Lobe computed numerically through Monte-Carlo integration vs the volume assuming \autoref {eq:RL1_eggleton}.}}{23}{figure.caption.23}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces As for \autoref {fig:eggleton_approx}, but for the $\mathcal {L}_2$ point.}}{24}{figure.caption.25}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces An illustration of the bi-stability jump at $\qopname \relax o{log}~T\approx 4.4$.}}{30}{figure.caption.30}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Two stars of a similar mass that undergo a helium flash and two thermal pulses.}}{38}{figure.caption.36}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces The helium flash shown on a Kippenhahn diagram.}}{39}{figure.caption.37}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The chemical composition of each star as a function of the stellar radius for the donor and accretor at the five key stages of the binary's lifetime as detailed in \autoref {tab:binary_configuration_parameters}. Letters are as given in the same table. Each grid marking in the radial direction represents \SI {1}{\rsun }.\relax }}{41}{figure.caption.33}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces An HR diagram showing the evolution of our model both with and without the variable accretion prescription.}}{42}{figure.caption.34}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces A schematic of how \textsc {FineGrid} and \textsc {WideGrid} are related.}}{49}{figure.caption.36}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces The effect of varying $\mathrm {d}e$ in \autoref {eq:discrete_sum} on the coalescence time.}}{52}{figure.caption.37}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces The effect of varying $\mathrm {d}e$ in \autoref {eq:discrete_sum} on the runtime and performance.}}{53}{figure.caption.38}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces The merger rate as a function of kick parameters $\alpha $ and $\beta $.}}{54}{figure.caption.39}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces The \acrshort {pdf} and \acrshort {cdf} of the distributions using kicks from \citet {hobbs_statistical_2005,verbunt_observed_2017,bray_neutron_2018,willcox_constraints_2021}.}}{57}{figure.caption.41}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces The \acrshort {ks} statistic for \textsc {FineGrid} and \textsc {WideGrid}.}}{58}{figure.caption.42}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces The \acrshortpl {pdf} and \acrshortpl {cdf} of four systems, alongside the Hobbs \acrshort {cdf} and \citet {willcox_constraints_2021} \acrshort {cdf}.}}{59}{figure.caption.43}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces The four constraints we apply overlaid on our \textsc {FineGrid} parameter space.}}{62}{figure.caption.44}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces The \acrshort {cdf} for a population of isolated pulsars and the period-eccentricity distribution for $\alpha =\SI {115}{\km \per \s }, \beta =\SI {15}{\km \per \s }$.}}{63}{figure.caption.45}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces The peak of the event rate $\mathcal {R}(t)$ as a function of $\alpha $ and $\beta $.}}{64}{figure.caption.46}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces The event rate $\mathcal {R}(z)$ for a region surrounding $\alpha =330, \beta =-70$ on \textsc {FineGrid}.}}{65}{figure.caption.47}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces The locations of the $\sim 9000$ stars in the night sky visible to the naked eye.}}{71}{figure.caption.49}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The chemical composition of each star as a function of the stellar radius for the donor and accretor at the five key stages of the binary's lifetime.}}{45}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces An HR diagram showing the evolution of our model both with and without the variable accretion prescription.}}{46}{figure.caption.41}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {D.1}{\ignorespaces The period-eccentricity distributions of populations governed by Bray kicks across the \acrshort {ligo} \acrshort {o3} contour.}}{88}{figure.caption.51}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces A schematic of how \textsc {FineGrid} and \textsc {WideGrid} are related.}}{55}{figure.caption.43}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces The effect of varying $\mathrm {d}e$ in \autoref {eq:discrete_sum} on the coalescence time.}}{58}{figure.caption.44}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces The effect of varying $\mathrm {d}e$ in \autoref {eq:discrete_sum} on the runtime and performance.}}{59}{figure.caption.45}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces The merger rate as a function of kick parameters $\alpha $ and $\beta $.}}{60}{figure.caption.46}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces The \acrshort {pdf} and \acrshort {cdf} of the distributions using kicks from \citet {Hobbs:2005, Verbunt:2017, Bray:2018, Willcox:2021}.}}{63}{figure.caption.48}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces The \acrshort {ks} statistic for \textsc {FineGrid} and \textsc {WideGrid}.}}{64}{figure.caption.49}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces The \acrshortpl {pdf} and \acrshortpl {cdf} of four systems, alongside the Hobbs \acrshort {cdf} and \citet {Willcox:2021} \acrshort {cdf}.}}{65}{figure.caption.50}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces The four constraints we apply overlaid on our \textsc {FineGrid} parameter space.}}{68}{figure.caption.51}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces The \acrshort {cdf} for a population of isolated pulsars and the period-eccentricity distribution for $\alpha =\SI {115}{\km \per \s }, \beta =\SI {15}{\km \per \s }$.}}{69}{figure.caption.52}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces The peak of the event rate $\mathcal {R}(t)$ as a function of $\alpha $ and $\beta $.}}{70}{figure.caption.53}%
+\contentsline {figure}{\numberline {6.11}{\ignorespaces The event rate $\mathcal {R}(z)$ for a region surrounding $\alpha =330, \beta =-70$ on \textsc {FineGrid}.}}{71}{figure.caption.54}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {D.1}{\ignorespaces The period-eccentricity distributions of populations governed by Bray kicks across the \acrshort {ligo} \acrshort {o3} contour.}}{90}{figure.caption.57}%
 \addvspace {10\p@ }

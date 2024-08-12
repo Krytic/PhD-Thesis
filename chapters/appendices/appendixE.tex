@@ -9,12 +9,12 @@ In this appendix we list the default parameters chosen for our binary evolution 
     \toprule
        Parameter & Value     & Comment   &   Parameter & Value     & Comment   &   Parameter & Value     & Comment   \\
     \midrule
-             NM2 & 199       &           &         ICL & 1         &           &         IT1 & 40        &           \\
+             NM2 & 199       & Meshpoints &         ICL & 1         &           &         IT1 & 40        &           \\
              ION & 2         &           &         IT2 & 20        &           &         IAM & 1         &           \\
              JIN & 15        &           &         IOP & 5         &           &         OUT & 15        &           \\
             INUC & 0         &           &         NCH & 3         &           &         IBC & 0         &           \\
               JP & 1         &           &         ICN & 0         &           &         ITH & 1         &           \\
-            IML1 & 5         &           &          IX & 1         &           &        IML2 & 5         &           \\
+            IML1 & 5         & Mass loss (*1) &     IX & 1         &           &        IML2 & 5         & Mass loss (*2) \\
               IY & 1         &           &       ISGTH & 0         &           &          IZ & 1         &           \\
              IMO & 0         &           &       IMODE & 2         &           &       IDIFF & 0         &           \\
            NWRT1 & 100       &           &         EPS & $10^{-6}$ &           &       NWRT2 & 1         &           \\
@@ -50,10 +50,27 @@ In this appendix we list the default parameters chosen for our binary evolution 
             IVMS & 0         &           &        TRC2 & 0         &           &        MWTS & 0         &           \\
             IAGB & 0         &           &      ISGFAC & 0         &           &    FACSGMIN & 0.01      &           \\
          SGTHFAC & 0         &           &      ISTART & 0         &           &         HKH & 1.0       &           \\
-             GFF & 10.0      &           &       NNMOD & 0         &           &        CEPR & 0         &           \\
+             GFF & 10.0      & Removed   &       NNMOD & 0         &           &        CEPR & 0         & \gls{cee} prescription \\
          ALPHACE & 1.0       &           &           - & -         & -         &           - & -         & -         \\
     \bottomrule
      \end{tabular}
     \label{tab:general_initial_conditions_cont}
     \contcaption{Continued}
 \end{table}
+
+The possible mass loss prescriptions (IML1/IML2) are:
+
+\begin{enumerate}[start=0]
+  \item No mass loss
+  \item Reimers
+  \item Blöcker
+  \item Vassiladis \& Wood
+  \item Vink (broken)
+  \item Vink
+  \item Vink (slow-WR)
+  \item Vink (no-WR)
+  \item unimplemented
+  \item target-ML
+\end{enumerate}
+
+\todo{cite >:)}

@@ -58,7 +58,10 @@
 \printglossary[type=\acronymtype, nonumberlist]
 
 \listoftodos
+\ifx\supervisorcopy\undefined
+\else
 \listofepigraphs
+\fi
 
 \foreach \i in {00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, ...,19} {%
     \edef\DecFileName{declaration_forms/Chapter\i.pdf}%     The % here are necessary to eliminate any

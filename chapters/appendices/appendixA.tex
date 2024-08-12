@@ -1,43 +1,28 @@
-% !TEX root = ../main.tex
+% !TEX root = ../../main.tex
 \chapter{A brief history of astronomy}\label{chap:history_of_astronomy}
-
-\section{The night sky}
-
-There are approximately 9000 stars visible in the night sky to the naked eye (with magnitude lower than 6.5), across both hemispheres \citep{Hoffleit:1964}, which are displayed in \autoref{fig:naked_night_sky}. The dark-adapted eye can see approximately as far as $\eta$ Carinae,\footnote{This is a debated topic; we use the definition that a ``star'' includes binaries and that the star is in \citet{Hoffleit:1964}, which rules out V762 Cas, the other commonly held ``farthest star''.} which is only approximately \SI{2300}{\pc} away.
-
-\begin{figure}[!htbp]
-    \centering
-    \includegraphics[width=\textwidth]{images/Introduction/NightSkyMap.png}
-    \caption[The locations of the $\sim9000$ stars in the night sky visible to the naked eye.]{The locations of the $\sim9000$ stars in the night sky visible to the naked eye, as reported in \citet{Hoffleit:1964}. The colors are computed by converting the B-V color indices to temperatures using the fits in \citet{ballesteros_new_2012}, and then converted to RGB via the algorithm in this StackOverflow post: \url{https://stackoverflow.com/a/45497817}. Transparency correlates to the magnitude of the stars; fainter stars (higher magnitudes) have high transparency. The Southern Cross (Crucis) is shown fully opaque in blue towards the bottom left of the plot as a point of reference, and $\eta$ Carinae is shown fully opaque in black in the bottom right.}
-    \label{fig:naked_night_sky}
-\end{figure}
-
-\SI{2300}{\pc} pales in comparison to the size of the Galaxy, which is approximately \SI{26.8}{\kilo\pc} in diameter \citep{Goodwin:1998}, which in turn pales in comparison to the Local Group at $\sim$\SI{3}{\mega\pc} \citep{Redd:2018}, and the observable Universe at \SI{28.5}{\giga\pc} \citep{Bars:2010}. There are, in addition, $\sim1.7\times10^{22}$ stars in the observable Universe, assuming $1.7\times10^{11}$ galaxies, with approximately $10^{11}$ stars in each \citep{Marov:2015}. Thus, the birth, evolution, and death of stars is of fundamental importance to understanding the local structure and evolution of astrophysical objects on any scale.
-
-\section{Cultural perspectives on astronomy}
 
 \mediaepigraph{If the stars should appear one night in a thousand years, how would men believe and adore; and preserve for many generations the remembrance of the city of God which had been shown! But every night come out these envoys of beauty, and light the universe with their admonishing smile.}{Nature}{Ralph Waldo Emerson}
 
-Observational astronomy can essentially be traced back to the earliest cultures. Babylonia knew of Halley's comet and tracked observations of it as late as 87 BCE \citep{stephenson_records_1985}. Records of eclipses in Chinese culture exist as far back as 1600 BCE \citep{fang_past_2015}. Knowledge of the movements of stars guided Polynesian wayfarers as they crossed the South Pacific \citep{buck_vikings_1938, hamacher_first_2022}. Even in the arts, the knowledge of the lunar perigee was written into \textit{Othello} by Shakespeare:
+Observational astronomy can essentially be traced back to the earliest cultures. Babylonia knew of Halley's comet and tracked observations of it as late as 87 BCE \citep{Stephenson:1985}. Records of eclipses in Chinese culture exist as far back as 1600 BCE \citep{Fang:2015}. Knowledge of the movements of stars guided Polynesian wayfarers as they crossed the South Pacific \citep{Buck:1938, Hamacher:2022}. Even in the arts, the knowledge of the lunar perigee was written into \textit{Othello} by Shakespeare:
 
 \begin{fanciful}
     It is the very error of the moon; \\
     She comes more near the earth than she was wont, \\
     And makes men mad.
     \begin{flushright}
-        -- \citet{shakespeare_othello_1603}
+        -- \citet{Shakespeare:1603}
     \end{flushright}
 \end{fanciful}
 
 Knowledge of oceanic tides was posited by Ptolemy, writing in \textit{Tetrabiblos} that
 
-\fancifulepigraph{\greekscript ἀμπώτεις καὶ αἱ παλίρροιαι, καὶ αἱ τῶν πνευμάτων δὲ τροπαὶ μάλιστα περὶ τὰς τοιαύτας τῶν φωτῶν κεντρώσεις ἀποτελοῦνται πρὸς οὓς ἂν τῶν ἀνέμων ἐπὶ τὰ αὐτὰ τὸ πλάτος τῆς σελήνης τὰς προσνεύσεις ποιούμενον καταλαμβάνηται.}{For the hour by hour intensifications and relaxations of the weather vary in response to such positions of the stars as these, in the same way that the ebb and flow of the tide respond to the phases of the moon, and the changes in the air-currents are brought about especially at such appearances of the luminaries at the angles, in the direction of those winds towards which the latitude of the moon is found to be inclining.}{ptolemy_2005_tetrabiblos}{ptolemy_1940_tetrabiblos}
+\fancifulepigraph{\greekscript ἀμπώτεις καὶ αἱ παλίρροιαι, καὶ αἱ τῶν πνευμάτων δὲ τροπαὶ μάλιστα περὶ τὰς τοιαύτας τῶν φωτῶν κεντρώσεις ἀποτελοῦνται πρὸς οὓς ἂν τῶν ἀνέμων ἐπὶ τὰ αὐτὰ τὸ πλάτος τῆς σελήνης τὰς προσνεύσεις ποιούμενον καταλαμβάνηται.}{For the hour by hour intensifications and relaxations of the weather vary in response to such positions of the stars as these, in the same way that the ebb and flow of the tide respond to the phases of the moon, and the changes in the air-currents are brought about especially at such appearances of the luminaries at the angles, in the direction of those winds towards which the latitude of the moon is found to be inclining.}{Ptolemy:2005}{Ptolemy:tetrabiblos}
 
 % (original work \citet{ptolemy_2005_tetrabiblos}, summary provided by \citet{tabarroni_1989})
 
 This knowledge flowed through to Dante, who wrote in the third part of the Divine Comedy, \textit{Paradiso}:
 
-\fancifulepigraph{E come 'l volger del ciel de la luna \\ cuopre e discuopre i liti sanza posa, \\ così fa di Fiorenza la Fortuna:}{And, as the turning of the lunar sphere covers \\ and endlessly uncovers the edges of the shore, \\ thus does fortune deal with Florence.}{dante_paradiso_1317}{corbett_vertical_2016}
+\fancifulepigraph{E come 'l volger del ciel de la luna \\ cuopre e discuopre i liti sanza posa, \\ così fa di Fiorenza la Fortuna:}{And, as the turning of the lunar sphere covers \\ and endlessly uncovers the edges of the shore, \\ thus does fortune deal with Florence.}{Dante:1317}{Corbett:2016}
 
 In religious scripture, celestial navigation has oft been a fixture, such as in Chapter 2 of the Gospel according to Matthew:
 
@@ -46,14 +31,14 @@ In religious scripture, celestial navigation has oft been a fixture, such as in 
     2:8 -- And he sent them to Bethlehem, and said, Goe, and search diligently for the yong child, and when ye haue found him, bring me word againe, that I may come and worship him also. \\
     2:9 -- When they had heard the King, they departed, and loe, the Starre which they saw in the East, went before them, till it came and stood ouer where the young childe was.
     \begin{flushright}
-        -- \citet{kingjames1611}
+        -- \citet{Various:1611}
     \end{flushright}
 \end{fanciful}
 
 \section{The astronomical reneissance of the 17th - 21st centuries}
 
-Despite this deep cultural connection to the stars, what we would now call Astronomy is a somewhat recent invention. Arguably it arose in the 16th century CE with Copernicus proposing the heliocentric model of the solar system, which was confirmed by Galileo in the 17th century CE \citep{carroll_introduction_2017} -- although Galileo's claims did result in his being convicted of heresy for 300 years.
+Despite this deep cultural connection to the stars, what we would now call Astronomy is a somewhat recent invention. Arguably it arose in the 16th century CE with Copernicus proposing the heliocentric model of the solar system, which was confirmed by Galileo in the 17th century CE \citep{Carroll:2017} -- although Galileo's claims did result in his being convicted of heresy for 300 years.
 
-The early 20th century saw a veritable renaissance in both the observational and theoretical spheres. On the one hand, developments such as the theories of Special Relativity in 1905 \citep{einstein_zur_1905}, \gls{gr} in 1917 \citep{einstein_kosmologische_1917}, and the predictions of gravitational waves \citep{poincare_sur_1906, einstein_naherungsweise_1916} led to theoretical revolutions. On the other hand, the innovations of \citet{payne_stellar_1925} in showing that stars are composed of mostly Hydrogen and Helium, \citet{baade_super-novae_1934} in distinguishing ``super-novae'' from ``common novae'', \citet{hoyle_synthesis_1946} in developing the foundation of the nuclear reaction of elements heavier than Hydrogen in stars, \citet{salpeter_luminosity_1955} in developing the \gls{imf}, \citet{burbidge_synthesis_1957} in truly developing the theory of stellar nucleosynthesis, \citet{henyey_early_1955} and \citet{hayashi_stellar_1961} in exploring the pre-main sequence evolution of stars were key to kickstarting entire branches of astronomy such as spectroscopy and computational astrophysics.
+The early 20th century saw a veritable renaissance in both the observational and theoretical spheres. On the one hand, developments such as the theories of Special Relativity in 1905 \citep{Einstein:1905}, \gls{gr} in 1917 \citep{Einstein:1917}, and the predictions of gravitational waves \citep{Poincare:1906, Einstein:1916} led to theoretical revolutions. On the other hand, the innovations of \citet{Payne:1925} in showing that stars are composed of mostly Hydrogen and Helium, \citet{Baade:1934} in distinguishing ``super-novae'' from ``common novae'', \citet{Hoyle:1946} in developing the foundation of the nuclear reaction of elements heavier than Hydrogen in stars, \citet{Salpeter:1955} in developing the \gls{imf}, \citet{Burbidge:1957} in truly developing the theory of stellar nucleosynthesis, \citet{Henyey:1955} and \citet{Hayashi:1961} in exploring the pre-main sequence evolution of stars were key to kickstarting entire branches of astronomy such as spectroscopy and computational astrophysics.
 
-The pace of discovery of new and exotic astronomical phenomena has not slowed into the 21st century. Thorne-\.{Z}ytkow objects -- giant stars with Neutron star cores \citep{thorne_stars_1977} -- once only existed as theoretical curiosities, yet now have credible observational candidates in \citet{levesque_discovery_2014}. The aforementioned gravitational waves were detected in 2015  \citep{ligo_scientific_collaboration_and_virgo_collaboration_observation_2016}, a century after they were demonstrated by \citet{einstein_naherungsweise_1916} to be a central prediction of \gls{gr}. More recently, \citet{lau_nested_2022} directly imaged 17 carbon-rich dust rings around WR140 with \gls{jwst}, enriching the \gls{ism} with carbon-rich compounds. In the coming years, the Vera C. Rubin Observatory \citep{ivezic_lsst_2019} and \gls{lisa} are expected to vastly increase the number of short-period eclipsing double white dwarfs \citep{burdge_88_2020}, with the latter able to detect gravitational waves with frequencies between \SI{0.1}{\milli\hertz} and \SI{1}{\hertz} \citep{amaro-seoane_low-frequency_2012}, compared to the $\sim \SI{10}{\hertz}-\SI{1000}{\hertz}$ that \gls{lvk} can detect \citep{schmitz_new_2021}. The stochastic gravitational-wave background was detected by \citet{agazie_nanograv_2023,antoniadis_second_2023,reardon_search_2023,xu_searching_2023}, via a search of pulsar-timing arrays.
+The pace of discovery of new and exotic astronomical phenomena has not slowed into the 21st century. Thorne-\.{Z}ytkow objects -- giant stars with Neutron star cores \citep{Thorne:1977} -- once only existed as theoretical curiosities, yet now have credible observational candidates in \citet{Levesque:2014}. The aforementioned gravitational waves were detected in 2015  \citep{Ligo_scientific_collaboration_and_virgo_collaboration:2016}, a century after they were demonstrated by \citet{Einstein:1916} to be a central prediction of \gls{gr}. More recently, \citet{Lau:2022} directly imaged 17 carbon-rich dust rings around WR140 with \gls{jwst}, enriching the \gls{ism} with carbon-rich compounds. In the coming years, the Vera C. Rubin Observatory \citep{Ivezic:2019} and \gls{lisa} are expected to vastly increase the number of short-period eclipsing double white dwarfs \citep{Burdge:2020}, with the latter able to detect gravitational waves with frequencies between \SI{0.1}{\milli\hertz} and \SI{1}{\hertz} \citep{Amaro-seoane:2012}, compared to the $\sim \SI{10}{\hertz}-\SI{1000}{\hertz}$ that \gls{lvk} can detect \citep{Schmitz:2021}. The stochastic gravitational-wave background was detected by \citet{Agazie:2023, Antoniadis:2023, Reardon:2023, Xu:2023}, via a search of pulsar-timing arrays.
