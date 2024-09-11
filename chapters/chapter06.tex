@@ -7,7 +7,7 @@
 
 \epigraph{If you torture the data enough, they will confess.}{Salvatore Vitale}
 
-The terminus of a massive star's life is a core-collapse supernova, where the hydrostatic equilibrium between the pressure of the star and its self-gravity is broken, and the star collapses in on itself. Once the star reaches its minimum radius, it rebounds, ejecting an amount of mass we denote $M_\text{ej}$ from the star and leaving a remnant of mass $M_\text{rem}$ behind. If the ejection is asymmetric, the collapse endows the nascent remnant with a velocity $v_\text{k}$ whose overall direction is antialigned to the more massive ejecta. This motion is termed a natal supernova kick.
+The terminus of a massive star's life is a core-collapse supernova, when the hydrostatic equilibrium between the pressure of the star and its self-gravity is broken, and the stellar core collapses in on itself. Once the star reaches nuclear densities, neutron degeneracy is able to stabilise the remnant, causing a shockwave to propagate outwards from the core. The energy released is roughly an order of magnitude greater than the binding energy of the star \citep{Eldridge:2018}, resulting in the ejection of an amount of mass we denote $M_\text{ej}$ and leaving a remnant of mass $M_\text{rem}$ behind. If the ejection is asymmetric, the collapse endows the nascent remnant with a velocity $v_\text{k}$ whose overall direction is antialigned to the more massive ejecta. This motion is termed a natal supernova kick.
 
 Given an observation of the proper velocity of a compact remnant, it is in principle possible to trace its motion back and ascertain its kick velocity. However, this is not necessarily a straightforward endeavour. If the proper velocity is high and the remnant old, it has travelled quite a distance from its explosion site to be located at the point the observation has been taken. In addition, the star has potentially had its proper velocity modified by gravitational attraction from either other runaway stars or its host galaxy's potential. One would require the exact location in 3D space as well as the 3D velocity and remnant age in order to ascertain the motion, but from there the inverse problem becomes straightforward.
 
@@ -23,7 +23,7 @@ for free parameters $\alpha$ and $\beta$ (both measured in $\si{\km\per\second}$
 
 This parameterization introduces, effectively, four free parameters in $\alpha, \beta, \theta, \phi$ (the latter two being azimuthal and equatorial angles of the ejecta mass). We assume that the preferential axis is sampled uniformly across the $4\pi$ steradians of the star, and that our only two free parameters are $\alpha$ and $\beta$. It is pertinent to note two things due to this assumption: firstly, we are not assuming that the ejection occurs along one axis and that the kick is aligned along a different, random, axis. Rather, we are assuming that the asymmetric ejection occurs along a randomly sampled axis and that the kick is antialigned to that. The second note, explored further in \autoref{sec:natal_kick_prescriptions}, is that there is considerable uncertainty around the nature of the kick and the precise mechanism that causes it to eject along a given axis. This is the reason we sample the kick direction uniformly, though we will simulate sufficiently many systems (on the order of $\mathcal{O}(10^{12})$) that this will be marginalised over.
 
-The existence of two free parameters, $\alpha$ and $\beta$, mean that a choice on the values must be made. The ``traditional'' way to choose these parameters, as outlined in \citet{Bray:2016, Bray:2018}, is to refine them based on isolated pulsar velocities. This methodology, however, has significant drawbacks. Notably, the reliance on one observation can engender biases in the result at the expense of no longer predicting accurate results for other observables. For instance, in the limit of \glspl{ussne} where the ejecta-remnant mass ratio becomes small, the fiducial kick in \citet{Bray:2018} would produce kick velocities that are strongly negative (indicating a strong kick aligned with the direction of motion of the ejecta), contrasted with the weak kicks we expect from these supernovae \citep[e.g.,][]{Willcox:2021}. It becomes evident that a new pipeline is needed, whereupon more constraints than simply pulsar velocities are tested. In this Chapter, we outline four such tests that form the basis of the work of \citet{Richards:2023}. These tests -- refining on observed \gls{lvk} merger rates, period-eccentricity distributions, isolated pulsar velocities, and production of \glspl{ussne} -- allow us to narrow the parameter space significantly, with the promise of future refinement with more observations (such as through \gls{o4}).
+The existence of two free parameters, $\alpha$ and $\beta$, mean that a choice on the values must be made. The ``traditional'' way to choose these parameters, as outlined in \citet{Bray:2016, Bray:2018}, is to refine them based on isolated pulsar velocities. This methodology, however, has significant drawbacks. Notably, the reliance on one observation can engender biases in the result at the expense of no longer predicting accurate results for other observables. For instance, in the limit of \glspl{ussne} where the ejecta-remnant mass ratio becomes small, the fiducial kick in \citet{Bray:2018} would produce kick velocities that are strongly negative (indicating a strong kick aligned with the direction of motion of the ejecta), contrasted with the weak kicks we expect from these supernovae \citep[e.g.,][]{Willcox:2021}. It becomes evident that a new series of empirical tests are needed, whereupon more constraints than simply pulsar velocities are tested. In this Chapter, we outline four such tests that form the basis of the work of \citet{Richards:2023}. These tests -- using observed \gls{lvk} merger rates, period-eccentricity distributions of \glspl{bns}, isolated pulsar velocities, and production of \glspl{ussne} -- allow us to narrow the parameter space significantly, with the promise of future refinement with more observations (such as through \gls{lvk} \gls{o4}).
 
 \subsection{Parameter space}
 
@@ -79,7 +79,7 @@ On the other hand, the Hobbs kick velocity is given by the \gls{pdf}
 
 where $\sigma=\SI{265}{\km\per\s}$ is the distribution parameter found by fit in \citet{Hobbs:2005} to the velocities of 233 pulsars.
 
-\subsection{The \codename{Takahe} binary evolution code}\label{chap:numerical_methods_takahe}
+\subsection{The \codename{Takahe} orbital evolution code}\label{chap:numerical_methods_takahe}
 
 As part of this work, we have developed the \codename{Takahe} binary evolution code, which solves the coupled equations of motion \autoref{eq:dadt} and \autoref{eq:dedt}. Originally, to facilitate the equations being solved rapidly, we wrote the code as a \codename{Python} wrapper to a \codename{Julia} \citep{Bezanson:2017} integrator. However, the \codename{PyJulia} library \citep{Arakaki:2023} proved to be fragile\footnote{It requires custom installation procedures (so cannot be included as a dependency in e.g. a \codename{Python} package), would hang with no discernible output or ability to ascertain why, and could not handle KeyboardInterrupt exceptions in \codename{Python}} and is not in fact supported officially on recent Python versions. To facilitate the potential interoperability between \codename{Kaitiaki} and \codename{Takahe} (and to remove a prolonged loading time when the \codename{Julia} runtime was loaded, given that \codename{PyJulia} precompiles our modules), we elected to rewrite the core integrator into \codename{Python} and to optimise it using traditional \codename{Python} methods instead.
 
@@ -139,11 +139,16 @@ Selecting the value to calibrate to is not a straightforward task. Although the 
 
 \section{Period-Eccentricity Distributions}\label{sec:per_ecc_dist}
 
-Since in the absence of any mass transfer the motion of two compact binaries is wholly dependent on their initial separation and orbital eccentricity, they trace out paths in a two-dimensional phase space. In general, since binaries circularise over time, and by the emission of gravitational waves their orbits shrink, a binary will start in the upper-right region of period-eccentricity space, and evolve towards the bottom left. As a result, given a population of binary stars, we can design a density plot, where the density is effectively the likelihood of a binary selected at random having the parameters we sample.
+Since in the absence of any mass transfer the motion of two compact binaries is wholly dependent on their initial separation and orbital eccentricity, they trace out paths in a two-dimensional phase space. In general, since binaries circularise over time, and by the emission of gravitational waves their orbits shrink, a binary will start in the high-period, high-eccentricity region of period-eccentricity space, and evolve towards the low-period, low-eccentricity region. As a result, given a population of binary stars, we can design a density plot, where the density is effectively the likelihood of a binary selected at random having the parameters we sample.
 
-\subsection{Log-Likelihood calculations}\label{sec:log-likelihood}
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{images/NatalKicks/PE_dists_six_panel.png}
+    \caption[The period-eccentricity distributions for six selected \citet{Bray:2016} kicks.]{The period-eccentricity distributions for six selected \citet{Bray:2016} kicks. Shown are the kicks for $\alpha=\SI{180}{\km\per\s}, \beta=\SI{10}{\km\per\s}$ as the system with the highest $\ln\mathcal{K}$ across the \gls{ligo} contour, $\alpha=\SI{170}{\km\per\s}, \beta=\SI{-10}{\km\per\s}$ as the lowest, and the balance to illustrate structural differences. White regions show regions where no systems evolve to. The white line represents a constant-time coalescence time of the Hubble time ($\sim\SI{13.8}{\giga\year}$), computed using \citet{Mandel:2021a}. The cyan diamonds are the observed systems enumerated in \autoref{tab:observed_BNSes}. In white text are the values of $(\alpha,\beta)$, and the $\ln\mathcal{K}$ values for each plot.}
+    \label{fig:6panel-pe_dists}
+\end{figure}
 
-Computationally, for each binary in our sample, we trace its path through period-eccentricity space, and at every timestep we add $w\times{\rm d}t$ to the density plot, where ${\rm d}t$ is the timestep, and $w$ is the weight term output from the \codename{Tui} code proportional to the \gls{imf} weight (where the constant of proportionality is related to the uniformly sampled kick direction). The result of this computation, for the parameter values that lie along the \gls{ligo} contour, are shown in \autoref{chap:ligo_contour_results}. Given a catalogue of $N$ (observed) binary stars, we can then compute the likelihood of the model as
+Computationally, for each binary in our sample, we trace its path through period-eccentricity space, and at every timestep we add $w\times{\rm d}t$ to the density plot, where ${\rm d}t$ is the timestep, and $w$ is the weight term output from the \codename{Tui} code proportional to the \gls{imf} weight (where the constant of proportionality is related to the uniformly sampled kick direction). The result of this computation, for the parameter values that lie along the \gls{ligo} contour, are shown in \autoref{chap:ligo_contour_results}. We also show the same result in \autoref{fig:6panel-pe_dists}.  Given a catalogue of $N$ (observed) binary stars, we can then compute the likelihood of the model as
 
 \begin{equation}
     \ln \mathcal{L} = \sum_{n=0}^N \ln p\left(\ln P_n, e_n\right),\label{eq:log_likelihood_summand}
@@ -156,6 +161,8 @@ where $p\left(\ln P_n, e_n\right)$ is the content of the density plot at the loc
 \end{equation}
 
 where $\mathcal{L}_\text{Hobbs}$ is the log-Likelihood of the Hobbs kick. We use a catalogue of fourteen \gls{bns} systems originally compiled in \citet{Vigna-gomez:2018}, shown in \autoref{tab:observed_BNSes}. From this catalogue, we sample the period-eccentricity distribution at that space and take that as the probability of observing that binary, thus allowing us to use the content of the period-eccentricity distribution as the $\ln p$ term in our summand of \autoref{eq:log_likelihood_summand}.
+
+By doing this we effectively construct a Bayes-factor map, where $\ln\mathcal{K}$ can be shown evaluated at every combination of $\alpha$ and $\beta$. We term this value $\ln\mathcal{K}_{\alpha\beta}$. This is shown in \autoref{fig:log_bayes_both} for both of our considered grids. In general we see that approximately 60\% of \textsc{FineGrid} has a positive log-Bayes factor (indicating any level of support of the model compared to Hobbs), whereas approximately 40\% of \textsc{WideGrid} has a positive log-Bayes factor. In a Bayesian analysis, the constraint that $\ln\mathcal{K} \geq 3.4$ indicates strong support for the model contrasted against the reference \citep[i.e.,][]{Hobbs:2005}, which contains approximately 9.1\% of \textsc{FineGrid} and 4.4\% of \textsc{WideGrid}.
 
 \begin{table}
     \centering
@@ -178,6 +185,13 @@ where $\mathcal{L}_\text{Hobbs}$ is the log-Likelihood of the Hobbs kick. We use
     \label{tab:observed_BNSes}
 \end{table}
 
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{images/NatalKicks/LogBayesFactors_Both.png}
+    \caption[The $\ln\mathcal{K}$ values across $\alpha-\beta$ space.]{The $\ln\mathcal{K}$ values across $\alpha-\beta$ space. The orange line demarcates $\ln\mathcal{K}=3.4$, which in a Bayesian test represents conclusive evidence in favour of the distribution compared to the \citet{Hobbs:2005} kick.}
+    \label{fig:log_bayes_both}
+\end{figure}
+
 \section{Single-Star Kick Velocities}\label{sec:ssk_vels}
 
 The traditional methodology for refining a kick prescription is to consider the velocity distribution of isolated pulsars. Thus, given a suitable observational dataset, we would be able to compute the expected kick distribution and compare it, via a \gls{ks} test, to the observed data set. The \gls{ks} statistic between distributions $\mathcal{F}$ (the observed distribution) and $\mathcal{G}$ (the compared distribution) is given by
@@ -188,7 +202,7 @@ The traditional methodology for refining a kick prescription is to consider the 
 
 where cdf means the \gls{cdf} function, defined as the integral of the \gls{pdf}. Given the \gls{cdf} is bounded between 0 and 1 inclusive, the \gls{ks} statistic is also bounded between this region. A \gls{ks} statistic of 1 means that the compared distribution diverges perfectly from the observed distribution, whereas a \gls{ks} statistic of 0 means it matches perfectly. This test of divergence was the refinement performed in \citet{Bray:2016, Bray:2018}, hence we select this (with an independently generated dataset to those works) to be consistent with prior work.
 
-\subsection{Pulsar dataset}
+\subsection{Pulsar velocity dataset}
 
 We use the same dataset of 81 pulsars from \citet{Willcox:2021}, and filter the dataset in the same way that they do. We remove millisecond pulsars, pulsars in globular clusters, and pulsars known to be in binaries, in order to homogenise the dataset. The \gls{pdf} and \gls{cdf} of \citet{Willcox:2021}, as well as those generated from \citet{Hobbs:2005} and \citet{Bray:2018}, is displayed in \autoref{fig:bray_vs_hobbs_vs_willcox_pdf}.
 
@@ -196,7 +210,7 @@ This homogenised dataset gives the transverse velocities of each pulsar alongsid
 
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width=\textwidth]{images/NatalKicks/bray_vs_hobbs_pdf.png}
+    \includegraphics[width=\textwidth]{images/NatalKicks/bray_vs_hobbs.png}
     \caption[The \acrshort{pdf} and \acrshort{cdf} of the distributions using kicks from \citet{Hobbs:2005, Verbunt:2017, Bray:2018, Willcox:2021}.]{The \gls{pdf} and \gls{cdf} of the distributions using kicks from \citet{Hobbs:2005, Verbunt:2017, Bray:2018, Willcox:2021}. \citet{Hobbs:2005} has a closed-form expression, whereas the others are computed empirically, hence the Bray and Willcox \acrshortpl{cdf} are less smooth than that of Hobbs. The two dashed lines indicate where and how the \gls{ks} statistic is measured for the associated distribution. The yellow region indicates the region for which $v_\text{kick}\geq v_\text{TGRV}$, the transverse Galactic rotation velocity of the Sun, $\sim\SI{230}{\km\per\s}$.}
     \label{fig:bray_vs_hobbs_vs_willcox_pdf}
 \end{figure}
@@ -210,6 +224,8 @@ The \citet{Hobbs:2005} kick has a closed-form expression for the \gls{pdf} $P(v_
     \label{fig:ks_test_with_hobbs}
 \end{figure}
 
+\subsection{Comparison}
+
 \autoref{fig:ks_test_with_hobbs} shows the \gls{ks} statistic as a function of $\alpha$ and $\beta$ across our two parameter spaces. We also show the \gls{ks} statistic of the Hobbs kick, which has a value of 0.34. We find in general a valley of models with good agreement to \citet{Willcox:2021}, and find that the global minimum \gls{ks} statistic is at $\alpha=100, \beta=-180$ -- agreeing with the prior work of \citet{Bray:2018} (who find $\alpha=100, \beta=-170$).
 
 \begin{figure}[!htbp]
@@ -221,7 +237,7 @@ The \citet{Hobbs:2005} kick has a closed-form expression for the \gls{pdf} $P(v_
 
 We also show in \autoref{fig:some_individual_pdfs} a selection of four \glspl{pdf}, alongside their associated \gls{cdf} and the \glspl{cdf} for \citet{Willcox:2021} and the Hobbs kick. We note that the numerical values shown in \autoref{fig:some_individual_pdfs} differs somewhat from those shown in \citet{Richards:2023}. This was due to a minor bug in the code incorrectly labelling the KS statistics for the figure. The actual result of the paper does not change with the correction of the bug, however the values reported in Figure 5 of \citet{Richards:2023} do change.
 
-The four values we present on the left side of \autoref{fig:some_individual_pdfs} correspond to $\alpha = \SI{100}{\km\per\s}, \beta=\SI{-170}{\km\per\s}$ for the fiducial Bray kick, $\alpha = \SI{180}{\km\per\s}, \beta = \SI{10}{\km\per\s}$ to represent the system with the highest $\ln\mathcal{K}$ value from \autoref{sec:log-likelihood}, $\alpha = \SI{170}{\km\per\s}, \beta = \SI{-10}{\km\per\s}$ the lowest, and $\alpha = \SI{40}{\km\per\s}, \beta = \SI{0}{\km\per\s}$ the system with low $\alpha$ and zero $\beta$, corresponding to a kick that would \textit{a priori} generate logical velocities in the \glspl{ussne} limit.
+The four values we present on the left side of \autoref{fig:some_individual_pdfs} correspond to $\alpha = \SI{100}{\km\per\s}, \beta=\SI{-170}{\km\per\s}$ for the fiducial Bray kick, $\alpha = \SI{180}{\km\per\s}, \beta = \SI{10}{\km\per\s}$ to represent the system with the highest $\ln\mathcal{K}$ value from \autoref{sec:per_ecc_dist}, $\alpha = \SI{170}{\km\per\s}, \beta = \SI{-10}{\km\per\s}$ the lowest, and $\alpha = \SI{40}{\km\per\s}, \beta = \SI{0}{\km\per\s}$ the system with low $\alpha$ and zero $\beta$, corresponding to a kick that would \textit{a priori} generate logical velocities in the \glspl{ussne} limit.
 
 \section{Production of Ultra-Stripped Supernovae}\label{sec:ussne_production}
 
@@ -284,7 +300,7 @@ We note that there is a single peak at $\alpha=\SI{330}{\km\per\s}, \beta=\SI{-7
     \label{fig:grid_shifting_peak_zoomed}
 \end{figure}
 
-Unfortunately, there is a paucity of observational evidence to confirm whether or not the peak is truly the present day. Given that a redshift of $z=2$ corresponds to a lookback time of $t_\text{LB}=\SI{10}{\giga\year}$, we lack evidence to corroborate this prediction. The next generation of telescopes, including \gls{jwst}, may yet be able to constrain this result further. In the interim, indirect evidence may be able to be applied via the r-process enrichment history of the Milky Way. \citet{Van_de_voort:2022}, for example, finds that greater velocity natal kicks would be correlated with fewer r-process enhanced stars in the Milky Way, as higher kicks would unbind more binaries, meaning that r-process elements are no longer able to accrete onto star-forming regions.
+Unfortunately, there is a paucity of observational evidence to confirm whether or not the peak is truly the present day. Given that a redshift of $z=2$ corresponds to a lookback time of $t_\text{LB}=\SI{10}{\giga\year}$, we lack evidence to corroborate this prediction. The next generation of telescopes, including \gls{jwst}, may yet be able to constrain this result further. In the interim, indirect evidence may be able to be applied via the r-process enrichment history of the Milky Way. \citet{Van_de_voort:2022}, for example, finds that greater velocity natal kicks would be correlated with fewer r-process enhanced stars in the Milky Way, as higher kicks would unbind more binaries, meaning that r-process elements are no longer able to accrete onto star-forming regions. \citet{Kobayashi:2023} indicates
 
 \section{Chapter Summary}
 

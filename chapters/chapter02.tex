@@ -10,6 +10,13 @@ In this chapter, we provide a brief account of the evolution of a star from a th
 
 \epigraph{Nature and nature's laws lay hid in night: God said, ``Let Newton be!'' and all was light.}{Alexander Pope}
 
+\mediaepigraph{congratulations, the world is now a bunch of gas in space.\\
+but it's getting closer together.\\
+and it's getting closer together.\\
+and it's getting closer toge-\\
+\textbf{it's a star}\\
+new shit just got made!}{history of the entire world, i guess}{Bill Wurtz}
+
 From the point of view of stellar evolution, which starts in earnest at the \gls{zams}, the formation of stars is interesting but ultimately broadly unimportant. We provide a short recap of stellar formation here as scene-setting, but our stellar evolution models assume that a gas cloud has already collapsed and we have a star at its \gls{zams}.
 
 Stars are born in clouds of dust in rich H(II) regions of space. Due to inhomegeneities in the dust formation, some regions become more dense than others. When a region of this gas with adiabatic constant $\gamma$ and mean molecular weight $\mu$ reaches the so-called Jeans Mass,
@@ -64,15 +71,13 @@ These equations represent conservation of mass, hydrostatic equilibrium, energy 
     \frac{1}{\kappa} = \frac{\pi}{acT^3}\int_0^\infty \frac{1}{\kappa_\nu}\pdv{B}{T}~\mathrm{d}\nu
 \end{equation}
 
-where $B$ is the black-body intensity at frequency $\nu$ and temperature $T$. The function $\kappa_\nu$ is obtainable from nuclear physics: it is intimately related to the scattering cross-section $\sigma$:
+where $a$ is the radiation density constant ($a=\SI{7.57e-15}{\erg\per\cubic\cm\per\quartic\kelvin}$) and $B$ is the black-body intensity at frequency $\nu$ and temperature $T$. The function $\kappa_\nu$ is obtainable from nuclear physics, and is related to the scattering cross-section $\sigma_\nu = \int_0^{2\pi}\int_0^\pi \dv{\sigma}{\Omega}\sin\theta\, \mathrm{d}{\theta}\, \mathrm{d}{\phi}$. The Rosseland mean becomes
 
 \begin{equation}
-    \frac{1}{\kappa_\nu \rho} = \frac{1}{\sigma n}
+    \kappa = \frac{T^5 a c^3 k_\text{B}}{\pi h^2 \int_0^\infty \frac{\nu^4}{\left(\cosh{\left(\frac{h \nu}{T k_\text{B}} \right)} - 1\right) \kappa_\nu}\, d\nu},
 \end{equation}
 
-where $\rho$ is the mass density of the star, and $n$ is the particle number density.
-
-On the other hand, $\epsilon$ is obtainable from knowing the nuclear reactions occurring in the star's core:
+though the integral cannot be analytically solved further. On the other hand, $\epsilon$ is obtainable from knowing the nuclear reactions occurring in the star's core:
 
 \begin{equation}
     \epsilon = \sum_{i}^N \text{energy output of reaction } i
@@ -158,9 +163,11 @@ After the ignition of helium, these stars cross the so-called Hertzsprung Gap --
 
 \subsubsection{Intermediate-Mass Stars: \texorpdfstring{$\SI{2}{\msun} < M < \SI{8}{\msun}$}{Stars with between 2 and 8 times the mass of the sun}}
 
+\todo{write}
+
 \subsubsection{Massive Stars: \texorpdfstring{$\SI{8}{\msun} < M < \SI{80}{\msun}$}{Stars with between 8 and 80 times the mass of the sun}}
 
-Massive stars are the key focal objects of this study, and in many ways offer some of the most exciting phenomena we can probe. In \autoref{fig:hr_diagram_massive_stars} we show the variety of evolution that this regime has, alongside the \gls{zams} track from \SI{8}{\msun} to \SI{90}{\msun}. The key features are as follows. When a massive star exhausts its supply of hydrogen in its core and evolves off the main sequence to begin burning helium, it bypasses the Hertzsprung gap \todo{finish}
+Massive stars are the key focal objects of this study, and in many ways offer some of the most exciting phenomena we can probe. In \autoref{fig:hr_diagram_massive_stars} we show the variety of evolution that this regime has, alongside the \gls{zams} track from \SI{8}{\msun} to \SI{90}{\msun}. The key features are as follows. When a massive star exhausts its supply of hydrogen in its core and evolves off the main sequence to begin burning helium, it generally bypasses the Hertzsprung gap and evolves up the \gls{agb}. From here it generally engages in a ``blue loop'', where is remains at a roughly constant radius whilst increasing in temperature, before cooling at a slightly higher luminosity. The question of the physical process powering a blue loop is unanswered \citep{Zhao:2023}, though this thesis is unconcerned with their generation. We note that our models include blue loops, as shown in \autoref{fig:hr_diagram_massive_stars} and \autoref{fig:hr_diagram_8msun_star}.
 
 \begin{figure}[!htbp]
     \centering
@@ -175,9 +182,6 @@ Massive stars are the key focal objects of this study, and in many ways offer so
     \caption[The evolution of an \SI{8}{\msun} star.]{The evolution of an \SI{8}{\msun} star. Highlighted is the star's \acrfull{zams}, \acrfull{tams}, the blue loop, and the \acrfull{agb}. The Hertzsprung gap is also highlighted. In this particular model, numerical instabilities in the leftmost (hottest) region of the plot have been highlighted in pink. This is normally removed in postprocessing though has been left in as an illustration.}
     \label{fig:hr_diagram_8msun_star}
 \end{figure}
-
-
-\subsubsection{Very Massive Stars: \texorpdfstring{$\SI{80}{\msun} < M < \SI{300}{\msun}$}{Stars with between 80 and 300 times the mass of the sun}}
 
 \subsection{Relativistic corrections}
 
@@ -236,7 +240,7 @@ This is also not considering complications of writing the stress-energy tensor $
 
 \subsection{Stellar Atmospheres}
 
-As a final note in the evolution of a single star, we must briefly address what occurs about the photosphere of the star. A star is not a planet -- there is no firm boundary demarcating the inner of a star from the outer. The common definition of the ``surface'' of a star is the surface of last scattering (photosphere), which is the point radially in which the mean free path of a photon emitted from the core of the star becomes meaningfully long (internally, $\ell_\gamma\sim\SI{2}{\cm}$, externally, $\ell_\gamma\sim\SI{4.4}{\pc}$).\footnote{The mean free path is a function of the particle under consideration: for a neutrino, internally $\ell_\nu\sim\SI{3.68}{\pc}$ and externally $\ell_\nu\sim\SI{81}{\ronna\pc}\sim 3\times10^{18}$ times the diameter of the observable Universe.} However, outflows from the star as well as the potential interaction of a partner in a common-envelope event mean that this surface is not necessarily firm: there is no sharp turn from stellar material to empty space. Thus, the simulation of stellar atmospheres is of interest to the stellar astrophysicist. However, this introduces another rather large layer of complexity. The synthesis of a stellar spectra, for example, is not a trivial task, as well as simulating the matter content. This thesis is concerned with detailed modelling of the stellar \textit{interior}, and thus the atmosphere is an interesting sidenote, but one we shall not pursue.
+As a final note in the evolution of a single star, we must briefly address what occurs about the photosphere of the star. A star is not a planet -- there is no firm boundary demarcating the inner of a star from the outer. The common definition of the ``surface'' of a star is the surface of last scattering (photosphere), which is the point radially in which the mean free path $\ell$ of a photon emitted from the core of the star becomes meaningfully long (internally, $\ell_\gamma\sim\SI{2}{\cm}$, externally, $\ell_\gamma\sim\SI{4.4}{\pc}$).\footnote{The mean free path is a function of the particle under consideration: for a neutrino, internally $\ell_\nu\sim\SI{3.68}{\pc}$ and externally $\ell_\nu\sim\SI{81}{\ronna\pc}\sim 3\times10^{18}$ times the diameter of the observable Universe.} However, outflows from the star as well as the potential interaction of a partner in a common-envelope event mean that this surface is not necessarily firm: there is no sharp turn from stellar material to empty space. Thus, the simulation of stellar atmospheres is of interest to the stellar astrophysicist. However, this introduces another rather large layer of complexity. The synthesis of a stellar spectra, for example, is not a trivial task, as well as simulating the matter content. This thesis is concerned with detailed modelling of the stellar \textit{interior}, and thus the atmosphere is an interesting sidenote, but one we shall not pursue.
 
 \section{Supernovae}
 
@@ -245,8 +249,10 @@ As a final note in the evolution of a single star, we must briefly address what 
 \twinEpigraphs{And on the pedestal these words appear:\\
 ``My name is Ozymandias, king of kings:\\
 Look on my works, ye Mighty, and despair!''\\
-Nothing beside remains.}{Percy Bysshe Shelley, \textit{Ozymandias}}{Pallida mors {\ae}quo pulsat pede pauperum tabernas Regumque turres.\\
-Pale death knocks with the same tempo upon the huts of the poor and the towers of kings.}{Horace}
+Nothing beside remains.}{Percy Bysshe Shelley, \textit{Ozymandias}}{Pallida mors {\ae}quo pulsat pede pauperum\\
+tabernas regumque turres.\\
+Pale death knocks with the same tempo upon the\\
+huts of the poor and the towers of kings.}{Horace}
 
 A star's lifetime is, unfortunately, not infinite. The key assumption underpinning stellar evolution is that of hydrostatic equilibrium: the counterplay of gravity against outwards pressure. Whilst this equilibrium holds, the star is stable and resists explosion. It is when this equilibrium is broken -- with gravity the dominant force in this scenario -- that the star implodes in a \gls{ccsne}. From a thermodynamic perspective, as the star evolves, it shrinks as energy is bled off into the interstellar medium. This shrinkage compresses and heats the core, meaning the star's specific heat capacity is negative. This system is thermodynamically unstable, and thus every star either collapses into a remnant (c.f. black holes, neutron stars) or is sustained in some form by quantum mechanical phenomena (c.f. White Dwarfs, Thorne-\.Zytkow objects, and other exotica).
 
@@ -641,11 +647,13 @@ Mass transfer can broadly be sectioned into four main categories:
 
 Wind mass loss computations are (generally) performed using the prescription of \cite{De_jager:1988} and \citet{Vink:2001}. The precise scheme is detailed in \citet{Eldridge:2017}.\footnote{In other codes such as \textsc{Mesa}, this is referred to as the ``Dutch'' mass loss prescription} There are two critical modifications we make to their scheme.
 
-The first modification surrounds the transition into the \gls{wr} regime. Traditionally this has been a sharp transition when the surface hydrogen mass fraction becomes less than 0.4 and the surface temperature is above \SI[print-unity-mantissa=false]{1e4}{\Kelvin}. This is a reasonable approximation, though if a star reaches this phase and is \textit{not} yet a \gls{wr} star, the code will fail. To account for this we gradually turn on these enhanced \gls{wr} rates when this condition approaches, smoothing the transition.
+The first modification surrounds the transition into the \gls{wr} regime. Traditionally this has been a sharp transition when the surface hydrogen mass fraction becomes less than 0.4 and the surface temperature is above \SI[print-unity-mantissa=false]{1e4}{\kelvin}. This is a reasonable approximation, though if a star reaches this phase and is \textit{not} yet a \gls{wr} star, the code will fail. To account for this we gradually turn on these enhanced \gls{wr} rates when this condition approaches, smoothing the transition.
 
-The second modification we have made
+The second modification we have made is that if a star has a hydrogen exhausted core and begins approaching the \gls{wr} temperature range, we assume that \gls{wr} mass loss must begin and thus turn on the slowly-turning on \gls{wr} regime.
 
 \subsubsection{\acrfull{rlof}}
+
+% \mediaepigraph{Your [roeche loebe overflaew] partner deserves better traetment!}{Baron from the Baronies}{Dimension 20: Fantasy High: Sophomore Year}
 
 Matter extruded from the Lagrangian points is assumed to transfer with a mass loss rate similar to \citet{Hurley:2002}. We take
 
@@ -655,7 +663,7 @@ Matter extruded from the Lagrangian points is assumed to transfer with a mass lo
 
 Here, $k$ (referred to in our code as RMT) parameterises effectively how much of the star we permit to exist outside of its Roche lobe before it is accreted -- i.e., the voracity of \gls{rlof}. The choice of this can be somewhat arbitrary. \citet{Hurley:2002} for example took $k=\num{3e-6}\min\left\{M_1, 5\right\}^2$, where the coefficient was ``chosen by experiment to ensure that the mass transfer is steady'', and warned that for degenerate stars a more appropriate choice would be to increase this by a factor of $10^3$. Instead, we choose to adopt $k=10^3$ outright with no dependence on the mass, finding instead that this replicated other work -- allowing efficient \gls{rlof} -- best.
 
-Matter exceeding $\mathcal{L}_2$ (the outer Lagrange point) does not currently receive special treatment. The implications of $\mathcal{L}_2$ overflow are significant. This ejection will lead to unstable mass transfer, shrinking the orbit and likely inducing a \gls{cee} event \citep{Fragos:2023}. There is debate about the appropriate treatment here. \citet{Linial:2017} indexes the $\mathcal{L}_2$ rate to the $\mathcal{L}_1$ rate via an efficiency parameter. \citet{Li:2013} considers the case analogous to $\mathcal{L}_1$ outflow, where in their notation $\dv{J}{t}=-\epsilon\dot{M}_1 a_{L2}^2\omega$ (compare $\dv{J}{t}=-\beta\dot{M}_1 a_{L1}^2\omega$ for \gls{rlof} through $\mathcal{L}_1$) for controllable parameters $\beta$ and $\epsilon$.
+Matter exceeding $\mathcal{L}_2$ (the outer Lagrange point) does not currently receive special treatment. The implications of $\mathcal{L}_2$ overflow are significant. This ejection will lead to unstable mass transfer, shrinking the orbit and likely inducing a \gls{cee} event \citep{Fragos:2023}. There is debate about the appropriate treatment here. \citet{Linial:2017} indexes the $\mathcal{L}_2$ rate to the $\mathcal{L}_1$ rate via an efficiency parameter. \citet{Li:2013} considers the case analogous to $\mathcal{L}_1$ outflow, where material outflowing from $\mathcal{L}_2$ acts to retard the angular momentum. In their notation $\dv{J}{t}=-\epsilon\dot{M}_1 a_{L2}^2\omega$ (compare $\dv{J}{t}=-\beta\dot{M}_1 a_{L1}^2\omega$ for \gls{rlof} through $\mathcal{L}_1$) for controllable parameters $\beta$ and $\epsilon$. The ambiguity of treatment leads to some codes to terminate at the onset of $\mathcal{L}_2$ outflow, such as \codename{Posydon} \citep{Fragos:2023}. $\mathcal{L}_2$ outflow requires stars to be in reasonably tight orbits ($\sim\SI{2}{\day})$, which we will approach, but none of our stars will enter this regime, and thus we do not afford it special treatment.
 
 \subsubsection{Accretion}
 
@@ -726,7 +734,7 @@ The two free accretion parameters are assumed to be $\alpha_\text{W}=\frac32$ \c
     \dot{M}_\text{pre-WR} &= \sqrt{\frac{Z}{Z_\odot}}10^{\log\dot{M}_\text{de Jager}},\label{eq:pre-wr-ml}
 \end{align}
 
-where $x_1 = \frac{\log T-4.05}{0.75}$, $x_2=\frac{\log L-4.6}{2.1}$, and the coefficients $a_{ij}$ are given in Table VI of \citet{De_jager:1988}. We interpolate the bi-stability jump around \SI{25}{\kilo\Kelvin} \citep[see, for example,][]{Pauldrach:1990, Vink:1999} with the following regime. Define the constants
+where $x_1 = \frac{\log T-4.05}{0.75}$, $x_2=\frac{\log L-4.6}{2.1}$, and the coefficients $a_{ij}$ are given in Table VI of \citet{De_jager:1988}. We interpolate the bi-stability jump around \SI{25}{\kilo\kelvin} \citep[see, for example,][]{Pauldrach:1990, Vink:1999} with the following regime. Define the constants
 
 \begin{align}
     R_1 &= \left(\frac{Z}{Z_\odot}\right)^{0.13},\label{eq:R1}\\
@@ -749,7 +757,7 @@ where $x_1 = \frac{\log T-4.05}{0.75}$, $x_2=\frac{\log L-4.6}{2.1}$, and the co
     \end{cases}
 \end{equation}
 
-where $T_1=\SI{10}{\kilo\Kelvin}, T_2=\SI{12.5}{\kilo\Kelvin}, T_3=\SI{22.5}{\kilo\Kelvin}, T_4=\SI{27.5}{\kilo\Kelvin}$. This interpolation is shown in \autoref{fig:bistability}. We define
+where $T_1=\SI{10}{\kilo\kelvin}, T_2=\SI{12.5}{\kilo\kelvin}, T_3=\SI{22.5}{\kilo\kelvin}, T_4=\SI{27.5}{\kilo\kelvin}$. This interpolation is shown in \autoref{fig:bistability}. We define
 
 \begin{equation}
     \mathcal{M} = \sqrt{\frac{Z}{Z_\odot}}\times 10^{-13.6 + 1.63\log\left(\frac{L}{L_\odot}\right)+2.22\log X},

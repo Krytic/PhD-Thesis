@@ -1,44 +1,12 @@
 % !TEX root = ../../main.tex
-\chapter{A brief history of astronomy}\label{chap:history_of_astronomy}
+\chapter{Code Samples}
 
-\mediaepigraph{If the stars should appear one night in a thousand years, how would men believe and adore; and preserve for many generations the remembrance of the city of God which had been shown! But every night come out these envoys of beauty, and light the universe with their admonishing smile.}{Nature}{Ralph Waldo Emerson}
+% \pythonfile[label=demo]{Simple evolution of a \SI{10}{\msun} star}{chapters/listings/kaitiaki_demo.py}
 
-Observational astronomy can essentially be traced back to the earliest cultures. Babylonia knew of Halley's comet and tracked observations of it as late as 87 BCE \citep{Stephenson:1985}. Records of eclipses in Chinese culture exist as far back as 1600 BCE \citep{Fang:2015}. Knowledge of the movements of stars guided Polynesian wayfarers as they crossed the South Pacific \citep{Buck:1938, Hamacher:2022}. Even in the arts, the knowledge of the lunar perigee was written into \textit{Othello} by Shakespeare:
+\pythonfile[label=integrate_eoms]{The \codename{Takahe} function \mintinline{Python}{integrate_eoms()}}{chapters/listings/integrate_eoms.py}
 
-\begin{fanciful}
-    It is the very error of the moon; \\
-    She comes more near the earth than she was wont, \\
-    And makes men mad.
-    \begin{flushright}
-        -- \citet{Shakespeare:1603}
-    \end{flushright}
-\end{fanciful}
+\pythonfile[label=integrate_timescale]{The \codename{Takahe} function \mintinline{Python}{integrate_timescale()}}{chapters/listings/integrate_timescale.py}
 
-Knowledge of oceanic tides was posited by Ptolemy, writing in \textit{Tetrabiblos} that
+\todo{fix label before submission}
 
-\fancifulepigraph{\greekscript ἀμπώτεις καὶ αἱ παλίρροιαι, καὶ αἱ τῶν πνευμάτων δὲ τροπαὶ μάλιστα περὶ τὰς τοιαύτας τῶν φωτῶν κεντρώσεις ἀποτελοῦνται πρὸς οὓς ἂν τῶν ἀνέμων ἐπὶ τὰ αὐτὰ τὸ πλάτος τῆς σελήνης τὰς προσνεύσεις ποιούμενον καταλαμβάνηται.}{For the hour by hour intensifications and relaxations of the weather vary in response to such positions of the stars as these, in the same way that the ebb and flow of the tide respond to the phases of the moon, and the changes in the air-currents are brought about especially at such appearances of the luminaries at the angles, in the direction of those winds towards which the latitude of the moon is found to be inclining.}{Ptolemy:2005}{Ptolemy:tetrabiblos}
-
-% (original work \citet{ptolemy_2005_tetrabiblos}, summary provided by \citet{tabarroni_1989})
-
-This knowledge flowed through to Dante, who wrote in the third part of the Divine Comedy, \textit{Paradiso}:
-
-\fancifulepigraph{E come 'l volger del ciel de la luna \\ cuopre e discuopre i liti sanza posa, \\ così fa di Fiorenza la Fortuna:}{And, as the turning of the lunar sphere covers \\ and endlessly uncovers the edges of the shore, \\ thus does fortune deal with Florence.}{Dante:1317}{Corbett:2016}
-
-In religious scripture, celestial navigation has oft been a fixture, such as in Chapter 2 of the Gospel according to Matthew:
-
-\begin{fanciful}
-    2:7 -- Then Herod, when he had priuily called the Wise men, enquired of them diligently what time the Starre appeared: \\
-    2:8 -- And he sent them to Bethlehem, and said, Goe, and search diligently for the yong child, and when ye haue found him, bring me word againe, that I may come and worship him also. \\
-    2:9 -- When they had heard the King, they departed, and loe, the Starre which they saw in the East, went before them, till it came and stood ouer where the young childe was.
-    \begin{flushright}
-        -- \citet{Various:1611}
-    \end{flushright}
-\end{fanciful}
-
-\section{The astronomical reneissance of the 17th - 21st centuries}
-
-Despite this deep cultural connection to the stars, what we would now call Astronomy is a somewhat recent invention. Arguably it arose in the 16th century CE with Copernicus proposing the heliocentric model of the solar system, which was confirmed by Galileo in the 17th century CE \citep{Carroll:2017} -- although Galileo's claims did result in his being convicted of heresy for 300 years.
-
-The early 20th century saw a veritable renaissance in both the observational and theoretical spheres. On the one hand, developments such as the theories of Special Relativity in 1905 \citep{Einstein:1905}, \gls{gr} in 1917 \citep{Einstein:1917}, and the predictions of gravitational waves \citep{Poincare:1906, Einstein:1916} led to theoretical revolutions. On the other hand, the innovations of \citet{Payne:1925} in showing that stars are composed of mostly Hydrogen and Helium, \citet{Baade:1934} in distinguishing ``super-novae'' from ``common novae'', \citet{Hoyle:1946} in developing the foundation of the nuclear reaction of elements heavier than Hydrogen in stars, \citet{Salpeter:1955} in developing the \gls{imf}, \citet{Burbidge:1957} in truly developing the theory of stellar nucleosynthesis, \citet{Henyey:1955} and \citet{Hayashi:1961} in exploring the pre-main sequence evolution of stars were key to kickstarting entire branches of astronomy such as spectroscopy and computational astrophysics.
-
-The pace of discovery of new and exotic astronomical phenomena has not slowed into the 21st century. Thorne-\.{Z}ytkow objects -- giant stars with Neutron star cores \citep{Thorne:1977} -- once only existed as theoretical curiosities, yet now have credible observational candidates in \citet{Levesque:2014}. The aforementioned gravitational waves were detected in 2015  \citep{Ligo_scientific_collaboration_and_virgo_collaboration:2016}, a century after they were demonstrated by \citet{Einstein:1916} to be a central prediction of \gls{gr}. More recently, \citet{Lau:2022} directly imaged 17 carbon-rich dust rings around WR140 with \gls{jwst}, enriching the \gls{ism} with carbon-rich compounds. In the coming years, the Vera C. Rubin Observatory \citep{Ivezic:2019} and \gls{lisa} are expected to vastly increase the number of short-period eclipsing double white dwarfs \citep{Burdge:2020}, with the latter able to detect gravitational waves with frequencies between \SI{0.1}{\milli\hertz} and \SI{1}{\hertz} \citep{Amaro-seoane:2012}, compared to the $\sim \SI{10}{\hertz}-\SI{1000}{\hertz}$ that \gls{lvk} can detect \citep{Schmitz:2021}. The stochastic gravitational-wave background was detected by \citet{Agazie:2023, Antoniadis:2023, Reardon:2023, Xu:2023}, via a search of pulsar-timing arrays.
+\pythonfile[label=binary_generation]{The \codename{Kaitaiki} script required to generate \autoref{fig:single_vs_binary}}{chapters/listings/binary_generation.py}
