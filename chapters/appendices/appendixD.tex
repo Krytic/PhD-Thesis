@@ -60,17 +60,18 @@ In this appendix we list the default parameters chosen for our binary evolution 
 
 The possible mass loss prescriptions (IML1/IML2) are:
 
-\begin{enumerate}[start=0]
+\begin{enumerate}
+  \setcounter{enumi}{-1}
   \item No mass loss
-  \item Reimers
-  \item Blöcker
-  \item Vassiladis \& Wood
-  \item Vink (broken)
-  \item Vink
-  \item Vink (slow-WR)
-  \item Vink (no-WR)
-  \item unimplemented
-  \item target-ML
+  \item \citet{Reimers:1975}
+  \item \citet{Bloecker:1995}
+  \item \citet{Vassiliadis:1993}
+  \item \citet{De_jager:1988, Nugis:2000, Vink:2001} with interpolation errors described in \todo{Richards et al 2024}
+  \item \citet{De_jager:1988, Nugis:2000, Vink:2001} \citep[described in][]{Eldridge:2017}
+  \item \citet{De_jager:1988, Nugis:2000, Vink:2001} with slowly turning on \gls{wr} rates described in \todo{Richards et al 2024}
+  \item \citet{De_jager:1988, Nugis:2000, Vink:2001} with no \gls{wr} rates, described in \todo{Richards et al 2024}
+  \item Unimplemented
+  \item \gls{zams} evolution to a specific \gls{zams} mass, custom routine by Jan Eldridge
 \end{enumerate}
 
 \todo{cite >:)}

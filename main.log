@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.18)  11 SEP 2024 16:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.18)  5 OCT 2024 18:23
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1508,47 +1508,74 @@ Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@dima=\skip97
 \bigstrutjot=\dimen344
 )
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pgfornament/pgfornament.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pgfopts/pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks54
+\pgfopts@list@add@b@toks=\toks55
+)
+Package: pgfornament 2020/05/26 v1.2 vector ornaments
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pgfornament/pgflibraryvectorian.c
+ode.tex
+2020/04/06 1.1 pgflibraryvectorian.code.tex
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box145
+\beforetitleunit=\skip98
+\aftertitleunit=\skip99
+\ttl@plus=\dimen345
+\ttl@minus=\dimen346
+\ttl@toksa=\toks56
+\titlewidth=\dimen347
+\titlewidthlast=\dimen348
+\titlewidthfirst=\dimen349
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcbminted.code.tex
 Library (tcolorbox): 'tcbminted.code.tex' version '4.51'
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
-\cftparskip=\skip98
-\cftbeforetoctitleskip=\skip99
-\cftaftertoctitleskip=\skip100
-\cftbeforepartskip=\skip101
-\cftpartnumwidth=\skip102
-\cftpartindent=\skip103
-\cftbeforechapskip=\skip104
-\cftchapindent=\skip105
-\cftchapnumwidth=\skip106
-\cftbeforesecskip=\skip107
-\cftsecindent=\skip108
-\cftsecnumwidth=\skip109
-\cftbeforesubsecskip=\skip110
-\cftsubsecindent=\skip111
-\cftsubsecnumwidth=\skip112
-\cftbeforesubsubsecskip=\skip113
-\cftsubsubsecindent=\skip114
-\cftsubsubsecnumwidth=\skip115
-\cftbeforeparaskip=\skip116
-\cftparaindent=\skip117
-\cftparanumwidth=\skip118
-\cftbeforesubparaskip=\skip119
-\cftsubparaindent=\skip120
-\cftsubparanumwidth=\skip121
-\cftbeforeloftitleskip=\skip122
-\cftafterloftitleskip=\skip123
-\cftbeforefigskip=\skip124
-\cftfigindent=\skip125
-\cftfignumwidth=\skip126
+\cftparskip=\skip100
+\cftbeforetoctitleskip=\skip101
+\cftaftertoctitleskip=\skip102
+\cftbeforepartskip=\skip103
+\cftpartnumwidth=\skip104
+\cftpartindent=\skip105
+\cftbeforechapskip=\skip106
+\cftchapindent=\skip107
+\cftchapnumwidth=\skip108
+\cftbeforesecskip=\skip109
+\cftsecindent=\skip110
+\cftsecnumwidth=\skip111
+\cftbeforesubsecskip=\skip112
+\cftsubsecindent=\skip113
+\cftsubsecnumwidth=\skip114
+\cftbeforesubsubsecskip=\skip115
+\cftsubsubsecindent=\skip116
+\cftsubsubsecnumwidth=\skip117
+\cftbeforeparaskip=\skip118
+\cftparaindent=\skip119
+\cftparanumwidth=\skip120
+\cftbeforesubparaskip=\skip121
+\cftsubparaindent=\skip122
+\cftsubparanumwidth=\skip123
+\cftbeforeloftitleskip=\skip124
+\cftafterloftitleskip=\skip125
+\cftbeforefigskip=\skip126
+\cftfigindent=\skip127
+\cftfignumwidth=\skip128
 \c@lofdepth=\count398
 \c@lotdepth=\count399
-\cftbeforelottitleskip=\skip127
-\cftafterlottitleskip=\skip128
-\cftbeforetabskip=\skip129
-\cfttabindent=\skip130
-\cfttabnumwidth=\skip131
+\cftbeforelottitleskip=\skip129
+\cftafterlottitleskip=\skip130
+\cftbeforetabskip=\skip131
+\cfttabindent=\skip132
+\cfttabnumwidth=\skip133
 )
 (./commands.tex) (./dedications.tex) (./glossary.tex
 (/usr/local/texlive/2021/texmf-dist/tex/latex/glossaries/base/glossaries.sty
@@ -1559,16 +1586,16 @@ Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 
 (/usr/local/texlive/2021/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/local/texlive/2021/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks54
-\XKV@tempa@toks=\toks55
+\XKV@toks=\toks57
+\XKV@tempa@toks=\toks58
 )
 \XKV@depth=\count400
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/local/texlive/2021/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
 Package: mfirstuc 2017/11/14 v2.06 (NLCT)
-\@glsmfirst=\toks56
-\@glsmrest=\toks57
+\@glsmfirst=\toks59
+\@glsmrest=\toks60
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2019/09/14 v1.00 Text only upper/lower case changing (DPC)
@@ -1634,9 +1661,9 @@ Package: fp-upn 1996/10/21
 (/usr/local/texlive/2021/texmf-dist/tex/latex/fp/fp-eval.sty
 Package: fp-eval 1995/04/03
 )))
-\@dtl@toks=\toks58
+\@dtl@toks=\toks61
 \@dtl@tmpcount=\count413
-\dtl@tmplength=\skip132
+\dtl@tmplength=\skip134
 \dtl@sortresult=\count414
 \@dtl@numgrpsepcount=\count415
 \@dtl@datatype=\count416
@@ -1666,12 +1693,12 @@ Package glossaries Warning: No language module detected for `greek'.
 (glossaries)                `glossaries-greek' or similar.
 
 \gls@level=\count420
-\@gls@tmpb=\toks59
-\gls@tmplen=\skip133
-\glskeylisttok=\toks60
-\glslabeltok=\toks61
-\glsshorttok=\toks62
-\glslongtok=\toks63
+\@gls@tmpb=\toks62
+\gls@tmplen=\skip135
+\glskeylisttok=\toks63
+\glslabeltok=\toks64
+\glsshorttok=\toks65
+\glslongtok=\toks66
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/glossaries/styles/glossary-hypern
 av.sty
@@ -1680,32 +1707,32 @@ Package: glossary-hypernav 2020/03/19 v4.46 (NLCT)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/glossaries/styles/glossary-list.s
 ty
 Package: glossary-list 2020/03/19 v4.46 (NLCT)
-\glslistdottedwidth=\skip134
+\glslistdottedwidth=\skip136
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/glossaries/styles/glossary-long.s
 ty
 Package: glossary-long 2020/03/19 v4.46 (NLCT)
  (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2021-05-07 v4.16 Multi-page Table package (DPC)
-\LTleft=\skip135
-\LTright=\skip136
-\LTpre=\skip137
-\LTpost=\skip138
+\LTleft=\skip137
+\LTright=\skip138
+\LTpre=\skip139
+\LTpost=\skip140
 \LTchunksize=\count421
-\LTcapwidth=\dimen345
-\LT@head=\box145
-\LT@firsthead=\box146
-\LT@foot=\box147
-\LT@lastfoot=\box148
-\LT@gbox=\box149
+\LTcapwidth=\dimen350
+\LT@head=\box146
+\LT@firsthead=\box147
+\LT@foot=\box148
+\LT@lastfoot=\box149
+\LT@gbox=\box150
 \LT@cols=\count422
 \LT@rows=\count423
 \c@LT@tables=\count424
 \c@LT@chunks=\count425
-\LT@p@ftn=\toks64
+\LT@p@ftn=\toks67
 )
-\glsdescwidth=\skip139
-\glspagelistwidth=\skip140
+\glsdescwidth=\skip141
+\glspagelistwidth=\skip142
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/glossaries/styles/glossary-super.
 sty
@@ -1713,25 +1740,25 @@ Package: glossary-super 2020/03/19 v4.46 (NLCT)
  (/usr/local/texlive/2021/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2020/02/02 v4.1g the supertabular environment
 \c@tracingst=\count426
-\ST@wd=\dimen346
-\ST@rightskip=\skip141
-\ST@leftskip=\skip142
-\ST@parfillskip=\skip143
-\ST@pageleft=\dimen347
-\ST@headht=\dimen348
-\ST@tailht=\dimen349
-\ST@pagesofar=\dimen350
-\ST@pboxht=\dimen351
-\ST@lineht=\dimen352
-\ST@prevht=\dimen353
-\ST@toadd=\dimen354
-\ST@dimen=\dimen355
-\ST@pbox=\box150
+\ST@wd=\dimen351
+\ST@rightskip=\skip143
+\ST@leftskip=\skip144
+\ST@parfillskip=\skip145
+\ST@pageleft=\dimen352
+\ST@headht=\dimen353
+\ST@tailht=\dimen354
+\ST@pagesofar=\dimen355
+\ST@pboxht=\dimen356
+\ST@lineht=\dimen357
+\ST@prevht=\dimen358
+\ST@toadd=\dimen359
+\ST@dimen=\dimen360
+\ST@pbox=\box151
 ))
 (/usr/local/texlive/2021/texmf-dist/tex/latex/glossaries/styles/glossary-tree.s
 ty
 Package: glossary-tree 2020/03/19 v4.46 (NLCT)
-\glstreeindent=\skip144
+\glstreeindent=\skip146
 ))
 (/usr/local/texlive/2021/texmf-dist/tex/latex/glossaries/styles/glossary-longbo
 oktabs.sty
@@ -1746,17 +1773,6 @@ Package: glossary-longragged 2020/03/19 v4.46 (NLCT)
 \openout7 = `main.glo'.
 
 Package glossaries Info: Writing glossary file main.glo on input line 6.
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2019/10/16 v2.13 Sectioning titles
-\ttl@box=\box151
-\beforetitleunit=\skip145
-\aftertitleunit=\skip146
-\ttl@plus=\dimen356
-\ttl@minus=\dimen357
-\ttl@toksa=\toks65
-\titlewidth=\dimen358
-\titlewidthlast=\dimen359
-\titlewidthfirst=\dimen360
 )
 \c@ttlp@side=\count427
 \ttlp@side=\count428
@@ -1782,7 +1798,6 @@ Package: titlesec 2019/10/16 v2.13 Sectioning titles
 
  (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
-
 (/usr/local/texlive/2021/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
@@ -1889,7 +1904,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip158
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 461.
+Package hyperref Info: Option `colorlinks' set `true' on input line 576.
 \c@tcb@cnt@pythonfile=\count443
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -1902,32 +1917,32 @@ runsystem(rm main.aex)...executed.
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 501.
-LaTeX Font Info:    ... okay on input line 501.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 501.
-LaTeX Font Info:    ... okay on input line 501.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 501.
-LaTeX Font Info:    ... okay on input line 501.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 501.
-LaTeX Font Info:    ... okay on input line 501.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 501.
-LaTeX Font Info:    ... okay on input line 501.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 501.
-LaTeX Font Info:    ... okay on input line 501.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 501.
-LaTeX Font Info:    ... okay on input line 501.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 501.
-LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 5
-01.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 617.
+LaTeX Font Info:    ... okay on input line 617.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 617.
+LaTeX Font Info:    ... okay on input line 617.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 617.
+LaTeX Font Info:    ... okay on input line 617.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 617.
+LaTeX Font Info:    ... okay on input line 617.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 617.
+LaTeX Font Info:    ... okay on input line 617.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 617.
+LaTeX Font Info:    ... okay on input line 617.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 617.
+LaTeX Font Info:    ... okay on input line 617.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 617.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 6
+17.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 501.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 501.
-LaTeX Font Info:    ... okay on input line 501.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 501.
-LaTeX Font Info:    ... okay on input line 501.
+LaTeX Font Info:    ... okay on input line 617.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 617.
+LaTeX Font Info:    ... okay on input line 617.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 617.
+LaTeX Font Info:    ... okay on input line 617.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1969,9 +1984,9 @@ Package epigraph Warning: flushleftright has been previously defined.
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 501.
+(lastpage)             ! on input line 617.
 
-Package chemgreek Info: Activating mapping `default' on line 501.
+Package chemgreek Info: Activating mapping `default' on line 617.
 
 (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1980,12 +1995,12 @@ Package chemgreek Info: Activating mapping `default' on line 501.
 \scratchbox=\box154
 \nofMPsegments=\count445
 \nofMParguments=\count446
-\everyMPshowfont=\toks66
+\everyMPshowfont=\toks68
 \MPscratchCnt=\count447
 \MPscratchDim=\dimen366
 \MPnumerator=\count448
 \makeMPintoPDFobject=\count449
-\everyMPtoPDFconversion=\toks67
+\everyMPtoPDFconversion=\toks69
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -2001,9 +2016,9 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 501.
+or `english'. on input line 617.
 Package translations Info: no dictionary file `translations-basic-dictionary-gr
-eek.trsl' found. on input line 501.
+eek.trsl' found. on input line 617.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
@@ -2029,7 +2044,7 @@ Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 501.
+Package hyperref Info: Link coloring ON on input line 617.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -2043,9 +2058,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count451
 )
-LaTeX Info: Redefining \ref on input line 501.
-LaTeX Info: Redefining \pageref on input line 501.
-LaTeX Info: Redefining \nameref on input line 501.
+LaTeX Info: Redefining \ref on input line 617.
+LaTeX Info: Redefining \pageref on input line 617.
+LaTeX Info: Redefining \nameref on input line 617.
  (./main.out) (./main.out)
 \@outlinefile=\write9
 \openout9 = `main.out'.
@@ -2089,7 +2104,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmss on input line 9
 (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<images/Alt_Cover_Page.jpg, id=352, 1430.34375pt x 1927.2pt>
+<images/Alt_Cover_Page.jpg, id=364, 1430.34375pt x 1927.2pt>
 File: images/Alt_Cover_Page.jpg Graphic file (type jpg)
 <use images/Alt_Cover_Page.jpg>
 Package pdftex.def Info: images/Alt_Cover_Page.jpg  used on input line 24.
@@ -2157,45 +2172,82 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 ] [3]
-[4] (./acknowledgements.tex [5]
+LaTeX Font Info:    Trying to load font information for T1+Crimson-TLF on input
+ line 51.
 
-Package natbib Warning: Citation `eldridge_binary_2017' on page {\fontencoding 
-{T1}\selectfont vi} undefined on input line 9.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/crimson/T1Crimson-TLF.fd
+File: T1Crimson-TLF.fd 2016/02/19 (autoinst) Font definitions for T1/Crimson-TL
+F.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+61.pgf)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+61.pgf)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+61.pgf)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+61.pgf)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+84.pgf)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+84.pgf)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+84.pgf)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+84.pgf) [4]
+
+LaTeX Font Warning: Font shape `T1/Crimson-TLF/m/sc' undefined
+(Font)              using `T1/Crimson-TLF/m/n' instead on input line 53.
 
 
-Package natbib Warning: Citation `stanway_re-evaluating_2018' on page {\fontenc
-oding {T1}\selectfont vi} undefined on input line 9.
-
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+89.pgf)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+61.pgf)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+61.pgf)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+61.pgf)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+61.pgf)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+84.pgf)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+84.pgf)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+84.pgf)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+84.pgf) (./acknowledgements.tex [5]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/it' instead on input line 21.
+(Font)              using `T1/cmr/m/it' instead on input line 23.
 
 [6]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/it' instead on input line 32.
+(Font)              using `T1/cmr/m/it' instead on input line 34.
 
 [7]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/it' instead on input line 56.
+(Font)              using `T1/cmr/m/it' instead on input line 60.
 
 [8]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/it' instead on input line 66.
+(Font)              using `T1/cmr/m/it' instead on input line 70.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/it' instead on input line 66.
+(Font)              using `T1/cmr/m/it' instead on input line 70.
 
 ) [9] [10
 
-] (./main.toc [11])
+] (./main.toc [11] [12])
 \tf@toc=\write10
 \openout10 = `main.toc'.
 
- [12] [13] [14
+ [13] [14
 
 ] (./main.lof)
 \tf@lof=\write11
@@ -2212,20 +2264,30 @@ LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 ] [19
 
 ]) [20] (./main.tod
-Overfull \hbox (0.27771pt too wide) detected at line 5
-\T1/cmr/m/n/10 A.5 
+Overfull \hbox (0.41656pt too wide) detected at line 7
+\T1/cmr/m/n/10 D.7 
  []
 
 
-Overfull \hbox (0.41656pt too wide) detected at line 6
-\T1/cmr/m/n/10 D.6 
+Overfull \hbox (0.41656pt too wide) detected at line 8
+\T1/cmr/m/n/10 D.8 
+ []
+
+
+Overfull \hbox (0.41656pt too wide) detected at line 9
+\T1/cmr/m/n/10 D.9 
+ []
+
+
+Overfull \hbox (5.41534pt too wide) detected at line 10
+\T1/cmr/m/n/10 D.10 
  []
 
 )
 \tf@tod=\write13
 \openout13 = `main.tod'.
 
-<declaration_forms/Chapter03.pdf, id=682, 597.53635pt x 845.04686pt>
+<declaration_forms/Chapter03.pdf, id=705, 597.53635pt x 845.04686pt>
 File: declaration_forms/Chapter03.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter03.pdf>
 Package pdftex.def Info: declaration_forms/Chapter03.pdf  used on input line 73
@@ -2236,7 +2298,7 @@ File: declaration_forms/Chapter03.pdf Graphic file (type pdf)
 Package pdftex.def Info: declaration_forms/Chapter03.pdf  used on input line 73
 .
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
-<declaration_forms/Chapter03.pdf, id=685, page=1, 597.53635pt x 845.04686pt>
+<declaration_forms/Chapter03.pdf, id=708, page=1, 597.53635pt x 845.04686pt>
 File: declaration_forms/Chapter03.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter03.pdf, page 1>
 Package pdftex.def Info: declaration_forms/Chapter03.pdf , page1 used on input 
@@ -2266,7 +2328,7 @@ Package pdftex.def Info: declaration_forms/Chapter03.pdf , page1 used on input
 line 73.
 (pdftex.def)             Requested size: 562.14925pt x 795.00179pt.
  [22 <./declaration_forms/Chapter03.pdf>]
-<declaration_forms/Chapter04.pdf, id=732, 597.53635pt x 845.04686pt>
+<declaration_forms/Chapter04.pdf, id=759, 597.53635pt x 845.04686pt>
 File: declaration_forms/Chapter04.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter04.pdf>
 Package pdftex.def Info: declaration_forms/Chapter04.pdf  used on input line 73
@@ -2277,7 +2339,7 @@ File: declaration_forms/Chapter04.pdf Graphic file (type pdf)
 Package pdftex.def Info: declaration_forms/Chapter04.pdf  used on input line 73
 .
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
-<declaration_forms/Chapter04.pdf, id=735, page=1, 597.53635pt x 845.04686pt>
+<declaration_forms/Chapter04.pdf, id=762, page=1, 597.53635pt x 845.04686pt>
 File: declaration_forms/Chapter04.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter04.pdf, page 1>
 Package pdftex.def Info: declaration_forms/Chapter04.pdf , page1 used on input 
@@ -2304,7 +2366,7 @@ Package pdftex.def Info: declaration_forms/Chapter04.pdf , page1 used on input
 line 73.
 (pdftex.def)             Requested size: 562.14925pt x 795.00179pt.
  [23 <./declaration_forms/Chapter04.pdf>]
-<declaration_forms/Chapter05.pdf, id=771, 597.53635pt x 845.04686pt>
+<declaration_forms/Chapter05.pdf, id=798, 597.53635pt x 845.04686pt>
 File: declaration_forms/Chapter05.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter05.pdf>
 Package pdftex.def Info: declaration_forms/Chapter05.pdf  used on input line 73
@@ -2315,7 +2377,7 @@ File: declaration_forms/Chapter05.pdf Graphic file (type pdf)
 Package pdftex.def Info: declaration_forms/Chapter05.pdf  used on input line 73
 .
 (pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
-<declaration_forms/Chapter05.pdf, id=774, page=1, 597.53635pt x 845.04686pt>
+<declaration_forms/Chapter05.pdf, id=801, page=1, 597.53635pt x 845.04686pt>
 File: declaration_forms/Chapter05.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter05.pdf, page 1>
 Package pdftex.def Info: declaration_forms/Chapter05.pdf , page1 used on input 
@@ -2351,7 +2413,7 @@ LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 
 
 ]
-<images/Introduction/NightSkyMap.png, id=866, 379.12842pt x 210.73932pt>
+<images/Introduction/NightSkyMap.png, id=893, 379.12842pt x 210.73932pt>
 File: images/Introduction/NightSkyMap.png Graphic file (type png)
 <use images/Introduction/NightSkyMap.png>
 Package pdftex.def Info: images/Introduction/NightSkyMap.png  used on input lin
@@ -2392,13 +2454,13 @@ LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 52.
 
 [8] [9]
-<images/TheorySection/10_msun_jumps.png, id=1142, 501.5538pt x 368.21565pt>
+<images/TheorySection/10_msun_jumps.png, id=1169, 501.5538pt x 368.21565pt>
 File: images/TheorySection/10_msun_jumps.png Graphic file (type png)
 <use images/TheorySection/10_msun_jumps.png>
 Package pdftex.def Info: images/TheorySection/10_msun_jumps.png  used on input 
 line 174.
 (pdftex.def)             Requested size: 418.15894pt x 307.00107pt.
-<images/TheorySection/8_msun_star_annotated.png, id=1143, 509.5035pt x 372.1905
+<images/TheorySection/8_msun_star_annotated.png, id=1170, 509.5035pt x 372.1905
 pt>
 File: images/TheorySection/8_msun_star_annotated.png Graphic file (type png)
 <use images/TheorySection/8_msun_star_annotated.png>
@@ -2447,28 +2509,28 @@ LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 382.
 
 [16]
-<images/TheorySection/roche_potentials.png, id=1251, 444.4605pt x 602.25pt>
+<images/TheorySection/roche_potentials.png, id=1278, 444.4605pt x 602.25pt>
 File: images/TheorySection/roche_potentials.png Graphic file (type png)
 <use images/TheorySection/roche_potentials.png>
 Package pdftex.def Info: images/TheorySection/roche_potentials.png  used on inp
 ut line 388.
 (pdftex.def)             Requested size: 418.15894pt x 566.63887pt.
  [17] [18 <./images/TheorySection/roche_potentials.png>]
-<images/TheorySection/RLs_Eggleton_Formula.png, id=1278, 399.894pt x 212.7147pt
+<images/TheorySection/RLs_Eggleton_Formula.png, id=1305, 399.894pt x 212.7147pt
 >
 File: images/TheorySection/RLs_Eggleton_Formula.png Graphic file (type png)
 <use images/TheorySection/RLs_Eggleton_Formula.png>
 Package pdftex.def Info: images/TheorySection/RLs_Eggleton_Formula.png  used on
  input line 555.
 (pdftex.def)             Requested size: 491.94817pt x 261.68945pt.
-<images/TheorySection/eggleton_justification.png, id=1287, 508.299pt x 207.8967
+<images/TheorySection/eggleton_justification.png, id=1314, 508.299pt x 207.8967
 pt>
 File: images/TheorySection/eggleton_justification.png Graphic file (type png)
 <use images/TheorySection/eggleton_justification.png>
 Package pdftex.def Info: images/TheorySection/eggleton_justification.png  used 
 on input line 562.
 (pdftex.def)             Requested size: 491.94817pt x 201.21542pt.
-<images/TheorySection/marchant_justification.png, id=1293, 508.299pt x 207.8967
+<images/TheorySection/marchant_justification.png, id=1320, 508.299pt x 207.8967
 pt>
 File: images/TheorySection/marchant_justification.png Graphic file (type png)
 <use images/TheorySection/marchant_justification.png>
@@ -2480,46 +2542,42 @@ tion/eggleton_justification.png>] [21 <./images/TheorySection/marchant_justific
 ation.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\acrfull' on input line 654.
+(hyperref)                removing `\acrfull' on input line 673.
 
-[22]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23]
-[24]
-<images/TheorySection/bistability_jump.png, id=1458, 448.7967pt x 332.80334pt>
+[22] [23] [24]
+<images/TheorySection/bistability_jump.png, id=1493, 448.7967pt x 332.80334pt>
 File: images/TheorySection/bistability_jump.png Graphic file (type png)
 <use images/TheorySection/bistability_jump.png>
 Package pdftex.def Info: images/TheorySection/bistability_jump.png  used on inp
-ut line 811.
+ut line 844.
 (pdftex.def)             Requested size: 418.15894pt x 310.09297pt.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/it' instead on input line 821.
+(Font)              using `T1/cmr/m/it' instead on input line 854.
 
-[25 <./images/TheorySection/bistability_jump.png>] [26]
+[25] [26 <./images/TheorySection/bistability_jump.png>] [27]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/it' instead on input line 907.
+(Font)              using `T1/cmr/m/it' instead on input line 940.
 
-[27] [28] [29]
-<images/TheorySection/thermal_pulses_and_he_flash.png, id=1611, 654.40485pt x 5
+[28] [29] [30] [31]
+<images/TheorySection/thermal_pulses_and_he_flash.png, id=1677, 654.40485pt x 5
 99.1183pt>
 File: images/TheorySection/thermal_pulses_and_he_flash.png Graphic file (type p
 ng)
 <use images/TheorySection/thermal_pulses_and_he_flash.png>
 Package pdftex.def Info: images/TheorySection/thermal_pulses_and_he_flash.png  
-used on input line 992.
+used on input line 1062.
 (pdftex.def)             Requested size: 491.94817pt x 450.39807pt.
-<images/TheorySection/helium_flash_kippenhahn.png, id=1612, 507.69675pt x 211.3
+<images/TheorySection/helium_flash_kippenhahn.png, id=1678, 507.69675pt x 211.3
 8976pt>
 File: images/TheorySection/helium_flash_kippenhahn.png Graphic file (type png)
 <use images/TheorySection/helium_flash_kippenhahn.png>
 Package pdftex.def Info: images/TheorySection/helium_flash_kippenhahn.png  used
- on input line 999.
+ on input line 1069.
 (pdftex.def)             Requested size: 491.94817pt x 204.83492pt.
- [30] [31 <./images/TheorySection/thermal_pulses_and_he_flash.png>] [32 <./imag
+ [32] [33 <./images/TheorySection/thermal_pulses_and_he_flash.png>] [34 <./imag
 es/TheorySection/helium_flash_kippenhahn.png>]
 \openout5 = `main.pyg'.
 
@@ -2544,7 +2602,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
 
-[33]
+[35]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -2555,9 +2613,9 @@ Missing character: There is no k in font nullfont!
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/it' instead on input line 1048.
+(Font)              using `T1/cmr/m/it' instead on input line 1118.
 
-) (./chapters/chapter03.tex [34]
+) (./chapters/chapter03.tex [36]
 Chapter 3.
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
@@ -2573,7 +2631,7 @@ Overfull \hbox (39.36424pt too wide) in paragraph at lines 13--70
 [][]$[]$[] 
  []
 
-<images/HeliumRich/segmented_composition_profiles.png, id=1686, 370.7451pt x 42
+<images/HeliumRich/segmented_composition_profiles.png, id=1752, 370.7451pt x 42
 2.41815pt>
 File: images/HeliumRich/segmented_composition_profiles.png Graphic file (type p
 ng)
@@ -2581,7 +2639,7 @@ ng)
 Package pdftex.def Info: images/HeliumRich/segmented_composition_profiles.png  
 used on input line 78.
 (pdftex.def)             Requested size: 221.37517pt x 252.23462pt.
-<images/HeliumRich/segmented_composition_profiles_STANDARD_BINARY.png, id=1687,
+<images/HeliumRich/segmented_composition_profiles_STANDARD_BINARY.png, id=1753,
  370.7451pt x 422.41815pt>
 File: images/HeliumRich/segmented_composition_profiles_STANDARD_BINARY.png Grap
 hic file (type png)
@@ -2589,32 +2647,32 @@ hic file (type png)
 Package pdftex.def Info: images/HeliumRich/segmented_composition_profiles_STAND
 ARD_BINARY.png  used on input line 83.
 (pdftex.def)             Requested size: 221.37517pt x 252.23462pt.
-<images/HeliumRich/comparison_plot.png, id=1691, 554.3109pt x 741.12885pt>
+<images/HeliumRich/comparison_plot.png, id=1757, 554.3109pt x 741.12885pt>
 File: images/HeliumRich/comparison_plot.png Graphic file (type png)
 <use images/HeliumRich/comparison_plot.png>
 Package pdftex.def Info: images/HeliumRich/comparison_plot.png  used on input l
 ine 99.
 (pdftex.def)             Requested size: 393.56003pt x 526.21646pt.
-) (./chapters/chapter04.tex [35
+) (./chapters/chapter04.tex [37
 
-] [36] [37 <./images/HeliumRich/segmented_composition_profiles.png> <./images/H
-eliumRich/segmented_composition_profiles_STANDARD_BINARY.png>] [38 <./images/He
+] [38] [39 <./images/HeliumRich/segmented_composition_profiles.png> <./images/H
+eliumRich/segmented_composition_profiles_STANDARD_BINARY.png>] [40 <./images/He
 liumRich/comparison_plot.png>]
 Chapter 4.
-) (./chapters/chapter05.tex) (./chapters/chapter06.tex [39
+) (./chapters/chapter05.tex) (./chapters/chapter06.tex [41
 
-] [40
+] [42
 
 ]
 Chapter 5.
-[41] [42]
-<images/NatalKicks/Grid_Regions.png, id=1802, 629.11035pt x 602.0091pt>
+[43] [44]
+<images/NatalKicks/Grid_Regions.png, id=1869, 629.11035pt x 602.0091pt>
 File: images/NatalKicks/Grid_Regions.png Graphic file (type png)
 <use images/NatalKicks/Grid_Regions.png>
 Package pdftex.def Info: images/NatalKicks/Grid_Regions.png  used on input line
  57.
 (pdftex.def)             Requested size: 491.94817pt x 470.75937pt.
- [43] [44 <./images/NatalKicks/Grid_Regions.png>]
+ [45] [46 <./images/NatalKicks/Grid_Regions.png>]
 \openout5 = `main.pyg'.
 
 
@@ -2640,20 +2698,29 @@ Package pdftex.def Info: images/NatalKicks/Grid_Regions.png  used on input line
 
 (./_minted-main/22C35DF1C79DCF62B811E4D4364954605BD9CFCE54A68914ACB2DCF71641ADB
 0.pygtex)
-<images/NatalKicks/varying_de.png, id=1898, 527.20966pt x 319.4334pt>
+<images/NatalKicks/varying_de.png, id=1962, 527.20966pt x 319.4334pt>
 File: images/NatalKicks/varying_de.png Graphic file (type png)
 <use images/NatalKicks/varying_de.png>
 Package pdftex.def Info: images/NatalKicks/varying_de.png  used on input line 1
 14.
 (pdftex.def)             Requested size: 491.94817pt x 298.07892pt.
-<images/NatalKicks/runtime.png, id=1901, 545.99985pt x 375.0813pt>
+<images/NatalKicks/runtime.png, id=1965, 545.99985pt x 375.0813pt>
 File: images/NatalKicks/runtime.png Graphic file (type png)
 <use images/NatalKicks/runtime.png>
 Package pdftex.def Info: images/NatalKicks/runtime.png  used on input line 121.
 
 (pdftex.def)             Requested size: 491.94817pt x 337.96495pt.
- [45]
-<images/NatalKicks/EventRate_Distribution_Both.png, id=1944, 493.00185pt x 304.
+
+
+Package natbib Warning: Citation `Tang:lisadataset' on page 47 undefined on inp
+ut line 122.
+
+
+Package natbib Warning: Citation `Tang:lisadataset' on page 47 undefined on inp
+ut line 122.
+
+[47]
+<images/NatalKicks/EventRate_Distribution_Both.png, id=2003, 493.00185pt x 304.
 2567pt>
 File: images/NatalKicks/EventRate_Distribution_Both.png Graphic file (type png)
 
@@ -2661,16 +2728,16 @@ File: images/NatalKicks/EventRate_Distribution_Both.png Graphic file (type png)
 Package pdftex.def Info: images/NatalKicks/EventRate_Distribution_Both.png  use
 d on input line 135.
 (pdftex.def)             Requested size: 491.94817pt x 303.60599pt.
-<images/NatalKicks/PE_dists_six_panel.png, id=1969, 392.4261pt x 278.60085pt>
+<images/NatalKicks/PE_dists_six_panel.png, id=2028, 392.4261pt x 278.60085pt>
 File: images/NatalKicks/PE_dists_six_panel.png Graphic file (type png)
 <use images/NatalKicks/PE_dists_six_panel.png>
 Package pdftex.def Info: images/NatalKicks/PE_dists_six_panel.png  used on inpu
 t line 146.
 (pdftex.def)             Requested size: 491.94817pt x 349.27043pt.
- [46 <./images/NatalKicks/varying_de.png>] [47 <./images/NatalKicks/runtime.png
->] [48 <./images/NatalKicks/EventRate_Distribution_Both.png>]
-[49 <./images/NatalKicks/PE_dists_six_panel.png>]
-<images/NatalKicks/LogBayesFactors_Both.png, id=2052, 442.2924pt x 256.91985pt>
+ [48 <./images/NatalKicks/varying_de.png>] [49 <./images/NatalKicks/runtime.png
+>] [50 <./images/NatalKicks/EventRate_Distribution_Both.png>] [51 <./images/Nat
+alKicks/PE_dists_six_panel.png>]
+<images/NatalKicks/LogBayesFactors_Both.png, id=2110, 442.2924pt x 256.91985pt>
 
 File: images/NatalKicks/LogBayesFactors_Both.png Graphic file (type png)
 <use images/NatalKicks/LogBayesFactors_Both.png>
@@ -2680,20 +2747,20 @@ put line 190.
 
 Underfull \vbox (badness 3568) has occurred while \output is active []
 
- [50 <./images/NatalKicks/LogBayesFactors_Both.png>]
-<images/NatalKicks/bray_vs_hobbs.png, id=2101, 409.7709pt x 261.6174pt>
+ [52 <./images/NatalKicks/LogBayesFactors_Both.png>]
+<images/NatalKicks/bray_vs_hobbs.png, id=2160, 409.7709pt x 261.6174pt>
 File: images/NatalKicks/bray_vs_hobbs.png Graphic file (type png)
 <use images/NatalKicks/bray_vs_hobbs.png>
 Package pdftex.def Info: images/NatalKicks/bray_vs_hobbs.png  used on input lin
 e 213.
 (pdftex.def)             Requested size: 491.94817pt x 314.09497pt.
-<images/NatalKicks/ks_test.png, id=2130, 773.0481pt x 441.20834pt>
+<images/NatalKicks/ks_test.png, id=2189, 773.0481pt x 441.20834pt>
 File: images/NatalKicks/ks_test.png Graphic file (type png)
 <use images/NatalKicks/ks_test.png>
 Package pdftex.def Info: images/NatalKicks/ks_test.png  used on input line 222.
 
 (pdftex.def)             Requested size: 491.94817pt x 280.77681pt.
-<images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png, id=2136, 480.71594pt
+<images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png, id=2195, 480.71594pt
  x 334.1283pt>
 File: images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png Graphic file (ty
 pe png)
@@ -2701,9 +2768,9 @@ pe png)
 Package pdftex.def Info: images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.p
 ng  used on input line 233.
 (pdftex.def)             Requested size: 491.94817pt x 341.95348pt.
- [51] [52 <./images/NatalKicks/bray_vs_hobbs.png>] [53 <./images/NatalKicks/ks_
-test.png>] [54 <./images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png>]
-<images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png, id=2212
+ [53] [54 <./images/NatalKicks/bray_vs_hobbs.png>] [55 <./images/NatalKicks/ks_
+test.png>] [56 <./images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png>]
+<images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png, id=2272
 , 457.2282pt x 319.9152pt>
 File: images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png Gra
 phic file (type png)
@@ -2711,42 +2778,42 @@ phic file (type png)
 Package pdftex.def Info: images/NatalKicks/All_Three_Constraints_with_USSNe_and
 _modeltype2.png  used on input line 271.
 (pdftex.def)             Requested size: 491.94817pt x 344.20967pt.
-<images/NatalKicks/Best_Model_Params.png, id=2217, 847.968pt x 377.7312pt>
+<images/NatalKicks/Best_Model_Params.png, id=2277, 847.968pt x 377.7312pt>
 File: images/NatalKicks/Best_Model_Params.png Graphic file (type png)
 <use images/NatalKicks/Best_Model_Params.png>
 Package pdftex.def Info: images/NatalKicks/Best_Model_Params.png  used on input
  line 280.
 (pdftex.def)             Requested size: 491.94817pt x 219.14764pt.
-<images/NatalKicks/grid_shifting_peaks.png, id=2230, 497.33804pt x 299.31825pt>
+<images/NatalKicks/grid_shifting_peaks.png, id=2290, 497.33804pt x 299.31825pt>
 
 File: images/NatalKicks/grid_shifting_peaks.png Graphic file (type png)
 <use images/NatalKicks/grid_shifting_peaks.png>
 Package pdftex.def Info: images/NatalKicks/grid_shifting_peaks.png  used on inp
 ut line 291.
 (pdftex.def)             Requested size: 491.94817pt x 296.08849pt.
-<images/NatalKicks/event_rate_history_local.png, id=2233, 423.5022pt x 402.1825
+<images/NatalKicks/event_rate_history_local.png, id=2293, 423.5022pt x 402.1825
 6pt>
 File: images/NatalKicks/event_rate_history_local.png Graphic file (type png)
 <use images/NatalKicks/event_rate_history_local.png>
 Package pdftex.def Info: images/NatalKicks/event_rate_history_local.png  used o
 n input line 298.
 (pdftex.def)             Requested size: 491.94817pt x 467.18259pt.
- [55] [56 <./images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.
-png> <./images/NatalKicks/Best_Model_Params.png>] [57 <./images/NatalKicks/grid
-_shifting_peaks.png>] [58 <./images/NatalKicks/event_rate_history_local.png>]) 
-(./chapters/chapter19.tex [59] [60
-
-]
+ [57] [58 <./images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.
+png> <./images/NatalKicks/Best_Model_Params.png>] [59 <./images/NatalKicks/grid
+_shifting_peaks.png>] [60 <./images/NatalKicks/event_rate_history_local.png>] [
+61]) (./chapters/chapter19.tex [62]
 Chapter 6.
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 11.
 
-) [61] [62
+) [63
 
-] [63
+] [64
 
-] [64] (./chapters/appendices/appendixA.tex
+] [65
+
+] [66] (./chapters/appendices/appendixA.tex
 Appendix A.
 \openout5 = `main.pyg'.
 
@@ -2765,7 +2832,7 @@ Missing character: There is no k in font nullfont!
 
 Underfull \vbox (badness 5189) has occurred while \output is active []
 
- [65
+ [67
 
 ]
 Missing character: There is no c in font nullfont!
@@ -2784,7 +2851,7 @@ Missing character: There is no k in font nullfont!
 2.pygtex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [66]
+ [68]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -2795,33 +2862,7 @@ Missing character: There is no k in font nullfont!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [67]
-Missing character: There is no c in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no k in font nullfont!
-
-
-LaTeX Warning: Reference `fig:single_vs_binary' on page 68 undefined on input l
-ine 12.
-
-
-(./_minted-main/3B25C72E4A35D18B6CC8408F07A506CFF69D0D2CCB40A37DBDA8BB228F15F41
-2.pygtex)
-Missing character: There is no c in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no k in font nullfont!
-
-Underfull \vbox (badness 2221) has occurred while \output is active []
-
- [68]
+ [69]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -2830,11 +2871,11 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
 )
-(./chapters/appendices/appendixB.tex [69] [70
-
-]
+(./chapters/appendices/appendixB.tex [70]
 Appendix B.
-) (./chapters/appendices/appendixC.tex [71] [72
+) (./chapters/appendices/appendixC.tex [71
+
+] [72
 
 ]
 Appendix C.
@@ -2846,7 +2887,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrshort' on input line 2.
 
-<images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png, id=2383, 427.5975p
+<images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png, id=2478, 427.5975p
 t x 606.8271pt>
 File: images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png Graphic file (
 type png)
@@ -2873,7 +2914,26 @@ LaTeX Info: Redefining \VAN on input line 1.
  [79
 
 ] [80] [81] [82] [83] [84]) [85]
-
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+89.pgf)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+89.pgf)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+61.pgf)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+61.pgf)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+61.pgf)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+61.pgf)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+84.pgf)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+84.pgf)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+87.pgf)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+87.pgf) 
 AED: lastpage setting LastPage
 [86]
 
@@ -2881,82 +2941,84 @@ Package natbib Warning: There were undefined citations.
 
 (./main.aux)
 
-LaTeX Warning: There were undefined references.
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 93FCCC748AA7755028E0CC5BAFEFE60B;13664.
+(rerunfilecheck)             Checksum: 0B62CF8133D0355F7AE9FB93C754D363;14102.
 runsystem(rm main.pyg)...executed.
 
  )
 (\end occurred when \ifx on line 55 was incomplete) 
 Here is how much of TeX's memory you used:
- 51573 strings out of 478512
- 1038417 string characters out of 5849625
- 1446902 words of memory out of 5000000
- 67864 multiletter control sequences out of 15000+600000
- 450328 words of font info for 110 fonts, out of 8000000 for 9000
+ 52073 strings out of 478512
+ 1052460 string characters out of 5849625
+ 1629138 words of memory out of 5000000
+ 68253 multiletter control sequences out of 15000+600000
+ 502105 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  96i,20n,97p,1504b,2096s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/tex
 mf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2021/texm
 f-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2021/texmf-
-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2021/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1
-/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2021/texmf-dist/fonts/ty
-pe1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2021/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2021/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr5.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr9.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y5.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6
-.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.p
-fb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
-></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cbfonts/grmi0900.pfb></
-usr/local/texlive/2021/texmf-dist/fonts/type1/public/cbfonts/grmn1000.pfb></usr
-/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/tex
-live/2021/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/texlive/2021/
-texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2
-021/texmf-dist/fonts/type1/public/cm-super/sfbi0900.pfb></usr/local/texlive/202
-1/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/local/texlive/2021/
-texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive/2021/te
-xmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2021/texm
-f-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2021/texmf-
-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2021/texmf-di
-st/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2021/texmf-dist
-/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2021/texmf-dist/f
-onts/type1/public/cm-super/sfcc0800.pfb></usr/local/texlive/2021/texmf-dist/fon
-ts/type1/public/cm-super/sfcc0900.pfb></usr/local/texlive/2021/texmf-dist/fonts
-/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/t
-ype1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/typ
-e1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1
-/public/cm-super/sfit1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/p
-ublic/cm-super/sfrm0500.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pub
-lic/cm-super/sfrm0600.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publi
-c/cm-super/sfrm0700.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/
-cm-super/sfrm0800.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm
--super/sfrm0900.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-s
-uper/sfrm1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-sup
-er/sfrm1728.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super
-/sfti0900.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/s
-fti1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sft
-t0900.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1
-000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfxc120
-0.pfb>
-Output written on main.pdf (110 pages, 15335642 bytes).
+dist/fonts/enc/dvips/crimson/crm_tyw3ea.enc}{/usr/local/texlive/2021/texmf-dist
+/fonts/enc/dvips/crimson/crm_izufyi.enc}{/usr/local/texlive/2021/texmf-dist/fon
+ts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/kosch
+/crimson/Crimson-Italic.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/kos
+ch/crimson/Crimson-Roman.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publ
+ic/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/p
+ublic/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi9.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmib10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr5.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9
+.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pf
+b></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></
+usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></us
+r/local/texlive/2021/texmf-dist/fonts/type1/public/cbfonts/grmi0900.pfb></usr/l
+ocal/texlive/2021/texmf-dist/fonts/type1/public/cbfonts/grmn1000.pfb></usr/loca
+l/texlive/2021/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/
+2021/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/texlive/2021/texmf
+-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2021/t
+exmf-dist/fonts/type1/public/cm-super/sfbi0900.pfb></usr/local/texlive/2021/tex
+mf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/local/texlive/2021/texmf
+-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive/2021/texmf-d
+ist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2021/texmf-dis
+t/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2021/texmf-dist/
+fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2021/texmf-dist/fo
+nts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2021/texmf-dist/font
+s/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2021/texmf-dist/fonts/
+type1/public/cm-super/sfcc0800.pfb></usr/local/texlive/2021/texmf-dist/fonts/ty
+pe1/public/cm-super/sfcc0900.pfb></usr/local/texlive/2021/texmf-dist/fonts/type
+1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/
+public/cm-super/sfcc1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pu
+blic/cm-super/sfit1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publ
+ic/cm-super/sfrm0500.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public
+/cm-super/sfrm0600.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/c
+m-super/sfrm0700.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-
+super/sfrm0800.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-su
+per/sfrm0900.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-supe
+r/sfrm1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/
+sfti0900.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sf
+ti1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt
+0900.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt10
+00.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfxc1200
+.pfb>
+Output written on main.pdf (110 pages, 15545112 bytes).
 PDF statistics:
- 2978 PDF objects out of 2984 (max. 8388607)
- 2529 compressed objects within 26 object streams
- 567 named destinations out of 1000 (max. 500000)
- 973 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3135 PDF objects out of 3580 (max. 8388607)
+ 2687 compressed objects within 27 object streams
+ 601 named destinations out of 1000 (max. 500000)
+ 997 words of extra memory for PDF output out of 10000 (max. 10000000)
 

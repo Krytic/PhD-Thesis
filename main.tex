@@ -34,6 +34,10 @@
 \usepackage{enumerate}
 \usepackage{subcaption}
 \usepackage{multicol, multirow}
+\usepackage[object=vectorian]{pgfornament}
+\usepackage[explicit,calcwidth]{titlesec}
+
+\usetikzlibrary{calc}
 
 % \def\supervisorcopy{}
 
@@ -55,11 +59,12 @@
 \definecolor{main-accent}{RGB}{0,45,97}
 
 % \let\ovec\vec
-% \newcommand{\vui}{{\bm{\hat{\textnormal{\bfseries\i}}}}}
-% \newcommand{\vuj}{{\bm{\hat{\textnormal{\bfseries\j}}}}}
-% \DeclareRobustCommand{\vu}[1]{{%
-%   \ifcsname vu#1\endcsname
-%      \csname vu#1\endcsname
+% \renewcommand{\vec}[1]{{\bm{{\textnormal{\bfseries#1}}}}}
+% \newcommand{\vectoruniti}{{\bm{\hat{\textnormal{\bfseries\i}}}}}
+% \newcommand{\vectorunitj}{{\bm{\hat{\textnormal{\bfseries\j}}}}}
+% \DeclareRobustCommand{\vu}[1]{{%s
+%   \ifcsname vectorunit#1\endcsname
+%      \csname vectorunit#1\endcsname
 %    \else
 %     \bm{\hat{\mathbf{#1}}}%
 %    \fi
@@ -124,29 +129,90 @@
 
 \newcommand{\openingquote}[2]{\gdef\@openquote{#1}\gdef\@openauthor{#2}}
 \newcommand{\openingquotealign}{center}
+% \newcommand{\placeopeningquote}{%
+% \newpage
+% \begingroup
+%     \vspace*{\fill}
+%     \begin{\openingquotealign}
+%         \pgfornament[color=black]{89}%
+%         \fontfamily{Crimson-TLF}\selectfont
+%         \LARGE
+%         {\@openquote}
+%         \flushleft {\normalsize-- \@openauthor}
+%         \pgfornament[color=black,scale=0.25]{89}%
+%     \end{\openingquotealign}
+%     \vspace*{\fill}
+% \endgroup}
+
 \newcommand{\placeopeningquote}{%
 \newpage
 \begingroup
     \vspace*{\fill}
     \begin{\openingquotealign}
-    \LARGE
-    {\@openquote}
-    \flushright {\normalsize-- \@openauthor}
-	\end{\openingquotealign}
-	\vspace*{\fill}
+        \begin{tikzpicture}[every node/.style={inner sep=0pt}]
+            \node[text width=\textwidth/1.3,align=center](Text){%
+                    \fontfamily{Crimson-TLF}\selectfont
+                    \vspace{0.2in}
+                    \LARGE
+                    {\\\@openquote \\}
+                    \vspace{0.1in}
+                    \pgfornament[width=0.3\textwidth]{89} \\
+                    \vspace{0.2in}
+                    {\large\itshape\@openauthor}
+                    \vspace{0.3in}
+                    } ;
+            \node[shift={(-1cm,1cm)},anchor=north west](CNW)
+            at (Text.north west) {\pgfornament[width=1.75cm]{61}};
+            \node[shift={(1cm,1cm)},anchor=north east](CNE)
+            at (Text.north east) {\pgfornament[width=1.75cm,symmetry=v]{61}};
+            \node[shift={(-1cm,-1cm)},anchor=south west](CSW)
+            at (Text.south west) {\pgfornament[width=1.75cm,symmetry=h]{61}};
+            \node[shift={(1cm,-1cm)},anchor=south east](CSE)
+            at (Text.south east) {\pgfornament[width=1.75cm,symmetry=c]{61}};
+            \pgfornamenthline{CNW}{CNE}{north}{84}
+            \pgfornamenthline{CSW}{CSE}{south}{84}
+            \pgfornamentvline{CNW}{CSW}{west}{84}
+            \pgfornamentvline{CNE}{CSE}{east}{84}
+        \end{tikzpicture}
+    \end{\openingquotealign}
+    \vspace*{\fill}
 \endgroup}
-
 
 \newcommand{\closingquote}[2]{\gdef\@closequote{#1}\gdef\@closeauthor{#2}}
 \newcommand{\closingquotealign}{center}
 \newcommand{\placeclosingquote}{%
 \newpage
+\fancyhead[LE,LO]{}
+\fancyhead[RE,RO]{}
+\renewcommand{\headrulewidth}{0pt}
 \begingroup
     \vspace*{\fill}
     \begin{\closingquotealign}
-    \LARGE
-    \@closequote \\
-    \flushright {\normalsize-- \@closeauthor}
+        \begin{tikzpicture}[every node/.style={inner sep=0pt}]
+            \node[text width=\textwidth/1.3,align=center](Text){%
+                    \fontfamily{Crimson-TLF}\selectfont
+                    \vspace{0.1in}
+                    \LARGE
+                    {\\\@closequote \\}
+                    \vspace{0.1in}
+                    \pgfornament[width=0.3\textwidth]{89} \\
+                    \vspace{0.1in}
+                    {\large\itshape\@closeauthor}
+                    \vspace{0.3in}
+                    } ;
+            \node[shift={(-1cm,1cm)},anchor=north west](CNW)
+            at (Text.north west) {\pgfornament[width=1.75cm]{61}};
+            \node[shift={(1cm,1cm)},anchor=north east](CNE)
+            at (Text.north east) {\pgfornament[width=1.75cm,symmetry=v]{61}};
+            \node[shift={(-1cm,-1cm)},anchor=south west](CSW)
+            at (Text.south west) {\pgfornament[width=1.75cm,symmetry=h]{61}};
+            \node[shift={(1cm,-1cm)},anchor=south east](CSE)
+            at (Text.south east) {\pgfornament[width=1.75cm,symmetry=c]{61}};
+            \pgfornamenthline{CNW}{CNE}{north}{84}
+            \pgfornamenthline{CSW}{CSE}{south}{84}
+            \pgfornamentvline{CNW}{CSW}{west}{87}
+            \pgfornamentvline{CNE}{CSE}{east}{87}
+        \end{tikzpicture}
 	\end{\closingquotealign}
 	\vspace*{\fill}
 \endgroup}
@@ -154,23 +220,53 @@
 
 \newcommand{\dedication}[1]{\gdef\@dedicate{#1}}
 \newcommand{\dedicationalign}{center}
+% \newcommand{\placededication}{%
+% \newpage
+% \begingroup
+%     \vspace*{\fill}
+%     \begin{\dedicationalign}
+%         \fontfamily{Crimson-TLF}\selectfont
+%         \LARGE
+%         \@dedicate
+%     \end{\dedicationalign}
+%     \vspace*{\fill}
+% \endgroup}
+
 \newcommand{\placededication}{%
 \newpage
 \begingroup
     \vspace*{\fill}
     \begin{\dedicationalign}
-    \LARGE
-    \@dedicate
-	\end{\dedicationalign}
-	\vspace*{\fill}
+        \begin{tikzpicture}[every node/.style={inner sep=0pt}]
+            \node[text width=\textwidth/1.3,align=center](Text){%
+                    \fontfamily{Crimson-TLF}\selectfont
+                    \vspace{0.2in}
+                    \LARGE
+                    {\\\@dedicate \\}
+                    \phantom{ }
+                    \vspace{0.3in}
+                    } ;
+            \node[shift={(-1cm,1cm)},anchor=north west](CNW)
+            at (Text.north west) {\pgfornament[width=1.75cm]{61}};
+            \node[shift={(1cm,1cm)},anchor=north east](CNE)
+            at (Text.north east) {\pgfornament[width=1.75cm,symmetry=v]{61}};
+            \node[shift={(-1cm,-1cm)},anchor=south west](CSW)
+            at (Text.south west) {\pgfornament[width=1.75cm,symmetry=h]{61}};
+            \node[shift={(1cm,-1cm)},anchor=south east](CSE)
+            at (Text.south east) {\pgfornament[width=1.75cm,symmetry=c]{61}};
+            \pgfornamenthline{CNW}{CNE}{north}{84}
+            \pgfornamenthline{CSW}{CSE}{south}{84}
+            \pgfornamentvline{CNW}{CSW}{west}{84}
+            \pgfornamentvline{CNE}{CSE}{east}{84}
+        \end{tikzpicture}
+    \end{\dedicationalign}
+    \vspace*{\fill}
 \endgroup}
 \makeatother
 
 \input{dedications.tex}
 
 \input{glossary.tex}
-
-\usepackage[explicit,calcwidth]{titlesec}
 
 \renewcommand{\arraystretch}{1.6}
 
@@ -340,12 +436,26 @@
 }
 \makeatother
 
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+
 \newcommand{\makefancy}{%
   \pagestyle{fancy}
   \renewcommand{\footrulewidth}{0.1pt}
   \fancyhead[LE,LO]{\ifnum\value{chapter}>0 \nouppercase{\leftmark}\fi}
   \fancyhead[CE,CO]{}
   \fancyhead[RE,RO]{\ifnum\value{chapter}>0 \nouppercase{\rightmark}\fi}
+  \fancyfoot[LE,LO]{}
+  \fancyfoot[CE,CO]{Page \thepage\ of \pageref{LastPage}}
+  \fancyfoot[RE,RO]{}
+}
+
+\newcommand{\makelessfancy}{%
+  \pagestyle{fancy}
+  \renewcommand{\footrulewidth}{0.1pt}
+  \fancyhead[LE,LO]{\ifnum\value{chapter}>0 \nouppercase{\phantom{1}\leftmark}\fi}
+  \fancyhead[CE,CO]{}
+  \fancyhead[RE,RO]{\ifnum\value{chapter}>0 \nouppercase{\phantom{1}\rightmark}\fi}
   \fancyfoot[LE,LO]{}
   \fancyfoot[CE,CO]{Page \thepage\ of \pageref{LastPage}}
   \fancyfoot[RE,RO]{}
@@ -392,7 +502,13 @@
 \fancypagestyle{plain}{\makefancy}
 
 \newenvironment{abstract}{\newpage\begin{center}\textbf{\Large Abstract}\\\vspace{3em}}{\end{center}\newpage}
-\newenvironment{acknowledgements}{\newpage\begin{center}\textbf{\Large Acknowledgements}\end{center}\vspace{3em}}{}
+\newenvironment{acknowledgements}{%
+    \newpage
+    \begin{center}
+        \textbf{\Large Acknowledgements} \\
+    \end{center}
+    \vspace{3em}
+}{}
 
 % TODO REMOVE
 \usepackage[titles]{tocloft}
@@ -453,7 +569,6 @@
 \ifx\supervisorcopy\undefined
     \linespread{1.25}
     % \fancyhead[CE,CO]{}
-    \renewcommand{\headrulewidth}{0.1pt}
     \hypersetup{colorlinks=true,
         linkcolor=black, % blue
         citecolor=black, % blue
@@ -462,7 +577,6 @@
 \else
     \doublespacing
     % \fancyhead[CE,CO]{\textsc{Draft Version -- Supervisor Comments}}
-    \renewcommand{\headrulewidth}{0.1pt}
     \hypersetup{colorlinks=true,
         linkcolor=black, % blue
         citecolor=blue, % blue
@@ -498,6 +612,8 @@
   #1
 }
 
+\renewcommand{\headrulewidth}{0pt}
+
 \begin{document}
     \input{titlematter.tex}
 
@@ -522,6 +638,7 @@
     \end{appendices}
 
     \backmatter % Denotes the end of the main document content
+    \makelessfancy
     \bibliographystyle{mnras}
     \bibliography{thesis.bib}
 

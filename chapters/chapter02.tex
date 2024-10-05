@@ -15,7 +15,7 @@ but it's getting closer together.\\
 and it's getting closer together.\\
 and it's getting closer toge-\\
 \textbf{it's a star}\\
-new shit just got made!}{history of the entire world, i guess}{Bill Wurtz}
+new [stuff] just got made!}{history of the entire world, i guess}{Bill Wurtz}
 
 From the point of view of stellar evolution, which starts in earnest at the \gls{zams}, the formation of stars is interesting but ultimately broadly unimportant. We provide a short recap of stellar formation here as scene-setting, but our stellar evolution models assume that a gas cloud has already collapsed and we have a star at its \gls{zams}.
 
@@ -183,7 +183,7 @@ Massive stars are the key focal objects of this study, and in many ways offer so
     \label{fig:hr_diagram_8msun_star}
 \end{figure}
 
-\subsection{Relativistic corrections}
+\subsection{Relativistic corrections}\label{sec:relativity_exists}
 
 \epigraph{There's a trick you can use in mathematics called ``not worrying about it''}{Matt Parker}
 
@@ -329,7 +329,7 @@ Importantly for the nucleosynthesis of heavier-than-Iron elements, the supernova
 
 Introducing a second star into the mix complicates the evolution. Whereas before a star losing mass (through, for example, a \gls{cme}) was assumed to eject it into the \gls{ism}, it may now accrete that material directly onto its companion. In addition, either star may in principle increase in radius enough to overlap with its companion, or even touch surfaces -- introducing new dynamics into the mix.
 
-\subsection{Binary star kinematics}
+\subsection{Binary star kinematics}\label{sec:binary_kinematics}
 
 There are several formation channels for a binary star system. Binaries may be formed from birth (as discussed in \autoref{sec:stellar_formation}, with the caveat that in this scenario two clumps of gas form near each other), via fragmentation of a protostar's disc, dynamical capture of one star by another (comparable to one of the suggested origins of Phobos and Deimos, per \citet{Burns:1978}), or via a higher multiplicity system ejecting one or more of its constituent stars, perhaps via a natal supernova kick.
 
@@ -456,7 +456,7 @@ Our potential now becomes
 Taking the partial derivative along the $\xi$-axis (the rescaled $x$-axis), we get
 
 \begin{equation}
-    \pdv{V}{\xi} = -\frac{Gm\pqty{M_1+M_2}}{a}\times\bqty{-\frac{\xi_2\pqty{\xi-\xi_1}}{\pqty{\pqty{\xi-\xi_1}^2+\eta^2}^\frac32}-\frac{\xi_1\pqty{\xi-\xi_2}}{\pqty{\pqty{\xi-\xi_2}^2+\eta^2}^\frac32}+\xi}
+    \pdv{V}{\xi} = -\frac{Gm\pqty{M_1+M_2}}{a}\times\bqty{-\frac{\xi_2\pqty{\xi-\xi_1}}{\pqty{\pqty{\xi-\xi_1}^2+\eta^2}^\frac32}-\frac{\xi_1\pqty{\xi-\xi_2}}{\pqty{\pqty{\xi-\xi_2}^2+\eta^2}^\frac32}+\xi}\label{eq:pdv_of_roche_potential}
 \end{equation}
 
 Hence the extrema of the potential $V$ are at the points $\xi$ where (taking $\eta=0$ on the $\xi$-axis)
@@ -473,7 +473,7 @@ Hence the extrema of the potential $V$ are at the points $\xi$ where (taking $\e
 %     0=\frac{\xi_2\xi-\xi_2\xi_1}{\pqty{\xi^2+\xi_1^2-2\xi\xi_1+\eta^2}^\frac32}+\frac{\xi_1\xi-\xi_1\xi_2}{\pqty{\xi^2+\xi_2^2-2\xi\xi_2+\eta^2}^\frac32}+\xi,
 % \end{equation}
 
-No analytical function for $\xi$ exists unless either or both of $\xi_1, \xi_2$ are zero (which would only be the case for a single star), thus we must make approximations.
+No analytical function for $\xi$ exists unless either or both of $\xi_1, \xi_2$ are zero (which would only be the case for a single star, and thus the Roche lobe would not exist in the first instance), thus we must make approximations.
 
 %First, we note that if $q=\frac{M_2}{M_1}$ the $\xi_1, \xi_2$ coefficients can be written as
 
@@ -584,6 +584,25 @@ and $R_\text{L}(q)$ is given by \autoref{eq:RL1_eggleton}.
 
 We note that \citet{Marchant:2016} uses an inverse mass ratio definition compared to \citet{Eggleton:1983}, that is, \citet{Marchant:2016} takes $q_\text{Marchant}=\frac{M_1}{M_2}$ whereas \citet{Eggleton:1983} takes $q_\text{Eggleton}=\frac{M_2}{M_1}=\frac{1}{q_\text{Marchant}}$. This is accounted for in \autoref{eq:RL2_marchant} such that the mass ratios are consistent (and we take $q=q_\text{Eggleton}$), but other texts do not necessarily differentiate or describe the difference.
 
+\subsubsection{The \texorpdfstring{$\mathcal{L}_3/\mathcal{L}_4/\mathcal{L}_5$}{other Lagrange} points}
+
+Along the $\eta$-axis, the partial derivative in \autoref{eq:pdv_of_roche_potential} reads instead
+
+\begin{equation}
+\pdv{V}{\eta} = - \frac{G \left(M_{1} + M_{2}\right)}{a} \left(- \frac{2 \xi_1}{\left(\eta^{2} + \left(\xi- \xi_1\right)^{2}\right)^{\frac{3}{2}}}\eta + \eta\right)\, .
+\end{equation}
+
+The non-trivial root is given by
+
+\begin{equation}
+0 = - \frac{2 \xi_1}{\left(\eta^{2} + \left(\xi- \xi_1\right)^{2}\right)^{\frac{3}{2}}}\, .
+\end{equation}
+
+\begin{equation}
+- \frac{G \left(M_{1} + M_{2}\right)}{a} \left(- \frac{2 M_{2} \eta}{\left(M_{1} + M_{2}\right) \left(\eta^{2} + \left(- \frac{M_{2}}{M_{1} + M_{2}} + \xi\right)^{2}\right)^{\frac{3}{2}}} + \eta\right)
+\end{equation}
+
+
 % \subsection{Common Envelope Evolution}
 
 % Now we turn to one of the highly uncertain phases of binary evolution. If one star's radius $R_1$ grows enough such that the radius is greater than the separation between the two binaries, i.e., $R_1 > a$, we say that the star has entered \gls{cee}. There are several effects that occur here. Firstly, due to orbital drag from the donor star (*1), the recipient star (*2) will shrink in orbit, i.e., the stars will come closer together. The relationship between the initial separation and the final separation is debated, and here we review some of the most common prescriptions.
@@ -645,7 +664,7 @@ Mass transfer can broadly be sectioned into four main categories:
 
 \subsubsection{Wind mass-loss}
 
-Wind mass loss computations are (generally) performed using the prescription of \cite{De_jager:1988} and \citet{Vink:2001}. The precise scheme is detailed in \citet{Eldridge:2017}.\footnote{In other codes such as \textsc{Mesa}, this is referred to as the ``Dutch'' mass loss prescription} There are two critical modifications we make to their scheme.
+Wind mass loss computations are (generally) performed using the prescription of \cite{De_jager:1988} and \citet{Vink:2001}. The precise scheme is detailed in \citet{Eldridge:2017}.\footnote{In other codes such as \textsc{Mesa}, this is referred to as the ``Dutch'' mass loss prescription owing to the nationality of the authors of \citet{De_jager:1988} and \citet{Vink:2001}.} There are two critical modifications we make to their scheme.
 
 The first modification surrounds the transition into the \gls{wr} regime. Traditionally this has been a sharp transition when the surface hydrogen mass fraction becomes less than 0.4 and the surface temperature is above \SI[print-unity-mantissa=false]{1e4}{\kelvin}. This is a reasonable approximation, though if a star reaches this phase and is \textit{not} yet a \gls{wr} star, the code will fail. To account for this we gradually turn on these enhanced \gls{wr} rates when this condition approaches, smoothing the transition.
 
@@ -667,12 +686,26 @@ Matter exceeding $\mathcal{L}_2$ (the outer Lagrange point) does not currently r
 
 \subsubsection{Accretion}
 
+Our accretion rates are taken from \citet{Bondi:1944, Hurley:2002}, and limits the accretion rate by the thermal timescale of the star. The prescription is that
+
+\begin{equation}
+    \dot{M}_\text{acc} = \min\left(\dot{M}_\text{RLOF}, \frac{M}{T_\text{KH}}\mathcal{R}\left(1-\frac{\omega}{0.8\omega_\text{crit}}\right)\right)
+\end{equation}
+
+where $\omega$ and $\omega_\text{crit}$ are the spin rate and critical spin rate of the star. We generally assume that the star is composed of individually rotating shells of variable thickness. If $N$ is the number of meshpoints that the star is composed of (for our cases, normally $N=199$), then the moment of inertia is given by
+
+\begin{equation}
+    I = \frac25 M_\text{c}R_\text{c}^2 + \sum_{k=1}^N \frac23 \left(m_k-m_{k+1}\right)r_k^2,
+\end{equation}
+
+where $m_k$ is the mass internal to meshpoint $k$ (sim. for $r_k$), and a subscript of c refers to the central meshpoint. It is assumed that the central meshpoint sits atop a solid sphere, hence $\frac25$ as its prefactor.
+
 \subsubsection{Bondi-Hoyle accretion}
 
 Bondi-Hoyle accretion for a circular orbit is given by
 
 \begin{equation}
-\dot{M}_\text{Bondi} = \min\left[-\frac{1}{\sqrt{1-e^2}}\left(\frac{GM_2}{v_\text{W}^2}\right)^2 \frac{\alpha_\text{W}}{2a^2}\frac{1}{\left(1+v^2\right)^{3/2}}, 0.8\right]\dot{M}_\text{wind},\label{eq:bondi}
+\dot{M}_\text{Bondi} = \min\left[-\left(\frac{GM_2}{v_\text{W}^2}\right)^2 \frac{\alpha_\text{W}}{2a^2}\frac{1}{\left(1+v^2\right)^{3/2}}, 0.8\right]\dot{M}_\text{wind},\label{eq:bondi}
 \end{equation}
 
 where we have assumed that the orbital velocity is given by
@@ -940,14 +973,51 @@ The heart of \codename{stars} is a matrix inversion algorithm. Although computin
 
 For a ``typical'' binary computation, with $n_\text{comp}=30$ equations and $N_\text{mesh}=199$ meshpoints, the matrix is already $6766\times6766$, for a binary which evolves up the \gls{agb} (the theoretically most complex calculation we perform) with $N_\text{mesh}=999$, the matrix is $33966\times33966$. Introducing $k$ new equations into the code causes the runtime of the matrix inversion calculation to scale like $\mathcal{O}(n^3+k^3N_\text{mesh}^3)$.
 
-The matrix inversion is simple Gauss-Jordan inversion, which is of complexity class (for an $n\times n$ matrix) $\mathcal{O}(n^3)$. \citet{Coppersmith:1987} showed that this could be optimised to $\mathcal{O}(n^{2.376})$ and conjectured reducibility to $\mathcal{O}(n^2)$.\footnote{The current ``best'' optimisation is $\mathcal{O}(n^{2.3727})$ \citep{Williams:2012}. DeepMind's AlphaTensor has claimed a faster result in \citet{Fawzi:2022}, though they do not state a complexity class. This is because ``...this does not yield
-practical algorithms.''} Since our code is embarassingly parallelisable, and can be executed in parallel simply by increasing the number of cores available, the payoff for decreasing the runtime by one polynomial order is inconsequential, and thus we use the straightforward implementation.
+The matrix inversion is simple Gauss-Jordan inversion, which is of complexity class (for an $n\times n$ matrix) $\mathcal{O}(n^3)$. \citet{Coppersmith:1987} showed that this could be optimised to $\mathcal{O}(n^{2.376})$ and conjectured reducibility to $\mathcal{O}(n^2)$.\footnote{The current ``best'' optimisation is $\mathcal{O}(n^{2.3727})$ \citep{Williams:2012}. DeepMind's AlphaTensor has claimed a faster result in \citet{Fawzi:2022}, though they do not state a complexity class. This is because ``...this does not yield practical algorithms.''} Since our code is embarassingly parallelisable, and can be executed in parallel simply by increasing the number of cores available, the payoff for decreasing the runtime by one polynomial order is inconsequential, and thus we use the straightforward implementation.
 
 \subsubsection{Initial Condition Selection}
 
 In this section we provide an account for the selection of our general initial conditions. Unless otherwise noted in this thesis, it is assumed that the values will be using the parameters described here and in \autoref{chap:param_config}.
 
 In our implementation of \gls{mlt} \citep{Vitense:1953, Bohm-vitense:1958, Cox:1968}, we use an \gls{mlt} parameter of $\alpha_\text{\gls{mlt}}=1.985$, selected via calibration against a model of the Sun. This is effectively a dissipativity parameter, and represents the depth at which a parcel of matter penetrates into a lower layer before becoming fully dissipated. The value was selected by modelling a \SI{1}{\msun} star and varying only the mixing length parameter until it had a lumonosity of \SI{1}{\lsun} and a radius of \SI{1}{\rsun}, at the present age of the Sun.
+
+\subsubsection{Mesh spacing}
+
+A natural question that arises when modelling a star is where internally to model it -- there is a counterbalance between the level of detail and the time cost of the matrix inversion. The obvious answer would be to distribute a mesh equally spaced within radius of the star, however the nonhomogeniety of a star, plus the potential for very thin shells of physically important material, necessitate a more intelligent approach.
+
+Instead of being equally spaced \textit{radially}, these mesh points are taken to be equally spaced within a function $\mathcal{Q}$, which is given for a binary that does not have \gls{agb}-specific treatment enabled by
+
+\begin{align}
+    \mathcal{Q}\left(P, T, M, R\right) &= c_4\ln P + c_5\ln\left(P+c_\text{H}\right) + c_2\ln\left(P+3 P_\text{He}\right) + c_2\ln\left(P+0.3 P_\text{He}\right) + c_7\ln\left(\frac{T}{T+2\times 10^4}\right) \notag\\
+    &\phantom{=} + \ln\left(\frac{c_6M^\frac23}{M + M^\frac23}\right) - c_3\ln\left(\frac{R^2}{c_8}+1\right),
+\end{align}
+
+where $P, T, M, R$ are the total pressures, temperatures, masses, and radii of each star, the constants $c_i$ are user controllable and given in \autoref{chap:param_config}, $P_\text{He}$ is the pressure in the Helium-burning shell, and
+
+\begin{equation}
+    c_\text{H} = \begin{cases}
+        0.1 P_\text{H} & X_\text{H} \geq 0.15 \\
+        0.1 \mathcal{P} & \text{otherwise}
+    \end{cases}
+\end{equation}
+
+where$P_\text{H}$ is the pressures in the Hydrogen-burning shell. Here, $\mathcal{P}$ represents the pressure in the Hydrogen-burning shell when $X_\text{H} = 0.15$. The choice of mesh spacing coefficients $c_1\dots c_{10}$ leads to different areas of the star being prioritised. Coordinates $c_1, c_9,$ and $c_{10}$ are not used except in \gls{agb}-specific evolution, which is not required for most cases (and requires a change of parameterisation in the pressure-shell terms). $c_5$ is hardcoded to be 0.15, and $c_2$ to be 0.0. \todo{but why? ``its what the code does'' is a bad reason.}
+
+Placement of the mesh is controlled by the derivative $\pdv{\mathcal{Q}}{k}$, where $k$ is the meshpoint number \citep{Stancliffe:2016}. Specifically, meshpoints are placed at locations where
+
+\begin{equation}
+    \eval{\pdv{\mathcal{Q}}{k}}{k}-\eval{\pdv{\mathcal{Q}}{k}}{k+1} = 0.
+\end{equation}
+
+The mesh is thus adaptive (insofar as it changes to place meshpoints where they are needed for evolution) and non-Lagrangian (insofar as the derivative is not at constant mass coordinate). If one desires to make the mesh viscous (i.e., partially Lagrangian), one can follow \citet{Stancliffe:2004} and write, for $0\leq\gamma\leq1$,
+
+\begin{equation}
+    \pqty{\eval{\pdv{\mathcal{Q}}{k}}{k}-\eval{\pdv{\mathcal{Q}}{k}}{k+1}}\pqty{1-\gamma} + \gamma\pqty{\eval{\pdv{m}{t}}{k}} = 0,
+\end{equation}
+
+where now the parameter $\gamma$ is a weighting coefficient such that if $\gamma=1$, then the mesh spacing function is irrelevant and the parameters are spaced equally in mass, and if $\gamma=0$, the original mesh spacing function is used. In between, if $\gamma=\gamma\pqty{k, \dd{t}}$, then parts of the mesh are allowed to be Lagrangian and parts non-Lagrangian; the mesh is said to be \textit{viscous}. We typically keep the mesh non-viscous and non-Lagrangian, as a viscous mesh is most useful for \gls{agb} evolution and evolving through thermal pulses.
+
+More detail is provided in \citet{Eggleton:1971} for the original mesh spacing function, and \citet{Stancliffe:2004} for the binary mesh spacing function.
 
 \subsubsection{Timestep control}
 
