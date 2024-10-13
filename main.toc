@@ -27,27 +27,27 @@
 \contentsline {section}{\numberline {2.3}Supernovae}{14}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Two to tango: Binary Evolution}{16}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Binary star kinematics}{16}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Roche Lobes}{16}{subsection.2.4.2}%
-\contentsline {subsubsection}{The $\mathcal {L}_1$ point}{19}{subsubsection*.19}%
-\contentsline {subsubsection}{The $\mathcal {L}_2$ point}{19}{subsubsection*.22}%
-\contentsline {subsubsection}{The $\mathcal {L}_3/\mathcal {L}_4/\mathcal {L}_5$ points}{21}{subsubsection*.24}%
-\contentsline {subsection}{\numberline {2.4.3}Mass Transfer}{21}{subsection.2.4.3}%
-\contentsline {subsubsection}{Wind mass-loss}{22}{subsubsection*.25}%
-\contentsline {subsubsection}{\acrfull {rlof}}{22}{subsubsection*.26}%
-\contentsline {subsubsection}{Accretion}{22}{subsubsection*.27}%
-\contentsline {subsubsection}{Bondi-Hoyle accretion}{23}{subsubsection*.28}%
-\contentsline {section}{\numberline {2.5}Post-Supernova}{25}{section.2.5}%
+\contentsline {subsection}{\numberline {2.4.2}Roche Lobes}{17}{subsection.2.4.2}%
+\contentsline {subsubsection}{The $\mathcal {L}_1$ point}{20}{subsubsection*.20}%
+\contentsline {subsubsection}{The $\mathcal {L}_2$ point}{20}{subsubsection*.23}%
+\contentsline {subsubsection}{The $\mathcal {L}_3/\mathcal {L}_4/\mathcal {L}_5$ points}{21}{subsubsection*.25}%
+\contentsline {subsection}{\numberline {2.4.3}Mass Transfer}{22}{subsection.2.4.3}%
+\contentsline {subsubsection}{Wind mass-loss}{22}{subsubsection*.26}%
+\contentsline {subsubsection}{\acrfull {rlof}}{22}{subsubsection*.27}%
+\contentsline {subsubsection}{Accretion}{23}{subsubsection*.28}%
+\contentsline {subsubsection}{Bondi-Hoyle accretion}{23}{subsubsection*.29}%
+\contentsline {section}{\numberline {2.5}Post-Supernova}{26}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}Merger Rates of compact binaries}{27}{subsection.2.5.1}%
 \contentsline {section}{\numberline {2.6}Numerical implementation}{28}{section.2.6}%
 \contentsline {subsection}{\numberline {2.6.1}The Cambridge \textsc {\MakeLowercase {stars}} code}{28}{subsection.2.6.1}%
-\contentsline {subsubsection}{Brief History}{28}{subsubsection*.30}%
-\contentsline {subsubsection}{Matrix Inversion}{29}{subsubsection*.31}%
-\contentsline {subsubsection}{Initial Condition Selection}{30}{subsubsection*.32}%
-\contentsline {subsubsection}{Mesh spacing}{30}{subsubsection*.33}%
-\contentsline {subsubsection}{Timestep control}{31}{subsubsection*.34}%
-\contentsline {subsubsection}{Numerical instabilities}{31}{subsubsection*.35}%
-\contentsline {subsubsection}{Critical modifications}{32}{subsubsection*.38}%
-\contentsline {subsection}{\numberline {2.6.2}The \textsc {\MakeLowercase {Tui}} code}{32}{subsection.2.6.2}%
+\contentsline {subsubsection}{Brief History}{28}{subsubsection*.31}%
+\contentsline {subsubsection}{Matrix Inversion}{29}{subsubsection*.32}%
+\contentsline {subsubsection}{Initial Condition Selection}{30}{subsubsection*.33}%
+\contentsline {subsubsection}{Mesh spacing}{30}{subsubsection*.34}%
+\contentsline {subsubsection}{Timestep control}{31}{subsubsection*.35}%
+\contentsline {subsubsection}{Numerical instabilities}{31}{subsubsection*.36}%
+\contentsline {subsubsection}{Critical modifications}{32}{subsubsection*.39}%
+\contentsline {subsection}{\numberline {2.6.2}The \textsc {\MakeLowercase {Tui}} code}{34}{subsection.2.6.2}%
 \contentsline {subsection}{\numberline {2.6.3}The \textsc {\MakeLowercase {Kaitiaki}} grid-watcher code}{35}{subsection.2.6.3}%
 \contentsline {section}{\numberline {2.7}Chapter Summary}{36}{section.2.7}%
 \contentsline {chapter}{\numberline {3}Helium Rich Mass Transfer}{37}{chapter.3}%
@@ -73,9 +73,9 @@
 \contentsline {section}{\numberline {6.1}Summary}{63}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Limitations}{63}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Suggested Future Work}{63}{section.6.3}%
-\contentsline {chapter}{Appendices}{65}{section*.57}%
+\contentsline {chapter}{Appendices}{65}{section*.58}%
 \contentsline {chapter}{\numberline {A}Code Samples}{67}{appendix.a.A}%
 \contentsline {chapter}{\numberline {B}Code Versions}{71}{appendix.a.B}%
 \contentsline {chapter}{\numberline {C}Period-Eccentricity distributions along the \acrshort {lvk} \acrshort {o3} contour}{73}{appendix.a.C}%
 \contentsline {chapter}{\numberline {D}Parameter Configuration}{75}{appendix.a.D}%
-\contentsline {chapter}{Bibliography\ttl@gmk {\@mkboth {\MakeUppercase {Bibliography}}{\MakeUppercase {Bibliography}}}}{79}{appendix*.62}%
+\contentsline {chapter}{Bibliography\ttl@gmk {\@mkboth {\MakeUppercase {Bibliography}}{\MakeUppercase {Bibliography}}}}{79}{appendix*.63}%
