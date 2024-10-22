@@ -1,104 +1,91 @@
 % !TEX root = ../main.tex
-\chapter{Helium Rich Mass Transfer}
+\chapter{Detailed Models of Overcontact Binary Stars}\label{chap:close_contact}
 
-\mediaepigraph{Begin at the beginning, the King said, very gravely, and go on till you come to the end: then stop.}{Alice's Adventures in Wonderland}{Lewis Carroll}
+\epigraph{There are more things in Heaven and Earth, Horatio, than are dreamt of in your philosophy.}{Hamlet}
 
-As discussed in \autoref{sec:binary_evolution}, the presence of a companion measurably alters the evolution of a star. Typically this manifests as allowing matter to be exchanged between the components or the gravity of one star warping the photosphere of the other. In this chapter we focus on the first instance, where mass transfer occurs between two stars. We consider a binary system with \gls{zams} masses of \SI[parse-numbers=false]{30+10}{\msun}, and an initial period of $10^{0.6}\approx$\SI{3.98}{\day}.
+As previously discussed, stars undergoing mass transfer will generally experience \gls{rlof} during their lifetimes. In a binary where both stars are undergoing mass transfer, both stars may undergo \gls{rlof} simultaneously, resulting in a contact binary system in which both stars physically touch. Contact binaries are not uncommon -- they form one in every approximately 100 main-sequence stars \citep{Rucinski:1998} and 39 in every 100 binary systems \citep{Green:2023}.
 
-\section{Atypical abundance profiles}
+The evolution is also complex. Sufficiently close models may overflow their $\mathcal{L}_2$ points, or create mergers on exceptionally short timescales -- typically $P_\text{orb}\lesssim\SI{2}{\day}$, but periods as low as $P_\text{orb}=\SI{85}{\minute}$ \citep{El-badry:2022} are possible in theory or $\sim\SI{167}{\minute}$ in practice \citep{Koen:2022}.
 
-Because the stars are quite close together and have a mass ratio of $\nicefrac{1}{3}$, when \gls{rlof} starts it is quite voracious, and becomes even more so during the contact phase. The donor star sheds its hydrogen-rich surface and material from the helium-rich core is exposed, which too becomes part of the accreted material. The material stream becomes increasingly helium-rich, depositing this material on top of a hydrogen-rich surface, causing the accretor to have an atypical abundance profile, as shown pictorally in \autoref{fig:composition_profile_evolution}. The net effect is that there is a helium-rich surface sitting atop a hydrogen-rich layer sitting atop a helium-rich core. At this stage thermohaline mixing is projected to occur, as there is an unstable composition gradient (owing to helium having a higher mean molecular weight than hydrogen).
+\section{Observations of contact binaries}
+
+Observations of contact binaries date back to the 1940s \citep{Kuiper:1941}, however only a handful of contact binaries are known. The binaries we study in this chapter are summarised in \autoref{tab:overcontact_binaries}, and were originally compiled in \citet{Abdul-masih:2022}.
 
 \begin{table}
-    \begin{subtable}[b]{0.49\linewidth}
-        \centering
-        \begin{tabular}{l|lr|rr|rr}
-            \toprule
-                                                                 &                              &                    &   \multicolumn{2}{c|}{Star 1}           &   \multicolumn{2}{c}{Star 2}           \\
-                                                                 &                              &   \mlc{$t=0$\\(a)} &   \mlc{Begin\\(b)} &   \mlc{End\\(e)}   &   \mlc{Begin\\(c)} & \mlc{End\\(d)}    \\
-            \midrule
-             \multirow{5}{*}{\rotatebox[origin=c]{90}{Donor}}    & $M~/~\unit{\msun}$           &              30.00 &              27.93 &               7.56 &            26.91 &              17.43  \\
-                                                                 & $R~/~\unit{\rsun}$           &               8.82 &              16.32 &              10.20 &            13.88 &               9.76  \\
-                                                                 & $\log L~/~\unit{\lsun}$      &               5.07 &               5.30 &               5.25 &             5.16 &               4.94  \\
-                                                                 & $X_\text{surf}$              &               0.70 &               0.70 &               0.09 &             0.70 &               0.57  \\
-                                                                 & $Y_\text{surf}$              &               0.28 &               0.28 &               0.89 &             0.28 &               0.41  \\
-             \midrule
-             \multirow{5}{*}{\rotatebox[origin=c]{90}{Accretor}} & $M~/~\unit{\msun}$           &              10.00 &               9.99 &              20.97 &            11.00 &              14.57  \\
-                                                                 & $R~/~\unit{\rsun}$           &               4.87 &               4.36 &               4.02 &             9.23 &               8.98  \\
-                                                                 & $\log L~/~\unit{\lsun}$      &               3.73 &               3.81 &               4.89 &             4.90 &               5.06  \\
-                                                                 & $X_\text{surf}$              &               0.70 &               0.70 &               0.09 &             0.70 &               0.57  \\
-                                                                 & $Y_\text{surf}$              &               0.28 &               0.28 &               0.89 &             0.28 &               0.41  \\
-             \midrule
-             \multirow{3}{*}{\rotatebox[origin=c]{90}{Binary}}   & $P_\text{bin}~/~\unit{\day}$ &               3.98 &               3.85 &               4.41 &             3.14 &               2.52  \\
-                                                                 & $a~/~\unit{\rsun}$           &              36.14 &              34.74 &              34.56 &            30.28 &              24.71  \\
-                                                                 & Age~/~\unit{\kilo\year}      &               0.00 &            4707.16 &            6450.23 &          4712.75 &            4716.42  \\
-             \bottomrule
-        \end{tabular}
-        \caption{Variable composition accretion}
-        \label{tab:binary_configuration_parameters_variable_accretion}
-    \end{subtable}%
-    \begin{minipage}{0.1\linewidth}
-    \phantom{a} % please
-    \end{minipage}%
-    \begin{subtable}[b]{0.49\linewidth}
-        \centering
-        \begin{tabular}{rr|rr}
-             \toprule
-                                                                                                                         \multicolumn{2}{c|}{Star 1}           &   \multicolumn{2}{c}{Star 2}            \\
-                                                                                                                         \mlc{Begin\\(b)} &   \mlc{End\\(e)}   &   \mlc{Begin\\(c)} & \mlc{End\\(d)}     \\
-             \midrule
-                                                                                                                                    27.93 &               7.57 &              26.91 &              17.27 \\
-                                                                                                                                    16.32 &              10.15 &              13.88 &               9.77 \\
-                                                                                                                                     5.30 &               5.25 &               5.16 &               4.98 \\
-                                                                                                                                     0.70 &               0.09 &               0.70 &               0.57 \\
-                                                                                                                                     0.28 &               0.89 &               0.28 &               0.42 \\
-             \midrule
-                                                                                                                                     9.99 &              20.77 &              11.00 &              14.52 \\
-                                                                                                                                     4.36 &               6.53 &               9.23 &               9.02 \\
-                                                                                                                                     3.81 &               4.73 &               4.90 &               4.95 \\
-                                                                                                                                     0.70 &               0.70 &               0.70 &               0.70 \\
-                                                                                                                                     0.28 &               0.28 &               0.28 &               0.28 \\
-             \midrule
-                                                                                                                                     3.85 &               4.38 &               3.14 &               2.54 \\
-                                                                                                                                    34.74 &              34.33 &              30.28 &              24.78 \\
-                                                                                                                                  4707.16 &            6448.11 &            4712.75 &            4716.70 \\
-            \bottomrule
-        \end{tabular}
-        \caption{Non-variable accretion}
-        \label{tab:binary_configuration_parameters_standard_accretion}
-    \end{subtable}
-    \caption{The key evolutionary parameters of both stars and the binary configuration at five critical points: the initial parameters, and the beginning and ends of both epochs of \gls{rlof}. All values are rounded to 2 decimal places. The letter in parentheses represents which segment of \autoref{fig:composition_profiles_stages} (for \autoref{tab:binary_configuration_parameters_variable_accretion}) or \autoref{fig:composition_profiles_stages_standard} (for \autoref{tab:binary_configuration_parameters_standard_accretion}) the abundances are given in.}
-    \label{tab:binary_configuration_parameters}
+    \centering
+    \begin{tabular}{c|c|c|c|c|c|c|c|c}
+        \toprule
+        Binary name & $M_1$ & $M_2$ & $P$ & Z & $\log T_1$ & $\log L_1$ & $\log T_2$ & Ref. \\
+        \midrule
+        LSS 3074       & $14.8 \pm 2.2$ & $17.2 \pm 4.2$ & $2.183 \pm 1$         & 0.020$^a$ & $4.6 \pm 0.2$    & $5.15 \pm 0.2$   & $4.53 \pm 0.5$   & A \\
+        MY Cam         & $37.7 \pm 3.2$ & $31.6 \pm 4.2$ & $1.175^{+6}_{-1.175}$ & 0.020$^a$ & $4.62 \pm 0.2$   & $5.2 \pm 1.0$    & $4.59 \pm 0.5$   & B \\
+        SMC 108086     & $16.9 \pm 1.2$ & $14.3 \pm 5.1$ & $0.883 \pm 0.88$      & 0.004$^b$ & $4.53 \pm 0.1$   & $4.608 \pm 0.4$  & $4.48 \pm 0.5$   & C \\
+        TU Mus         & $16.7 \pm 1.6$ & $10.4 \pm 1.4$ & $1.387 \pm 1$         & 0.020$^c$ & $4.57 \pm 0.2$   & $5.02 \pm 0.4$   & $4.54 \pm 0.5$   & D \\
+        V382 Cyg$^d$   & $26.1 \pm 3.2$ & $19.0 \pm 4.2$ & $1.886 \pm 1$         & 0.020$^e$ & $4.57 \pm 0.2$   & $5.47 \pm 0.4$   & $4.58 \pm 0.5$   & E \\
+        VFTS 352       & $28.6 \pm 3.6$ & $28.9 \pm 1.8$ & $1.124^{+2}_{-1.124}$ & 0.010$^f$ & $4.63 \pm 0.45$  & $5.19 \pm 1.0$   & $4.61 \pm 0.5$   & F \\
+
+        \bottomrule
+    \end{tabular}
+        \caption[Search parameters for the six close-contact binaries compiled in \citet{Abdul-masih:2022}, as used in our fitting to the BPASS v2.2.1 grid.]{Search parameters for the six close-contact binaries compiled in \citet{Abdul-masih:2022}, as used in our fitting to the BPASS v2.2.1 grid. The uncertainties presented are not the physical uncertainties on their parameters, but instead represent the size of the range that we search within, e.g., $P=1.175^{+6}_{-1.175}$ indicates that we match on all periods between 0 and \SI{7.165}{\day} inclusive. Masses and Luminosities are measured relative to solar, periods are measured in days, and temperatures measured in Kelvin. \textbf{Notes:} $^a$Source paper assumes solar metallicity with no further qualification $^b$Using the mean metallicity of the SMC $^c$Based on \citet{Andersen:1975} claiming 0.021 and \citet{Terrell:2003} confirming a comparison with synthetic spectra ``does not support a carbon content, and therefore metallicity, far from the solar value'' $^d$ A mass ratio inversion occurred for this binary \citep[see][]{Martins:2017} and hence we use the definition of ``primary'' from within the paper when reporting in this table. $^e$Using the mean metallicity of the Milky Way $^f$As \citet{Crowther:2018} reports ``half-solar'' for the Tarantula Nebula, the host nebula of VFTS 352. \textbf{References}: A: \citet{Raucq:2017}, B: \citet{Lorenzo:2014}, C: \citet{Hilditch:2005}, D: \citet{Penny:2008}, E: \citet{Martins:2017}, F: \citet{Almeida:2015}}
+    \label{tab:overcontact_binaries}
 \end{table}
 
-\begin{figure}
+\section{Data matching with BPASS v2.2}
+
+We perform our data matching using the \codename{Hoki} code \citep{Stevance:2020a}.
+
+\begin{table}
     \centering
-    \begin{subfigure}[t]{0.45\columnwidth}
-        \centering
-        \includegraphics[width=\columnwidth]{images/HeliumRich/segmented_composition_profiles.png}
-        \caption{Variable accretion} \label{fig:composition_profiles_stages}
-    \end{subfigure}
-    \begin{subfigure}[t]{0.45\columnwidth}
-        \centering
-        \includegraphics[width=\columnwidth]{images/HeliumRich/segmented_composition_profiles_STANDARD_BINARY.png}
-        \caption{Non-variable accretion} \label{fig:composition_profiles_stages_standard}
-    \end{subfigure}
-    \caption[The chemical composition of each star as a function of the stellar radius for the donor and accretor at the five key stages of the binary's lifetime.]{The chemical composition of each star as a function of the stellar radius for the donor and accretor at the five key stages of the binary's lifetime as detailed in \autoref{tab:binary_configuration_parameters}. Letters are as given in the same table. Each grid marking in the radial direction represents \SI{1}{\rsun}.}
-    \label{fig:composition_profile_evolution}%_eddington}
-\end{figure}
+     \newcommand{\oldstrech}{\arraystretch}
+     \renewcommand{\arraystretch}{1.2}
+    \begin{tabular}{c|l|c|c|c|c|l}
+         \toprule
+         Binary & BPASS v2.2.1 matches & $M_{1, \text{ZAMS}}$ & $M_{2, \text{ZAMS}}$ & $q$ & $P_{\text{ZAMS}}$ & $\log$ Age\\
+         \midrule
+         \multirow{5}{*}{LSS 3074}       & sneplot-z020-30-0.3-0.6 & 30.0 & 9.0 & 0.3 & 3.98 & 6\\
+                                          & sneplot-z020-25-0.4-0.6 & 25.0 & 10.0 & 0.4 & 3.98 & 6\\
+                                          & sneplot-z020-25-0.5-0.6 & 25.0 & 12.5 & 0.5 & 3.98 & 6\\
+                                          & sneplot-z020-24-0.4-0.6 & 24.0 & 9.6 & 0.4 & 3.98 & 6\\
+                                          & sneplot-z020-24-0.5-0.6 & 24.0 & 12.0 & 0.5 & 3.98 & 6\\
+                                                                                \midrule
+         \multirow{9}{*}{MY Cam}         & sneplot-z020-70-0.3-1 & 70.0 & 21.0 & 0.3 & 10.00 & 6.4\\
+                                          & sneplot-z020-60-0.3-0.8 & 60.0 & 18.0 & 0.3 & 6.31 & 6.4\\
+                                          & sneplot-z020-60-0.4-0.8 & 60.0 & 24.0 & 0.4 & 6.31 & 6.4\\
+                                          & sneplot-z020-60-0.3-1 & 60.0 & 18.0 & 0.3 & 10.00 & 6.4\\
+                                          & sneplot-z020-50-0.5-0.6 & 50.0 & 25.0 & 0.5 & 3.98 & 6.4\\
+                                          & sneplot-z020-50-0.4-0.8 & 50.0 & 20.0 & 0.4 & 6.31 & 6.4\\
+                                          & sneplot-z020-50-0.5-0.8 & 50.0 & 25.0 & 0.5 & 6.31 & 6.4\\
+                                          & sneplot-z020-50-0.6-0.8 & 50.0 & 30.0 & 0.6 & 6.31 & 6.4\\
+                                          & sneplot-z020-40-0.7-0.8 & 40.0 & 28.0 & 0.7 & 6.31 & 6.4\\
+                                                                                \midrule
+         \multirow{10}{*}{SMC 108086}    & sneplot-z004-24-0.5-0.4 & 24.0 & 12.0 & 0.5 & 2.51 & 7\\
+                                          & sneplot-z004-23-0.4-0.4 & 23.0 & 9.2 & 0.4 & 2.51 & 7\\
+                                          & sneplot-z004-23-0.5-0.4 & 23.0 & 11.5 & 0.5 & 2.51 & 7\\
+                                          & sneplot-z004-22-0.4-0.4 & 22.0 & 8.8 & 0.4 & 2.51 & 7\\
+                                          & sneplot-z004-22-0.5-0.4 & 22.0 & 11.0 & 0.5 & 2.51 & 7\\
+                                          & sneplot-z004-21-0.4-0.4 & 21.0 & 8.4 & 0.4 & 2.51 & 7\\
+                                          & sneplot-z004-21-0.5-0.4 & 21.0 & 10.5 & 0.5 & 2.51 & 7\\
+                                          & sneplot-z004-20-0.4-0.4 & 20.0 & 8.0 & 0.4 & 2.51 & 7\\
+                                          & sneplot-z004-20-0.5-0.4 & 20.0 & 10.0 & 0.5 & 2.51 & 7\\
+                                          & sneplot-z004-19-0.4-0.4 & 19.0 & 7.6 & 0.4 & 2.51 & 7\\
+                                                                                \midrule
+         \multirow{4}{*}{TU Mus}         & sneplot-z020-25-0.3-0.4 & 25.0 & 7.5 & 0.3 & 2.51 & 6.2\\
+                                          & sneplot-z020-24-0.3-0.4 & 24.0 & 7.2 & 0.3 & 2.51 & 6.2\\
+                                          & sneplot-z020-23-0.3-0.4 & 23.0 & 6.9 & 0.3 & 2.51 & 6.2\\
+                                          & sneplot-z020-16-0.6-0.4 & 16.0 & 9.6 & 0.6 & 2.51 & 6.2\\
+                                                                                \midrule
+         \multirow{6}{*}{V382 Cyg}       & sneplot-z020-50-0.2-0.6 & 50.0 & 10.0 & 0.2 & 3.98 & 6.4\\
+                                          & sneplot-z020-40-0.3-0.6 & 40.0 & 12.0 & 0.3 & 3.98 & 6.4\\
+                                          & sneplot-z020-40-0.4-0.6 & 40.0 & 16.0 & 0.4 & 3.98 & 6.4\\
+                                          & sneplot-z020-35-0.4-0.6 & 35.0 & 14.0 & 0.4 & 3.98 & 6.4\\
+                                          & sneplot-z020-30-0.4-0.6 & 30.0 & 12.0 & 0.4 & 3.98 & 6.4\\
+                                          & sneplot-z020-30-0.5-0.6 & 30.0 & 15.0 & 0.5 & 3.98 & 6.4\\
+                                                                                \midrule
+         \multirow{1}{*}{VFTS 352}       & sneplot-z010-40-0.5-0.6 & 40.0 & 20.0 & 0.5 & 3.98 & 6.5\\
 
-
-\section{Comparison between variable and non-variable accretion}
-
-In \autoref{fig:hrd_comparison_var_novarr} we display a comparative HR diagram between the cases of variable and non-variable accretion. In each case an \SI[parse-numbers=false]{30+10}{\msun} binary was evolved with the only difference between the two being whether material was allowed to have variable composition accretion or the standard accretion prescription. In the bottom panel only the companion is shown, as the donor has identical evolution in both cases.
-
-The first and most striking conclusion that we can draw from this result is that the companion is, in the variable accretion case, hotter and more luminous than the non-variable case.
-
-\begin{figure}[!htbp]
-    \centering
-    \includegraphics[width=0.8\textwidth]{images/HeliumRich/comparison_plot.png}
-    \caption[An HR diagram showing the evolution of our model both with and without the variable accretion prescription.]{An HR diagram showing the evolution of our model both with (top left) and without (top right) the variable accretion prescription. The bottom panel shows only the evolution of the secondary. The point of divergence between the two models is shortly into the contact phase. The two dashed lines on the bottom HR diagram represent models evolved as the final model of the binary secondary, as a single star. On the top HR diagrams, the pink and brown models are single stars evolved with ZAMS masses of 21 and 26 \unit{\msun} respectively.}
-    \label{fig:hrd_comparison_var_novarr}
-\end{figure}
-
-\section{Chapter Summary}
+         \bottomrule
+    \end{tabular}
+    \renewcommand{\arraystretch}{\oldstrech}
+    \caption[Matches from the \textsc{Hoki} \citep{Stevance:2020a} software.]{Matches from the \textsc{Hoki} \citep{Stevance:2020a} software. Ages were computed via \textsc{Hoki}'s AgeWizard utility, described in \citet{Stevance:2020}, and are the most likely ages computed via a bootstrapping method.}
+    \label{tab:hoki_matches}
+\end{table}

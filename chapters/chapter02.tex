@@ -1,21 +1,13 @@
 % !TEX root = ../main.tex
-\chapter{Theoretical Background}
+\chapter{Theoretical Background}\label{chap:theoretical_background}
 
-\epigraph{Se'i lua'i lou le 'ulu taumamao. \\
-Pick the breadfruits on the far-off branches first}{S\=amoan proverb}
+\epigraph{Se'i lua'i lou le 'ulu taumamao.\\Pick the breadfruits on the far-off branches first}{S\=amoan proverb}
 
 In this chapter, we provide a brief account of the evolution of a star from a theoretical perspective, from its formation to post-supernova. We will discuss both the case of a single isolated star, and an isolated binary. It is pertinent to note that our binaries will be assumed to have formed at birth, rather than by, for example, the dynamical capture of a runaway star in a globular cluster, which introduces extra effects and considerations. This process can be modelled by evolving a single star to a certain point, and then enabling binary evolution.
 
 \section{Stellar Formation}\label{sec:stellar_formation}
 
 \epigraph{Nature and nature's laws lay hid in night: God said, ``Let Newton be!'' and all was light.}{Alexander Pope}
-
-\mediaepigraph{congratulations, the world is now a bunch of gas in space.\\
-but it's getting closer together.\\
-and it's getting closer together.\\
-and it's getting closer toge-\\
-\textbf{it's a star}\\
-new [stuff] just got made!}{history of the entire world, i guess}{Bill Wurtz}
 
 From the point of view of stellar evolution, which starts in earnest at the \gls{zams}, the formation of stars is interesting but ultimately broadly unimportant. We provide a short recap of stellar formation here as scene-setting, but our stellar evolution models assume that a gas cloud has already collapsed and we have a star at its \gls{zams}.
 
@@ -157,13 +149,20 @@ In this section, we examine the four major regimes of stellar evolution for sing
 
 \subsubsection{Low-Mass Stars: \texorpdfstring{$\SI{0.08}{\msun} < M < \SI{2}{\msun}$}{Stars with between 0.08 and 2 times the mass of the sun}}
 
-Low-mass stars ignite helium degenerately in their cores, leading to thermal runaway. The star can peak at a luminosity close to $10^{11} L_\odot$ (approximately 100 times the peak luminosity of SN 1987A, per Figure 5 of \citet{Arnett:1989}). However, this peak in luminosity is attributable to nuclear fusion in the core, and the energy does not reach the surface, let alone escape into the \gls{ism} -- rather, it is absorbed into the outer layers of the star. During this extremely brief thermal runaway, the luminosity begins to settle and the star is able to continue evolving. Models of low mass stars fail at this stage and care is required to evolve them.
+Low-mass stars ignite helium degenerately in their cores, leading to thermal runaway. The star can peak at a luminosity close to $10^{11} L_\odot$ (approximately 100 times the peak luminosity of SN 1987A, per Figure 5 of \citet{Arnett:1989}). However, this peak in luminosity is attributable to nuclear fusion in the core, and the energy does not reach the surface, let alone escape into the \gls{ism} -- rather, it is absorbed into the outer layers of the star. During this extremely brief thermal runaway, the luminosity begins to settle and the star is able to continue evolving. Models of low mass stars fail at this stage and care is required to evolve them. This phenomena is called the \textit{Helium flash} and is discussed further in \autoref{sec:numerical_instabilities}.
 
 After the ignition of helium, these stars cross the so-called Hertzsprung Gap -- the region where very few stars are observed empirically. This region is bounded (on a colour-magnitude diagram, which is a transform of the HR diagram)\footnote{The relationship between a colour-magnitude diagram and the HR diagram is that $\log L=0.4\pqty{M_{\text{bol},\odot}-M_{\text{bol},*}}\simeq0.4\pqty{4.74-M_{v,*}-\text{BC}}$, $\log T=\log\pqty{4600\pqty{\frac{1}{0.92\pqty{B-V}+1.7}+\frac{1}{0.92\pqty{B-V}+0.62}}}$, where BC is a bolometric correction which depends on the stellar type. This expression for the temperature is a fit provided by \citet{Ballesteros:2012}.} by the points $\pqty{M_v, B-V}=\left\{\pqty{2,0.5}, \pqty{-7, 0.1}, \pqty{-6, 1.6}\right\}$ \citep{Hoyle:1960}, where $M_v$ is the V-band magnitude (magnitude in the visual band), and $B-V$ is the colour index of the star. The phenomenon of a gap existing is attributable to the fact that stars cross this gap exceedingly quickly: whereas it spends $\sim90\%$ of its life on the main sequence, it spends $\sim2\%$ of its life crossing the Hertzsprung gap \citep{Hoyle:1960}.
 
 \subsubsection{Intermediate-Mass Stars: \texorpdfstring{$\SI{2}{\msun} < M < \SI{8}{\msun}$}{Stars with between 2 and 8 times the mass of the sun}}
 
-\todo{write}
+Intermediate mass stars exist above the threshold for the Helium flash to occur. Helium ignition is not degenerate and the development of a helium core is not impeded. As the star ascends the \gls{agb}, the core becomes helium-exhausted and it becomes a red giant, with a radius many hundreds or even thousands of times greater than the sun. Its mass, sustained prior to the \gls{agb} via nuclear fusion, begins to decrease. An example of intermediate-mass evolution is shown in \autoref{fig:intermediate_mass}.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{images/TheorySection/intermediate_mass.png}
+    \caption[The evolution of an \SI{4}{\msun} star from \acrshort{zams} until \acrshort{CO_core} development.]{The evolution of an \SI{4}{\msun} star from \acrshort{zams} until \acrshort{CO_core} development. The final core abundances are $Z_\text{C} \approx 0.44$ and $Z_\text{O}\approx0.53$.}
+    \label{fig:intermediate_mass}
+\end{figure}
 
 \subsubsection{Massive Stars: \texorpdfstring{$\SI{8}{\msun} < M < \SI{80}{\msun}$}{Stars with between 8 and 80 times the mass of the sun}}
 
@@ -254,7 +253,7 @@ tabernas regumque turres.\\
 Pale death knocks with the same tempo upon the\\
 huts of the poor and the towers of kings.}{Horace}
 
-A star's lifetime is, unfortunately, not infinite. The key assumption underpinning stellar evolution is that of hydrostatic equilibrium: the counterplay of gravity against outwards pressure. Whilst this equilibrium holds, the star is stable and resists explosion. It is when this equilibrium is broken -- with gravity the dominant force in this scenario -- that the star implodes in a \gls{ccsne}. From a thermodynamic perspective, as the star evolves, it shrinks as energy is bled off into the interstellar medium. This shrinkage compresses and heats the core, meaning the star's specific heat capacity is negative. This system is thermodynamically unstable, and thus every star either collapses into a remnant (c.f. black holes, neutron stars) or is sustained in some form by quantum mechanical phenomena (c.f. White Dwarfs, Thorne-\.Zytkow objects, and other exotica).
+A star's lifetime is, unfortunately, not infinite. The key assumption underpinning stellar evolution is that of hydrostatic equilibrium: the counterplay of gravity against outwards pressure. Whilst this equilibrium holds, the star is stable and resists explosion. It is when this equilibrium is broken -- with gravity the dominant force in this scenario -- that the star implodes in a \gls{ccsne}. From a thermodynamic perspective, as the star evolves, it shrinks as energy is bled off into the interstellar medium. This shrinkage compresses and heats the core, meaning the star's specific heat capacity is negative. This system is thermodynamically unstable, and thus every star either collapses into a remnant (cf. black holes, neutron stars) or is sustained in some form by quantum mechanical phenomena (cf. White Dwarfs, Thorne-\.Zytkow objects, and other exotica).
 
 In any case, the breaking of hydrostatic equilibrium results generally results in\footnote{The extent of the veracity of this statement is an area of active research: \citet{Reynolds:2015} presents a short recap.} a supernova, which can be classified into subtypes, as shown in \autoref{fig:supernova_taxonomy}. In this event, gravity pulls the stellar core inwards, before ``bouncing'' and ejecting the envelope into the interstellar medium. The physics of this approximately second-long event are highly uncertain, and are in general unable to be modelled by detailed stellar evolution codes. All models we generate -- assuming they have not been terminated earlier -- will terminate at the moment of supernova.
 
@@ -319,7 +318,7 @@ Importantly for the nucleosynthesis of heavier-than-Iron elements (which cannot 
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=\textwidth]{images/TheorySection/binding_energy_per_nucleon.png}
-    \caption{The binding energy per nucleon for elements up to Uranium-238. The most stable element of fusion here is Iron-56. Elements lighter than Iron-56 will fuse towards it, and elements lighter will undergo fission to reach it. Graph adapted from Fastfission on Wikimedia Commons (who released it into the public domain).}
+    \caption[The binding energy per nucleon for elements up to Uranium-238.]{The binding energy per nucleon for elements up to Uranium-238. The most stable element of fusion here is Iron-56. Elements lighter than Iron-56 will fuse towards it, and elements heavier will undergo fission to reach it. The Bethe-Weizs\"acker formula is the semi-empirical mass formula devised by Bethe and Weizs\"acker to describe the liquid drop model of \citet{Gamow:1930}. The marked atoms on the plot represent the six elements we generally consider in our stellar modelling code -- $^{1}$H, $^{4}$He, $^{12}$C, $^{14}$N, $^{16}$O, $^{20}$Ne -- with the balance assumed to be insufficiently energetic to alter the structure or evolution of a star \citep{Stancliffe:2004}. Graph adapted from Fastfission on Wikimedia Commons (who released it into the public domain).}
     \label{fig:BEPN}
 \end{figure}
 
@@ -591,23 +590,23 @@ and $R_\text{L}(q)$ is given by \autoref{eq:RL1_eggleton}.
 
 We note that \citet{Marchant:2016} uses an inverse mass ratio definition compared to \citet{Eggleton:1983}, that is, \citet{Marchant:2016} takes $q_\text{Marchant}=\frac{M_1}{M_2}$ whereas \citet{Eggleton:1983} takes $q_\text{Eggleton}=\frac{M_2}{M_1}=\frac{1}{q_\text{Marchant}}$. This is accounted for in \autoref{eq:RL2_marchant} such that the mass ratios are consistent (and we take $q=q_\text{Eggleton}$), but other texts do not necessarily differentiate or describe the difference.
 
-\subsubsection{The \texorpdfstring{$\mathcal{L}_3/\mathcal{L}_4/\mathcal{L}_5$}{other Lagrange} points}
+% \subsubsection{The \texorpdfstring{$\mathcal{L}_3/\mathcal{L}_4/\mathcal{L}_5$}{other Lagrange} points}
 
-Along the $\eta$-axis, the partial derivative in \autoref{eq:pdv_of_roche_potential} reads instead
+% Along the $\eta$-axis, the partial derivative in \autoref{eq:pdv_of_roche_potential} reads instead
 
-\begin{equation}
-\pdv{V}{\eta} = - \frac{G \left(M_{1} + M_{2}\right)}{a} \left(- \frac{2 \xi_1}{\left(\eta^{2} + \left(\xi- \xi_1\right)^{2}\right)^{\frac{3}{2}}}\eta + \eta\right)\, .
-\end{equation}
+% \begin{equation}
+% \pdv{V}{\eta} = - \frac{G \left(M_{1} + M_{2}\right)}{a} \left(- \frac{2 \xi_1}{\left(\eta^{2} + \left(\xi- \xi_1\right)^{2}\right)^{\frac{3}{2}}}\eta + \eta\right)\, .
+% \end{equation}
 
-The non-trivial root is given by
+% The non-trivial root is given by
 
-\begin{equation}
-0 = - \frac{2 \xi_1}{\left(\eta^{2} + \left(\xi- \xi_1\right)^{2}\right)^{\frac{3}{2}}}\, .
-\end{equation}
+% \begin{equation}
+% 0 = - \frac{2 \xi_1}{\left(\eta^{2} + \left(\xi- \xi_1\right)^{2}\right)^{\frac{3}{2}}}\, .
+% \end{equation}
 
-\begin{equation}
-- \frac{G \left(M_{1} + M_{2}\right)}{a} \left(- \frac{2 M_{2} \eta}{\left(M_{1} + M_{2}\right) \left(\eta^{2} + \left(- \frac{M_{2}}{M_{1} + M_{2}} + \xi\right)^{2}\right)^{\frac{3}{2}}} + \eta\right)
-\end{equation}
+% \begin{equation}
+% - \frac{G \left(M_{1} + M_{2}\right)}{a} \left(- \frac{2 M_{2} \eta}{\left(M_{1} + M_{2}\right) \left(\eta^{2} + \left(- \frac{M_{2}}{M_{1} + M_{2}} + \xi\right)^{2}\right)^{\frac{3}{2}}} + \eta\right)
+% \end{equation}
 
 
 % \subsection{Common Envelope Evolution}
@@ -664,10 +663,16 @@ Mass transfer can broadly be sectioned into four main categories:
 
 \begin{enumerate}
     \item $\dot{M}_\text{wind}$, where matter is transferred through stellar winds,
-    \item $\dot{M}_\text{RLOF}$, where matter is transferred through one (or more) of a binary's Lagrange points (c.f. \autoref{sec:roche_lobes}),
+    \item $\dot{M}_\text{RLOF}$, where matter is transferred through one (or more) of a binary's Lagrange points (cf. \autoref{sec:roche_lobes}),
     \item $\dot{M}_\text{acc}$, where matter is transferred through accretion (or interaction with a disk), and
     \item $\dot{M}_\text{Bondi}$, where matter proceeds through a \citet{Bondi:1944} type mechanism.
 \end{enumerate}
+
+Our mass loss rate for each star is constructed from these four terms as
+
+\begin{equation}
+    \dot{M} = \dot{M}_{\text{wind}} - \dot{M}_{\text{Bondi}} + \dot{M}_{\text{RLOF}} - \dot{M}_{\text{acc}}.\label{eq:mass_loss_full}
+\end{equation}
 
 \subsubsection{Wind mass-loss}
 
@@ -677,93 +682,7 @@ The first modification surrounds the transition into the \gls{wr} regime. Tradit
 
 The second modification we have made is that if a star has a hydrogen exhausted core and begins approaching the \gls{wr} temperature range, we assume that \gls{wr} mass loss must begin and thus turn on the slowly-turning on \gls{wr} regime.
 
-\subsubsection{\acrfull{rlof}}
-
-% \mediaepigraph{Your [roeche loebe overflaew] partner deserves better traetment!}{Baron from the Baronies}{Dimension 20: Fantasy High: Sophomore Year}
-
-Matter extruded from the Lagrangian points is assumed to transfer with a mass loss rate similar to \citet{Hurley:2002}. We take
-
-\begin{equation}
-    \dot{M}_\text{RLOF} = \min\left(k\mathcal{R}\left(\frac{R}{R_\text{RL}}\right)^3,10^{-2}\right) \unit{\msun\per\year}
-\end{equation}
-
-Here, $k$ (referred to in our code as RMT) parameterises effectively how much of the star we permit to exist outside of its Roche lobe before it is accreted -- i.e., the voracity of \gls{rlof}. The choice of this can be somewhat arbitrary. \citet{Hurley:2002} for example took $k=\num{3e-6}\min\left\{M_1, 5\right\}^2$, where the coefficient was ``chosen by experiment to ensure that the mass transfer is steady'', and warned that for degenerate stars a more appropriate choice would be to increase this by a factor of $10^3$. Instead, we choose to adopt $k=10^3$ outright with no dependence on the mass, finding instead that this replicated other work -- allowing efficient \gls{rlof} -- best.
-
-Matter exceeding $\mathcal{L}_2$ (the outer Lagrange point) does not currently receive special treatment. The implications of $\mathcal{L}_2$ overflow are significant. This ejection will lead to unstable mass transfer, shrinking the orbit and likely inducing a \gls{cee} event \citep{Fragos:2023}. There is debate about the appropriate treatment here. \citet{Linial:2017} indexes the $\mathcal{L}_2$ rate to the $\mathcal{L}_1$ rate via an efficiency parameter. \citet{Li:2013} considers the case analogous to $\mathcal{L}_1$ outflow, where material outflowing from $\mathcal{L}_2$ acts to retard the angular momentum. In their notation $\dv{J}{t}=-\epsilon\dot{M}_1 a_{L2}^2\omega$ (compare $\dv{J}{t}=-\beta\dot{M}_1 a_{L1}^2\omega$ for \gls{rlof} through $\mathcal{L}_1$) for controllable parameters $\beta$ and $\epsilon$. The ambiguity of treatment leads to some codes to terminate at the onset of $\mathcal{L}_2$ outflow, such as \codename{Posydon} \citep{Fragos:2023}. $\mathcal{L}_2$ outflow requires stars to be in reasonably tight orbits ($\sim\SI{2}{\day})$, which we will approach, but none of our stars will enter this regime, and thus we do not afford it special treatment.
-
-\subsubsection{Accretion}
-
-Our accretion rates are taken from \citet{Bondi:1944, Hurley:2002}, and limits the accretion rate by the thermal timescale of the star. The prescription is that
-
-\begin{equation}
-    \dot{M}_\text{acc} = \min\left(\dot{M}_\text{RLOF}, \frac{M}{T_\text{KH}}\mathcal{R}\left(1-\frac{\omega}{0.8\omega_\text{crit}}\right)\right)
-\end{equation}
-
-where $\omega$ and $\omega_\text{crit}$ are the spin rate and critical spin rate of the star. We generally assume that the star is composed of individually rotating shells of variable thickness. If $N$ is the number of meshpoints that the star is composed of (for our cases, normally $N=199$), then the moment of inertia is given by
-
-\begin{equation}
-    I = \frac25 M_\text{c}R_\text{c}^2 + \sum_{k=1}^N \frac23 \left(m_k-m_{k+1}\right)r_k^2,
-\end{equation}
-
-where $m_k$ is the mass internal to meshpoint $k$ (sim. for $r_k$), and a subscript of c refers to the central meshpoint. It is assumed that the central meshpoint sits atop a solid sphere, hence $\frac25$ as its prefactor.
-
-\subsubsection{Bondi-Hoyle accretion}
-
-Bondi-Hoyle accretion for a circular orbit is given by
-
-\begin{equation}
-\dot{M}_\text{Bondi} = \min\left[-\left(\frac{GM_2}{v_\text{W}^2}\right)^2 \frac{\alpha_\text{W}}{2a^2}\frac{1}{\left(1+v^2\right)^{3/2}}, 0.8\right]\dot{M}_\text{wind},\label{eq:bondi}
-\end{equation}
-
-where we have assumed that the orbital velocity is given by
-
-\begin{equation}
-    v^2 = \frac{G\left(M_1+M_2\right)}{a v_\text{W}^2},
-\end{equation}
-
-and that the wind velocity is given by
-
-\begin{equation}
-    v_\text{W} = 2\beta_\text{W}\frac{GM_1}{R_1}.
-\end{equation}
-
-Generalising this to an eccentric orbit causes the first argument in \autoref{eq:bondi} to pick up a coefficient of $\frac{1}{\sqrt{1-e^2}}$. There are two free parameters to select: $\alpha_\text{W}$ and $\beta_\text{W}$. These ostensibly depend on stellar types, though we select for simplicity $\alpha_\text{W}=\frac32$ \citep{Boffin:1988} and $\beta_\text{W}=7$ \citep{Lamers:1995} for O-type stars. This parameterisation is likely incomplete; \citet{Hurley:2002} argues that as per \citet{Lamers:1995}, $\beta_\text{W}$ should vary between 7 for O-type stars to 0.5 for A and F-type stars, perhaps descending as low as $\beta_\text{W}\approx\frac18$ for cool supergiants. We leave this implementation for future work under the assumption that our mass-loss rate is correct to within an order of magnitude. % concern.jpeg
-
-
-
-
-\todo{this is a copy-n-paste from the old version of the He Stars paper -- I did this so I have TeX'd equations if I need them}
-
-
-
-
-Our master mass-loss rate is given by
-
-\begin{align}
-    \dot{M} &= \dot{M}_\text{Vink} - 10^3 M + \frac{M\left(1-\mathrm{d}M\right)}{\mathrm{d}t} + \min\left(\mathcal{R}\left(\frac{10R}{R_\text{RL}}\right)^3, 0.01\right) \notag\\
-    &\phantom{=} - \min\left(\min\left[\mathcal{R}\left(\frac{10R}{R_\text{RL}}\right)^3, 0.01\right], \frac{M}{T_\text{KH}}\mathcal{R}\left(1-\frac{\omega}{0.8\omega_\text{crit}}\right)\right) \notag\\
-    &\phantom{=}- \dot{M}_\text{Bondi}\label{eq:mass_loss_full}
-\end{align}
-
-where $\mathcal{R}(x)=\max\left(0, x\right)$ is the ramp function. This employs modified versions of the mass loss routines given in \citet{Vink:2001}, as well as \citet{Bondi:1944, Hurley:2002}. We detail the modifications we have made below. We take our accretion rates from \citet{Bondi:1944, Hurley:2002}, limiting the accretion rate by the Kelvin-Helmholtz time-scale $T_\text{KH}$ of the star and by $1-\frac{\omega}{\omega_\text{crit}}$. The mean accretion rate (in the absence of RLOF) onto the companion is that given in \citet{Bondi:1944}, namely
-
-% \begin{equation}
-%     \dot{M}_\text{Bondi} = \min\left[-\frac{1}{\sqrt{1-e^2}}\left(\frac{GM_2}{v_\text{W}^2}\right)^2 \frac{\alpha_\text{W}}{2a^2}\frac{1}{\left(1+v^2\right)^{3/2}}\dot{M}_\text{Vink}, 0.8\dot{M}_\text{Vink}\right],\label{eq:bondi}
-% \end{equation}
-
-where we have assumed that
-
-\begin{equation}
-    v^2 = \frac{G\left(M_1+M_2\right)}{a v_\text{W}^2},
-\end{equation}
-
-and that
-
-\begin{equation}
-    v_\text{W} = 2\beta_\text{W}\frac{GM_1}{R_1}.
-\end{equation}
-
-The two free accretion parameters are assumed to be $\alpha_\text{W}=\frac32$ \citep{Boffin:1988}, $\beta_\text{W}=7$ \citep{Lamers:1995} for O-type stars. The computation for $\dot{M}_\text{Vink}$ is more involved, though follows the same essential structure as \citet{Vink:2001}. We construct it as follows. The total pre-WR mass loss is given by \citet{De_jager:1988}, namely
+Mathematically, the computation for $\dot{M}_\text{wind}$ is more involved, though follows the same essential structure as \citet{Vink:2001}. We construct it as follows. The total pre-WR mass loss is given by \citet{De_jager:1988}, namely
 
 % \begin{equation}
 %     \dot{M}_\text{pre-WR} = \dot{M}_\text{Vink} - \dot{M}_\text{RLF} + \langle \dot{M}_\text{2A}\rangle,\label{eq:pre-wr-ml}
@@ -778,14 +697,36 @@ where $x_1 = \frac{\log T-4.05}{0.75}$, $x_2=\frac{\log L-4.6}{2.1}$, and the co
 
 \begin{align}
     R_1 &= \left(\frac{Z}{Z_\odot}\right)^{0.13},\label{eq:R1}\\
-    R_2 &= -6.697+2.194\log\left(\frac{L}{10^5 L_\odot}\right)-1.313\log\left(\frac{M}{30M_\odot}\right)-1.226\log\left(1.3R_1\right)+0.933\log\left(\frac{T}{4\times10^4}\right) \notag\\
-    &\phantom{=}-10.92\left(\log\left[\frac{T}{4\times 10^4}\right]\right)^2+0.85\log\left(\frac{Z}{Z_\odot}\right),\label{eq:R2} \\
+    R_2 &= -c_1+c_2\log\left(\frac{L}{c_{16}}\right)-c_3\log\left(\frac{M}{c_{15}}\right)-c_4\log\left(1.3R_1\right)+c_5\log\left(\frac{T}{c_{14}}\right)-c_6\left(\log\left[\frac{T}{c_{14}}\right]\right)^2+c_7\log\left(\frac{Z}{Z_\odot}\right),\label{eq:R2} \\
     &\text{and} \notag\\
-    R_3 &= -6.688+2.210\log\left(\frac{L}{10^5 L_\odot}\right)-1.339\log\left(\frac{M}{30M_\odot}\right)-1.601\log\left(0.65R_1\right)+1.07\log\left(\frac{T}{2\times 10^4}\right)\notag\\
-    &\phantom{=}+0.85\log\left(\frac{Z}{Z_\odot}\right).\label{eq:R3}
+    R_3 &= -c_8+c_9\log\left(\frac{L}{c_{16}}\right)-c_{10}\log\left(\frac{M}{c_{15}}\right)-c_{11}\log\left(0.65R_1\right)+c_{12}\log\left(\frac{T}{2\times 10^4}\right)+c_{13}\log\left(\frac{Z}{Z_\odot}\right),\label{eq:R3}
 \end{align}
 
- Our mass loss rate becomes:
+where the constants $c_i$ are given in \autoref{tab:bistability_constants}.
+
+\begin{table}[!htbp]
+    \centering
+
+    \begin{tabular}{cc|cc}
+    \toprule
+        Constant & Value & Constant & Value \\
+    \midrule
+        $c_1$ & $6.697$ & $c_9$    & $2.210$ \\
+        $c_2$ & $2.194$ & $c_{10}$ & $1.339$ \\
+        $c_3$ & $1.313$ & $c_{11}$ & $1.601$ \\
+        $c_4$ & $1.226$ & $c_{12}$ & $1.07$  \\
+        $c_5$ & $0.933$ & $c_{13}$ & $0.85$  \\
+        $c_6$ & $10.92$ & $c_{14}$ & \SI{4e4}{\kelvin} \\
+        $c_7$ & $0.85$  & $c_{15}$ & \SI{30}{\msun} \\
+        $c_8$ & $6.688$ & $c_{16}$ & \SI[print-unity-mantissa=false]{1e5}{\lsun} \\
+    \bottomrule
+    \end{tabular}
+
+    \caption[The mass loss rate constants for interpolation around the bistability jump.]{The mass loss rate constants for interpolation around the bistability jump (\autoref{eq:R1}, \autoref{eq:R2}, \autoref{eq:R3}) (shown pictorally in \autoref{fig:bistability}.}
+    \label{tab:bistability_constants}
+\end{table}
+
+Our mass loss rate becomes:
 
 \begin{equation}
     \dot{M}_\text{BS} = \begin{cases}
@@ -840,7 +781,7 @@ such that our total mass loss rate becomes (provided $X_\text{H} < 10^{-3}$ and 
 where $\mathcal{X}=\frac{\frac13 X_\text{C}+\frac14 X_\text{O}}{X_\text{He}}$. The total \citet{Vink:2001} mass-loss rate is then
 
 \begin{equation}
-    \dot{M}_\text{Vink} = \begin{cases}
+    \dot{M}_\text{wind} = \begin{cases}
         \dot{M}_\text{B} & \text{surface helium depleted} \\
         \dot{M}_\text{A} & \text{otherwise}
     \end{cases}.\label{eq:vink_ml}
@@ -853,6 +794,58 @@ where $\mathcal{X}=\frac{\frac13 X_\text{C}+\frac14 X_\text{O}}{X_\text{He}}$. T
     \label{fig:bistability}
 \end{figure}
 
+\subsubsection{\acrfull{rlof}}
+
+% \mediaepigraph{Your [roeche loebe overflaew] partner deserves better traetment!}{Baron from the Baronies}{Dimension 20: Fantasy High: Sophomore Year}
+
+Matter extruded from the Lagrangian points is assumed to transfer with a mass loss rate similar to \citet{Hurley:2002}. We take
+
+\begin{equation}
+    \dot{M}_\text{RLOF} = \min\left(k\mathcal{R}\left(\frac{R}{R_\text{RL}}\right)^3,10^{-2}\right) \unit{\msun\per\year}
+\end{equation}
+
+Here, $k$ (referred to in our code as RMT) parameterises effectively how much of the star we permit to exist outside of its Roche lobe before it is accreted -- i.e., the voracity of \gls{rlof}. The choice of this can be somewhat arbitrary. \citet{Hurley:2002} for example took $k=\num{3e-6}\min\left\{M_1, 5\right\}^2$, where the coefficient was ``chosen by experiment to ensure that the mass transfer is steady'', and warned that for degenerate stars a more appropriate choice would be to increase this by a factor of $10^3$. Instead, we choose to adopt $k=10^3$ outright with no dependence on the mass, finding instead that this replicated other work -- allowing efficient \gls{rlof} -- best.
+
+Matter exceeding $\mathcal{L}_2$ (the outer Lagrange point) does not currently receive special treatment. The implications of $\mathcal{L}_2$ overflow are significant. This ejection will lead to unstable mass transfer, shrinking the orbit and likely inducing a \gls{cee} event \citep{Fragos:2023}. There is debate about the appropriate treatment here. \citet{Linial:2017} indexes the $\mathcal{L}_2$ rate to the $\mathcal{L}_1$ rate via an efficiency parameter. \citet{Li:2013} considers the case analogous to $\mathcal{L}_1$ outflow, where material outflowing from $\mathcal{L}_2$ acts to retard the angular momentum. In their notation $\dv{J}{t}=-\epsilon\dot{M}_1 a_{L2}^2\omega$ (compare $\dv{J}{t}=-\beta\dot{M}_1 a_{L1}^2\omega$ for \gls{rlof} through $\mathcal{L}_1$) for controllable parameters $\beta$ and $\epsilon$. The ambiguity of treatment leads to some codes to terminate at the onset of $\mathcal{L}_2$ outflow, such as \codename{Posydon} \citep{Fragos:2023}. $\mathcal{L}_2$ outflow requires stars to be in reasonably tight orbits ($\sim\SI{2}{\day})$, which we will approach, but none of our stars will enter this regime, and thus we do not afford it special treatment.
+
+\subsubsection{Accretion}
+
+Our accretion rates are taken from \citet{Bondi:1944, Hurley:2002}, and limits the accretion rate by the thermal timescale of the star. The prescription is that
+
+\begin{equation}
+    \dot{M}_\text{acc} = \min\left(\dot{M}_\text{RLOF}, \frac{M}{T_\text{KH}}\mathcal{R}\left(1-\frac{\omega}{0.8\omega_\text{crit}}\right)\right)
+\end{equation}
+
+where $\omega$ and $\omega_\text{crit}$ are the spin rate and critical spin rate of the star. We generally assume that the star is composed of individually rotating shells of variable thickness. If $N$ is the number of meshpoints that the star is composed of (for our cases, normally $N=199$), then the moment of inertia is given by
+
+\begin{equation}
+    I = \frac25 M_\text{c}R_\text{c}^2 + \sum_{k=1}^N \frac23 \left(m_k-m_{k+1}\right)r_k^2,
+\end{equation}
+
+where $m_k$ is the mass internal to meshpoint $k$ (sim. for $r_k$), and a subscript of c refers to the central meshpoint. It is assumed that the central meshpoint sits atop a solid sphere, hence $\frac25$ as its prefactor.
+
+\subsubsection{Bondi-Hoyle accretion}
+
+Bondi-Hoyle accretion for a circular orbit is given by
+
+\begin{equation}
+\dot{M}_\text{Bondi} = \min\left[-\left(\frac{GM_2}{v_\text{W}^2}\right)^2 \frac{\alpha_\text{W}}{2a^2}\frac{1}{\left(1+v^2\right)^{3/2}}, 0.8\right]\dot{M}_\text{wind},\label{eq:bondi}
+\end{equation}
+
+where we have assumed that the orbital velocity is given by
+
+\begin{equation}
+    v^2 = \frac{G\left(M_1+M_2\right)}{a v_\text{W}^2},
+\end{equation}
+
+and that the wind velocity is given by
+
+\begin{equation}
+    v_\text{W} = 2\beta_\text{W}\frac{GM_1}{R_1}.
+\end{equation}
+
+Generalising this to an eccentric orbit causes the first argument in \autoref{eq:bondi} to pick up a coefficient of $\frac{1}{\sqrt{1-e^2}}$. There are two free parameters to select: $\alpha_\text{W}$ and $\beta_\text{W}$. These ostensibly depend on stellar types, though we select for simplicity $\alpha_\text{W}=\frac32$ \citep{Boffin:1988} and $\beta_\text{W}=7$ \citep{Lamers:1995} for O-type stars. This parameterisation is likely incomplete; \citet{Hurley:2002} argues that as per \citet{Lamers:1995}, $\beta_\text{W}$ should vary between 7 for O-type stars to 0.5 for A and F-type stars, perhaps descending as low as $\beta_\text{W}\approx\frac18$ for cool supergiants. We leave this implementation for future work under the assumption that our mass-loss rate is correct to within an order of magnitude. % concern.jpeg
+
 \section{Post-Supernova}\label{sec:post_SN}
 
 \mediaepigraph{Wit nodded.\\
@@ -860,7 +853,7 @@ where $\mathcal{X}=\frac{\frac13 X_\text{C}+\frac14 X_\text{O}}{X_\text{He}}$. T
 ``If you wish.''\\
 ``I don’t wish. Get on with the story.''}{Rhythm of War}{Brandon Sanderson}
 
-After a supernova, the star leaves behind its core as a compact remnant. Generally, these are either white dwarves, black holes, or neutron stars. The interior structure of each is either complicated or, in the case of black holes, impossible to observationally probe without violating causality. Their orbital motions are now deterministic from four initial parameters: $m_1, m_2, a$, and $e$. Motion is now wholly determined by the emission of gravitational radiation through (detectable) gravitational waves. The pertinent equations of motion are given by \citet{Peters:1964}, namely,
+After a supernova, the star leaves behind its core as a compact remnant. Generally, these are either white dwarves, black holes, or neutron stars. The interior structure of each is either complicated or, in the case of black holes, impossible to observationally probe without violating causality. Their orbital motions are now deterministic from four initial parameters: $m_1, m_2, a$, and $e$. Motion is now wholly determined by the emission of gravitational radiation through (detectable) gravitational waves. The pertinent equations of motion (all derived more formally in \citealt{Richards:2021}) are given by \citet{Peters:1964}, namely,
 
 \begin{align}
     \dv{a}{t} &= \frac{-\beta}{a^3\left(1-e^2\right)^\frac72}\left(1+\frac{73}{24}e^2+\frac{37}{96}e^4\right) \label{eq:dadt}\\
@@ -1046,7 +1039,7 @@ where $d_\text{opt}$ is a pre-defined target timestep (typically taken to be $\s
 
 $d_1$ and $d_2$ are pre-determined control parameters, most commonly we take $d_1=0.1$ and $d_2=1.2$ unless otherwise specified.
 
-\subsubsection{Numerical instabilities}
+\subsubsection{Numerical instabilities}\label{sec:numerical_instabilities}
 
 Stellar modelling is a nontrivial endeavour and there are many cases where the code can fail seemingly arbitrarily. The largest cause of numerical instability is the helium flash, which occurs in low-mass stars between about $\SI{0.8}{\msun} \lesssim M_\text{ZAMS} \lesssim \SI{2.5}{\msun}$. In this band, the triple-$\alpha$ process, given by the reactions \citep{Carroll:2017}\footnote{The reversible reaction is due to Beryllium-8 being unstable; its half-life is on the order of $\SI{1e-16}{\second}$, and it decays back to 2$^4_2$He if it does not react further.}
 

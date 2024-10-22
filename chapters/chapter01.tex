@@ -5,13 +5,7 @@
 
 % \epigraph{If the stars should appear one night in a thousand years, how would men believe and adore; and preserve for many generations the remembrance of the city of God which had been shown! But every night come out these envoys of beauty, and light the universe with their admonishing smile.}{Ralph Waldo Emerson}
 
-\translationEpigraph{Una volta che avrai\\
-Spiccato il volo, deciderai\\
-Sguardo verso il ciel saprai:\\
-L\`i a casa il cuore sentirai.}{Once you have taken flight\\
-You'll decide\\
-Gaze towards the sky, you'll know that:\\
-That is where your heart will feel at home.}{Leonardo da Vinci}
+\translationEpigraph{Una volta che avrai\\Spiccato il volo, deciderai\\Sguardo verso il ciel saprai:\\L\`i a casa il cuore sentirai.}{Once you have taken flight\\You'll decide\\Gaze towards the sky, you'll know that:\\That is where your heart will feel at home.}{Leonardo da Vinci}
 
 % \epigraph{``If you're in a bath at the bottom of a lake, are you in a bath, or in a canoe?'' Then you're in a bath, because if its sunk, its a shit canoe}{KatDoesMaths}
 
@@ -21,13 +15,13 @@ Any attempt at understanding gravitational waves must be founded in a strong the
 
 Furthermore, a sound understanding of the evolution of stars has impacts beyond gravitational wave astronomy. As the interiors of stars are complex nuclear furnaces, they are responsible for producing most of the elements in the Universe heavier than Hydrogen \citep{Burbidge:1957}. In fact, of the elements lighter than Uranium, the only elements not produced in stellar processes (such as through kilonovae or in supernovae) are technetium, promethium (which both lack stable isotopes), boron, beryllium (which both are produced via cosmic ray fission), and some formation channels of lithium.
 
-From the perspective of Universal building blocks, stars are also the focal point of planetary systems, and provide the theoretical right conditions for the formation of life. \todo{this needs a little more zhuzh}
+From the perspective of Universal building blocks, stars are also the focal point of planetary systems, and provide the theoretical right conditions for the formation of life. Without a solid theory of stellar evolution, one is unable to describe the likelihood of extraterrestrial life within the Universe.
 
 \section{Observational astronomy}
 
 \mediaepigraph{If the stars should appear one night in a thousand years, how would men believe and adore; and preserve for many generations the remembrance of the city of God which had been shown! But every night come out these envoys of beauty, and light the universe with their admonishing smile.}{Nature}{Ralph Waldo Emerson}
 
-There are approximately 9000 stars visible in the night sky to the naked eye (with magnitude lower than 6.5), across both hemispheres \citep{Hoffleit:1964}, which are displayed in \autoref{fig:naked_night_sky}. The dark-adapted eye can see approximately as far as $\eta$ Carinae,\footnote{This is a debated topic; we use the definition that a ``star'' includes binaries and that the star is in \citet{Hoffleit:1964}, which rules out V762 Cas, the other commonly held ``farthest star''.} which is only approximately \SI{2300}{\pc} away.
+There are approximately 9000 stars visible in the night sky to the naked eye (with magnitude lower than 6.5), across both hemispheres \citep{Hoffleit:1964}, which are displayed in \autoref{fig:naked_night_sky}. The dark-adapted eye can see approximately as far as $\eta$ Carinae,\footnote{This is a debated topic; we use the definition that a ``star'' includes binaries and that the star is in the catalogue of \citet{Hoffleit:1964}, which rules out V762 Cas, the other commonly held ``farthest star''.} which is only approximately \SI{2300}{\pc} away.
 
 \begin{figure}[!htbp]
     \centering
@@ -49,7 +43,7 @@ Given the number of stars visible in the vast expanse of night, and their relati
     \end{flushright}
 \end{fanciful}
 
-Knowledge of oceanic tides was posited by Ptolemy, writing in \textit{Tetrabiblos} that
+Knowledge of oceanic tides existed in the time of Ancient Greece, and was described by Ptolemy, who wrote in \textit{Tetrabiblos} that
 
 \fancifulepigraph{\greekscript ἀμπώτεις καὶ αἱ παλίρροιαι, καὶ αἱ τῶν πνευμάτων δὲ τροπαὶ μάλιστα περὶ τὰς τοιαύτας τῶν φωτῶν κεντρώσεις ἀποτελοῦνται πρὸς οὓς ἂν τῶν ἀνέμων ἐπὶ τὰ αὐτὰ τὸ πλάτος τῆς σελήνης τὰς προσνεύσεις ποιούμενον καταλαμβάνηται.}{For the hour by hour intensifications and relaxations of the weather vary in response to such positions of the stars as these, in the same way that the ebb and flow of the tide respond to the phases of the moon, and the changes in the air-currents are brought about especially at such appearances of the luminaries at the angles, in the direction of those winds towards which the latitude of the moon is found to be inclining.}{Ptolemy:2005}{Ptolemy:tetrabiblos}
 
@@ -138,13 +132,14 @@ There are essentially three major themes guiding this research.
 This thesis is, broadly, a tour of stellar evolution from \gls{zams} to the eventual merger of two compact objects, with a few omissions along the way (such as the moment of supernova). The thesis is structured as follows:
 
 \begin{enumerate}
-	\item In Chapter 2, we provide the necessary theoretical background for future chapters, critically examine the pieces of software and numerical methods employed in this work, and discuss the logistics of running this single-thread grid-based code as a multiprocessed code on a distributed cluster.
-	\item In Chapter 3, we explore the regime in which mass transfer is assumed to become helium-rich, and the effects on the future evolution of these binaries. (Theme I, III)
-	\item In Chapter 4, we present the results of our stellar evolution codes in the interesting case when both stars almost (or in some instances, do) touch. (Theme I)
-	\item In Chapter 5, we examine the kinematics of the post-supernova inspiral and the mechanics of the natal supernova kick. (Theme II)
-	\item In Chapter 6, we review the thesis and conclude. (Themes I, II, III)
-	\item In Appendix A, we provide the \codename{Kaitiaki} code necessary to generate the models for certain stellar evolution plots throughout the thesis. (Themes I, III)
-	\item In Appendix B, we list the codes employed and their versions.
-	\item In Appendix C, we present period-eccentricity distributions for the \acrshort{lvk} \acrshort{o3} contour (Theme II)
-	\item In Appendix D, we list the default parameter choices we make for our stellar evolution models (Themes I, III).
+	\item In \autoref{chap:theoretical_background}, we provide the necessary theoretical background for future chapters, critically examine the pieces of software and numerical methods employed in this work, and discuss the logistics of running this single-thread grid-based code as a multiprocessed code on a distributed cluster.
+	\item In \autoref{chap:close_contact}, we present the results of our stellar evolution codes in the interesting case when both stars almost (or in some instances, do) touch. (Theme I)
+    \item In \autoref{chap:he_mass_transfer}, we explore the regime in which mass transfer is assumed to become helium-rich, and the effects on the future evolution of these binaries. (Themes I, III)
+    \item In \autoref{chap:population_properties}, we explore the population properties of binaries which underwent helium-rich mass transfer (Themes I, III).
+	\item In \autoref{chap:natal_kicks}, we examine the kinematics of the post-supernova inspiral and the mechanics of the natal supernova kick. (Theme II)
+	\item In \autoref{chap:conclusion}, we review the thesis and conclude. (Themes I, II, III)
+	\item In \autoref{chap:appendix:code_samples}, we provide the \codename{Kaitiaki} code necessary to generate the models for certain stellar evolution plots throughout the thesis. (Themes I, III)
+	\item In \autoref{chap:appendix:code_versions}, we list the codes employed and their versions.
+	\item In \autoref{chap:ligo_contour_results}, we present period-eccentricity distributions for the \acrshort{lvk} \acrshort{o3} contour (Theme II)
+	\item In \autoref{chap:param_config}, we list the default parameter choices we make for our stellar evolution models (Themes I, III).
 \end{enumerate}
