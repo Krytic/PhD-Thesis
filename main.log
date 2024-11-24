@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.18)  23 OCT 2024 10:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.18)  24 NOV 2024 13:18
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1930,7 +1930,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip156
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 581.
+Package hyperref Info: Option `colorlinks' set `true' on input line 589.
 \c@tcb@cnt@pythonfile=\count448
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -2126,7 +2126,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmss on input line 9
 (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<images/Alt_Cover_Page.jpg, id=372, 1430.34375pt x 1927.2pt>
+<images/Alt_Cover_Page.jpg, id=416, 1430.34375pt x 1927.2pt>
 File: images/Alt_Cover_Page.jpg Graphic file (type jpg)
 <use images/Alt_Cover_Page.jpg>
 Package pdftex.def Info: images/Alt_Cover_Page.jpg  used on input line 24.
@@ -2239,52 +2239,32 @@ LaTeX Font Warning: Font shape `T1/Crimson-TLF/m/sc' undefined
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 84.pgf)
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-84.pgf) (./acknowledgements.tex [5]
+84.pgf) [5] [6
 
-LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/it' instead on input line 23.
-
-[6]
-
-LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/it' instead on input line 37.
-
-[7] [8]
-
-LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/it' instead on input line 63.
-
-
-LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/it' instead on input line 73.
-
-
-LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/it' instead on input line 73.
-
-) [9] [10
-
-] (./main.toc [11] [12])
+] (./main.toc [7] [8] [9])
 \tf@toc=\write10
 \openout10 = `main.toc'.
 
- [13] [14
+ [10] (./main.lof [11
 
-] (./main.lof)
+])
 \tf@lof=\write11
 \openout11 = `main.lof'.
 
- [15] [16
-
-] (./main.lot)
+ [12]
+(./main.lot)
 \tf@lot=\write12
 \openout12 = `main.lot'.
 
-(./main.gls [17] [18
+ (./main.gls [13
 
-] [19
+] [14
 
-]) [20] (./main.tod
+] [15
+
+] [16]) [17] [18
+
+] (./main.tod
 Overfull \hbox (0.41656pt too wide) detected at line 2
 \T1/cmr/m/n/10 D.2 
  []
@@ -2308,168 +2288,159 @@ Overfull \hbox (0.41656pt too wide) detected at line 5
 \tf@tod=\write13
 \openout13 = `main.tod'.
 
-<declaration_forms/Chapter03.pdf, id=726, 597.53635pt x 845.04686pt>
-File: declaration_forms/Chapter03.pdf Graphic file (type pdf)
-<use declaration_forms/Chapter03.pdf>
-Package pdftex.def Info: declaration_forms/Chapter03.pdf  used on input line 73
-.
-(pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
-File: declaration_forms/Chapter03.pdf Graphic file (type pdf)
-<use declaration_forms/Chapter03.pdf>
-Package pdftex.def Info: declaration_forms/Chapter03.pdf  used on input line 73
-.
-(pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
-<declaration_forms/Chapter03.pdf, id=729, page=1, 597.53635pt x 845.04686pt>
-File: declaration_forms/Chapter03.pdf Graphic file (type pdf)
-<use declaration_forms/Chapter03.pdf, page 1>
-Package pdftex.def Info: declaration_forms/Chapter03.pdf , page1 used on input 
-line 73.
-(pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
-File: declaration_forms/Chapter03.pdf Graphic file (type pdf)
-<use declaration_forms/Chapter03.pdf, page 1>
-Package pdftex.def Info: declaration_forms/Chapter03.pdf , page1 used on input 
-line 73.
-(pdftex.def)             Requested size: 562.14925pt x 795.00179pt.
- [21
+ [19] [20
+
+] (./main.toe
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22])
+\tf@toe=\write14
+\openout14 = `main.toe'.
+
+<declaration_forms/Chapter04-final.pdf, id=866, 597.50786pt x 845.04686pt>
+File: declaration_forms/Chapter04-final.pdf Graphic file (type pdf)
+<use declaration_forms/Chapter04-final.pdf>
+Package pdftex.def Info: declaration_forms/Chapter04-final.pdf  used on input l
+ine 80.
+(pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+File: declaration_forms/Chapter04-final.pdf Graphic file (type pdf)
+<use declaration_forms/Chapter04-final.pdf>
+Package pdftex.def Info: declaration_forms/Chapter04-final.pdf  used on input l
+ine 80.
+(pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+<declaration_forms/Chapter04-final.pdf, id=869, page=1, 597.50786pt x 845.04686
+pt>
+File: declaration_forms/Chapter04-final.pdf Graphic file (type pdf)
+<use declaration_forms/Chapter04-final.pdf, page 1>
+Package pdftex.def Info: declaration_forms/Chapter04-final.pdf , page1 used on 
+input line 80.
+(pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+File: declaration_forms/Chapter04-final.pdf Graphic file (type pdf)
+<use declaration_forms/Chapter04-final.pdf, page 1>
+Package pdftex.def Info: declaration_forms/Chapter04-final.pdf , page1 used on 
+input line 80.
+(pdftex.def)             Requested size: 562.12244pt x 795.00179pt.
+
+[23]
+File: declaration_forms/Chapter04-final.pdf Graphic file (type pdf)
+<use declaration_forms/Chapter04-final.pdf, page 1>
+Package pdftex.def Info: declaration_forms/Chapter04-final.pdf , page1 used on 
+input line 80.
+(pdftex.def)             Requested size: 562.12244pt x 795.00179pt.
+File: declaration_forms/Chapter04-final.pdf Graphic file (type pdf)
+<use declaration_forms/Chapter04-final.pdf, page 1>
+Package pdftex.def Info: declaration_forms/Chapter04-final.pdf , page1 used on 
+input line 80.
+(pdftex.def)             Requested size: 562.12244pt x 795.00179pt.
+File: declaration_forms/Chapter04-final.pdf Graphic file (type pdf)
+<use declaration_forms/Chapter04-final.pdf, page 1>
+Package pdftex.def Info: declaration_forms/Chapter04-final.pdf , page1 used on 
+input line 80.
+(pdftex.def)             Requested size: 562.12244pt x 795.00179pt.
+ [24 <./declaration_forms/Chapter04-final.pdf>]
+<declaration_forms/Chapter06-final.pdf, id=959, 597.50786pt x 845.04686pt>
+File: declaration_forms/Chapter06-final.pdf Graphic file (type pdf)
+<use declaration_forms/Chapter06-final.pdf>
+Package pdftex.def Info: declaration_forms/Chapter06-final.pdf  used on input l
+ine 80.
+(pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+File: declaration_forms/Chapter06-final.pdf Graphic file (type pdf)
+<use declaration_forms/Chapter06-final.pdf>
+Package pdftex.def Info: declaration_forms/Chapter06-final.pdf  used on input l
+ine 80.
+(pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+<declaration_forms/Chapter06-final.pdf, id=962, page=1, 597.50786pt x 845.04686
+pt>
+File: declaration_forms/Chapter06-final.pdf Graphic file (type pdf)
+<use declaration_forms/Chapter06-final.pdf, page 1>
+Package pdftex.def Info: declaration_forms/Chapter06-final.pdf , page1 used on 
+input line 80.
+(pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+File: declaration_forms/Chapter06-final.pdf Graphic file (type pdf)
+<use declaration_forms/Chapter06-final.pdf, page 1>
+Package pdftex.def Info: declaration_forms/Chapter06-final.pdf , page1 used on 
+input line 80.
+(pdftex.def)             Requested size: 562.12244pt x 795.00179pt.
+File: declaration_forms/Chapter06-final.pdf Graphic file (type pdf)
+<use declaration_forms/Chapter06-final.pdf, page 1>
+Package pdftex.def Info: declaration_forms/Chapter06-final.pdf , page1 used on 
+input line 80.
+(pdftex.def)             Requested size: 562.12244pt x 795.00179pt.
+File: declaration_forms/Chapter06-final.pdf Graphic file (type pdf)
+<use declaration_forms/Chapter06-final.pdf, page 1>
+Package pdftex.def Info: declaration_forms/Chapter06-final.pdf , page1 used on 
+input line 80.
+(pdftex.def)             Requested size: 562.12244pt x 795.00179pt.
+File: declaration_forms/Chapter06-final.pdf Graphic file (type pdf)
+<use declaration_forms/Chapter06-final.pdf, page 1>
+Package pdftex.def Info: declaration_forms/Chapter06-final.pdf , page1 used on 
+input line 80.
+(pdftex.def)             Requested size: 562.12244pt x 795.00179pt.
+ [25 <./declaration_forms/Chapter06-final.pdf>] [26
+
+]) (./chapters/chapter01.tex
+Chapter 1.
+Package lettrine.sty Info: Targeted height = 45.07639pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 45.018pt (A);
+(lettrine.sty)             reported on input line 10.
+[1
 
 ]
-File: declaration_forms/Chapter03.pdf Graphic file (type pdf)
-<use declaration_forms/Chapter03.pdf, page 1>
-Package pdftex.def Info: declaration_forms/Chapter03.pdf , page1 used on input 
-line 73.
-(pdftex.def)             Requested size: 562.14925pt x 795.00179pt.
-File: declaration_forms/Chapter03.pdf Graphic file (type pdf)
-<use declaration_forms/Chapter03.pdf, page 1>
-Package pdftex.def Info: declaration_forms/Chapter03.pdf , page1 used on input 
-line 73.
-(pdftex.def)             Requested size: 562.14925pt x 795.00179pt.
-File: declaration_forms/Chapter03.pdf Graphic file (type pdf)
-<use declaration_forms/Chapter03.pdf, page 1>
-Package pdftex.def Info: declaration_forms/Chapter03.pdf , page1 used on input 
-line 73.
-(pdftex.def)             Requested size: 562.14925pt x 795.00179pt.
- [22 <./declaration_forms/Chapter03.pdf>]
-<declaration_forms/Chapter04.pdf, id=775, 597.53635pt x 845.04686pt>
-File: declaration_forms/Chapter04.pdf Graphic file (type pdf)
-<use declaration_forms/Chapter04.pdf>
-Package pdftex.def Info: declaration_forms/Chapter04.pdf  used on input line 73
-.
-(pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
-File: declaration_forms/Chapter04.pdf Graphic file (type pdf)
-<use declaration_forms/Chapter04.pdf>
-Package pdftex.def Info: declaration_forms/Chapter04.pdf  used on input line 73
-.
-(pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
-<declaration_forms/Chapter04.pdf, id=778, page=1, 597.53635pt x 845.04686pt>
-File: declaration_forms/Chapter04.pdf Graphic file (type pdf)
-<use declaration_forms/Chapter04.pdf, page 1>
-Package pdftex.def Info: declaration_forms/Chapter04.pdf , page1 used on input 
-line 73.
-(pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
-File: declaration_forms/Chapter04.pdf Graphic file (type pdf)
-<use declaration_forms/Chapter04.pdf, page 1>
-Package pdftex.def Info: declaration_forms/Chapter04.pdf , page1 used on input 
-line 73.
-(pdftex.def)             Requested size: 562.14925pt x 795.00179pt.
-File: declaration_forms/Chapter04.pdf Graphic file (type pdf)
-<use declaration_forms/Chapter04.pdf, page 1>
-Package pdftex.def Info: declaration_forms/Chapter04.pdf , page1 used on input 
-line 73.
-(pdftex.def)             Requested size: 562.14925pt x 795.00179pt.
-File: declaration_forms/Chapter04.pdf Graphic file (type pdf)
-<use declaration_forms/Chapter04.pdf, page 1>
-Package pdftex.def Info: declaration_forms/Chapter04.pdf , page1 used on input 
-line 73.
-(pdftex.def)             Requested size: 562.14925pt x 795.00179pt.
-File: declaration_forms/Chapter04.pdf Graphic file (type pdf)
-<use declaration_forms/Chapter04.pdf, page 1>
-Package pdftex.def Info: declaration_forms/Chapter04.pdf , page1 used on input 
-line 73.
-(pdftex.def)             Requested size: 562.14925pt x 795.00179pt.
- [23 <./declaration_forms/Chapter04.pdf>]
-<declaration_forms/Chapter05.pdf, id=814, 597.53635pt x 845.04686pt>
-File: declaration_forms/Chapter05.pdf Graphic file (type pdf)
-<use declaration_forms/Chapter05.pdf>
-Package pdftex.def Info: declaration_forms/Chapter05.pdf  used on input line 73
-.
-(pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
-File: declaration_forms/Chapter05.pdf Graphic file (type pdf)
-<use declaration_forms/Chapter05.pdf>
-Package pdftex.def Info: declaration_forms/Chapter05.pdf  used on input line 73
-.
-(pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
-<declaration_forms/Chapter05.pdf, id=817, page=1, 597.53635pt x 845.04686pt>
-File: declaration_forms/Chapter05.pdf Graphic file (type pdf)
-<use declaration_forms/Chapter05.pdf, page 1>
-Package pdftex.def Info: declaration_forms/Chapter05.pdf , page1 used on input 
-line 73.
-(pdftex.def)             Requested size: 597.53488pt x 845.0448pt.
-File: declaration_forms/Chapter05.pdf Graphic file (type pdf)
-<use declaration_forms/Chapter05.pdf, page 1>
-Package pdftex.def Info: declaration_forms/Chapter05.pdf , page1 used on input 
-line 73.
-(pdftex.def)             Requested size: 562.14925pt x 795.00179pt.
-File: declaration_forms/Chapter05.pdf Graphic file (type pdf)
-<use declaration_forms/Chapter05.pdf, page 1>
-Package pdftex.def Info: declaration_forms/Chapter05.pdf , page1 used on input 
-line 73.
-(pdftex.def)             Requested size: 562.14925pt x 795.00179pt.
-File: declaration_forms/Chapter05.pdf Graphic file (type pdf)
-<use declaration_forms/Chapter05.pdf, page 1>
-Package pdftex.def Info: declaration_forms/Chapter05.pdf , page1 used on input 
-line 73.
-(pdftex.def)             Requested size: 562.14925pt x 795.00179pt.
-File: declaration_forms/Chapter05.pdf Graphic file (type pdf)
-<use declaration_forms/Chapter05.pdf, page 1>
-Package pdftex.def Info: declaration_forms/Chapter05.pdf , page1 used on input 
-line 73.
-(pdftex.def)             Requested size: 562.14925pt x 795.00179pt.
- [24 <./declaration_forms/Chapter05.pdf>]) (./chapters/chapter01.tex
-Chapter 1.
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 22.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1
-
-
-]
-<images/Introduction/NightSkyMap.png, id=908, 379.12842pt x 210.73932pt>
+<images/Introduction/NightSkyMap.png, id=1094, 379.12842pt x 210.73932pt>
 File: images/Introduction/NightSkyMap.png Graphic file (type png)
 <use images/Introduction/NightSkyMap.png>
 Package pdftex.def Info: images/Introduction/NightSkyMap.png  used on input lin
 e 28.
 (pdftex.def)             Requested size: 491.94817pt x 273.44977pt.
-
 [2 <./images/Introduction/NightSkyMap.png>]
 Overfull \hbox (2.22168pt too wide) in paragraph at lines 48--48
 [] [] 
  []
 
 
+Package tcolorbox Warning: Discard zero height first box part due to break prob
+lems (possible loss of zero height content) on input line 48.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
 Overfull \hbox (2.22168pt too wide) in paragraph at lines 54--54
 [] [] 
  []
 
-[3] [4] [5]
+[4] [5] [6]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 111.
 
-[6]) (./chapters/chapter02.tex [7] [8
+[7]) (./chapters/chapter02.tex [8]
+Chapter 2.
+Package lettrine.sty Info: Targeted height = 45.07639pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 45.13507pt (I);
+(lettrine.sty)             reported on input line 6.
+[9
 
 ]
-Chapter 2.
-[9]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 44.
 
-[10] [11]
-<images/TheorySection/intermediate_mass.png, id=1210, 437.2335pt x 420.25005pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10]
+[11] [12]
+<images/TheorySection/intermediate_mass.png, id=1413, 437.2335pt x 420.25005pt>
 
 File: images/TheorySection/intermediate_mass.png Graphic file (type png)
 <use images/TheorySection/intermediate_mass.png>
@@ -2477,29 +2448,35 @@ Package pdftex.def Info: images/TheorySection/intermediate_mass.png  used on in
 put line 162.
 (pdftex.def)             Requested size: 491.94817pt x 472.85066pt.
 
-Underfull \vbox (badness 1360) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12 <./images/TheorySection/intermediate_mass.png>]
-<images/TheorySection/10_msun_jumps.png, id=1222, 501.5538pt x 368.21565pt>
+ [13 <./images/TheorySection/intermediate_mass.png>]
+<images/TheorySection/10_msun_jumps.png, id=1425, 501.5538pt x 368.21565pt>
 File: images/TheorySection/10_msun_jumps.png Graphic file (type png)
 <use images/TheorySection/10_msun_jumps.png>
 Package pdftex.def Info: images/TheorySection/10_msun_jumps.png  used on input 
 line 173.
 (pdftex.def)             Requested size: 418.15894pt x 307.00107pt.
-<images/TheorySection/8_msun_star_annotated.png, id=1223, 509.5035pt x 372.1905
+<images/TheorySection/8_msun_star_annotated.png, id=1426, 509.5035pt x 372.1905
 pt>
 File: images/TheorySection/8_msun_star_annotated.png Graphic file (type png)
 <use images/TheorySection/8_msun_star_annotated.png>
 Package pdftex.def Info: images/TheorySection/8_msun_star_annotated.png  used o
 n input line 180.
 (pdftex.def)             Requested size: 418.15894pt x 305.45943pt.
- [13 <./images/TheorySection/10_msun_jumps.png>] [14 <./images/TheorySection/8_
-msun_star_annotated.png>] [15]
+ [14 <./images/TheorySection/10_msun_jumps.png>] [15 <./images/TheorySection/8_
+msun_star_annotated.png>]
+Underfull \vbox (badness 1509) has occurred while \output is active []
+
+ [16]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 254.
 
 
+Underfull \vbox (badness 3884) has occurred while \output is active []
+
+ [17]
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
@@ -2525,8 +2502,7 @@ Overfull \hbox (32.5547pt too wide) in paragraph at lines 311--312
  [][] 
  []
 
-[16] [17]
-<images/TheorySection/binding_energy_per_nucleon.png, id=1293, 411.57765pt x 26
+<images/TheorySection/binding_energy_per_nucleon.png, id=1487, 411.57765pt x 26
 0.53336pt>
 File: images/TheorySection/binding_energy_per_nucleon.png Graphic file (type pn
 g)
@@ -2534,29 +2510,27 @@ g)
 Package pdftex.def Info: images/TheorySection/binding_energy_per_nucleon.png  u
 sed on input line 320.
 (pdftex.def)             Requested size: 491.94817pt x 311.418pt.
- [18 <./images/TheorySection/binding_energy_per_nucleon.png>]
+[18] [19] [20 <./images/TheorySection/binding_energy_per_nucleon.png>]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 388.
 
-<images/TheorySection/roche_potentials.png, id=1324, 411.939pt x 553.5882pt>
+[21]
+<images/TheorySection/roche_potentials.png, id=1543, 411.939pt x 553.5882pt>
 File: images/TheorySection/roche_potentials.png Graphic file (type png)
 <use images/TheorySection/roche_potentials.png>
 Package pdftex.def Info: images/TheorySection/roche_potentials.png  used on inp
 ut line 394.
 (pdftex.def)             Requested size: 418.15894pt x 561.94098pt.
-[19] [20 <./images/TheorySection/roche_potentials.png>]
-Underfull \vbox (badness 2073) has occurred while \output is active []
-
- [21]
-<images/TheorySection/RLs_Eggleton_Formula.png, id=1368, 411.939pt x 179.4705pt
+ [22] [23 <./images/TheorySection/roche_potentials.png>] [24]
+<images/TheorySection/RLs_Eggleton_Formula.png, id=1581, 411.939pt x 179.4705pt
 >
 File: images/TheorySection/RLs_Eggleton_Formula.png Graphic file (type png)
 <use images/TheorySection/RLs_Eggleton_Formula.png>
 Package pdftex.def Info: images/TheorySection/RLs_Eggleton_Formula.png  used on
  input line 561.
 (pdftex.def)             Requested size: 491.94817pt x 214.32835pt.
-<images/TheorySection/eggleton_justification.png, id=1377, 405.6756pt x 175.857
+<images/TheorySection/eggleton_justification.png, id=1590, 405.6756pt x 175.857
 pt>
 File: images/TheorySection/eggleton_justification.png Graphic file (type png)
 <use images/TheorySection/eggleton_justification.png>
@@ -2564,20 +2538,25 @@ Package pdftex.def Info: images/TheorySection/eggleton_justification.png  used
 on input line 568.
 (pdftex.def)             Requested size: 491.94817pt x 213.26257pt.
 
-[22 <./images/TheorySection/RLs_Eggleton_Formula.png>]
-<images/TheorySection/marchant_justification.png, id=1392, 405.6756pt x 175.857
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25 <./images/TheorySection/RLs_Eggleton_Formula.png> <./images/TheorySection/
+eggleton_justification.png>]
+<images/TheorySection/marchant_justification.png, id=1603, 405.6756pt x 175.857
 pt>
 File: images/TheorySection/marchant_justification.png Graphic file (type png)
 <use images/TheorySection/marchant_justification.png>
 Package pdftex.def Info: images/TheorySection/marchant_justification.png  used 
 on input line 586.
 (pdftex.def)             Requested size: 491.94817pt x 213.26257pt.
- [23 <./images/TheorySection/eggleton_justification.png> <./images/TheorySectio
-n/marchant_justification.png>] [24]
-Underfull \vbox (badness 2538) has occurred while \output is active []
+ [26 <./images/TheorySection/marchant_justification.png>]
+Underfull \vbox (badness 1281) has occurred while \output is active []
 
- [25]
-<images/TheorySection/bistability_jump.png, id=1496, 448.7967pt x 332.80334pt>
+ [27]
+Underfull \vbox (badness 1205) has occurred while \output is active []
+
+ [28]
+<images/TheorySection/bistability_jump.png, id=1705, 448.7967pt x 332.80334pt>
 File: images/TheorySection/bistability_jump.png Graphic file (type png)
 <use images/TheorySection/bistability_jump.png>
 Package pdftex.def Info: images/TheorySection/bistability_jump.png  used on inp
@@ -2588,21 +2567,21 @@ ut line 792.
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrfull' on input line 797.
 
-[26] [27 <./images/TheorySection/bistability_jump.png>]
+[29] [30 <./images/TheorySection/bistability_jump.png>] [31]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 854.
 
-[28] [29]
+[32]
+Underfull \vbox (badness 1043) has occurred while \output is active []
+
+ [33]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 940.
 
-[30] [31] [32]
-Underfull \vbox (badness 1721) has occurred while \output is active []
-
- [33]
-<images/TheorySection/thermal_pulses_and_he_flash.png, id=1719, 654.40485pt x 5
+[34] [35] [36] [37] [38]
+<images/TheorySection/thermal_pulses_and_he_flash.png, id=1938, 654.40485pt x 5
 99.1183pt>
 File: images/TheorySection/thermal_pulses_and_he_flash.png Graphic file (type p
 ng)
@@ -2610,16 +2589,15 @@ ng)
 Package pdftex.def Info: images/TheorySection/thermal_pulses_and_he_flash.png  
 used on input line 1062.
 (pdftex.def)             Requested size: 491.94817pt x 450.39807pt.
-<images/TheorySection/helium_flash_kippenhahn.png, id=1720, 507.69675pt x 211.3
+<images/TheorySection/helium_flash_kippenhahn.png, id=1939, 507.69675pt x 211.3
 8976pt>
 File: images/TheorySection/helium_flash_kippenhahn.png Graphic file (type png)
 <use images/TheorySection/helium_flash_kippenhahn.png>
 Package pdftex.def Info: images/TheorySection/helium_flash_kippenhahn.png  used
  on input line 1069.
 (pdftex.def)             Requested size: 491.94817pt x 204.83492pt.
-
-[34] [35 <./images/TheorySection/thermal_pulses_and_he_flash.png>] [36 <./image
-s/TheorySection/helium_flash_kippenhahn.png>]
+ [39] [40 <./images/TheorySection/thermal_pulses_and_he_flash.png>] [41 <./imag
+es/TheorySection/helium_flash_kippenhahn.png>]
 \openout5 = `main.pyg'.
 
 
@@ -2643,7 +2621,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
 
-[37]
+[42]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -2656,57 +2634,109 @@ Missing character: There is no k in font nullfont!
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 1118.
 
-) (./chapters/chapter03.tex [38]
-Chapter 3.
-) (./chapters/chapter04.tex [39
+) (./chapters/chapter03.tex
+Underfull \vbox (badness 1776) has occurred while \output is active []
 
-] [40] [41] [42
+ [43]
+[44]
+Chapter 3.
+Package lettrine.sty Info: Targeted height = 45.07639pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 45.018pt (A);
+(lettrine.sty)             reported on input line 6.
+) (./chapters/chapter04.tex [45
+
+] [46] [47] [48
 
 ]
 Chapter 4.
-Package lettrine.sty Info: Targeted height = 35.0682pt
+Package lettrine.sty Info: Targeted height = 45.07639pt
 (lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 35.02278pt (A);
+(lettrine.sty)             Lettrine height = 45.018pt (S);
 (lettrine.sty)             reported on input line 6.
+<images/HeliumRich/age_indexed_plot_VARIABLE_BINARY.png, id=2118, 469.0323pt x 
+530.10045pt>
+File: images/HeliumRich/age_indexed_plot_VARIABLE_BINARY.png Graphic file (type
+ png)
+<use images/HeliumRich/age_indexed_plot_VARIABLE_BINARY.png>
+Package pdftex.def Info: images/HeliumRich/age_indexed_plot_VARIABLE_BINARY.png
+  used on input line 18.
+(pdftex.def)             Requested size: 491.94817pt x 556.03142pt.
+<images/HeliumRich/age_indexed_plot_STANDARD_BINARY.png, id=2123, 469.0323pt x 
+530.10045pt>
+File: images/HeliumRich/age_indexed_plot_STANDARD_BINARY.png Graphic file (type
+ png)
+<use images/HeliumRich/age_indexed_plot_STANDARD_BINARY.png>
+Package pdftex.def Info: images/HeliumRich/age_indexed_plot_STANDARD_BINARY.png
+  used on input line 25.
+(pdftex.def)             Requested size: 491.94817pt x 556.03142pt.
 
-Overfull \hbox (52.87926pt too wide) in paragraph at lines 15--37
+Underfull \vbox (badness 4765) has occurred while \output is active []
+
+ [49]
+[50 <./images/HeliumRich/age_indexed_plot_VARIABLE_BINARY.png>] [51 <./images/H
+eliumRich/age_indexed_plot_STANDARD_BINARY.png>]
+<images/HeliumRich/stellar_profiles.png, id=2144, 239.4546pt x 259.6902pt>
+File: images/HeliumRich/stellar_profiles.png Graphic file (type png)
+<use images/HeliumRich/stellar_profiles.png>
+Package pdftex.def Info: images/HeliumRich/stellar_profiles.png  used on input 
+line 42.
+(pdftex.def)             Requested size: 221.37517pt x 240.08286pt.
+<images/HeliumRich/stellar_profiles_STANDARD.png, id=2145, 239.4546pt x 259.690
+2pt>
+File: images/HeliumRich/stellar_profiles_STANDARD.png Graphic file (type png)
+<use images/HeliumRich/stellar_profiles_STANDARD.png>
+Package pdftex.def Info: images/HeliumRich/stellar_profiles_STANDARD.png  used 
+on input line 47.
+(pdftex.def)             Requested size: 221.37517pt x 240.08286pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [52 <./images/HeliumRich/stellar_profiles.png> <./images/HeliumRich/stellar_pr
+ofiles_STANDARD.png>] (./chapters/tables/binary_configuration_parameters.tex
+Overfull \hbox (52.87926pt too wide) in paragraph at lines 5--27
  [][] 
  []
 
 
-Overfull \hbox (39.36424pt too wide) in paragraph at lines 13--70
+Overfull \hbox (39.36424pt too wide) in paragraph at lines 3--60
 [][]$[]$[] 
  []
 
-<images/HeliumRich/segmented_composition_profiles.png, id=1900, 370.7451pt x 42
+)
+<images/HeliumRich/segmented_composition_profiles.png, id=2162, 370.7451pt x 42
 2.41815pt>
 File: images/HeliumRich/segmented_composition_profiles.png Graphic file (type p
 ng)
 <use images/HeliumRich/segmented_composition_profiles.png>
 Package pdftex.def Info: images/HeliumRich/segmented_composition_profiles.png  
-used on input line 78.
+used on input line 70.
 (pdftex.def)             Requested size: 221.37517pt x 252.23462pt.
-<images/HeliumRich/segmented_composition_profiles_STANDARD_BINARY.png, id=1901,
+<images/HeliumRich/segmented_composition_profiles_STANDARD_BINARY.png, id=2163,
  370.7451pt x 422.41815pt>
 File: images/HeliumRich/segmented_composition_profiles_STANDARD_BINARY.png Grap
 hic file (type png)
 <use images/HeliumRich/segmented_composition_profiles_STANDARD_BINARY.png>
 Package pdftex.def Info: images/HeliumRich/segmented_composition_profiles_STAND
-ARD_BINARY.png  used on input line 83.
+ARD_BINARY.png  used on input line 75.
 (pdftex.def)             Requested size: 221.37517pt x 252.23462pt.
-<images/HeliumRich/comparison_plot.png, id=1905, 554.3109pt x 741.12885pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [53 <./images/HeliumRich/segmented_composition_profiles.png> <./images/HeliumR
+ich/segmented_composition_profiles_STANDARD_BINARY.png>] [54]
+<images/HeliumRich/comparison_plot.png, id=2180, 554.3109pt x 741.12885pt>
 File: images/HeliumRich/comparison_plot.png Graphic file (type png)
 <use images/HeliumRich/comparison_plot.png>
 Package pdftex.def Info: images/HeliumRich/comparison_plot.png  used on input l
-ine 99.
+ine 90.
 (pdftex.def)             Requested size: 393.56003pt x 526.21646pt.
-) (./chapters/chapter05.tex [43] [44] [45 <./images/HeliumRich/segmented_compos
-ition_profiles.png> <./images/HeliumRich/segmented_composition_profiles_STANDAR
-D_BINARY.png>] [46 <./images/HeliumRich/comparison_plot.png>]
+) (./chapters/chapter05.tex
+[55] [56 <./images/HeliumRich/comparison_plot.png>]
 Chapter 5.
-) (./chapters/chapter06.tex [47
+) (./chapters/chapter06.tex [57
 
-] [48
+] [58
 
 ]
 Chapter 6.
@@ -2714,18 +2744,22 @@ Chapter 6.
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 4.
 
-Package lettrine.sty Info: Targeted height = 35.0682pt
+Package lettrine.sty Info: Targeted height = 45.07639pt
 (lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 35.06834pt (T);
-(lettrine.sty)             reported on input line 8.
-[49] [50]
-<images/NatalKicks/Grid_Regions.png, id=2018, 629.11035pt x 602.0091pt>
+(lettrine.sty)             Lettrine height = 45.07657pt (T);
+(lettrine.sty)             reported on input line 6.
+[59]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[60]
+<images/NatalKicks/Grid_Regions.png, id=2276, 629.11035pt x 602.0091pt>
 File: images/NatalKicks/Grid_Regions.png Graphic file (type png)
 <use images/NatalKicks/Grid_Regions.png>
 Package pdftex.def Info: images/NatalKicks/Grid_Regions.png  used on input line
- 55.
+ 53.
 (pdftex.def)             Requested size: 491.94817pt x 470.75937pt.
- [51] [52 <./images/NatalKicks/Grid_Regions.png>]
+ [61] [62 <./images/NatalKicks/Grid_Regions.png>]
 \openout5 = `main.pyg'.
 
 
@@ -2740,7 +2774,7 @@ Package pdftex.def Info: images/NatalKicks/Grid_Regions.png  used on input line
 
 
 (./_minted-main/22C35DF1C79DCF62B811E4D4364954605BD9CFCE54A68914ACB2DCF71641ADB
-0.pygtex)
+0.pygtex) [63]
 \openout5 = `main.pyg'.
 
 
@@ -2751,113 +2785,116 @@ Package pdftex.def Info: images/NatalKicks/Grid_Regions.png  used on input line
 
 (./_minted-main/22C35DF1C79DCF62B811E4D4364954605BD9CFCE54A68914ACB2DCF71641ADB
 0.pygtex)
-<images/NatalKicks/varying_de.png, id=2110, 527.20966pt x 319.4334pt>
+<images/NatalKicks/varying_de.png, id=2381, 527.20966pt x 319.4334pt>
 File: images/NatalKicks/varying_de.png Graphic file (type png)
 <use images/NatalKicks/varying_de.png>
 Package pdftex.def Info: images/NatalKicks/varying_de.png  used on input line 1
-12.
+10.
 (pdftex.def)             Requested size: 491.94817pt x 298.07892pt.
-<images/NatalKicks/runtime.png, id=2113, 545.99985pt x 375.0813pt>
+<images/NatalKicks/runtime.png, id=2384, 545.99985pt x 375.0813pt>
 File: images/NatalKicks/runtime.png Graphic file (type png)
 <use images/NatalKicks/runtime.png>
-Package pdftex.def Info: images/NatalKicks/runtime.png  used on input line 119.
+Package pdftex.def Info: images/NatalKicks/runtime.png  used on input line 117.
 
 (pdftex.def)             Requested size: 491.94817pt x 337.96495pt.
- [53]
-<images/NatalKicks/EventRate_Distribution_Both.png, id=2152, 493.00185pt x 304.
+ [64]
+<images/NatalKicks/EventRate_Distribution_Both.png, id=2417, 493.00185pt x 304.
 2567pt>
 File: images/NatalKicks/EventRate_Distribution_Both.png Graphic file (type png)
 
 <use images/NatalKicks/EventRate_Distribution_Both.png>
 Package pdftex.def Info: images/NatalKicks/EventRate_Distribution_Both.png  use
-d on input line 133.
+d on input line 131.
 (pdftex.def)             Requested size: 491.94817pt x 303.60599pt.
-<images/NatalKicks/PE_dists_six_panel.png, id=2177, 392.4261pt x 278.60085pt>
+ [65 <./images/NatalKicks/varying_de.png>] [66 <./images/NatalKicks/runtime.png
+>] [67 <./images/NatalKicks/EventRate_Distribution_Both.png>]
+<images/NatalKicks/PE_dists_six_panel.png, id=2462, 392.4261pt x 278.60085pt>
 File: images/NatalKicks/PE_dists_six_panel.png Graphic file (type png)
 <use images/NatalKicks/PE_dists_six_panel.png>
 Package pdftex.def Info: images/NatalKicks/PE_dists_six_panel.png  used on inpu
-t line 144.
+t line 142.
 (pdftex.def)             Requested size: 491.94817pt x 349.27043pt.
- [54 <./images/NatalKicks/varying_de.png>] [55 <./images/NatalKicks/runtime.png
->] [56 <./images/NatalKicks/EventRate_Distribution_Both.png>]
-[57 <./images/NatalKicks/PE_dists_six_panel.png>]
-<images/NatalKicks/LogBayesFactors_Both.png, id=2259, 442.2924pt x 256.91985pt>
+
+[68 <./images/NatalKicks/PE_dists_six_panel.png>]
+<images/NatalKicks/LogBayesFactors_Both.png, id=2521, 442.2924pt x 256.91985pt>
 
 File: images/NatalKicks/LogBayesFactors_Both.png Graphic file (type png)
 <use images/NatalKicks/LogBayesFactors_Both.png>
 Package pdftex.def Info: images/NatalKicks/LogBayesFactors_Both.png  used on in
-put line 188.
+put line 186.
 (pdftex.def)             Requested size: 491.94817pt x 285.76851pt.
-
-Underfull \vbox (badness 3568) has occurred while \output is active []
-
- [58 <./images/NatalKicks/LogBayesFactors_Both.png>]
-<images/NatalKicks/bray_vs_hobbs.png, id=2309, 409.7709pt x 261.6174pt>
+ [69] [70 <./images/NatalKicks/LogBayesFactors_Both.png>]
+<images/NatalKicks/bray_vs_hobbs.png, id=2580, 409.7709pt x 261.6174pt>
 File: images/NatalKicks/bray_vs_hobbs.png Graphic file (type png)
 <use images/NatalKicks/bray_vs_hobbs.png>
 Package pdftex.def Info: images/NatalKicks/bray_vs_hobbs.png  used on input lin
-e 211.
+e 209.
 (pdftex.def)             Requested size: 491.94817pt x 314.09497pt.
-<images/NatalKicks/ks_test.png, id=2338, 773.0481pt x 441.20834pt>
+<images/NatalKicks/ks_test.png, id=2609, 773.0481pt x 441.20834pt>
 File: images/NatalKicks/ks_test.png Graphic file (type png)
 <use images/NatalKicks/ks_test.png>
-Package pdftex.def Info: images/NatalKicks/ks_test.png  used on input line 220.
+Package pdftex.def Info: images/NatalKicks/ks_test.png  used on input line 218.
 
 (pdftex.def)             Requested size: 491.94817pt x 280.77681pt.
-<images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png, id=2344, 480.71594pt
+<images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png, id=2615, 480.71594pt
  x 334.1283pt>
 File: images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png Graphic file (ty
 pe png)
 <use images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png>
 Package pdftex.def Info: images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.p
-ng  used on input line 231.
+ng  used on input line 229.
 (pdftex.def)             Requested size: 491.94817pt x 341.95348pt.
- [59] [60 <./images/NatalKicks/bray_vs_hobbs.png>] [61 <./images/NatalKicks/ks_
-test.png>] [62 <./images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png>]
-<images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png, id=2421
+ [71 <./images/NatalKicks/bray_vs_hobbs.png>]
+[72 <./images/NatalKicks/ks_test.png>] [73 <./images/NatalKicks/individual_pdfs
+_with_cdf_and_hobbs.png>] [74]
+<images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png, id=2699
 , 457.2282pt x 319.9152pt>
 File: images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png Gra
 phic file (type png)
 <use images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png>
 Package pdftex.def Info: images/NatalKicks/All_Three_Constraints_with_USSNe_and
-_modeltype2.png  used on input line 269.
+_modeltype2.png  used on input line 267.
 (pdftex.def)             Requested size: 491.94817pt x 344.20967pt.
-<images/NatalKicks/Best_Model_Params.png, id=2426, 847.968pt x 377.7312pt>
+<images/NatalKicks/Best_Model_Params.png, id=2704, 847.968pt x 377.7312pt>
 File: images/NatalKicks/Best_Model_Params.png Graphic file (type png)
 <use images/NatalKicks/Best_Model_Params.png>
 Package pdftex.def Info: images/NatalKicks/Best_Model_Params.png  used on input
- line 278.
+ line 276.
 (pdftex.def)             Requested size: 491.94817pt x 219.14764pt.
-<images/NatalKicks/grid_shifting_peaks.png, id=2439, 497.33804pt x 299.31825pt>
+ [75 <./images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png>]
+<images/NatalKicks/grid_shifting_peaks.png, id=2723, 497.33804pt x 299.31825pt>
 
 File: images/NatalKicks/grid_shifting_peaks.png Graphic file (type png)
 <use images/NatalKicks/grid_shifting_peaks.png>
 Package pdftex.def Info: images/NatalKicks/grid_shifting_peaks.png  used on inp
-ut line 289.
+ut line 287.
 (pdftex.def)             Requested size: 491.94817pt x 296.08849pt.
-<images/NatalKicks/event_rate_history_local.png, id=2442, 423.5022pt x 402.1825
+<images/NatalKicks/event_rate_history_local.png, id=2726, 423.5022pt x 402.1825
 6pt>
 File: images/NatalKicks/event_rate_history_local.png Graphic file (type png)
 <use images/NatalKicks/event_rate_history_local.png>
 Package pdftex.def Info: images/NatalKicks/event_rate_history_local.png  used o
-n input line 296.
+n input line 294.
 (pdftex.def)             Requested size: 491.94817pt x 467.18259pt.
- [63] [64 <./images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.
-png>] [65 <./images/NatalKicks/Best_Model_Params.png> <./images/NatalKicks/grid
-_shifting_peaks.png>] [66 <./images/NatalKicks/event_rate_history_local.png>] [
-67]) (./chapters/chapter19.tex [68]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [76 <./images/NatalKicks/Best_Model_Params.png>] [77 <./images/NatalKicks/grid
+_shifting_peaks.png>] [78 <./images/NatalKicks/event_rate_history_local.png>] [
+79])
+(./chapters/chapter19.tex [80]
 Chapter 7.
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 4.
 
-) [69
+) [81
 
-] [70
+] [82
 
-] [71
+] [83
 
-] [72] (./chapters/appendices/appendixA.tex
+] [84] (./chapters/appendices/appendixA.tex
 Appendix A.
 \openout5 = `main.pyg'.
 
@@ -2874,11 +2911,20 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
 
-Underfull \vbox (badness 5189) has occurred while \output is active []
+Underfull \vbox (badness 1616) has occurred while \output is active []
 
- [73
+ [85
 
 ]
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+
+[86]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -2893,9 +2939,6 @@ Missing character: There is no k in font nullfont!
 0.pygtex)
 (./_minted-main/E1A457C42BE9FE91783DFC5B046C31D6F69D0D2CCB40A37DBDA8BB228F15F41
 2.pygtex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [74]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -2903,10 +2946,7 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [75]
+ [87]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -2914,12 +2954,11 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
-)
-(./chapters/appendices/appendixB.tex [76]
+) (./chapters/appendices/appendixB.tex [88]
 Appendix B.
-) (./chapters/appendices/appendixC.tex [77
+) (./chapters/appendices/appendixC.tex [89
 
-] [78
+] [90
 
 ]
 Appendix C.
@@ -2931,7 +2970,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrshort' on input line 2.
 
-<images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png, id=2643, 427.5975p
+<images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png, id=2914, 427.5975p
 t x 606.8271pt>
 File: images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png Graphic file (
 type png)
@@ -2939,7 +2978,7 @@ type png)
 Package pdftex.def Info: images/NatalKicks/PeriodEccentricityDiagrams-O3Contour
 .png  used on input line 8.
 (pdftex.def)             Requested size: 439.19719pt x 623.28185pt.
-) (./chapters/appendices/appendixD.tex [79] [80 <./images/NatalKicks/PeriodEcce
+) (./chapters/appendices/appendixD.tex [91] [92 <./images/NatalKicks/PeriodEcce
 ntricityDiagrams-O3Contour.png>]
 Appendix D.
 
@@ -2947,17 +2986,23 @@ Overfull \hbox (2.6883pt too wide) in paragraph at lines 35--58
  [][] 
  []
 
-[81
+[93
 
-] [82]) [83] [84
+] [94]) [95] [96
 
 ] (./main.bbl
 LaTeX Info: Redefining \UD on input line 1.
 LaTeX Info: Redefining \DE on input line 1.
 LaTeX Info: Redefining \VAN on input line 1.
- [85
+ [97
 
-] [86] [87] [88] [89] [90] [91]) [92]
+] [98] [99]
+Underfull \hbox (badness 1048) in paragraph at lines 395--399
+[]\T1/cmr/m/n/10 Hamacher D. W., Barsa J., Passi S., Tapim A., 2019, In-dige-no
+us use of stel-lar scin-til-la-tion to pre-
+ []
+
+[100] [101] [102] [103] [104] [105]) [106]
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 89.pgf)
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
@@ -2979,86 +3024,83 @@ LaTeX Info: Redefining \VAN on input line 1.
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 87.pgf) 
 AED: lastpage setting LastPage
-[93] (./main.aux)
+[107] (./main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 307F9AA6CB54CA1C25AA310EEB014E65;14658.
+(rerunfilecheck)             Checksum: 95809C01F60156B2A159D15233A5F193;16577.
 runsystem(rm main.pyg)...executed.
 
- )
-(\end occurred when \ifx on line 55 was incomplete) 
+ ) 
 Here is how much of TeX's memory you used:
- 52586 strings out of 478512
- 1060040 string characters out of 5849625
- 1637634 words of memory out of 5000000
- 68722 multiletter control sequences out of 15000+600000
- 501800 words of font info for 116 fonts, out of 8000000 for 9000
+ 52850 strings out of 478512
+ 1066165 string characters out of 5849625
+ 1642905 words of memory out of 5000000
+ 68926 multiletter control sequences out of 15000+600000
+ 503564 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 96i,20n,97p,1586b,2099s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2021/tex
-mf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2021/texm
-f-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2021/texmf-
-dist/fonts/enc/dvips/crimson/crm_tyw3ea.enc}{/usr/local/texlive/2021/texmf-dist
-/fonts/enc/dvips/crimson/crm_izufyi.enc}{/usr/local/texlive/2021/texmf-dist/fon
-ts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/kosch
-/crimson/Crimson-Italic.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/kos
-ch/crimson/Crimson-Roman.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pu
-blic/initials/Zallman.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/
-amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publ
-ic/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmi9.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmib10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr5.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8
-.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pf
-b></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><
-/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></u
-sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr
-/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/l
-ocal/texlive/2021/texmf-dist/fonts/type1/public/cbfonts/grmi0900.pfb></usr/loca
-l/texlive/2021/texmf-dist/fonts/type1/public/cbfonts/grmn1000.pfb></usr/local/t
-exlive/2021/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/202
-1/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/texlive/2021/texmf-di
-st/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2021/texm
-f-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/local/texlive/2021/texmf-
-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive/2021/texmf-di
-st/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2021/texmf-dist
-/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2021/texmf-dist/f
-onts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2021/texmf-dist/fon
-ts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2021/texmf-dist/fonts
-/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2021/texmf-dist/fonts/t
-ype1/public/cm-super/sfcc0800.pfb></usr/local/texlive/2021/texmf-dist/fonts/typ
-e1/public/cm-super/sfcc0900.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1
-/public/cm-super/sfcc1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/p
-ublic/cm-super/sfcc1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pub
-lic/cm-super/sfit1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publi
-c/cm-super/sfrm0500.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/
-cm-super/sfrm0600.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm
--super/sfrm0700.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-s
-uper/sfrm0800.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-sup
-er/sfrm0900.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super
-/sfrm1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/s
-fti0900.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sft
-i1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt0
-900.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt100
-0.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfxc1200.
-pfb>
-Output written on main.pdf (117 pages, 15336703 bytes).
+ 96i,20n,97p,1586b,2178s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{
+/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/crimson/crm_tyw3ea.enc}{/usr
+/local/texlive/2021/texmf-dist/fonts/enc/dvips/crimson/crm_izufyi.enc}{/usr/loc
+al/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/202
+1/texmf-dist/fonts/type1/kosch/crimson/Crimson-Italic.pfb></usr/local/texlive/2
+021/texmf-dist/fonts/type1/kosch/crimson/Crimson-Roman.pfb></usr/local/texlive/
+2021/texmf-dist/fonts/type1/public/initials/Zallman.pfb></usr/local/texlive/202
+1/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2021
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021/
+texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/20
+21/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive
+/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/
+2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/20
+21/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2021
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2021/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2021/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2021/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2021/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2021/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2021/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/c
+bfonts/grmi0900.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cbfo
+nts/grmn1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmss
+12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmss17.pfb></u
+sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
+></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb><
+/usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></u
+sr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr
+/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/l
+ocal/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/loc
+al/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local
+/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc0800.pfb></usr/local/t
+exlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc0900.pfb></usr/local/tex
+live/2021/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texli
+ve/2021/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive
+/2021/texmf-dist/fonts/type1/public/cm-super/sfit1000.pfb></usr/local/texlive/2
+021/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texlive/202
+1/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2021/
+texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2021/te
+xmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2021/texm
+f-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2021/texmf-
+dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2021/texmf-di
+st/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texlive/2021/texmf-dist
+/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2021/texmf-dist/f
+onts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2021/texmf-dist/fon
+ts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2021/texmf-dist/fonts
+/type1/public/cm-super/sfxc1200.pfb>
+Output written on main.pdf (133 pages, 16088805 bytes).
 PDF statistics:
- 3333 PDF objects out of 3580 (max. 8388607)
- 2838 compressed objects within 29 object streams
- 628 named destinations out of 1000 (max. 500000)
- 1023 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3619 PDF objects out of 4296 (max. 8388607)
+ 3093 compressed objects within 31 object streams
+ 660 named destinations out of 1000 (max. 500000)
+ 1111 words of extra memory for PDF output out of 10000 (max. 10000000)
 

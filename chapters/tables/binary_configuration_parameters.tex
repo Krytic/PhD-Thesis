@@ -1,0 +1,62 @@
+% !TEX root = ../../main.tex
+\begin{table}
+    \begin{subtable}[b]{0.49\linewidth}
+        \centering
+        \begin{tabular}{l|lr|rr|rr}
+            \toprule
+                                                                 &                              &                    &   \multicolumn{2}{c|}{Star 1}           &   \multicolumn{2}{c}{Star 2}           \\
+                                                                 &                              &   \mlc{$t=0$\\(a)} &   \mlc{Begin\\(b)} &   \mlc{End\\(e)}   &   \mlc{Begin\\(c)} & \mlc{End\\(d)}    \\
+            \midrule
+             \multirow{5}{*}{\rotatebox[origin=c]{90}{Donor}}    & $M~/~\unit{\msun}$           &              30.00 &              27.93 &               7.56 &            26.91 &              17.43  \\
+                                                                 & $R~/~\unit{\rsun}$           &               8.82 &              16.32 &              10.20 &            13.88 &               9.76  \\
+                                                                 & $\log L~/~\unit{\lsun}$      &               5.07 &               5.30 &               5.25 &             5.16 &               4.94  \\
+                                                                 & $X_\text{surf}$              &               0.70 &               0.70 &               0.09 &             0.70 &               0.57  \\
+                                                                 & $Y_\text{surf}$              &               0.28 &               0.28 &               0.89 &             0.28 &               0.41  \\
+             \midrule
+             \multirow{5}{*}{\rotatebox[origin=c]{90}{Accretor}} & $M~/~\unit{\msun}$           &              10.00 &               9.99 &              20.97 &            11.00 &              14.57  \\
+                                                                 & $R~/~\unit{\rsun}$           &               4.87 &               4.36 &               4.02 &             9.23 &               8.98  \\
+                                                                 & $\log L~/~\unit{\lsun}$      &               3.73 &               3.81 &               4.89 &             4.90 &               5.06  \\
+                                                                 & $X_\text{surf}$              &               0.70 &               0.70 &               0.09 &             0.70 &               0.57  \\
+                                                                 & $Y_\text{surf}$              &               0.28 &               0.28 &               0.89 &             0.28 &               0.41  \\
+             \midrule
+             \multirow{3}{*}{\rotatebox[origin=c]{90}{Binary}}   & $P_\text{bin}~/~\unit{\day}$ &               3.98 &               3.85 &               4.41 &             3.14 &               2.52  \\
+                                                                 & $a~/~\unit{\rsun}$           &              36.14 &              34.74 &              34.56 &            30.28 &              24.71  \\
+                                                                 & Age~/~\unit{\kilo\year}      &               0.00 &            4707.16 &            6450.23 &          4712.75 &            4716.42  \\
+             \bottomrule
+        \end{tabular}
+        \caption{Variable composition accretion}
+        \label{tab:binary_configuration_parameters_variable_accretion}
+    \end{subtable}%
+    \begin{minipage}{0.1\linewidth}
+    \phantom{a} % please
+    \end{minipage}%
+    \begin{subtable}[b]{0.49\linewidth}
+        \centering
+        \begin{tabular}{rr|rr}
+             \toprule
+                                                                                                                         \multicolumn{2}{c|}{Star 1}           &   \multicolumn{2}{c}{Star 2}            \\
+                                                                                                                         \mlc{Begin\\(b)} &   \mlc{End\\(e)}   &   \mlc{Begin\\(c)} & \mlc{End\\(d)}     \\
+             \midrule
+                                                                                                                                    27.93 &               7.57 &              26.91 &              17.27 \\
+                                                                                                                                    16.32 &              10.15 &              13.88 &               9.77 \\
+                                                                                                                                     5.30 &               5.25 &               5.16 &               4.98 \\
+                                                                                                                                     0.70 &               0.09 &               0.70 &               0.57 \\
+                                                                                                                                     0.28 &               0.89 &               0.28 &               0.42 \\
+             \midrule
+                                                                                                                                     9.99 &              20.77 &              11.00 &              14.52 \\
+                                                                                                                                     4.36 &               6.53 &               9.23 &               9.02 \\
+                                                                                                                                     3.81 &               4.73 &               4.90 &               4.95 \\
+                                                                                                                                     0.70 &               0.70 &               0.70 &               0.70 \\
+                                                                                                                                     0.28 &               0.28 &               0.28 &               0.28 \\
+             \midrule
+                                                                                                                                     3.85 &               4.38 &               3.14 &               2.54 \\
+                                                                                                                                    34.74 &              34.33 &              30.28 &              24.78 \\
+                                                                                                                                  4707.16 &            6448.11 &            4712.75 &            4716.70 \\
+            \bottomrule
+        \end{tabular}
+        \caption{Non-variable accretion}
+        \label{tab:binary_configuration_parameters_standard_accretion}
+    \end{subtable}
+    \caption{The key evolutionary parameters of both stars and the binary configuration at five critical points: the initial parameters, and the beginning and ends of both epochs of \gls{rlof}. All values are rounded to 2 decimal places. The letter in parentheses represents which segment of \autoref{fig:composition_profiles_stages} (for \autoref{tab:binary_configuration_parameters_variable_accretion}) or \autoref{fig:composition_profiles_stages_standard} (for \autoref{tab:binary_configuration_parameters_standard_accretion}) the abundances are given in.}
+    \label{tab:binary_configuration_parameters}
+\end{table}
