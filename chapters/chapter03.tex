@@ -9,7 +9,9 @@ The evolution is also complex. Sufficiently close binaries may overflow their $\
 
 \section{Observations of contact binaries}
 
-Observations of contact binaries date back to the 1940s \citep{Kuiper:1941}, however only a handful of contact binaries are known. The binaries we study in this chapter are summarised in \autoref{tab:overcontact_binaries}, and were originally compiled in \citet{Abdul-masih:2022}. Their sample focused on measuring the period stability of contact binaries and is a subset of the known sample, of which somewhere between $\sim\num{42000}$ \citep{Petrosky:2021} and $\sim\num{86000}$ \citep{Qian:2020} binaries exist.
+Observations of contact binaries date back to the 1940s \citep{Kuiper:1941}, however only a handful of contact binaries are known. The binaries we study in this chapter are summarised in \autoref{tab:overcontact_binaries}, and were originally compiled in \citet{Abdul-masih:2022}. Their sample focused on measuring the period stability of contact binaries and is a subset of the known sample, of which somewhere between $\sim\num{42000}$ \citep{Petrosky:2021} and $\sim\num{86000}$ \citep{Qian:2020} binaries exist. They rejected a handful of other non O+O overcontact binaries, for reasons that include short-period von Zeipel-Kozai-Lidov oscillations, incomplete photometric / radial velocity fits, non-\gls{ms} binaries, unknown separations, and irregular light curves.
+
+Ages for the six binaries have not been published, though a soft restriction can be placed on their evolutionary status; \citet{Abdul-masih:2022} compiles specifically \gls{ms} contact binaries, meaning their interactions must take place whilst the progenitor stars are on their main sequences.
 
 \begin{table}
     \centering
@@ -30,7 +32,37 @@ Observations of contact binaries date back to the 1940s \citep{Kuiper:1941}, how
     \label{tab:overcontact_binaries}
 \end{table}
 
-\section{Data matching with BPASS v2.2}
+\subsection{Progenitor geneaology}
+
+\todo{Is that a good section title? ``Progenitor history'' feels more appropriate, but also somewhat more misleading}
+
+We now examine each of the overcontact systems in detail, providing observational context to each system.
+
+\subsubsection{LSS 3074}
+
+The binarity of LSS 3074 \citep{Raucq:2017} was first observed in 1985 by \citet{Morrell:1990} with an observed period of \SI{2.19}{\day}, with its HeI and HeII spectra causing the authors to conclude that it was an O4f+ and O6-7 binary, with inclination-weighted masses of $M_1\sin^3 i = \SI{8}{\msun}$ and $M_2\sin^3 i = \SI{9}{\msun}$. With later measurements of the inclinations to be $i\approx\ang{24}$, these masses were refined to $M_1 = \SI{17.2}{\msun}$ and $M_2=\SI{14.8}{\msun}$. It is located behind the Coalsack Nebula, at a distance of \SI{2256}{\pc}, with a B-band magnitude of \SI{12.81}{\mag} \citep{Stephenson:1971}. It has a fillout factor $f=1.05$.\footnote{A fillout factor is a measurement of the degree of which a system overfills its Roche lobes, with $1 < f < 2$ denoting an overcontact binary, and a high fillout factor representing a more swelled and in-contact system.}
+
+\subsubsection{MY Camelopardalis}
+
+MY Camelopardalis \citep[MY Cam;][]{Lorenzo:2014} is a binary in the cluster Alicante 1, and its binarity was established in 2003 by \citet{Negueruela:2003}. It is likely to be a very massive merger progenitor, though is barely in contact with $f=1.01$ \citep{Abdul-masih:2022}.
+
+\subsubsection{SMC 108086}
+
+OGLE SMC-SC10 108086 \citep[SMC 108086;][]{Hilditch:2005} is a O9 + O9.5/B0 binary. It is a system deeply in contact, with $f=1.70$ \citep{Hilditch:2005, Abdul-masih:2022} -- the deepest known -- and has a short period of $P=\SI{0.88}{\day}$. It is located at a distance of \SI{56.5}{\kilo\pc}, in the \gls{smc}.
+
+\subsubsection{TU Muscae}
+
+TU Muscae \citep[TU Mus;][]{Penny:2008} is an O8V + B0V binary discovered by \citet{Oosterhoff:1928, Oosterhoff:1930}. Its binarity was confirmed as late as 1971, in \citet{Knipe:1971}. The system was profiled in \citet{Andersen:1975}, who concluded that, based on comparison to theoretical models by \citet{Stothers:1972, Stothers:1973}, the system was of solar composition ($Z=0.021\approx\si{\zsun}$) and on the main sequence with $X_\text{H}=0.739$. It has a fillout factor of $f=1.12$.
+
+\subsubsection{V382 Cygni}
+
+V382 Cygni \citep[V382 Cyg;][]{Martins:2017} is an O6.5 + O6 binary whose components are oblate spheroids (deduced from the $\beta$-Lyrae light curves; \citealt{Pearce:1952}). It was originally discovered by \citet{Morgenroth:1935} and A. A. Petrov in 1946 \citep{Landolt:1964, Yasarsoy:2012}.\footnote{Petrov's paper in \textit{Peremennye Zvezdy} is not available digitally, and given the ongoing Russia-Ukraine conflict, the author is unable to access a physical copy to verify the citation and cite this statement.} It has a fillout factor of $f=1.10$.
+
+\subsubsection{VFTS 352}
+
+VFTS 352 was detected in the VLT-FLAMES survey of the Tarantula Nebula \citep{Evans:2011} and is the most recent detection in our sample. The Tarantula Nebula / 30 Doradus is a large H(II) region in the \gls{lmc}. The progenitor of VFTS 352 is likely an equal mass, short period binary with no strong helium or nitrogen surface abundances \citep{Abdul-masih:2019}, which may be due to biases in the CNO abundances, or similar, in that atmospheric study. It has a fillout factor of $f=1.28$.
+
+\section{Data matching with BPASS v2.2}\label{sec:BPASS_data_matching}
 
 We perform our data matching using the \codename{Hoki} code \citep{Stevance:2020a}. The search parameters are shown in \autoref{tab:overcontact_binaries}. We query the \gls{bpass} v2.2.1 dataset and record whether or not they enter the (widened) parameter values. Parameters are widened as some of the periods are tighter than the \gls{bpass} values and thus can be missed in the search.
 
@@ -42,7 +74,7 @@ The matching values \codename{Hoki} finds are shown in \autoref{tab:hoki_matches
      \renewcommand{\arraystretch}{1.2}
     \begin{tabular}{c|l|c|c|c|c|l}
          \toprule
-         Binary & BPASS v2.2.1 matches & $M_{1, \text{ZAMS}}$ & $M_{2, \text{ZAMS}}$ & $q$ & $P_{\text{ZAMS}}$ & $\log$ Age\\
+         Binary & BPASS v2.2.1 matches & $M_{1, \text{ZAMS}}$ & $M_{2, \text{ZAMS}}$ & $q$ & $P_{\text{ZAMS}}$ & $\log_{10}$ age\\
          \midrule
          \multirow{5}{*}{LSS 3074}       & sneplot-z020-30-0.3-0.6 & 30.0 & 9.0 & 0.3 & 3.98 & 6\\
                                           & sneplot-z020-25-0.4-0.6 & 25.0 & 10.0 & 0.4 & 3.98 & 6\\
@@ -88,7 +120,7 @@ The matching values \codename{Hoki} finds are shown in \autoref{tab:hoki_matches
          \bottomrule
     \end{tabular}
     \renewcommand{\arraystretch}{\oldstrech}
-    \caption[Matches from the \textsc{Hoki} \citep{Stevance:2020a} software.]{Matches from the \textsc{Hoki} \citep{Stevance:2020a} software. Ages were computed via \textsc{Hoki}'s AgeWizard utility, described in \citet{Stevance:2020}, and are the most likely ages computed via a bootstrapping method.}
+    \caption[Matches from the \textsc{Hoki} \citep{Stevance:2020a} software.]{Matches from the \textsc{Hoki} \citep{Stevance:2020a} software. Masses are measured in solar masses, periods in days, and ages in years. Ages were computed via \textsc{Hoki}'s AgeWizard utility, described in \citet{Stevance:2020}, and are the most likely ages computed via a bootstrapping method.}
     \label{tab:hoki_matches}
 \end{table}
 
@@ -137,37 +169,83 @@ The matching values \codename{Hoki} finds are shown in \autoref{tab:hoki_matches
     \label{fig:hoki_matches_HRD_primaries}
 \end{figure}
 
-\subsection{Progenitor geneaology}
-
-We now examine each of the progenitor histories in detail, focusing in particular on the \gls{zams} parameters of each model, as well as providing observational context to each system.
-
-\subsubsection{LSS 3074}
-
-The binarity of LSS 3074 \citep{Raucq:2017} was first observed in 1985 by \citet{Morrell:1990} with an observed period of \SI{2.19}{\day}, with its HeI and HeII spectra causing the authors to conclude that it was an O4f+ and O6-7 binary, with inclination-weighted masses of $M_1\sin^3 i = \SI{8}{\msun}$ and $M_2\sin^3 i = \SI{9}{\msun}$. With later measurements of the inclinations to be $i\approx\ang{24}$, these masses were refined to $M_1 = \SI{17.2}{\msun}$ and $M_2=\SI{14.8}{\msun}$. It is located behind the Coalsack Nebula, at a distance of \SI{2256}{\pc}, with a B-band magnitude of \SI{12.81}{\mag} \citep{Stephenson:1971}.
-
-\subsubsection{MY Camelopardalis}
-
-MY Camelopardalis \citep[MY Cam;][]{Lorenzo:2014} is a binary in the cluster Alicante 1, and its binarity was established in 2003 by \citet{Negueruela:2003}. It is likely to be a very massive merger progenitor, though is barely in contact with a fillout factor $f=1.01$ \citep{Abdul-masih:2022}.\footnote{A fillout factor is a measurement of the degree of which a system overfills its Roche lobes, with $1 < f < 2$ denoting an overcontact binary, and a high fillout factor representing a more swelled and in-contact system.}
-
-\subsubsection{SMC 108086}
-
-OGLE SMC-SC10 108086 \citep[SMC 108086;][]{Hilditch:2005} is a O9 + O9.5/B0 binary. It is a system deeply in contact, with $f=1.70$ \citep{Hilditch:2005, Abdul-masih:2022} -- the deepest known -- and has a short period of $P=\SI{0.88}{\day}$. It is located at a distance of \SI{56.5}{\kilo\pc}, in the \gls{smc}.
-
-\subsubsection{TU Muscae}
-
-TU Muscae \citep[TU Mus;][]{Penny:2008} is an O8V + B0V binary discovered by \citet{Oosterhoff:1928, Oosterhoff:1930}. Its binarity was confirmed as late as 1971, in \citet{Knipe:1971}. The system was profiled in \citet{Andersen:1975}, who concluded that, based on comparison to theoretical models by \citet{Stothers:1972, Stothers:1973}, the system was of solar composition ($Z=0.021\approx\si{\zsun}$) and on the main sequence with $X_\text{H}=0.739$.
-
-\subsubsection{V382 Cygni}
-
-V382 Cygni \citep[V382 Cyg;][]{Martins:2017} is an O6.5 + O6 binary whose components are oblate spheroids (deduced from the $\beta$-Lyrae light curves; \citealt{Pearce:1952}). It was originally discovered by \citet{Morgenroth:1935} and A. A. Petrov in 1946 \citep{Landolt:1964, Yasarsoy:2012}.\footnote{Petrov's paper in \textit{Peremennye Zvezdy} is not available digitally, and given the ongoing Russia-Ukraine conflict, the author is unable to access a physical copy to verify the citation and cite this statement.}
-
-\subsubsection{VFTS 352}
-
-VFTS 352 was detected in the VLT-FLAMES survey of the Tarantula Nebula \citep{Evans:2011} and is the most recent detection in our sample. The Tarantula Nebula / 30 Doradus is a large H(II) region in the \gls{lmc}. The progenitor of VFTS 352 is likely an equal mass, short period binary with no strong helium or nitrogen surface abundances \citep{Abdul-masih:2019}, which may be due to biases in the CNO abundances, or similar, in that atmospheric study.
-
 \section{Forward evolution}
 
-Having now established the \gls{zams} parameters for our binaries, we can take these as input to our \codename{stars} code to determine their future history.
+Having now established the \gls{zams} parameters for our binaries, we can take these as input to our \codename{stars} code to determine their future history. We set up a grid, with $m_1 \in \left[5, 60\right], m_2 \in\left[5, m_1\right),$ and $\log~P\in\left[0.6, 1.2\right]$. We take steps of $\delta m=\SI{5}{\msun}$ and $\delta\log~P=\SI{0.1}{\dex}$. The mass space is set up to enforce a mass ratio of $q < 1$. There are two reasons for this:
+
+\begin{enumerate}
+    \item We do not consider $q = 1$ -- equal mass binaries -- as equal masses induce extra effects on the \gls{ms} that \codename{stars} is unable to effectively model,
+    \item We do not consider $q > 1$, as this is equivalent to a relabelling of $m_1\to m_2$ and $m_2\to m_1$; that is, binary evolution is symmetric under the exchange of mass.
+\end{enumerate}
+
+We also compute the grid at three metallicities: z020, z010, and z004, corresponding to the three metallicities in \autoref{tab:overcontact_binaries} and \autoref{tab:hoki_matches}.
+
+An example model run for a $Z=0.020=Z_\odot, m_1=\SI{30}{\msun}, m_2=\SI{10}{\msun}, \log~P=\SI{0.6}{\day}$ is shown in \autoref{fig:sample_model_run}. This model corresponds to a potential progenitor of LSS 3074.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{images/overcontact_binaries/Sample_Overcontact_Binary_LSS3074.png}
+    \caption[A sample grid execution run, matching the ZAMS parameters of LSS 3074]{A sample grid execution run, matching the ZAMS parameters of LSS 3074. The top panel is an HR diagram of both stars, with core abundance exhaustion marked as symbols on the figure. The bottom two panels are Kippenhahn diagrams showing both the convective zones of the stars, and the cores.}
+    \label{fig:sample_model_run}
+\end{figure}
+
+In \autoref{fig:parameter_coverage} we also display the coverage map in $\log~T~/~\log~L$ space of our grid at each metallicity as a density map.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{images/overcontact_binaries/Parameter_Coverage.png}
+    \caption[The location in HR-space that the grid we compute occupies, for the three metallicities we presently cover.]{The location in HR-space that the grid we compute occupies, for the three metallicities we presently cover.}
+    \label{fig:parameter_coverage}
+\end{figure}
+
+\section{Matches to observed close contact models}
+
+From our coarse grid, we are able to identify matches to the observed systems. We first interpolate the matches found by \codename{Hoki} onto our coarse grid. Specifically, in order to preserve the mass ratio as best as possible, we interpolate $m_1$ onto the grid, and then calculate $m_2$ as
+
+\begin{equation}
+    m_2 = \text{round}\left(q\times m_1\right)
+\end{equation}
+
+where the round function interpolates back onto the grid. Our matches for the systems LSS 3074, MY Cam, V382 Cygni, and VFTS 352 are shown in \autoref{fig:gridmatches}. We observe that on this coarse grid, we match V382 Cyg on two models:
+
+\begin{enumerate}
+    \item $m_1=\SI{30}{\msun}$, $m_2=\SI{15}{\msun}$, $\log P=\SI{0.6}{\day}$, from an age of \SI{63606358}{\year} to \SI{63611433}{\year} (i.e., a matching time of \SI{5075}{\year}), and
+    \item $m_1=\SI{40}{\msun}$, $m_2=\SI{10}{\msun}$, $\log P=\SI{0.6}{\day}$, from an age of \SI{34366921}{\year} to \SI{34373848}{\year} (i.e., a matching time of \SI{6927}{\year}).
+\end{enumerate}
+
+We also note an absence of matches for two of our systems: TU Mus and SMC 108086
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[t]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/grid_matches/LSS_3074.png}
+        \caption{LSS 3074}
+        \label{fig:gridmatch_LSS_3074}
+    \end{subfigure}%
+    \begin{subfigure}[t]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/grid_matches/MY_Cam.png}
+        \caption{MY Cam}
+        \label{fig:gridmatch_MY_Cam}
+    \end{subfigure}
+
+    \begin{subfigure}[t]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/grid_matches/V382_Cyg.png}
+        \caption{V382 Cyg}
+        \label{fig:gridmatch_V382_Cyg}
+    \end{subfigure}%
+    \begin{subfigure}[t]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/grid_matches/VFTS_352.png}
+        \caption{VFTS 352}
+        \label{fig:gridmatch_VFTS_352}
+    \end{subfigure}
+
+    \caption[Detailed models of the close contact binaries found in \autoref{sec:BPASS_data_matching}.]{Detailed models of the close contact binaries found in \autoref{sec:BPASS_data_matching}. Not shown are SMC 108086 and TU Mus, which both only have matches outside of the coarse grid. Also not shown is a match for MY Cam, which has a primary which is more massive than the grid.}
+    \label{fig:gridmatches}
+\end{figure}
 
 \section{Exotic binaries arising from contact systems}
 
@@ -176,7 +254,3 @@ Having now established the \gls{zams} parameters for our binaries, we can take t
 \subsection{Reverse mass transfer}
 
 \subsection{Overflow through \texorpdfstring{$\mathcal{L}_2$}{the outer Lagrange point}}
-
-
-% add in double contact systems
-% and the reverse MT systems here
