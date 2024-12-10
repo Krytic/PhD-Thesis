@@ -20,11 +20,11 @@ Ages for the six binaries have not been published, though a soft restriction can
         Binary name & $M_1$ & $M_2$ & $P$ & Z & $\log T_1$ & $\log L_1$ & $\log T_2$ & Ref. \\
         \midrule
         LSS 3074       & $14.8 \pm 2.2$ & $17.2 \pm 4.2$ & $2.183 \pm 1$         & 0.020$^a$ & $4.6 \pm 0.2$    & $5.15 \pm 0.2$   & $4.53 \pm 0.5$   & A \\
-        MY Cam         & $37.7 \pm 3.2$ & $31.6 \pm 4.2$ & $1.175^{+6}_{-1.175}$ & 0.020$^a$ & $4.62 \pm 0.2$   & $5.2 \pm 1.0$    & $4.59 \pm 0.5$   & B \\
+        MY Cam         & $37.7 \pm 3.2$ & $31.6 \pm 4.2$ & $1.175^{+6}_{-1.175}$ & 0.020$^a$ & $4.62 \pm 0.2$   & $5.2 \pm 0.5$    & $4.59 \pm 0.5$   & B \\
         SMC 108086     & $16.9 \pm 1.2$ & $14.3 \pm 5.1$ & $0.883 \pm 0.88$      & 0.004$^b$ & $4.53 \pm 0.1$   & $4.608 \pm 0.4$  & $4.48 \pm 0.5$   & C \\
         TU Mus         & $16.7 \pm 1.6$ & $10.4 \pm 1.4$ & $1.387 \pm 1$         & 0.020$^c$ & $4.57 \pm 0.2$   & $5.02 \pm 0.4$   & $4.54 \pm 0.5$   & D \\
         V382 Cyg$^d$   & $26.1 \pm 3.2$ & $19.0 \pm 4.2$ & $1.886 \pm 1$         & 0.020$^e$ & $4.57 \pm 0.2$   & $5.47 \pm 0.4$   & $4.58 \pm 0.5$   & E \\
-        VFTS 352       & $28.6 \pm 3.6$ & $28.9 \pm 1.8$ & $1.124^{+2}_{-1.124}$ & 0.010$^f$ & $4.63 \pm 0.45$  & $5.19 \pm 1.0$   & $4.61 \pm 0.5$   & F \\
+        VFTS 352       & $28.6 \pm 3.6$ & $28.9 \pm 1.8$ & $1.124^{+2}_{-1.124}$ & 0.010$^f$ & $4.63 \pm 0.45$  & $5.19 \pm 0.5$   & $4.61 \pm 0.5$   & F \\
 
         \bottomrule
     \end{tabular}
@@ -62,7 +62,7 @@ V382 Cygni \citep[V382 Cyg;][]{Martins:2017} is an O6.5 + O6 binary whose compon
 
 VFTS 352 was detected in the VLT-FLAMES survey of the Tarantula Nebula \citep{Evans:2011} and is the most recent detection in our sample. The Tarantula Nebula / 30 Doradus is a large H(II) region in the \gls{lmc}. The progenitor of VFTS 352 is likely an equal mass, short period binary with no strong helium or nitrogen surface abundances \citep{Abdul-masih:2019}, which may be due to biases in the CNO abundances, or similar, in that atmospheric study. It has a fillout factor of $f=1.28$.
 
-\section{Data matching with BPASS v2.2}\label{sec:BPASS_data_matching}
+\subsection{Data matching with BPASS v2.2}\label{sec:BPASS_data_matching}
 
 We perform our data matching using the \codename{Hoki} code \citep{Stevance:2020a}. The search parameters are shown in \autoref{tab:overcontact_binaries}. We query the \gls{bpass} v2.2.1 dataset and record whether or not they enter the (widened) parameter values. Parameters are widened as some of the periods are tighter than the \gls{bpass} values and thus can be missed in the search.
 
@@ -72,50 +72,46 @@ The matching values \codename{Hoki} finds are shown in \autoref{tab:hoki_matches
     \centering
      \newcommand{\oldstrech}{\arraystretch}
      \renewcommand{\arraystretch}{1.2}
-    \begin{tabular}{c|l|c|c|c|c|l}
+    \begin{tabular}{c|c|l|c|c|c|c|l}
          \toprule
-         Binary & BPASS v2.2.1 matches & $M_{1, \text{ZAMS}}$ & $M_{2, \text{ZAMS}}$ & $q$ & $P_{\text{ZAMS}}$ & $\log_{10}$ age\\
+         Binary & $Z_\odot$ & BPASS v2.2.1 matches & $M_{1, \mathrm{ZAMS}}$ & $M_{2, \mathrm{ZAMS}}$ & $q$ & $P_{\mathrm{ZAMS}}$ & $\log$ Age\\
          \midrule
-         \multirow{5}{*}{LSS 3074}       & sneplot-z020-30-0.3-0.6 & 30.0 & 9.0 & 0.3 & 3.98 & 6\\
-                                          & sneplot-z020-25-0.4-0.6 & 25.0 & 10.0 & 0.4 & 3.98 & 6\\
-                                          & sneplot-z020-25-0.5-0.6 & 25.0 & 12.5 & 0.5 & 3.98 & 6\\
-                                          & sneplot-z020-24-0.4-0.6 & 24.0 & 9.6 & 0.4 & 3.98 & 6\\
-                                          & sneplot-z020-24-0.5-0.6 & 24.0 & 12.0 & 0.5 & 3.98 & 6\\
+         \multirow{5}{*}{LSS 3074}       & \multirow{5}{*}{n/a} & sneplot-z020-30-0.3-0.6 & 30.0 & 9.0 & 0.3 & 3.98 & 6\\
+                                         &                      & sneplot-z020-25-0.4-0.6 & 25.0 & 10.0 & 0.4 & 3.98 & 6\\
+                                         &                      & sneplot-z020-25-0.5-0.6 & 25.0 & 12.5 & 0.5 & 3.98 & 6\\
+                                         &                      & sneplot-z020-24-0.4-0.6 & 24.0 & 9.6 & 0.4 & 3.98 & 6\\
+                                         &                      & sneplot-z020-24-0.5-0.6 & 24.0 & 12.0 & 0.5 & 3.98 & 6\\
                                                                                 \midrule
-         \multirow{9}{*}{MY Cam}         & sneplot-z020-70-0.3-1 & 70.0 & 21.0 & 0.3 & 10.00 & 6.4\\
-                                          & sneplot-z020-60-0.3-0.8 & 60.0 & 18.0 & 0.3 & 6.31 & 6.4\\
-                                          & sneplot-z020-60-0.4-0.8 & 60.0 & 24.0 & 0.4 & 6.31 & 6.4\\
-                                          & sneplot-z020-60-0.3-1 & 60.0 & 18.0 & 0.3 & 10.00 & 6.4\\
-                                          & sneplot-z020-50-0.5-0.6 & 50.0 & 25.0 & 0.5 & 3.98 & 6.4\\
-                                          & sneplot-z020-50-0.4-0.8 & 50.0 & 20.0 & 0.4 & 6.31 & 6.4\\
-                                          & sneplot-z020-50-0.5-0.8 & 50.0 & 25.0 & 0.5 & 6.31 & 6.4\\
-                                          & sneplot-z020-50-0.6-0.8 & 50.0 & 30.0 & 0.6 & 6.31 & 6.4\\
-                                          & sneplot-z020-40-0.7-0.8 & 40.0 & 28.0 & 0.7 & 6.31 & 6.4\\
+         \multirow{5}{*}{MY Cam}         & \multirow{5}{*}{n/a} & sneplot-z020-50-0.5-0.6 & 50.0 & 25.0 & 0.5 & 3.98 & 6.4\\
+                                         &                      & sneplot-z020-50-0.4-0.8 & 50.0 & 20.0 & 0.4 & 6.31 & 6.4\\
+                                         &                      & sneplot-z020-50-0.5-0.8 & 50.0 & 25.0 & 0.5 & 6.31 & 6.4\\
+                                         &                      & sneplot-z020-50-0.6-0.8 & 50.0 & 30.0 & 0.6 & 6.31 & 6.4\\
+                                         &                      & sneplot-z020-40-0.7-0.8 & 40.0 & 28.0 & 0.7 & 6.31 & 6.4\\
                                                                                 \midrule
-         \multirow{10}{*}{SMC 108086}    & sneplot-z004-24-0.5-0.4 & 24.0 & 12.0 & 0.5 & 2.51 & 7\\
-                                          & sneplot-z004-23-0.4-0.4 & 23.0 & 9.2 & 0.4 & 2.51 & 7\\
-                                          & sneplot-z004-23-0.5-0.4 & 23.0 & 11.5 & 0.5 & 2.51 & 7\\
-                                          & sneplot-z004-22-0.4-0.4 & 22.0 & 8.8 & 0.4 & 2.51 & 7\\
-                                          & sneplot-z004-22-0.5-0.4 & 22.0 & 11.0 & 0.5 & 2.51 & 7\\
-                                          & sneplot-z004-21-0.4-0.4 & 21.0 & 8.4 & 0.4 & 2.51 & 7\\
-                                          & sneplot-z004-21-0.5-0.4 & 21.0 & 10.5 & 0.5 & 2.51 & 7\\
-                                          & sneplot-z004-20-0.4-0.4 & 20.0 & 8.0 & 0.4 & 2.51 & 7\\
-                                          & sneplot-z004-20-0.5-0.4 & 20.0 & 10.0 & 0.5 & 2.51 & 7\\
-                                          & sneplot-z004-19-0.4-0.4 & 19.0 & 7.6 & 0.4 & 2.51 & 7\\
+         \multirow{10}{*}{SMC 108086}    & \multirow{10}{*}{n/a} & sneplot-z004-24-0.5-0.4 & 24.0 & 12.0 & 0.5 & 2.51 & 7\\
+                                         &                       & sneplot-z004-23-0.4-0.4 & 23.0 & 9.2 & 0.4 & 2.51 & 7\\
+                                         &                       & sneplot-z004-23-0.5-0.4 & 23.0 & 11.5 & 0.5 & 2.51 & 7\\
+                                         &                       & sneplot-z004-22-0.4-0.4 & 22.0 & 8.8 & 0.4 & 2.51 & 7\\
+                                         &                       & sneplot-z004-22-0.5-0.4 & 22.0 & 11.0 & 0.5 & 2.51 & 7\\
+                                         &                       & sneplot-z004-21-0.4-0.4 & 21.0 & 8.4 & 0.4 & 2.51 & 7\\
+                                         &                       & sneplot-z004-21-0.5-0.4 & 21.0 & 10.5 & 0.5 & 2.51 & 7\\
+                                         &                       & sneplot-z004-20-0.4-0.4 & 20.0 & 8.0 & 0.4 & 2.51 & 7\\
+                                         &                       & sneplot-z004-20-0.5-0.4 & 20.0 & 10.0 & 0.5 & 2.51 & 7\\
+                                         &                       & sneplot-z004-19-0.4-0.4 & 19.0 & 7.6 & 0.4 & 2.51 & 7\\
                                                                                 \midrule
-         \multirow{4}{*}{TU Mus}         & sneplot-z020-25-0.3-0.4 & 25.0 & 7.5 & 0.3 & 2.51 & 6.2\\
-                                          & sneplot-z020-24-0.3-0.4 & 24.0 & 7.2 & 0.3 & 2.51 & 6.2\\
-                                          & sneplot-z020-23-0.3-0.4 & 23.0 & 6.9 & 0.3 & 2.51 & 6.2\\
-                                          & sneplot-z020-16-0.6-0.4 & 16.0 & 9.6 & 0.6 & 2.51 & 6.2\\
+         \multirow{4}{*}{TU Mus}         & \multirow{4}{*}{n/a} & sneplot-z020-25-0.3-0.4 & 25.0 & 7.5 & 0.3 & 2.51 & 6.2\\
+                                         &                      & sneplot-z020-24-0.3-0.4 & 24.0 & 7.2 & 0.3 & 2.51 & 6.2\\
+                                         &                      & sneplot-z020-23-0.3-0.4 & 23.0 & 6.9 & 0.3 & 2.51 & 6.2\\
+                                         &                      & sneplot-z020-16-0.6-0.4 & 16.0 & 9.6 & 0.6 & 2.51 & 6.2\\
                                                                                 \midrule
-         \multirow{6}{*}{V382 Cyg}       & sneplot-z020-50-0.2-0.6 & 50.0 & 10.0 & 0.2 & 3.98 & 6.4\\
-                                          & sneplot-z020-40-0.3-0.6 & 40.0 & 12.0 & 0.3 & 3.98 & 6.4\\
-                                          & sneplot-z020-40-0.4-0.6 & 40.0 & 16.0 & 0.4 & 3.98 & 6.4\\
-                                          & sneplot-z020-35-0.4-0.6 & 35.0 & 14.0 & 0.4 & 3.98 & 6.4\\
-                                          & sneplot-z020-30-0.4-0.6 & 30.0 & 12.0 & 0.4 & 3.98 & 6.4\\
-                                          & sneplot-z020-30-0.5-0.6 & 30.0 & 15.0 & 0.5 & 3.98 & 6.4\\
+         \multirow{6}{*}{V382 Cyg}       & \multirow{6}{*}{n/a} & sneplot-z020-50-0.2-0.6 & 50.0 & 10.0 & 0.2 & 3.98 & 6.4\\
+                                         &                      & sneplot-z020-40-0.3-0.6 & 40.0 & 12.0 & 0.3 & 3.98 & 6.4\\
+                                         &                      & sneplot-z020-40-0.4-0.6 & 40.0 & 16.0 & 0.4 & 3.98 & 6.4\\
+                                         &                      & sneplot-z020-35-0.4-0.6 & 35.0 & 14.0 & 0.4 & 3.98 & 6.4\\
+                                         &                      & sneplot-z020-30-0.4-0.6 & 30.0 & 12.0 & 0.4 & 3.98 & 6.4\\
+                                         &                      & sneplot-z020-30-0.5-0.6 & 30.0 & 15.0 & 0.5 & 3.98 & 6.4\\
                                                                                 \midrule
-         \multirow{1}{*}{VFTS 352}       & sneplot-z010-40-0.5-0.6 & 40.0 & 20.0 & 0.5 & 3.98 & 6.5\\
+         \multirow{1}{*}{VFTS 352}       & \multirow{1}{*}{n/a} & sneplot-z010-40-0.5-0.6 & 40.0 & 20.0 & 0.5 & 3.98 & 6.5\\
 
          \bottomrule
     \end{tabular}
@@ -249,8 +245,8 @@ We also note an absence of matches for two of our systems: TU Mus and SMC 108086
 
 \section{Exotic binaries arising from contact systems}
 
-\subsection{Double contact systems}
+\subsection{Double contact systems}\label{sec:multiply_interacting}
 
-\subsection{Reverse mass transfer}
+\subsection{Reverse mass transfer}\label{sec:reverse_MT}
 
 \subsection{Overflow through \texorpdfstring{$\mathcal{L}_2$}{the outer Lagrange point}}

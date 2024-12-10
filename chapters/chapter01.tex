@@ -98,13 +98,21 @@ Broadly speaking, there are three approaches generating a population of stars, a
 
 Each of these approaches informs the other two, and all play important roles in stellar modelling. Although we focus on detailed methods, we will briefly outline all three approaches here.
 
-\subsubsection{Detailed Population Synthesis}
+\subsubsection{Population Synthesis with Detailed Binary Models}
 
-A detailed population synthesis code computes pairings of detailed models. One can in principle examine the output models to determine at any point the progenitor history. For example, when recording the sources of compact object coalescenes, one can place a prior on the mass of the components at their respective \gls{zams} positions, to only record binaries with a certain mass, or who at some point undergo a particular kind of mass transfer. In other regimes, this would need to be done in post-processing, potentially by querying the input distribution also.
+A detailed population synthesis code uses detailed model sets, where the interior state of the stars is computed, and coupled to the orbital evolution equations. In this regime, observables such as mass transfer are explicitly calculated and solved for from the exact equations of state, structure, and evolution of the binary. By doing this, one follows the binary evolution in a reasonable amount of detail, obfuscating fine detail and (generally) asymmetry in the star in favour of recovering the larger-scale structure.
 
-\subsubsection{Rapid Population Synthesis}
+ %computes pairings of detailed models. One can in principle examine the output models to determine at any point the progenitor history. For example, when recording the sources of compact object coalescenes, one can place a prior on the mass of the components at their respective \gls{zams} positions, to only record binaries with a certain mass, or who at some point undergo a particular kind of mass transfer. In other regimes, this would need to be done in post-processing, potentially by querying the input distribution also.
 
-Rapid population synthesis methods exploit the statistical properties of stars in order to rapidly infer properties of populations of stars. However, they still require as input detailed stellar models -- for example, \codename{Compas} \citep{Team_compas_riley:2022} uses \codename{Mesa} \citep{Paxton:2011, Paxton:2013, Paxton:2015, Paxton:2018, Paxton:2019, Jermyn:2023} models as its input models. The clear limitation is that it is more difficult (though not impossible) to disentangle an input model track to determine the progenitor of a particular system.
+% cliffnotes max:
+% - detailed models internal variables + couples to the orbital equations
+% - rapid uses either single star models or fits to single star models to do the stellar evolution component and uses a hurley-type framework for binary interactions
+
+\subsubsection{Rapid Binary Population Synthesis}
+
+Rapid binary population synthesis models are instead either compilations of single-star evolutionary tracks that have been solved for using a code such as \codename{Mesa} \citep{Paxton:2011, Paxton:2013, Paxton:2015, Paxton:2018, Paxton:2019, Jermyn:2023}, fit to using approximations such as those of \citet{Hurley:2000} or \citet{Hurley:2002}, or interpolated between. These models are then coupled to the orbital evolution \textit{a posteriori} using a binary evolution framework, effectively approximating the computationally expensive part of binary evolution models to varying degrees of detail. This allows them to generate binary models on-the-fly, and optimise for this interaction, at the potential cost of missing more precise facets of binary evolution.
+
+% Rapid population synthesis methods exploit the statistical properties of stars in order to rapidly infer properties of populations of stars. However, they still require as input detailed stellar models -- for example, \codename{Compas} \citep{Team_compas_riley:2022} uses \codename{Mesa} \citep{Paxton:2011, Paxton:2013, Paxton:2015, Paxton:2018, Paxton:2019, Jermyn:2023} models as its input models. The clear limitation is that it is more difficult (though not impossible) to disentangle an input model track to determine the progenitor of a particular system.
 
 \subsubsection[3D MHD Simulations]{\acrshort{mhd} Simulations}
 
