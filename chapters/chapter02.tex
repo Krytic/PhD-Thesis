@@ -14,21 +14,21 @@ From the point of view of stellar evolution, which starts in earnest at the \gls
 Stars are born in clouds of dust in rich H(II) regions of space. Due to inhomegeneities in the dust formation, some regions become more dense than others. When a region of this gas with adiabatic constant $\gamma$ and mean molecular weight $\mu$ reaches the so-called Jeans Mass,
 
 \begin{equation}
-    M_\text{J} = \pqty{\frac{10k_\text{B}T}{3\pqty{\gamma-1}\mu m_\text{H}G}}^\frac32 \pqty{\frac{3}{4\pi\rho}}^\frac12 \sim \pqty{\frac{10k_\text{B}T}{G}R}^\frac32 \pqty{\frac{1}{M}}^\frac12
+    M_\text{J} = \pqty{\frac{10k_\text{B}T}{3\pqty{\gamma-1}\mu m_\text{H}G}}^\frac32 \pqty{\frac{3}{4\pi\rho}}^\frac12 \sim \pqty{\frac{10k_\text{B}T}{G}R}^\frac32 \pqty{\frac{1}{M}}^\frac12,
 \end{equation}
 
 where the similarity is taking $\gamma=\frac53, \mu=\frac12$ for an adiabatic gas composed of H(II), then gravity becomes the dominant force in the clumps of gas. This causes a protostar to form. This protostar slowly gains more mass from its surroundings and, as it does so, increases in temperature. When the core temperature reaches $\SI[parse-numbers=false]{10^7}{\kelvin}$, the hydrogen in the core begins to fuse into helium via the reaction chain
 
 \begin{align*}
     \ce{^2_1H + ^2_1H &-> ^3_2He + ^1_0n + \SI{3.27}{\mega\electronvolt}} \\
-    \ce{^2_1H + ^3_2He &-> ^4_2He + ^1_1H + \SI{18.3}{\mega\electronvolt}}
+    \ce{^2_1H + ^3_2He &-> ^4_2He + ^1_1H + \SI{18.3}{\mega\electronvolt}}.
 \end{align*}
 
 This is aided by two further hydrogen to helium reactions:
 
 \begin{align*}
     \ce{^2_1H + ^2_1H &-> ^3_1He + ^1_1H + \SI{4.03}{\mega\electronvolt}} \\
-    \ce{^2_1H + ^3_1H &-> ^4_2He + ^1_0n + \SI{17.59}{\mega\electronvolt}}
+    \ce{^2_1H + ^3_1H &-> ^4_2He + ^1_0n + \SI{17.59}{\mega\electronvolt}},
 \end{align*}
 
 or, via a master equation,
@@ -37,27 +37,27 @@ or, via a master equation,
     \ce{6^2_1H -> 2^4_2He + 2^1_1H + 2^1_0n + \SI{43.2}{\mega\electronvolt}},
 \end{equation}
 
-with intermediate products which remain stable and are thus omitted for simplicity. This energy release will sustain the star throughout it's lifetime, providing outwards pressure resisting gravity pulling the star inwards, in a balance termed \textit{hydrostatic equilibrium}. Once hydrogen fusion has begun, we say that the star has reached \gls{zams}, and is now on the \textit{main sequence}, where it will spend approximately 90\% of its lifetime.
+with intermediate products which remain stable and are thus omitted for simplicity. This energy release will sustain the star throughout its lifetime, providing outwards pressure resisting gravity pulling the star inwards, in a balance termed \textit{hydrostatic equilibrium}. Once hydrogen fusion has begun, we say that the star has reached \gls{zams}, and is now on the \textit{main sequence}, where it will spend approximately 90\% of its lifetime.
 
 \section{Stellar Evolution}
 
 \mediaepigraph{It did not last: the Devil howling ``Ho! Let Einstein be!'' restored the status quo.}{Answer to Pope's Epitaph for Sir Isaac Newton}{J. C. Squire}
 
-Now that our protostar has evolved onto the main sequence, it has become a star in its own right. Over the next few million years, it will continue to burn hydrogen into helium, forming a Helium core. It is at this point that the evolution encounters a number of bifurcation points, depending on the mass and chemical composition of the star. In general, while the star lives, the four equations of stellar structure hold:
+Now that our protostar has evolved onto the main sequence, it has become a star in its own right. Over the next few million years, it will continue to burn hydrogen into helium, forming a helium core. It is at this point that the evolution encounters a number of bifurcation points, depending on the mass and chemical composition of the star. In general, while the star lives, the four equations of stellar structure hold:
 
 \begin{equation}
     \left.\begin{array}{lll}
-        \dv{m}{r} &= 4\pi r^2\rho & \text{(mass continuity)} \\
-        \dv{p}{r} &= -\frac{GM\rho}{r^2} & \text{(hydrostatic equilibrium)}\\
-        \dv{T}{r} &= -\frac{3\kappa\rho L}{64\pi r^2\sigma T^3} & \text{(energy transport)} \\
-        \dv{L}{r} &= 4\pi r^2\rho\epsilon & \text{(thermal equilibrium)}
+        \dv{m}{r} &= 4\pi r^2\rho & \text{(mass continuity)}, \\
+        \dv{p}{r} &= -\frac{GM\rho}{r^2} & \text{(hydrostatic equilibrium)},\\
+        \dv{T}{r} &= -\frac{3\kappa\rho L}{64\pi r^2\sigma T^3} & \text{(energy transport), and} \\
+        \dv{L}{r} &= 4\pi r^2\rho\epsilon & \text{(thermal equilibrium)}.
     \end{array}\right\}
     \label{eq:stellar_structure}
 \end{equation}
 
 where $\epsilon$ is the rate of energy energation per unit mass, $\kappa$ is the opacity of the material, $\sigma$ is the Stefann-Boltzmann constant, and all other symbols have their usual meanings.
 
-These equations represent conservation of mass, hydrostatic equilibrium, energy transport, and thermal equilibrium, respectively. Knowing constants $\epsilon, \kappa$, we have four equations for four unknowns. It is usually convenient to take the \textit{Rosseland mean} opacity,
+These equations represent conservation of mass, hydrostatic equilibrium, energy transport, and thermal equilibrium, respectively. Knowing constants $\epsilon, \kappa$, we have four equations with four unknowns. It is usually convenient to use the \textit{Rosseland mean} opacity,
 
 \begin{equation}
     \frac{1}{\kappa} = \frac{\pi}{acT^3}\int_0^\infty \frac{1}{\kappa_\nu}\pdv{B}{T}~\mathrm{d}\nu
@@ -72,20 +72,20 @@ where $a$ is the radiation density constant ($a=\SI{7.57e-15}{\erg\per\cubic\cm\
 though the integral cannot be analytically solved further. On the other hand, $\epsilon$ is obtainable from knowing the nuclear reactions occurring in the star's core:
 
 \begin{equation}
-    \epsilon = \sum_{i}^N \text{energy output of reaction } i
+    \epsilon = \sum_{i}^N \text{energy output of reaction } i.
 \end{equation}
 
 All told, in the simplest sense, the internal \textit{structure} of the star can be modelled by hand by solving \autoref{eq:stellar_structure} from $m=0$ to $m=M$.
 
 \subsection{The chemical composition of stars}
 
-A star contains at its core a complex nuclear furnace. Since stars are born in regions of space rich in H(II) -- molecular hydrogen -- and obtain high enough pressures in the core to ignite fusion, the star will be sustained by the burning of predominantly Hydrogen and Helium. We thus group the three main stages into Hydrogen, Helium, and Metals (which we define as anything with atomic number $\geq3$, i.e., Lithium and heavier elements). It is convenient to speak of the mass fraction of the element, i.e., the fraction by mass of a star that is a certain element. For our purposes, this is expressible as
+A star contains at its core a complex nuclear furnace. Since stars are born in regions of space rich in H(II) -- molecular hydrogen -- and obtain high enough pressures in the core to ignite fusion, the star will be sustained by the burning of predominantly hydrogen and helium. We thus group the three main stages into hydrogen, helium, and metals (which we define as anything with atomic number $\geq3$, i.e., lithium and heavier elements). It is convenient to speak of the mass fraction of the element, i.e., the fraction by mass of a star that is a certain element. For our purposes, this is expressible as
 
 \begin{equation}
 	X+Y+\sum_{i=0}^{115} \mathcal{Z}_i = 1, \label{eq:mass_fracs}
 \end{equation}
 
-where $X$ is the mass fraction of Hydrogen, $Y$ of Helium, and $\mathcal{Z}_i$ as the metal\footnote{It is custom in astronomy to refer to anything with an atomic number greater than 2 as a metal, rather than the conventional definition of a material conductive at absolute zero, including most of the d-block, s-block, f-block, and about half of the p-block on the periodic table.} with atomic number $i+3$. When speaking about the chemical composition of a star it is also convenient to speak of the \textit{metallicity}, the fraction at \gls{zams} of the star that is metal. For this, we define the metallicity as
+where $X$ is the mass fraction of hydrogen, $Y$ of helium, and $\mathcal{Z}_i$ as the metal\footnote{It is custom in astronomy to refer to anything with an atomic number greater than 2 as a metal, rather than the conventional definition of a material conductive at absolute zero, including most of the d-block, s-block, f-block, and about half of the p-block on the periodic table.} with atomic number $i+3$. When speaking about the chemical composition of a star it is also convenient to speak of the \textit{metallicity}, the fraction at \gls{zams} of the star that is metal. For this, we define the metallicity as
 
 \begin{equation}
     Z \equiv \sum_{i=0}^{115} \mathcal{Z}_i,
@@ -97,7 +97,7 @@ such that \autoref{eq:mass_fracs} becomes
     X+Y+Z = 1.
 \end{equation}
 
-% \subsubsection{Hydrogen burning: the \acrshort{pp_chain}}
+% \subsubsection{hydrogen burning: the \acrshort{pp_chain}}
 
 % A star spends $\sim90\%$ of its lifetime on the main sequence, which is where it burns protons (bare hydrogen atoms) into helium. This reaction is called the \gls{pp_chain}, and can be broken up into three potential paths. All three paths begin with the reaction \todo{finish}
 
@@ -115,7 +115,7 @@ such that \autoref{eq:mass_fracs} becomes
 %     \left[\text{Fe/H}\right] = \left.\log_{10}\pqty{\frac{N_\text{Fe}}{N_\text{H}}}\right|_\text{star}-\left.\log_{10}\pqty{\frac{N_\text{Fe}}{N_\text{H}}}\right|_\text{sun},
 % \end{equation}
 
-% where $N_\text{H}$ ($N_\text{Fe}$) is the number of Hydrogen (Iron) atoms per unit volume of the sun or star. Mechanically this is represented by
+% where $N_\text{H}$ ($N_\text{Fe}$) is the number of hydrogen (Iron) atoms per unit volume of the sun or star. Mechanically this is represented by
 
 % \begin{equation}
 %     N_\text{X} = N_A \frac{M}{m_\text{X}}
@@ -149,13 +149,13 @@ In this section, we examine the four major regimes of stellar evolution for sing
 
 \subsubsection{Low-Mass Stars: \texorpdfstring{$\SI{0.08}{\msun} < M < \SI{2}{\msun}$}{Stars with between 0.08 and 2 times the mass of the sun}}
 
-Low-mass stars ignite helium degenerately in their cores, leading to thermal runaway. The star can peak at a luminosity close to $10^{11} L_\odot$ (approximately 100 times the peak luminosity of SN 1987A, per Figure 5 of \citet{Arnett:1989}). However, this peak in luminosity is attributable to nuclear fusion in the core, and the energy does not reach the surface, let alone escape into the \gls{ism} -- rather, it is absorbed into the outer layers of the star. During this extremely brief thermal runaway, the luminosity begins to settle and the star is able to continue evolving. Models of low mass stars fail at this stage and care is required to evolve them. This phenomena is called the \textit{Helium flash} and is discussed further in \autoref{sec:numerical_instabilities}.
+Low-mass stars ignite helium degenerately in their cores, leading to thermal runaway. The star can peak at a luminosity close to $10^{11} L_\odot$ (approximately 100 times the peak luminosity of SN 1987A, per Figure 5 of \citet{Arnett:1989}). However, this peak in luminosity is attributable to nuclear fusion in the core, and the energy does not reach the surface, let alone escape into the \gls{ism} -- rather, it is absorbed into the outer layers of the star. During this extremely brief thermal runaway, the luminosity begins to settle and the star is able to continue evolving. Models of low mass stars fail at this stage and care is required to evolve them. This phenomena is called the \textit{helium flash} and is discussed further in \autoref{sec:numerical_instabilities}.
 
 After the ignition of helium, these stars cross the so-called Hertzsprung Gap -- the region where very few stars are observed empirically. This region is bounded (on a colour-magnitude diagram, which is a transform of the HR diagram)\footnote{The relationship between a colour-magnitude diagram and the HR diagram is that $\log L=0.4\pqty{M_{\text{bol},\odot}-M_{\text{bol},*}}\simeq0.4\pqty{4.74-M_{v,*}-\text{BC}}$, $\log T=\log\pqty{4600\pqty{\frac{1}{0.92\pqty{B-V}+1.7}+\frac{1}{0.92\pqty{B-V}+0.62}}}$, where BC is a bolometric correction which depends on the stellar type. This expression for the temperature is a fit provided by \citet{Ballesteros:2012}.} by the points $\pqty{M_v, B-V}=\left\{\pqty{2,0.5}, \pqty{-7, 0.1}, \pqty{-6, 1.6}\right\}$ \citep{Hoyle:1960}, where $M_v$ is the V-band magnitude (magnitude in the visual band), and $B-V$ is the colour index of the star. The phenomenon of a gap existing is attributable to the fact that stars cross this gap exceedingly quickly: whereas it spends $\sim90\%$ of its life on the main sequence, it spends $\sim2\%$ of its life crossing the Hertzsprung gap \citep{Hoyle:1960}.
 
 \subsubsection{Intermediate-Mass Stars: \texorpdfstring{$\SI{2}{\msun} < M < \SI{8}{\msun}$}{Stars with between 2 and 8 times the mass of the sun}}
 
-Intermediate mass stars exist above the threshold for the Helium flash to occur. Helium ignition is not degenerate and the development of a helium core is not impeded. As the star ascends the \gls{agb}, the core becomes helium-exhausted and it becomes a red giant, with a radius many hundreds or even thousands of times greater than the sun. Its mass, sustained prior to the \gls{agb} via nuclear fusion, begins to decrease. An example of intermediate-mass evolution is shown in \autoref{fig:intermediate_mass}.
+Intermediate mass stars exist above the threshold for the helium flash to occur. helium ignition is not degenerate and the development of a helium core is not impeded. As the star ascends the \gls{agb}, the core becomes helium-exhausted and it becomes a red giant, with a radius many hundreds or even thousands of times greater than the Sun. Its mass, sustained prior to the \gls{agb} via nuclear fusion, begins to decrease. An example of intermediate-mass evolution is shown in \autoref{fig:intermediate_mass}.
 
 \begin{figure}[!htbp]
     \centering
@@ -166,7 +166,7 @@ Intermediate mass stars exist above the threshold for the Helium flash to occur.
 
 \subsubsection{Massive Stars: \texorpdfstring{$\SI{8}{\msun} < M < \SI{80}{\msun}$}{Stars with between 8 and 80 times the mass of the sun}}
 
-Massive stars are the key focal objects of this study, and in many ways offer some of the most exciting phenomena we can probe. In \autoref{fig:hr_diagram_massive_stars} we show the variety of evolution that this regime has, alongside the \gls{zams} track from \SI{8}{\msun} to \SI{90}{\msun}. The key features are as follows. When a massive star exhausts its supply of hydrogen in its core and evolves off the main sequence to begin burning helium, it generally bypasses the Hertzsprung gap and evolves up the \gls{agb}. From here it generally engages in a ``blue loop'', where is remains at a roughly constant radius whilst increasing in temperature, before cooling at a slightly higher luminosity. The question of the physical process powering a blue loop is unanswered \citep{Zhao:2023}, though this thesis is unconcerned with their generation. We note that our models include blue loops, as shown in \autoref{fig:hr_diagram_massive_stars} and \autoref{fig:hr_diagram_8msun_star}.
+Massive stars are the key focal objects of this study, and in many ways offer some of the most exciting phenomena we can probe. In \autoref{fig:hr_diagram_massive_stars} we show the variety of evolution that this regime has, alongside the \gls{zams} track from \SI{8}{\msun} to \SI{90}{\msun}. The key features are as follows. When a massive star exhausts its supply of hydrogen in its core and evolves off the main sequence to begin burning helium, it generally bypasses the Hertzsprung gap and evolves up the \gls{agb}. From here it generally engages in a ``blue loop'', where is remains at a roughly constant radius whilst increasing in temperature, before cooling at a slightly higher luminosity. The question of what physical process powers a blue loop is unanswered \citep{Zhao:2023}, though this thesis is unconcerned with their generation. We note that our models include blue loops, as shown in \autoref{fig:hr_diagram_massive_stars} and \autoref{fig:hr_diagram_8msun_star}.
 
 \begin{figure}[!htbp]
     \centering
@@ -189,7 +189,7 @@ Massive stars are the key focal objects of this study, and in many ways offer so
 This analysis has presumed Newtonian mechanics. However, the mass of stars puts them formally into the general relativistic regime, and thus strictly speaking we should treat this as a problem in full GR. In this approach, we would solve the Einstein Field Equations for the interior of the star:
 
 \begin{equation}
-    G_{\mu\nu} + \Lambda g_{\mu\nu} = \kappa T_{\mu\nu}
+    G_{\mu\nu} + \Lambda g_{\mu\nu} = \kappa T_{\mu\nu},
 \end{equation}
 
 with cosmological constant $\Lambda$, stress-energy $T_{\mu\nu}$, and the Einstein tensor $G_{\mu\nu}$ given by
@@ -206,7 +206,7 @@ with cosmological constant $\Lambda$, stress-energy $T_{\mu\nu}$, and the Einste
 where there is still tensorial shorthand:
 
 \begin{equation}
-    \tensor{\Gamma}{^\gamma_{\beta\mu}} \equiv \frac12\sum_\alpha g^{\alpha\gamma}\pqty{g_{\alpha\beta,\mu}+g_{\alpha\mu,\beta}-g_{\beta\mu,\alpha}}
+    \tensor{\Gamma}{^\gamma_{\beta\mu}} \equiv \frac12\sum_\alpha g^{\alpha\gamma}\pqty{g_{\alpha\beta,\mu}+g_{\alpha\mu,\beta}-g_{\beta\mu,\alpha}},
 \end{equation}
 
 and the comma-derivative notation is
@@ -253,9 +253,9 @@ tabernas regumque turres.\\
 Pale death knocks with the same tempo upon the\\
 huts of the poor and the towers of kings.}{Horace}
 
-A star's lifetime is, unfortunately, not infinite. The key assumption underpinning stellar evolution is that of hydrostatic equilibrium: the counterplay of gravity against outwards pressure. Whilst this equilibrium holds, the star is stable and resists explosion. It is when this equilibrium is broken -- with gravity the dominant force in this scenario -- that the star implodes in a \gls{ccsne}. From a thermodynamic perspective, as the star evolves, it shrinks as energy is bled off into the interstellar medium. This shrinkage compresses and heats the core, meaning the star's specific heat capacity is negative. This system is thermodynamically unstable, and thus every star either collapses into a remnant (cf. black holes, neutron stars) or is sustained in some form by quantum mechanical phenomena (cf. White Dwarfs, Thorne-\.Zytkow objects, and other exotica).
+A star's lifetime is not infinite. The key assumption underpinning stellar evolution is that of hydrostatic equilibrium: the counterplay of gravity against outwards pressure. Whilst this equilibrium holds, the star is stable and resists explosion. It is when this equilibrium is broken -- with gravity the dominant force in this scenario -- that the star implodes in a \gls{ccsne}. From a thermodynamic perspective, as the star evolves, it shrinks as energy is bled off into the interstellar medium. This shrinkage compresses and heats the core, meaning the star's specific heat capacity is negative. This system is thermodynamically unstable, and thus every star either collapses into a remnant (cf. black holes, neutron stars) or is sustained in some form by quantum mechanical phenomena (cf. White Dwarfs, Thorne-\.Zytkow objects, and other exotica).
 
-In any case, the breaking of hydrostatic equilibrium results generally results in\footnote{The extent of the veracity of this statement is an area of active research: \citet{Reynolds:2015} presents a short recap.} a supernova, which can be classified into subtypes, as shown in \autoref{fig:supernova_taxonomy}. In this event, gravity pulls the stellar core inwards, before ``bouncing'' and ejecting the envelope into the interstellar medium. The physics of this approximately second-long event are highly uncertain, and are in general unable to be modelled by detailed stellar evolution codes. All models we generate -- assuming they have not been terminated earlier -- will terminate at the moment of supernova.
+In any case, the breaking of hydrostatic equilibrium results generally results in\footnote{The extent of the veracity of this statement is an area of active research: \citet{Reynolds:2015} presents a short summary.} a supernova, which can be classified into subtypes, as shown in \autoref{fig:supernova_taxonomy}. In this event, gravity pulls the stellar core inwards, before ``bouncing'' and ejecting the envelope into the interstellar medium. The physics of this approximately second-long event is highly uncertain, and is in general unable to be modelled by detailed stellar evolution codes. All models we generate -- assuming they have not been terminated earlier -- will terminate at the moment of supernova.
 
 \begin{figure}[!htbp]
     \centering
@@ -270,12 +270,12 @@ In any case, the breaking of hydrostatic equilibrium results generally results i
         \tikzstyle{no} = [color=red!75,font=\bfseries]
         \tikzstyle{ambig} = [color=black!30!orange,font=\bfseries]
 
-        \node[text width=4cm,align=center,decisionpoint] (hydrogen) at (1*\XScale,0*\YScale) {Hydrogen present?};
+        \node[text width=4cm,align=center,decisionpoint] (hydrogen) at (1*\XScale,0*\YScale) {hydrogen present?};
         \node[text width=4cm,align=center,decisionpoint,fill=black!20] (supernova) at (-2*\XScale,0*\YScale) {Supernova\\occurs};
 
         \node[text width=4cm,align=center,decisionpoint] (typeI) at (-1*\XScale,-1*\YScale) {Silicon present?};
         \node[text width=4cm,align=center,leaf] (typeIa) at (-2*\XScale,-2*\YScale) {Type Ia};
-        \node[text width=4cm,align=center,decisionpoint] (typeIbc) at (0*\XScale,-2*\YScale) {Helium present?};
+        \node[text width=4cm,align=center,decisionpoint] (typeIbc) at (0*\XScale,-2*\YScale) {helium present?};
         \node[text width=4cm,align=center,leaf] (typeIb) at (-1*\XScale,-3*\YScale) {Type Ib};
         \node[text width=4cm,align=center,leaf] (typeIc) at (1*\XScale,-3*\YScale) {Type Ic};
 
@@ -339,7 +339,7 @@ Introducing a second star into the mix complicates the evolution. Whereas before
 
 There are several formation channels for a binary star system. Binaries may be formed from birth (as discussed in \autoref{sec:stellar_formation}, with the caveat that in this scenario two clumps of gas form near each other), via fragmentation of a protostar's disc, dynamical capture of one star by another (comparable to one of the suggested origins of Phobos and Deimos, per \citet{Burns:1978}), or via a higher multiplicity system ejecting one or more of its constituent stars, perhaps via a natal supernova kick.
 
-In any case, once formed and the orbit is stabilised, binary systems obey Kepler's three laws. In the generalised binary regime, however, the assumption that $M_1\gg M_2$ (which underpins most statements of Kepler's laws) is not necessarily true -- for instance, the system LSS 3074 has two stellar components with \gls{zams} masses of approximately \SI{30}{\msun} and \SI{10}{\msun} \citep{Raucq:2017}. Moreover, the fact that there are two stars in orbit rather that one object orbiting another means that Kepler's laws must be stated more precisely. Formally, they can be expressed as (see the appendix of \citet{Richards:2021} for derivations)
+In any case, once formed and the orbit is stabilised, binary systems obey Kepler's three laws. In the generalised binary regime, however, the assumption that $M_1\gg M_2$ (which underpins most statements of Kepler's laws) is not necessarily true -- for instance, the system LSS 3074 has two stellar components with \gls{zams} masses of approximately \SI{30}{\msun} and \SI{10}{\msun} \citep{Raucq:2017}. Moreover, the fact that there are two stars in orbit rather that one object orbiting another means that Kepler's laws must be stated more precisely. Formally, they can be expressed as (see the appendix of \citet{Richards:2021} for derivations):
 
 \begin{enumerate}
     \item All orbits are ellipses, with both stars orbiting a common barycentre at the focus of the ellipse,
@@ -387,7 +387,7 @@ and a schematic of the orbit of a binary system is given in \autoref{fig:bss_sch
 
 \mediaepigraph[in]{Algebra’s like sheet music. The important thing isn’t can you read music, it’s can you \textit{hear} it. Can you hear the music, Robert?}{Niels Bohr}{Oppenheimer}
 
-A binary system is complicated by the presence of its companions in several different ways. As alluded to in the previous section, the presence of a companion warps space-time in such a way that material can be quite distorted from a sphere or oblate spheroid but still remain gravitationally bound to the system. In the extremal case, a star can grow to fill or even exceed its Roche Lobe, which is the tear-drop equipotential shaped surface within which material remains gravitationally bound to its star. In \autoref{fig:roche_potentials} we display these equipotential surfaces for a range of different mass ratios. It is pertinent to note that the shape of all of the Roche Lobes change rapidly at low mass rations, however at higher mass ratios the shapes change less rapidly. In an equal-mass ratio binary, the binary configuration has rotational symmetry about the $\mathcal{L}_1$ point, and reflectional symmetry about the $x$-axis and the line $y=\mathcal{L}_1$.
+A binary system is complicated by the presence of its companions in several different ways. As alluded to in the previous section, the presence of a companion warps space-time in such a way that material can be quite distorted from a sphere or oblate spheroid but still remain gravitationally bound to the system. In the extremal case, a star can grow to fill or even exceed its Roche Lobe, which is the tear-drop shaped equipotential surface within which material remains gravitationally bound to its star. In \autoref{fig:roche_potentials} we display these equipotential surfaces for a range of different mass ratios. It is pertinent to note that the shape of all of the Roche Lobes change rapidly at low mass rations, however at higher mass ratios the shapes change less rapidly. In an equal-mass ratio binary, the binary configuration has rotational symmetry about the $\mathcal{L}_1$ point, and reflectional symmetry about the $x$-axis and the line $y=\mathcal{L}_1$.
 
 \begin{figure}[!htbp]
     \centering
@@ -406,17 +406,15 @@ We follow the derivation given in \citet{Rose:1998} to find an expression for th
 
 where $\vu{x}$ is the line between the center of mass of both stars, $a$ the separation, $\vec{\omega}$ the angular velocity, and $\vec{r}_1$ the position vector of the primary star. The x-ordinates of the centres of mass are given by
 
-\begin{equation}
-    \left.\begin{array}{ll}
-        x_1 &= \frac{M_2}{M_1+M_2}a \\
-        x_2 &= \frac{-M_1}{M_1+M_2}a
-    \end{array}\right\}
-\end{equation}
+\begin{align}
+    x_1 &= \frac{M_2}{M_1+M_2}a \\
+    x_2 &= \frac{-M_1}{M_1+M_2}a
+\end{align}
 
 Since we are considering a rotating coordinate system we have that the centrifugal force is given by
 
 \begin{equation}
-    -M_1 \vec{\omega}\times\pqty{\vec{\omega}\times\vec{r}_1} = M_1\omega^2 x_1
+    -M_1 \vec{\omega}\times\pqty{\vec{\omega}\times\vec{r}_1} = M_1\omega^2 x_1,
 \end{equation}
 
 and hence
@@ -722,7 +720,7 @@ where the constants $c_i$ are given in \autoref{tab:bistability_constants}.
     \bottomrule
     \end{tabular}
 
-    \caption[The mass loss rate constants for interpolation around the bistability jump.]{The mass loss rate constants for interpolation around the bistability jump (\autoref{eq:R1}, \autoref{eq:R2}, \autoref{eq:R3}) (shown pictorally in \autoref{fig:bistability}.}
+    \caption[The mass loss rate constants for interpolation around the bistability jump.]{The mass loss rate constants for interpolation around the bistability jump (\autoref{eq:R1}, \autoref{eq:R2}, \autoref{eq:R3}). This interpolation is shown pictorally in \autoref{fig:bistability}.}
     \label{tab:bistability_constants}
 \end{table}
 
@@ -801,7 +799,7 @@ where $\mathcal{X}=\frac{\frac13 X_\text{C}+\frac14 X_\text{O}}{X_\text{He}}$. T
 Matter extruded from the Lagrangian points is assumed to transfer with a mass loss rate similar to \citet{Hurley:2002}. We take
 
 \begin{equation}
-    \dot{M}_\text{RLOF} = \min\left(k\mathcal{R}\left(\frac{R}{R_\text{RL}}\right)^3,10^{-2}\right) \unit{\msun\per\year}
+    \dot{M}_\text{RLOF} = \min\left(k\mathcal{R}\left(\frac{R}{R_\text{RL}}\right)^3,10^{-2}\right) \unit{\msun\per\year}.
 \end{equation}
 
 Here, $k$ (referred to in our code as RMT) parameterises effectively how much of the star we permit to exist outside of its Roche lobe before it is accreted -- i.e., the voracity of \gls{rlof}. The choice of this can be somewhat arbitrary. \citet{Hurley:2002} for example took $k=\num{3e-6}\min\left\{M_1, 5\right\}^2$, where the coefficient was ``chosen by experiment to ensure that the mass transfer is steady'', and warned that for degenerate stars a more appropriate choice would be to increase this by a factor of $10^3$. Instead, we choose to adopt $k=10^3$ outright with no dependence on the mass, finding instead that this replicated other work -- allowing efficient \gls{rlof} -- best.
@@ -813,7 +811,7 @@ Matter exceeding $\mathcal{L}_2$ (the outer Lagrange point) does not currently r
 Our accretion rates are taken from \citet{Bondi:1944, Hurley:2002}, and limits the accretion rate by the thermal timescale of the star. The prescription is that
 
 \begin{equation}
-    \dot{M}_\text{acc} = \min\left(\dot{M}_\text{RLOF}, \frac{M}{T_\text{KH}}\mathcal{R}\left(1-\frac{\omega}{0.8\omega_\text{crit}}\right)\right)
+    \dot{M}_\text{acc} = \min\left(\dot{M}_\text{RLOF}, \frac{M}{T_\text{KH}}\mathcal{R}\left(1-\frac{\omega}{0.8\omega_\text{crit}}\right)\right),
 \end{equation}
 
 where $\omega$ and $\omega_\text{crit}$ are the spin rate and critical spin rate of the star. We generally assume that the star is composed of individually rotating shells of variable thickness. If $N$ is the number of meshpoints that the star is composed of (for our cases, normally $N=199$), then the moment of inertia is given by
@@ -856,8 +854,8 @@ Generalising this to an eccentric orbit causes the first argument in \autoref{eq
 After a supernova, the star leaves behind its core as a compact remnant. Generally, these are either white dwarves, black holes, or neutron stars. The interior structure of each is either complicated or, in the case of black holes, impossible to observationally probe without violating causality. Their orbital motions are now deterministic from four initial parameters: $m_1, m_2, a$, and $e$. Motion is now wholly determined by the emission of gravitational radiation through (detectable) gravitational waves. The pertinent equations of motion (all derived more formally in \citealt{Richards:2021}) are given by \citet{Peters:1964}, namely,
 
 \begin{align}
-    \dv{a}{t} &= \frac{-\beta}{a^3\left(1-e^2\right)^\frac72}\left(1+\frac{73}{24}e^2+\frac{37}{96}e^4\right) \label{eq:dadt}\\
-    \dv{e}{t} &= -\frac{19}{12}\frac{\beta}{a^4\left(1-e^2\right)^\frac52}\left(e+\frac{121}{304}e^3\right)\label{eq:dedt}
+    \dv{a}{t} &= \frac{-\beta}{a^3\left(1-e^2\right)^\frac72}\left(1+\frac{73}{24}e^2+\frac{37}{96}e^4\right),\text{ and} \label{eq:dadt}\\
+    \dv{e}{t} &= -\frac{19}{12}\frac{\beta}{a^4\left(1-e^2\right)^\frac52}\left(e+\frac{121}{304}e^3\right),\label{eq:dedt}
 \end{align}
 
 with the constant $\beta$ defined as
@@ -878,7 +876,7 @@ then the time from the second supernova to the conclusion of the inspiral, terme
     T_\text{c}(a_0, e_0) = \frac{12}{19}\frac{c_0^4}{\beta}\int_0^{e_0} \frac{e^\frac{22}{19}\left(1+\frac{121}{304}e^2\right)^\frac{1181}{2299}}{\left(1-e^2\right)^\frac32}{ \mathrm{d}e}.\label{eq:coalescence_time}
 \end{equation}
 
-The integral has no clean closed-form solution, and a numerical integrator is typically used to compute the coalescence time. However, some approximations such as \citet{Mandel:2021a} do exist and approximate the coalescence time rather well over the entire range of mass ratios.
+The integral has no closed-form solution, and a numerical integrator is typically used to compute the coalescence time. However, some approximations such as \citet{Mandel:2021a} do exist and approximate the coalescence time rather well over the entire range of mass ratios.
 
 \subsection{Merger Rates of compact binaries}
 
@@ -985,14 +983,14 @@ In our implementation of \gls{mlt} \citep{Vitense:1953, Bohm-vitense:1958, Cox:1
 
 A natural question that arises when modelling a star is where internally to model it -- there is a counterbalance between the level of detail and the time cost of the matrix inversion. The obvious answer would be to distribute a mesh equally spaced within radius of the star, however the nonhomogeniety of a star, plus the potential for very thin shells of physically important material, necessitate a more intelligent approach.
 
-Instead of being equally spaced \textit{radially}, these mesh points are taken to be equally spaced within a function $\mathcal{Q}$, which is given for a binary that does not have \gls{agb}-specific treatment enabled by
+Instead of being equally spaced \textit{radially}, these mesh points are taken to be equally spaced within a function $\mathcal{Q}$, which is taken from \citet{Stancliffe:2004} and given for a binary that does not have \gls{agb}-specific treatment enabled by
 
 \begin{align}
     \mathcal{Q}\left(P, T, M, R\right) &= c_4\ln P + c_5\ln\left(P+c_\text{H}\right) + c_2\ln\left(P+3 P_\text{He}\right) + c_2\ln\left(P+0.3 P_\text{He}\right) + c_7\ln\left(\frac{T}{T+2\times 10^4}\right) \notag\\
     &\phantom{=} + \ln\left(\frac{c_6M^\frac23}{M + M^\frac23}\right) - c_3\ln\left(\frac{R^2}{c_8}+1\right),
 \end{align}
 
-where $P, T, M, R$ are the total pressures, temperatures, masses, and radii of each star, the constants $c_i$ are user controllable and given in \autoref{chap:param_config}, $P_\text{He}$ is the pressure in the Helium-burning shell, and
+where $P, T, M, R$ are the total pressures, temperatures, masses, and radii of each star, the constants $c_i$ are user controllable and given in \autoref{chap:param_config}, $P_\text{He}$ is the pressure in the helium-burning shell, and
 
 \begin{equation}
     c_\text{H} = \begin{cases}
@@ -1001,7 +999,7 @@ where $P, T, M, R$ are the total pressures, temperatures, masses, and radii of e
     \end{cases}
 \end{equation}
 
-where$P_\text{H}$ is the pressures in the Hydrogen-burning shell. Here, $\mathcal{P}$ represents the pressure in the Hydrogen-burning shell when $X_\text{H} = 0.15$. The choice of mesh spacing coefficients $c_1\dots c_{10}$ leads to different areas of the star being prioritised. Coordinates $c_1, c_9,$ and $c_{10}$ are not used except in \gls{agb}-specific evolution, which is not required for most cases (and requires a change of parameterisation in the pressure-shell terms). $c_5$ is hardcoded to be 0.15, and $c_2$ to be 0.0. \todo{but why? ``its what the code does'' is a bad reason.}
+where $P_\text{H}$ is the pressures in the hydrogen-burning shell. Here, $\mathcal{P}$ represents the pressure in the hydrogen-burning shell when $X_\text{H} = 0.15$. The choice of mesh spacing coefficients $c_1\dots c_{10}$ leads to different areas of the star being prioritised. Coordinates $c_1, c_9,$ and $c_{10}$ are not used except in \gls{agb}-specific evolution, which is not required for most cases (and requires a change of parameterisation in the pressure-shell terms). $c_5$ is hardcoded to be 0.15, and $c_2$ to be 0.0. \todo{but why? ``its what the code does'' is a bad reason.}
 
 Placement of the mesh is controlled by the derivative $\pdv{\mathcal{Q}}{k}$, where $k$ is the meshpoint number \citep{Stancliffe:2016}. Specifically, meshpoints are placed at locations where
 
@@ -1024,7 +1022,7 @@ More detail is provided in \citet{Eggleton:1971} for the original mesh spacing f
 The \codename{STARS} code utilises an adaptive timestep control mechanism, whereby the timestep is allowed to shrink to model rapid changes or grow if the star is broadly inert and unchanging. The core computation is a parameter $\Delta$, given by
 
 \begin{equation}
-    \Delta = \frac{d_\text{opt}}{\sum_i \sum_j \left|\delta x_{ij}\right|}\label{eq:timestep_selection}
+    \Delta = \frac{d_\text{opt}}{\sum_i \sum_j \left|\delta x_{ij}\right|},\label{eq:timestep_selection}
 \end{equation}
 
 where $d_\text{opt}$ is a pre-defined target timestep (typically taken to be $\sim 1$, unless otherwise specified; see \autoref{chap:param_config} for our selections), and $\delta x_{ij}$ is the change in variable $x_i$ at meshpoint $j$. In this calculation, luminosity is explicity excluded as this would cause the timestep to explode during certain points of the star's life-time. A new timestep, $d^\prime$, is selected from the previous timestep $d$ by
@@ -1034,19 +1032,19 @@ where $d_\text{opt}$ is a pre-defined target timestep (typically taken to be $\s
         \min\left[d_1, \Delta\right]d & \Delta < 1 \\
         d & \Delta = 1 \\
         \max\left[d_2, \Delta\right]d & \Delta > 1
-    \end{cases}
+    \end{cases},
 \end{equation}
 
-$d_1$ and $d_2$ are pre-determined control parameters, most commonly we take $d_1=0.1$ and $d_2=1.2$ unless otherwise specified.
+where $d_1$ and $d_2$ are pre-determined control parameters. Most commonly we take $d_1=0.1$ and $d_2=1.2$ unless otherwise specified.
 
 \subsubsection{Numerical instabilities}\label{sec:numerical_instabilities}
 
 Stellar modelling is a nontrivial endeavour and there are many cases where the code can fail seemingly arbitrarily. The largest cause of numerical instability is the helium flash, which occurs in low-mass stars between about $\SI{0.8}{\msun} \lesssim M_\text{ZAMS} \lesssim \SI{2.5}{\msun}$. In this band, the triple-$\alpha$ process, given by the reactions \citep{Carroll:2017}\footnote{The reversible reaction is due to Beryllium-8 being unstable; its half-life is on the order of $\SI{1e-16}{\second}$, and it decays back to 2$^4_2$He if it does not react further.}
 
 \begin{align*}
-    \ce{^4_2He + ^4_2He &\rightleftharpoons ^8_4Be - \SI{0.0918}{\mega\electronvolt}} \\
-    \ce{^8_4Be + ^4_2He &-> ^12_6C + 2\gamma{} + \SI{7.367}{\mega\electronvolt}} \\
-    \ce{^12_6C + ^4_2He &-> ^16_8O + \gamma{} + \SI{7.162}{\mega\electronvolt}}
+    \ce{^4_2He + ^4_2He &\rightleftharpoons ^8_4Be - \SI{0.0918}{\mega\electronvolt}}, \\
+    \ce{^8_4Be + ^4_2He &-> ^12_6C + 2\gamma{} + \SI{7.367}{\mega\electronvolt}},\text{ and} \\
+    \ce{^12_6C + ^4_2He &-> ^16_8O + \gamma{} + \SI{7.162}{\mega\electronvolt}},
 \end{align*}
 
 occurs within a highly degenerate helium core. As a result, the temperature of the star increases sharply during this process, leading to thermal runaway. This temperature increase in turn results in an increase in the luminosity (which peaks at $\sim\SI{1e10}{\lsun}$). The flash itself -- being the period of thermal runaway -- occurs on the order of a few minutes, though the spike in luminosity lasts approximately $\SI{7}{\mega\year}$ (for the $\SI{2.51}{\msun}$ star shown in \autoref{fig:thermal_pulses_he_flash}).
@@ -1075,7 +1073,7 @@ The method to overcome this numerical instability is involved and not fully impl
 
 The major modifications we have made to the \codename{stars} code are as follows.
 
-Firstly, the floating-point precision has been increased to double precision for all variables. This has minor effects on the evolved models, insofar as they are generally able to evolve to slightly further stages. This step has previously been undertaken, however not all variables were correctly converted. This did not invalidate any models previous versions of the \codename{stars} code has generated; rather it means they terminated slightly earlier than they may have been able to evolve to.
+Firstly, the floating-point precision has been increased to double precision for all variables. This has minor effects on the evolved models, insofar as they are generally able to evolve to slightly further stages. This step has previously been undertaken, however not all variables were correctly converted. This did not invalidate any models previous versions of the \codename{stars} code has generated; rather it means they terminated slightly earlier than the point to which they may have been able to evolve.%they may have been able to evolve to.
 
 As part of this, we also undertook a reasonably extensive refactor of the codebase. Whilst some of the code remains as originally written, it is now more compliant with modern programming practices and is in some sense easier to alter with new routines.
 
@@ -1087,7 +1085,7 @@ We have also begun implementing an $\alpha-\lambda$ treatment of \gls{cee}, thou
 
 \subsection{The \codename{Tui} code}\label{chap:numerical_methods_tui}
 
-\codename{Tui} is the core population synthesis code within the \gls{bpass} project. \codename{Tui} takes as input the output from the \codename{stars} code. \codename{Tui} was first described in \citet{Ghodla:2023}, and was more fulsomely described in \citet{Stevance:2023}, though we note that their version is technically a refactor of the version we use. The predominant function we use \codename{Tui} for is the matching of pre- and post- supernova models for \autoref{chap:natal_kicks}, and in this section we provide a brief account of that functionality of \codename{Tui} (though the control of the population synthesis models is beyond the scope of this thesis).
+\codename{Tui} is the core population synthesis code within the \gls{bpass} project. \codename{Tui} takes as input the output from the \codename{stars} code. \codename{Tui} was first described in \citet{Ghodla:2023}, and was further described in \citet{Stevance:2023}, though we note that their version is technically a refactor of the version we use. The predominant function we use \codename{Tui} for is the matching of pre- and post- supernova models for \autoref{chap:natal_kicks}, and in this section we provide a brief account of that functionality of \codename{Tui} (though the control of the population synthesis models is beyond the scope of this thesis).
 
 \codename{Tui} has precompiled ``input\_'' files which report a \codename{STARS} plot file, an \gls{imf} weight, and a model type (merger/normal primary/normal secondary/single model/quasi-homogeneous evolution binary/single star). After loading in a model, \codename{Tui} applies a given kick and computes the new orbital parameters from \citet{Tauris:1998}. Crucially, a core assumption of \gls{bpass} is that the orbit remains circular after the first supernova and is allowed to be eccentric after the second. Of course, nature cares little for our assumptions, and the supernova may cause the binary to become eccentric after the first supernova; \codename{Tui} accounts for this by setting the separation after the first supernova to be the semi-latus rectum of the eccentric binary. \codename{Tui} repeats this process after the second supernova.
 
