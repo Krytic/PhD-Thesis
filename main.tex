@@ -1,4 +1,5 @@
 \documentclass[twoside]{book}
+\usepackage{anyfontsize}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{geometry}
@@ -37,6 +38,9 @@
 \usepackage[object=vectorian]{pgfornament}
 \usepackage[explicit,calcwidth]{titlesec}
 \usepackage{lettrine,Zallman}
+\usepackage{mathtools}
+\usepackage[abspage,user,lastpage]{zref}
+\usepackage[titles]{tocloft}
 
 \renewcommand{\LettrineFontHook}{\Zallmanfamily}
 
@@ -44,7 +48,11 @@
 
 \usetikzlibrary{calc}
 
-\def\supervisorcopy{}
+% \def\supervisorcopy{}
+
+\definecolor{main-accent}{RGB}{0,45,97}
+\definecolor{gray75}{gray}{0.75}
+\definecolor{block-gray}{HTML}{D81E5B}
 
 \tcbuselibrary{minted}
 
@@ -57,244 +65,53 @@
   \end{tikzpicture}
 }
 
-\makeatletter
-\newcommand\tcb@cnt@pythonfileautorefname{Code Sample}
-\makeatother
-
-\definecolor{main-accent}{RGB}{0,45,97}
-
-% \let\ovec\vec
-% \renewcommand{\vec}[1]{{\bm{{\textnormal{\bfseries#1}}}}}
-% \newcommand{\vectoruniti}{{\bm{\hat{\textnormal{\bfseries\i}}}}}
-% \newcommand{\vectorunitj}{{\bm{\hat{\textnormal{\bfseries\j}}}}}
-% \DeclareRobustCommand{\vu}[1]{{%s
-%   \ifcsname vectorunit#1\endcsname
-%      \csname vectorunit#1\endcsname
-%    \else
-%     \bm{\hat{\mathbf{#1}}}%
-%    \fi
-% }}
-
-\DeclareRobustCommand{\VAN}[3]{#2}
-\let\VANthebibliography\thebibliography
-\def\thebibliography{\DeclareRobustCommand{\VAN}[3]{##3}\VANthebibliography}
-
-\DeclareRobustCommand{\DE}[3]{#2}
-\let\DEthebibliography\thebibliography
-\def\thebibliography{\DeclareRobustCommand{\DE}[3]{##3}\DEthebibliography}
-
-\DeclareRobustCommand{\UD}[3]{#2}
-\let\UDthebibliography\thebibliography
-\def\thebibliography{\DeclareRobustCommand{\UD}[3]{##3}\UDthebibliography}
-
-\DeclareSIUnit \electronvolt {eV}
-\DeclareSIUnit \msun {\ensuremath{M_\odot}}
-\DeclareSIUnit \lsun {\ensuremath{L_\odot}}
-\DeclareSIUnit \rsun {\ensuremath{R_\odot}}
-\DeclareSIUnit \zsun {\ensuremath{Z_\odot}}
-\DeclareSIUnit \pc {pc}
-\DeclareSIUnit \AU {AU}
-\DeclareSIUnit \year {yr}
-\DeclareSIUnit \erg {erg}
-\DeclareSIUnit \mweg {MWEG}
-\DeclareSIUnit \mag {mag}
-\DeclareSIUnit \dex {dex}
-\DeclareSIUnit \month {month}
-
-\DeclareSIPrefix\ronna{R}{27}
-\DeclareSIPower\quartic\tothefourth{4}
-
 \title{The Next Generation: Refining the Standard Population Synthesis Model to Better Predict Stellar Population Properties}
-% \title{TITLELESS: The next generatIon: refining The standard popuLation synthEsis modeL to better prEdict Stellar population propertieS}
 \author{Sean Richards}
 \date{August 2024}
-
-\newtoggle{isdraft}
-
-\togglefalse{isdraft} % false = version for jan, true = version w acknowledgements
 
 % \bibliographystyle{apalike}
 \setcitestyle{authoryear}
 
-\newcommand{\mlc}[1]{\begin{tabular}{@{}c@{}}#1\end{tabular}}
-
-\newcommand{\noopsort}[1]{}
-
 \setcounter{secnumdepth}{2}
 \setcounter{tocdepth}{3}
-\usepackage[titles]{tocloft}
-\makeatletter
-\renewcommand*\l@subsubsection{\@dottedtocline{3}{9.5em}{3.0em}}
-
-\newcolumntype{"}{@{\hskip\tabcolsep\vrule width 1pt\hskip\tabcolsep}}
-\makeatother
 
 \input{commands.tex}
-
-\makeatletter
-\newcommand\flex[1]{\@firstwordupper#1 \@nil}
-\newcommand\@firstwordupper{}
-\def\@firstwordupper#1. #2\@nil{{\scshape{#1}. #2}\unskip}
-
-\newcommand{\openingquote}[2]{\gdef\@openquote{#1}\gdef\@openauthor{#2}}
-\newcommand{\openingquotealign}{center}
-% \newcommand{\placeopeningquote}{%
-% \newpage
-% \begingroup
-%     \vspace*{\fill}
-%     \begin{\openingquotealign}
-%         \pgfornament[color=black]{89}%
-%         \fontfamily{Crimson-TLF}\selectfont
-%         \LARGE
-%         {\@openquote}
-%         \flushleft {\normalsize-- \@openauthor}
-%         \pgfornament[color=black,scale=0.25]{89}%
-%     \end{\openingquotealign}
-%     \vspace*{\fill}
-% \endgroup}
-
-\newcommand{\placeopeningquote}{%
-\newpage
-\begingroup
-    \vspace*{\fill}
-    \begin{\openingquotealign}
-        \begin{tikzpicture}[every node/.style={inner sep=0pt}]
-            \node[text width=\textwidth/1.3,align=center](Text){%
-                    \fontfamily{Crimson-TLF}\selectfont
-                    \vspace{0.2in}
-                    \LARGE
-                    {\\\@openquote \\}
-                    \vspace{0.1in}
-                    \pgfornament[width=0.3\textwidth]{89} \\
-                    \vspace{0.2in}
-                    {\large\itshape\@openauthor}
-                    \vspace{0.3in}
-                    } ;
-            \node[shift={(-1cm,1cm)},anchor=north west](CNW)
-            at (Text.north west) {\pgfornament[width=1.75cm]{61}};
-            \node[shift={(1cm,1cm)},anchor=north east](CNE)
-            at (Text.north east) {\pgfornament[width=1.75cm,symmetry=v]{61}};
-            \node[shift={(-1cm,-1cm)},anchor=south west](CSW)
-            at (Text.south west) {\pgfornament[width=1.75cm,symmetry=h]{61}};
-            \node[shift={(1cm,-1cm)},anchor=south east](CSE)
-            at (Text.south east) {\pgfornament[width=1.75cm,symmetry=c]{61}};
-            \pgfornamenthline{CNW}{CNE}{north}{84}
-            \pgfornamenthline{CSW}{CSE}{south}{84}
-            \pgfornamentvline{CNW}{CSW}{west}{84}
-            \pgfornamentvline{CNE}{CSE}{east}{84}
-        \end{tikzpicture}
-    \end{\openingquotealign}
-    \vspace*{\fill}
-\endgroup}
-
-\newcommand{\closingquote}[2]{\gdef\@closequote{#1}\gdef\@closeauthor{#2}}
-\newcommand{\closingquotealign}{center}
-\newcommand{\placeclosingquote}{%
-\newpage
-\fancyhead[LE,LO]{}
-\fancyhead[RE,RO]{}
-\renewcommand{\headrulewidth}{0pt}
-\begingroup
-    \vspace*{\fill}
-    \begin{\closingquotealign}
-        \begin{tikzpicture}[every node/.style={inner sep=0pt}]
-            \node[text width=\textwidth/1.3,align=center](Text){%
-                    \fontfamily{Crimson-TLF}\selectfont
-                    \vspace{0.1in}
-                    \LARGE
-                    {\\\@closequote \\}
-                    \vspace{0.1in}
-                    \pgfornament[width=0.3\textwidth]{89} \\
-                    \vspace{0.1in}
-                    {\large\itshape\@closeauthor}
-                    \vspace{0.3in}
-                    } ;
-            \node[shift={(-1cm,1cm)},anchor=north west](CNW)
-            at (Text.north west) {\pgfornament[width=1.75cm]{61}};
-            \node[shift={(1cm,1cm)},anchor=north east](CNE)
-            at (Text.north east) {\pgfornament[width=1.75cm,symmetry=v]{61}};
-            \node[shift={(-1cm,-1cm)},anchor=south west](CSW)
-            at (Text.south west) {\pgfornament[width=1.75cm,symmetry=h]{61}};
-            \node[shift={(1cm,-1cm)},anchor=south east](CSE)
-            at (Text.south east) {\pgfornament[width=1.75cm,symmetry=c]{61}};
-            \pgfornamenthline{CNW}{CNE}{north}{84}
-            \pgfornamenthline{CSW}{CSE}{south}{84}
-            \pgfornamentvline{CNW}{CSW}{west}{87}
-            \pgfornamentvline{CNE}{CSE}{east}{87}
-        \end{tikzpicture}
-	\end{\closingquotealign}
-	\vspace*{\fill}
-\endgroup}
-
-
-\newcommand{\dedication}[1]{\gdef\@dedicate{#1}}
-\newcommand{\dedicationalign}{center}
-% \newcommand{\placededication}{%
-% \newpage
-% \begingroup
-%     \vspace*{\fill}
-%     \begin{\dedicationalign}
-%         \fontfamily{Crimson-TLF}\selectfont
-%         \LARGE
-%         \@dedicate
-%     \end{\dedicationalign}
-%     \vspace*{\fill}
-% \endgroup}
-
-\newcommand{\placededication}{%
-\newpage
-\begingroup
-    \vspace*{\fill}
-    \begin{\dedicationalign}
-        \begin{tikzpicture}[every node/.style={inner sep=0pt}]
-            \node[text width=\textwidth/1.3,align=center](Text){%
-                    \fontfamily{Crimson-TLF}\selectfont
-                    \vspace{0.2in}
-                    \LARGE
-                    {\\\@dedicate \\}
-                    \phantom{ }
-                    \vspace{0.3in}
-                    } ;
-            \node[shift={(-1cm,1cm)},anchor=north west](CNW)
-            at (Text.north west) {\pgfornament[width=1.75cm]{61}};
-            \node[shift={(1cm,1cm)},anchor=north east](CNE)
-            at (Text.north east) {\pgfornament[width=1.75cm,symmetry=v]{61}};
-            \node[shift={(-1cm,-1cm)},anchor=south west](CSW)
-            at (Text.south west) {\pgfornament[width=1.75cm,symmetry=h]{61}};
-            \node[shift={(1cm,-1cm)},anchor=south east](CSE)
-            at (Text.south east) {\pgfornament[width=1.75cm,symmetry=c]{61}};
-            \pgfornamenthline{CNW}{CNE}{north}{84}
-            \pgfornamenthline{CSW}{CSE}{south}{84}
-            \pgfornamentvline{CNW}{CSW}{west}{84}
-            \pgfornamentvline{CNE}{CSE}{east}{84}
-        \end{tikzpicture}
-    \end{\dedicationalign}
-    \vspace*{\fill}
-\endgroup}
-\makeatother
-
 \input{dedications.tex}
-
 \input{glossary.tex}
 
 \renewcommand{\arraystretch}{1.6}
 
 % title format for the chapter
-\titleformat{\chapter}[display] {\vspace{-60pt}\filcenter{\large\scshape\chaptertitlename\ \thechapter}\\\vspace{5pt}\titlerule\normalfont\huge\bfseries}{\ #1}{20pt}{\vspace{-80pt}}
-\titleformat{name=\chapter,numberless}[block] {\vspace{-60pt}\normalfont\huge\filcenter\bfseries}{}{0pt}{\huge#1}[\addcontentsline{toc}{chapter}{#1}]
+\newlength\ChapWd
+\settowidth\ChapWd{\Huge\chaptertitlename}
 
-% \titleformat{\section}
-%   {\addtolength{\titlewidth}{4pc}\normalfont\Large\bfseries}
-%   {\llap{\colorbox{main-accent}{\parbox{2.5cm}{\strut\color{white}\hfill\thesection}}\hspace{20pt}}}
-%   {0em}{#1}
-%   [{\titleline*[l]{\hspace*{\dimexpr-2.5cm-20pt-2\fboxsep\relax}\color{main-accent}\titlerule[1.5pt]}}]
-% \titleformat{\subsection}
-%   {\addtolength{\titlewidth}{2pc}\normalfont\large}
-%   {\llap{\colorbox{main-accent}{\parbox{2.5cm}{\strut\color{white}\hfill\thesubsection}}\hspace{20pt}}}
-%   {0em}{#1}
-%   [{\titleline*[l]{\hspace*{\dimexpr-2.5cm-20pt-2\fboxsep\relax}\color{main-accent}\titlerule[1.5pt]}}]
+\makeatletter
+\newwrite\chaptermetadata
+\newcounter{abspagecounter}
+\immediate\openout\chaptermetadata=\jobname.chaps
+\newcommand{\writecurrentchap}[1]{%
+\protected@write\chaptermetadata{}{#1, \zref@extract{meta:chap:\theabspagecounter}{abspage}}
+}
+\makeatother
 
-\definecolor{gray75}{gray}{0.75}
+\titleformat{\chapter}[display]
+  {\normalfont\filcenter}
+  {\tikz[remember picture,overlay]
+    {
+    \node[fill=main-accent,font=\fontsize{60}{72}\selectfont\color{white},anchor=east,minimum size=\ChapWd]
+      at ([xshift=-60pt,yshift=-60pt-0.5\ChapWd]current page.north east)
+      (numb) {\thechapter};
+    \node[rotate=90,anchor=south,inner sep=0pt,font=\huge] at ([xshift=-5pt]numb.west) {\color{main-accent}\chaptertitlename};
+    }
+  }{0pt}{\stepcounter{abspagecounter}\zlabel{meta:chap:\theabspagecounter}\writecurrentchap{\chaptertitlename-\thechapter}\huge\selectfont\bfseries\color{main-accent}#1}[\vskip5pt\Large\color{main-accent}\protect{\pgfornament[width=0.3\textwidth]{89}}]
+
+\titleformat{name=\chapter,numberless}[block]
+  {\normalfont\filcenter}
+  {}{0pt}{\stepcounter{abspagecounter}\zlabel{meta:chap:\theabspagecounter}\writecurrentchap{#1}\huge\selectfont\color{main-accent}#1}[\vskip5pt\Large\color{main-accent}\protect{\pgfornament[width=0.3\textwidth]{89}}]
+
+\titlespacing*{\chapter}
+  {0pt}{75pt}{10pt}
+
 \newcommand{\hsp}{\hspace{10pt}}
 
 \titleformat{\section}[hang]{\Large\bfseries}{\thesection\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Large\bfseries#1}
@@ -303,147 +120,6 @@
 
 
 \renewcommand{\contentsname}{Table of Contents}
-
-\renewcommand{\epigraphsize}{\small}
-\setlength{\epigraphwidth}{0.65\textwidth}
-\renewcommand{\textflush}{flushright}
-\renewcommand{\sourceflush}{flushright}
-\renewcommand{\epigraphflush}{flushright}
-% A useful addition
-\newcommand{\epitextfont}{\itshape}
-\newcommand{\episourcefont}{\scshape}
-
-\makeatletter
-\newsavebox{\epi@textbox}
-\newsavebox{\epi@sourcebox}
-\newlength\epi@finalwidth
-\renewcommand{\epigraph}[2]{%
-  \vspace{\beforeepigraphskip}
-  {\epigraphsize\begin{\epigraphflush}
-  \epi@finalwidth=\z@
-  \sbox\epi@textbox{%
-     \varwidth{\epigraphwidth}
-     \begin{\textflush}\epitextfont#1\end{\textflush}
-     \endvarwidth
-  }%
-  \epi@finalwidth=\wd\epi@textbox
-  \sbox\epi@sourcebox{%
-     \varwidth{\epigraphwidth}
-     \begin{\sourceflush}\episourcefont#2\end{\sourceflush}%
-     \endvarwidth
-  }%
-  \ifdim\wd\epi@sourcebox>\epi@finalwidth
-     \epi@finalwidth=\wd\epi@sourcebox
-  \fi
-  \leavevmode\vbox{
-     \hb@xt@\epi@finalwidth{\hfil\box\epi@textbox}
-     \vskip1.75ex
-     \hrule height \epigraphrule
-     \vskip.75ex
-     \hb@xt@\epi@finalwidth{\hfil\box\epi@sourcebox}
-  }%
-  \end{\epigraphflush}
-  \vspace{\afterepigraphskip}}}
-\makeatother
-
-\makeatletter
-\newcommand{\inplaceEpigraph}[4][\fill]{%
-  \vspace{#1}
-  {\epigraphsize\begin{center}
-     \begin{center}\epitextfont#2\end{center}
-     \vspace{-5px}
-     \rule{#4\textwidth}{.4pt}
-     \vspace{-10px}
-     \begin{center}\episourcefont#3\end{center}%
-	  \end{center}
-  }%
-  \vspace{#1}
-  }
-\makeatother
-
-% \newcommand{\mediaepigraph}[3]{\epigraph{#1}{\textit{#2}, by #3}}
-\newcommand{\mediaepigraph}[4][by]{\epigraph{#2}{\textit{#3}, #1\ #4}}
-\newcommand{\showepigraph}[3]{\epigraph{#1}{\textit{#2}, ``#3''}}
-
-\makeatletter
-\newcommand{\translationEpigraph}[3]{%
-  \vspace{\beforeepigraphskip}
-  \vbox{%
-    \setlength{\epigraphwidth}{0.48\textwidth}
-    \xpatchcmd{\@epitext}{{minipage}}{{minipage}[t]}{}{}%
-    \xpatchcmd{\@epitext}{1\\}{1}{}{}%
-    \epigraphsize
-    \begin{\epigraphflush}
-    \begin{minipage}[b]{0.48\textwidth}
-      \@epitext{\epitextfont#1}
-      \@episource{\episourcefont#3\strut}%
-    \end{minipage}\hfill\vline\hfill
-    \begin{minipage}[b]{0.48\textwidth}
-      \@epitext{\begin{flushleft}\epitextfont#2\end{flushleft}}
-      \@episource{\begin{flushleft}\episourcefont#3\strut\end{flushleft}}%
-    \end{minipage}%
-    \end{\epigraphflush}%
-  }%
-  \nointerlineskip
-  \vspace*{\afterepigraphskip}%
-  \ifepigraphnoindent\@afterheading\fi
-}
-
-\newcommand{\twinEpigraphs}[4]{%
-  \vspace*{\fill}
-  \noindent
-  \begin{tcbraster}[raster columns=2,raster equal height=rows,valign=bottom,enhanced,opacityfill=0,frame hidden]
-    \begin{tcolorbox}
-    {\epigraphsize\begin{center}
-     \begin{center}\epitextfont#1\end{center}%
-     % \vspace{-5px}
-     \rule{\textwidth}{.4pt}
-     % \vspace{-20px}
-     \begin{center}\episourcefont#2\end{center}%
-    \end{center}
-    }
-    \end{tcolorbox}
-    \begin{tcolorbox}
-    {\epigraphsize\begin{center}
-     \begin{center}\epitextfont#3\end{center}%
-     % \vspace{-5px}
-     \rule{\textwidth}{.4pt}
-     % \vspace{-20px}
-     \begin{center}\episourcefont#4\end{center}%
-    \end{center}
-    }
-    \end{tcolorbox}
-  \end{tcbraster}
-  \vspace*{\fill}
-}
-
-
-
-\newcommand{\fancifulepigraph}[4]{%
-  \begin{fanciful}
-  \vspace{\beforeepigraphskip}
-  \vbox{%
-    \setlength{\epigraphwidth}{0.48\textwidth}
-    \xpatchcmd{\@epitext}{{minipage}}{{minipage}[t]}{}{}%
-    \xpatchcmd{\@epitext}{1\\}{1}{}{}%
-    \epigraphsize
-    \begin{\epigraphflush}
-    \begin{minipage}[b]{0.48\textwidth}
-      \@epitext{\epitextfont#1}
-      \@episource{\citet{#3}\strut}%
-    \end{minipage}\hfill\vline\hfill
-    \begin{minipage}[b]{0.48\textwidth}
-      \@epitext{\begin{flushleft}\epitextfont#2\end{flushleft}}
-      \@episource{\begin{flushleft}\citet{#4}\strut\end{flushleft}}%
-    \end{minipage}%
-    \end{\epigraphflush}%
-  }%
-  % \nointerlineskip
-  % \vspace*{\afterepigraphskip}%
-  % \ifepigraphnoindent\@afterheading\fi
-  \end{fanciful}
-}
-\makeatother
 
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 \renewcommand{\sectionmark}[1]{\markright{#1}}
@@ -510,18 +186,22 @@
 
 \fancypagestyle{plain}{\makefancy}
 
-\newenvironment{abstract}{\newpage\begin{center}\textbf{\Large Abstract}\\\vspace{3em}}{\end{center}\newpage}
+\newenvironment{abstract}{%
+    \newpage
+    \begin{center}
+        \chapter*{Abstract}
+    \end{center}
+}{}
+
 \newenvironment{acknowledgements}{%
     \newpage
     \begin{center}
-        \textbf{\Large Acknowledgements} \\
+        \chapter*{Acknowledgements}
     \end{center}
     \vspace{3em}
 }{}
 
 % TODO REMOVE
-\usepackage[titles]{tocloft}
-
 \newcommand{\listtodotitle}{Thesis To-do List}
 \newlistof{todos}{tod}{\listtodotitle}
 \newcommand{\todolist}[1]{%
@@ -539,8 +219,7 @@
 
 \newcommand{\NickNote}[1]{{\todolist{NJR: #1}\color{green}\textbf{[Note from Nick: #1]}}}
 
-\let\oepi\epigraph
-\renewcommand{\epigraph}[2]{\epigraphlist{#1}{#2}\oepi{#1}{#2}}
+
 
 \makeatletter
 \newwrite\myfile
@@ -551,8 +230,6 @@
 \protected@write\myfile{}{\gdef\string\@todo{Chapter \thechapter\ -- #1}}
 }
 \makeatother
-
-\definecolor{block-gray}{HTML}{D81E5B}
 
 \newtcolorbox{fanciful}[1][]{%
     colback=main-accent!20!white,
@@ -576,7 +253,7 @@
 \usepackage{hyperref}
 
 \ifx\supervisorcopy\undefined
-    \linespread{1.25}
+    \linespread{1.5}
     % \fancyhead[CE,CO]{}
     \hypersetup{colorlinks=true,
         linkcolor=black, % blue

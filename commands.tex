@@ -1,3 +1,29 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                    %%
+%%            Commands.tex            %%
+%% Commands that are useful shorthand %%
+%%                                    %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Table cells
+\newcommand{\mlc}[1]{\begin{tabular}{@{}c@{}}#1\end{tabular}}
+
+% Bibliography commands
+\newcommand{\noopsort}[1]{}
+
+\DeclareRobustCommand{\VAN}[3]{#2}
+\let\VANthebibliography\thebibliography
+\def\thebibliography{\DeclareRobustCommand{\VAN}[3]{##3}\VANthebibliography}
+
+\makeatletter
+  % Code sample environment
+  \newcommand\tcb@cnt@pythonfileautorefname{Code Sample}
+  % TOC styling
+  \renewcommand*\l@subsubsection{\@dottedtocline{3}{9.5em}{3.0em}}
+  \newcolumntype{"}{@{\hskip\tabcolsep\vrule width 1pt\hskip\tabcolsep}}
+\makeatother
+
+% Math shorthand
 \newcommand{\pqty}[1]{\left(#1\right)}
 \newcommand{\bqty}[1]{\left[#1\right]}
 \newcommand{\dv}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
@@ -29,7 +55,11 @@
 \setbox2=\hbox{\vrule height\ht0 depth -\dimen0}%
 {\box0\lower0.4pt\box2}}
 
+% unit definitions
+\input{units}
 
+% Quotes and epigraphs
+\input{commands-epigraph}
 
 % Standard journal abbreviations
 % Mostly as used by ADS, with a few additions for journals where MNRAS does not

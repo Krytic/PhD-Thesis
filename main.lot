@@ -1,20 +1,20 @@
 \babel@toc {english}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces The mass loss rate constants for interpolation around the bistability jump.}}{30}{table.caption.28}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces The mass loss rate constants for interpolation around the bistability jump.}}{27}{table.caption.29}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Search parameters for the six close-contact binaries compiled in \citet {Abdul-masih:2022}, as used in our fitting to the BPASS v2.2.1 grid.}}{48}{table.caption.42}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Matches from the \textsc {Hoki} \citep {Stevance:2020a} software.}}{50}{table.caption.49}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Search parameters for the six close-contact binaries compiled in \citet {Abdul-masih:2022}, as used in our fitting to the BPASS v2.2.1 grid.}}{44}{table.caption.43}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Matches from the \textsc {Hoki} \citep {Stevance:2020a} software.}}{46}{table.caption.50}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces The key evolutionary parameters of both stars and the binary configuration at five critical points: the initial parameters, and the beginning and ends of both epochs of \gls {rlof}. All values are rounded to 2 decimal places. The letter in parentheses represents which segment of \autoref {fig:composition_profiles_stages} (for \autoref {tab:binary_configuration_parameters_variable_accretion}) or \autoref {fig:composition_profiles_stages_standard} (for \autoref {tab:binary_configuration_parameters_standard_accretion}) the abundances are given in.\relax }}{62}{table.caption.57}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces The populations under study.}}{69}{table.caption.61}%
-\contentsline {table}{\numberline {6.2}{\ignorespaces The systems we use in our study.}}{77}{table.caption.67}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces The key evolutionary parameters of both stars and the binary configuration at five critical points: the initial parameters, and the beginning and ends of both epochs of \gls {rlof}. All values are rounded to 2 decimal places. The letter in parentheses represents which segment of \autoref {fig:composition_profiles_stages} (for \autoref {tab:binary_configuration_parameters_variable_accretion}) or \autoref {fig:composition_profiles_stages_standard} (for \autoref {tab:binary_configuration_parameters_standard_accretion}) the abundances are given in.\relax }}{57}{table.caption.58}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces The populations under study.}}{66}{table.caption.62}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces The systems we use in our study.}}{75}{table.caption.68}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {B.1}{\ignorespaces The code versions we use in this thesis. $^\ast $\textsc {\MakeLowercase {Tui}} was described in earlier papers, but \citet {Ghodla:2023} was the first to name it.\relax }}{97}{table.caption.77}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {D.1}{\ignorespaces Our general initial conditions.}}{101}{table.caption.79}%
+\contentsline {table}{\numberline {B.1}{\ignorespaces The code versions we use in this thesis. $^\ast $\textsc {\MakeLowercase {Tui}} was described in earlier papers, but \citet {Ghodla:2023} was the first to name it.\relax }}{95}{table.caption.78}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {D.1}{\ignorespaces Our general initial conditions.}}{99}{table.caption.80}%
