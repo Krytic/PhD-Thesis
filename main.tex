@@ -112,6 +112,11 @@
 \titlespacing*{\chapter}
   {0pt}{75pt}{10pt}
 
+\newcommand*\cleartoleftpage{%
+  \clearpage
+  \ifodd\value{page}\hbox{}\newpage\fi
+}
+
 \newcommand{\hsp}{\hspace{10pt}}
 
 \titleformat{\section}[hang]{\Large\bfseries}{\thesection\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Large\bfseries#1}
@@ -237,7 +242,6 @@
     grow to left by=-10mm,
     boxrule=0pt,
     boxsep=0pt,
-    breakable,
     enhanced jigsaw,
     borderline west={4pt}{0pt}{main-accent},
     title={\phantom{ }\\},
@@ -251,6 +255,9 @@
 \newcommand{\codename}[1]{\texorpdfstring{\textsc{\MakeLowercase{#1}}}{\textsc{#1}}}
 
 \usepackage{hyperref}
+
+\usepackage[noabbrev,nameinlink]{cleveref}
+\newcommand\crefrangeconjunction{\textendash}
 
 \ifx\supervisorcopy\undefined
     \linespread{1.5}
@@ -270,7 +277,10 @@
         urlcolor=black}  % cyan
 \fi
 
-\newtcbinputlisting[auto counter, number within=chapter, list inside=lol,list type={lstlisting}]{\pythonfile}[3][]{%
+\newcounter{codesample}
+\counterwithin{codesample}{chapter}
+
+\newtcbinputlisting[use counter=codesample, number within=chapter, list inside=lol,list type={lstlisting}]{\pythonfile}[3][]{%
   listing engine=minted,
   listing file={#3},
   minted language=Python,
@@ -281,7 +291,7 @@
                   baselinestretch=1},
   listing only,
   left=5mm,
-  title={Code Sample \thetcbcounter: {#2}},
+  title={Code Sample \thecodesample: {#2}},
   overlay={%
     \begin{tcbclipinterior}
         \fill[gray!25] (frame.south west) rectangle ([xshift=5mm]frame.north west);
@@ -297,6 +307,9 @@
   enhanced,% <-- put other tcolorbox options here
   #1
 }
+
+\crefname{codesample}{code sample}{code samples}
+\Crefname{codesample}{Code Sample}{Code Samples}
 
 \renewcommand{\headrulewidth}{0pt}
 
@@ -329,6 +342,8 @@
     \makelessfancy
     \bibliographystyle{mnras}
     \bibliography{thesis.bib}
+
+    \cleartoleftpage
 
     \placeclosingquote
 

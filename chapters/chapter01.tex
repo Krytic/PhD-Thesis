@@ -26,11 +26,11 @@ From the perspective of Universal building blocks, stars are also the focal poin
 
 \mediaepigraph{If the stars should appear one night in a thousand years, how would men believe and adore; and preserve for many generations the remembrance of the city of God which had been shown!}{Nature}{Ralph Waldo Emerson}% But every night come out these envoys of beauty, and light the universe with their admonishing smile.}{Nature}{Ralph Waldo Emerson}
 
-There are approximately 9000 stars visible in the night sky to the naked eye (with magnitudes brighter than 6.5), across both hemispheres \citep{Hoffleit:1964}, which are displayed in \autoref{fig:naked_night_sky}. The dark-adapted eye can see approximately as far as $\eta$ Carinae,\footnote{This is a debated topic; we use the definition that a ``star'' includes binaries and that the star is in the catalogue of \citet{Hoffleit:1964}, which rules out V762 Cas, the other commonly held ``farthest star''.} which is only approximately \SI{2300}{\pc} away.
+There are approximately 9000 stars visible in the night sky to the naked eye (with magnitudes brighter than 6.5), across both hemispheres \citep{Hoffleit:1964}, which are displayed in \cref{fig:naked_night_sky}. The dark-adapted eye can see approximately as far as $\eta$ Carinae,\footnote{This is a debated topic; we use the definition that a ``star'' includes binaries and that the star is in the catalogue of \citet{Hoffleit:1964}, which rules out V762 Cas, the other commonly held ``farthest star''.} which is only approximately \SI{2300}{\pc} away.
 
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width=\textwidth]{images/Introduction/NightSkyMap.png}
+    \includegraphics[width=\textwidth]{images/Introduction/NightSkyMap}
     \caption[The locations of the $\sim9000$ stars in the night sky visible to the naked eye.]{The locations of the $\sim9000$ stars in the night sky visible to the naked eye, as reported in \citet{Hoffleit:1964}. The colors are computed by converting the B-V color indices to temperatures using the fits in \citet{Ballesteros:2012}, and then converted to RGB via the algorithm in this StackOverflow post: \url{https://stackoverflow.com/a/45497817}. The Southern Cross (Crucis) is shown fully opaque in blue towards the bottom left of the plot as a point of reference, and $\eta$ Carinae is shown fully opaque in black in the bottom right.}
     \label{fig:naked_night_sky}
 \end{figure}
@@ -85,7 +85,7 @@ It is nigh impossible to achieve and sustain these conditions to experimentally 
 
 \subsection{Population Synthesis and Stellar Modelling}
 
-Because of these factors, one often turns to computer simulations to model the interiors of stars. The question turns from physical experimentation to mathematical ones, and the idea of a \textit{stellar model} becomes useful. A stellar model is a calculation performed such that the internal structure (the present state of physical quantities) and evolution (how these quantities change over time) are determined. Computing these parameters is nontrivial. As will be developed in \autoref{chap:theoretical_background}, the simplest model of a star is a series of four coupled differential equations describing the internal pressure, temperature, luminosity, and mass distributions. However, including ``extra'' physics greatly increases the complexity of the problem; \citet{Henyey:1964} developed methods of solving the equations of structure and evolution that turn the problem into matrix inversion, at the cost of the central ``Henyey matrix'' being thousands of elements in size.
+Because of these factors, one often turns to computer simulations to model the interiors of stars. The question turns from physical experimentation to mathematical ones, and the idea of a \textit{stellar model} becomes useful. A stellar model is a calculation performed such that the internal structure (the present state of physical quantities) and evolution (how these quantities change over time) are determined. Computing these parameters is nontrivial. As will be developed in \cref{chap:theoretical_background}, the simplest model of a star is a series of four coupled differential equations describing the internal pressure, temperature, luminosity, and mass distributions. However, including ``extra'' physics greatly increases the complexity of the problem; \citet{Henyey:1964} developed methods of solving the equations of structure and evolution that turn the problem into matrix inversion, at the cost of the central ``Henyey matrix'' being thousands of elements in size.
 
 The diversity and complexity of stellar profiles, interiors, and characteristics discussed earlier demands a careful and varied approach. One cannot abstract away much of the important physics. Although it is common to use approximations such as spherical symmetry to reduce the dimensionality of the problem, and to only evaluate the equations of stellar structure at a fixed number of locations in this one remaining dimension, chosen sufficiently intelligently, a complex computational effort must be undertaken.
 
@@ -125,9 +125,9 @@ Though it may seem that they serve the same niche and are therefore competing to
 % move to stellar modelling
 \section{This work}
 
-\mediaepigraph{Come with me, and you'll be, in a world of pure imagination.}{Pure Imagination}{Gene Wilder}
+We now describe the placement of this work within the field, and outline the key aims this thesis sets out to answer. This thesis can be summarised as an endeavour to model the interior physics of interacting binary stars over certain near-extreme phenomena. We also aim to examine the post-supernova kinematics of binary systems. Thus, the area of interest of this thesis is effectively the entire lifetime of a binary system post-birth, with the critical exceptions of the moment of supernovae, and the interior physics of compact objects.
 
-\subsection{Research aims}
+\subsection{Research themes}
 
 There are essentially three major themes guiding this research.
 
@@ -149,14 +149,16 @@ There are essentially three major themes guiding this research.
 This thesis is, broadly, a tour of stellar evolution from \gls{zams} to the eventual merger of two compact objects, with a few omissions along the way (such as the moment of supernova). The thesis is structured as follows:
 
 \begin{enumerate}
-	\item In \autoref{chap:theoretical_background}, we provide the necessary theoretical background for future chapters, critically examine the pieces of software and numerical methods employed in this work, and discuss the logistics of running this single-thread grid-based code as a multiprocessed code on a distributed cluster.
-	\item In \autoref{chap:close_contact}, we present the results of our stellar evolution codes in the interesting case when both stars almost (or in some instances, do) touch. (Theme I)
-    \item In \autoref{chap:he_mass_transfer}, we explore the regime in which mass transfer is assumed to become helium-rich, and the effects on the future evolution of these binaries. (Themes I, III)
-    \item In \autoref{chap:population_properties}, we explore the population properties of binaries which underwent helium-rich mass transfer (Themes I, III).
-	\item In \autoref{chap:natal_kicks}, we examine the kinematics of the post-supernova inspiral and the mechanics of the natal supernova kick. (Theme II)
-	\item In \autoref{chap:conclusion}, we review the thesis and conclude. (Themes I, II, III)
-	\item In \autoref{chap:appendix:code_samples}, we provide the \codename{Kaitiaki} code necessary to generate the models for certain stellar evolution plots throughout the thesis. (Themes I, III)
-	\item In \autoref{chap:appendix:code_versions}, we list the codes employed and their versions.
-	\item In \autoref{chap:ligo_contour_results}, we present period-eccentricity distributions for the \acrshort{lvk} \acrshort{o3} contour (Theme II)
-	\item In \autoref{chap:param_config}, we list the default parameter choices we make for our stellar evolution models (Themes I, III).
+	\item In \cref{chap:theoretical_background}, we provide the necessary theoretical background for future chapters, critically examine the pieces of software and numerical methods employed in this work, and discuss the logistics of running this single-thread grid-based code as a multiprocessed code on a distributed cluster.
+	\item In \cref{chap:close_contact}, we present the results of our stellar evolution codes in the interesting case when both stars almost (or in some instances, do) touch. (Theme I)
+    \item In \cref{chap:he_mass_transfer}, we explore the regime in which mass transfer is assumed to become helium-rich, and the effects on the future evolution of these binaries. (Themes I, III)
+    \item In \cref{chap:population_properties}, we explore the population properties of binaries which underwent helium-rich mass transfer (Themes I, III).
+	\item In \cref{chap:natal_kicks}, we examine the kinematics of the post-supernova inspiral and the mechanics of the natal supernova kick. (Theme II)
+	\item In \cref{chap:conclusion}, we review the thesis and conclude. (Themes I, II, III)
+	\item In \cref{chap:appendix:code_samples}, we provide the \codename{Kaitiaki} code necessary to generate the models for certain stellar evolution plots throughout the thesis. (Themes I, III)
+	\item In \cref{chap:appendix:code_versions}, we list the codes employed and their versions.
+	\item In \cref{chap:ligo_contour_results}, we present period-eccentricity distributions for the \acrshort{lvk} \acrshort{o3} contour (Theme II)
+	\item In \cref{chap:param_config}, we list the default parameter choices we make for our stellar evolution models (Themes I, III).
 \end{enumerate}
+
+We now move into the more detailed background, and outlay the theory that underpins all of our models.

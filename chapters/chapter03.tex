@@ -9,7 +9,7 @@ The evolution is also complex. Sufficiently close binaries may overflow their $\
 
 \section{Observations of contact binaries}
 
-Observations of contact binaries date back to the 1940s \citep{Kuiper:1941}, however only a handful of contact binaries are known. The binaries we study in this chapter are summarised in \autoref{tab:overcontact_binaries}, and were originally compiled in \citet{Abdul-masih:2022}. Their sample focused on measuring the period stability of contact binaries and is a subset of the known sample, of which somewhere between $\sim\num{42000}$ \citep{Petrosky:2021} and $\sim\num{86000}$ \citep{Qian:2020} binaries exist. They rejected a handful of other non O+O overcontact binaries, for reasons that include short-period von Zeipel-Kozai-Lidov oscillations, incomplete photometric / radial velocity fits, non-\gls{ms} binaries, unknown separations, and irregular light curves.
+Observations of contact binaries date back to the 1940s \citep{Kuiper:1941}, however only a handful of contact binaries are known. The binaries we study in this chapter are summarised in \cref{tab:overcontact_binaries}, and were originally compiled in \citet{Abdul-masih:2022}. Their sample focused on measuring the period stability of contact binaries and is a subset of the known sample, of which somewhere between $\sim\num{42000}$ \citep{Petrosky:2021} and $\sim\num{86000}$ \citep{Qian:2020} binaries exist. They rejected a handful of other non O+O overcontact binaries, for reasons that include short-period von Zeipel-Kozai-Lidov oscillations, incomplete photometric / radial velocity fits, non-\gls{ms} binaries, unknown separations, and irregular light curves.
 
 Ages for the six binaries have not been published, though a soft restriction can be placed on their evolutionary status; \citet{Abdul-masih:2022} compiles specifically \gls{ms} contact binaries, meaning their interactions must take place whilst the progenitor stars are on their main sequences.
 
@@ -64,9 +64,9 @@ VFTS 352 was detected in the VLT-FLAMES survey of the Tarantula Nebula \citep{Ev
 
 \subsection{Data matching with BPASS v2.2}\label{sec:BPASS_data_matching}
 
-We perform our data matching using the \codename{Hoki} code \citep{Stevance:2020a}. The search parameters are shown in \autoref{tab:overcontact_binaries}. We query the \gls{bpass} v2.2.1 dataset and record whether or not they enter the (widened) parameter values. Parameters are widened as some of the periods are tighter than the \gls{bpass} values and thus can be missed in the search.
+We perform our data matching using the \codename{Hoki} code \citep{Stevance:2020a}. The search parameters are shown in \cref{tab:overcontact_binaries}. We query the \gls{bpass} v2.2.1 dataset and record whether or not they enter the (widened) parameter values. Parameters are widened as some of the periods are tighter than the \gls{bpass} values and thus can be missed in the search.
 
-The matching values \codename{Hoki} finds are shown in \autoref{tab:hoki_matches}. The primary models are also shown on \autoref{fig:hoki_matches_HRD_primaries}.
+The matching values \codename{Hoki} finds are shown in \cref{tab:hoki_matches}. The primary models are also shown on \cref{fig:hoki_matches_HRD_primaries}.
 
 \input{chapters/tables/BPASS_v2_match_table}
 
@@ -111,7 +111,7 @@ The matching values \codename{Hoki} finds are shown in \autoref{tab:hoki_matches
         \label{fig:hoki_VFTS_352}
     \end{subfigure}
 
-    \caption[BPASS v2.2.1 primary models for the matches obtained by \codename{Hoki} for the parameters in \autoref{tab:overcontact_binaries}.]{BPASS v2.2.1 primary models for the matches obtained by \codename{Hoki} for the parameters in \autoref{tab:overcontact_binaries}. The legend key is the BPASS stellar model file name, and is broken down into its parts in \autoref{tab:hoki_matches}.}
+    \caption[BPASS v2.2.1 primary models for the matches obtained by \codename{Hoki} for the parameters in \cref{tab:overcontact_binaries}.]{BPASS v2.2.1 primary models for the matches obtained by \codename{Hoki} for the parameters in \cref{tab:overcontact_binaries}. The legend key is the BPASS stellar model file name, and is broken down into its parts in \cref{tab:hoki_matches}.}
     \label{fig:hoki_matches_HRD_primaries}
 \end{figure}
 
@@ -124,9 +124,9 @@ Having now established the \gls{zams} parameters for our binaries, we can take t
     \item We do not consider $q > 1$, as this is equivalent to a relabelling of $m_1\to m_2$ and $m_2\to m_1$; that is, binary evolution is symmetric under the exchange of mass.
 \end{enumerate}
 
-We also compute the grid at three metallicities: z020, z010, and z004, corresponding to the three metallicities in \autoref{tab:overcontact_binaries} and \autoref{tab:hoki_matches}.
+We also compute the grid at three metallicities: z020, z010, and z004, corresponding to the three metallicities in \cref{tab:overcontact_binaries} and \cref{tab:hoki_matches}.
 
-An example model run for a $Z=0.020=Z_\odot, m_1=\SI{30}{\msun}, m_2=\SI{10}{\msun}, \log~P=\SI{0.6}{\day}$ is shown in \autoref{fig:sample_model_run}. This model corresponds to a potential progenitor of LSS 3074.
+An example model run for a $Z=0.020=Z_\odot, m_1=\SI{30}{\msun}, m_2=\SI{10}{\msun}, \log~P=\SI{0.6}{\day}$ is shown in \cref{fig:sample_model_run}. This model corresponds to a potential progenitor of LSS 3074.
 
 \begin{figure}[!htbp]
     \centering
@@ -135,7 +135,7 @@ An example model run for a $Z=0.020=Z_\odot, m_1=\SI{30}{\msun}, m_2=\SI{10}{\ms
     \label{fig:sample_model_run}
 \end{figure}
 
-In \autoref{fig:parameter_coverage} we also display the coverage map in $\log~T~/~\log~L$ space of our grid at each metallicity as a density map.
+In \cref{fig:parameter_coverage} we also display the coverage map in $\log~T~/~\log~L$ space of our grid at each metallicity as a density map.
 
 \begin{figure}[!htbp]
     \centering
@@ -152,7 +152,7 @@ From our coarse grid, we are able to identify matches to the observed systems. W
     m_2 = \text{round}\left(q\times m_1\right)
 \end{equation}
 
-where the round function interpolates back onto the grid. Our matches for the systems LSS 3074, MY Cam, V382 Cygni, and VFTS 352 are shown in \autoref{fig:gridmatches}. We observe that on this coarse grid, we match V382 Cyg on two models:
+where the round function interpolates back onto the grid. Our matches for the systems LSS 3074, MY Cam, V382 Cygni, and VFTS 352 are shown in \cref{fig:gridmatches}. We observe that on this coarse grid, we match V382 Cyg on two models:
 
 \begin{enumerate}
     \item $m_1=\SI{30}{\msun}$, $m_2=\SI{15}{\msun}$, $\log P=\SI{0.6}{\day}$, from an age of \SI{63606358}{\year} to \SI{63611433}{\year} (i.e., a matching time of \SI{5075}{\year}), and
@@ -189,7 +189,7 @@ We also note an absence of matches for two of our systems: TU Mus and SMC 108086
         \label{fig:gridmatch_VFTS_352}
     \end{subfigure}
 
-    \caption[Detailed models of the close contact binaries found in \autoref{sec:BPASS_data_matching}.]{Detailed models of the close contact binaries found in \autoref{sec:BPASS_data_matching}. Not shown are SMC 108086 and TU Mus, which both only have matches outside of the coarse grid. Also not shown is a match for MY Cam, which has a primary which is more massive than the grid.}
+    \caption[Detailed models of the close contact binaries found in \cref{sec:BPASS_data_matching}.]{Detailed models of the close contact binaries found in \cref{sec:BPASS_data_matching}. Not shown are SMC 108086 and TU Mus, which both only have matches outside of the coarse grid. Also not shown is a match for MY Cam, which has a primary which is more massive than the grid.}
     \label{fig:gridmatches}
 \end{figure}
 

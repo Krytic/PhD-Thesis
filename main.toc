@@ -7,94 +7,94 @@
 \contentsline {subsubsection}{Rapid Binary Population Synthesis}{7}{subsubsection*.11}%
 \contentsline {subsubsection}{3D MHD Simulations}{7}{subsubsection*.12}%
 \contentsline {section}{\numberline {1.3}This work}{7}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Research aims}{7}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.1}Research themes}{8}{subsection.1.3.1}%
 \contentsline {subsection}{\numberline {1.3.2}Thesis outline}{8}{subsection.1.3.2}%
-\contentsline {chapter}{\numberline {2}Theoretical Background}{9}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Stellar Formation}{9}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Stellar Evolution}{10}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}The chemical composition of stars}{11}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Evolutionary Pathways}{12}{subsection.2.2.2}%
-\contentsline {subsubsection}{Low-Mass Stars: $\SI {0.08}{\msun } < M < \SI {2}{\msun }$}{12}{subsubsection*.13}%
-\contentsline {subsubsection}{Intermediate-Mass Stars: $\SI {2}{\msun } < M < \SI {8}{\msun }$}{12}{subsubsection*.14}%
-\contentsline {subsubsection}{Massive Stars: $\SI {8}{\msun } < M < \SI {80}{\msun }$}{12}{subsubsection*.16}%
-\contentsline {subsection}{\numberline {2.2.3}Relativistic corrections}{14}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Stellar Atmospheres}{17}{subsection.2.2.4}%
-\contentsline {section}{\numberline {2.3}Supernovae}{17}{section.2.3}%
+\contentsline {chapter}{\numberline {2}Theoretical Background}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Stellar Formation}{11}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Stellar Evolution}{12}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}The chemical composition of stars}{13}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Evolutionary Pathways}{14}{subsection.2.2.2}%
+\contentsline {subsubsection}{Low-Mass Stars: $\SI {0.08}{\msun } < M < \SI {2}{\msun }$}{14}{subsubsection*.13}%
+\contentsline {subsubsection}{Intermediate-Mass Stars: $\SI {2}{\msun } < M < \SI {8}{\msun }$}{14}{subsubsection*.14}%
+\contentsline {subsubsection}{Massive Stars: $\SI {8}{\msun } < M < \SI {80}{\msun }$}{14}{subsubsection*.16}%
+\contentsline {subsection}{\numberline {2.2.3}Relativistic corrections}{18}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Stellar Atmospheres}{19}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Supernovae}{20}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Two to tango: Binary Evolution}{20}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Binary star kinematics}{20}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Roche Lobes}{20}{subsection.2.4.2}%
-\contentsline {subsubsection}{The $\mathcal {L}_1$ point}{24}{subsubsection*.23}%
-\contentsline {subsubsection}{The $\mathcal {L}_2$ point}{24}{subsubsection*.26}%
-\contentsline {subsection}{\numberline {2.4.3}Mass Transfer}{26}{subsection.2.4.3}%
-\contentsline {subsubsection}{Wind mass-loss}{26}{subsubsection*.28}%
-\contentsline {subsubsection}{\acrfull {rlof}}{30}{subsubsection*.31}%
-\contentsline {subsubsection}{Accretion}{30}{subsubsection*.32}%
-\contentsline {subsubsection}{Bondi-Hoyle accretion}{30}{subsubsection*.33}%
-\contentsline {section}{\numberline {2.5}Post-Supernova}{31}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Merger Rates of compact binaries}{32}{subsection.2.5.1}%
-\contentsline {section}{\numberline {2.6}Numerical implementation}{33}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}The Cambridge \textsc {\MakeLowercase {stars}} code}{33}{subsection.2.6.1}%
-\contentsline {subsubsection}{Brief History}{33}{subsubsection*.34}%
-\contentsline {subsubsection}{Matrix Inversion}{34}{subsubsection*.35}%
-\contentsline {subsubsection}{Initial Condition Selection}{35}{subsubsection*.36}%
-\contentsline {subsubsection}{Mesh spacing}{35}{subsubsection*.37}%
-\contentsline {subsubsection}{Timestep control}{36}{subsubsection*.38}%
-\contentsline {subsubsection}{Numerical instabilities}{37}{subsubsection*.39}%
-\contentsline {subsubsection}{Critical modifications}{39}{subsubsection*.42}%
-\contentsline {subsection}{\numberline {2.6.2}The \textsc {\MakeLowercase {Tui}} code}{40}{subsection.2.6.2}%
-\contentsline {subsection}{\numberline {2.6.3}The \textsc {\MakeLowercase {Kaitiaki}} grid-watcher code}{40}{subsection.2.6.3}%
-\contentsline {section}{\numberline {2.7}Chapter Summary}{42}{section.2.7}%
-\contentsline {chapter}{\numberline {3}Detailed Models of Overcontact Binary Stars}{43}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Observations of contact binaries}{43}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Progenitor geneaology}{43}{subsection.3.1.1}%
-\contentsline {subsubsection}{LSS 3074}{44}{subsubsection*.44}%
-\contentsline {subsubsection}{MY Camelopardalis}{44}{subsubsection*.45}%
-\contentsline {subsubsection}{SMC 108086}{44}{subsubsection*.46}%
-\contentsline {subsubsection}{TU Muscae}{45}{subsubsection*.47}%
-\contentsline {subsubsection}{V382 Cygni}{45}{subsubsection*.48}%
-\contentsline {subsubsection}{VFTS 352}{45}{subsubsection*.49}%
-\contentsline {subsection}{\numberline {3.1.2}Data matching with BPASS v2.2}{45}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Forward evolution}{45}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Matches to observed close contact models}{50}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Exotic binaries arising from contact systems}{50}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Double contact systems}{50}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Reverse mass transfer}{50}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Overflow through $\mathcal {L}_2$}{50}{subsection.3.4.3}%
-\contentsline {chapter}{\numberline {4}Helium Rich Mass Transfer}{53}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Evolution overview}{53}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Pre-interaction}{53}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Pre-contact}{56}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Contact phase}{56}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Post-contact}{56}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.1.5}Post-interaction}{56}{subsection.4.1.5}%
-\contentsline {section}{\numberline {4.2}Atypical abundance profiles}{56}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Comparison between variable and non-variable accretion}{57}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Chapter Summary}{57}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Population properties of overcontact binaries and helium rich mass transfer}{61}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Helium-Rich mass transfer}{61}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Mass transfer reversal}{63}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Multiply-interacting contact binaries}{63}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Contact phase length distributions}{63}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Post-Supernova Kinematics: The Natal Kick}{65}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Overview}{65}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Parameter space}{66}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Natal Kick Prescriptions}{67}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}The \textsc {\MakeLowercase {Takahe}} orbital evolution code}{69}{subsection.6.1.3}%
-\contentsline {section}{\numberline {6.2}Merger Rates of BNS systems}{72}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Period-Eccentricity Distributions}{72}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Single-Star Kick Velocities}{75}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}Pulsar velocity dataset}{76}{subsection.6.4.1}%
-\contentsline {subsection}{\numberline {6.4.2}Comparison}{78}{subsection.6.4.2}%
-\contentsline {section}{\numberline {6.5}Production of Ultra-Stripped Supernovae}{78}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Refinement of the parameter space}{80}{section.6.6}%
-\contentsline {section}{\numberline {6.7}Discussion}{82}{section.6.7}%
-\contentsline {section}{\numberline {6.8}Chapter Summary}{86}{section.6.8}%
-\contentsline {chapter}{\numberline {7}Conclusion}{87}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Summary}{87}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Limitations}{88}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Suggested Future Work}{88}{section.7.3}%
-\contentsline {chapter}{Appendices}{89}{section*.77}%
-\contentsline {chapter}{\numberline {A}Code Samples}{91}{appendix.a.A}%
-\contentsline {chapter}{\numberline {B}Code Versions}{95}{appendix.a.B}%
-\contentsline {chapter}{\numberline {C}Period-Eccentricity distributions along the \acrshort {lvk} \acrshort {o3} contour}{97}{appendix.a.C}%
-\contentsline {chapter}{\numberline {D}Parameter Configuration}{99}{appendix.a.D}%
+\contentsline {subsection}{\numberline {2.4.1}Binary star kinematics}{23}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Roche Lobes}{24}{subsection.2.4.2}%
+\contentsline {subsubsection}{The $\mathcal {L}_1$ point}{27}{subsubsection*.23}%
+\contentsline {subsubsection}{The $\mathcal {L}_2$ point}{27}{subsubsection*.26}%
+\contentsline {subsection}{\numberline {2.4.3}Mass Transfer}{29}{subsection.2.4.3}%
+\contentsline {subsubsection}{Wind mass-loss}{29}{subsubsection*.28}%
+\contentsline {subsubsection}{\acrfull {rlof}}{31}{subsubsection*.31}%
+\contentsline {subsubsection}{Accretion}{32}{subsubsection*.32}%
+\contentsline {subsubsection}{Bondi-Hoyle accretion}{33}{subsubsection*.33}%
+\contentsline {section}{\numberline {2.5}Post-Supernova}{33}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Merger Rates of compact binaries}{34}{subsection.2.5.1}%
+\contentsline {section}{\numberline {2.6}Numerical implementation}{35}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}The Cambridge \textsc {\MakeLowercase {stars}} code}{36}{subsection.2.6.1}%
+\contentsline {subsubsection}{Brief History}{36}{subsubsection*.34}%
+\contentsline {subsubsection}{Matrix Inversion}{37}{subsubsection*.35}%
+\contentsline {subsubsection}{Initial Condition Selection}{37}{subsubsection*.36}%
+\contentsline {subsubsection}{Mesh spacing}{38}{subsubsection*.37}%
+\contentsline {subsubsection}{Timestep control}{39}{subsubsection*.38}%
+\contentsline {subsubsection}{Numerical instabilities}{39}{subsubsection*.39}%
+\contentsline {subsubsection}{Critical modifications}{40}{subsubsection*.42}%
+\contentsline {subsection}{\numberline {2.6.2}The \textsc {\MakeLowercase {Tui}} code}{42}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}The \textsc {\MakeLowercase {Kaitiaki}} grid-watcher code}{43}{subsection.2.6.3}%
+\contentsline {section}{\numberline {2.7}Chapter Summary}{44}{section.2.7}%
+\contentsline {chapter}{\numberline {3}Detailed Models of Overcontact Binary Stars}{45}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Observations of contact binaries}{45}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Progenitor geneaology}{45}{subsection.3.1.1}%
+\contentsline {subsubsection}{LSS 3074}{46}{subsubsection*.44}%
+\contentsline {subsubsection}{MY Camelopardalis}{46}{subsubsection*.45}%
+\contentsline {subsubsection}{SMC 108086}{46}{subsubsection*.46}%
+\contentsline {subsubsection}{TU Muscae}{47}{subsubsection*.47}%
+\contentsline {subsubsection}{V382 Cygni}{47}{subsubsection*.48}%
+\contentsline {subsubsection}{VFTS 352}{47}{subsubsection*.49}%
+\contentsline {subsection}{\numberline {3.1.2}Data matching with BPASS v2.2}{47}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Forward evolution}{47}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Matches to observed close contact models}{52}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Exotic binaries arising from contact systems}{52}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Double contact systems}{52}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Reverse mass transfer}{52}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Overflow through $\mathcal {L}_2$}{52}{subsection.3.4.3}%
+\contentsline {chapter}{\numberline {4}Helium Rich Mass Transfer}{55}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Evolution overview}{55}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Pre-interaction}{55}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Pre-contact}{58}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Contact phase}{58}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Post-contact}{58}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}Post-interaction}{58}{subsection.4.1.5}%
+\contentsline {section}{\numberline {4.2}Atypical abundance profiles}{58}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Comparison between variable and non-variable composition accretion}{59}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Chapter Summary}{60}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Population properties of overcontact binaries and helium rich mass transfer}{63}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Helium-Rich mass transfer}{63}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Mass transfer reversal}{65}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Multiply-interacting contact binaries}{65}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Contact phase length distributions}{65}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Post-Supernova Kinematics: The Natal Kick}{67}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Overview}{67}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Parameter space}{68}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Natal Kick Prescriptions}{69}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}The \textsc {\MakeLowercase {Takahe}} orbital evolution code}{71}{subsection.6.1.3}%
+\contentsline {section}{\numberline {6.2}Merger Rates of BNS systems}{74}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Period-Eccentricity Distributions}{74}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Single-Star Kick Velocities}{77}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Pulsar velocity dataset}{78}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Comparison}{80}{subsection.6.4.2}%
+\contentsline {section}{\numberline {6.5}Production of Ultra-Stripped Supernovae}{80}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Refinement of the parameter space}{82}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Discussion}{84}{section.6.7}%
+\contentsline {section}{\numberline {6.8}Chapter Summary}{88}{section.6.8}%
+\contentsline {chapter}{\numberline {7}Conclusion}{89}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Summary}{89}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Limitations}{90}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Suggested Future Work}{90}{section.7.3}%
+\contentsline {chapter}{Appendices}{91}{section*.77}%
+\contentsline {chapter}{\numberline {A}Code Samples}{93}{appendix.a.A}%
+\contentsline {chapter}{\numberline {B}Code Versions}{97}{appendix.a.B}%
+\contentsline {chapter}{\numberline {C}Period-Eccentricity distributions along the \acrshort {lvk} \acrshort {o3} contour}{99}{appendix.a.C}%
+\contentsline {chapter}{\numberline {D}Parameter Configuration}{101}{appendix.a.D}%
