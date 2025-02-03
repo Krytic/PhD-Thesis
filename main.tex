@@ -41,6 +41,8 @@
 \usepackage{mathtools}
 \usepackage[abspage,user,lastpage]{zref}
 \usepackage[titles]{tocloft}
+\usepackage{CJKutf8}
+
 
 \renewcommand{\LettrineFontHook}{\Zallmanfamily}
 
@@ -330,7 +332,8 @@
     % \appendix % From here onwards, chapters are numbered with letters, as is the appendix convention
 
     \begin{appendices}
-        \foreach \i in {A, B, ..., Z} {%
+	\crefalias{chapter}{appendix}
+	\foreach \i in {A, B, ..., Z} {%
             \edef\FileName{chapters/appendices/appendix\i}%     The % here are necessary to eliminate any
             \IfFileExists{\FileName}{%  spurious spaces that may get inserted
                \input{\FileName}%       at these points

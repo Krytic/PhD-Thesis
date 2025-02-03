@@ -1,17 +1,34 @@
 % !TEX root = ../main.tex
 \chapter{Helium Rich Mass Transfer}\label{chap:he_mass_transfer}
 
-\chapterEpigraph{We, all of us, are what happens when a primordial mixture of hydrogen and helium evolves for so long that it begins to ask where it came from.}{Jill Tarter}
+\chapterEpigraph{Isn't it enough to see that a garden is beautiful without having to believe that there are fairies at the bottom of it too?}{Douglas Adams}
 
 \lettrine[lines=3]{S}{ince the force between two} objects due to gravity scales like $F\sim\frac{1}{r_\text{sep}}$, another question naturally arises during the consideration of contact binaries. For sufficiently close binaries, one can imagine that mass transfer through \gls{rlof} could become reasonably strong, stripping the hydrogen envelope of a main sequence (or shortly post-main sequence) star and exposing the helium-enriched core underneath. If this stripping does not cause the star to retreat within its Roche lobe, then this core material would continue to be accreted, creating helium-enriched matter streams accreting onto its companion.
 
-As discussed in \cref{sec:binary_evolution}, the presence of a companion measurably alters the evolution of a star. Typically this manifests as allowing matter to be exchanged between the components or the gravity of one star warping the photosphere of the other. In this chapter we focus on the first instance, where mass transfer occurs between two stars. We consider a binary system with \gls{zams} masses of \SI[parse-numbers=false]{30+10}{\msun}, and an initial period of $10^{0.6}\approx$ \SI{3.98}{\day}. We specifically explore this case as a case study on the effect of helium enriched mass transfer, and in \cref{chap:population_properties} we will explore the effect that this has on a grid of close binaries.
+As discussed in \cref{sec:binary_evolution}, the presence of a companion measurably alters the evolution of a star. Typically this manifests as allowing matter to be exchanged between the components or the gravity of one star warping the photosphere of the other. In this chapter we focus on the first instance, where mass transfer occurs between two stars. In particular, we consider a binary system with \gls{zams} masses of \SI[parse-numbers=false]{30+10}{\msun}, and an initial period of $10^{0.6}\approx$ \SI{3.98}{\day}. We specifically explore this case as a case study on the effect of helium enriched mass transfer, and in \cref{chap:population_properties} we will explore the effect that this has on a grid of close binaries.
 
 The general background for this section remains as elaborated in \cref{chap:theoretical_background}, however our parameterisation requires us to delinate between two cases: that when variable composition accretion is enabled and the case where it is disabled. These correspond to setting the parameter IVARACC in \cref{chap:param_config} to 1 or 0 respectively.
 
+\begin{table}[!htbp]
+    \centering
+    \begin{tabular}{l|cc}
+        \toprule
+            Stage & Letter & Section described \\
+        \midrule
+            Model begins      & a & \cref{sec:pre_interaction_stages_a_b_} \\
+            \gls{rlof} begins & b & \cref{sec:pre_contact_stages_b_c_} \\
+            Contact begins    & c & \cref{sec:contact_phase_stages_c_d_} \\
+            Contact ends      & d & \cref{sec:post_contact_stages_d_e_} \\
+            \gls{rlof} ends   & e & \cref{sec:post_interaction_stage_e_onwards_} \\
+        \bottomrule
+    \end{tabular}
+    \caption{The five major stages of the evolution of our binary.}
+    \label{tab:binary_stages}
+\end{table}
+
 \section{Evolution overview}
 
-The major stages of the binary's evolution can be broken up into five main stages, explored in the following section. Unless otherwise indicated, at every stage we shall be discussing the non-variable composition accretion case. The full evolution for the variable (non-variable) accretion case is shown in \cref{fig:main_evolution} (\cref{fig:main_evolution_STANDARD}), with subplots showing the behaviour around the contact phase.
+The major stages of the binary's evolution can be broken up into five main stages, explored in the following section. Each stage is assigned a label, which is delineated in \cref{tab:binary_stages}. Unless otherwise indicated, at every stage we shall be discussing the non-variable composition accretion case. The full evolution for the variable (non-variable) accretion case is shown in \cref{fig:main_evolution} (\cref{fig:main_evolution_STANDARD}), with subplots showing the behaviour around the contact phase.
 
 \begin{figure}[!htbp]
     \centering
@@ -22,40 +39,44 @@ The major stages of the binary's evolution can be broken up into five main stage
 
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width=\textwidth]{images/HeliumRich/age_indexed_plot_STANDARD_BINARY.png}
+    \includegraphics[width=\textwidth]{images/HeliumRich/Figure_1_NOVARACC.pdf}
     \caption{As for \cref{fig:main_evolution}, but absent variable composition accretion.}
     \label{fig:main_evolution_STANDARD}
 \end{figure}
 
-\subsection{Pre-interaction}
+\subsection[Pre-interaction]{Pre-interaction (stages a-b)}\label{sec:pre_interaction_stages_a_b_}
 
-The pre-interaction phase of both stars is identical in both cases. They evolve as a fully detached binary for \SI{4.51}{\mega\year}, with the donor completing its main sequence evolution. Hydrogen is exhausted in the core, and a helium core develops. In both cases, as the donor begins to cross the Hertzsprung gap, it inflates to fill its Roche lobe, causing matter to begin to be exchanged via \gls{rlof} and kick-starting the pre-contact phase.
+The pre-interaction phase of both stars is identical in both cases, as the key change enabling this work only begins when \gls{rlof} occurs. In both cases, it evolves as a fully detached binary for \SI{4.51}{\mega\year}, with the donor almost completing its main sequence evolution. Hydrogen is exhausted in the core, and a helium core develops. In both cases, as the donor nears the Hertzsprung gap hook, it inflates to fill its Roche lobe, causing matter to begin to be exchanged via \gls{rlof} and kick-starting the pre-contact phase.
 
-\subsection{Pre-contact}
+\subsection[Pre-contact]{Pre-contact (stages b-c)}\label{sec:pre_contact_stages_b_c_}
 
-When the donor swells to fill its Roche lobe, it begins to efficiently transfer material to its companion. The increased drag causes the orbit to become hardened; shrinking by approximately 20 per cent. The accretor begins to accrete material, bleeding angular momentum into the system and causing the accretor to spin up. As the contact phase approaches, it approaches 15 per cent of the critical rotation rate, as shown in \cref{fig:stellar_profiles}.
+When the donor swells to fill its Roche lobe, it begins to efficiently transfer material to its companion. The increased drag causes the orbit to become hardened; shrinking by approximately 23 per cent. The accretor begins to accrete material, bleeding angular momentum into the system and causing the accretor to spin up. As the contact phase approaches, it approaches 40 per cent of the critical rotation rate, as shown in \cref{fig:stellar_profiles}. It reaches approximately 20 per cent when the contact phase begins.
 
 \begin{figure}[!htbp]
     \centering
     \begin{subfigure}[t]{0.45\columnwidth}
         \centering
-        \includegraphics[width=\columnwidth]{images/HeliumRich/stellar_profiles.png}
+        \includegraphics[width=\columnwidth]{images/HeliumRich/Figure_2_VARACC.pdf}
         \caption{Variable composition accretion} \label{fig:stellar_profiles_variable}
     \end{subfigure}
     \begin{subfigure}[t]{0.45\columnwidth}
         \centering
-        \includegraphics[width=\columnwidth]{images/HeliumRich/stellar_profiles_STANDARD.png}
+        \includegraphics[width=\columnwidth]{images/HeliumRich/Figure_2_NOVARACC.pdf}
         \caption{Non-variable composition accretion} \label{fig:stellar_profiles_standard}
     \end{subfigure}
     \caption[The evolution of the radius, rotation rate, and luminosity in the presence of variable composition accretion, shown around the contact phase.]{The evolution of the radius, rotation rate, and luminosity in the presence of variable composition accretion, shown around the contact phase.}
     \label{fig:stellar_profiles}
 \end{figure}
 
-\subsection{Contact phase}
+\subsection[Contact phase]{Contact phase (stages c-d)}\label{sec:contact_phase_stages_c_d_}
 
-\subsection{Post-contact}
+% The substantive difference between the two systems is the changed luminosity between the non-variable and variable composition accretion models. As seen in \cref{fig:stellar_profiles}, in the variable composition accretion case the accretor reaches a luminosity of approximately $L=\SI{10^{5.1}}{\lsun}$, comparsed to $L=\SI{1e5.05}{\lsun}$ in the non-variable composition accretion case.
 
-\subsection{Post-interaction}
+\subsection[Post-contact]{Post-contact (stages d-e)}\label{sec:post_contact_stages_d_e_}
+
+\subsection[Post-interaction]{Post-interaction (stage e-onwards)}\label{sec:post_interaction_stage_e_onwards_}
+
+\subsection{Future History}\label{sec:future_history}
 
 \section{Atypical abundance profiles}
 
@@ -90,6 +111,34 @@ The first and most striking conclusion that we can draw from this result is that
     \includegraphics[width=0.8\textwidth]{images/HeliumRich/comparison_plot.png}
     \caption[An HR diagram showing the evolution of our model both with and without the variable composition accretion prescription.]{An HR diagram showing the evolution of our model both with (top left) and without (top right) the variable composition accretion prescription. The bottom panel shows only the evolution of the secondary. The point of divergence between the two models is shortly into the contact phase. The two dashed lines on the bottom HR diagram represent models evolved as the final model of the binary secondary, as a single star. On the top HR diagrams, the pink and brown models are single stars evolved with ZAMS masses of 21 and 26 \unit{\msun} respectively.}
     \label{fig:hrd_comparison_var_novarr}
+\end{figure}
+
+\section{Implications}
+
+\subsection{Spectroscopic masses}
+
+Throughout the history of binary evolution theory, a consistent thread has been the consistent underprediction of the mass predicted by models (the ``evolutionary mass'') vs the mass inferred from spectroscopic studies of stars (the ``spectroscopic mass''). Summaries are found in works such as \citet{Herrero:1992, Massey:2009, Bouret:2013, Massey:2013, McEvoy:2015, Markova:2018, Ramachandran:2018, Bestenlehner:2020}. The reason has been left as either deficiencies in the physics of model atmospheres \citep{Herrero:1992} or non-included or not well-understood physics \citep{Bestenlehner:2020}.
+
+This phenomenon is not unique to one code or methodology. To name but four, it has been observed in:
+
+\begin{enumerate}
+    \item BONNSAI (work in \citealt{Bestenlehner:2020}, BONNSAI in \citealt{Schneider:2014}),
+    \item the work of \citet{Maeder:1990} \citep{Herrero:1992},
+    \item the Geneva tracks (work by \citealt{Markova:2018}, Geneva code by \citealt{Ekstrom:2012}), and
+    \item the PoWR code (work by \citealt{Ramachandran:2018}, PoWR code in \citealt{Grafener:2002, Hamann:2003, Sander:2015}).
+\end{enumerate}
+
+If luminosities are systematically incorrect, as discussed above, then there would be a corresponding systematic incorrect calculation of the mass; that is, a traditional mass-luminosity relationship may not hold. We show in \cref{fig:mass_luminosity_relationship} the relationship between the evolutionary mass and luminosity for both variable and non-variable composition accretion cases, as evolved in \autoref{sec:future_history}. We also display this for integer mass single-star models. Unsurprisingly, the non-variable accretion case evolves like a \SI{24}{\msun} model -- the initial mass of the model when this single-star evolution began was \SI{23.71}{\msun}, and the abundance profile typifies a single star; since the mass transfer was hydrogen-dominated, the profile is not inverted and thus resembles a single star.
+
+On the other hand, the variable accretion case would (if observed) initially appear to be more massive than a \SI{24}{\msun} star (despite being \SI{23.66}{\msun} initially), eventually appearing to be approximately \SI{21}{\msun} -- i.e., $\sim$\SI{3}{\msun} less massive than it actually would be.
+
+Consequently, any masses inferred from spectroscopy or luminosity measurements may be an underestimate of the true (evolutionary) mass. This would affect, for example, the inferred masses of compact objects and thus may have implications for our understanding of the progenitors of gravitational waves.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{images/HeliumRich/Figure_6.pdf}
+    \caption[The (evolutionary) mass-luminosity relationship in the presence and absence of variable composition accretion.]{The (evolutionary) mass-luminosity relationship in the presence and absence of variable composition accretion. Also shown are the curves for reference models of between $M_\text{ZAMS}=\SI{21}{\msun}$ and \SI{26}{\msun}, which were evolved as a single star.}
+    \label{fig:mass_luminosity_relationship}
 \end{figure}
 
 \section{Chapter Summary}

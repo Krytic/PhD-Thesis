@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.18)  20 JAN 2025 17:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.18)  3 FEB 2025 15:31
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1661,6 +1661,91 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 \cfttabindent=\skip131
 \cfttabnumwidth=\skip132
 )
+(/usr/local/texlive/2021/texmf-dist/tex/latex/cjk/texinput/CJKutf8.sty
+Package: CJKutf8 2015/04/18 4.8.4
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/cjk/texinput/CJK.sty
+Package: CJK 2015/04/18 4.8.4
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/cjk/texinput/mule/MULEenc.sty
+Package: MULEenc 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/cjk/texinput/CJK.enc
+File: CJK.enc 2015/04/18 4.8.4
+Now handling font encoding C00 ...
+... no UTF-8 mapping file for font encoding C00
+Now handling font encoding C05 ...
+... no UTF-8 mapping file for font encoding C05
+Now handling font encoding C09 ...
+... no UTF-8 mapping file for font encoding C09
+Now handling font encoding C10 ...
+... no UTF-8 mapping file for font encoding C10
+Now handling font encoding C20 ...
+... no UTF-8 mapping file for font encoding C20
+Now handling font encoding C19 ...
+... no UTF-8 mapping file for font encoding C19
+Now handling font encoding C40 ...
+... no UTF-8 mapping file for font encoding C40
+Now handling font encoding C42 ...
+... no UTF-8 mapping file for font encoding C42
+Now handling font encoding C43 ...
+... no UTF-8 mapping file for font encoding C43
+Now handling font encoding C50 ...
+... no UTF-8 mapping file for font encoding C50
+Now handling font encoding C52 ...
+... no UTF-8 mapping file for font encoding C52
+Now handling font encoding C49 ...
+... no UTF-8 mapping file for font encoding C49
+Now handling font encoding C60 ...
+... no UTF-8 mapping file for font encoding C60
+Now handling font encoding C61 ...
+... no UTF-8 mapping file for font encoding C61
+Now handling font encoding C63 ...
+... no UTF-8 mapping file for font encoding C63
+Now handling font encoding C64 ...
+... no UTF-8 mapping file for font encoding C64
+Now handling font encoding C65 ...
+... no UTF-8 mapping file for font encoding C65
+Now handling font encoding C70 ...
+... no UTF-8 mapping file for font encoding C70
+Now handling font encoding C31 ...
+... no UTF-8 mapping file for font encoding C31
+Now handling font encoding C32 ...
+... no UTF-8 mapping file for font encoding C32
+Now handling font encoding C33 ...
+... no UTF-8 mapping file for font encoding C33
+Now handling font encoding C34 ...
+... no UTF-8 mapping file for font encoding C34
+Now handling font encoding C35 ...
+... no UTF-8 mapping file for font encoding C35
+Now handling font encoding C36 ...
+... no UTF-8 mapping file for font encoding C36
+Now handling font encoding C37 ...
+... no UTF-8 mapping file for font encoding C37
+Now handling font encoding C80 ...
+... no UTF-8 mapping file for font encoding C80
+Now handling font encoding C81 ...
+... no UTF-8 mapping file for font encoding C81
+Now handling font encoding C01 ...
+... no UTF-8 mapping file for font encoding C01
+Now handling font encoding C11 ...
+... no UTF-8 mapping file for font encoding C11
+Now handling font encoding C21 ...
+... no UTF-8 mapping file for font encoding C21
+Now handling font encoding C41 ...
+... no UTF-8 mapping file for font encoding C41
+Now handling font encoding C62 ...
+... no UTF-8 mapping file for font encoding C62
+)
+LaTeX Info: Redefining \selectfont on input line 755.
+\CJK@indent=\box149
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+))
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
@@ -1668,8 +1753,8 @@ File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/local/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcbminted.code.tex
 Library (tcolorbox): 'tcbminted.code.tex' version '4.51'
 ) (./commands.tex (./units.tex) (./commands-epigraph.tex
-\epi@textbox=\box149
-\epi@sourcebox=\box150
+\epi@textbox=\box150
+\epi@sourcebox=\box151
 \epi@finalwidth=\skip133
 )) (./dedications.tex)
 (./glossary.tex
@@ -1815,11 +1900,11 @@ Package: longtable 2021-05-07 v4.16 Multi-page Table package (DPC)
 \LTpost=\skip140
 \LTchunksize=\count428
 \LTcapwidth=\dimen377
-\LT@head=\box151
-\LT@firsthead=\box152
-\LT@foot=\box153
-\LT@lastfoot=\box154
-\LT@gbox=\box155
+\LT@head=\box152
+\LT@firsthead=\box153
+\LT@foot=\box154
+\LT@lastfoot=\box155
+\LT@gbox=\box156
 \LT@cols=\count429
 \LT@rows=\count430
 \c@LT@tables=\count431
@@ -1848,7 +1933,7 @@ Package: supertabular 2020/02/02 v4.1g the supertabular environment
 \ST@prevht=\dimen385
 \ST@toadd=\dimen386
 \ST@dimen=\dimen387
-\ST@pbox=\box156
+\ST@pbox=\box157
 ))
 (/usr/local/texlive/2021/texmf-dist/tex/latex/glossaries/styles/glossary-tree.s
 ty
@@ -2004,7 +2089,7 @@ Package cleveref Info: no abbreviation of names on input line 7852.
 Package cleveref Info: include cross-reference names in hyperlinks on input lin
 e 7852.
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 269.
+Package hyperref Info: Option `colorlinks' set `true' on input line 271.
 \c@codesample=\count452
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -2018,31 +2103,95 @@ runsystem(rm main.aex)...executed.
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 316.
-LaTeX Font Info:    ... okay on input line 316.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 316.
-LaTeX Font Info:    ... okay on input line 316.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 316.
-LaTeX Font Info:    ... okay on input line 316.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 316.
-LaTeX Font Info:    ... okay on input line 316.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 316.
-LaTeX Font Info:    ... okay on input line 316.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 316.
-LaTeX Font Info:    ... okay on input line 316.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 316.
-LaTeX Font Info:    ... okay on input line 316.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 316.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 318.
 LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 3
-16.
+18.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 316.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 316.
-LaTeX Font Info:    ... okay on input line 316.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 316.
-LaTeX Font Info:    ... okay on input line 316.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 318.
+LaTeX Font Info:    ... okay on input line 318.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -2080,15 +2229,15 @@ LaTeX Font Info:    ... okay on input line 316.
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 316.
+(lastpage)             ! on input line 318.
 
-Package chemgreek Info: Activating mapping `default' on line 316.
+Package chemgreek Info: Activating mapping `default' on line 318.
 
 (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count453
 \scratchdimen=\dimen392
-\scratchbox=\box157
+\scratchbox=\box158
 \nofMPsegments=\count454
 \nofMParguments=\count455
 \everyMPshowfont=\toks69
@@ -2120,9 +2269,9 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 316.
+or `english'. on input line 318.
 Package translations Info: no dictionary file `translations-basic-dictionary-gr
-eek.trsl' found. on input line 316.
+eek.trsl' found. on input line 318.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
@@ -2148,7 +2297,7 @@ Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 316.
+Package hyperref Info: Link coloring ON on input line 318.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -2162,9 +2311,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count460
 )
-LaTeX Info: Redefining \ref on input line 316.
-LaTeX Info: Redefining \pageref on input line 316.
-LaTeX Info: Redefining \nameref on input line 316.
+LaTeX Info: Redefining \ref on input line 318.
+LaTeX Info: Redefining \pageref on input line 318.
+LaTeX Info: Redefining \nameref on input line 318.
  (./main.out) (./main.out)
 \@outlinefile=\write10
 \openout10 = `main.out'.
@@ -2208,7 +2357,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmss on input line 9
 (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<images/Alt_Cover_Page.jpg, id=441, 1430.34375pt x 1927.2pt>
+<images/Alt_Cover_Page.jpg, id=457, 1430.34375pt x 1927.2pt>
 File: images/Alt_Cover_Page.jpg Graphic file (type jpg)
 <use images/Alt_Cover_Page.jpg>
 Package pdftex.def Info: images/Alt_Cover_Page.jpg  used on input line 24.
@@ -2303,11 +2452,24 @@ F.
 84.pgf)
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 84.pgf) [4]
+(/usr/local/texlive/2021/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
+File: UTF8.bdg 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+LaTeX Font Info:    Trying to load font information for C70+goth on input line 
+51.
 
-LaTeX Font Warning: Font shape `T1/Crimson-TLF/m/sc' undefined
-(Font)              using `T1/Crimson-TLF/m/n' instead on input line 51.
-
-
+(/usr/local/texlive/2021/texmf-dist/tex/latex/cjk/contrib/wadalab/c70goth.fd
+File: c70goth.fd 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/cjk/contrib/wadalab/c70goth.fdx
+File: c70goth.fdx 2015/04/18 4.8.4
+)
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 89.pgf)
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
@@ -2366,11 +2528,11 @@ LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 89.pgf) (./main.toc [13
 
 pdfTeX warning: pdflatex: pop empty color page stack 0
-] [14])
+] [14] [15])
 \tf@toc=\write11
 \openout11 = `main.toc'.
 
- [15] [16]
+ [16]
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 89.pgf) (./main.lof
 Underfull \vbox (badness 1527) has occurred while \output is active []
@@ -2412,28 +2574,28 @@ pdfTeX warning: pdflatex: pop empty color page stack 0
 \tf@tod=\write14
 \openout14 = `main.tod'.
 
-<declaration_forms/Chapter04-final.pdf, id=856, 597.50786pt x 845.04686pt>
+<declaration_forms/Chapter04-final.pdf, id=902, 597.50786pt x 845.04686pt>
 File: declaration_forms/Chapter04-final.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter04-final.pdf>
 Package pdftex.def Info: declaration_forms/Chapter04-final.pdf  used on input l
-ine 78.
+ine 82.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 File: declaration_forms/Chapter04-final.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter04-final.pdf>
 Package pdftex.def Info: declaration_forms/Chapter04-final.pdf  used on input l
-ine 78.
+ine 82.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<declaration_forms/Chapter04-final.pdf, id=859, page=1, 597.50786pt x 845.04686
+<declaration_forms/Chapter04-final.pdf, id=905, page=1, 597.50786pt x 845.04686
 pt>
 File: declaration_forms/Chapter04-final.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter04-final.pdf, page 1>
 Package pdftex.def Info: declaration_forms/Chapter04-final.pdf , page1 used on 
-input line 78.
+input line 82.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 File: declaration_forms/Chapter04-final.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter04-final.pdf, page 1>
 Package pdftex.def Info: declaration_forms/Chapter04-final.pdf , page1 used on 
-input line 78.
+input line 82.
 (pdftex.def)             Requested size: 562.12244pt x 795.00179pt.
  [25
 
@@ -2442,56 +2604,56 @@ pdfTeX warning: pdflatex: pop empty color page stack 0
 File: declaration_forms/Chapter04-final.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter04-final.pdf, page 1>
 Package pdftex.def Info: declaration_forms/Chapter04-final.pdf , page1 used on 
-input line 78.
+input line 82.
 (pdftex.def)             Requested size: 562.12244pt x 795.00179pt.
 File: declaration_forms/Chapter04-final.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter04-final.pdf, page 1>
 Package pdftex.def Info: declaration_forms/Chapter04-final.pdf , page1 used on 
-input line 78.
+input line 82.
 (pdftex.def)             Requested size: 562.12244pt x 795.00179pt.
 File: declaration_forms/Chapter04-final.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter04-final.pdf, page 1>
 Package pdftex.def Info: declaration_forms/Chapter04-final.pdf , page1 used on 
-input line 78.
+input line 82.
 (pdftex.def)             Requested size: 562.12244pt x 795.00179pt.
  [26 <./declaration_forms/Chapter04-final.pdf>]
-<declaration_forms/Chapter06-final.pdf, id=940, 597.50786pt x 845.04686pt>
+<declaration_forms/Chapter06-final.pdf, id=986, 597.50786pt x 845.04686pt>
 File: declaration_forms/Chapter06-final.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter06-final.pdf>
 Package pdftex.def Info: declaration_forms/Chapter06-final.pdf  used on input l
-ine 78.
+ine 82.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 File: declaration_forms/Chapter06-final.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter06-final.pdf>
 Package pdftex.def Info: declaration_forms/Chapter06-final.pdf  used on input l
-ine 78.
+ine 82.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<declaration_forms/Chapter06-final.pdf, id=943, page=1, 597.50786pt x 845.04686
+<declaration_forms/Chapter06-final.pdf, id=989, page=1, 597.50786pt x 845.04686
 pt>
 File: declaration_forms/Chapter06-final.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter06-final.pdf, page 1>
 Package pdftex.def Info: declaration_forms/Chapter06-final.pdf , page1 used on 
-input line 78.
+input line 82.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 File: declaration_forms/Chapter06-final.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter06-final.pdf, page 1>
 Package pdftex.def Info: declaration_forms/Chapter06-final.pdf , page1 used on 
-input line 78.
+input line 82.
 (pdftex.def)             Requested size: 562.12244pt x 795.00179pt.
 File: declaration_forms/Chapter06-final.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter06-final.pdf, page 1>
 Package pdftex.def Info: declaration_forms/Chapter06-final.pdf , page1 used on 
-input line 78.
+input line 82.
 (pdftex.def)             Requested size: 562.12244pt x 795.00179pt.
 File: declaration_forms/Chapter06-final.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter06-final.pdf, page 1>
 Package pdftex.def Info: declaration_forms/Chapter06-final.pdf , page1 used on 
-input line 78.
+input line 82.
 (pdftex.def)             Requested size: 562.12244pt x 795.00179pt.
 File: declaration_forms/Chapter06-final.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter06-final.pdf, page 1>
 Package pdftex.def Info: declaration_forms/Chapter06-final.pdf , page1 used on 
-input line 78.
+input line 82.
 (pdftex.def)             Requested size: 562.12244pt x 795.00179pt.
  [27 <./declaration_forms/Chapter06-final.pdf>] [28
 
@@ -2514,7 +2676,7 @@ pdfTeX warning: pdflatex: pop empty color page stack 0
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 27.
 
-<images/Introduction/NightSkyMap.pdf, id=1085, 386.1316pt x 210.86598pt>
+<images/Introduction/NightSkyMap.pdf, id=1131, 386.1316pt x 210.86598pt>
 File: images/Introduction/NightSkyMap.pdf Graphic file (type pdf)
 <use images/Introduction/NightSkyMap.pdf>
 Package pdftex.def Info: images/Introduction/NightSkyMap.pdf  used on input lin
@@ -2536,8 +2698,8 @@ Overfull \hbox (2.22168pt too wide) in paragraph at lines 59--59
 [4] [5] [6]
 Underfull \vbox (badness 1072) has occurred while \output is active []
 
- [7])
-(./chapters/chapter02.tex [8] [9] [10
+ [7]
+[8]) (./chapters/chapter02.tex [9] [10
 
 ]
 Chapter 2.
@@ -2561,7 +2723,7 @@ LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 LaTeX Warning: cref reference format for label type `todos' undefined on input 
 line 152.
 
-<images/TheorySection/intermediate_mass.pdf, id=1421, 437.30702pt x 420.30763pt
+<images/TheorySection/intermediate_mass.pdf, id=1468, 437.30702pt x 420.30763pt
 >
 File: images/TheorySection/intermediate_mass.pdf Graphic file (type pdf)
 <use images/TheorySection/intermediate_mass.pdf>
@@ -2569,13 +2731,13 @@ Package pdftex.def Info: images/TheorySection/intermediate_mass.pdf  used on in
 put line 163.
 (pdftex.def)             Requested size: 491.94817pt x 472.85132pt.
 [14] [15 <./images/TheorySection/intermediate_mass.pdf>]
-<images/TheorySection/10_msun_jumps.pdf, id=1466, 399.1675pt x 399.6684pt>
+<images/TheorySection/10_msun_jumps.pdf, id=1512, 399.1675pt x 399.6684pt>
 File: images/TheorySection/10_msun_jumps.pdf Graphic file (type pdf)
 <use images/TheorySection/10_msun_jumps.pdf>
 Package pdftex.def Info: images/TheorySection/10_msun_jumps.pdf  used on input 
 line 174.
 (pdftex.def)             Requested size: 491.94817pt x 492.57716pt.
-<images/TheorySection/8_msun_star_annotated.pdf, id=1467, 405.77869pt x 402.446
+<images/TheorySection/8_msun_star_annotated.pdf, id=1513, 405.77869pt x 402.446
 17pt>
 File: images/TheorySection/8_msun_star_annotated.pdf Graphic file (type pdf)
 <use images/TheorySection/8_msun_star_annotated.pdf>
@@ -2620,7 +2782,7 @@ Overfull \hbox (32.5547pt too wide) in paragraph at lines 312--313
  [][] 
  []
 
-<images/TheorySection/binding_energy_per_nucleon.pdf, id=1567, 411.78506pt x 26
+<images/TheorySection/binding_energy_per_nucleon.pdf, id=1613, 411.78506pt x 26
 0.83746pt>
 File: images/TheorySection/binding_energy_per_nucleon.pdf Graphic file (type pd
 f)
@@ -2641,7 +2803,7 @@ LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/it' instead on input line 445.
 
 [23]
-<images/TheorySection/roche_potentials.pdf, id=1641, 412.09822pt x 553.88676pt>
+<images/TheorySection/roche_potentials.pdf, id=1687, 412.09822pt x 553.88676pt>
 
 File: images/TheorySection/roche_potentials.pdf Graphic file (type pdf)
 <use images/TheorySection/roche_potentials.pdf>
@@ -2653,21 +2815,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24]
 [25 <./images/TheorySection/roche_potentials.pdf>] [26]
-<images/TheorySection/RLs_Eggleton_Formula.pdf, id=1703, 412.09822pt x 179.6648
+<images/TheorySection/RLs_Eggleton_Formula.pdf, id=1749, 412.09822pt x 179.6648
 7pt>
 File: images/TheorySection/RLs_Eggleton_Formula.pdf Graphic file (type pdf)
 <use images/TheorySection/RLs_Eggleton_Formula.pdf>
 Package pdftex.def Info: images/TheorySection/RLs_Eggleton_Formula.pdf  used on
  input line 616.
 (pdftex.def)             Requested size: 491.94817pt x 214.47824pt.
-<images/TheorySection/eggleton_justification.pdf, id=1712, 405.77869pt x 175.99
+<images/TheorySection/eggleton_justification.pdf, id=1758, 405.77869pt x 175.99
 821pt>
 File: images/TheorySection/eggleton_justification.pdf Graphic file (type pdf)
 <use images/TheorySection/eggleton_justification.pdf>
 Package pdftex.def Info: images/TheorySection/eggleton_justification.pdf  used 
 on input line 623.
 (pdftex.def)             Requested size: 491.94817pt x 213.38547pt.
-<images/TheorySection/marchant_justification.pdf, id=1718, 405.77869pt x 175.99
+<images/TheorySection/marchant_justification.pdf, id=1764, 405.77869pt x 175.99
 821pt>
 File: images/TheorySection/marchant_justification.pdf Graphic file (type pdf)
 <use images/TheorySection/marchant_justification.pdf>
@@ -2677,7 +2839,7 @@ on input line 641.
  [27 <./images/TheorySection/RLs_Eggleton_Formula.pdf>] [28 <./images/TheorySec
 tion/eggleton_justification.pdf> <./images/TheorySection/marchant_justification
 .pdf>] [29] [30]
-<images/TheorySection/bistability_jump.pdf, id=1855, 422.22174pt x 227.8043pt>
+<images/TheorySection/bistability_jump.pdf, id=1901, 422.22174pt x 227.8043pt>
 File: images/TheorySection/bistability_jump.pdf Graphic file (type pdf)
 <use images/TheorySection/bistability_jump.pdf>
 Package pdftex.def Info: images/TheorySection/bistability_jump.pdf  used on inp
@@ -2696,23 +2858,27 @@ LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 [33] [34] [35]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/it' instead on input line 1003.
+(Font)              using `T1/cmr/m/it' instead on input line 1001.
+
+
+LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
+(Font)              using `T1/cmr/m/it' instead on input line 1005.
 
 [36] [37] [38] [39]
-<images/TheorySection/thermal_pulses_and_he_flash.pdf, id=2115, 444.52837pt x 4
+<images/TheorySection/thermal_pulses_and_he_flash.pdf, id=2162, 444.52837pt x 4
 00.55727pt>
 File: images/TheorySection/thermal_pulses_and_he_flash.pdf Graphic file (type p
 df)
 <use images/TheorySection/thermal_pulses_and_he_flash.pdf>
 Package pdftex.def Info: images/TheorySection/thermal_pulses_and_he_flash.pdf  
-used on input line 1125.
+used on input line 1127.
 (pdftex.def)             Requested size: 491.94817pt x 443.30974pt.
-<images/TheorySection/helium_flash_kippenhahn.png, id=2116, 507.69675pt x 211.3
+<images/TheorySection/helium_flash_kippenhahn.png, id=2163, 507.69675pt x 211.3
 8976pt>
 File: images/TheorySection/helium_flash_kippenhahn.png Graphic file (type png)
 <use images/TheorySection/helium_flash_kippenhahn.png>
 Package pdftex.def Info: images/TheorySection/helium_flash_kippenhahn.png  used
- on input line 1132.
+ on input line 1134.
 (pdftex.def)             Requested size: 491.94817pt x 204.83492pt.
  [40] [41 <./images/TheorySection/thermal_pulses_and_he_flash.pdf>] [42 <./imag
 es/TheorySection/helium_flash_kippenhahn.png>]
@@ -2731,14 +2897,6 @@ LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line
  (/usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ))
-Missing character: There is no c in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no k in font nullfont!
-
 [43]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
@@ -2747,7 +2905,13 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
-) (./chapters/chapter03.tex [44]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [44])
+(./chapters/chapter03.tex [45] [46
+
+]
 Chapter 3.
 
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
@@ -2756,116 +2920,115 @@ Package lettrine.sty Info: Targeted height = 41.0682pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 41.01501pt (A);
 (lettrine.sty)             reported on input line 6.
- [45
-
-
+ [47
 
 pdfTeX warning: pdflatex: pop empty color page stack 0
-] [46] (./chapters/tables/BPASS_v2_match_table.tex)
-<images/overcontact_binaries/LSS_3074_hoki.png, id=2367, 213.55785pt x 151.767p
+] [48]
+
+LaTeX Warning: Reference `3fig:hoki_matches_HRD_primaries' on page 1 undefined 
+on input line 69.
+
+(./chapters/tables/BPASS_v2_match_table.tex)
+<images/overcontact_binaries/LSS_3074_hoki.pdf, id=2425, 211.74048pt x 137.439p
 t>
-File: images/overcontact_binaries/LSS_3074_hoki.png Graphic file (type png)
-<use images/overcontact_binaries/LSS_3074_hoki.png>
-Package pdftex.def Info: images/overcontact_binaries/LSS_3074_hoki.png  used on
+File: images/overcontact_binaries/LSS_3074_hoki.pdf Graphic file (type pdf)
+<use images/overcontact_binaries/LSS_3074_hoki.pdf>
+Package pdftex.def Info: images/overcontact_binaries/LSS_3074_hoki.pdf  used on
  input line 77.
-(pdftex.def)             Requested size: 241.0573pt x 171.31638pt.
-<images/overcontact_binaries/MY_Cam_hoki.png, id=2368, 213.55785pt x 151.767pt>
-
-File: images/overcontact_binaries/MY_Cam_hoki.png Graphic file (type png)
-<use images/overcontact_binaries/MY_Cam_hoki.png>
-Package pdftex.def Info: images/overcontact_binaries/MY_Cam_hoki.png  used on i
-nput line 83.
-(pdftex.def)             Requested size: 241.0573pt x 171.31638pt.
-<images/overcontact_binaries/SMC_108086_hoki.png, id=2369, 224.39835pt x 151.76
-7pt>
-File: images/overcontact_binaries/SMC_108086_hoki.png Graphic file (type png)
-<use images/overcontact_binaries/SMC_108086_hoki.png>
-Package pdftex.def Info: images/overcontact_binaries/SMC_108086_hoki.png  used 
-on input line 90.
-(pdftex.def)             Requested size: 241.0573pt x 163.03749pt.
-<images/overcontact_binaries/TU_Mus_hoki.png, id=2370, 215.72595pt x 151.767pt>
-
-File: images/overcontact_binaries/TU_Mus_hoki.png Graphic file (type png)
-<use images/overcontact_binaries/TU_Mus_hoki.png>
-Package pdftex.def Info: images/overcontact_binaries/TU_Mus_hoki.png  used on i
-nput line 96.
-(pdftex.def)             Requested size: 241.0573pt x 169.59113pt.
-<images/overcontact_binaries/V382_Cyg_hoki.png, id=2371, 215.3646pt x 151.767pt
+(pdftex.def)             Requested size: 241.0573pt x 156.47235pt.
+<images/overcontact_binaries/MY_Cam_hoki.pdf, id=2426, 211.74048pt x 137.3948pt
 >
-File: images/overcontact_binaries/V382_Cyg_hoki.png Graphic file (type png)
-<use images/overcontact_binaries/V382_Cyg_hoki.png>
-Package pdftex.def Info: images/overcontact_binaries/V382_Cyg_hoki.png  used on
+File: images/overcontact_binaries/MY_Cam_hoki.pdf Graphic file (type pdf)
+<use images/overcontact_binaries/MY_Cam_hoki.pdf>
+Package pdftex.def Info: images/overcontact_binaries/MY_Cam_hoki.pdf  used on i
+nput line 83.
+(pdftex.def)             Requested size: 241.0573pt x 156.42204pt.
+<images/overcontact_binaries/SMC_108086_hoki.pdf, id=2427, 211.74048pt x 137.39
+48pt>
+File: images/overcontact_binaries/SMC_108086_hoki.pdf Graphic file (type pdf)
+<use images/overcontact_binaries/SMC_108086_hoki.pdf>
+Package pdftex.def Info: images/overcontact_binaries/SMC_108086_hoki.pdf  used 
+on input line 90.
+(pdftex.def)             Requested size: 241.0573pt x 156.42204pt.
+<images/overcontact_binaries/TU_Mus_hoki.pdf, id=2428, 215.99055pt x 137.3948pt
+>
+File: images/overcontact_binaries/TU_Mus_hoki.pdf Graphic file (type pdf)
+<use images/overcontact_binaries/TU_Mus_hoki.pdf>
+Package pdftex.def Info: images/overcontact_binaries/TU_Mus_hoki.pdf  used on i
+nput line 96.
+(pdftex.def)             Requested size: 241.0573pt x 153.34232pt.
+<images/overcontact_binaries/V382_Cyg_hoki.pdf, id=2429, 211.74048pt x 137.3948
+pt>
+File: images/overcontact_binaries/V382_Cyg_hoki.pdf Graphic file (type pdf)
+<use images/overcontact_binaries/V382_Cyg_hoki.pdf>
+Package pdftex.def Info: images/overcontact_binaries/V382_Cyg_hoki.pdf  used on
  input line 103.
-(pdftex.def)             Requested size: 241.0573pt x 169.87596pt.
-<images/overcontact_binaries/VFTS_352_hoki.png, id=2372, 216.44865pt x 151.767p
-t>
-File: images/overcontact_binaries/VFTS_352_hoki.png Graphic file (type png)
-<use images/overcontact_binaries/VFTS_352_hoki.png>
-Package pdftex.def Info: images/overcontact_binaries/VFTS_352_hoki.png  used on
+(pdftex.def)             Requested size: 241.0573pt x 156.42204pt.
+<images/overcontact_binaries/VFTS_352_hoki.pdf, id=2430, 211.74048pt x 137.3948
+pt>
+File: images/overcontact_binaries/VFTS_352_hoki.pdf Graphic file (type pdf)
+<use images/overcontact_binaries/VFTS_352_hoki.pdf>
+Package pdftex.def Info: images/overcontact_binaries/VFTS_352_hoki.pdf  used on
  input line 109.
-(pdftex.def)             Requested size: 241.0573pt x 169.0284pt.
- [47] [48] [49 <./images/overcontact_binaries/LSS_3074_hoki.png> <./images/over
-contact_binaries/MY_Cam_hoki.png> <./images/overcontact_binaries/SMC_108086_hok
-i.png> <./images/overcontact_binaries/TU_Mus_hoki.png> <./images/overcontact_bi
-naries/V382_Cyg_hoki.png> <./images/overcontact_binaries/VFTS_352_hoki.png>]
-<images/overcontact_binaries/Sample_Overcontact_Binary_LSS3074.png, id=2417, 42
+(pdftex.def)             Requested size: 241.0573pt x 156.42204pt.
+ [49] [50] [51 <./images/overcontact_binaries/LSS_3074_hoki.pdf> <./images/over
+contact_binaries/MY_Cam_hoki.pdf> <./images/overcontact_binaries/SMC_108086_hok
+i.pdf> <./images/overcontact_binaries/TU_Mus_hoki.pdf> <./images/overcontact_bi
+naries/V382_Cyg_hoki.pdf> <./images/overcontact_binaries/VFTS_352_hoki.pdf>]
+<images/overcontact_binaries/Sample_Overcontact_Binary_LSS3074.png, id=2529, 42
 9.64516pt x 420.25005pt>
 File: images/overcontact_binaries/Sample_Overcontact_Binary_LSS3074.png Graphic
  file (type png)
 <use images/overcontact_binaries/Sample_Overcontact_Binary_LSS3074.png>
 Package pdftex.def Info: images/overcontact_binaries/Sample_Overcontact_Binary_
-LSS3074.png  used on input line 133.
+LSS3074.png  used on input line 131.
 (pdftex.def)             Requested size: 491.94817pt x 481.20615pt.
-<images/overcontact_binaries/Parameter_Coverage.png, id=2419, 397.12366pt x 411
+ [52 <./images/overcontact_binaries/Sample_Overcontact_Binary_LSS3074.png>]
+<images/overcontact_binaries/Parameter_Coverage.png, id=2539, 397.12366pt x 411
 .939pt>
 File: images/overcontact_binaries/Parameter_Coverage.png Graphic file (type png
 )
 <use images/overcontact_binaries/Parameter_Coverage.png>
 Package pdftex.def Info: images/overcontact_binaries/Parameter_Coverage.png  us
-ed on input line 142.
+ed on input line 140.
 (pdftex.def)             Requested size: 491.94817pt x 510.33392pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [50 <./images/overcontact_binaries/Sample_Overcontact_Binary_LSS3074.png>] [51
- <./images/overcontact_binaries/Parameter_Coverage.png>]
-<images/overcontact_binaries/grid_matches/LSS_3074.png, id=2434, 424.9476pt x 3
+ [53 <./images/overcontact_binaries/Parameter_Coverage.png>]
+<images/overcontact_binaries/grid_matches/LSS_3074.png, id=2547, 424.9476pt x 3
 03.17265pt>
 File: images/overcontact_binaries/grid_matches/LSS_3074.png Graphic file (type 
 png)
 <use images/overcontact_binaries/grid_matches/LSS_3074.png>
 Package pdftex.def Info: images/overcontact_binaries/grid_matches/LSS_3074.png 
- used on input line 168.
+ used on input line 166.
 (pdftex.def)             Requested size: 241.0573pt x 171.98213pt.
-<images/overcontact_binaries/grid_matches/MY_Cam.png, id=2435, 420.97275pt x 30
+<images/overcontact_binaries/grid_matches/MY_Cam.png, id=2548, 428.19975pt x 30
 5.34074pt>
 File: images/overcontact_binaries/grid_matches/MY_Cam.png Graphic file (type pn
 g)
 <use images/overcontact_binaries/grid_matches/MY_Cam.png>
 Package pdftex.def Info: images/overcontact_binaries/grid_matches/MY_Cam.png  u
-sed on input line 174.
-(pdftex.def)             Requested size: 241.0573pt x 174.84274pt.
-<images/overcontact_binaries/grid_matches/V382_Cyg.png, id=2436, 429.2838pt x 3
+sed on input line 172.
+(pdftex.def)             Requested size: 241.0573pt x 171.89351pt.
+<images/overcontact_binaries/grid_matches/V382_Cyg.png, id=2549, 429.2838pt x 3
 03.17265pt>
 File: images/overcontact_binaries/grid_matches/V382_Cyg.png Graphic file (type 
 png)
 <use images/overcontact_binaries/grid_matches/V382_Cyg.png>
 Package pdftex.def Info: images/overcontact_binaries/grid_matches/V382_Cyg.png 
- used on input line 181.
+ used on input line 179.
 (pdftex.def)             Requested size: 241.0573pt x 170.23813pt.
-<images/overcontact_binaries/grid_matches/VFTS_352.png, id=2437, 420.6114pt x 3
+<images/overcontact_binaries/grid_matches/VFTS_352.png, id=2550, 420.6114pt x 3
 03.17265pt>
 File: images/overcontact_binaries/grid_matches/VFTS_352.png Graphic file (type 
 png)
 <use images/overcontact_binaries/grid_matches/VFTS_352.png>
 Package pdftex.def Info: images/overcontact_binaries/grid_matches/VFTS_352.png 
- used on input line 187.
+ used on input line 185.
 (pdftex.def)             Requested size: 241.0573pt x 173.74928pt.
-) (./chapters/chapter04.tex
-[52] [53 <./images/overcontact_binaries/grid_matches/LSS_3074.png> <./images/ov
-ercontact_binaries/grid_matches/MY_Cam.png> <./images/overcontact_binaries/grid
-_matches/V382_Cyg.png> <./images/overcontact_binaries/grid_matches/VFTS_352.png
->] [54
+) (./chapters/chapter04.tex [54 <./images/overcontact_binaries/grid_matches/LSS
+_3074.png> <./images/overcontact_binaries/grid_matches/MY_Cam.png> <./images/ov
+ercontact_binaries/grid_matches/V382_Cyg.png> <./images/overcontact_binaries/gr
+id_matches/VFTS_352.png>] [55] [56
 
 ]
 Chapter 4.
@@ -2876,41 +3039,38 @@ Package lettrine.sty Info: Targeted height = 41.0682pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 41.01501pt (S);
 (lettrine.sty)             reported on input line 6.
-<images/HeliumRich/Figure_1.pdf, id=2468, 469.22185pt x 530.35849pt>
-File: images/HeliumRich/Figure_1.pdf Graphic file (type pdf)
-<use images/HeliumRich/Figure_1.pdf>
-Package pdftex.def Info: images/HeliumRich/Figure_1.pdf  used on input line 18.
 
-(pdftex.def)             Requested size: 491.94817pt x 556.04312pt.
-<images/HeliumRich/age_indexed_plot_STANDARD_BINARY.png, id=2473, 469.0323pt x 
-530.10045pt>
-File: images/HeliumRich/age_indexed_plot_STANDARD_BINARY.png Graphic file (type
- png)
-<use images/HeliumRich/age_indexed_plot_STANDARD_BINARY.png>
-Package pdftex.def Info: images/HeliumRich/age_indexed_plot_STANDARD_BINARY.png
-  used on input line 25.
-(pdftex.def)             Requested size: 491.94817pt x 556.03142pt.
- [55
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [57
 
 pdfTeX warning: pdflatex: pop empty color page stack 0
-] [56 <./images/HeliumRich/Figure_1.pdf>] [57 <./images/HeliumRich/age_indexed_
-plot_STANDARD_BINARY.png>]
-<images/HeliumRich/stellar_profiles.png, id=2525, 239.4546pt x 259.6902pt>
-File: images/HeliumRich/stellar_profiles.png Graphic file (type png)
-<use images/HeliumRich/stellar_profiles.png>
-Package pdftex.def Info: images/HeliumRich/stellar_profiles.png  used on input 
-line 42.
-(pdftex.def)             Requested size: 221.37517pt x 240.08286pt.
-<images/HeliumRich/stellar_profiles_STANDARD.png, id=2526, 239.4546pt x 259.690
-2pt>
-File: images/HeliumRich/stellar_profiles_STANDARD.png Graphic file (type png)
-<use images/HeliumRich/stellar_profiles_STANDARD.png>
-Package pdftex.def Info: images/HeliumRich/stellar_profiles_STANDARD.png  used 
-on input line 47.
-(pdftex.def)             Requested size: 221.37517pt x 240.08286pt.
- [58 <./images/HeliumRich/stellar_profiles.png> <./images/HeliumRich/stellar_pr
-ofiles_STANDARD.png>]
-(./chapters/tables/binary_configuration_parameters.tex
+]
+<images/HeliumRich/Figure_1.pdf, id=2593, 469.22185pt x 530.35849pt>
+File: images/HeliumRich/Figure_1.pdf Graphic file (type pdf)
+<use images/HeliumRich/Figure_1.pdf>
+Package pdftex.def Info: images/HeliumRich/Figure_1.pdf  used on input line 35.
+
+(pdftex.def)             Requested size: 491.94817pt x 556.04312pt.
+<images/HeliumRich/Figure_1_NOVARACC.pdf, id=2598, 469.22185pt x 530.35849pt>
+File: images/HeliumRich/Figure_1_NOVARACC.pdf Graphic file (type pdf)
+<use images/HeliumRich/Figure_1_NOVARACC.pdf>
+Package pdftex.def Info: images/HeliumRich/Figure_1_NOVARACC.pdf  used on input
+ line 42.
+(pdftex.def)             Requested size: 491.94817pt x 556.04312pt.
+<images/HeliumRich/Figure_2_VARACC.pdf, id=2602, 239.62408pt x 259.76584pt>
+File: images/HeliumRich/Figure_2_VARACC.pdf Graphic file (type pdf)
+<use images/HeliumRich/Figure_2_VARACC.pdf>
+Package pdftex.def Info: images/HeliumRich/Figure_2_VARACC.pdf  used on input l
+ine 59.
+(pdftex.def)             Requested size: 221.37517pt x 239.99425pt.
+<images/HeliumRich/Figure_2_NOVARACC.pdf, id=2603, 239.62408pt x 259.76584pt>
+File: images/HeliumRich/Figure_2_NOVARACC.pdf Graphic file (type pdf)
+<use images/HeliumRich/Figure_2_NOVARACC.pdf>
+Package pdftex.def Info: images/HeliumRich/Figure_2_NOVARACC.pdf  used on input
+ line 64.
+(pdftex.def)             Requested size: 221.37517pt x 239.99425pt.
+ (./chapters/tables/binary_configuration_parameters.tex
 Overfull \hbox (52.87926pt too wide) in paragraph at lines 5--27
  [][] 
  []
@@ -2921,35 +3081,42 @@ Overfull \hbox (39.36424pt too wide) in paragraph at lines 3--60
  []
 
 )
-<images/HeliumRich/segmented_composition_profiles.png, id=2543, 370.7451pt x 42
+<images/HeliumRich/segmented_composition_profiles.png, id=2613, 370.7451pt x 42
 2.41815pt>
 File: images/HeliumRich/segmented_composition_profiles.png Graphic file (type p
 ng)
 <use images/HeliumRich/segmented_composition_profiles.png>
 Package pdftex.def Info: images/HeliumRich/segmented_composition_profiles.png  
-used on input line 70.
+used on input line 91.
 (pdftex.def)             Requested size: 221.37517pt x 252.23462pt.
-<images/HeliumRich/segmented_composition_profiles_STANDARD_BINARY.png, id=2544,
+<images/HeliumRich/segmented_composition_profiles_STANDARD_BINARY.png, id=2614,
  370.7451pt x 422.41815pt>
 File: images/HeliumRich/segmented_composition_profiles_STANDARD_BINARY.png Grap
 hic file (type png)
 <use images/HeliumRich/segmented_composition_profiles_STANDARD_BINARY.png>
 Package pdftex.def Info: images/HeliumRich/segmented_composition_profiles_STAND
-ARD_BINARY.png  used on input line 75.
+ARD_BINARY.png  used on input line 96.
 (pdftex.def)             Requested size: 221.37517pt x 252.23462pt.
-<images/HeliumRich/comparison_plot.png, id=2548, 554.3109pt x 741.12885pt>
+ [58] [59 <./images/HeliumRich/Figure_1.pdf>] [60 <./images/HeliumRich/Figure_1
+_NOVARACC.pdf>] [61 <./images/HeliumRich/Figure_2_VARACC.pdf> <./images/HeliumR
+ich/Figure_2_NOVARACC.pdf> <./images/HeliumRich/segmented_composition_profiles.
+png> <./images/HeliumRich/segmented_composition_profiles_STANDARD_BINARY.png>] 
+[62]
+<images/HeliumRich/comparison_plot.png, id=2732, 554.3109pt x 741.12885pt>
 File: images/HeliumRich/comparison_plot.png Graphic file (type png)
 <use images/HeliumRich/comparison_plot.png>
 Package pdftex.def Info: images/HeliumRich/comparison_plot.png  used on input l
-ine 90.
+ine 111.
 (pdftex.def)             Requested size: 393.56003pt x 526.21646pt.
-) (./chapters/chapter05.tex
-Underfull \vbox (badness 4505) has occurred while \output is active []
-
- [59]
-[60 <./images/HeliumRich/segmented_composition_profiles.png> <./images/HeliumRi
-ch/segmented_composition_profiles_STANDARD_BINARY.png>] [61 <./images/HeliumRic
-h/comparison_plot.png>] [62
+ [63] [64 <./images/HeliumRich/comparison_plot.png>]
+<images/HeliumRich/Figure_6.pdf, id=2808, 404.30641pt x 221.60303pt>
+File: images/HeliumRich/Figure_6.pdf Graphic file (type pdf)
+<use images/HeliumRich/Figure_6.pdf>
+Package pdftex.def Info: images/HeliumRich/Figure_6.pdf  used on input line 139
+.
+(pdftex.def)             Requested size: 491.94817pt x 269.65533pt.
+)
+(./chapters/chapter05.tex [65 <./images/HeliumRich/Figure_6.pdf>] [66
 
 ]
 Chapter 5.
@@ -2959,21 +3126,21 @@ Chapter 5.
 Package lettrine.sty Info: Targeted height = 41.0682pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 41.01501pt (H);
-(lettrine.sty)             reported on input line 18.
-<images/PopulationProperties/He_Abundance.png, id=2581, 391.34206pt x 419.52734
+(lettrine.sty)             reported on input line 20.
+<images/PopulationProperties/He_Abundance.png, id=2844, 391.34206pt x 419.52734
 pt>
 File: images/PopulationProperties/He_Abundance.png Graphic file (type png)
 <use images/PopulationProperties/He_Abundance.png>
 Package pdftex.def Info: images/PopulationProperties/He_Abundance.png  used on 
-input line 31.
+input line 33.
 (pdftex.def)             Requested size: 491.94817pt x 527.41656pt.
 ) (./chapters/chapter06.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63
+ [67
 
 pdfTeX warning: pdflatex: pop empty color page stack 0
-] [64 <./images/PopulationProperties/He_Abundance.png>] [65] [66
+] [68 <./images/PopulationProperties/He_Abundance.png>] [69] [70
 
 ]
 Chapter 6.
@@ -2984,17 +3151,17 @@ Package lettrine.sty Info: Targeted height = 41.0682pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 41.06837pt (T);
 (lettrine.sty)             reported on input line 6.
- [67
+ [71
 
 pdfTeX warning: pdflatex: pop empty color page stack 0
-] [68]
-<images/NatalKicks/Grid_Regions.png, id=2672, 629.11035pt x 602.0091pt>
+] [72]
+<images/NatalKicks/Grid_Regions.png, id=2935, 629.11035pt x 602.0091pt>
 File: images/NatalKicks/Grid_Regions.png Graphic file (type png)
 <use images/NatalKicks/Grid_Regions.png>
 Package pdftex.def Info: images/NatalKicks/Grid_Regions.png  used on input line
  53.
 (pdftex.def)             Requested size: 491.94817pt x 470.75937pt.
- [69] [70 <./images/NatalKicks/Grid_Regions.png>]
+ [73] [74 <./images/NatalKicks/Grid_Regions.png>]
 \openout5 = `main.pyg'.
 
 
@@ -3023,14 +3190,14 @@ Package pdftex.def Info: images/NatalKicks/Grid_Regions.png  used on input line
 Overfull \vbox (1.57216pt too high) has occurred while \output is active []
 
 
-[71]
-<images/NatalKicks/varying_de.png, id=2788, 527.20966pt x 319.4334pt>
+[75]
+<images/NatalKicks/varying_de.png, id=3051, 527.20966pt x 319.4334pt>
 File: images/NatalKicks/varying_de.png Graphic file (type png)
 <use images/NatalKicks/varying_de.png>
 Package pdftex.def Info: images/NatalKicks/varying_de.png  used on input line 1
 10.
 (pdftex.def)             Requested size: 491.94817pt x 298.07892pt.
-<images/NatalKicks/runtime.png, id=2791, 545.99985pt x 375.0813pt>
+<images/NatalKicks/runtime.png, id=3054, 545.99985pt x 375.0813pt>
 File: images/NatalKicks/runtime.png Graphic file (type png)
 <use images/NatalKicks/runtime.png>
 Package pdftex.def Info: images/NatalKicks/runtime.png  used on input line 117.
@@ -3039,9 +3206,9 @@ Package pdftex.def Info: images/NatalKicks/runtime.png  used on input line 117.
 
 Underfull \vbox (badness 4505) has occurred while \output is active []
 
- [72 <./images/NatalKicks/varying_de.png>] [73 <./images/NatalKicks/runtime.png
+ [76 <./images/NatalKicks/varying_de.png>] [77 <./images/NatalKicks/runtime.png
 >]
-<images/NatalKicks/EventRate_Distribution_Both.png, id=2823, 493.00185pt x 304.
+<images/NatalKicks/EventRate_Distribution_Both.png, id=3086, 493.00185pt x 304.
 2567pt>
 File: images/NatalKicks/EventRate_Distribution_Both.png Graphic file (type png)
 
@@ -3049,38 +3216,38 @@ File: images/NatalKicks/EventRate_Distribution_Both.png Graphic file (type png)
 Package pdftex.def Info: images/NatalKicks/EventRate_Distribution_Both.png  use
 d on input line 131.
 (pdftex.def)             Requested size: 491.94817pt x 303.60599pt.
-<images/NatalKicks/PE_dists_six_panel.png, id=2848, 392.4261pt x 278.60085pt>
+<images/NatalKicks/PE_dists_six_panel.png, id=3111, 392.4261pt x 278.60085pt>
 File: images/NatalKicks/PE_dists_six_panel.png Graphic file (type png)
 <use images/NatalKicks/PE_dists_six_panel.png>
 Package pdftex.def Info: images/NatalKicks/PE_dists_six_panel.png  used on inpu
 t line 142.
 (pdftex.def)             Requested size: 491.94817pt x 349.27043pt.
- [74]
-[75 <./images/NatalKicks/EventRate_Distribution_Both.png>] [76 <./images/NatalK
+ [78]
+[79 <./images/NatalKicks/EventRate_Distribution_Both.png>] [80 <./images/NatalK
 icks/PE_dists_six_panel.png>]
-<images/NatalKicks/LogBayesFactors_Both.png, id=2924, 442.2924pt x 256.91985pt>
+<images/NatalKicks/LogBayesFactors_Both.png, id=3186, 442.2924pt x 256.91985pt>
 
 File: images/NatalKicks/LogBayesFactors_Both.png Graphic file (type png)
 <use images/NatalKicks/LogBayesFactors_Both.png>
 Package pdftex.def Info: images/NatalKicks/LogBayesFactors_Both.png  used on in
 put line 186.
 (pdftex.def)             Requested size: 491.94817pt x 285.76851pt.
- [77]
-<images/NatalKicks/bray_vs_hobbs.png, id=2973, 409.7709pt x 261.6174pt>
+ [81]
+<images/NatalKicks/bray_vs_hobbs.png, id=3236, 409.7709pt x 261.6174pt>
 File: images/NatalKicks/bray_vs_hobbs.png Graphic file (type png)
 <use images/NatalKicks/bray_vs_hobbs.png>
 Package pdftex.def Info: images/NatalKicks/bray_vs_hobbs.png  used on input lin
 e 209.
 (pdftex.def)             Requested size: 491.94817pt x 314.09497pt.
-<images/NatalKicks/ks_test.png, id=3002, 773.0481pt x 441.20834pt>
+<images/NatalKicks/ks_test.png, id=3265, 773.0481pt x 441.20834pt>
 File: images/NatalKicks/ks_test.png Graphic file (type png)
 <use images/NatalKicks/ks_test.png>
 Package pdftex.def Info: images/NatalKicks/ks_test.png  used on input line 218.
 
 (pdftex.def)             Requested size: 491.94817pt x 280.77681pt.
- [78 <./images/NatalKicks/LogBayesFactors_Both.png>] [79 <./images/NatalKicks/b
+ [82 <./images/NatalKicks/LogBayesFactors_Both.png>] [83 <./images/NatalKicks/b
 ray_vs_hobbs.png>]
-<images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png, id=3023, 480.71594pt
+<images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png, id=3286, 480.71594pt
  x 334.1283pt>
 File: images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png Graphic file (ty
 pe png)
@@ -3088,10 +3255,10 @@ pe png)
 Package pdftex.def Info: images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.p
 ng  used on input line 229.
 (pdftex.def)             Requested size: 491.94817pt x 341.95348pt.
- [80 <./images/NatalKicks/ks_test.png>] [81 <./images/NatalKicks/individual_pdf
+ [84 <./images/NatalKicks/ks_test.png>] [85 <./images/NatalKicks/individual_pdf
 s_with_cdf_and_hobbs.png>]
-[82]
-<images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png, id=3095
+[86]
+<images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png, id=3357
 , 457.2282pt x 319.9152pt>
 File: images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png Gra
 phic file (type png)
@@ -3099,30 +3266,30 @@ phic file (type png)
 Package pdftex.def Info: images/NatalKicks/All_Three_Constraints_with_USSNe_and
 _modeltype2.png  used on input line 267.
 (pdftex.def)             Requested size: 491.94817pt x 344.20967pt.
-<images/NatalKicks/Best_Model_Params.png, id=3100, 847.968pt x 377.7312pt>
+<images/NatalKicks/Best_Model_Params.png, id=3362, 847.968pt x 377.7312pt>
 File: images/NatalKicks/Best_Model_Params.png Graphic file (type png)
 <use images/NatalKicks/Best_Model_Params.png>
 Package pdftex.def Info: images/NatalKicks/Best_Model_Params.png  used on input
  line 276.
 (pdftex.def)             Requested size: 491.94817pt x 219.14764pt.
- [83 <./images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png>]
-<images/NatalKicks/grid_shifting_peaks.png, id=3119, 497.33804pt x 299.31825pt>
+ [87 <./images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png>]
+<images/NatalKicks/grid_shifting_peaks.png, id=3382, 497.33804pt x 299.31825pt>
 
 File: images/NatalKicks/grid_shifting_peaks.png Graphic file (type png)
 <use images/NatalKicks/grid_shifting_peaks.png>
 Package pdftex.def Info: images/NatalKicks/grid_shifting_peaks.png  used on inp
 ut line 287.
 (pdftex.def)             Requested size: 491.94817pt x 296.08849pt.
-<images/NatalKicks/event_rate_history_local.png, id=3122, 423.5022pt x 402.1825
+<images/NatalKicks/event_rate_history_local.png, id=3385, 423.5022pt x 402.1825
 6pt>
 File: images/NatalKicks/event_rate_history_local.png Graphic file (type png)
 <use images/NatalKicks/event_rate_history_local.png>
 Package pdftex.def Info: images/NatalKicks/event_rate_history_local.png  used o
 n input line 294.
 (pdftex.def)             Requested size: 491.94817pt x 467.18259pt.
- [84 <./images/NatalKicks/Best_Model_Params.png>] [85 <./images/NatalKicks/grid
-_shifting_peaks.png>] [86 <./images/NatalKicks/event_rate_history_local.png>] [
-87]) (./chapters/chapter19.tex [88]
+ [88 <./images/NatalKicks/Best_Model_Params.png>] [89 <./images/NatalKicks/grid
+_shifting_peaks.png>] [90 <./images/NatalKicks/event_rate_history_local.png>] [
+91]) (./chapters/chapter19.tex [92]
 Chapter 7.
 
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
@@ -3130,21 +3297,21 @@ Chapter 7.
 Package lettrine.sty Info: Targeted height = 41.0682pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 41.06837pt (T);
-(lettrine.sty)             reported on input line 6.
+(lettrine.sty)             reported on input line 7.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/it' instead on input line 25.
+(Font)              using `T1/cmr/m/it' instead on input line 28.
 
-[89
+[93
 
 
 
 pdfTeX warning: pdflatex: pop empty color page stack 0
-]) [90] [91
+]) [94] [95
 
 
-] [92] (./chapters/appendices/appendixA.tex
+] [96] (./chapters/appendices/appendixA.tex
 Appendix A.
 
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
@@ -3163,7 +3330,7 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
- [93
+ [97
 
 
 
@@ -3176,7 +3343,7 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
- [94]
+ [98]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -3198,7 +3365,7 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
- [95]
+ [99]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -3206,16 +3373,16 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
-) (./chapters/appendices/appendixB.tex [96]
+) (./chapters/appendices/appendixB.tex [100]
 Appendix B.
 
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-89.pgf)) (./chapters/appendices/appendixC.tex [97
+89.pgf)) (./chapters/appendices/appendixC.tex [101
 
 
 
 pdfTeX warning: pdflatex: pop empty color page stack 0
-] [98
+] [102
 
 ]
 Appendix C.
@@ -3230,7 +3397,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 89.pgf)
-<images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png, id=3316, 427.5975p
+<images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png, id=3579, 427.5975p
 t x 606.8271pt>
 File: images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png Graphic file (
 type png)
@@ -3238,10 +3405,10 @@ type png)
 Package pdftex.def Info: images/NatalKicks/PeriodEccentricityDiagrams-O3Contour
 .png  used on input line 8.
 (pdftex.def)             Requested size: 439.19719pt x 623.28185pt.
-) (./chapters/appendices/appendixD.tex [99
+) (./chapters/appendices/appendixD.tex [103
 
 pdfTeX warning: pdflatex: pop empty color page stack 0
-] [100 <./images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png>]
+] [104 <./images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png>]
 Appendix D.
 
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
@@ -3250,31 +3417,29 @@ Overfull \hbox (2.6883pt too wide) in paragraph at lines 35--58
  [][] 
  []
 
-[101
+[105
 
 
 
 pdfTeX warning: pdflatex: pop empty color page stack 0
-] [102]) [103] [104
+] [106]) [107] [108
 
 ] (./main.bbl
 LaTeX Info: Redefining \VAN on input line 1.
 
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-89.pgf) [105
+89.pgf) [109
 
 
 
 pdfTeX warning: pdflatex: pop empty color page stack 0
-] [106] [107]
-Underfull \hbox (badness 1048) in paragraph at lines 414--418
+] [110] [111]
+Underfull \hbox (badness 1048) in paragraph at lines 435--439
 []\T1/cmr/m/n/10 Hamacher D. W., Barsa J., Passi S., Tapim A., 2019, In-dige-no
 us use of stel-lar scin-til-la-tion to pre-
  []
 
-[108] [109] [110] [111] [112] [113]) [114] [115
-
-]
+[112] [113] [114] [115] [116] [117] [118]) [119]
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 89.pgf)
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
@@ -3296,25 +3461,24 @@ us use of stel-lar scin-til-la-tion to pre-
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 87.pgf) 
 AED: lastpage setting LastPage
-[116] (./main.aux)
+[120
 
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
+] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5405C1F91F6C3F9BF97900C269CF3883;18254.
+(rerunfilecheck)             Checksum: C96498BFD653CE94024CD14DC45E1A06;18806.
 runsystem(rm main.pyg)...executed.
 
  )
 (\end occurred when \ifx on line 53 was incomplete) 
 Here is how much of TeX's memory you used:
- 56207 strings out of 478512
- 1144734 string characters out of 5849625
- 1704950 words of memory out of 5000000
- 72127 multiletter control sequences out of 15000+600000
- 505321 words of font info for 129 fonts, out of 8000000 for 9000
+ 57696 strings out of 478512
+ 1164365 string characters out of 5849625
+ 1726998 words of memory out of 5000000
+ 73467 multiletter control sequences out of 15000+600000
+ 515108 words of font info for 168 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  96i,20n,97p,1586b,2179s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/tex
@@ -3347,6 +3511,14 @@ b></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></u
 sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr
 /local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/l
+ocal/texlive/2021/texmf-dist/fonts/type1/wadalab/dgj/dgjhira.pfb></usr/local/te
+xlive/2021/texmf-dist/fonts/type1/wadalab/dgj/dgjka.pfb></usr/local/texlive/202
+1/texmf-dist/fonts/type1/wadalab/dgj/dgjkc.pfb></usr/local/texlive/2021/texmf-d
+ist/fonts/type1/wadalab/dgj/dgjkd.pfb></usr/local/texlive/2021/texmf-dist/fonts
+/type1/wadalab/dgj/dgjke.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/wa
+dalab/dgj/dgjkf.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/wadalab/dgj
+/dgjkg.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/wadalab/dgj/dgjki.pf
+b></usr/local/texlive/2021/texmf-dist/fonts/type1/wadalab/dgj/dgjkj.pfb></usr/l
 ocal/texlive/2021/texmf-dist/fonts/type1/public/cbfonts/grmn0900.pfb></usr/loca
 l/texlive/2021/texmf-dist/fonts/type1/public/cbfonts/grmn1000.pfb></usr/local/t
 exlive/2021/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/202
@@ -3377,10 +3549,10 @@ i0800.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti0
 pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1000.pf
 b></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb>
 
-Output written on main.pdf (144 pages, 16320451 bytes).
+Output written on main.pdf (148 pages, 15760516 bytes).
 PDF statistics:
- 4068 PDF objects out of 4296 (max. 8388607)
- 3489 compressed objects within 35 object streams
- 714 named destinations out of 1000 (max. 500000)
- 1224 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4392 PDF objects out of 5155 (max. 8388607)
+ 3779 compressed objects within 38 object streams
+ 743 named destinations out of 1000 (max. 500000)
+ 1309 words of extra memory for PDF output out of 10000 (max. 10000000)
 

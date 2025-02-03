@@ -9,9 +9,9 @@ The evolution is also complex. Sufficiently close binaries may overflow their $\
 
 \section{Observations of contact binaries}
 
-Observations of contact binaries date back to the 1940s \citep{Kuiper:1941}, however only a handful of contact binaries are known. The binaries we study in this chapter are summarised in \cref{tab:overcontact_binaries}, and were originally compiled in \citet{Abdul-masih:2022}. Their sample focused on measuring the period stability of contact binaries and is a subset of the known sample, of which somewhere between $\sim\num{42000}$ \citep{Petrosky:2021} and $\sim\num{86000}$ \citep{Qian:2020} binaries exist. They rejected a handful of other non O+O overcontact binaries, for reasons that include short-period von Zeipel-Kozai-Lidov oscillations, incomplete photometric / radial velocity fits, non-\gls{ms} binaries, unknown separations, and irregular light curves.
+Observations of contact binaries date back to the 1940s \citep{Kuiper:1941}, and in the past eighty years the catalogue has grown to somewhere between $\sim\num{42000}$ \citep{Petrosky:2021} and $\sim\num{86000}$ \citep{Qian:2020} contact binaries, representing between 26.7 and 54.8 per cent of all observed binaries (those from the Washington Double Star catalogue; \citealt{Mason:2001}). The binaries we study in this chapter are summarised in \cref{tab:overcontact_binaries}, and were originally compiled in \citet{Abdul-masih:2022}. Their sample focused on measuring the period stability of contact binaries and is thus subset of the known sample. They rejected a handful of other non O+O overcontact binaries, for reasons that include short-period von Zeipel-Kozai-Lidov oscillations, incomplete photometric / radial velocity fits, non-\gls{ms} binaries, unknown separations, and irregular light curves.
 
-Ages for the six binaries have not been published, though a soft restriction can be placed on their evolutionary status; \citet{Abdul-masih:2022} compiles specifically \gls{ms} contact binaries, meaning their interactions must take place whilst the progenitor stars are on their main sequences.
+Ages for the six binaries have not been published, though a soft restriction can be placed on their evolutionary status; \citet{Abdul-masih:2022} compiles specifically \gls{ms} contact binaries, meaning their interactions must take place whilst the progenitor stars are on their respective main sequences. Nevertheless, we present inferred ages based on matches to the \gls{bpass} v2.2 models in \cref{tab:hoki_matches}.
 
 \begin{table}
     \centering
@@ -64,9 +64,9 @@ VFTS 352 was detected in the VLT-FLAMES survey of the Tarantula Nebula \citep{Ev
 
 \subsection{Data matching with BPASS v2.2}\label{sec:BPASS_data_matching}
 
-We perform our data matching using the \codename{Hoki} code \citep{Stevance:2020a}. The search parameters are shown in \cref{tab:overcontact_binaries}. We query the \gls{bpass} v2.2.1 dataset and record whether or not they enter the (widened) parameter values. Parameters are widened as some of the periods are tighter than the \gls{bpass} values and thus can be missed in the search.
+We perform our data matching using the \codename{Hoki} code \citep{Stevance:2020a}. The search parameters are shown in \cref{tab:overcontact_binaries}. We query the \gls{bpass} v2.2.1 dataset and record whether or not they enter the (widened) parameter values. Parameters are widened as some of the periods are tighter than the \gls{bpass} bins and thus can be missed in the search.
 
-The matching values \codename{Hoki} finds are shown in \cref{tab:hoki_matches}. The primary models are also shown on \cref{fig:hoki_matches_HRD_primaries}.
+The matching values \codename{Hoki} finds are shown in \cref{tab:hoki_matches}. The primary models are also shown on \cref{3fig:hoki_matches_HRD_primaries}. We also report in the table the inferred ages at match, which lie between $\mu_{\log(\text{age})}=6.13$ (for MY Cam) and $\mu_{\log(\text{age})}=7.14$ (for TU Mus).
 
 \input{chapters/tables/BPASS_v2_match_table}
 
@@ -74,44 +74,44 @@ The matching values \codename{Hoki} finds are shown in \cref{tab:hoki_matches}. 
     \centering
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{images/overcontact_binaries/LSS_3074_hoki.png}
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/LSS_3074_hoki.pdf}
         \caption{LSS 3074}
         \label{fig:hoki_LSS_3074}
     \end{subfigure}%
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{images/overcontact_binaries/MY_Cam_hoki.png}
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/MY_Cam_hoki.pdf}
         \caption{MY Camelopardalis}
         \label{fig:hoki_MY_Cam}
     \end{subfigure}
 
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{images/overcontact_binaries/SMC_108086_hoki.png}
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/SMC_108086_hoki.pdf}
         \caption{SMC 108086}
         \label{fig:hoki_SMC_108086}
     \end{subfigure}%
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{images/overcontact_binaries/TU_Mus_hoki.png}
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/TU_Mus_hoki.pdf}
         \caption{TU Muscae}
         \label{fig:hoki_TU_Mus}
     \end{subfigure}
 
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{images/overcontact_binaries/V382_Cyg_hoki.png}
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/V382_Cyg_hoki.pdf}
         \caption{V382 Cygni}
         \label{fig:hoki_V382_Cyg}
     \end{subfigure}%
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{images/overcontact_binaries/VFTS_352_hoki.png}
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/VFTS_352_hoki.pdf}
         \caption{VFTS 352}
         \label{fig:hoki_VFTS_352}
     \end{subfigure}
 
-    \caption[BPASS v2.2.1 primary models for the matches obtained by \codename{Hoki} for the parameters in \cref{tab:overcontact_binaries}.]{BPASS v2.2.1 primary models for the matches obtained by \codename{Hoki} for the parameters in \cref{tab:overcontact_binaries}. The legend key is the BPASS stellar model file name, and is broken down into its parts in \cref{tab:hoki_matches}.}
+    \caption[BPASS v2.2.1 primary models for the matches obtained by \codename{Hoki} for the parameters in \cref{tab:overcontact_binaries}.]{BPASS v2.2.1 primary models for the matches obtained by \codename{Hoki} for the parameters in \cref{tab:overcontact_binaries}. The legend key is the BPASS stellar model file name (omitting the ``sneplot-'' prefix common to every entry), and is broken down into its parts in \cref{tab:hoki_matches}.}
     \label{fig:hoki_matches_HRD_primaries}
 \end{figure}
 
@@ -124,9 +124,7 @@ Having now established the \gls{zams} parameters for our binaries, we can take t
     \item We do not consider $q > 1$, as this is equivalent to a relabelling of $m_1\to m_2$ and $m_2\to m_1$; that is, binary evolution is symmetric under the exchange of mass.
 \end{enumerate}
 
-We also compute the grid at three metallicities: z020, z010, and z004, corresponding to the three metallicities in \cref{tab:overcontact_binaries} and \cref{tab:hoki_matches}.
-
-An example model run for a $Z=0.020=Z_\odot, m_1=\SI{30}{\msun}, m_2=\SI{10}{\msun}, \log~P=\SI{0.6}{\day}$ is shown in \cref{fig:sample_model_run}. This model corresponds to a potential progenitor of LSS 3074.
+We also compute the grid at three metallicities: z020, z010, and z004, corresponding to the three metallicities in \cref{tab:overcontact_binaries} and \cref{tab:hoki_matches}. An example model run for a $Z=0.020=Z_\odot, m_1=\SI{30}{\msun}, m_2=\SI{10}{\msun}, \log~P=\SI{0.6}{\day}$ is shown in \cref{fig:sample_model_run}. This model corresponds to a potential progenitor of LSS 3074.
 
 \begin{figure}[!htbp]
     \centering
@@ -135,7 +133,7 @@ An example model run for a $Z=0.020=Z_\odot, m_1=\SI{30}{\msun}, m_2=\SI{10}{\ms
     \label{fig:sample_model_run}
 \end{figure}
 
-In \cref{fig:parameter_coverage} we also display the coverage map in $\log~T~/~\log~L$ space of our grid at each metallicity as a density map.
+In \cref{fig:parameter_coverage} we also display the coverage map in $\log T_\text{eff}~/~\log L$ space of our grid at each metallicity as a density map.
 
 \begin{figure}[!htbp]
     \centering
@@ -200,3 +198,6 @@ We also note an absence of matches for two of our systems: TU Mus and SMC 108086
 \subsection{Reverse mass transfer}\label{sec:reverse_MT}
 
 \subsection{Overflow through \texorpdfstring{$\mathcal{L}_2$}{the outer Lagrange point}}
+
+\section{Chapter Summary}
+

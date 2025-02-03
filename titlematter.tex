@@ -57,7 +57,11 @@
 \tableofcontents % Output the table of contents
 \listoffigures % Output the list of figures
 \listoftables % Output the list of tables
+
+\begingroup
+\renewcommand{\arraystretch}{1.2}
 \printglossary[type=\acronymtype, nonumberlist]
+\endgroup
 
 \listoftodos
 \ifx\supervisorcopy\undefined
