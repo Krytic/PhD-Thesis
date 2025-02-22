@@ -224,7 +224,8 @@
 	{\\#1\\(#2)}}
 
 
-\newcommand{\NickNote}[1]{{\todolist{NJR: #1}\color{green}\textbf{[Note from Nick: #1]}}}
+\newcommand{\NickNote}[1]{{\todolist{NJR: #1}\color{green}\textbf{[NJR: #1]}}}
+\newcommand{\JanNote}[1]{{\todolist{JJE: #1}\color{magenta}\textbf{[JJE: #1]}}}
 
 
 
@@ -332,13 +333,15 @@
     % \appendix % From here onwards, chapters are numbered with letters, as is the appendix convention
 
     \begin{appendices}
-	\crefalias{chapter}{appendix}
-	\foreach \i in {A, B, ..., Z} {%
-            \edef\FileName{chapters/appendices/appendix\i}%     The % here are necessary to eliminate any
-            \IfFileExists{\FileName}{%  spurious spaces that may get inserted
-               \input{\FileName}%       at these points
-            }
+
+    \crefalias{chapter}{appendix}
+    \foreach \i in {A, B, ..., Z} {%
+        \edef\FileName{chapters/appendices/appendix\i}%     The % here are necessary to eliminate any
+        \IfFileExists{\FileName}{%  spurious spaces that may get inserted
+            \input{\FileName}%       at these points
         }
+    }
+
     \end{appendices}
 
     \backmatter % Denotes the end of the main document content

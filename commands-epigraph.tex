@@ -247,6 +247,33 @@
   % \ifepigraphnoindent\@afterheading\fi
   \end{fanciful}
 }
+
+\usepackage{fmtcount}
+\usepackage{listofitems}
+
+\setsepchar{?}
+\readlist\alice@list{Six impossible things. Count them, Alice.?There's a potion that can make you shrink.?And a cake that can make you grow.?Animals can talk.?Cats can disappear.?There's a place called Wonderland.?I can slay the Jabberwocky.}
+
+\newcounter{impossible}
+\setcounter{impossible}{-1}
+\newcommand{\alice@phrase}{}
+\newcommand{\alice@attr}{}
+\newcommand{\alice}{%
+    \stepcounter{impossible}
+    \ifnum\theimpossible=\numexpr\alice@listlen-1
+        \def\alice@ordinal{Last}
+    \else
+        \def\alice@ordinal{\Ordinalstring{impossible}}
+    \fi
+
+    \ifnum\theimpossible=0
+        \renewcommand{\alice@attr}{Alice in Wonderland}
+    \else
+        \renewcommand{\alice@attr}{\alice@ordinal~of the Six Impossible Things}
+    \fi
+    \renewcommand{\alice@phrase}{\alice@list[\theimpossible+1]}
+    \epigraph{\alice@phrase}{\alice@attr}
+}
 \makeatother
 
 \newcommand{\chapterEpigraph}[2]{\tikz[remember picture,overlay]

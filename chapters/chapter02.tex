@@ -3,21 +3,21 @@
 
 \chapterEpigraph{Se'i lua'i lou le 'ulu taumamao.\\Pick the breadfruits on the far-off branches first}{S\=amoan proverb}
 
-\lettrine[lines=3]{I}{n this chapter, we provide a} brief account of the evolution of a star from a theoretical perspective, from its formation to post-supernova. We will discuss both the case of a single isolated star, and an isolated binary. It is pertinent to note that our binaries will be assumed to have formed at birth, rather than by, for example, the dynamical capture of a runaway star in a globular cluster, which introduces extra effects and considerations. This process can be modelled by evolving a single star to a certain point, and then enabling binary evolution.
+\lettrine[lines=3]{I}{n this chapter, we provide a} brief account of the evolution of a star from a theoretical perspective, from its formation to post-supernova. We will discuss both the case of a single isolated star, and an isolated binary star system. It is pertinent to note that our binaries will be assumed to have formed together at birth -- thus having the same age -- rather than by, for example, the dynamical capture of a runaway star in a globular cluster, which introduces extra effects and considerations. %This process can be modelled by evolving a single star to a certain point, and then enabling binary evolution.
 
 \section{Stellar Formation}\label{sec:stellar_formation}
 
 \epigraph{Nature and nature's laws lay hid in night: God said, ``Let Newton be!'' and all was light.}{Alexander Pope}
 
-From the point of view of stellar evolution, which starts in earnest at the \gls{zams}, the formation of stars is interesting but ultimately broadly unimportant. We provide a short recap of stellar formation here as scene-setting, but our stellar evolution models assume that a gas cloud has already collapsed and we have a star at its \gls{zams}.
+From the point of view of stellar evolution, which starts in earnest at the \gls{zams}, the formation of stars is interesting but ultimately has little to no impact on the nuclear evolution of the star besides setting the initial mass. We provide a short recap of stellar formation here as scene-setting, but our stellar evolution models assume that a gas cloud has already collapsed and we have a star at its \gls{zams}.
 
-Stars are born in clouds of dust in rich H(II) regions of space. Due to inhomegeneities in the dust formation, some regions become more dense than others. When a region of this gas with adiabatic constant $\gamma$ and mean molecular weight $\mu$ reaches the so-called Jeans Mass,
+Stars are born in clouds of gas and dust. Due to inhomegeneities in the dust formation, some regions become more dense than others. When a region of this gas with adiabatic constant $\gamma$ and mean molecular weight $\mu$ reaches the so-called Jeans Mass,
 
 \begin{equation}
     M_\text{J} = \pqty{\frac{10k_\text{B}T}{3\pqty{\gamma-1}\mu m_\text{H}G}}^\frac32 \pqty{\frac{3}{4\pi\rho}}^\frac12 \sim \pqty{\frac{10k_\text{B}T}{G}R}^\frac32 \pqty{\frac{1}{M}}^\frac12,
 \end{equation}
 
-where the similarity is taking $\gamma=\frac53, \mu=\frac12$ for an adiabatic gas composed of H(II), then gravity becomes the dominant force in the clumps of gas. This causes a protostar to form. This protostar slowly gains more mass from its surroundings and, as it does so, increases in temperature. When the core temperature reaches $\SI[parse-numbers=false]{10^7}{\kelvin}$, the hydrogen in the core begins to fuse into helium via the reaction chain
+where the similarity is taking $\gamma=\frac53, \mu=\frac12$ for an adiabatic gas composed of H(II), then gravity becomes the dominant force in the clumps of gas. This causes a protostar to form. Generally speaking, this protostar slowly gains more mass from its surroundings \citep{Mckee:2007} and, as it does so, increases in temperature. When the core temperature reaches $\SI[parse-numbers=false]{10^7}{\kelvin}$, the hydrogen in the core begins to fuse into helium via the reaction chain
 
 \begin{align*}
     \ce{^2_1H + ^2_1H &-> ^3_2He + ^1_0n + \SI{3.27}{\mega\electronvolt}} \\
@@ -37,7 +37,7 @@ or, via a master equation,
     \ce{6^2_1H -> 2^4_2He + 2^1_1H + 2^1_0n + \SI{43.2}{\mega\electronvolt}},
 \end{equation}
 
-with intermediate products which remain stable and are thus omitted for simplicity. This energy release will sustain the star throughout its lifetime, providing outwards pressure resisting gravity pulling the star inwards, in a balance termed \textit{hydrostatic equilibrium}. Once hydrogen fusion has begun, we say that the star has reached \gls{zams}, and is now on the \textit{main sequence}, where it will spend approximately 90\% of its lifetime.
+with intermediate products which remain stable and are thus omitted for simplicity. The burning of $^{2}_{1}$H -- deuterium -- occurs for a short fraction of the lifetime of the star, before core hydrogen burning begins in earnest. This energy release will sustain the star throughout its lifetime, providing outwards pressure resisting gravity pulling the star inwards, in a balance termed \textit{hydrostatic equilibrium}. Once hydrogen fusion has begun, we say that the star has reached \gls{zams}, and is now on the \textit{main sequence}, where it will spend approximately 90\% of its lifetime.
 
 \section{Stellar Evolution}
 
@@ -55,7 +55,13 @@ Now that our protostar has evolved onto the main sequence, it has become a star 
     \label{eq:stellar_structure}
 \end{equation}
 
-where $\epsilon$ is the rate of energy energation per unit mass, $\kappa$ is the opacity of the material, $\sigma$ is the Stefann-Boltzmann constant, and all other symbols have their usual meanings.
+where $\epsilon$ is the rate of energy energation per unit mass, $\kappa$ is the opacity of the material, $\sigma$ is the Stefann-Boltzmann constant, $m$ is the mass internal to radius $r$, $p$ is pressure, $\rho$ is density, $M$ is total mass of the star, and $L$ is the luminosity.
+
+In addition to \cref{eq:stellar_structure}, an \gls{eos} demanding $\rho=\rho(P, T)$ is desired. We take our \gls{eos} from \citet{Pols:1995}, which built upon that in \citet{Eggleton:1973}. Critically, Pols' \gls{eos} includes the dissociation of molecular hydrogen, Coulomb interactions, and pressure ionization, which \citet{Eggleton:1973} lacked. The \gls{eos} is an approximation to Fermi-Dirac statistics, and originates from the free energy
+
+\begin{equation}
+    F(V, T, N_\text{e}, N_\text{e}) = -\frac13 aT^4 V + kT\sum_i N_\text{i} \pqty{\ln\frac{N_\text{i} h^3}{\omega_i V\pqty{2\pi m_i kT}^\frac32}-1+\frac{\chi_i}{kT}}+F_\text{e}(N_\text{e}, V, T)+\Delta F_\text{e}(N_\text{e}, V, T)
+\end{equation}
 
 These equations represent conservation of mass, hydrostatic equilibrium, energy transport, and thermal equilibrium, respectively. Knowing constants $\epsilon, \kappa$, we have four equations with four unknowns. It is usually convenient to use the \textit{Rosseland mean} opacity,
 
@@ -63,7 +69,7 @@ These equations represent conservation of mass, hydrostatic equilibrium, energy 
     \frac{1}{\kappa} = \frac{\pi}{acT^3}\int_0^\infty \frac{1}{\kappa_\nu}\pdv{B}{T}~\mathrm{d}\nu
 \end{equation}
 
-where $a$ is the radiation density constant ($a=\SI{7.57e-15}{\erg\per\cubic\cm\per\quartic\kelvin}$) and $B$ is the black-body intensity at frequency $\nu$ and temperature $T$. The function $\kappa_\nu$ is obtainable from nuclear physics, and is related to the scattering cross-section $\sigma_\nu = \int_0^{2\pi}\int_0^\pi \dv{\sigma}{\Omega}\sin\theta\, \mathrm{d}{\theta}\, \mathrm{d}{\phi}$. The Rosseland mean becomes
+where $a$ is the radiation density constant ($a=\SI{7.57e-15}{\erg\per\cubic\cm\per\quartic\kelvin}$) and $B$ is the black-body intensity at frequency $\nu$ and temperature $T$. The function $\kappa_\nu$ is obtainable from atom-electron-photon interaction \citep{Eldridge:2004a}: bound-bound, bound-free, free-free (bremsstrahlung) transitions, and electron scattering. $\kappa_\nu$ is thus related to the scattering cross-section $\sigma_\nu = \int_0^{2\pi}\int_0^\pi \dv{\sigma}{\Omega}\sin\theta\, \mathrm{d}{\theta}\, \mathrm{d}{\phi}$. The Rosseland mean becomes
 
 \begin{equation}
     \kappa = \frac{T^5 a c^3 k_\text{B}}{\pi h^2 \int_0^\infty \frac{\nu^4}{\left(\cosh{\left(\frac{h \nu}{T k_\text{B}} \right)} - 1\right) \kappa_\nu}\, d\nu},
@@ -75,17 +81,21 @@ though the integral cannot be analytically solved further. On the other hand, $\
     \epsilon = \sum_{i}^N \text{energy output of reaction } i.
 \end{equation}
 
+\JanNote{the energy generation rates come from nuclear physics! normally from calculations and direct measurement - e.g. the NACRE reaction rates}
+
 All told, in the simplest sense, the internal \textit{structure} of the star can be modelled by hand by solving \cref{eq:stellar_structure} from $m=0$ to $m=M$.
 
 \subsection{The chemical composition of stars}
 
-A star contains at its core a complex nuclear furnace. Since stars are born in regions of space rich in H(II) -- molecular hydrogen -- and obtain high enough pressures in the core to ignite fusion, the star will be sustained by the burning of predominantly hydrogen and helium. We thus group the three main stages into hydrogen, helium, and metals (which we define as anything with atomic number $\geq3$, i.e., lithium and heavier elements). It is convenient to speak of the mass fraction of the element, i.e., the fraction by mass of a star that is a certain element. For our purposes, this is expressible as
+\alice
+
+A star contains at its core a complex nuclear furnace. Since stars are born in hydrogen-rich regions of space and obtain high enough pressures in the core to ignite fusion, the star will be sustained by the burning of predominantly hydrogen and helium. We thus group the elements into hydrogen, helium, and metals (which we define as anything with atomic number $\geq3$, i.e., lithium and heavier elements). It is convenient to speak of the mass fraction of the element, i.e., the fraction by mass of a star that is a certain element. For our purposes, this is expressible as
 
 \begin{equation}
 	X+Y+\sum_{i=0}^{115} \mathcal{Z}_i = 1, \label{eq:mass_fracs}
 \end{equation}
 
-where $X$ is the mass fraction of hydrogen, $Y$ of helium, and $\mathcal{Z}_i$ as the metal\footnote{It is custom in astronomy to refer to anything with an atomic number greater than 2 as a metal, rather than the conventional definition of a material conductive at absolute zero, including most of the d-block, s-block, f-block, and about half of the p-block on the periodic table.} with atomic number $i+3$. When speaking about the chemical composition of a star it is also convenient to speak of the \textit{metallicity}, the fraction at \gls{zams} of the star that is metal. For this, we define the metallicity as
+where $X$ is the mass fraction of hydrogen, $Y$ of helium, and $\mathcal{Z}_i$ as the metal\footnote{It is custom in astronomy to refer to anything with an atomic number greater than 2 as a metal, rather than the conventional definition of a material conductive at absolute zero, including most of the d-block, s-block, f-block, and about half of the p-block on the periodic table.} with atomic number $i+3$. \JanNote{What about isotopes?} When speaking about the chemical composition of a star it is also convenient to speak of the \textit{metallicity}, the fraction at \gls{zams} of the star that is metal. For this, we define the metallicity as
 
 \begin{equation}
     Z \equiv \sum_{i=0}^{115} \mathcal{Z}_i,
@@ -145,15 +155,17 @@ such that \cref{eq:mass_fracs} becomes
 
 \subsection{Evolutionary Pathways}
 
-In this section, we examine the four major regimes of stellar evolution for single-stars. The precise boundaries are debatable, but are generally accepted to be logarithmically spaced.
+In this section, we examine the three major regimes of stellar evolution for single-stars: low-mass (\cref{sec:low_mass_stars}), intermediate-mass (\cref{sec:intermediate_mass_stars}), and massive stars (\cref{sec:massive_stars}). We do not consider stars about $M_\text{ZAMS}\approx\SI{80}{\msun}$ in this thesis \todo{why?}
 
-\subsubsection{Low-Mass Stars: \texorpdfstring{$\SI{0.08}{\msun} < M < \SI{2}{\msun}$}{Stars with between 0.08 and 2 times the mass of the sun}}
+\subsubsection{Low-Mass Stars: \texorpdfstring{$\SI{0.08}{\msun} < M < \SI{2}{\msun}$}{Stars with between 0.08 and 2 times the mass of the sun}}\label{sec:low_mass_stars}
 
-Low-mass stars ignite helium degenerately in their cores, leading to thermal runaway. The star can peak at a luminosity close to $10^{11} L_\odot$ (approximately 100 times the peak luminosity of SN 1987A, per Figure 5 of \citet{Arnett:1989}). However, this peak in luminosity is attributable to nuclear fusion in the core, and the energy does not reach the surface, let alone escape into the \gls{ism} -- rather, it is absorbed into the outer layers of the star. During this extremely brief thermal runaway, the luminosity begins to settle and the star is able to continue evolving. Models of low mass stars fail at this stage and care is required to evolve them. This phenomena is called the \textit{helium flash} and is discussed further in \cref{sec:numerical_instabilities}.
+Stars below $\approx\SI{0.5}{\msun}$ do not ignite helium, and become helium \glspl{wd}. Above this, they ignite helium degenerately in their cores, leading to thermal runaway. The star can peak at a luminosity close to $10^{11} L_\odot$ (approximately 100 times the peak luminosity of SN 1987A, per Figure 5 of \citet{Arnett:1989}). However, this peak in luminosity is attributable to nuclear fusion in the core, and the energy does not reach the surface, let alone escape into the \gls{ism} -- rather, it is absorbed into the outer layers of the star. During this extremely brief thermal runaway, the luminosity begins to settle and the star is able to continue evolving. Models of low mass stars fail at this stage and care is required to evolve them. This phenomena is called the \textit{helium flash} and is discussed further in \cref{sec:numerical_methods_stars}.
 
-After the ignition of helium, these stars cross the so-called Hertzsprung Gap -- the region where very few stars are observed empirically. This region is bounded (on a colour-magnitude diagram, which is a transform of the HR diagram)\footnote{The relationship between a colour-magnitude diagram and the HR diagram is that $\log L=0.4\pqty{M_{\text{bol},\odot}-M_{\text{bol},*}}\simeq0.4\pqty{4.74-M_{v,*}-\text{BC}}$, $\log T=\log\pqty{4600\pqty{\frac{1}{0.92\pqty{B-V}+1.7}+\frac{1}{0.92\pqty{B-V}+0.62}}}$, where BC is a bolometric correction which depends on the stellar type. This expression for the temperature is a fit provided by \citet{Ballesteros:2012}.} by the points $\pqty{M_v, B-V}=\left\{\pqty{2,0.5}, \pqty{-7, 0.1}, \pqty{-6, 1.6}\right\}$ \citep{Hoyle:1960}, where $M_v$ is the V-band magnitude (magnitude in the visual band), and $B-V$ is the colour index of the star. The phenomenon of a gap existing is attributable to the fact that stars cross this gap exceedingly quickly: whereas it spends $\sim90\%$ of its life on the main sequence, it spends $\sim2\%$ of its life crossing the Hertzsprung gap \citep{Hoyle:1960}.
+After the ignition of helium, these stars cross the so-called Hertzsprung Gap -- the region where very few stars are observed empirically. This region is bounded (on a colour-magnitude diagram, which is a transform of the HR diagram) by the points $\pqty{M_v, B-V}=\left\{\pqty{2,0.5}, \pqty{-7, 0.1}, \pqty{-6, 1.6}\right\}$ \citep{Hoyle:1960}, where $M_v$ is the V-band magnitude (magnitude in the visual band), and $B-V$ is the colour index of the star. The phenomenon of a gap existing is attributable to the fact that stars cross this gap exceedingly quickly: whereas it spends $\sim90\%$ of its life on the main sequence, it spends $\sim2\%$ of its life crossing the Hertzsprung gap \citep{Hoyle:1960}.
 
-\subsubsection{Intermediate-Mass Stars: \texorpdfstring{$\SI{2}{\msun} < M < \SI{8}{\msun}$}{Stars with between 2 and 8 times the mass of the sun}}
+% \footnote{The relationship between a colour-magnitude diagram and the HR diagram is that $\log L=0.4\pqty{M_{\text{bol},\odot}-M_{\text{bol},*}}\simeq0.4\pqty{4.74-M_{v,*}-\text{BC}}$, $\log T=\log\pqty{4600\pqty{\frac{1}{0.92\pqty{B-V}+1.7}+\frac{1}{0.92\pqty{B-V}+0.62}}}$, where BC is a bolometric correction which depends on the stellar type. This expression for the temperature is a fit provided by \citet{Ballesteros:2012}.}
+
+\subsubsection{Intermediate-Mass Stars: \texorpdfstring{$\SI{2}{\msun} < M < \SI{8}{\msun}$}{Stars with between 2 and 8 times the mass of the sun}}\label{sec:intermediate_mass_stars}
 
 Intermediate mass stars exist above the threshold for the helium flash to occur. Helium ignition is not degenerate and the development of a helium core is not i
 mpeded. As the star ascends the \gls{agb}, the core becomes helium-exhausted and it becomes a red giant, with a radius many hundreds or even thousands of times greater than the Sun. Its mass, sustained prior to the \gls{agb} via nuclear fusion, begins to decrease. An example of intermediate-mass evolution is shown in \cref{fig:intermediate_mass}.
@@ -165,14 +177,14 @@ mpeded. As the star ascends the \gls{agb}, the core becomes helium-exhausted and
     \label{fig:intermediate_mass}
 \end{figure}
 
-\subsubsection{Massive Stars: \texorpdfstring{$\SI{8}{\msun} < M < \SI{80}{\msun}$}{Stars with between 8 and 80 times the mass of the sun}}
+\subsubsection{Massive Stars: \texorpdfstring{$\SI{8}{\msun} < M < \SI{80}{\msun}$}{Stars with between 8 and 80 times the mass of the sun}}\label{sec:massive_stars}
 
-Massive stars are the key focal objects of this study, and in many ways offer some of the most exciting phenomena we can probe. In \cref{fig:hr_diagram_massive_stars} we show the variety of evolution that this regime has, alongside the \gls{zams} track from \SI{8}{\msun} to \SI{90}{\msun}. The key features are as follows. When a massive star exhausts its supply of hydrogen in its core and evolves off the main sequence to begin burning helium, it generally bypasses the Hertzsprung gap and evolves up the \gls{agb}. From here it generally engages in a ``blue loop'', where is remains at a roughly constant radius whilst increasing in temperature, before cooling at a slightly higher luminosity. The question of what physical process powers a blue loop is unanswered \citep{Zhao:2023}, though this thesis is unconcerned with their generation. We note that our models include blue loops, as shown in \cref{fig:hr_diagram_massive_stars} and \cref{fig:hr_diagram_8msun_star}.
+Massive stars are the key focal objects of this thesis, and in many ways offer some of the most exciting phenomena we can probe. In \cref{fig:hr_diagram_massive_stars} we show the variety of evolution that this regime has, alongside the \gls{zams} track from \SI{8}{\msun} to \SI{90}{\msun}. The key features are as follows. When a massive star exhausts its supply of hydrogen in its core and evolves off the main sequence to begin burning helium, it generally bypasses the Hertzsprung gap and evolves up the \gls{rgb}. From here, stars below $\approx\SI{15}{\msun}$ generally engage in a ``blue loop'', where is remains at a roughly constant radius whilst increasing in temperature, before cooling at a slightly higher luminosity. The question of what physical process powers a blue loop is unanswered \citep{Zhao:2023}, \JanNote{we know, read Walmswell \& Eldridge (201x?)} though this thesis is unconcerned with their generation. We note that our models include blue loops, as shown in \cref{fig:hr_diagram_massive_stars} and \cref{fig:hr_diagram_8msun_star}.
 
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=\textwidth]{images/TheorySection/10_msun_jumps.pdf}
-    \caption[The evolution of stars in the range $10-80\unit{\msun}$.]{The evolution of stars in the range $10-80\unit{\msun}$. The dashed gray line represents the \acrfull{zams}, which is the origin point of all of our models, and (in this plot) extends from \SI{1}{\msun} to \SI{300}{\msun}. The blue triangle is the (highly approximate) bounds of the Hertzsprung gap.}
+    \caption[The evolution of stars in the range $0.5-80\unit{\msun}$.]{The evolution of stars in the range $0.5-80\unit{\msun}$. The dashed black line represents the \acrfull{zams}, which is the origin point of all of our models, and (in this plot) extends from \SI{0.5}{\msun} to \SI{300}{\msun}. The blue triangle is the (highly approximate) bounds of the Hertzsprung gap. Crosses indicate binaries in the Double Eclipsing Binaries catalogue \citep[DEBCAT;][]{Southworth:2015}, and illustrate the apparent ``zone of avoidance'' that defines the Hertzsprung gap.}
     \label{fig:hr_diagram_massive_stars}
 \end{figure}
 
@@ -348,13 +360,13 @@ In any case, once formed and the orbit is stabilised, binary systems obey Kepler
     \item The square of the period of the system is proportional to the cube of the semimajor axis of the ellipse (the binary separation), with the proportionality term dependent on the sum of the masses.
 \end{enumerate}
 
-The third law can be stated more precisely as,
+The third law can be stated more precisely as
 
 \begin{equation}
     T^2 = \frac{4\pi^2}{G(M_1+M_2)}a^3,
 \end{equation}
 
-and a schematic of the orbit of a binary system is given in \cref{fig:bss_schematic}.
+where $T$ is the period of the binary, $M_1$ and $M_2$ the constituent masses, $G=\SI{6.67e-11}{\meter\cubed\per\kilogram\per\second\squared}$ is the universal gravitational constant, and $a$ is the semimajor axis of the binary. A schematic of the orbit of a binary system is given in \cref{fig:bss_schematic}.
 
 \begin{figure}[!htbp]
     \centering
@@ -419,11 +431,11 @@ and a schematic of the orbit of a binary system is given in \cref{fig:bss_schema
         \draw[gray, thick] (\xTwo, \yTwo) -- (0, 0);
         \filldraw[blue] (0, 0) circle (2pt);
 
-        \node (a) at (\xOneMid, \yOne+0.4) {$x_2$};
+        \node (a) at (\xOneMid, \yOne+0.4) {$r_2$};
         \draw[<-] (\xOne, \yOne+0.4) -- (a);
         \draw[->] (a) -- (\fX, \yOne+0.4);
 
-        \node (b) at (\xTwoMid, \yTwo-0.4) {$x_1$};
+        \node (b) at (\xTwoMid, \yTwo-0.4) {$r_1$};
         \draw[<-] (\fX, \yTwo-0.4) -- (b);
         \draw[->] (b) -- (\xTwo, \yTwo-0.4);
 
@@ -435,14 +447,16 @@ and a schematic of the orbit of a binary system is given in \cref{fig:bss_schema
 
         \draw[->] (\xOne, \yOne) -- (drawtoA);
         \draw[->] (\xTwo, \yTwo) -- (drawtoB);
+
+        \draw[<->,red, thick] (\Cx, \Cy-0.6) -- (\Cx+\a, \Cy-0.6) node[below, midway] {$a$};
+        \draw[<->, red, thick] (\Cx, \Cy+2pt) -- (\Cx, \Cy+\b) node[below, midway, sloped] {$b=a\sqrt{1-e^2}$};
+        \filldraw[black] (\Cx, \Cy) circle (2pt);
     \end{tikzpicture}
-    \caption[A schematic of a simple binary star system.]{A schematic of a simple binary star system. The centre of mass (barycentre) is shown as a blue dot. Here, $M_1$ is the heavier star, which orbits at a smaller distance $x_1$ to the barycentre by Kepler's first and Newton's second laws. The elliptical orbital trajectory is shown in grey. Figure adapted from \citet{Richards:2021}.}
+    \caption[A schematic of a simple binary star system.]{A schematic of a simple binary star system with eccentricity $e$. The centre of mass (barycentre) is shown as a blue dot. Here, $M_1$ is the heavier star, which orbits at a smaller distance $r_1$ to the barycentre by Kepler's first and Newton's second laws. The elliptical orbital trajectory is shown in grey. Figure adapted from \citet{Richards:2021}.}
     \label{fig:bss_schematic}
 \end{figure}
 
 \subsection{Roche Lobes}\label{sec:roche_lobes}
-
-\mediaepigraph[in]{Algebra’s like sheet music. The important thing isn’t can you read music, it’s can you \textit{hear} it. Can you hear the music, Robert?}{Niels Bohr}{Oppenheimer}
 
 A binary system is complicated by the presence of its companions in several different ways. As alluded to in the previous section, the presence of a companion warps space-time in such a way that material can be quite distorted from a sphere or oblate spheroid but still remain gravitationally bound to the system. In the extremal case, a star can grow to fill or even exceed its Roche Lobe, which is the tear-drop shaped equipotential surface within which material remains gravitationally bound to its star. In \cref{fig:roche_potentials} we display these equipotential surfaces for a range of different mass ratios. It is pertinent to note that the shape of all of the Roche Lobes change rapidly at low mass rations, however at higher mass ratios the shapes change less rapidly. In an equal-mass ratio binary, the binary configuration has rotational symmetry about the $\mathcal{L}_1$ point, and reflectional symmetry about the $x$-axis and the line $y=\mathcal{L}_1$.
 
@@ -453,80 +467,13 @@ A binary system is complicated by the presence of its companions in several diff
     \label{fig:roche_potentials}
 \end{figure}
 
-There are two primary Roche Lobe points we consider: the $\mathcal{L}_1$ point and the $\mathcal{L}_2$ point. The $\mathcal{L}_1$ point (also known as the inner Lagrangian point) is the nexus between the two stars, the $\mathcal{L}_2$ point (the outer Lagrangian point) is located on the other side of the secondary to the inner point.
-
-We follow the derivation given in \citet{Rose:1998} to find an expression for the Roche potential. First we note that in a rotating reference frame in Cartesian coordinates, we have
+There are two primary Roche Lobe points we consider: the $\mathcal{L}_1$ point and the $\mathcal{L}_2$ point. The $\mathcal{L}_1$ point (also known as the inner Lagrangian point) is the nexus between the two stars, the $\mathcal{L}_2$ point (the outer Lagrangian point) is located on the other side of the secondary to the inner point. The dimensionless $x$-ordinate of the $\mathcal{L}_1$ point, $\xi$, measured in terms of the separation $a$, is given as the solution to
 
 \begin{equation}
-    \overbrace{\frac{GM_1 M_2}{a^2}\vu{x}}^{\mathclap{\text{gravitational force}}}=\underbrace{-M_1 \vec{\omega}\times\pqty{\vec{\omega}\times\vec{r}_1}}_\text{centrifugal force},
+    0=\xi-\frac{\xi_2}{\pqty{\xi-\xi_1}^2}-\frac{\xi_1}{\pqty{\xi-\xi_2}^2},\label{eq:roche_lobe_condition}
 \end{equation}
 
-where $\vu{x}$ is the line between the center of mass of both stars, $a$ the separation, $\vec{\omega}$ the angular velocity, and $\vec{r}_1$ the position vector of the primary star. The x-ordinates of the centres of mass are given by
-
-\begin{align}
-    x_1 &= \frac{M_2}{M_1+M_2}a \\
-    x_2 &= \frac{-M_1}{M_1+M_2}a
-\end{align}
-
-Since we are considering a rotating coordinate system we have that the centrifugal force is given by
-
-\begin{equation}
-    -M_1 \vec{\omega}\times\pqty{\vec{\omega}\times\vec{r}_1} = M_1\omega^2 x_1,
-\end{equation}
-
-and hence
-
-\begin{align}
-    \frac{GM_1 M_2}{a^2}\vu{x} &= M_1\omega^2 x_1 \notag\\
-    \omega^2 &= \frac{GM_1 M_2}{M_1 x_1 a^2}\vu{x} \notag\\
-    &= \frac{GM_2}{x_1 a^2}\vu{x} \notag\\
-    &= \frac{GM_2\pqty{M_1+M_2}}{M_2 \cdot a\cdot a^2}\vu{x} \notag\\
-    &= \frac{G\pqty{M_1+M_2}}{a^3}\vu{x}.
-\end{align}
-
-The centrifugal potential of a test mass $m$ at $(x,y)$ is hence
-
-\begin{equation}
-    V = -\frac12 m\omega^2\pqty{x^2+y^2} = -\frac{Gm\pqty{M_1+M_2}\pqty{x^2+y^2}}{2a^3},
-\end{equation}
-
-and thus its energy is
-
-\begin{equation}
-    E = \frac12 m\pqty{\dot{x}^2+\dot{y}^2} + V(x,y),
-\end{equation}
-
-where
-
-\begin{equation}
-    V(x,y) = \overbrace{-\frac{GmM_1}{\sqrt{\pqty{x-x_1}^2+y^2}}}^\text{G.P.E. due to primary}-\overbrace{\frac{GmM_2}{\sqrt{\pqty{x-x_2}^2+y^2}}}^\text{G.P.E. due to secondary}-\overbrace{\frac{Gm\pqty{M_1+M_2}\pqty{x^2+y^2}}{2a^3}}^\text{centrifugal potential}.
-\end{equation}
-
-We introduce the dimensionless coordinates measured in units of the separation of the binary (or reduced masses)
-
-\begin{equation}
-    \xi = \frac{x}{a},\quad\eta=\frac{y}{a},\quad\xi_1=\frac{M_2}{M_1+M_2},\quad\xi_2=\frac{M_1}{M_1+M_2}
-\end{equation}
-
-Our potential now becomes
-
-\begin{equation}
-    V(\xi,\eta) = -\frac{Gm\pqty{M_1+M_2}}{a}\times\bqty{\frac{\xi_2}{\sqrt{\pqty{\xi-\xi_1}^2+\eta^2}}+\frac{\xi_1}{\sqrt{\pqty{\xi-\xi_2}^2+\eta^2}}+\frac12\pqty{\xi^2+\eta^2}}.
-\end{equation}
-
-Taking the partial derivative along the $\xi$-axis (the rescaled $x$-axis), we get
-
-\begin{equation}
-    \pdv{V}{\xi} = -\frac{Gm\pqty{M_1+M_2}}{a}\times\bqty{-\frac{\xi_2\pqty{\xi-\xi_1}}{\pqty{\pqty{\xi-\xi_1}^2+\eta^2}^\frac32}-\frac{\xi_1\pqty{\xi-\xi_2}}{\pqty{\pqty{\xi-\xi_2}^2+\eta^2}^\frac32}+\xi}\label{eq:pdv_of_roche_potential}
-\end{equation}
-
-Hence the extrema of the potential $V$ are at the points $\xi$ where (taking $\eta=0$ on the $\xi$-axis)
-
-% -ve sign on first two terms dumbass
-
-\begin{equation}
-    0=\xi-\frac{\xi_2}{\pqty{\xi-\xi_1}^2}-\frac{\xi_1}{\pqty{\xi-\xi_2}^2}.\label{eq:roche_lobe_condition}
-\end{equation}
+where $\xi_1=\frac{M_2}{M_1+M_2}$, and $\xi_2=\frac{M_1}{M_1+M_2}$.
 
 % i.e.,
 
@@ -711,6 +658,8 @@ We note that \citet{Marchant:2016} uses an inverse mass ratio definition compare
 % where masses are in solar masses, the orbital period is in years, and the semi-major axis is in \si{\AU} \citep{Eggen:1963}.
 
 \subsection{Mass Transfer}\label{sec:mass_transfer}
+
+\alice
 
 When two stars are sufficiently close in proximity, events such as \glspl{cme} can cause two stars to exchange mass (whereas in the single-star case, this would be matter lost to the \gls{ism}). The nature of mass transfer is a complicated affair; most binary star population synthesis codes typically inherit their mass loss prescriptions from papers such as \citet{Bondi:1944, Hurley:2002}, and this approach is what we detail in this section.
 
@@ -904,7 +853,7 @@ Generalising this to an eccentric orbit causes the first argument in \cref{eq:bo
 ``If you wish.''\\
 ``I don’t wish. Get on with the story.''}{Rhythm of War}{Brandon Sanderson}
 
-After a supernova, the star leaves behind its core as a compact remnant. Generally, these are either white dwarves, black holes, or neutron stars. The interior structure of each is either complicated or, in the case of black holes, impossible to observationally probe without violating causality. Their orbital motions are now deterministic from four initial parameters: $m_1, m_2, a$, and $e$. Motion is now wholly determined by the emission of gravitational radiation through (detectable) gravitational waves. The pertinent equations of motion (all derived more formally in \citealt{Richards:2021}) are given by \citet{Peters:1964}, namely,
+After a supernova, the star leaves behind its core as a compact remnant. Generally, these are either white dwarves, black holes, or neutron stars. The interior structure of each is either complicated or, in the case of black holes, impossible to observationally probe without violating causality. Their orbital motions are now deterministic from four initial parameters: $m_1, m_2, a$, and $e$. Motion is now wholly determined by the emission of gravitational radiation through (detectable) gravitational waves. The pertinent equations of motion are given by \citet{Peters:1964}, namely,
 
 \begin{align}
     \dv{a}{t} &= \frac{-\beta}{a^3\left(1-e^2\right)^\frac72}\left(1+\frac{73}{24}e^2+\frac{37}{96}e^4\right),\text{ and} \label{eq:dadt}\\
@@ -929,7 +878,7 @@ then the time from the second supernova to the conclusion of the inspiral, terme
     T_\text{c}(a_0, e_0) = \frac{12}{19}\frac{c_0^4}{\beta}\int_0^{e_0} \frac{e^\frac{22}{19}\left(1+\frac{121}{304}e^2\right)^\frac{1181}{2299}}{\left(1-e^2\right)^\frac32}{ \mathrm{d}e}.\label{eq:coalescence_time}
 \end{equation}
 
-The integral has no closed-form solution, and a numerical integrator is typically used to compute the coalescence time. However, some approximations such as \citet{Mandel:2021a} do exist and approximate the coalescence time rather well over the entire range of mass ratios.
+The derivations for \cref{eq:dadt,eq:dedt,eq:coalescence_time} are given in \cref{chap:additional_derivations}. The integral has no closed-form solution, and a numerical integrator is typically used to compute the coalescence time. However, some approximations such as \citet{Mandel:2021a} do exist and approximate the coalescence time rather well over the entire range of mass ratios.
 
 \subsection{Merger Rates of compact binaries}
 
@@ -1131,7 +1080,7 @@ The method to overcome this numerical instability is involved and not fully impl
 
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width=\textwidth]{images/TheorySection/helium_flash_kippenhahn.png}
+    \includegraphics[width=\textwidth]{images/TheorySection/helium_flash_kippenhahn.pdf}
     \caption[The helium flash shown on a Kippenhahn diagram.]{The helium flash (gray dashed line) shown on a Kippenhahn diagram. There is a slight discontinuity in the helium core mass (blue) due to a perfect match not existing in the $\SI{3}{\msun}$ reference model. The total mass is shown as the solid gray line, and the \acrshort{CO_core} mass is shown in red. The green lines show the boundaries of the convective regions of the star. \todo{vectorize}}
     \label{fig:pseudoevolved_kippenhahn}
 \end{figure}

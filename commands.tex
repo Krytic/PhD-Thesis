@@ -26,11 +26,32 @@
 % Math shorthand
 \newcommand{\pqty}[1]{\left(#1\right)}
 \newcommand{\bqty}[1]{\left[#1\right]}
-\newcommand{\dv}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
-\newcommand{\pdv}[2]{\frac{\partial #1}{\partial #2}}
+\makeatletter
+\newcommand{\pdv}[3][1]{\ensuremath{%
+    \ifnum#1=1
+        \def\@pdv@exp{}
+    \else
+        \def\@pdv@exp{^{#1}}
+    \fi
+    \frac{\partial{\@pdv@exp} #2}{\partial #3{\@pdv@exp}}}%
+}
+
+\newcommand{\dv}[3][1]{\ensuremath{%
+    \ifnum#1=1
+        \def\@dv@exp{}
+    \else
+        \def\@dv@exp{#1}
+    \fi
+    \frac{{\mathrm{d}}^{\@dv@exp} #2}{{\mathrm{d}} #3^{\@dv@exp}}}%
+}
+\makeatother
 \newcommand{\dd}[1]{\mathrm{d}{#1}}
 \newcommand{\mat}[2][ij]{\mathbf{#2}_{#1}}
 \newcommand{\eval}[2]{\ensuremath{\left.#1\right|_{#2}}}
+\newcommand{\ev}[1]{\ensuremath{\left\langle#1\right\rangle}}
+\newcommand{\abs}[1]{\ensuremath{\left|#1\right|}}
+\newcommand{\tens}[1]{\ensuremath{\pmb{\mathsf{#1}}}}
+\newcommand{\tr}[1]{\ensuremath{\mathrm{Tr}~#1}}
 
 \let\ovec\vec
 \renewcommand{\vec}[1]{\ovec{\bm{#1}}}

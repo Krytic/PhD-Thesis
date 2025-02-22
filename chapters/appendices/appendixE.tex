@@ -1,0 +1,359 @@
+% !TEX root = ../../main.tex
+\chapter{Additional Derivations}\label{chap:additional_derivations}
+
+\chapterEpigraph{Algebra’s like sheet music. The important thing isn’t can you read music, it’s can you \textit{hear} it. Can you hear the music, Robert?}{Niels Bohr, in Oppenheimer}
+
+In this section, we present additional derivations for expressions used in \cref{chap:theoretical_background}.
+
+\section{Roche lobe formula}
+
+We follow the derivation given in \citet{Rose:1998} to find an expression for the Roche potential. First we note that in a rotating reference frame in Cartesian coordinates, we have
+
+\begin{equation}
+    \overbrace{\frac{GM_1 M_2}{a^2}\vu{x}}^{\mathclap{\text{gravitational force}}}=\underbrace{-M_1 \vec{\omega}\times\pqty{\vec{\omega}\times\vec{r}_1}}_\text{centrifugal force},
+\end{equation}
+
+where $\vu{x}$ is the line between the center of mass of both stars, $a$ the separation, $\vec{\omega}$ the angular velocity, and $\vec{r}_1$ the position vector of the primary star. The x-ordinates of the centres of mass are given by
+
+\begin{align}
+    x_1 &= \frac{M_2}{M_1+M_2}a \\
+    x_2 &= \frac{-M_1}{M_1+M_2}a
+\end{align}
+
+Since we are considering a rotating coordinate system we have that the centrifugal force is given by
+
+\begin{equation}
+    -M_1 \vec{\omega}\times\pqty{\vec{\omega}\times\vec{r}_1} = M_1\omega^2 x_1,
+\end{equation}
+
+and hence
+
+\begin{align}
+    \frac{GM_1 M_2}{a^2}\vu{x} &= M_1\omega^2 x_1 \notag\\
+    \omega^2 &= \frac{GM_1 M_2}{M_1 x_1 a^2}\vu{x} \notag\\
+    &= \frac{GM_2}{x_1 a^2}\vu{x} \notag\\
+    &= \frac{GM_2\pqty{M_1+M_2}}{M_2 \cdot a\cdot a^2}\vu{x} \notag\\
+    &= \frac{G\pqty{M_1+M_2}}{a^3}\vu{x}.
+\end{align}
+
+The centrifugal potential of a test mass $m$ at $(x,y)$ is hence
+
+\begin{equation}
+    V = -\frac12 m\omega^2\pqty{x^2+y^2} = -\frac{Gm\pqty{M_1+M_2}\pqty{x^2+y^2}}{2a^3},
+\end{equation}
+
+and thus its energy is
+
+\begin{equation}
+    E = \frac12 m\pqty{\dot{x}^2+\dot{y}^2} + V(x,y),
+\end{equation}
+
+where
+
+\begin{equation}
+    V(x,y) = \overbrace{-\frac{GmM_1}{\sqrt{\pqty{x-x_1}^2+y^2}}}^\text{G.P.E. due to primary}-\overbrace{\frac{GmM_2}{\sqrt{\pqty{x-x_2}^2+y^2}}}^\text{G.P.E. due to secondary}-\overbrace{\frac{Gm\pqty{M_1+M_2}\pqty{x^2+y^2}}{2a^3}}^\text{centrifugal potential}.
+\end{equation}
+
+We introduce the dimensionless coordinates measured in units of the separation of the binary (or reduced masses)
+
+\begin{equation}
+    \xi = \frac{x}{a},\quad\eta=\frac{y}{a},\quad\xi_1=\frac{M_2}{M_1+M_2},\quad\xi_2=\frac{M_1}{M_1+M_2}
+\end{equation}
+
+Our potential now becomes
+
+\begin{equation}
+    V(\xi,\eta) = -\frac{Gm\pqty{M_1+M_2}}{a}\times\bqty{\frac{\xi_2}{\sqrt{\pqty{\xi-\xi_1}^2+\eta^2}}+\frac{\xi_1}{\sqrt{\pqty{\xi-\xi_2}^2+\eta^2}}+\frac12\pqty{\xi^2+\eta^2}}.
+\end{equation}
+
+Taking the partial derivative along the $\xi$-axis (the rescaled $x$-axis), we get
+
+\begin{equation}
+    \pdv{V}{\xi} = -\frac{Gm\pqty{M_1+M_2}}{a}\times\bqty{-\frac{\xi_2\pqty{\xi-\xi_1}}{\pqty{\pqty{\xi-\xi_1}^2+\eta^2}^\frac32}-\frac{\xi_1\pqty{\xi-\xi_2}}{\pqty{\pqty{\xi-\xi_2}^2+\eta^2}^\frac32}+\xi}\label{eq:pdv_of_roche_potential}
+\end{equation}
+
+Hence the extrema of the potential $V$ are at the points $\xi$ where (taking $\eta=0$ on the $\xi$-axis)
+
+% -ve sign on first two terms dumbass
+
+\begin{tcolorbox}
+    \begin{equation}
+        0=\xi-\frac{\xi_2}{\pqty{\xi-\xi_1}^2}-\frac{\xi_1}{\pqty{\xi-\xi_2}^2},
+    \end{equation}
+\end{tcolorbox}
+
+which was to be shown.
+
+\section{Equations of Motion of decaying binaries}
+
+The following derivation is adapted from the derivation presented in \citet{Richards:2021}. In this section we use a positive-definite metric signature ($\tr{\tens{\eta}}=+2$), and the Einstein summation convention where repeated indices are summed shall apply. Further, Greek indices span from 0 to 3, and Latin indices span from 1 to 3.
+
+We have two goals. The first is to derive expressions for the coupled equations $\dv{a}{t}$ and $\dv{e}{t}$ describing the decay of a binary due to gravitational radiation. The second is to determine an expression for $T_\text{c}(a_0, e_0)$, the coalescence time, which is the time-scale for this to occur.
+
+\subsection{\texorpdfstring{$\dv{a}{t}$ and $\dv{e}{t}$}{Rate of change of semimajor axis and eccentricity}}
+
+In the weak-field limit, the spacetime metric is presumed to be a perturbation of a locally Minkowski metric, that is, it is given by
+
+\begin{equation}
+    g_{\mu\nu} = \eta_{\mu\nu} + \kappa h_{\mu\nu},
+\end{equation}
+
+with \tens{\eta} the Minkowski metric, $\abs{h}\ll 1$, and $\kappa^2 = 32\pi G$. This metric induces \citep[see, among others,][]{Einstein:1916, Peters:1964} the wave equation
+
+\begin{equation}
+    \Box \overline{h}_{\mu\nu} = -\frac12 \kappa T_{\mu\nu},
+\end{equation}
+
+where \tens{T} is the stress-energy tensor. Given some plane wave solution to this wave equation, of the form
+
+\begin{equation}
+    h_{\mu\nu}=Ae_{\mu\nu}\cos\pqty{\vec{k}\cdot\vec{x}-\omega t},
+\end{equation}
+
+where \tens{e} is a unit polarization tensor, we have the energy density
+
+\begin{equation}
+    U = \frac12 c^2\omega^2A^2.
+\end{equation}
+
+The two possible non-zero spacelike and transverse polarizations for a wave travelling (without loss of generality) in the $z$-direction are
+
+\begin{equation}
+    e_1 = \frac{1}{\sqrt{2}}\pqty{\hat{x}\hat{x}-\hat{y}\hat{y}},\\
+\end{equation}
+
+and
+
+\begin{equation}
+    e_2 = \frac{1}{\sqrt{2}}\pqty{\hat{x}\hat{y}-\hat{y}\hat{x}},
+\end{equation}
+
+where we denote the ``plus'' polarisation as $e_1$ and the ``cross'' polarisation as $e_2$. The power $P$ radiated into a solid angle $\Omega$ is given by
+
+\begin{equation}
+    \dv{P}{\Omega} = \frac{G}{8\pi c^5}\pqty{\pdv[3]{Q_{ij}}{t}e_{ij}}^2,
+\end{equation}
+
+where the components of the mass tensor \tens{Q} are given by
+
+\begin{equation}
+    Q_{ij} = m^\alpha x_{\alpha i}x_{\alpha j}.
+\end{equation}
+
+The total power is obtained reasonably straightforwardly:
+
+\begin{equation}
+    \dv{P}{\Omega} = \frac{G}{8\pi c^5} \left[\pqty{\dv[3]{Q_{ij}}{t}}^2-2n_i \dv[3]{Q_{ij}}{t}n_k\dv[3]{Q_{kj}}{t}-\frac12\pqty{\dv[3]{Q_{ii}}{t}}^2+\frac12\pqty{n_i n_j\dv[3]{Q_{ij}}{t}}^2+\dv[3]{Q_{ii}}{t}n_j n_k\dv[3]{Q_{jk}}{t}\right],
+\end{equation}
+
+with $\hat{n}$ a unit vector in the direction of radiation. The total power is then found by integrating this equation over all directions, viz.
+
+\begin{equation}
+    P = \frac{G}{5c^5}\pqty{\dv[3]{Q_{ij}}{t}\dv[3]{Q_{ij}}{t}-\frac13\dv[3]{Q_{ii}}{t}\dv[3]{Q_{jj}}{t}}.
+\end{equation}
+
+Let us now inject the physics. Suppose the primary star has mass $M_1$ and the secondary mass $M_2$. In the $xy$-plane, with the origin at the center of mass, we can parameterise the positions of the two stars as
+
+\begin{equation}
+    \vec{x}_1 = \begin{bmatrix}d_1\cos\varphi \\ d_1\sin\varphi\end{bmatrix} \qquad \vec{x}_2 = \begin{bmatrix}-d_2\cos\varphi \\ -d_2\sin\varphi\end{bmatrix},
+\end{equation}
+
+with
+
+\begin{equation}
+    d_1 = \frac{m}{m+M}d\quad\text{and}\quad d_2 = \frac{M}{m+M}d,
+\end{equation}
+
+and $\varphi$ our angle parameter. The components of the tensor \tens{Q} are
+
+\begin{align}
+    Q_{xx} &= \mu d^2\cos^2\varphi, \\
+    Q_{yy} &= \mu d^2\sin^2\varphi, \\
+    Q_{xy} = Q_{yx} &= \mu d^2\sin\varphi\cos\varphi,
+\end{align}
+
+with the rest vanishing, and with $\mu$ as the reduced mass. Now, as binary stars obey Kepler's laws, Kepler's orbit equation holds:
+
+\begin{equation}
+    d = \frac{a(1-e^2)}{1+e\cos\dot{\varphi}},
+\end{equation}
+
+whilst the angular velocity is given by
+
+\begin{equation}
+    \dot{\varphi} = \frac{\sqrt{G(M_1+M_2)a(1-e^2)}}{d^2}.
+\end{equation}
+
+We therefore have
+
+\begin{align}
+    \dv[3]{Q_{xx}}{t} &= \gamma (1+e\cos\dot{\varphi})^2(2\sin(2\dot{\varphi})+3e\sin\dot{\varphi}\cos^2\dot{\varphi}), \\
+    \dv[3]{Q_{yy}}{t} &= -\gamma(1+e\cos\dot{\varphi})^2\pqty{2\sin(2\dot{\varphi})+e\sin\dot{\varphi}(1+3\cos^2\dot{\varphi}}, \\
+    \dv[3]{Q_{xy}}{t} = \dv[3]{Q_{yx}}{t} &= -\gamma(1+e\cos\dot{\varphi})^2\pqty{2\cos(2\dot{\varphi})-e\cos\dot{\varphi}(1-3\cos^2\dot{\varphi})},
+\end{align}
+
+where the quantity $\gamma$ is defined as
+
+\begin{equation}
+    \gamma^2 \equiv \frac{4G^3M_1^2M_2^2(M_1+M_2)}{a^5(1-e^2)^5}.
+\end{equation}
+
+The total power is therefore
+
+\begin{equation}
+    P = \frac{8}{15}\frac{G^4}{c^5}\frac{M_1^2M_2^2(M_1+M_2)}{a(1-e^2)^5}(1+e\cos\varphi)^4\pqty{12(1+e\cos\varphi)^2+e^2\sin^2\varphi}.
+\end{equation}
+
+Averaging this over one orbit yields the average power, which we write now as $\ev{\dv{E}{t}}$,
+
+\begin{equation}
+    \ev{\dv{E}{t}} = -\frac{32}{5}\frac{G^4}{c^5}\frac{M_1^2M_2^2(M_1+M_2)}{a^5(1-e^2)^\frac72}\pqty{1+\frac{73}{24}e^2+\frac{37}{96}e^4}.
+    \label{eq:average_power}
+\end{equation}
+
+The average angular momentum is
+
+\begin{equation}
+    \ev{\dv{L}{t}} = -\frac{32}{5}\frac{G^\frac72 M_1^2M_2^2\sqrt{M_1+M_2}}{c^5 a^\frac72 \pqty{1-e^2}^2}\pqty{1+\frac78 e^2}.
+    \label{eq:average_ang_mom}
+\end{equation}
+
+We now write the gravitational energy from the two-body problem,
+
+\begin{align}
+    E &= -\frac{GM_1M_2}{2a} \\
+    \implies \dv{E}{t} &= \frac{GM_1M_2}{2}\frac{1}{a^2}\dv{a}{t}.\label{eq:average_power_2body}
+\end{align}
+
+Define the constant $\beta$ as
+
+\begin{equation}
+    \beta \equiv \frac{64}{5}\frac{G^3M_1M_2\pqty{M_1+M_2}}{c^5}.
+\end{equation}
+
+Now insert \cref{eq:average_power_2body} into \cref{eq:average_power} to obtain
+
+\begin{align}
+    \dv{a}{t} &= -\frac{2a^2}{GM_1M_2}\frac{32}{5}\frac{G^4M_1^2M_2^2\pqty{M_1+M_2}}{c^5a^5\pqty{1-e^2}^\frac72}\pqty{1+\frac{73}{24}e^2+\frac{37}{96}e^4} \\
+    &= -\frac{\beta}{a^3\pqty{1-e^2}^\frac72}\pqty{1+\frac{73}{24}e^2+\frac{37}{96}e^4},
+\end{align}
+
+which is our first equation. The derivation for $\dv{e}{t}$ is more involved. The angular momentum from the two-body problem is
+
+\begin{equation}
+    L^2 = \frac{GM_1^2M_2^2a\pqty{1-e^2}}{M_1+M_2}
+\end{equation}
+
+Implicit differentiation reveals that
+
+\begin{align}
+    2L\dv{L}{t} &= \frac{GM_1^2M_2^2}{M_1+M_2}\dv{}{t} \pqty{a\pqty{1-e^2}} \\
+    &= \frac{GM_1^2M_2^2}{M_1+M_2}\bqty{\dv{a}{t}\pqty{1-e^2}-2ae\dv{e}{t}}.
+\end{align}
+
+Multiplying each side of \cref{eq:average_ang_mom} by $2L$ and substituting this in, we obtain
+
+\begin{align}
+    \frac{GM_1^2M_2^2}{M_1+M_2}\bqty{\dv{a}{t}\pqty{1-e^2}-2ae\dv{e}{t}} &= -L\frac{64}{5}\frac{G^\frac72 M_1^2M_2^2\sqrt{M_1+M_2}}{c^5 a^\frac72 \pqty{1-e^2}^2}\pqty{1+\frac78 e^2} \notag\\
+    \frac{1}{M_1+M_2}\bqty{\dv{a}{t}\pqty{1-e^2}-2ae\dv{e}{t}} &= -\sqrt{\frac{GM_2^2M_1^2a\pqty{1-e^2}}{M_1+M_2}}\frac{64}{5}\frac{G^\frac52 \sqrt{M_1+M_2}}{c^5 a^\frac72 \pqty{1-e^2}^2}\pqty{1+\frac78 e^2} \notag\\
+    \dv{a}{t}\pqty{1-e^2}-2ae\dv{e}{t} &= -\frac{\beta}{a^3 \pqty{1-e^2}^\frac32}\pqty{1+\frac78 e^2} \notag\\
+    2ae\dv{e}{t} &= \frac{\beta}{a^3 \pqty{1-e^2}^\frac32}\pqty{1+\frac78 e^2}+\dv{a}{t}\pqty{1-e^2} \notag\\
+    2ae\dv{e}{t} &= \frac{\beta}{a^3 \pqty{1-e^2}^\frac32}\pqty{1+\frac78 e^2}-\frac{\beta}{a^3\pqty{1-e^2}^\frac52}\pqty{1+\frac{73}{24}e^2+\frac{37}{96}e^4} \notag\\
+    \dv{e}{t} &= \frac{\beta}{a^4 \pqty{1-e^2}^\frac52}\frac{\pqty{1-e^2}\pqty{1+\frac78 e^2}-\pqty{1+\frac{73}{24}e^2+\frac{37}{96}e^4}}{2e} \notag\\
+    &= \frac{\beta}{a^4 \pqty{1-e^2}^\frac52}\bqty{-\frac{19}{12}e^3-\frac{121}{192} e} \notag\\
+    &= -\frac{19}{12}\frac{\beta}{a^4 \pqty{1-e^2}^\frac52}\pqty{e+\frac{121}{304}e^3},
+\end{align}
+
+which is our second equation. Hence we arrive at the coupled differential equations describing the decay of a binary star system:
+
+\begin{tcolorbox}
+    \begin{subequations}
+        \begin{align}
+            \dv{a}{t} &= \frac{-\beta}{a^3\pqty{1-e^2}^\frac72}\pqty{1+\frac{73}{24}e^2+\frac{37}{96}e^4}\label{eq:peters_sma} \\
+            \dv{e}{t} &= -\frac{19}{12}\frac{\beta}{a^4\pqty{1-e^2}^\frac52}\pqty{e+\frac{121}{304}e^3}\label{eq:peters_ecc}
+        \end{align}
+        \label{eq:peters_coupled_equations}
+    \end{subequations}
+\end{tcolorbox}
+
+\subsection{The coalescence time}
+
+The coalescence time is by definition the time it takes for the binary system to merge after the secondary supernova. We can step towards this in a similar way to \citet{Peters:1964}. First, dividing \cref{eq:peters_sma} by \cref{eq:peters_ecc} gives
+
+\begin{equation}
+    \dv{a}{e} = \frac{12}{19}\frac{a}{e}\frac{1+\frac{73}{24}e^2+\frac{37}{96}e^4}{\pqty{1-e^2}\pqty{1+\frac{121}{304}e^2}}
+\end{equation}
+
+We can integrate this however we choose to obtain $a(e)$, namely
+
+\begin{equation}
+    a(e) = \frac{c_0 e^\frac{12}{19}}{\pqty{1-e^2}}\pqty{1+\frac{121}{304}e^2}^\frac{870}{2299}
+    \label{eq:a_functionof_e}
+\end{equation}
+
+with
+
+\begin{equation}
+    c_0 \equiv a_0\pqty{1-e_0^2}e_0^{-\frac{12}{19}}\pqty{1+\frac{121}{304}e_0^2}^{-\frac{870}{2299}}
+    \label{eq:singularity_in_c0_oh_noes}
+\end{equation}
+
+embodying the initial parameters. Now, substituting \cref{eq:a_functionof_e} into \cref{eq:peters_ecc}, we see
+
+\begin{align}
+    \dv{e}{t} &= -\frac{19}{12}\frac{\beta}{a^4\pqty{1-e^2}^\frac52}\pqty{e+\frac{121}{304}e^3} \\
+    &= -\frac{19}{12}\frac{\beta}{\pqty{\frac{c_0 e^\frac{12}{19}}{\pqty{1-e^2}}\pqty{1+\frac{121}{304}e^2}^\frac{870}{2299}}^4\pqty{1-e^2}^\frac52}\pqty{e+\frac{121}{304}e^3} \\
+    &= -\frac{19}{12}\frac{\beta}{c_0^4}\frac{\pqty{1-e^2}^\frac{3}{2} e}{e^\frac{48}{19}}\frac{\pqty{1+\frac{121}{304}e^2}}{\pqty{1+\frac{121}{304}e^2}^\frac{3480}{2299}} \\
+    &= -\frac{19}{12}\frac{\beta}{c_0^4}\frac{\pqty{1-e^2}^\frac{3}{2} e^{-\frac{29}{19}}}{\pqty{1+\frac{121}{304}e^2}^\frac{1181}{2299}} \\
+\end{align}
+
+Now write this as $\dv{t}{e}$ and integrate to get the coalescence time:
+
+\begin{align}
+    \dv{t}{e} &= -\frac{12}{19}\frac{c_0^4}{\beta}\frac{\pqty{1+\frac{121}{304}e^2}^\frac{1181}{2299}}{\pqty{1-e^2}^\frac{3}{2} e^{-\frac{29}{19}}} \\
+    T_\text{c} = \int_0^{T_\text{c}} \dd{t} &= -\frac{12}{19}\frac{c_0^4}{\beta}\int_{e_0}^0\frac{\pqty{1+\frac{121}{304}e^2}^\frac{1181}{2299}}{\pqty{1-e^2}^\frac{3}{2} e^{-\frac{29}{19}}} \dd{e} \\
+    &= \frac{12}{19}\frac{c_0^4}{\beta}\int_0^{e_0}\frac{\pqty{1+\frac{121}{304}e^2}^\frac{1181}{2299}}{\pqty{1-e^2}^\frac{3}{2} e^{-\frac{29}{19}}} \dd{e}
+\end{align}
+
+i.e.,
+
+\begin{tcolorbox}
+    \begin{equation}
+        T_\text{c}(a_0, e_0) = \frac{12}{19}\frac{c_0^4}{\beta}\int_0^{e_0} \frac{e^\frac{22}{19}\pqty{1+\frac{121}{304}e^2}^\frac{1181}{2299}}{\pqty{1-e^2}^\frac32}\dd{e}
+        \label{eq:coalescence_time_formal}
+    \end{equation}
+\end{tcolorbox}
+
+If $e_0=0$ then the orbit is circular, and we immediately see concerning behaviour -- the integral collapses to zero, necessitating a different approach.
+
+One of the critical mistakes here is presuming that $c_0$ in \cref{eq:singularity_in_c0_oh_noes} is valid for all physical eccentricities. In fact, in the limit as $e_0 \to 0$, $c_0$ diverges. We retreat to before this critical assumption, and examine \cref{eq:peters_sma}. In the limiting case of a circular orbit, $e=e_0=0$, so the expression becomes
+
+\begin{equation}
+    \dv{a}{t} = -\frac{\beta}{a^3}.
+\end{equation}
+
+and by separation of variables we obtain
+
+\begin{equation}
+    a^3 \dd{a} = -\beta\dd{t},
+\end{equation}
+
+of which the solution is
+
+\begin{equation}
+    \frac{a^4}{4} = -\beta t + c,
+\end{equation}
+
+for constant $c\in\mathbb{R}$. The boundary conditions are that when $t=0, a=a_0$, and when $t=T_\text{c}, a=0$. Applying the first boundary condition, we have $c=a_0^4$. Hence,
+
+\begin{equation}
+    a(t) = \pqty{a_0^4-4\beta t}^\frac14 ,
+\end{equation}
+
+and imposing our first boundary condition we obtain the coalescence time
+
+\begin{equation}
+    T_\text{c} = \frac{a_0^4}{4\beta}.
+\end{equation}
+
+But if $e\neq 0$, then the orbit is eccentric and the integral must be solved numerically, as no closed form solution exists.
