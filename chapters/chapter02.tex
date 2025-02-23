@@ -75,13 +75,13 @@ where $a$ is the radiation density constant ($a=\SI{7.57e-15}{\erg\per\cubic\cm\
     \kappa = \frac{T^5 a c^3 k_\text{B}}{\pi h^2 \int_0^\infty \frac{\nu^4}{\left(\cosh{\left(\frac{h \nu}{T k_\text{B}} \right)} - 1\right) \kappa_\nu}\, d\nu},
 \end{equation}
 
-though the integral cannot be analytically solved further. On the other hand, $\epsilon$ is obtainable from knowing the nuclear reactions occurring in the star's core:
+though the integral cannot be analytically solved further. On the other hand, $\epsilon$ is obtainable from knowing the nuclear reactions occurring in the star's core, namely
 
 \begin{equation}
     \epsilon = \sum_{i}^N \text{energy output of reaction } i.
 \end{equation}
 
-\JanNote{the energy generation rates come from nuclear physics! normally from calculations and direct measurement - e.g. the NACRE reaction rates}
+The reaction rates and energy outputs are typically inferred from empirical data; we take the interpolation in temperature from \citet{Caughlan:1988}, and correct the rates to approximate the cross-sections of \citet{Bahcall:1992, Bahcall:1995}.
 
 All told, in the simplest sense, the internal \textit{structure} of the star can be modelled by hand by solving \cref{eq:stellar_structure} from $m=0$ to $m=M$.
 
@@ -159,7 +159,7 @@ In this section, we examine the three major regimes of stellar evolution for sin
 
 \subsubsection{Low-Mass Stars: \texorpdfstring{$\SI{0.08}{\msun} < M < \SI{2}{\msun}$}{Stars with between 0.08 and 2 times the mass of the sun}}\label{sec:low_mass_stars}
 
-Stars below $\approx\SI{0.5}{\msun}$ do not ignite helium, and become helium \glspl{wd}. Above this, they ignite helium degenerately in their cores, leading to thermal runaway. The star can peak at a luminosity close to $10^{11} L_\odot$ (approximately 100 times the peak luminosity of SN 1987A, per Figure 5 of \citet{Arnett:1989}). However, this peak in luminosity is attributable to nuclear fusion in the core, and the energy does not reach the surface, let alone escape into the \gls{ism} -- rather, it is absorbed into the outer layers of the star. During this extremely brief thermal runaway, the luminosity begins to settle and the star is able to continue evolving. Models of low mass stars fail at this stage and care is required to evolve them. This phenomena is called the \textit{helium flash} and is discussed further in \cref{sec:numerical_methods_stars}.
+Stars below $\approx\SI{0.5}{\msun}$ do not ignite helium, and become helium \glspl{wd}. Above this, they ignite helium degenerately in their cores, leading to thermal runaway. The star can peak at a luminosity close to $10^{11} L_\odot$ (approximately 100 times the peak luminosity of SN 1987A, per Figure 5 of \citet{Arnett:1989}). However, this peak in luminosity is attributable to nuclear fusion in the core, and the energy does not reach the surface, let alone escape into the \gls{ism} -- rather, it is absorbed into the outer layers of the star. During this extremely brief thermal runaway, the luminosity begins to settle and the star is able to continue evolving. Models of low mass stars fail at this stage and care is required to evolve them. This phenomena is called the \textit{helium flash} and is discussed further in \cref{sec:numerical_instabilities}.
 
 After the ignition of helium, these stars cross the so-called Hertzsprung Gap -- the region where very few stars are observed empirically. This region is bounded (on a colour-magnitude diagram, which is a transform of the HR diagram) by the points $\pqty{M_v, B-V}=\left\{\pqty{2,0.5}, \pqty{-7, 0.1}, \pqty{-6, 1.6}\right\}$ \citep{Hoyle:1960}, where $M_v$ is the V-band magnitude (magnitude in the visual band), and $B-V$ is the colour index of the star. The phenomenon of a gap existing is attributable to the fact that stars cross this gap exceedingly quickly: whereas it spends $\sim90\%$ of its life on the main sequence, it spends $\sim2\%$ of its life crossing the Hertzsprung gap \citep{Hoyle:1960}.
 
@@ -179,7 +179,7 @@ mpeded. As the star ascends the \gls{agb}, the core becomes helium-exhausted and
 
 \subsubsection{Massive Stars: \texorpdfstring{$\SI{8}{\msun} < M < \SI{80}{\msun}$}{Stars with between 8 and 80 times the mass of the sun}}\label{sec:massive_stars}
 
-Massive stars are the key focal objects of this thesis, and in many ways offer some of the most exciting phenomena we can probe. In \cref{fig:hr_diagram_massive_stars} we show the variety of evolution that this regime has, alongside the \gls{zams} track from \SI{8}{\msun} to \SI{90}{\msun}. The key features are as follows. When a massive star exhausts its supply of hydrogen in its core and evolves off the main sequence to begin burning helium, it generally bypasses the Hertzsprung gap and evolves up the \gls{rgb}. From here, stars below $\approx\SI{15}{\msun}$ generally engage in a ``blue loop'', where is remains at a roughly constant radius whilst increasing in temperature, before cooling at a slightly higher luminosity. The question of what physical process powers a blue loop is unanswered \citep{Zhao:2023}, \JanNote{we know, read Walmswell \& Eldridge (201x?)} though this thesis is unconcerned with their generation. We note that our models include blue loops, as shown in \cref{fig:hr_diagram_massive_stars} and \cref{fig:hr_diagram_8msun_star}.
+Massive stars are the key focal objects of this thesis, and in many ways offer some of the most exciting phenomena we can probe. In \cref{fig:hr_diagram_massive_stars} we show the variety of evolution that this regime has, alongside the \gls{zams} track from \SI{8}{\msun} to \SI{90}{\msun}. The key features are as follows. When a massive star exhausts its supply of hydrogen in its core and evolves off the main sequence to begin burning helium, it generally bypasses the Hertzsprung gap and evolves up the \gls{rgb}. From here, stars below $\approx\SI{15}{\msun}$ generally engage in a ``blue loop'', where is remains at a roughly constant radius whilst increasing in temperature, before cooling at a slightly higher luminosity. This is due to excess helium being burned in shells above the core \citep{Walmswell:2015}. We note that our models include blue loops, as shown in \cref{fig:hr_diagram_massive_stars} and \cref{fig:hr_diagram_8msun_star}.
 
 \begin{figure}[!htbp]
     \centering
@@ -195,64 +195,66 @@ Massive stars are the key focal objects of this thesis, and in many ways offer s
     \label{fig:hr_diagram_8msun_star}
 \end{figure}
 
-\subsection{Relativistic corrections}\label{sec:relativity_exists}
+% \subsection{Relativistic corrections}\label{sec:relativity_exists}
 
-\epigraph{There's a trick you can use in mathematics called ``not worrying about it''}{Matt Parker}
+% \epigraph{There's a trick you can use in mathematics called ``not worrying about it''}{Matt Parker}
 
-This analysis has presumed Newtonian mechanics. However, the mass of stars puts them formally into the general relativistic regime, and thus strictly speaking we should treat this as a problem in full GR. In this approach, we would solve the Einstein Field Equations for the interior of the star:
+% This analysis has presumed Newtonian mechanics. However, the mass of stars puts them formally into the general relativistic regime, and thus strictly speaking we should treat this as a problem in full GR. In this approach, we would solve the Einstein Field Equations for the interior of the star:
 
-\begin{equation}
-    G_{\mu\nu} + \Lambda g_{\mu\nu} = \kappa T_{\mu\nu},
-\end{equation}
+% \begin{equation}
+%     G_{\mu\nu} + \Lambda g_{\mu\nu} = \kappa T_{\mu\nu},
+% \end{equation}
 
-with cosmological constant $\Lambda$, stress-energy $T_{\mu\nu}$, and the Einstein tensor $G_{\mu\nu}$ given by
+% with cosmological constant $\Lambda$, stress-energy $T_{\mu\nu}$, and the Einstein tensor $G_{\mu\nu}$ given by
 
-\begin{align}
-    G_{\mu\nu} &= R_{\mu\nu}-\frac12 g_{\mu\nu}R \\
-    &= \tensor{R}{^\lambda_{\mu\lambda\nu}}-\frac12 g_{\mu\nu}\tensor{R}{^\sigma_\sigma} \\
-    &= \tensor{R}{^\lambda_{\mu\lambda\nu}}-\frac12 g_{\mu\nu}g^{\sigma\gamma}R_{\sigma\gamma} \\
-    &= \sum_\lambda\tensor{R}{^\lambda_{\mu\lambda\nu}}-\frac12 g_{\mu\nu}\sum_\sigma\sum_\gamma\sum_\alpha g^{\sigma\gamma}\tensor{R}{^\alpha_{\sigma\alpha\gamma}}\label{eq:reintroduce_summands} \\
-    &= \sum_\lambda\pqty{\tensor{\Gamma}{^\lambda_{\mu\nu,\lambda}}-\tensor{\Gamma}{^\lambda_{\mu\lambda,\nu}}+\sum_\xi\tensor{\Gamma}{^\lambda_{\xi\lambda}}\tensor{\Gamma}{^ \xi_{\mu\nu}}-\sum_\xi\tensor{\Gamma}{^\lambda_{\xi\nu}}\tensor{\Gamma}{^\xi_{\mu\lambda}}} \notag\\
-    &\phantom{=}-\frac12 g_{\mu\nu}\sum_\sigma\sum_\gamma\sum_\alpha g^{\sigma\gamma}\pqty{\tensor{\Gamma}{^\alpha_{\sigma\gamma,\alpha}}-\tensor{\Gamma}{^\alpha_{\sigma\alpha,\gamma}}+\sum_\xi\tensor{\Gamma}{^\alpha_{\xi\alpha}}\tensor{\Gamma}{^\xi_{\sigma\gamma}}-\sum_\xi\tensor{\Gamma}{^\alpha_{\xi\gamma}}\tensor{\Gamma}{^\xi_{\sigma\alpha}}},
-\end{align}
+% \begin{align}
+%     G_{\mu\nu} &= R_{\mu\nu}-\frac12 g_{\mu\nu}R \\
+%     &= \tensor{R}{^\lambda_{\mu\lambda\nu}}-\frac12 g_{\mu\nu}\tensor{R}{^\sigma_\sigma} \\
+%     &= \tensor{R}{^\lambda_{\mu\lambda\nu}}-\frac12 g_{\mu\nu}g^{\sigma\gamma}R_{\sigma\gamma} \\
+%     &= \sum_\lambda\tensor{R}{^\lambda_{\mu\lambda\nu}}-\frac12 g_{\mu\nu}\sum_\sigma\sum_\gamma\sum_\alpha g^{\sigma\gamma}\tensor{R}{^\alpha_{\sigma\alpha\gamma}}\label{eq:reintroduce_summands} \\
+%     &= \sum_\lambda\pqty{\tensor{\Gamma}{^\lambda_{\mu\nu,\lambda}}-\tensor{\Gamma}{^\lambda_{\mu\lambda,\nu}}+\sum_\xi\tensor{\Gamma}{^\lambda_{\xi\lambda}}\tensor{\Gamma}{^ \xi_{\mu\nu}}-\sum_\xi\tensor{\Gamma}{^\lambda_{\xi\nu}}\tensor{\Gamma}{^\xi_{\mu\lambda}}} \notag\\
+%     &\phantom{=}-\frac12 g_{\mu\nu}\sum_\sigma\sum_\gamma\sum_\alpha g^{\sigma\gamma}\pqty{\tensor{\Gamma}{^\alpha_{\sigma\gamma,\alpha}}-\tensor{\Gamma}{^\alpha_{\sigma\alpha,\gamma}}+\sum_\xi\tensor{\Gamma}{^\alpha_{\xi\alpha}}\tensor{\Gamma}{^\xi_{\sigma\gamma}}-\sum_\xi\tensor{\Gamma}{^\alpha_{\xi\gamma}}\tensor{\Gamma}{^\xi_{\sigma\alpha}}},
+% \end{align}
 
-where there is still tensorial shorthand:
+% where there is still tensorial shorthand:
 
-\begin{equation}
-    \tensor{\Gamma}{^\gamma_{\beta\mu}} \equiv \frac12\sum_\alpha g^{\alpha\gamma}\pqty{g_{\alpha\beta,\mu}+g_{\alpha\mu,\beta}-g_{\beta\mu,\alpha}},
-\end{equation}
+% \begin{equation}
+%     \tensor{\Gamma}{^\gamma_{\beta\mu}} \equiv \frac12\sum_\alpha g^{\alpha\gamma}\pqty{g_{\alpha\beta,\mu}+g_{\alpha\mu,\beta}-g_{\beta\mu,\alpha}},
+% \end{equation}
 
-and the comma-derivative notation is
+% and the comma-derivative notation is
 
-\begin{equation}
-    \phi_{,\mu} \equiv \pdv{\phi}{x^\mu},
-\end{equation}
+% \begin{equation}
+%     \phi_{,\mu} \equiv \pdv{\phi}{x^\mu},
+% \end{equation}
 
-such that, for example,
+% such that, for example,
 
-\begin{equation*}
-    g_{\alpha\beta,\mu} = \pdv{g_{\alpha\beta}}{x^\mu}.
-\end{equation*}
+% \begin{equation*}
+%     g_{\alpha\beta,\mu} = \pdv{g_{\alpha\beta}}{x^\mu}.
+% \end{equation*}
 
-In \cref{eq:reintroduce_summands}, we explicitly reinsert the summation symbols to illustrate the number of simultaneous summations that are taking place implicitly. As one can see, this reasonably simple expression balloons quickly into something intractable by hand and time-consuming to evaluate computationally. Although the metric tensor is generally four-dimensional,\footnote{And thus the summation indices run from 1 to 4} such as the Friedmann-Lema\^itre-Robertson-Walker metric \citep{Friedmann:1922, Lemaitre:1931, Robertson:1935, Walker:1937} describing the expansion of the Universe,
+% In \cref{eq:reintroduce_summands}, we explicitly reinsert the summation symbols to illustrate the number of simultaneous summations that are taking place implicitly. As one can see, this reasonably simple expression balloons quickly into something intractable by hand and time-consuming to evaluate computationally. Although the metric tensor is generally four-dimensional,\footnote{And thus the summation indices run from 1 to 4} such as the Friedmann-Lema\^itre-Robertson-Walker metric \citep{Friedmann:1922, Lemaitre:1931, Robertson:1935, Walker:1937} describing the expansion of the Universe,
 
 
-\begin{equation*}
-    g_{\mu\nu} = \begin{pmatrix}
-            -1 & 0 & 0 & 0 \\
-            0 & a(t)^2 & 0 & 0 \\
-            0 & 0 & r^2 & 0 \\
-            0 & 0 & 0 & r^2\sin^2\theta
-    \end{pmatrix},
-\end{equation*}
+% \begin{equation*}
+%     g_{\mu\nu} = \begin{pmatrix}
+%             -1 & 0 & 0 & 0 \\
+%             0 & a(t)^2 & 0 & 0 \\
+%             0 & 0 & r^2 & 0 \\
+%             0 & 0 & 0 & r^2\sin^2\theta
+%     \end{pmatrix},
+% \end{equation*}
 
-it often lacks a closed form, especially on large-scale chaotic behaviour that cannot be locally ``washed out'' (such as how on Universal scales, individual stars can be ignored to describe the homogeneity and isotropy of the Universe), and is obtained via numerical methods.
+% it often lacks a closed form, especially on large-scale chaotic behaviour that cannot be locally ``washed out'' (such as how on Universal scales, individual stars can be ignored to describe the homogeneity and isotropy of the Universe), and is obtained via numerical methods.
 
-This is also not considering complications of writing the stress-energy tensor $T_{\mu\nu}$, which may have its own complex form (again, assuming a closed-form solution \textit{exists}) determined via fluid-mechanical processes. All told, there are 64 equations to be solved instead of 4. In addition, the 64 solutions are ``worse'' to solve: harder to integrate by hand, and requiring greater time complexity. Numerical relativity codes typically simulate one star for the order of kiloseconds of its lifetime \citep[see, for an example,][]{Ud-doula:2013}, and even the most efficient codes take longer than our codes to run. For instance, the \codename{Phantom} \gls{mhd} code \citep{Price:2018} can take several days to run high-resolution models. Consequently, for the number of stars we wish to simulate, we choose to adopt a Newtonian framework.
+% This is also not considering complications of writing the stress-energy tensor $T_{\mu\nu}$, which may have its own complex form (again, assuming a closed-form solution \textit{exists}) determined via fluid-mechanical processes. All told, there are 64 equations to be solved instead of 4. In addition, the 64 solutions are ``worse'' to solve: harder to integrate by hand, and requiring greater time complexity. Numerical relativity codes typically simulate one star for the order of kiloseconds of its lifetime \citep[see, for an example,][]{Ud-doula:2013}, and even the most efficient codes take longer than our codes to run. For instance, the \codename{Phantom} \gls{mhd} code \citep{Price:2018} can take several days to run high-resolution models. Consequently, for the number of stars we wish to simulate, we choose to adopt a Newtonian framework.
 
 \subsection{Stellar Atmospheres}
 
-As a final note in the evolution of a single star, we must briefly address what occurs about the photosphere of the star. A star is not a planet -- there is no firm boundary demarcating the inner of a star from the outer. The common definition of the ``surface'' of a star is the surface of last scattering (photosphere), which is the point radially in which the mean free path $\ell$ of a photon emitted from the core of the star becomes meaningfully long (internally, $\ell_\gamma\sim\SI{2}{\cm}$, externally, $\ell_\gamma\sim\SI{4.4}{\pc}$).\footnote{The mean free path is a function of the particle under consideration: for a neutrino, internally $\ell_\nu\sim\SI{3.68}{\pc}$ and externally $\ell_\nu\sim\SI{81}{\ronna\pc}\sim 3\times10^{18}$ times the diameter of the observable Universe.} However, outflows from the star as well as the potential interaction of a partner in a common-envelope event mean that this surface is not necessarily firm: there is no sharp turn from stellar material to empty space. Thus, the simulation of stellar atmospheres is of interest to the stellar astrophysicist. However, this introduces another rather large layer of complexity. The synthesis of a stellar spectra, for example, is not a trivial task, as well as simulating the matter content. This thesis is concerned with detailed modelling of the stellar \textit{interior}, and thus the atmosphere is an interesting sidenote, but one we shall not pursue.
+As a final note in the evolution of a single star, we must briefly address what occurs about the photosphere of the star. A star is not a planet -- there is no firm, opaque boundary demarcating the inner of a star from the outer. The common definition of the ``surface'' of a star is the surface of last scattering (equivalently, the photosphere), which is the point radially in which the mean free path $\ell$ of a photon emitted from the core of the star becomes meaningfully long (internally, $\ell_\gamma\sim\SI{2}{\cm}$, externally, $\ell_\gamma\sim\SI{4.4}{\pc}$).\footnote{The mean free path is a function of the particle under consideration: for a neutrino, internally $\ell_\nu\sim\SI{32}{\pc}$ and externally $\ell_\nu\sim\SI{81}{\ronna\pc}\sim 3\times10^{18}$ times the diameter of the observable Universe.} However, outflows from the star as well as the potential interaction of a partner in a common-envelope event mean that this surface is not necessarily firm: there is no sharp turn from stellar material to empty space. Thus, the simulation of stellar atmospheres is of interest to the stellar astrophysicist.
+
+However, this introduces another rather large layer of complexity. The synthesis of stellar spectra is not a trivial task, even without considering the complexity of evolving the star simultaneously. \citet{Groh:2014} is one of the very few instances of coupled spectroscopic calculations with evolutionary calculations, which only evolved a single star. Moreover, this thesis is concerned with detailed modelling of the stellar \textit{interior}, and thus the atmosphere is an interesting sidenote, but one we shall not pursue.
 
 \section{Supernovae}
 
