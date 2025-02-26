@@ -44,8 +44,16 @@
     \fi
     \frac{{\mathrm{d}}^{\@dv@exp} #2}{{\mathrm{d}} #3^{\@dv@exp}}}%
 }
+
+\newcommand{\dd}[2][1]{\ensuremath{%
+    \ifnum#1=1
+        \def\@dd@exp{}
+    \else
+        \def\@dd@exp{#1}
+    \fi
+    {\mathrm{d}}^{\@dd@exp} #2}%
+}
 \makeatother
-\newcommand{\dd}[1]{\mathrm{d}{#1}}
 \newcommand{\mat}[2][ij]{\mathbf{#2}_{#1}}
 \newcommand{\eval}[2]{\ensuremath{\left.#1\right|_{#2}}}
 \newcommand{\ev}[1]{\ensuremath{\left\langle#1\right\rangle}}
