@@ -52,24 +52,43 @@
 
 % \def\supervisorcopy{}
 
+\makeatletter
+\newcommand{\coverimage}[1]{\gdef\@coverimage{#1}}
+\newcommand{\coverattr}[1]{\gdef\@coverattr{#1}}
+\makeatother
+
+\title{The Next Generation: Refining the Standard Population Synthesis Model to Better Predict Stellar Population Properties}
+\author{Sean Richards}
+\date{August 2024}
+
+% \coverimage{images/Alt_Cover_Page.png}
+% \coverattr{The Whirlpool Galaxy (M51). Image is by NASA and released into the public domain: \url{https://images.nasa.gov/details/GSFC_20171208_Archive_e001925}}
+
+% \coverimage{images/Cover.png}
+% \coverattr{The mass profile of a \SI{10}{\msun} star from zero-age main sequence until the end of the asymptotic giant branch. Author's own work.}
+
+\coverimage{images/CoverPage_MW.png}
+\coverattr{The Milky Way over Ulu\underline{r}u. Image by Eddie Yip, released under a CC-BY-SA license: \url{https://www.flickr.com/photos/eddiextcteam/28311312421/}. Image taken on Arrernte Country.}
+
 \definecolor{main-accent}{RGB}{0,45,97}
 \definecolor{gray75}{gray}{0.75}
 \definecolor{block-gray}{HTML}{D81E5B}
 
 \tcbuselibrary{minted}
 
+\makeatletter
 \AddToHookNext{shipout/background}{
   \begin{tikzpicture}[remember picture,overlay]
   \node at (current page.center) {
     % \includegraphics[width=\paperwidth]{images/Cover.png}
-    \includegraphics[width=\paperwidth]{images/Alt_Cover_Page.jpg}
+    % \includegraphics[width=\paperwidth]{images/Alt_Cover_Page.jpg}
+    \includegraphics[width=\paperwidth]{\@coverimage}
   };
   \end{tikzpicture}
 }
 
-\title{The Next Generation: Refining the Standard Population Synthesis Model to Better Predict Stellar Population Properties}
-\author{Sean Richards}
-\date{August 2024}
+\AtEndEnvironment{abstract}{\begin{center}{\small\textbf{Cover Image:}~\@coverattr}\end{center}}
+\makeatother
 
 % \bibliographystyle{apalike}
 \setcitestyle{authoryear}

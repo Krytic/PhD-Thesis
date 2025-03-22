@@ -312,6 +312,9 @@ TSWLatexianTemp*
 # Uncomment the next line to have this generated file ignored.
 #*Notes.bib
 
+log
+TODOLIST
+
 # PhD Website Files
 quotes.html
 TOC.html

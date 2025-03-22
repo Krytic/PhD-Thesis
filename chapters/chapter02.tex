@@ -92,13 +92,13 @@ All told, in the simplest sense, the internal \textit{structure} of the star can
 A star contains at its core a complex nuclear furnace. Since stars are born in hydrogen-rich regions of space and obtain high enough pressures in the core to ignite fusion, the star will be sustained by the burning of predominantly hydrogen and helium. We thus group the elements into hydrogen, helium, and metals (which we define as anything with atomic number $\geq3$, i.e., lithium and heavier elements). It is convenient to speak of the mass fraction of the element, i.e., the fraction by mass of a star that is a certain element. For our purposes, this is expressible as
 
 \begin{equation}
-	X+Y+\sum_{i=0}^{115} \mathcal{Z}_i = 1, \label{eq:mass_fracs}
+	X+Y+\sum_{i=3}^{118} \sum_{j} {}^{i}_{j}\text{X} = 1, \label{eq:mass_fracs}
 \end{equation}
 
-where $X$ is the mass fraction of hydrogen, $Y$ of helium, and $\mathcal{Z}_i$ as the metal\footnote{It is custom in astronomy to refer to anything with an atomic number greater than 2 as a metal, rather than the conventional definition of a material conductive at absolute zero, including most of the d-block, s-block, f-block, and about half of the p-block on the periodic table.} with atomic number $i+3$. \JanNote{What about isotopes?} When speaking about the chemical composition of a star it is also convenient to speak of the \textit{metallicity}, the fraction at \gls{zams} of the star that is metal. For this, we define the metallicity as
+where $X$ is the mass fraction of hydrogen, $Y$ of helium, and ${}^{i}_{j}\text{X}$ as the metal\footnote{It is custom in astronomy to refer to anything with an atomic number greater than 2 as a metal, rather than the conventional definition of a material conductive at absolute zero, including most of the d-block, s-block, f-block, and about half of the p-block on the periodic table.} with atomic number $i$ and mass number $j$. When speaking about the chemical composition of a star it is also convenient to speak of the \textit{metallicity}, the fraction at \gls{zams} of the star that is metal. For this, we define the metallicity as
 
 \begin{equation}
-    Z \equiv \sum_{i=0}^{115} \mathcal{Z}_i,
+    Z \equiv \sum_{i=3}^{118} \sum_{j} {}^{i}_{j}\text{X},
 \end{equation}
 
 such that \cref{eq:mass_fracs} becomes
@@ -106,6 +106,32 @@ such that \cref{eq:mass_fracs} becomes
 \begin{equation}
     X+Y+Z = 1.
 \end{equation}
+
+Of note, abundances are not always in the literature referred to in this fashion. In some works, such as \citet{Asplund:2021}, abundances are reported in the form $\mathcal{X}_i=12+\log_{10}\left(\nicefrac{\text{X}_i}{\text{H}}\right)$. To convert between the two, the relationship
+
+\begin{equation}
+    \mathcal{X}_i = 12+\log_{10}\left(\frac{\frac{Z\times X_{i, \text{init}}}{56}}{0.75-2.5Z}\right)
+\end{equation}
+
+is employed, where $X_{i,\text{init}}$ is the initial mass fraction of a given element (which we take from \citealt{Grevesse:1993}).
+
+\begin{table}[!htbp]
+    \centering
+    \begin{tabular}{cc|cc}
+        \toprule
+        Element & Initial abundance & Element & Initial abundance \\
+        \midrule
+        Hydrogen & 0.7   & Neon      & 0.099 \\
+        Carbon   & 0.173 & Magnesium & 0.038 \\
+        Nitrogen & 0.053 & Silicon   & 0.080 \\
+        Oxygen   & 0.482 & Iron      & 0.072 \\
+        \hline
+
+        \hline
+    \end{tabular}
+    \caption{caption here}
+    \label{tab:tablename}
+\end{table}
 
 % \subsubsection{hydrogen burning: the \acrshort{pp_chain}}
 
@@ -155,7 +181,7 @@ such that \cref{eq:mass_fracs} becomes
 
 \subsection{Evolutionary Pathways}
 
-In this section, we examine the three major regimes of stellar evolution for single-stars: low-mass (\cref{sec:low_mass_stars}), intermediate-mass (\cref{sec:intermediate_mass_stars}), and massive stars (\cref{sec:massive_stars}). We do not consider stars about $M_\text{ZAMS}\approx\SI{80}{\msun}$ in this thesis \todo{why?}
+In this section, we examine the three major regimes of stellar evolution for single-stars: low-mass, intermediate-mass, and massive stars. We do not consider stars above $M_\text{ZAMS}\approx\SI{80}{\msun}$ in this thesis \todo{why?}
 
 \subsubsection{Low-Mass Stars: \texorpdfstring{$\SI{0.08}{\msun} < M < \SI{2}{\msun}$}{Stars with between 0.08 and 2 times the mass of the sun}}\label{sec:low_mass_stars}
 
@@ -698,7 +724,7 @@ Our mass loss rate for each star is constructed from these four terms as
 
 \subsubsection{Wind mass-loss}
 
-Wind mass loss computations are (generally) performed using a mix of theoretical and empiricial mass-loss rate prescriptions of \cite{De_jager:1988} and \citet{Vink:2001}. The precise scheme is detailed in \citet{Eldridge:2017}.\footnote{In other codes such as \textsc{Mesa}, this is referred to as the ``Dutch'' mass loss prescription owing to the nationality of the authors of \citet{De_jager:1988, Nugis:2000a, Vink:2001}.} There are two critical modifications we make to their scheme.
+Wind mass loss computations are (generally) performed using a mix of theoretical and empiricial mass-loss rate prescriptions of \cite{De_jager:1988} and \citet{Vink:2001}. The precise scheme is detailed in \citet{Eldridge:2017}.\footnote{In other codes such as \textsc{Mesa}, this is referred to as the ``Dutch'' mass loss prescription owing to the nationality of the authors of \citet{De_jager:1988, Nugis:2000, Vink:2001}.} There are two critical modifications we make to their scheme.
 
 The first modification surrounds the transition into the \gls{wr} regime. Traditionally this has been a sharp transition when the surface hydrogen mass fraction becomes less than 0.4 and the surface temperature is above \SI[print-unity-mantissa=false]{1e4}{\kelvin}. This is a reasonable approximation, though if a star reaches this phase and is \textit{not} yet a \gls{wr} star, the code will fail. To account for this we gradually turn on these enhanced \gls{wr} rates when this condition approaches, smoothing the transition.
 
@@ -722,7 +748,7 @@ Matter exceeding $\mathcal{L}_2$ (the outer Lagrange point) does not currently r
 
 \subsubsection{Accretion}
 
-Our accretion rates are taken from \citet{Bondi:1944, Hurley:2002}, and limits the accretion rate by the thermal timescale of the star. The prescription is that
+Our wind accretion and \gls{rlof} accretion rates are taken from \citet{Bondi:1944, Hurley:2002}, and limits the accretion rate by the thermal timescale of the star. The prescription is that
 
 \begin{equation}
     \dot{M}_\text{acc} = \min\left(\dot{M}_\text{RLOF}, \frac{M}{T_\text{KH}}\mathcal{R}\left(1-\frac{\omega}{0.8\omega_\text{crit}}\right)\right),
@@ -736,7 +762,7 @@ where $\omega$ and $\omega_\text{crit}$ are the spin rate and critical spin rate
 
 where $m_k$ is the mass internal to meshpoint $k$ (sim. for $r_k$), and a subscript of c refers to the central meshpoint. It is assumed that the central meshpoint sits atop a solid sphere, hence $\frac25$ as its prefactor.
 
-\subsubsection{Bondi-Hoyle accretion}
+\subsubsection{Bondi-Hoyle wind accretion}
 
 Bondi-Hoyle accretion for a circular orbit is given by
 
@@ -765,10 +791,10 @@ Generalising this to an eccentric orbit causes the first argument in \cref{eq:bo
 ``If you wish.''\\
 ``I don’t wish. Get on with the story.''}{Rhythm of War}{Brandon Sanderson}
 
-After a supernova, the star leaves behind its core as a compact remnant. Generally, these are either white dwarves, black holes, or neutron stars. The interior structure of each is either complicated or, in the case of black holes, impossible to observationally probe without violating causality. Their orbital motions are now deterministic from four initial parameters: $m_1, m_2, a$, and $e$. Motion is now wholly determined by the emission of gravitational radiation through (detectable) gravitational waves. The pertinent equations of motion are given by \citet{Peters:1964}, namely,
+After a supernova, the star leaves behind its core as a compact remnant. Generally, these are either black holes or neutron stars. The interior of a neutron star is reasonably complex, with superfluid neutrons within the crust \citep{Lattimer:2001} and a latticed core-crust interface \citep{Rueda:2014}, with ``pasta phases'' at the interface \citep{Zdunik:2017}. The interior of a black hole is impossible to observationally probe without violating causality. Their orbital motions are now deterministic from four initial parameters: $m_1, m_2, a$, and $e$. Given their high masses and small radii, we may approximate them as point masses, and thus their motion is now wholly determined by the emission of gravitational radiation through (detectable) gravitational waves. The pertinent equations of motion are given by \citet{Peters:1964}, namely,
 
 \begin{align}
-    \dv{a}{t} &= \frac{-\beta}{a^3\left(1-e^2\right)^\frac72}\left(1+\frac{73}{24}e^2+\frac{37}{96}e^4\right),\text{ and} \label{eq:dadt}\\
+    \dv{a}{t} &= \frac{-\beta}{a^3\left(1-e^2\right)^\frac72}\left(1+\frac{73}{24}e^2+\frac{37}{96}e^4\right), \label{eq:dadt}\\
     \dv{e}{t} &= -\frac{19}{12}\frac{\beta}{a^4\left(1-e^2\right)^\frac52}\left(e+\frac{121}{304}e^3\right),\label{eq:dedt}
 \end{align}
 
@@ -850,9 +876,9 @@ Having now discussed the evolution of stars from a theoretical perspective, it b
 
 \begin{enumerate}
     \item The Cambridge \codename{stars} code (\cref{chap:numerical_methods_stars}), originally developed by Peter Eggleton, which we use to solve the equations of stellar structure and evolution,
-    \item The \codename{Tui} code (\cref{chap:numerical_methods_tui}), developed by Jan Eldridge, which performs our binary population synthesis,
+    \item The \codename{Tui} code (\cref{chap:numerical_methods_tui}), developed by Jan Eldridge, which performs our binary population synthesis of gravitational wave sources,
     \item The \codename{Kaitiaki} code (\cref{chap:numerical_methods_kaitiaki}), developed for this thesis, which is our grid-manager code and allows modification of the input parameters to the Cambridge \codename{stars} code programmatically, and
-    \item The \codename{Takahe} code (\cref{chap:numerical_methods_takahe}), developed by Sean Richards for \citet{Richards:2021}, which is our binary compact remnant evolution code.
+    \item The \codename{Takahe} code (\cref{chap:numerical_methods_takahe}), developed by Sean Richards for \citet{Richards:2021}, which evolves the orbits of our binary compact objects.
 \end{enumerate}
 
 \subsection{The Cambridge \codename{stars} code}\label{chap:numerical_methods_stars}
@@ -865,16 +891,16 @@ Having now discussed the evolution of stars from a theoretical perspective, it b
 
 \mediaepigraph{And through the night, behind the wheel, the mileage clicking west\\I think upon Mackenzie, David Thompson and the rest\\Who cracked the mountain ramparts and did show a path for me\\To race the roaring Fraser to the sea.}{Northwest Passage}{Stan Rogers}
 
-Stellar modelling became a field of active research in the 1950s. Prior to the invention of the computer, a model was treated as a mathematical process and thus was computed -- often labouriously -- by hand. For instance, in \citet{Eggleton:1967}, Eggleton writes that
+In 1959, Louis George Henyey published his method for automatic stellar evolution \citep{Henyey:1959}. Prior to this -- and the widespread disperal of the computer -- a model was treated as a mathematical process and thus was computed, often labouriously, by hand. For instance, in \citet{Eggleton:1967}, Eggleton writes that
 
 \begin{fanciful}
-    Since we have seen in Section 3 that the structure of the flame zone can be obtained independently (almost) of the rest of the star, it is reasonable to expect that instabilities of the type considered by Schwarzchild \& H\"arm can also be examined in this way, so that the considerable labour of computing the structure of an entire star can be avoided.
+    Since we have seen in Section 3 that the structure of the flame zone can be obtained independently (almost) of the rest of the star, it is reasonable to expect that [thermal] instabilities of the type considered by Schwarzchild \& H\"arm can also be examined in this way, so that the considerable labour of computing the structure of an entire star can be avoided.
     \begin{flushright}
         -- \citet{Eggleton:1967}
     \end{flushright}
 \end{fanciful}
 
-The Cambridge \codename{stars} code was one of the first detailed stellar evolution codes to be written, though initially it only modelled one star in detail. To model a binary system, tweaks were made whereupon the primary would be modelled in detail whilst approximating the secondary with the equations of \citet{Hurley:2002} until the primary supernova, at which point the secondary would be evolved in detail. This had its merits; notably computation time was saved, and the results were generally accurate anyway.
+The Cambridge \codename{stars} code was one of the earliest detailed stellar evolution codes to be written, though initially it only modelled one star in detail. To model a binary system, tweaks were made whereupon the primary would be modelled in detail whilst approximating the secondary with the equations of \citet{Hurley:2002} until the primary supernova, at which point the secondary would be evolved in detail. This had its merits; notably computation time was saved, and the results were generally accurate anyway.
 
 However, \citet{Stancliffe:2009} introduced detailed modelling of \textit{both} stars in a binary system into the \codename{stars} code -- that is, the interiors of both stars were computed in detail, alongside the simualtaneous computation of the orbital parameters. Since then, a wide array of improvements have been made to the numerical stability of the code, as well as introducing or refining new physics.
 
@@ -882,7 +908,7 @@ There are four variants of this code:
 
 \begin{enumerate}
     \item The Cambridge \codename{stars} code, which is the version originally developed by Peter Eggleton and originally described in \citet{Eggleton:1971}. This version was originally only capable of solving the equations for a single star.
-    \item The \codename{Eldridge stars} code described in \citet{Eldridge:2004, Eldridge:2004a, Eldridge:2017}, which is the version used to generate the fiducial \gls{bpass} v2 grids. This version models the primary in detail while approximating the secondary using the equations of \citet{Hurley:2002}.
+    \item The \codename{Eldridge stars} code described in \citet{Eldridge:2004, Eldridge:2004a, Eldridge:2008, Eldridge:2017}, which is the version used to generate the fiducial \gls{bpass} v2 grids. This version models the primary in detail while approximating the secondary using the equations of \citet{Hurley:2002}.
     \item The \codename{bstars} code, which is the unmodified version lately available from Cambridge, described in \citet{Stancliffe:2009}. This version models both stars in detail throughout their lives.
     \item The \codename{Aotearoa stars} code, which is the version of the code incorporating the changes we have made.
 \end{enumerate}
@@ -927,7 +953,7 @@ where $P, T, M, R$ are the total pressures, temperatures, masses, and radii of e
     \end{cases}
 \end{equation}
 
-where $P_\text{H}$ is the pressures in the hydrogen-burning shell. Here, $\mathcal{P}$ represents the pressure in the hydrogen-burning shell when $X_\text{H} = 0.15$. The choice of mesh spacing coefficients $c_1\dots c_{10}$ leads to different areas of the star being prioritised. Coordinates $c_1, c_9,$ and $c_{10}$ are not used except in \gls{agb}-specific evolution, which is not required for most cases (and requires a change of parameterisation in the pressure-shell terms). $c_5$ is hardcoded to be 0.15, and $c_2$ to be 0.0. \todo{but why? ``its what the code does'' is a bad reason.}
+where $P_\text{H}$ is the pressures in the hydrogen-burning shell. Here, $\mathcal{P}$ represents the pressure in the hydrogen-burning shell when $X_\text{H} = 0.15$, and its inclusion obviates numerical issues if the envelope is removed and there is no hydrogen burning occuring. The choice of mesh spacing coefficients $c_1\dots c_{10}$ leads to different areas of the star being prioritised. Coordinates $c_1, c_9,$ and $c_{10}$ are not used except in \gls{agb}-specific evolution, which is not required for most cases (and requires a change of parameterisation in the pressure-shell terms). During binary evolution, $c_5$ is hardcoded to be 0.15, and $c_2$ to be 0.0, to focus meshppoints into the hydrogen-burning shell.
 
 Placement of the mesh is controlled by the derivative $\pdv{\mathcal{Q}}{k}$, where $k$ is the meshpoint number \citep{Stancliffe:2016}. Specifically, meshpoints are placed at locations where
 
@@ -935,7 +961,7 @@ Placement of the mesh is controlled by the derivative $\pdv{\mathcal{Q}}{k}$, wh
     \eval{\pdv{\mathcal{Q}}{k}}{k}-\eval{\pdv{\mathcal{Q}}{k}}{k+1} = 0.
 \end{equation}
 
-The mesh is thus adaptive (insofar as it changes to place meshpoints where they are needed for evolution) and non-Lagrangian (insofar as the derivative is not at constant mass coordinate). If one desires to make the mesh viscous (i.e., partially Lagrangian), one can follow \citet{Stancliffe:2004} and write, for $0\leq\gamma\leq1$,
+The mesh is thus adaptive (insofar as it changes to place meshpoints where they are needed for evolution) and non-Lagrangian (insofar as the derivative is not at constant mass coordinate). It is sometimes referred to as an Eggletonian mesh. If one desires to make the mesh viscous (i.e., partially Lagrangian), one can follow \citet{Stancliffe:2004} and write, for $0\leq\gamma\leq1$,
 
 \begin{equation}
     \pqty{\eval{\pdv{\mathcal{Q}}{k}}{k}-\eval{\pdv{\mathcal{Q}}{k}}{k+1}}\pqty{1-\gamma} + \gamma\pqty{\eval{\pdv{m}{t}}{k}} = 0,
@@ -971,11 +997,11 @@ Stellar modelling is a nontrivial endeavour and there are many cases where the c
 
 \begin{align*}
     \ce{^4_2He + ^4_2He &\rightleftharpoons ^8_4Be - \SI{0.0918}{\mega\electronvolt}}, \\
-    \ce{^8_4Be + ^4_2He &-> ^12_6C + 2\gamma{} + \SI{7.367}{\mega\electronvolt}},\text{ and} \\
-    \ce{^12_6C + ^4_2He &-> ^16_8O + \gamma{} + \SI{7.162}{\mega\electronvolt}},
+    \ce{^8_4Be + ^4_2He &-> ^12_6C + 2\gamma{} + \SI{7.367}{\mega\electronvolt}}, \\
+    % \ce{^12_6C + ^4_2He &-> ^16_8O + \gamma{} + \SI{7.162}{\mega\electronvolt}},
 \end{align*}
 
-occurs within a highly degenerate helium core. As a result, the temperature of the star increases sharply during this process, leading to thermal runaway. This temperature increase in turn results in an increase in the luminosity (which peaks at $\sim\SI{1e10}{\lsun}$). The flash itself -- being the period of thermal runaway -- occurs on the order of a few minutes, though the spike in luminosity lasts approximately $\SI{7}{\mega\year}$ (for the $\SI{2.51}{\msun}$ star shown in \cref{fig:thermal_pulses_he_flash}).
+occurs within a highly electron-degenerate helium core. As a result, the temperature of the star increases sharply during this process, leading to thermal runaway. This temperature increase in turn results in an increase in the luminosity (which peaks at $\sim\SI{1e10}{\lsun}$). The flash itself -- being the period of thermal runaway -- occurs on the order of a few minutes, though the spike in luminosity lasts approximately $\SI{7}{\mega\year}$ (for the $\SI{2.51}{\msun}$ star shown in \cref{fig:thermal_pulses_he_flash}).
 
 A method termed ``pseudoevolution'' can be used to overcome this source of error. Briefly, a complete model (termed the \textit{reference model}) of a \SI{3}{\msun} star is evolved with a full model description saved at every timestep. When the helium flash occurs in a model (heuristically, $0.1 \leq M_\text{He} / \unit{\msun} \leq 0.55$ and $\log T_\text{c} / \unit{\kelvin} > 7.9$), we query the reference model for a model with the same helium core mass as the failed model. Using a custom subroutine in \codename{stars}, we turn off all nuclear and thermal burning and remove mass from the reference model to match the mass of the failed model. This model is then allowed to evolve as per normal, having overcome the helium flash. We note that this is not a \textit{perfect} method, as this does induce discontinuities in the plots, as shown in \cref{fig:pseudoevolved_kippenhahn}, though these are essentially insignificant.
 
