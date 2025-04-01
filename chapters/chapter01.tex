@@ -26,7 +26,7 @@ From the perspective of Universal building blocks, stars are also the focal poin
 
 \mediaepigraph{If the stars should appear one night in a thousand years, how would men believe and adore; and preserve for many generations the remembrance of the city of God which had been shown!}{Nature}{Ralph Waldo Emerson}% But every night come out these envoys of beauty, and light the universe with their admonishing smile.}{Nature}{Ralph Waldo Emerson}
 
-There are approximately 9000 stars visible in the night sky to the naked eye (with magnitudes brighter than 6.5), across both hemispheres \citep{Hoffleit:1964}, which are displayed in \cref{fig:naked_night_sky}. The dark-adapted eye can see approximately as far as $\eta$ Carinae,\footnote{This is a debated topic; we use the definition that a ``star'' includes binaries and that the star is in the catalogue of \citet{Hoffleit:1964}, which rules out V762 Cas, the other commonly held ``farthest star''.} which is only approximately \SI{2300}{\pc} away.
+There are approximately 9000 stars visible in the night sky to the naked eye (with magnitudes brighter than 6.5), across both hemispheres \citep{Hoffleit:1964}, which are displayed in \Cref{fig:naked_night_sky}. The dark-adapted eye can see approximately as far as $\eta$ Carinae,\footnote{This is a debated topic; we use the definition that a ``star'' includes binaries and that the star is in the catalogue of \citet{Hoffleit:1964}, which rules out V762 Cas, the other commonly held ``farthest star''.} which is only approximately \SI{2300}{\pc} away.
 
 \begin{figure}[!htbp]
     \centering
@@ -37,7 +37,7 @@ There are approximately 9000 stars visible in the night sky to the naked eye (wi
 
 \SI{2300}{\pc} is an order of magnitude less than the size of Galaxy, which is approximately \SI{26.8}{\kilo\pc} in diameter \citep{Goodwin:1998}, which in turn pales in comparison to the Local Group at $\sim$\SI{3}{\mega\pc} \citep{Redd:2018}, and the observable Universe at \SI{28.5}{\giga\pc} \citep{Bars:2010}. There are, in addition, $\sim1.7\times10^{22}$ stars in the observable Universe, assuming $1.7\times10^{11}$ galaxies, with approximately $10^{11}$ stars in each \citep{Marov:2015}. Thus, the birth, evolution, and death of stars is of fundamental importance to understanding the local structure and evolution of astrophysical objects on any scale.
 
-Given the number of stars visible in the vast expanse of night, and their relatively stable positions in the sky, it is no surprise that they are a fixture in many religions and cultures around the world. Ancient Greece saw a difference in movement of some celestial objects, and called these {\greekscript πλανήτης}, which morphed into \textit{plan\=etes} and eventually the English word ``planets''. Babylonia knew of Halley's comet and tracked observations of it as late as 87 BCE \citep{Stephenson:1985}. Records of eclipses in Chinese culture exist as far back as 1600 BCE \citep{Fang:2015}. Knowledge of the movements of stars guided Polynesian wayfarers as they crossed the South Pacific \citep{Buck:1938, Hamacher:2022}, were embedded in the cultural mythos of First Nations peoples in Australia \citep{Noon:2022}, allowed them to forecast weather patterns \citep{Hamacher:2019}, and were plausibly recorded into oral histories \citep{Fuller:2017}. Even in the arts, the knowledge of the lunar perigee was written into \textit{Othello} by Shakespeare:
+Given the number of stars visible in the vast expanse of night, and their relatively stable positions in the sky, it is no surprise that they are a fixture in many religions and cultures around the world. Ancient Greece saw a difference in movement of some celestial objects, and called these {\greekscript πλανήτης}, which morphed into \textit{plan\=etes} and eventually the English word ``planets''. Babylonia knew of Halley's comet and tracked observations of it as late as 87 BCE \citep{Stephenson:1985}. Records of eclipses in Chinese culture exist as far back as 1600 BCE \citep{Fang:2015}. The Nazca lines, geoglyphs carved into the Nazca desert in Peru at some point between 500 BCE and 500 CE, may be early astronomical calendars \citep{Kosok:1949}, though this theory was later placed into doubt \citep{Hawkins:1973}. Knowledge of the movements of stars guided Polynesian wayfarers as they crossed the South Pacific \citep{Buck:1938, Hamacher:2022}, were embedded in the cultural mythos of First Nations peoples in Australia \citep{Noon:2022}, allowed them to forecast weather patterns \citep{Hamacher:2019}, and were plausibly recorded into oral histories \citep{Fuller:2017}. Knowledge of the lunar perigee was even written into \textit{Othello} by Shakespeare:
 
 \begin{fanciful}
     It is the very error of the moon; \\
@@ -61,12 +61,14 @@ This knowledge flowed through to Dante, who wrote in the third part of the Divin
 In religious scripture, celestial navigation has oft been a fixture, such as in Chapter 2 of the Gospel according to Matthew:\footnote{This text is as reproduced from the King James Version of the Bible, as written in Early Modern English as faithful as possible to the script.}
 
 \begin{fanciful}
-    2:7 -- Then Herod, when he had priuily called the Wise men, enquired of them diligently what time the Starre appeared: \\
-    2:8 -- And he sent them to Bethlehem, and said, Goe, and search diligently for the yong child, and when ye haue found him, bring me word againe, that I may come and worship him also. \\
-    2:9 -- When they had heard the King, they departed, and loe, the Starre which they saw in the East, went before them, till it came and stood ouer where the young childe was.
-    \begin{flushright}
-        -- \citet{Various:1611}
-    \end{flushright}
+    \begin{scripture}[Matthew 2:7--9]
+        \ch{2}
+        \vs{7}Then Herod, when he had priuily called the Wise men, enquired of them diligently what time the Starre appeared:
+
+        \vs{8}And he sent them to Bethlehem, and said, Goe, and search diligently for the yong child, and when ye haue found him, bring me word againe, that I may come and worship him also.
+
+        \vs{9}When they had heard the King, they departed, and loe, the Starre which they saw in the East, went before them, till it came and stood ouer where the young childe was.
+    \end{scripture}
 \end{fanciful}
 
 Despite this deep cultural connection to the stars, what we would now call Astronomy is a somewhat recent invention. Arguably conventional (and in some sense, ``correct'') astronomy arose in the 16th century CE with Copernicus proposing the heliocentric model of the solar system, which was confirmed by Galileo in the 17th century CE \citep{Carroll:2017} -- although Galileo's claims did result in his being convicted of heresy for 300 years.
@@ -85,7 +87,7 @@ It is nigh impossible to achieve and sustain these conditions to experimentally 
 
 \subsection{Population Synthesis and Stellar Modelling}
 
-Because of these factors, one often turns to computer simulations to model the interiors of stars. The question turns from physical experimentation to mathematical ones, and the idea of a \textit{stellar model} becomes useful. A stellar model is a calculation performed such that the internal structure (the present state of physical quantities) and evolution (how these quantities change over time) are determined. Computing these parameters is nontrivial. As will be developed in \cref{chap:theoretical_background}, the simplest model of a star is a series of four coupled differential equations describing the internal pressure, temperature, luminosity, and mass distributions. However, including ``extra'' physics greatly increases the complexity of the problem; \citet{Henyey:1964} developed methods of solving the equations of structure and evolution that turn the problem into matrix inversion, at the cost of the central ``Henyey matrix'' being thousands of elements in size.
+Because of these factors, one often turns to computer simulations to model the interiors of stars. The question turns from physical experimentation to mathematical ones, and the idea of a \textit{stellar model} becomes useful. A stellar model is a calculation performed such that the internal structure (the present state of physical quantities) and evolution (how these quantities change over time) are determined. Computing these parameters is nontrivial. As will be developed in \Cref{chap:theoretical_background}, the simplest model of a star is a series of four coupled differential equations describing the internal pressure, temperature, luminosity, and mass distributions. However, including ``extra'' physics greatly increases the complexity of the problem; \citet{Henyey:1964} developed methods of solving the equations of structure and evolution that turn the problem into matrix inversion, at the cost of the central ``Henyey matrix'' being thousands of elements in size.
 
 The diversity and complexity of stellar profiles, interiors, and characteristics discussed earlier demands a careful and varied approach. One cannot abstract away much of the important physics. Although it is common to use approximations such as spherical symmetry to reduce the dimensionality of the problem, and to only evaluate the equations of stellar structure at a fixed number of locations in this one remaining dimension, chosen sufficiently intelligently, a complex computational effort must be undertaken.
 
@@ -153,18 +155,18 @@ There are essentially three major themes guiding this research.
 This thesis is, broadly, a tour of stellar evolution from \gls{zams} to the eventual merger of two compact objects, with a few omissions along the way (such as the moment of supernova). The thesis is structured as follows:
 
 \begin{enumerate}
-	\item In \cref{chap:theoretical_background}, we provide the necessary theoretical background for future chapters, critically examine the pieces of software and numerical methods employed in this work, and discuss the logistics of running this single-thread grid-based code as a multiprocessed code on a distributed cluster.
-	\item In \cref{chap:close_contact}, we present the results of our stellar evolution codes in the interesting case when both stars almost (or in some instances, do) touch. (Theme I)
-    \item In \cref{chap:he_mass_transfer}, we explore the regime in which mass transfer is assumed to become helium-rich, and the effects on the future evolution of these binaries. (Themes I, III)
-    \item In \cref{chap:population_properties}, we explore the population properties of binaries which underwent helium-rich mass transfer (Themes I, III).
-	\item In \cref{chap:natal_kicks}, we examine the kinematics of the post-supernova inspiral and the mechanics of the natal supernova kick. (Theme II)
-	\item In \cref{chap:conclusion}, we review the thesis and conclude. (Themes I, II, III)
-	\item In \cref{chap:appendix:code_samples}, we provide the \codename{Kaitiaki} code necessary to generate the models for certain stellar evolution plots throughout the thesis. (Themes I, III)
-	\item In \cref{chap:appendix:code_versions}, we list the codes employed and their versions.
-	\item In \cref{chap:ligo_contour_results}, we present period-eccentricity distributions for the \acrshort{lvk} \acrshort{o3} contour (Theme II)
-	\item In \cref{chap:param_config}, we list the default parameter choices we make for our stellar evolution models (Themes I, III).
-    \item In \cref{chap:additional_derivations}, we present additional derivations for key theoretical expressions from \cref{chap:theoretical_background}.
-    \item In \cref{chap:mass_loss_construction}, we detail how our wind mass-loss rates are constructed.
+	\item In \Cref{chap:theoretical_background}, we provide the necessary theoretical background for future chapters, critically examine the pieces of software and numerical methods employed in this work, and discuss the logistics of running this single-thread grid-based code as a multiprocessed code on a distributed cluster.
+	\item In \Cref{chap:close_contact}, we present the results of our stellar evolution codes in the interesting case when both stars almost (or in some instances, do) touch. (Theme I)
+    \item In \Cref{chap:he_mass_transfer}, we explore the regime in which mass transfer is assumed to become helium-rich, and the effects on the future evolution of these binaries. (Themes I, III)
+    \item In \Cref{chap:population_properties}, we explore the population properties of binaries which underwent helium-rich mass transfer (Themes I, III).
+	\item In \Cref{chap:natal_kicks}, we examine the kinematics of the post-supernova inspiral and the mechanics of the natal supernova kick. (Theme II)
+	\item In \Cref{chap:conclusion}, we review the thesis and conclude. (Themes I, II, III)
+	\item In \Cref{chap:appendix:code_samples}, we provide the \codename{Kaitiaki} code necessary to generate the models for certain stellar evolution plots throughout the thesis. (Themes I, III)
+	\item In \Cref{chap:appendix:code_versions}, we list the codes employed and their versions.
+	\item In \Cref{chap:ligo_contour_results}, we present period-eccentricity distributions for the \acrshort{lvk} \acrshort{o3} contour (Theme II)
+	\item In \Cref{chap:param_config}, we list the default parameter choices we make for our stellar evolution models (Themes I, III).
+    \item In \Cref{chap:additional_derivations}, we present additional derivations for key theoretical expressions from \Cref{chap:theoretical_background}.
+    \item In \Cref{chap:mass_loss_construction}, we detail how our wind mass-loss rates are constructed.
 \end{enumerate}
 
 We now move into the more detailed background, and outlay the theory that underpins all of our models.

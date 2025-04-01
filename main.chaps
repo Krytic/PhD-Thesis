@@ -1,6 +1,6 @@
 Abstract, 3
 Acknowledgements, 7
-Contents\ttl@gmk {\@mkboth {\MakeUppercase  {Contents}}{\MakeUppercase  {Contents}}}, 13
+Contents\ttl@gmk {\@mkboth {\MakeUppercase    []{Contents}}{\MakeUppercase    []{Contents}}}, 13
 List of Figures, 17
 List of Tables, 19
 Glossary, 21
@@ -18,4 +18,4 @@ Appendix-C, 127
 Appendix-D, 129
 Appendix-E, 133
 Appendix-F, 145
-Bibliography\ttl@gmk {\@mkboth {\MakeUppercase  {Bibliography}}{\MakeUppercase  {Bibliography}}}, 149
+Bibliography\ttl@gmk {\@mkboth {\MakeUppercase    []{Bibliography}}{\MakeUppercase    []{Bibliography}}}, 149

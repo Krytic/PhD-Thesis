@@ -57,7 +57,7 @@ Now that our protostar has evolved onto the main sequence, it has become a star 
 
 where $\epsilon$ is the rate of energy energation per unit mass, $\kappa$ is the opacity of the material, $\sigma$ is the Stefann-Boltzmann constant, $m$ is the mass internal to radius $r$, $p$ is pressure, $\rho$ is density, $M$ is total mass of the star, and $L$ is the luminosity.
 
-In addition to \cref{eq:stellar_structure}, an \gls{eos} demanding $\rho=\rho(P, T)$ is desired. We take our \gls{eos} from \citet{Pols:1995}, which built upon that in \citet{Eggleton:1973}. Critically, Pols' \gls{eos} includes the dissociation of molecular hydrogen, Coulomb interactions, and pressure ionization, which \citet{Eggleton:1973} lacked. The \gls{eos} is an approximation to Fermi-Dirac statistics, and originates from the free energy
+In addition to \Cref{eq:stellar_structure}, an \gls{eos} demanding $\rho=\rho(P, T)$ is desired. We take our \gls{eos} from \citet{Pols:1995}, which built upon that in \citet{Eggleton:1973}. Critically, Pols' \gls{eos} includes the dissociation of molecular hydrogen, Coulomb interactions, and pressure ionization, which \citet{Eggleton:1973} lacked. The \gls{eos} is an approximation to Fermi-Dirac statistics, and originates from the free energy
 
 \begin{equation}
     F(V, T, N_\text{e}, N_\text{e}) = -\frac13 aT^4 V + kT\sum_i N_\text{i} \pqty{\ln\frac{N_\text{i} h^3}{\omega_i V\pqty{2\pi m_i kT}^\frac32}-1+\frac{\chi_i}{kT}}+F_\text{e}(N_\text{e}, V, T)+\Delta F_\text{e}(N_\text{e}, V, T)
@@ -83,7 +83,7 @@ though the integral cannot be analytically solved further. On the other hand, $\
 
 The reaction rates and energy outputs are typically inferred from empirical data; we take the interpolation in temperature from \citet{Caughlan:1988}, and correct the rates to approximate the cross-sections of \citet{Bahcall:1992, Bahcall:1995}.
 
-All told, in the simplest sense, the internal \textit{structure} of the star can be modelled by hand by solving \cref{eq:stellar_structure} from $m=0$ to $m=M$.
+All told, in the simplest sense, the internal \textit{structure} of the star can be modelled by hand by solving \Cref{eq:stellar_structure} from $m=0$ to $m=M$.
 
 \subsection{The chemical composition of stars}
 
@@ -101,7 +101,7 @@ where $X$ is the mass fraction of hydrogen, $Y$ of helium, and ${}^{i}_{j}\text{
     Z \equiv \sum_{i=3}^{118} \sum_{j} {}^{i}_{j}\text{X},
 \end{equation}
 
-such that \cref{eq:mass_fracs} becomes
+such that \Cref{eq:mass_fracs} becomes
 
 \begin{equation}
     X+Y+Z = 1.
@@ -185,7 +185,7 @@ In this section, we examine the three major regimes of stellar evolution for sin
 
 \subsubsection{Low-Mass Stars: \texorpdfstring{$\SI{0.08}{\msun} < M < \SI{2}{\msun}$}{Stars with between 0.08 and 2 times the mass of the sun}}\label{sec:low_mass_stars}
 
-Stars below $\approx\SI{0.5}{\msun}$ do not ignite helium, and become helium \glspl{wd}. Above this, they ignite helium degenerately in their cores, leading to thermal runaway. The star can peak at a luminosity close to $10^{11} L_\odot$ (approximately 100 times the peak luminosity of SN 1987A, per Figure 5 of \citet{Arnett:1989}). However, this peak in luminosity is attributable to nuclear fusion in the core, and the energy does not reach the surface, let alone escape into the \gls{ism} -- rather, it is absorbed into the outer layers of the star. During this extremely brief thermal runaway, the luminosity begins to settle and the star is able to continue evolving. Models of low mass stars fail at this stage and care is required to evolve them. This phenomena is called the \textit{helium flash} and is discussed further in \cref{sec:numerical_instabilities}.
+Stars below $\approx\SI{0.5}{\msun}$ do not ignite helium, and become helium \glspl{wd}. Above this, they ignite helium degenerately in their cores, leading to thermal runaway. The star can peak at a luminosity close to $10^{11} L_\odot$ (approximately 100 times the peak luminosity of SN 1987A, per Figure 5 of \citet{Arnett:1989}). However, this peak in luminosity is attributable to nuclear fusion in the core, and the energy does not reach the surface, let alone escape into the \gls{ism} -- rather, it is absorbed into the outer layers of the star. During this extremely brief thermal runaway, the luminosity begins to settle and the star is able to continue evolving. Models of low mass stars fail at this stage and care is required to evolve them. This phenomena is called the \textit{helium flash} and is discussed further in \Cref{sec:numerical_instabilities}.
 
 After the ignition of helium, these stars cross the so-called Hertzsprung Gap -- the region where very few stars are observed empirically. This region is bounded (on a colour-magnitude diagram, which is a transform of the HR diagram) by the points $\pqty{M_v, B-V}=\left\{\pqty{2,0.5}, \pqty{-7, 0.1}, \pqty{-6, 1.6}\right\}$ \citep{Hoyle:1960}, where $M_v$ is the V-band magnitude (magnitude in the visual band), and $B-V$ is the colour index of the star. The phenomenon of a gap existing is attributable to the fact that stars cross this gap exceedingly quickly: whereas it spends $\sim90\%$ of its life on the main sequence, it spends $\sim2\%$ of its life crossing the Hertzsprung gap \citep{Hoyle:1960}.
 
@@ -194,7 +194,7 @@ After the ignition of helium, these stars cross the so-called Hertzsprung Gap --
 \subsubsection{Intermediate-Mass Stars: \texorpdfstring{$\SI{2}{\msun} < M < \SI{8}{\msun}$}{Stars with between 2 and 8 times the mass of the sun}}\label{sec:intermediate_mass_stars}
 
 Intermediate mass stars exist above the threshold for the helium flash to occur. Helium ignition is not degenerate and the development of a helium core is not i
-mpeded. As the star ascends the \gls{agb}, the core becomes helium-exhausted and it becomes a red giant, with a radius many hundreds or even thousands of times greater than the Sun. Its mass, sustained prior to the \gls{agb} via nuclear fusion, begins to decrease. An example of intermediate-mass evolution is shown in \cref{fig:intermediate_mass}.
+mpeded. As the star ascends the \gls{agb}, the core becomes helium-exhausted and it becomes a red giant, with a radius many hundreds or even thousands of times greater than the Sun. Its mass, sustained prior to the \gls{agb} via nuclear fusion, begins to decrease. An example of intermediate-mass evolution is shown in \Cref{fig:intermediate_mass}.
 
 \begin{figure}[!htbp]
     \centering
@@ -205,7 +205,7 @@ mpeded. As the star ascends the \gls{agb}, the core becomes helium-exhausted and
 
 \subsubsection{Massive Stars: \texorpdfstring{$\SI{8}{\msun} < M < \SI{80}{\msun}$}{Stars with between 8 and 80 times the mass of the sun}}\label{sec:massive_stars}
 
-Massive stars are the key focal objects of this thesis, and in many ways offer some of the most exciting phenomena we can probe. In \cref{fig:hr_diagram_massive_stars} we show the variety of evolution that this regime has, alongside the \gls{zams} track from \SI{8}{\msun} to \SI{90}{\msun}. The key features are as follows. When a massive star exhausts its supply of hydrogen in its core and evolves off the main sequence to begin burning helium, it generally bypasses the Hertzsprung gap and evolves up the \gls{rgb}. From here, stars below $\approx\SI{15}{\msun}$ generally engage in a ``blue loop'', where is remains at a roughly constant radius whilst increasing in temperature, before cooling at a slightly higher luminosity. This is due to excess helium being burned in shells above the core \citep{Walmswell:2015}. We note that our models include blue loops, as shown in \cref{fig:hr_diagram_massive_stars} and \cref{fig:hr_diagram_8msun_star}.
+Massive stars are the key focal objects of this thesis, and in many ways offer some of the most exciting phenomena we can probe. In \Cref{fig:hr_diagram_massive_stars} we show the variety of evolution that this regime has, alongside the \gls{zams} track from \SI{8}{\msun} to \SI{90}{\msun}. The key features are as follows. When a massive star exhausts its supply of hydrogen in its core and evolves off the main sequence to begin burning helium, it generally bypasses the Hertzsprung gap and evolves up the \gls{rgb}. From here, stars below $\approx\SI{15}{\msun}$ generally engage in a ``blue loop'', where is remains at a roughly constant radius whilst increasing in temperature, before cooling at a slightly higher luminosity. This is due to excess helium being burned in shells above the core \citep{Walmswell:2015}. We note that our models include blue loops, as shown in \Cref{fig:hr_diagram_massive_stars} and \Cref{fig:hr_diagram_8msun_star}.
 
 \begin{figure}[!htbp]
     \centering
@@ -260,7 +260,7 @@ Massive stars are the key focal objects of this thesis, and in many ways offer s
 %     g_{\alpha\beta,\mu} = \pdv{g_{\alpha\beta}}{x^\mu}.
 % \end{equation*}
 
-% In \cref{eq:reintroduce_summands}, we explicitly reinsert the summation symbols to illustrate the number of simultaneous summations that are taking place implicitly. As one can see, this reasonably simple expression balloons quickly into something intractable by hand and time-consuming to evaluate computationally. Although the metric tensor is generally four-dimensional,\footnote{And thus the summation indices run from 1 to 4} such as the Friedmann-Lema\^itre-Robertson-Walker metric \citep{Friedmann:1922, Lemaitre:1931, Robertson:1935, Walker:1937} describing the expansion of the Universe,
+% In \Cref{eq:reintroduce_summands}, we explicitly reinsert the summation symbols to illustrate the number of simultaneous summations that are taking place implicitly. As one can see, this reasonably simple expression balloons quickly into something intractable by hand and time-consuming to evaluate computationally. Although the metric tensor is generally four-dimensional,\footnote{And thus the summation indices run from 1 to 4} such as the Friedmann-Lema\^itre-Robertson-Walker metric \citep{Friedmann:1922, Lemaitre:1931, Robertson:1935, Walker:1937} describing the expansion of the Universe,
 
 
 % \begin{equation*}
@@ -308,7 +308,7 @@ L = -\frac{3\gamma-4}{3\pqty{\gamma-1}} \dv{\Omega}{t}\quad\text{where}\quad U=-
 
 where $U$ is the total internal energy of the star. Since $\dot{E}<0$ for a star radiating energy, and $\Omega<0$ by definition (since assembling a star is energetically favourable), we have that $\dot{\Omega}<0$ and $\dot{U}>0$, i.e., that as the star radiates energy it attempts to shrink. This shrinking is arrested by the nuclear fusion in the core providing outwards pressure, meaning the star is stable and resists explosion. As the star continues to burn through its fuel supply and eventually exhaust it, gravity will win as the dominant force, and result in the star imploding in a \gls{ccsne}. From a thermodynamic perspective, as the star evolves, it shrinks as energy is bled off into the interstellar medium. This shrinkage compresses and heats the core, meaning the star's specific heat capacity is negative. This system is thermodynamically unstable, and thus every star either collapses into a remnant (cf. \gls{bh}, \gls{ns}) or is sustained in some form by electron degeneracy pressure (cf. \gls{wd}).
 
-In any case, the breaking of hydrostatic equilibrium results generally results in\footnote{The extent of the veracity of this statement is an area of active research: \citet{Reynolds:2015} presents a short summary.} a supernova, which can be classified into subtypes, as shown in \cref{fig:supernova_taxonomy}. In this event, gravity pulls the stellar core inwards, before ``bouncing'' and ejecting the envelope into the interstellar medium. The physics of this approximately second-long event is highly uncertain, and is in general unable to be modelled by detailed stellar evolution codes. All models we generate -- assuming they have not been terminated earlier -- will terminate at the moment of supernova.
+In any case, the breaking of hydrostatic equilibrium results generally results in\footnote{The extent of the veracity of this statement is an area of active research: \citet{Reynolds:2015} presents a short summary.} a supernova, which can be classified into subtypes, as shown in \Cref{fig:supernova_taxonomy}. In this event, gravity pulls the stellar core inwards, before ``bouncing'' and ejecting the envelope into the interstellar medium. The physics of this approximately second-long event is highly uncertain, and is in general unable to be modelled by detailed stellar evolution codes. All models we generate -- assuming they have not been terminated earlier -- will terminate at the moment of supernova.
 
 \begin{figure}[!htbp]
     \centering
@@ -366,7 +366,7 @@ In any case, the breaking of hydrostatic equilibrium results generally results i
     \label{fig:supernova_taxonomy}
 \end{figure}
 
-Importantly for the nucleosynthesis of iron-group and heavier elements (which cannot be formed via hydrostatic nuclear fusion,\footnote{Strictly speaking, fusion can occur for elements heavier than Iron-56, but the reaction is endothermic; it requires more energy than is released, meaning it is unsustainable.} as shown in \cref{fig:BEPN}), the supernova shockwave propagating through the core causes a new phase of nucleosynthesis, albeit briefly.
+Importantly for the nucleosynthesis of iron-group and heavier elements (which cannot be formed via hydrostatic nuclear fusion,\footnote{Strictly speaking, fusion can occur for elements heavier than Iron-56, but the reaction is endothermic; it requires more energy than is released, meaning it is unsustainable.} as shown in \Cref{fig:BEPN}), the supernova shockwave propagating through the core causes a new phase of nucleosynthesis, albeit briefly.
 
 \begin{figure}[!htbp]
     \centering
@@ -377,11 +377,11 @@ Importantly for the nucleosynthesis of iron-group and heavier elements (which ca
 
 \subsection{Type Ia supernovae}
 
-There is another class of supernovae we consider in this thesis, namely type Ia supernovae. These are formed when a \gls{wd} star exceeds the maximum mass by which electron degeneracy pressure can sustain the star. This mass is termed the Chandrasekhar mass, $M_\text{ch}\approx\SI{1.44}{\msun}$, and is derived in \cref{chap:additional_derivations}. When material accretes onto a white dwarf, its mass will increase, and if the accretion does not stop, the mass will exceed the Chandrasekhar mass. This means electron degeneracy pressure is no longer able to sustain the star, and the core collapses further into a Type Ia (or thermonuclear) supernova.
+There is another class of supernovae we consider in this thesis, namely type Ia supernovae. These are formed when a \gls{wd} star exceeds the maximum mass by which electron degeneracy pressure can sustain the star. This mass is termed the Chandrasekhar mass, $M_\text{ch}\approx\SI{1.44}{\msun}$, and is derived in \Cref{chap:additional_derivations}. When material accretes onto a white dwarf, its mass will increase, and if the accretion does not stop, the mass will exceed the Chandrasekhar mass. This means electron degeneracy pressure is no longer able to sustain the star, and the core collapses further into a Type Ia (or thermonuclear) supernova.
 
 \section{Two to tango: Binary Evolution}\label{sec:binary_evolution}
 
-% In \cref{fig:single_vs_binary} we display in three subplots the evolution of an \SI{8}{\msun} single star, a \SI{10}{\msun} single star, and an \SI[parse-numbers=false]{8+10}{\msun} binary with a period of \SI{30}{\day}. The code to run this binary model is given in \cref{binary_generation}.
+% In \Cref{fig:single_vs_binary} we display in three subplots the evolution of an \SI{8}{\msun} single star, a \SI{10}{\msun} single star, and an \SI[parse-numbers=false]{8+10}{\msun} binary with a period of \SI{30}{\day}. The code to run this binary model is given in \Cref{binary_generation}.
 
 % \begin{figure}[!htbp]
 %     \centering
@@ -394,7 +394,7 @@ Introducing a second star into the mix complicates the evolution. Whereas before
 
 \subsection{Binary star kinematics}\label{sec:binary_kinematics}
 
-There are several formation channels for a binary star system. Binaries may be formed from birth (as discussed in \cref{sec:stellar_formation}, with the caveat that in this scenario two clumps of gas form near each other), via fragmentation of a protostar's disc, dynamical capture of one star by another (comparable to one of the suggested origins of Phobos and Deimos, per \citet{Burns:1978}), or via a higher multiplicity system ejecting one or more of its constituent stars, perhaps via a natal supernova kick.
+There are several formation channels for a binary star system. Binaries may be formed from birth (as discussed in \Cref{sec:stellar_formation}, with the caveat that in this scenario two clumps of gas form near each other), via fragmentation of a protostar's disc, dynamical capture of one star by another (comparable to one of the suggested origins of Phobos and Deimos, per \citet{Burns:1978}), or via a higher multiplicity system ejecting one or more of its constituent stars, perhaps via a natal supernova kick.
 
 In any case, once formed and the orbit is stabilised, binary systems obey Kepler's three laws. In the generalised binary regime, however, the assumption that $M_1\gg M_2$ (which underpins most statements of Kepler's laws) is not necessarily true -- for instance, the system LSS 3074 has two stellar components with \gls{zams} masses of approximately \SI{30}{\msun} and \SI{10}{\msun} \citep{Raucq:2017}. Moreover, the fact that there are two stars in orbit rather that one object orbiting another means that Kepler's laws must be stated more precisely. Formally, they can be expressed as (see the appendix of \citet{Richards:2021} for derivations):
 
@@ -410,7 +410,7 @@ The third law can be stated more precisely as
     T^2 = \frac{4\pi^2}{G(M_1+M_2)}a^3,
 \end{equation}
 
-where $T$ is the period of the binary, $M_1$ and $M_2$ the constituent masses, $G=\SI{6.67e-11}{\meter\cubed\per\kilogram\per\second\squared}$ is the universal gravitational constant, and $a$ is the semimajor axis of the binary. A schematic of the orbit of a binary system is given in \cref{fig:bss_schematic}.
+where $T$ is the period of the binary, $M_1$ and $M_2$ the constituent masses, $G=\SI{6.67e-11}{\meter\cubed\per\kilogram\per\second\squared}$ is the universal gravitational constant, and $a$ is the semimajor axis of the binary. A schematic of the orbit of a binary system is given in \Cref{fig:bss_schematic}.
 
 \begin{figure}[!htbp]
     \centering
@@ -502,7 +502,7 @@ where $T$ is the period of the binary, $M_1$ and $M_2$ the constituent masses, $
 
 \subsection{Roche Lobes}\label{sec:roche_lobes}
 
-A binary system is complicated by the presence of its companions in several different ways. As alluded to in the previous section, the presence of a companion warps space-time in such a way that material can be quite distorted from a sphere or oblate spheroid but still remain gravitationally bound to the system. In the extremal case, a star can grow to fill or even exceed its Roche Lobe, which is the tear-drop shaped equipotential surface within which material remains gravitationally bound to its star. In \cref{fig:roche_potentials} we display these equipotential surfaces for a range of different mass ratios. It is pertinent to note that the shape of all of the Roche Lobes change rapidly at low mass rations, however at higher mass ratios the shapes change less rapidly. In an equal-mass ratio binary, the binary configuration has rotational symmetry about the $\mathcal{L}_1$ point, and reflectional symmetry about the $x$-axis and the line $y=\mathcal{L}_1$.
+A binary system is complicated by the presence of its companions in several different ways. As alluded to in the previous section, the presence of a companion warps space-time in such a way that material can be quite distorted from a sphere or oblate spheroid but still remain gravitationally bound to the system. In the extremal case, a star can grow to fill or even exceed its Roche Lobe, which is the tear-drop shaped equipotential surface within which material remains gravitationally bound to its star. In \Cref{fig:roche_potentials} we display these equipotential surfaces for a range of different mass ratios. It is pertinent to note that the shape of all of the Roche Lobes change rapidly at low mass rations, however at higher mass ratios the shapes change less rapidly. In an equal-mass ratio binary, the binary configuration has rotational symmetry about the $\mathcal{L}_1$ point, and reflectional symmetry about the $x$-axis and the line $y=\mathcal{L}_1$.
 
 \begin{figure}[!htbp]
     \centering
@@ -533,7 +533,7 @@ This is a quintic expression in $\xi$, and solving this results in the real $\xi
 %     \xi_1 = \frac{q}{1+q},\qquad\xi_2 = \frac{1}{q+1}.
 % \end{equation}
 
-% Define $z=1+q$, and then \cref{eq:roche_lobe_condition} becomes
+% Define $z=1+q$, and then \Cref{eq:roche_lobe_condition} becomes
 
 % \begin{align}
 %     0 &= \xi-\frac{1}{z}\frac{1}{\pqty{\xi-\frac{q}{z}}^2}-\frac{q}{z}\frac{1}{\pqty{\xi-\frac{1}{z}}^2} \\
@@ -589,7 +589,7 @@ This is a quintic expression in $\xi$, and solving this results in the real $\xi
 %     \xi^5 - 2\xi^4+\frac{1}{z^2}\xi^3-\frac{4q+1}{z^2}\xi^2-\frac{-2z^3-q^2}{z^4}+2z = 0.\label{eq:quintic_formula_for_RL}
 % \end{equation}
 
-% Solving either \cref{eq:determinant_formula_for_RL} or \cref{eq:quintic_formula_for_RL} admits an exact solution for
+% Solving either \Cref{eq:determinant_formula_for_RL} or \Cref{eq:quintic_formula_for_RL} admits an exact solution for
 
 
 \subsubsection{The \texorpdfstring{$\mathcal{L}_1$}{inner Lagrangian} point}
@@ -600,19 +600,19 @@ The inner Lagrangian point has the approximation from \citet{Eggleton:1983}, whi
     \frac{R_\text{L}}{a} \approx \frac{0.49q^\frac23}{0.6q^\frac23+\ln\pqty{1+q^\frac13}}.\label{eq:RL1_eggleton}
 \end{equation}
 
-We show the circle with this radius $R_\text{L}$ in \cref{fig:eggleton_approx_schematic} plotted against the exact solution for $\eta=\mathcal{L}_1$. Eggleton's formula is a volume-equivalent one; although his radius $R_\text{L} < \xi$, the volume of an Eggleton-Roche sphere $\frac43 \pi R_\text{L}^3$ is approximately equal (to within 1 per cent) of the numerically integrated volume, as is shown in \cref{fig:eggleton_approx}.
+We show the circle with this radius $R_\text{L}$ in \Cref{fig:eggleton_approx_schematic} plotted against the exact solution for $\eta=\mathcal{L}_1$. Eggleton's formula is a volume-equivalent one; although his radius $R_\text{L} < \xi$, the volume of an Eggleton-Roche sphere $\frac43 \pi R_\text{L}^3$ is approximately equal (to within 1 per cent) of the numerically integrated volume, as is shown in \Cref{fig:eggleton_approx}.
 
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=\textwidth]{images/TheorySection/RLs_Eggleton_Formula.pdf}
-    \caption[A schematic of the Roche lobe formula \cref{eq:RL1_eggleton}.]{A schematic of the Roche lobe formula \cref{eq:RL1_eggleton}. Here, the exact solution to the Roche lobe formula $\xi$ in \cref{eq:roche_lobe_condition} (orange) vs the fit provided by \citet{Eggleton:1983} (blue). Although precise details of the Roche lobe, such as the apex of the teardrop at the point $\xi$, are lost, the volume is preserved to within 1 per cent accuracy over all mass ratios.}
+    \caption[A schematic of the Roche lobe formula \Cref{eq:RL1_eggleton}.]{A schematic of the Roche lobe formula \Cref{eq:RL1_eggleton}. Here, the exact solution to the Roche lobe formula $\xi$ in \Cref{eq:roche_lobe_condition} (orange) vs the fit provided by \citet{Eggleton:1983} (blue). Although precise details of the Roche lobe, such as the apex of the teardrop at the point $\xi$, are lost, the volume is preserved to within 1 per cent accuracy over all mass ratios.}
     \label{fig:eggleton_approx_schematic}
 \end{figure}
 
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=\textwidth]{images/TheorySection/eggleton_justification.pdf}
-    \caption[The volume of the Roche Lobe computed numerically through Monte-Carlo integration vs the volume assuming \cref{eq:RL1_eggleton}.]{The volume of the Roche Lobe computed numerically through Monte-Carlo integration (orange) vs the volume assuming \cref{eq:RL1_eggleton} (blue). The Eggleton approximation fits well to the volume, with around 1 per cent error across the entire mass ratio range (truncated here to $q\leq 1$).}
+    \caption[The volume of the Roche Lobe computed numerically through Monte-Carlo integration vs the volume assuming \Cref{eq:RL1_eggleton}.]{The volume of the Roche Lobe computed numerically through Monte-Carlo integration (orange) vs the volume assuming \Cref{eq:RL1_eggleton} (blue). The Eggleton approximation fits well to the volume, with around 1 per cent error across the entire mass ratio range (truncated here to $q\leq 1$).}
     \label{fig:eggleton_approx}
 \end{figure}
 
@@ -625,20 +625,20 @@ The outer Lagrangian point, $\mathcal{L}_2$, is given by a different zero of the
     R_\text{L2} = R_\text{L}(q) \pqty{1+\frac{0.299\arctan\pqty{{1.84q^{-0.397}}}}{q^{0.520}}},\label{eq:RL2_marchant}
 \end{equation}
 
-and $R_\text{L}(q)$ is given by \cref{eq:RL1_eggleton}.
+and $R_\text{L}(q)$ is given by \Cref{eq:RL1_eggleton}.
 
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=\textwidth]{images/TheorySection/marchant_justification.pdf}
-    \caption[As for \cref{fig:eggleton_approx}, but for the $\mathcal{L}_2$ point.]{As for \cref{fig:eggleton_approx}, but for the $\mathcal{L}_2$ point with formula given by \cref{eq:RL2_marchant} \citep{Marchant:2016}.}
+    \caption[As for \Cref{fig:eggleton_approx}, but for the $\mathcal{L}_2$ point.]{As for \Cref{fig:eggleton_approx}, but for the $\mathcal{L}_2$ point with formula given by \Cref{eq:RL2_marchant} \citep{Marchant:2016}.}
     \label{fig:marchant_approx}
 \end{figure}
 
-We note that \citet{Marchant:2016} uses an inverse mass ratio definition compared to \citet{Eggleton:1983}, that is, \citet{Marchant:2016} takes $q_\text{Marchant}=\frac{M_1}{M_2}$ whereas \citet{Eggleton:1983} takes $q_\text{Eggleton}=\frac{M_2}{M_1}=\frac{1}{q_\text{Marchant}}$. This is accounted for in \cref{eq:RL2_marchant} such that the mass ratios are consistent (and we take $q=q_\text{Eggleton}$), but other texts do not necessarily differentiate or describe the difference.
+We note that \citet{Marchant:2016} uses an inverse mass ratio definition compared to \citet{Eggleton:1983}, that is, \citet{Marchant:2016} takes $q_\text{Marchant}=\frac{M_1}{M_2}$ whereas \citet{Eggleton:1983} takes $q_\text{Eggleton}=\frac{M_2}{M_1}=\frac{1}{q_\text{Marchant}}$. This is accounted for in \Cref{eq:RL2_marchant} such that the mass ratios are consistent (and we take $q=q_\text{Eggleton}$), but other texts do not necessarily differentiate or describe the difference.
 
 % \subsubsection{The \texorpdfstring{$\mathcal{L}_3/\mathcal{L}_4/\mathcal{L}_5$}{other Lagrange} points}
 
-% Along the $\eta$-axis, the partial derivative in \cref{eq:pdv_of_roche_potential} reads instead
+% Along the $\eta$-axis, the partial derivative in \Cref{eq:pdv_of_roche_potential} reads instead
 
 % \begin{equation}
 % \pdv{V}{\eta} = - \frac{G \left(M_{1} + M_{2}\right)}{a} \left(- \frac{2 \xi_1}{\left(\eta^{2} + \left(\xi- \xi_1\right)^{2}\right)^{\frac{3}{2}}}\eta + \eta\right)\, .
@@ -711,7 +711,7 @@ Mass transfer can broadly be sectioned into four main categories:
 
 \begin{enumerate}
     \item $\dot{M}_\text{wind}$, where matter is lost through stellar winds,
-    \item $\dot{M}_\text{RLOF}$, where matter is transferred through one (or more) of a binary's Lagrange points (cf. \cref{sec:roche_lobes}),
+    \item $\dot{M}_\text{RLOF}$, where matter is transferred through one (or more) of a binary's Lagrange points (cf. \Cref{sec:roche_lobes}),
     \item $\dot{M}_\text{acc}$, where matter is transferred through accretion (or interaction with a disk), and
     \item $\dot{M}_\text{Bondi}$, where matter proceeds through a \citet{Bondi:1944} type mechanism.
 \end{enumerate}
@@ -730,7 +730,7 @@ The first modification surrounds the transition into the \gls{wr} regime. Tradit
 
 The second modification we have made is that if a star has a hydrogen exhausted core and begins approaching the \gls{wr} temperature range, we assume that \gls{wr} mass loss must begin and thus turn on the slowly-turning on \gls{wr} regime.
 
-Mathematically, the computation for $\dot{M}_\text{wind}$ is more involved, though follows the same essential structure as \citet{Vink:2001}. Details are provided in \cref{chap:mass_loss_construction}.
+Mathematically, the computation for $\dot{M}_\text{wind}$ is more involved, though follows the same essential structure as \citet{Vink:2001}. Details are provided in \Cref{chap:mass_loss_construction}.
 
 \subsubsection{\acrfull{rlof}}
 
@@ -782,7 +782,7 @@ and that the wind velocity is given by
     v_\text{W} = 2\beta_\text{W}\frac{GM_1}{R_1}.
 \end{equation}
 
-Generalising this to an eccentric orbit causes the first argument in \cref{eq:bondi} to pick up a coefficient of $\frac{1}{\sqrt{1-e^2}}$. There are two free parameters to select: $\alpha_\text{W}$ and $\beta_\text{W}$. These ostensibly depend on stellar types, though we select for simplicity $\alpha_\text{W}=\frac32$ \citep{Boffin:1988} and $\beta_\text{W}=7$ \citep{Lamers:1995} for O-type stars. This parameterisation is likely incomplete; \citet{Hurley:2002} argues that as per \citet{Lamers:1995}, $\beta_\text{W}$ should vary between 7 for O-type stars to 0.5 for A and F-type stars, perhaps descending as low as $\beta_\text{W}\approx\frac18$ for cool supergiants. We leave this implementation for future work under the assumption that our mass-loss rate is correct to within an order of magnitude. % concern.jpeg
+Generalising this to an eccentric orbit causes the first argument in \Cref{eq:bondi} to pick up a coefficient of $\frac{1}{\sqrt{1-e^2}}$. There are two free parameters to select: $\alpha_\text{W}$ and $\beta_\text{W}$. These ostensibly depend on stellar types, though we select for simplicity $\alpha_\text{W}=\frac32$ \citep{Boffin:1988} and $\beta_\text{W}=7$ \citep{Lamers:1995} for O-type stars. This parameterisation is likely incomplete; \citet{Hurley:2002} argues that as per \citet{Lamers:1995}, $\beta_\text{W}$ should vary between 7 for O-type stars to 0.5 for A and F-type stars, perhaps descending as low as $\beta_\text{W}\approx\frac18$ for cool supergiants. We leave this implementation for future work under the assumption that our mass-loss rate is correct to within an order of magnitude. % concern.jpeg
 
 \section{Post-Supernova}\label{sec:post_SN}
 
@@ -816,7 +816,7 @@ then the time from the second supernova to the conclusion of the inspiral, terme
     T_\text{c}(a_0, e_0) = \frac{12}{19}\frac{c_0^4}{\beta}\int_0^{e_0} \frac{e^\frac{22}{19}\left(1+\frac{121}{304}e^2\right)^\frac{1181}{2299}}{\left(1-e^2\right)^\frac32}{ \mathrm{d}e}.\label{eq:coalescence_time}
 \end{equation}
 
-The derivations for \cref{eq:dadt,eq:dedt,eq:coalescence_time} are given in \cref{chap:additional_derivations}. The integral has no closed-form solution, and a numerical integrator is typically used to compute the coalescence time. However, some approximations such as \citet{Mandel:2021a} do exist and approximate the coalescence time rather well over the entire range of mass ratios.
+The derivations for \Cref{eq:dadt,eq:dedt,eq:coalescence_time} are given in \Cref{chap:additional_derivations}. The integral has no closed-form solution, and a numerical integrator is typically used to compute the coalescence time. However, some approximations such as \citet{Mandel:2021a} do exist and approximate the coalescence time rather well over the entire range of mass ratios.
 
 \subsection{Merger Rates of compact binaries}
 
@@ -866,7 +866,7 @@ with $t_\text{H}$ the Hubble time, and $\Omega_\text{M}, \Omega_\text{k}, \Omega
 z = \pqty{\frac{a}{\sinh\pqty{\frac{b \operatorname{asinh}{\left(a \right)} + t}{b}}}}^\frac23 - 1
 \end{equation}
 
-where $a = \sqrt{\frac73}, b = \frac{1}{105\sqrt{0.7}}$.\footnote{In general in a flat Universe (with $\Omega_\text{k}=0$), $a=\sqrt{\frac{\Omega_\Lambda}{\Omega_\text{M}}}$, and $b=\frac{1}{H_0}\frac{2}{3\sqrt{\Omega_\text{M}}}$. This integral was computed via \textsc{Sympy}.} Detail on how the convolution in \cref{eq:event_rate_distribution} is computed may be found in \citet{Richards:2021}.
+where $a = \sqrt{\frac73}, b = \frac{1}{105\sqrt{0.7}}$.\footnote{In general in a flat Universe (with $\Omega_\text{k}=0$), $a=\sqrt{\frac{\Omega_\Lambda}{\Omega_\text{M}}}$, and $b=\frac{1}{H_0}\frac{2}{3\sqrt{\Omega_\text{M}}}$. This integral was computed via \textsc{Sympy}.} Detail on how the convolution in \Cref{eq:event_rate_distribution} is computed may be found in \citet{Richards:2021}.
 
 \section{Numerical implementation}
 
@@ -875,10 +875,10 @@ where $a = \sqrt{\frac73}, b = \frac{1}{105\sqrt{0.7}}$.\footnote{In general in 
 Having now discussed the evolution of stars from a theoretical perspective, it becomes imperative to discuss the methods of modelling them. In this section, we provide an overview of the four codes we either use extensively or have developed to carry out the work of this thesis. These four codes are:
 
 \begin{enumerate}
-    \item The Cambridge \codename{stars} code (\cref{chap:numerical_methods_stars}), originally developed by Peter Eggleton, which we use to solve the equations of stellar structure and evolution,
-    \item The \codename{Tui} code (\cref{chap:numerical_methods_tui}), developed by Jan Eldridge, which performs our binary population synthesis of gravitational wave sources,
-    \item The \codename{Kaitiaki} code (\cref{chap:numerical_methods_kaitiaki}), developed for this thesis, which is our grid-manager code and allows modification of the input parameters to the Cambridge \codename{stars} code programmatically, and
-    \item The \codename{Takahe} code (\cref{chap:numerical_methods_takahe}), developed by Sean Richards for \citet{Richards:2021}, which evolves the orbits of our binary compact objects.
+    \item The Cambridge \codename{stars} code (\Cref{chap:numerical_methods_stars}), originally developed by Peter Eggleton, which we use to solve the equations of stellar structure and evolution,
+    \item The \codename{Tui} code (\Cref{chap:numerical_methods_tui}), developed by Jan Eldridge, which performs our binary population synthesis of gravitational wave sources,
+    \item The \codename{Kaitiaki} code (\Cref{chap:numerical_methods_kaitiaki}), developed for this thesis, which is our grid-manager code and allows modification of the input parameters to the Cambridge \codename{stars} code programmatically, and
+    \item The \codename{Takahe} code (\Cref{chap:numerical_methods_takahe}), developed by Sean Richards for \citet{Richards:2021}, which evolves the orbits of our binary compact objects.
 \end{enumerate}
 
 \subsection{The Cambridge \codename{stars} code}\label{chap:numerical_methods_stars}
@@ -929,7 +929,7 @@ The matrix inversion is simple Gauss-Jordan inversion, which is of complexity cl
 
 \subsubsection{Initial Condition Selection}
 
-In this section we provide an account for the selection of our general initial conditions. Unless otherwise noted in this thesis, it is assumed that the values will be using the parameters described here and in \cref{chap:param_config}.
+In this section we provide an account for the selection of our general initial conditions. Unless otherwise noted in this thesis, it is assumed that the values will be using the parameters described here and in \Cref{chap:param_config}.
 
 In our implementation of \gls{mlt} \citep{Vitense:1953, Bohm-vitense:1958, Cox:1968}, we use an \gls{mlt} parameter of $\alpha_\text{\gls{mlt}}=1.985$, selected via calibration against a model of the Sun. This is effectively a dissipativity parameter, and represents the depth at which a parcel of matter penetrates into a lower layer before becoming fully dissipated. The value was selected by modelling a \SI{1}{\msun} star and varying only the mixing length parameter until it had a lumonosity of \SI{1}{\lsun} and a radius of \SI{1}{\rsun}, at the present age of the Sun.
 
@@ -944,7 +944,7 @@ Instead of being equally spaced \textit{radially}, these mesh points are taken t
     &\phantom{=} + \ln\left(\frac{c_6M^\frac23}{M + M^\frac23}\right) - c_3\ln\left(\frac{R^2}{c_8}+1\right),
 \end{align}
 
-where $P, T, M, R$ are the total pressures, temperatures, masses, and radii of each star, the constants $c_i$ are user controllable and given in \cref{chap:param_config}, $P_\text{He}$ is the pressure in the helium-burning shell, and
+where $P, T, M, R$ are the total pressures, temperatures, masses, and radii of each star, the constants $c_i$ are user controllable and given in \Cref{chap:param_config}, $P_\text{He}$ is the pressure in the helium-burning shell, and
 
 \begin{equation}
     c_\text{H} = \begin{cases}
@@ -979,7 +979,7 @@ The \codename{STARS} code utilises an adaptive timestep control mechanism, where
     \Delta = \frac{d_\text{opt}}{\sum_i \sum_j \left|\delta x_{ij}\right|},\label{eq:timestep_selection}
 \end{equation}
 
-where $d_\text{opt}$ is a pre-defined target timestep (typically taken to be $\sim 1$, unless otherwise specified; see \cref{chap:param_config} for our selections), and $\delta x_{ij}$ is the change in variable $x_i$ at meshpoint $j$. In this calculation, luminosity is explicity excluded as this would cause the timestep to explode during certain points of the star's life-time. A new timestep, $d^\prime$, is selected from the previous timestep $d$ by
+where $d_\text{opt}$ is a pre-defined target timestep (typically taken to be $\sim 1$, unless otherwise specified; see \Cref{chap:param_config} for our selections), and $\delta x_{ij}$ is the change in variable $x_i$ at meshpoint $j$. In this calculation, luminosity is explicity excluded as this would cause the timestep to explode during certain points of the star's life-time. A new timestep, $d^\prime$, is selected from the previous timestep $d$ by
 
 \begin{equation}
     d^\prime = \begin{cases}
@@ -1001,13 +1001,13 @@ Stellar modelling is a nontrivial endeavour and there are many cases where the c
     % \ce{^12_6C + ^4_2He &-> ^16_8O + \gamma{} + \SI{7.162}{\mega\electronvolt}},
 \end{align*}
 
-occurs within a highly electron-degenerate helium core. As a result, the temperature of the star increases sharply during this process, leading to thermal runaway. This temperature increase in turn results in an increase in the luminosity (which peaks at $\sim\SI{1e10}{\lsun}$). The flash itself -- being the period of thermal runaway -- occurs on the order of a few minutes, though the spike in luminosity lasts approximately $\SI{7}{\mega\year}$ (for the $\SI{2.51}{\msun}$ star shown in \cref{fig:thermal_pulses_he_flash}).
+occurs within a highly electron-degenerate helium core. As a result, the temperature of the star increases sharply during this process, leading to thermal runaway. This temperature increase in turn results in an increase in the luminosity (which peaks at $\sim\SI{1e10}{\lsun}$). The flash itself -- being the period of thermal runaway -- occurs on the order of a few minutes, though the spike in luminosity lasts approximately $\SI{7}{\mega\year}$ (for the $\SI{2.51}{\msun}$ star shown in \Cref{fig:thermal_pulses_he_flash}).
 
-A method termed ``pseudoevolution'' can be used to overcome this source of error. Briefly, a complete model (termed the \textit{reference model}) of a \SI{3}{\msun} star is evolved with a full model description saved at every timestep. When the helium flash occurs in a model (heuristically, $0.1 \leq M_\text{He} / \unit{\msun} \leq 0.55$ and $\log T_\text{c} / \unit{\kelvin} > 7.9$), we query the reference model for a model with the same helium core mass as the failed model. Using a custom subroutine in \codename{stars}, we turn off all nuclear and thermal burning and remove mass from the reference model to match the mass of the failed model. This model is then allowed to evolve as per normal, having overcome the helium flash. We note that this is not a \textit{perfect} method, as this does induce discontinuities in the plots, as shown in \cref{fig:pseudoevolved_kippenhahn}, though these are essentially insignificant.
+A method termed ``pseudoevolution'' can be used to overcome this source of error. Briefly, a complete model (termed the \textit{reference model}) of a \SI{3}{\msun} star is evolved with a full model description saved at every timestep. When the helium flash occurs in a model (heuristically, $0.1 \leq M_\text{He} / \unit{\msun} \leq 0.55$ and $\log T_\text{c} / \unit{\kelvin} > 7.9$), we query the reference model for a model with the same helium core mass as the failed model. Using a custom subroutine in \codename{stars}, we turn off all nuclear and thermal burning and remove mass from the reference model to match the mass of the failed model. This model is then allowed to evolve as per normal, having overcome the helium flash. We note that this is not a \textit{perfect} method, as this does induce discontinuities in the plots, as shown in \Cref{fig:pseudoevolved_kippenhahn}, though these are essentially insignificant.
 
-The other stage where low-mass stars are prone to fail is during a thermal pulse \citep{Schwarzschild:1965, Schwarzschild:1967}. The mass range for thermal pulses is broader, from $\sim\SI{0.8}{\msun}$ to $\sim\SI{8}{\msun}$. A thermal pulse occurs as a star ascends the \gls{agb}; as a \gls{CO_core} or \gls{ONe_core} has developed, shells of burning helium and hydrogen (separated by a region of almost pure helium) sit atop the core \citep{Pols:2001}. As the intershell region dissipates due to dredge up or helium burning, hydrogen burning reignites in the hydrogen shell. As both shells burn (at the same rate), the helium-burning shell becomes unstable and eventually a process of thermal runaway begins (similar to the helium flash, except off-core). This causes a spike in the luminosity, termed a thermal pulse. This can persist for many pulses -- \citet{Stancliffe:2006} observes pulses before model termination, while \citet{Stancliffe:2005} observes 17 pulses for a model similar to those in \cref{fig:thermal_pulses_he_flash}.
+The other stage where low-mass stars are prone to fail is during a thermal pulse \citep{Schwarzschild:1965, Schwarzschild:1967}. The mass range for thermal pulses is broader, from $\sim\SI{0.8}{\msun}$ to $\sim\SI{8}{\msun}$. A thermal pulse occurs as a star ascends the \gls{agb}; as a \gls{CO_core} or \gls{ONe_core} has developed, shells of burning helium and hydrogen (separated by a region of almost pure helium) sit atop the core \citep{Pols:2001}. As the intershell region dissipates due to dredge up or helium burning, hydrogen burning reignites in the hydrogen shell. As both shells burn (at the same rate), the helium-burning shell becomes unstable and eventually a process of thermal runaway begins (similar to the helium flash, except off-core). This causes a spike in the luminosity, termed a thermal pulse. This can persist for many pulses -- \citet{Stancliffe:2006} observes pulses before model termination, while \citet{Stancliffe:2005} observes 17 pulses for a model similar to those in \Cref{fig:thermal_pulses_he_flash}.
 
-The method to overcome this numerical instability is involved and not fully implemented in \codename{STARS}. Briefly, the number of meshpoints must be drastically increases near the onset of thermal pulses; up to 999 instead of the typical 199/499. The timestep must also be forcibly decreased; thermal pulses typically last for around a year \citep{Pols:2001} so the timestep must be reduced to not miss them (and to not have the modulus of the change in parameters -- $\sum_i \sum_j \left|\delta x_{ij}\right|$ in \cref{eq:timestep_selection} -- and thus the error, increase too much). This method was implemented to generate \cref{fig:thermal_pulses_he_flash}, though only two pulses were achievable.
+The method to overcome this numerical instability is involved and not fully implemented in \codename{STARS}. Briefly, the number of meshpoints must be drastically increases near the onset of thermal pulses; up to 999 instead of the typical 199/499. The timestep must also be forcibly decreased; thermal pulses typically last for around a year \citep{Pols:2001} so the timestep must be reduced to not miss them (and to not have the modulus of the change in parameters -- $\sum_i \sum_j \left|\delta x_{ij}\right|$ in \Cref{eq:timestep_selection} -- and thus the error, increase too much). This method was implemented to generate \Cref{fig:thermal_pulses_he_flash}, though only two pulses were achievable.
 
 \begin{figure}[!htbp]
     \centering
@@ -1031,7 +1031,7 @@ Firstly, the floating-point precision has been increased to double precision for
 
 As part of this, we also undertook a reasonably extensive refactor of the codebase. Whilst some of the code remains as originally written, it is now more compliant with modern programming practices and is in some sense easier to alter with new routines.
 
-We have also improved mass loss interpolation in the \codename{massloss.f} routine. Whilst not changing the underlying assumption that mass transfer is governed by \citet{De_jager:1988, Vink:2001} (\cref{sec:mass_transfer}), we have improved the transition between typical O-type mass loss and WR mass loss rates by slowing turning on the WR mass loss rate as the surface hydrogen abundance drops below 0.4. The transition was previously abrupt and would cause the code to fail due to numerical instability if a non-WR star entered this regime.
+We have also improved mass loss interpolation in the \codename{massloss.f} routine. Whilst not changing the underlying assumption that mass transfer is governed by \citet{De_jager:1988, Vink:2001} (\Cref{sec:mass_transfer}), we have improved the transition between typical O-type mass loss and WR mass loss rates by slowing turning on the WR mass loss rate as the surface hydrogen abundance drops below 0.4. The transition was previously abrupt and would cause the code to fail due to numerical instability if a non-WR star entered this regime.
 
 Similarly to this, the code now manually reduces the timestep in the run-up to, during, and after the contact binary phase. Evolution during this phase breaks thermal equilibrium (i.e., the star evolves on a longer timescale than its Kelvin-Helmholtz time-scale) and hence the evolution can change rapidly as the star attempts to adjust back to thermal equilibrium. The contact phase, for example, typically last for between 100-200 \unit{\kilo\year} in our models.
 
@@ -1039,11 +1039,11 @@ We have also begun implementing an $\alpha-\lambda$ treatment of \gls{cee}, thou
 
 \subsection{The \codename{Tui} code}\label{chap:numerical_methods_tui}
 
-\codename{Tui} is the core population synthesis code within the \gls{bpass} project. \codename{Tui} takes as input the output from the \codename{stars} code. \codename{Tui} was first described in \citet{Ghodla:2023}, and was further described in \citet{Stevance:2023}, though we note that their version is technically a refactor of the version we use. The predominant function we use \codename{Tui} for is the matching of pre- and post- supernova models for \cref{chap:natal_kicks}, and in this section we provide a brief account of that functionality of \codename{Tui} (though the control of the population synthesis models is beyond the scope of this thesis).
+\codename{Tui} is the core population synthesis code within the \gls{bpass} project. \codename{Tui} takes as input the output from the \codename{stars} code. \codename{Tui} was first described in \citet{Ghodla:2023}, and was further described in \citet{Stevance:2023}, though we note that their version is technically a refactor of the version we use. The predominant function we use \codename{Tui} for is the matching of pre- and post- supernova models for \Cref{chap:natal_kicks}, and in this section we provide a brief account of that functionality of \codename{Tui} (though the control of the population synthesis models is beyond the scope of this thesis).
 
 \codename{Tui} has precompiled ``input\_'' files which report a \codename{STARS} plot file, an \gls{imf} weight, and a model type (merger/normal primary/normal secondary/single model/quasi-homogeneous evolution binary/single star). After loading in a model, \codename{Tui} applies a given kick and computes the new orbital parameters from \citet{Tauris:1998}. Crucially, a core assumption of \gls{bpass} is that the orbit remains circular after the first supernova and is allowed to be eccentric after the second. Of course, nature cares little for our assumptions, and the supernova may cause the binary to become eccentric after the first supernova; \codename{Tui} accounts for this by setting the separation after the first supernova to be the semi-latus rectum of the eccentric binary. \codename{Tui} repeats this process after the second supernova.
 
-For the purposes of \cref{chap:natal_kicks}, if the binary remains bound (has $0\leq e < 1$) after the second supernova, we record the following parameters:
+For the purposes of \Cref{chap:natal_kicks}, if the binary remains bound (has $0\leq e < 1$) after the second supernova, we record the following parameters:
 
 \begin{enumerate}
     \item The mass of the primary,
@@ -1061,7 +1061,7 @@ This provides us with the post-secondary supernova orbital parameters which dete
 
 \codename{Kaitiaki} is a grid-watcher code we have developed that sits atop the \codename{STARS} code and manages its execution. It was developed primarily to manipulate the fixed-width text files that \codename{STARS} uses, in contrast to the ``typical'' manipulation done through the command line. However development proceeded in such a way that it now provides an interface to all of the (relevant to this thesis) output and input files. Further, it also now allows the user to control jobs through a \textsc{Python} interface, greatly simplifying grid calculations.
 
-The core of \codename{Kaitiaki} is the \mintinline{Python}{STARSController()} interface. The most na\"ive run would be to initialise a model of, say, \SI{8}{\msun} and evolve it until it evolves up the \gls{agb}. A sample of code for this is shown in \cref{kaitiaki_runs} which evolves a \SI{10}{\msun} star.
+The core of \codename{Kaitiaki} is the \mintinline{Python}{STARSController()} interface. The most na\"ive run would be to initialise a model of, say, \SI{8}{\msun} and evolve it until it evolves up the \gls{agb}. A sample of code for this is shown in \Cref{kaitiaki_runs} which evolves a \SI{10}{\msun} star.
 
 \pythonfile[label=kaitiaki_runs]{A \codename{Kaitiaki} script to evolve a \SI{10}{\msun} star}{chapters/listings/kaitiaki_demo.py}
 

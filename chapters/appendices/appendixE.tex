@@ -3,7 +3,7 @@
 
 \chapterEpigraph{Algebra’s like sheet music. The important thing isn’t can you read music, it’s can you \textit{hear} it. Can you hear the music, Robert?}{Niels Bohr, in Oppenheimer}
 
-In this section, we present additional derivations for expressions used in \cref{chap:theoretical_background}.
+In this section, we present additional derivations for expressions used in \Cref{chap:theoretical_background}.
 
 \section{Roche lobe formula}
 
@@ -231,7 +231,7 @@ Define the constant $\beta$ as
     \beta \equiv \frac{64}{5}\frac{G^3M_1M_2\pqty{M_1+M_2}}{c^5}.
 \end{equation}
 
-Now insert \cref{eq:average_power_2body} into \cref{eq:average_power} to obtain
+Now insert \Cref{eq:average_power_2body} into \Cref{eq:average_power} to obtain
 
 \begin{align}
     \dv{a}{t} &= -\frac{2a^2}{GM_1M_2}\frac{32}{5}\frac{G^4M_1^2M_2^2\pqty{M_1+M_2}}{c^5a^5\pqty{1-e^2}^\frac72}\pqty{1+\frac{73}{24}e^2+\frac{37}{96}e^4} \\
@@ -251,7 +251,7 @@ Implicit differentiation reveals that
     &= \frac{GM_1^2M_2^2}{M_1+M_2}\bqty{\dv{a}{t}\pqty{1-e^2}-2ae\dv{e}{t}}.
 \end{align}
 
-Multiplying each side of \cref{eq:average_ang_mom} by $2L$ and substituting this in, we obtain
+Multiplying each side of \Cref{eq:average_ang_mom} by $2L$ and substituting this in, we obtain
 
 \begin{align}
     \frac{GM_1^2M_2^2}{M_1+M_2}\bqty{\dv{a}{t}\pqty{1-e^2}-2ae\dv{e}{t}} &= -L\frac{64}{5}\frac{G^\frac72 M_1^2M_2^2\sqrt{M_1+M_2}}{c^5 a^\frac72 \pqty{1-e^2}^2}\pqty{1+\frac78 e^2} \notag\\
@@ -278,7 +278,7 @@ which is our second equation. Hence we arrive at the coupled differential equati
 
 \subsection{The coalescence time}
 
-The coalescence time is by definition the time it takes for the binary system to merge after the secondary supernova. We can step towards this in a similar way to \citet{Peters:1964}. First, dividing \cref{eq:peters_sma} by \cref{eq:peters_ecc} gives
+The coalescence time is by definition the time it takes for the binary system to merge after the secondary supernova. We can step towards this in a similar way to \citet{Peters:1964}. First, dividing \Cref{eq:peters_sma} by \Cref{eq:peters_ecc} gives
 
 \begin{equation}
     \dv{a}{e} = \frac{12}{19}\frac{a}{e}\frac{1+\frac{73}{24}e^2+\frac{37}{96}e^4}{\pqty{1-e^2}\pqty{1+\frac{121}{304}e^2}}
@@ -298,7 +298,7 @@ with
     \label{eq:singularity_in_c0_oh_noes}
 \end{equation}
 
-embodying the initial parameters. Now, substituting \cref{eq:a_functionof_e} into \cref{eq:peters_ecc}, we see
+embodying the initial parameters. Now, substituting \Cref{eq:a_functionof_e} into \Cref{eq:peters_ecc}, we see
 
 \begin{align}
     \dv{e}{t} &= -\frac{19}{12}\frac{\beta}{a^4\pqty{1-e^2}^\frac52}\pqty{e+\frac{121}{304}e^3} \\
@@ -326,7 +326,7 @@ i.e.,
 
 If $e_0=0$ then the orbit is circular, and we immediately see concerning behaviour -- the integral collapses to zero, necessitating a different approach.
 
-One of the critical mistakes here is presuming that $c_0$ in \cref{eq:singularity_in_c0_oh_noes} is valid for all physical eccentricities. In fact, in the limit as $e_0 \to 0$, $c_0$ diverges. We retreat to before this critical assumption, and examine \cref{eq:peters_sma}. In the limiting case of a circular orbit, $e=e_0=0$, so the expression becomes
+One of the critical mistakes here is presuming that $c_0$ in \Cref{eq:singularity_in_c0_oh_noes} is valid for all physical eccentricities. In fact, in the limit as $e_0 \to 0$, $c_0$ diverges. We retreat to before this critical assumption, and examine \Cref{eq:peters_sma}. In the limiting case of a circular orbit, $e=e_0=0$, so the expression becomes
 
 \begin{equation}
     \dv{a}{t} = -\frac{\beta}{a^3}.
@@ -364,14 +364,14 @@ The following derivation is adapted from the one in \citet{Eldridge:2018}.
 
 \subsection{The Lane-Emden equation}
 
-We begin from the equations of stellar structure, \cref{eq:stellar_structure}. We take as our equation of state pressure to be to a power of density, i.e.,
+We begin from the equations of stellar structure, \Cref{eq:stellar_structure}. We take as our equation of state pressure to be to a power of density, i.e.,
 
 \begin{equation}
     P\propto\rho^\gamma \implies P=K\rho^{1+\frac{1}{n}}
     \label{eq:polytrope_defn}
 \end{equation}
 
-with $K$ a constant and $n$ (defined by $\gamma=1+\frac{1}{n}$) the so-called polytropic index. We use \cref{eq:stellar_structure} to establish an ordinary differential equation for the pressure $P$.
+with $K$ a constant and $n$ (defined by $\gamma=1+\frac{1}{n}$) the so-called polytropic index. We use \Cref{eq:stellar_structure} to establish an ordinary differential equation for the pressure $P$.
 
 \begin{align}
     \dv{P}{r} &= -\frac{Gm\rho}{r^2} \\
@@ -387,7 +387,7 @@ To solve this differential equation, we introduce a dimensionless parameter $\th
     \rho = \rho_\text{c}\theta^n,
 \end{equation}
 
-with $\theta=1$ at $r=0$ and $\theta=0$ at $r=R$. The first constraint defines $\rho_\text{c}$ as the central density. Using this in \cref{eq:polytrope_defn} we have
+with $\theta=1$ at $r=0$ and $\theta=0$ at $r=R$. The first constraint defines $\rho_\text{c}$ as the central density. Using this in \Cref{eq:polytrope_defn} we have
 
 \begin{align}
     P &= K\pqty{\rho_\text{c}\theta^n}^{1+\frac{1}{n}} \\
@@ -395,7 +395,7 @@ with $\theta=1$ at $r=0$ and $\theta=0$ at $r=R$. The first constraint defines $
     &= P_\text{c}\theta^{n+1}
 \end{align}
 
-again defining $P_\text{c}$ as the central pressure. Substituting this into \cref{eq:yikes_ode} we have
+again defining $P_\text{c}$ as the central pressure. Substituting this into \Cref{eq:yikes_ode} we have
 
 \begin{align}
     \frac{1}{r^2}\dv{}{r}\pqty{\frac{r^2}{\rho}\bqty{K\rho_\text{c}^{1+\frac{1}{n}}\pqty{1+n}\theta^n\dv{\theta}{r}}} &= -4\pi G\rho \\
@@ -461,7 +461,7 @@ The relationship between $M$ and $R$ is thus
     R \propto M^\frac{n-1}{n-3},
 \end{equation}
 
-for fixed $K$. There is a singularity at $n=3$, depicted in \cref{fig:polytropic_radii} for stars in the range \SI{5}{\msun} to \SI{55}{\msun}. An $n=3$ polytrope corresponds to the equation of state $P\propto\rho^\frac43$, and by \cref{eq:M_propto_rho}, has its mass independent of the radius or the density.
+for fixed $K$. There is a singularity at $n=3$, depicted in \Cref{fig:polytropic_radii} for stars in the range \SI{5}{\msun} to \SI{55}{\msun}. An $n=3$ polytrope corresponds to the equation of state $P\propto\rho^\frac43$, and by \Cref{eq:M_propto_rho}, has its mass independent of the radius or the density.
 
 \begin{figure}[!htbp]
     \centering
@@ -498,7 +498,7 @@ This is a polytrope with $n=3$ and
     K = \frac{c\hbar}{12\pi^2}\pqty{\frac{3\pi^2}{2m_\text{H}}}^\frac43 = \SI{1.224e15}{\dyne\per\centi\meter\squared(\gram\per\centi\meter\cubed)^{-4/3}}
 \end{equation}
 
-As before, this material cannot remain bound to the star -- the radius tends to infinity at $n=3$ per \cref{fig:polytropic_radii} -- so we have the maximum mass of a stable star supported by electron degeneracy pressure as
+As before, this material cannot remain bound to the star -- the radius tends to infinity at $n=3$ per \Cref{fig:polytropic_radii} -- so we have the maximum mass of a stable star supported by electron degeneracy pressure as
 
 \begin{equation}
     M = 8.08\pi\pqty{\frac{K}{\pi G}} \approx \frac{5.75}{\mu^2} \unit{\msun},

@@ -42,7 +42,16 @@
 \usepackage[abspage,user,lastpage]{zref}
 \usepackage[titles]{tocloft}
 \usepackage{CJKutf8}
+\usepackage{scripture}
 
+\scripturesetup{
+  % font=\small,
+  version=KJV; \citealt{Various:1611}
+}
+
+\makeatletter
+\apptocmd{\bbl@greek@ampersand}{\space}{}{}
+\makeatother
 
 \renewcommand{\LettrineFontHook}{\Zallmanfamily}
 
