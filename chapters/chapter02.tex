@@ -953,7 +953,7 @@ where $P, T, M, R$ are the total pressures, temperatures, masses, and radii of e
     \end{cases}
 \end{equation}
 
-where $P_\text{H}$ is the pressures in the hydrogen-burning shell. Here, $\mathcal{P}$ represents the pressure in the hydrogen-burning shell when $X_\text{H} = 0.15$, and its inclusion obviates numerical issues if the envelope is removed and there is no hydrogen burning occuring. The choice of mesh spacing coefficients $c_1\dots c_{10}$ leads to different areas of the star being prioritised. Coordinates $c_1, c_9,$ and $c_{10}$ are not used except in \gls{agb}-specific evolution, which is not required for most cases (and requires a change of parameterisation in the pressure-shell terms). During binary evolution, $c_5$ is hardcoded to be 0.15, and $c_2$ to be 0.0, to focus meshppoints into the hydrogen-burning shell.
+where $P_\text{H}$ is the pressures in the hydrogen-burning shell. Here, $\mathcal{P}$ represents the pressure in the hydrogen-burning shell when $X_\text{H} = 0.15$, and its inclusion obviates numerical issues if the envelope is removed and there is no hydrogen burning occuring. The choice of mesh spacing coefficients $c_1\dots c_{10}$ leads to different areas of the star being prioritised. Coordinates $c_1, c_9,$ and $c_{10}$ are not used except in \gls{agb}-specific evolution, which is not required for most cases (and requires a change of parameterisation in the pressure-shell terms). During binary evolution, $c_5$ is hardcoded to be 0.15, and $c_2$ to be 0.0, to focus meshpoints into the hydrogen-burning shell.
 
 Placement of the mesh is controlled by the derivative $\pdv{\mathcal{Q}}{k}$, where $k$ is the meshpoint number \citep{Stancliffe:2016}. Specifically, meshpoints are placed at locations where
 

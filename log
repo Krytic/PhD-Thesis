@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.1)  1 APR 2025 18:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.1)  10 APR 2025 18:13
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2405,7 +2405,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmss on input line 9
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
-<images/CoverPage_MW.png, id=497, 1927.2pt x 2890.8pt>
+<images/CoverPage_MW.png, id=493, 1927.2pt x 2890.8pt>
 File: images/CoverPage_MW.png Graphic file (type png)
 <use images/CoverPage_MW.png>
 Package pdftex.def Info: images/CoverPage_MW.png  used on input line 24.
@@ -2500,24 +2500,6 @@ F.
 84.pgf)
 
 [4{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/crimson/crm_ltoc2m.enc}]
-(/usr/local/texlive/2025/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
-File: UTF8.bdg 2021/10/16 4.8.5
-)
-(/usr/local/texlive/2025/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-)
-(/usr/local/texlive/2025/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-)
-LaTeX Font Info:    Trying to load font information for C70+goth on input line 
-47.
-
-(/usr/local/texlive/2025/texmf-dist/tex/latex/cjk/contrib/wadalab/c70goth.fd
-File: c70goth.fd 2021/10/16 4.8.5
-)
-(/usr/local/texlive/2025/texmf-dist/tex/latex/cjk/contrib/wadalab/c70goth.fdx
-File: c70goth.fdx 2021/10/16 4.8.5
-)
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 89.pgf)
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
@@ -2658,13 +2640,13 @@ pdfTeX warning: pdflatex: pop empty color page stack 0
 \tf@tod=\write13
 \openout13 = `main.tod'.
 
-<declaration_forms/Chapter04-final.pdf, id=960, 597.50786pt x 845.04686pt>
+<declaration_forms/Chapter04-final.pdf, id=934, 597.50786pt x 845.04686pt>
 File: declaration_forms/Chapter04-final.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter04-final.pdf>
 Package pdftex.def Info: declaration_forms/Chapter04-final.pdf  used on input l
 ine 78.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<declaration_forms/Chapter04-final.pdf, id=962, page=1, 597.50786pt x 845.04686
+<declaration_forms/Chapter04-final.pdf, id=936, page=1, 597.50786pt x 845.04686
 pt>
 File: declaration_forms/Chapter04-final.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter04-final.pdf, page 1>
@@ -2702,13 +2684,13 @@ input line 78.
 [26
 
  <./declaration_forms/Chapter04-final.pdf>]
-<declaration_forms/Chapter06-final.pdf, id=1043, 597.50786pt x 845.04686pt>
+<declaration_forms/Chapter06-final.pdf, id=1017, 597.50786pt x 845.04686pt>
 File: declaration_forms/Chapter06-final.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter06-final.pdf>
 Package pdftex.def Info: declaration_forms/Chapter06-final.pdf  used on input l
 ine 78.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<declaration_forms/Chapter06-final.pdf, id=1045, page=1, 597.50786pt x 845.0468
+<declaration_forms/Chapter06-final.pdf, id=1019, page=1, 597.50786pt x 845.0468
 6pt>
 File: declaration_forms/Chapter06-final.pdf Graphic file (type pdf)
 <use declaration_forms/Chapter06-final.pdf, page 1>
@@ -2764,7 +2746,7 @@ pdfTeX warning: pdflatex: pop empty color page stack 0
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/scsl' instead on input line 27.
 
-<images/Introduction/NightSkyMap.pdf, id=1186, 386.1316pt x 210.86598pt>
+<images/Introduction/NightSkyMap.pdf, id=1160, 386.1316pt x 210.86598pt>
 File: images/Introduction/NightSkyMap.pdf Graphic file (type pdf)
 <use images/Introduction/NightSkyMap.pdf>
 Package pdftex.def Info: images/Introduction/NightSkyMap.pdf  used on input lin
@@ -2835,20 +2817,20 @@ Underfull \vbox (badness 3039) has occurred while \output is active []
 
 
 [14]
-<images/TheorySection/intermediate_mass.pdf, id=1569, 437.30702pt x 420.30763pt
+<images/TheorySection/intermediate_mass.pdf, id=1543, 437.30702pt x 420.30763pt
 >
 File: images/TheorySection/intermediate_mass.pdf Graphic file (type pdf)
 <use images/TheorySection/intermediate_mass.pdf>
 Package pdftex.def Info: images/TheorySection/intermediate_mass.pdf  used on in
 put line 201.
 (pdftex.def)             Requested size: 491.94817pt x 472.85132pt.
-<images/TheorySection/10_msun_jumps.pdf, id=1575, 504.03989pt x 362.63345pt>
+<images/TheorySection/10_msun_jumps.pdf, id=1549, 504.03989pt x 362.63345pt>
 File: images/TheorySection/10_msun_jumps.pdf Graphic file (type pdf)
 <use images/TheorySection/10_msun_jumps.pdf>
 Package pdftex.def Info: images/TheorySection/10_msun_jumps.pdf  used on input 
 line 212.
 (pdftex.def)             Requested size: 491.94817pt x 353.93414pt.
-<images/TheorySection/8_msun_star_annotated.pdf, id=1580, 405.77869pt x 402.446
+<images/TheorySection/8_msun_star_annotated.pdf, id=1554, 405.77869pt x 402.446
 17pt>
 File: images/TheorySection/8_msun_star_annotated.pdf Graphic file (type pdf)
 <use images/TheorySection/8_msun_star_annotated.pdf>
@@ -2902,7 +2884,7 @@ Underfull \vbox (badness 1371) has occurred while \output is active []
 
 
 [20]
-<images/TheorySection/BEPN_HalfLife.pdf, id=1708, 401.21892pt x 419.86316pt>
+<images/TheorySection/BEPN_HalfLife.pdf, id=1681, 401.21892pt x 419.86316pt>
 File: images/TheorySection/BEPN_HalfLife.pdf Graphic file (type pdf)
 <use images/TheorySection/BEPN_HalfLife.pdf>
 Package pdftex.def Info: images/TheorySection/BEPN_HalfLife.pdf  used on input 
@@ -2920,7 +2902,7 @@ Missing character: There is no ; in font nullfont!
 
 
 [22]
-<images/TheorySection/roche_potentials.pdf, id=1777, 412.09822pt x 553.88676pt>
+<images/TheorySection/roche_potentials.pdf, id=1751, 412.09822pt x 553.88676pt>
 
 File: images/TheorySection/roche_potentials.pdf Graphic file (type pdf)
 <use images/TheorySection/roche_potentials.pdf>
@@ -2932,21 +2914,21 @@ ut line 509.
 [23]
 
 [24 <./images/TheorySection/roche_potentials.pdf>]
-<images/TheorySection/RLs_Eggleton_Formula.pdf, id=1817, 412.09822pt x 179.6648
+<images/TheorySection/RLs_Eggleton_Formula.pdf, id=1791, 412.09822pt x 179.6648
 7pt>
 File: images/TheorySection/RLs_Eggleton_Formula.pdf Graphic file (type pdf)
 <use images/TheorySection/RLs_Eggleton_Formula.pdf>
 Package pdftex.def Info: images/TheorySection/RLs_Eggleton_Formula.pdf  used on
  input line 607.
 (pdftex.def)             Requested size: 491.94817pt x 214.47824pt.
-<images/TheorySection/eggleton_justification.pdf, id=1826, 405.77869pt x 175.99
+<images/TheorySection/eggleton_justification.pdf, id=1800, 405.77869pt x 175.99
 821pt>
 File: images/TheorySection/eggleton_justification.pdf Graphic file (type pdf)
 <use images/TheorySection/eggleton_justification.pdf>
 Package pdftex.def Info: images/TheorySection/eggleton_justification.pdf  used 
 on input line 614.
 (pdftex.def)             Requested size: 491.94817pt x 213.38547pt.
-<images/TheorySection/marchant_justification.pdf, id=1832, 405.77869pt x 175.99
+<images/TheorySection/marchant_justification.pdf, id=1806, 405.77869pt x 175.99
 821pt>
 File: images/TheorySection/marchant_justification.pdf Graphic file (type pdf)
 <use images/TheorySection/marchant_justification.pdf>
@@ -2999,7 +2981,7 @@ LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 [34]
 
 [35]
-<images/TheorySection/thermal_pulses_and_he_flash.pdf, id=2178, 444.52837pt x 4
+<images/TheorySection/thermal_pulses_and_he_flash.pdf, id=2152, 444.52837pt x 4
 00.55727pt>
 File: images/TheorySection/thermal_pulses_and_he_flash.pdf Graphic file (type p
 df)
@@ -3007,7 +2989,7 @@ df)
 Package pdftex.def Info: images/TheorySection/thermal_pulses_and_he_flash.pdf  
 used on input line 1014.
 (pdftex.def)             Requested size: 491.94817pt x 443.30974pt.
-<images/TheorySection/helium_flash_kippenhahn.pdf, id=2179, 406.04393pt x 168.8
+<images/TheorySection/helium_flash_kippenhahn.pdf, id=2153, 406.04393pt x 168.8
 4819pt>
 File: images/TheorySection/helium_flash_kippenhahn.pdf Graphic file (type pdf)
 <use images/TheorySection/helium_flash_kippenhahn.pdf>
@@ -3024,12 +3006,12 @@ Package pdftex.def Info: images/TheorySection/helium_flash_kippenhahn.pdf  used
 \pydata@fh@0=\write14
 \openout14 = `_FAD58DE7366495DB4650CFEFAC2FCD61.data.minted'.
 
-runsystem(latexminted config  --timestamp 20250401181310 FAD58DE7366495DB4650CF
+runsystem(latexminted config  --timestamp 20250410181306 FAD58DE7366495DB4650CF
 EFAC2FCD61)...executed.
 
 
 (./_FAD58DE7366495DB4650CFEFAC2FCD61.config.minted)
-runsystem(latexminted cleanconfig  --timestamp 20250401181310 FAD58DE7366495DB4
+runsystem(latexminted cleanconfig  --timestamp 20250410181306 FAD58DE7366495DB4
 650CFEFAC2FCD61)...executed.
 
 
@@ -3080,42 +3062,42 @@ Underfull \vbox (badness 1540) has occurred while \output is active []
 
 
 [44] (./chapters/tables/BPASS_v2_match_table.tex)
-<images/overcontact_binaries/LSS_3074_hoki.pdf, id=2464, 211.74048pt x 137.439p
+<images/overcontact_binaries/LSS_3074_hoki.pdf, id=2438, 211.74048pt x 137.439p
 t>
 File: images/overcontact_binaries/LSS_3074_hoki.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/LSS_3074_hoki.pdf>
 Package pdftex.def Info: images/overcontact_binaries/LSS_3074_hoki.pdf  used on
  input line 77.
 (pdftex.def)             Requested size: 241.0573pt x 156.47235pt.
-<images/overcontact_binaries/MY_Cam_hoki.pdf, id=2465, 211.74048pt x 137.3948pt
+<images/overcontact_binaries/MY_Cam_hoki.pdf, id=2439, 211.74048pt x 137.3948pt
 >
 File: images/overcontact_binaries/MY_Cam_hoki.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/MY_Cam_hoki.pdf>
 Package pdftex.def Info: images/overcontact_binaries/MY_Cam_hoki.pdf  used on i
 nput line 83.
 (pdftex.def)             Requested size: 241.0573pt x 156.42204pt.
-<images/overcontact_binaries/SMC_108086_hoki.pdf, id=2466, 211.74048pt x 137.39
+<images/overcontact_binaries/SMC_108086_hoki.pdf, id=2440, 211.74048pt x 137.39
 48pt>
 File: images/overcontact_binaries/SMC_108086_hoki.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/SMC_108086_hoki.pdf>
 Package pdftex.def Info: images/overcontact_binaries/SMC_108086_hoki.pdf  used 
 on input line 90.
 (pdftex.def)             Requested size: 241.0573pt x 156.42204pt.
-<images/overcontact_binaries/TU_Mus_hoki.pdf, id=2467, 215.99055pt x 137.3948pt
+<images/overcontact_binaries/TU_Mus_hoki.pdf, id=2441, 215.99055pt x 137.3948pt
 >
 File: images/overcontact_binaries/TU_Mus_hoki.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/TU_Mus_hoki.pdf>
 Package pdftex.def Info: images/overcontact_binaries/TU_Mus_hoki.pdf  used on i
 nput line 96.
 (pdftex.def)             Requested size: 241.0573pt x 153.34232pt.
-<images/overcontact_binaries/V382_Cyg_hoki.pdf, id=2468, 211.74048pt x 137.3948
+<images/overcontact_binaries/V382_Cyg_hoki.pdf, id=2442, 211.74048pt x 137.3948
 pt>
 File: images/overcontact_binaries/V382_Cyg_hoki.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/V382_Cyg_hoki.pdf>
 Package pdftex.def Info: images/overcontact_binaries/V382_Cyg_hoki.pdf  used on
  input line 103.
 (pdftex.def)             Requested size: 241.0573pt x 156.42204pt.
-<images/overcontact_binaries/VFTS_352_hoki.pdf, id=2469, 211.74048pt x 137.3948
+<images/overcontact_binaries/VFTS_352_hoki.pdf, id=2443, 211.74048pt x 137.3948
 pt>
 File: images/overcontact_binaries/VFTS_352_hoki.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/VFTS_352_hoki.pdf>
@@ -3132,7 +3114,7 @@ Package pdftex.def Info: images/overcontact_binaries/VFTS_352_hoki.pdf  used on
 aries/MY_Cam_hoki.pdf> <./images/overcontact_binaries/SMC_108086_hoki.pdf> <./i
 mages/overcontact_binaries/TU_Mus_hoki.pdf> <./images/overcontact_binaries/V382
 _Cyg_hoki.pdf> <./images/overcontact_binaries/VFTS_352_hoki.pdf>]
-<images/overcontact_binaries/Sample_Overcontact_Binary_LSS3074.png, id=2565, 42
+<images/overcontact_binaries/Sample_Overcontact_Binary_LSS3074.png, id=2539, 42
 9.64516pt x 420.25005pt>
 File: images/overcontact_binaries/Sample_Overcontact_Binary_LSS3074.png Graphic
  file (type png)
@@ -3143,7 +3125,7 @@ LSS3074.png  used on input line 131.
 
 
 [48 <./images/overcontact_binaries/Sample_Overcontact_Binary_LSS3074.png>]
-<images/overcontact_binaries/Parameter_Coverage.png, id=2576, 397.12366pt x 411
+<images/overcontact_binaries/Parameter_Coverage.png, id=2550, 397.12366pt x 411
 .939pt>
 File: images/overcontact_binaries/Parameter_Coverage.png Graphic file (type png
 )
@@ -3154,7 +3136,7 @@ ed on input line 140.
 
 
 [49 <./images/overcontact_binaries/Parameter_Coverage.png>]
-<images/overcontact_binaries/grid_matches/LSS_3074.png, id=2584, 424.9476pt x 3
+<images/overcontact_binaries/grid_matches/LSS_3074.png, id=2558, 424.9476pt x 3
 03.17265pt>
 File: images/overcontact_binaries/grid_matches/LSS_3074.png Graphic file (type 
 png)
@@ -3162,7 +3144,7 @@ png)
 Package pdftex.def Info: images/overcontact_binaries/grid_matches/LSS_3074.png 
  used on input line 166.
 (pdftex.def)             Requested size: 241.0573pt x 171.98213pt.
-<images/overcontact_binaries/grid_matches/MY_Cam.png, id=2585, 428.19975pt x 30
+<images/overcontact_binaries/grid_matches/MY_Cam.png, id=2559, 428.19975pt x 30
 5.34074pt>
 File: images/overcontact_binaries/grid_matches/MY_Cam.png Graphic file (type pn
 g)
@@ -3170,7 +3152,7 @@ g)
 Package pdftex.def Info: images/overcontact_binaries/grid_matches/MY_Cam.png  u
 sed on input line 172.
 (pdftex.def)             Requested size: 241.0573pt x 171.89351pt.
-<images/overcontact_binaries/grid_matches/V382_Cyg.png, id=2586, 429.2838pt x 3
+<images/overcontact_binaries/grid_matches/V382_Cyg.png, id=2560, 429.2838pt x 3
 03.17265pt>
 File: images/overcontact_binaries/grid_matches/V382_Cyg.png Graphic file (type 
 png)
@@ -3178,7 +3160,7 @@ png)
 Package pdftex.def Info: images/overcontact_binaries/grid_matches/V382_Cyg.png 
  used on input line 179.
 (pdftex.def)             Requested size: 241.0573pt x 170.23813pt.
-<images/overcontact_binaries/grid_matches/VFTS_352.png, id=2587, 420.6114pt x 3
+<images/overcontact_binaries/grid_matches/VFTS_352.png, id=2561, 420.6114pt x 3
 03.17265pt>
 File: images/overcontact_binaries/grid_matches/VFTS_352.png Graphic file (type 
 png)
@@ -3215,31 +3197,40 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 pdfTeX warning: pdflatex: pop empty color page stack 0
 ]
-<images/HeliumRich/Figure_1.pdf, id=2630, 469.22185pt x 530.35849pt>
+<images/HeliumRich/Figure_1.pdf, id=2604, 469.22185pt x 530.35849pt>
 File: images/HeliumRich/Figure_1.pdf Graphic file (type pdf)
 <use images/HeliumRich/Figure_1.pdf>
 Package pdftex.def Info: images/HeliumRich/Figure_1.pdf  used on input line 35.
 
 (pdftex.def)             Requested size: 491.94817pt x 556.04312pt.
-<images/HeliumRich/Figure_1_NOVARACC.pdf, id=2635, 469.22185pt x 530.35849pt>
+<images/HeliumRich/Figure_1_NOVARACC.pdf, id=2609, 469.22185pt x 530.35849pt>
 File: images/HeliumRich/Figure_1_NOVARACC.pdf Graphic file (type pdf)
 <use images/HeliumRich/Figure_1_NOVARACC.pdf>
 Package pdftex.def Info: images/HeliumRich/Figure_1_NOVARACC.pdf  used on input
  line 42.
 (pdftex.def)             Requested size: 491.94817pt x 556.04312pt.
-<images/HeliumRich/Figure_2_VARACC.pdf, id=2639, 239.62408pt x 259.76584pt>
+<images/HeliumRich/Figure_2_VARACC.pdf, id=2613, 239.62408pt x 259.76584pt>
 File: images/HeliumRich/Figure_2_VARACC.pdf Graphic file (type pdf)
 <use images/HeliumRich/Figure_2_VARACC.pdf>
 Package pdftex.def Info: images/HeliumRich/Figure_2_VARACC.pdf  used on input l
 ine 59.
 (pdftex.def)             Requested size: 221.37517pt x 239.99425pt.
-<images/HeliumRich/Figure_2_NOVARACC.pdf, id=2640, 239.62408pt x 259.76584pt>
+<images/HeliumRich/Figure_2_NOVARACC.pdf, id=2614, 239.62408pt x 259.76584pt>
 File: images/HeliumRich/Figure_2_NOVARACC.pdf Graphic file (type pdf)
 <use images/HeliumRich/Figure_2_NOVARACC.pdf>
 Package pdftex.def Info: images/HeliumRich/Figure_2_NOVARACC.pdf  used on input
  line 64.
 (pdftex.def)             Requested size: 221.37517pt x 239.99425pt.
- (./chapters/tables/binary_configuration_parameters.tex
+
+
+[54]
+
+[55 <./images/HeliumRich/Figure_1.pdf>]
+
+[56 <./images/HeliumRich/Figure_1_NOVARACC.pdf>]
+
+[57 <./images/HeliumRich/Figure_2_VARACC.pdf> <./images/HeliumRich/Figure_2_NOV
+ARACC.pdf>] (./chapters/tables/binary_configuration_parameters.tex
 Overfull \hbox (52.87926pt too wide) in paragraph at lines 5--27
  [][] 
  []
@@ -3250,59 +3241,57 @@ Overfull \hbox (39.36424pt too wide) in paragraph at lines 3--60
  []
 
 )
-<images/HeliumRich/segmented_composition_profiles_VARIABLE_BINARY.pdf, id=2650,
- 220.11075pt x 258.4012pt>
-File: images/HeliumRich/segmented_composition_profiles_VARIABLE_BINARY.pdf Grap
-hic file (type pdf)
-<use images/HeliumRich/segmented_composition_profiles_VARIABLE_BINARY.pdf>
-Package pdftex.def Info: images/HeliumRich/segmented_composition_profiles_VARIA
-BLE_BINARY.pdf  used on input line 91.
+<images/HeliumRich/segmented_composition_profiles_mass_VARIABLE_BINARY.pdf, id=
+2757, 220.11075pt x 258.4012pt>
+File: images/HeliumRich/segmented_composition_profiles_mass_VARIABLE_BINARY.pdf
+ Graphic file (type pdf)
+<use images/HeliumRich/segmented_composition_profiles_mass_VARIABLE_BINARY.pdf>
+
+Package pdftex.def Info: images/HeliumRich/segmented_composition_profiles_mass_
+VARIABLE_BINARY.pdf  used on input line 99.
 (pdftex.def)             Requested size: 221.37517pt x 259.88307pt.
-<images/HeliumRich/segmented_composition_profiles_STANDARD_BINARY.pdf, id=2651,
- 220.11075pt x 258.4012pt>
-File: images/HeliumRich/segmented_composition_profiles_STANDARD_BINARY.pdf Grap
-hic file (type pdf)
-<use images/HeliumRich/segmented_composition_profiles_STANDARD_BINARY.pdf>
-Package pdftex.def Info: images/HeliumRich/segmented_composition_profiles_STAND
-ARD_BINARY.pdf  used on input line 96.
+<images/HeliumRich/segmented_composition_profiles_mass_STANDARD_BINARY.pdf, id=
+2758, 220.11075pt x 258.4012pt>
+File: images/HeliumRich/segmented_composition_profiles_mass_STANDARD_BINARY.pdf
+ Graphic file (type pdf)
+<use images/HeliumRich/segmented_composition_profiles_mass_STANDARD_BINARY.pdf>
+
+Package pdftex.def Info: images/HeliumRich/segmented_composition_profiles_mass_
+STANDARD_BINARY.pdf  used on input line 104.
 (pdftex.def)             Requested size: 221.37517pt x 259.88307pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[54]
 
-[55 <./images/HeliumRich/Figure_1.pdf>]
 
-[56 <./images/HeliumRich/Figure_1_NOVARACC.pdf>]
-
-[57 <./images/HeliumRich/Figure_2_VARACC.pdf> <./images/HeliumRich/Figure_2_NOV
-ARACC.pdf> <./images/HeliumRich/segmented_composition_profiles_VARIABLE_BINARY.
-pdf> <./images/HeliumRich/segmented_composition_profiles_STANDARD_BINARY.pdf>]
-
-[58]
-<images/HeliumRich/comparison_plot.png, id=2785, 554.3109pt x 741.12885pt>
-File: images/HeliumRich/comparison_plot.png Graphic file (type png)
-<use images/HeliumRich/comparison_plot.png>
-Package pdftex.def Info: images/HeliumRich/comparison_plot.png  used on input l
-ine 111.
-(pdftex.def)             Requested size: 393.56003pt x 526.21646pt.
-
+[58 <./images/HeliumRich/segmented_composition_profiles_mass_VARIABLE_BINARY.pd
+f> <./images/HeliumRich/segmented_composition_profiles_mass_STANDARD_BINARY.pdf
+>]
 
 [59]
+<images/HeliumRich/Figure_4.pdf, id=2798, 438.79344pt x 407.93324pt>
+File: images/HeliumRich/Figure_4.pdf Graphic file (type pdf)
+<use images/HeliumRich/Figure_4.pdf>
+Package pdftex.def Info: images/HeliumRich/Figure_4.pdf  used on input line 119
+.
+(pdftex.def)             Requested size: 393.56003pt x 365.88538pt.
 
-[60 <./images/HeliumRich/comparison_plot.png>]
-<images/HeliumRich/Figure_6.pdf, id=2858, 404.30641pt x 221.60303pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[60 <./images/HeliumRich/Figure_4.pdf>]
+<images/HeliumRich/Figure_6.pdf, id=2859, 404.30641pt x 221.60303pt>
 File: images/HeliumRich/Figure_6.pdf Graphic file (type pdf)
 <use images/HeliumRich/Figure_6.pdf>
-Package pdftex.def Info: images/HeliumRich/Figure_6.pdf  used on input line 141
+Package pdftex.def Info: images/HeliumRich/Figure_6.pdf  used on input line 149
 .
 (pdftex.def)             Requested size: 491.94817pt x 269.65533pt.
 ) (./chapters/chapter05.tex
 
-[61 <./images/HeliumRich/Figure_6.pdf>]
+[61]
 
-[62
-
-]
+[62 <./images/HeliumRich/Figure_6.pdf>]
 Chapter 5.
 
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
@@ -3311,7 +3300,7 @@ Package lettrine.sty Info: Targeted height = 41.0682pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 41.01501pt (H);
 (lettrine.sty)             reported on input line 20.
-<images/PopulationProperties/He_Abundance.png, id=2894, 391.34206pt x 419.52734
+<images/PopulationProperties/He_Abundance.png, id=2915, 391.34206pt x 419.52734
 pt>
 File: images/PopulationProperties/He_Abundance.png Graphic file (type png)
 <use images/PopulationProperties/He_Abundance.png>
@@ -3324,6 +3313,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [63
+
+
 
 pdfTeX warning: pdflatex: pop empty color page stack 0
 ]
@@ -3351,7 +3342,7 @@ pdfTeX warning: pdflatex: pop empty color page stack 0
 ]
 
 [68]
-<images/NatalKicks/Grid_Regions.png, id=2986, 629.11035pt x 602.0091pt>
+<images/NatalKicks/Grid_Regions.png, id=3006, 629.11035pt x 602.0091pt>
 File: images/NatalKicks/Grid_Regions.png Graphic file (type png)
 <use images/NatalKicks/Grid_Regions.png>
 Package pdftex.def Info: images/NatalKicks/Grid_Regions.png  used on input line
@@ -3368,19 +3359,19 @@ Package pdftex.def Info: images/NatalKicks/Grid_Regions.png  used on input line
 (./_minted/D2F87C5905A9FDDFC5F552A595254F62.highlight.minted)
 
 [71] (./_minted/4BA2B83BBA9055655EEA1E85AE1083E7.highlight.minted)
-<images/NatalKicks/varying_de.png, id=3100, 527.20966pt x 319.4334pt>
+<images/NatalKicks/varying_de.png, id=3121, 527.20966pt x 319.4334pt>
 File: images/NatalKicks/varying_de.png Graphic file (type png)
 <use images/NatalKicks/varying_de.png>
 Package pdftex.def Info: images/NatalKicks/varying_de.png  used on input line 1
 12.
 (pdftex.def)             Requested size: 491.94817pt x 298.07892pt.
-<images/NatalKicks/runtime.png, id=3103, 545.99985pt x 375.0813pt>
+<images/NatalKicks/runtime.png, id=3124, 545.99985pt x 375.0813pt>
 File: images/NatalKicks/runtime.png Graphic file (type png)
 <use images/NatalKicks/runtime.png>
 Package pdftex.def Info: images/NatalKicks/runtime.png  used on input line 119.
 
 (pdftex.def)             Requested size: 491.94817pt x 337.96495pt.
-<images/NatalKicks/EventRate_Distribution_Both.png, id=3123, 493.00185pt x 304.
+<images/NatalKicks/EventRate_Distribution_Both.png, id=3144, 493.00185pt x 304.
 2567pt>
 File: images/NatalKicks/EventRate_Distribution_Both.png Graphic file (type png)
 
@@ -3391,7 +3382,7 @@ d on input line 133.
 
 
 [72]
-<images/NatalKicks/PE_dists_six_panel.png, id=3158, 392.4261pt x 278.60085pt>
+<images/NatalKicks/PE_dists_six_panel.png, id=3179, 392.4261pt x 278.60085pt>
 File: images/NatalKicks/PE_dists_six_panel.png Graphic file (type png)
 <use images/NatalKicks/PE_dists_six_panel.png>
 Package pdftex.def Info: images/NatalKicks/PE_dists_six_panel.png  used on inpu
@@ -3409,7 +3400,7 @@ Underfull \vbox (badness 1097) has occurred while \output is active []
 [75 <./images/NatalKicks/EventRate_Distribution_Both.png>]
 
 [76 <./images/NatalKicks/PE_dists_six_panel.png>]
-<images/NatalKicks/LogBayesFactors_Both.png, id=3237, 442.2924pt x 256.91985pt>
+<images/NatalKicks/LogBayesFactors_Both.png, id=3257, 442.2924pt x 256.91985pt>
 
 File: images/NatalKicks/LogBayesFactors_Both.png Graphic file (type png)
 <use images/NatalKicks/LogBayesFactors_Both.png>
@@ -3419,7 +3410,7 @@ put line 188.
 
 
 [77]
-<images/NatalKicks/bray_vs_hobbs.png, id=3287, 409.7709pt x 261.6174pt>
+<images/NatalKicks/bray_vs_hobbs.png, id=3308, 409.7709pt x 261.6174pt>
 File: images/NatalKicks/bray_vs_hobbs.png Graphic file (type png)
 <use images/NatalKicks/bray_vs_hobbs.png>
 Package pdftex.def Info: images/NatalKicks/bray_vs_hobbs.png  used on input lin
@@ -3430,13 +3421,13 @@ e 211.
 [78 <./images/NatalKicks/LogBayesFactors_Both.png>]
 
 [79 <./images/NatalKicks/bray_vs_hobbs.png>]
-<images/NatalKicks/ks_test.png, id=3331, 773.0481pt x 441.20834pt>
+<images/NatalKicks/ks_test.png, id=3351, 773.0481pt x 441.20834pt>
 File: images/NatalKicks/ks_test.png Graphic file (type png)
 <use images/NatalKicks/ks_test.png>
 Package pdftex.def Info: images/NatalKicks/ks_test.png  used on input line 220.
 
 (pdftex.def)             Requested size: 491.94817pt x 280.77681pt.
-<images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png, id=3337, 480.71594pt
+<images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png, id=3357, 480.71594pt
  x 334.1283pt>
 File: images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png Graphic file (ty
 pe png)
@@ -3454,7 +3445,7 @@ Underfull \vbox (badness 7064) has occurred while \output is active []
 [81 <./images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png>]
 
 [82]
-<images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png, id=3408
+<images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png, id=3429
 , 457.2282pt x 319.9152pt>
 File: images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png Gra
 phic file (type png)
@@ -3462,7 +3453,7 @@ phic file (type png)
 Package pdftex.def Info: images/NatalKicks/All_Three_Constraints_with_USSNe_and
 _modeltype2.png  used on input line 269.
 (pdftex.def)             Requested size: 491.94817pt x 344.20967pt.
-<images/NatalKicks/Best_Model_Params.png, id=3413, 847.968pt x 377.7312pt>
+<images/NatalKicks/Best_Model_Params.png, id=3434, 847.968pt x 377.7312pt>
 File: images/NatalKicks/Best_Model_Params.png Graphic file (type png)
 <use images/NatalKicks/Best_Model_Params.png>
 Package pdftex.def Info: images/NatalKicks/Best_Model_Params.png  used on input
@@ -3471,14 +3462,14 @@ Package pdftex.def Info: images/NatalKicks/Best_Model_Params.png  used on input
 
 
 [83 <./images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.png>]
-<images/NatalKicks/grid_shifting_peaks.png, id=3434, 497.33804pt x 299.31825pt>
+<images/NatalKicks/grid_shifting_peaks.png, id=3454, 497.33804pt x 299.31825pt>
 
 File: images/NatalKicks/grid_shifting_peaks.png Graphic file (type png)
 <use images/NatalKicks/grid_shifting_peaks.png>
 Package pdftex.def Info: images/NatalKicks/grid_shifting_peaks.png  used on inp
 ut line 289.
 (pdftex.def)             Requested size: 491.94817pt x 296.08849pt.
-<images/NatalKicks/event_rate_history_local.png, id=3437, 423.5022pt x 402.1825
+<images/NatalKicks/event_rate_history_local.png, id=3457, 423.5022pt x 402.1825
 6pt>
 File: images/NatalKicks/event_rate_history_local.png Graphic file (type png)
 <use images/NatalKicks/event_rate_history_local.png>
@@ -3615,7 +3606,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 89.pgf)
-<images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png, id=3630, 427.5975p
+<images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png, id=3651, 427.5975p
 t x 606.8271pt>
 File: images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png Graphic file (
 type png)
@@ -3700,7 +3691,7 @@ Underfull \vbox (badness 2096) has occurred while \output is active []
 
 
 [114]
-<images/Appendices/polytropic_radii.pdf, id=3890, 417.41737pt x 260.83746pt>
+<images/Appendices/polytropic_radii.pdf, id=3910, 417.41737pt x 260.83746pt>
 File: images/Appendices/polytropic_radii.pdf Graphic file (type pdf)
 <use images/Appendices/polytropic_radii.pdf>
 Package pdftex.def Info: images/Appendices/polytropic_radii.pdf  used on input 
@@ -3730,15 +3721,16 @@ Underfull \vbox (badness 5924) has occurred while \output is active []
 
 
 [118]
-<images/TheorySection/bistability_jump.pdf, id=3972, 422.22174pt x 227.8043pt>
-File: images/TheorySection/bistability_jump.pdf Graphic file (type pdf)
-<use images/TheorySection/bistability_jump.pdf>
-Package pdftex.def Info: images/TheorySection/bistability_jump.pdf  used on inp
-ut line 109.
-(pdftex.def)             Requested size: 491.94817pt x 265.42456pt.
+<images/TheorySection/double_bistability_jump.pdf, id=3993, 415.61055pt x 273.3
+0441pt>
+File: images/TheorySection/double_bistability_jump.pdf Graphic file (type pdf)
+<use images/TheorySection/double_bistability_jump.pdf>
+Package pdftex.def Info: images/TheorySection/double_bistability_jump.pdf  used
+ on input line 109.
+(pdftex.def)             Requested size: 491.94817pt x 323.51396pt.
 )
 
-[119 <./images/TheorySection/bistability_jump.pdf>]
+[119 <./images/TheorySection/double_bistability_jump.pdf>]
 
 [120
 
@@ -3760,7 +3752,7 @@ pdfTeX warning: pdflatex: pop empty color page stack 0
 [123]
 
 [124]
-Underfull \hbox (badness 1048) in paragraph at lines 452--456
+Underfull \hbox (badness 1048) in paragraph at lines 467--471
 []\T1/cmr/m/n/10 Hamacher D. W., Barsa J., Passi S., Tapim A., 2019, In-dige-no
 us use of stel-lar scin-til-la-tion to pre-
  []
@@ -3811,15 +3803,15 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6B3DBF8DBDCCDD82361E7DD9E19ABD50;20831.
+(rerunfilecheck)             Checksum: 2EB5857AE99AAD6A15740B6424CE1688;20799.
  )
 (\end occurred when \ifx on line 49 was incomplete) 
 Here is how much of TeX's memory you used:
- 63972 strings out of 473190
- 1385015 string characters out of 5715807
- 2083955 words of memory out of 5000000
- 85114 multiletter control sequences out of 15000+600000
- 622290 words of font info for 180 fonts, out of 8000000 for 9000
+ 63660 strings out of 473190
+ 1380098 string characters out of 5715807
+ 2083449 words of memory out of 5000000
+ 84862 multiletter control sequences out of 15000+600000
+ 613776 words of font info for 143 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,20n,96p,2405b,2118s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/tex
@@ -3848,15 +3840,7 @@ c/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/wadalab/dgj/dg
-jhira.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/wadalab/dgj/dgjka.pfb
-></usr/local/texlive/2025/texmf-dist/fonts/type1/wadalab/dgj/dgjkc.pfb></usr/lo
-cal/texlive/2025/texmf-dist/fonts/type1/wadalab/dgj/dgjkd.pfb></usr/local/texli
-ve/2025/texmf-dist/fonts/type1/wadalab/dgj/dgjke.pfb></usr/local/texlive/2025/t
-exmf-dist/fonts/type1/wadalab/dgj/dgjkf.pfb></usr/local/texlive/2025/texmf-dist
-/fonts/type1/wadalab/dgj/dgjkg.pfb></usr/local/texlive/2025/texmf-dist/fonts/ty
-pe1/wadalab/dgj/dgjki.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/wadal
-ab/dgj/dgjkj.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cbfonts
+nts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cbfonts
 /grmn0900.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cbfonts/gr
 mn1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss12.pfb
 ></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/loc
@@ -3887,10 +3871,10 @@ ype1/public/cm-super/sfti1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/typ
 e1/public/cm-super/sftt0900.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1
 /public/cm-super/sftt1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/p
 ublic/cm-super/sfxc1200.pfb>
-Output written on main.pdf (160 pages, 18637271 bytes).
+Output written on main.pdf (160 pages, 18343675 bytes).
 PDF statistics:
- 4762 PDF objects out of 5155 (max. 8388607)
- 4115 compressed objects within 42 object streams
- 860 named destinations out of 1000 (max. 500000)
- 1384 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4756 PDF objects out of 5155 (max. 8388607)
+ 4140 compressed objects within 42 object streams
+ 867 named destinations out of 1000 (max. 500000)
+ 1328 words of extra memory for PDF output out of 10000 (max. 10000000)
 

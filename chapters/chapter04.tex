@@ -19,7 +19,7 @@ The general background for this section remains as elaborated in \Cref{chap:theo
             \gls{rlof} begins & B & \Cref{sec:pre_contact_stages_b_c_} \\
             Contact begins    & C & \Cref{sec:contact_phase_stages_c_d_} \\
             Contact ends      & D & \Cref{sec:post_contact_stages_d_e_} \\
-            \gls{rlof} ends   & E & \Cref{sec:post_interaction_stage_e_onwards_} \\
+            \gls{rlof} ends   & E & \Cref{sec:future_history} \\
         \bottomrule
     \end{tabular}
     \caption{The five major stages of the evolution of our binary.}
@@ -28,7 +28,7 @@ The general background for this section remains as elaborated in \Cref{chap:theo
 
 \section{Evolution overview}
 
-The major stages of the binary's evolution can be broken up into five main stages, explored in the following section. Each stage is assigned a label, which is delineated in \Cref{tab:binary_stages}. Unless otherwise indicated, at every stage we shall be discussing the non-variable composition accretion case. The full evolution for the variable (non-variable) accretion case is shown in \Cref{fig:main_evolution} (\Cref{fig:main_evolution_STANDARD}), with subplots showing the behaviour around the contact phase.
+The major stages of the binary's evolution can be broken up into five main stages, explored in the following section. Each stage is assigned a label, which is delineated in \Cref{tab:binary_stages} -- in brief, the lexicographic ordering reflects temporal evolution of the binary. That is to say, (A) represents the \gls{zams}, (B) the start of \gls{rlof} on the donor, (C) the start of \gls{rlof} for the accretor, (D) the end of \gls{rlof} for the accretor, and (E) the end of \gls{rlof} for the donor. Unless otherwise indicated, at every stage we shall be discussing the variable composition accretion case. The full evolution for the variable (non-variable) accretion case is shown in \Cref{fig:main_evolution} (\Cref{fig:main_evolution_STANDARD}), with subplots showing the behaviour around the contact phase.
 
 \begin{figure}[!htbp]
     \centering
@@ -70,13 +70,21 @@ When the donor swells to fill its Roche lobe, it begins to efficiently transfer 
 
 \subsection[Contact phase]{Contact phase (stages C--D)}\label{sec:contact_phase_stages_c_d_}
 
-% The substantive difference between the two systems is the changed luminosity between the non-variable and variable composition accretion models. As seen in \Cref{fig:stellar_profiles}, in the variable composition accretion case the accretor reaches a luminosity of approximately $L=\SI{10^{5.1}}{\lsun}$, comparsed to $L=\SI{1e5.05}{\lsun}$ in the non-variable composition accretion case.
+The accretion of matter from the donor star through \gls{rlof}, though limited by the thermal time-scale of the star, proceeds unimpeded. The increased rotation discussed above causes the accretor to break thermal equilibrium \citep[][and references therein]{Lau:2024}, expanding as it attempts to re-establish this. This attempt to re-establish thermal equilibrium is what both sustains and defines the contact phase.
+
+Because of the short initial period of the binary ($\approx\SI{3.98}{\day}$), a contact phase is not unexpected. However, the sustained mass transfer does proceed until the hydrogen-rich envelope of the star is depleted, and the helium-rich core is exposed. Accretion continues substantially unimpeded, now accreting helium-dominant material. As the mean molecular weight of the accreted material increases, the opacity of the accretor decreases.
 
 \subsection[Post-contact]{Post-contact (stages D--E)}\label{sec:post_contact_stages_d_e_}
 
-\subsection[Post-interaction]{Post-interaction (stage E--onwards)}\label{sec:post_interaction_stage_e_onwards_}
+There is a clear and consistent difference between the post-contact models. As shown in the inset of \Cref{fig:hrd_comparison_var_novarr}, the models diverge shortly before the termination of the contact phase. At this point, however, the die is already cast and the Rubicon is crossed. The variable composition accretion model has become \SI{0.01}{\dex}, or $\sim$\SI{1.16}{\kilo\kelvin} hotter than the non-variable model. This in turn leads the variable composition accretor to be hotter and eventually more luminous than its non-variable composition accretion counterpart, a theme that is reflected once the post-interaction behaviour is to be studied.
 
-\subsection{Future History}\label{sec:future_history}
+We thus examine the reasons for this apparent bifurcation. In \Cref{fig:composition_profile_evolution} we show the internal composition of the two stars in each binary at each timestep. Noticeably for stage (D), the accretion of helium-rich material has introduced a layer of helium \textit{atop} a layer of hydrogen, in the variable composition accretion case. This hydrogen is the original photosphere of the accretor, and the material has not yet mixed in at this stage, due to the continued injection of helium from the donor star.
+
+\subsection[Post-interaction and future history]{Post-interaction and future history (stage E--onwards)}\label{sec:future_history}
+
+The future evolution of these stars will be determined by the counterplay of multiple complex systems \citep{Renzo:2021}. The key players in the future evolution are rotation-induced mixing and thermohaline mixing. Rotation-induced mixing will occur if the star spins closer to its critical rotation rate. We do not include this type of mixing in our code, as a 1D code simply lacks the dimensionality to accurately compute the mixing profile in detail.
+
+The second effect is thermohaline mixing, which is the process by which an inverted mean molecular weight profile is stabilised by a temperature gradient \citep[e.g.,][]{Ulrich:1972, Kippenhahn:1980, Charbonnel:2007, Angelou:2011, Fraser:2022}, resulting in mixing where material with a heavier mean molecular weight sinks below lighter material. The primary concern with this effect is that the time-scale and therefore the efficiency of thermohaline mixing is highly uncertain. We display in \Cref{fig:hrd_comparison_var_novarr} the effect of varying the thermohaline mixing coefficient on the evolution of the variable composition accretion secondary. The evolution, both throughout the \gls{ms}, and crossing the Hertzsprung gap, is notably altered, with a change of approximately \SI{0.1}{\dex} in the temperature between maximum thermohaline mixing ($\alpha_\text{th}=0.1$) and no thermohaline mixing ($\alpha_\text{th}=0$; dashed black line). At the end of the evolution, as the thermohaline mixing models heat up, they undergo breathing pulses, which are of questionable physical origin \citep{Li:2021}, and can be removed by increasing the number of meshpoints in the model.
 
 \section{Atypical abundance profiles}
 
@@ -88,28 +96,28 @@ Because the stars are quite close together and have a mass ratio of $\nicefrac{1
     \centering
     \begin{subfigure}[t]{0.45\columnwidth}
         \centering
-        \includegraphics[width=\columnwidth]{images/HeliumRich/segmented_composition_profiles_VARIABLE_BINARY.pdf}
+        \includegraphics[width=\columnwidth]{images/HeliumRich/segmented_composition_profiles_mass_VARIABLE_BINARY.pdf}
         \caption{Variable composition accretion} \label{fig:composition_profiles_stages}
     \end{subfigure}
     \begin{subfigure}[t]{0.45\columnwidth}
         \centering
-        \includegraphics[width=\columnwidth]{images/HeliumRich/segmented_composition_profiles_STANDARD_BINARY.pdf}
+        \includegraphics[width=\columnwidth]{images/HeliumRich/segmented_composition_profiles_mass_STANDARD_BINARY.pdf}
         \caption{Non-variable composition accretion} \label{fig:composition_profiles_stages_standard}
     \end{subfigure}
-    \caption[The chemical composition of each star as a function of the stellar mass for the donor and accretor at the five key stages of the binary's lifetime.]{The chemical composition of each star as a function of the stellar mass for the donor and accretor at the five key stages of the binary's lifetime as detailed in \Cref{tab:binary_configuration_parameters}. Letters are as given in the same table. Each grid marking in the radial direction represents \SI{2}{\msun}.}
+    \caption[The chemical composition of each star as a function of the stellar mass for the donor and accretor at the five key stages of the binary's lifetime.]{The chemical composition of each star as a function of the stellar mass for the donor and accretor at the five key stages of the binary's lifetime as detailed in \Cref{tab:binary_configuration_parameters}. Letters are as given in the same table. Each grid marking in the radial direction represents \SI{3}{\msun}.}
     \label{fig:composition_profile_evolution}%_eddington}
 \end{figure}
 
 \section{Comparison between variable and non-variable composition accretion}
 
-In \Cref{fig:hrd_comparison_var_novarr} we display a comparative HR diagram between the cases of variable and non-variable composition accretion. In each case an \SI[parse-numbers=false]{30+10}{\msun} binary was evolved with the only difference between the two being whether material was allowed to have variable composition accretion or the standard accretion prescription. In the bottom panel only the companion is shown, as the donor has identical evolution in both cases.
+In \Cref{fig:hrd_comparison_var_novarr} we display a comparative HR diagram between the cases of variable and non-variable composition accretion. In each case an \SI[parse-numbers=false]{30+10}{\msun} binary was evolved with the only difference between the two being whether material was allowed to have variable composition accretion or the standard accretion prescription.
 
 The first and most striking conclusion that we can draw from this result is that the companion is, in the variable composition accretion case, hotter and more luminous than the non-variable case.
 
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{images/HeliumRich/comparison_plot.png}
-    \caption[An HR diagram showing the evolution of our model both with and without the variable composition accretion prescription.]{An HR diagram showing the evolution of our model both with (top left) and without (top right) the variable composition accretion prescription. The bottom panel shows only the evolution of the secondary. The point of divergence between the two models is shortly into the contact phase. The two dashed lines on the bottom HR diagram represent models evolved as the final model of the binary secondary, as a single star. On the top HR diagrams, the pink and brown models are single stars evolved with ZAMS masses of 21 and 26 \unit{\msun} respectively.}
+    \includegraphics[width=0.8\textwidth]{images/HeliumRich/Figure_4.pdf}
+    \caption[An HR diagram showing the evolution of our model both with and without the variable composition accretion prescription.]{An HR diagram showing the evolution of our model both with (black lines) and without (red lines) the variable composition accretion prescription. In the inset, the diamond shows the start of the contact phase (identical for both models), and the coloured crosses show the end of the contact phase for their respective models. The dotted lines show models with both thermohaline mixing and variable composition accretion enabled. Models with thermohaline mixing enabled were computed with 199 meshpoints, whereas ones without were computed with 999 meshpoints. The thermohaline mixing models undergo breathing pulses prior to model termination.}
     \label{fig:hrd_comparison_var_novarr}
 \end{figure}
 
