@@ -80,6 +80,8 @@ There is a clear and consistent difference between the post-contact models. As s
 
 We thus examine the reasons for this apparent bifurcation. In \Cref{fig:composition_profile_evolution} we show the internal composition of the two stars in each binary at each timestep. Noticeably for stage (D), the accretion of helium-rich material has introduced a layer of helium \textit{atop} a layer of hydrogen, in the variable composition accretion case. This hydrogen is the original photosphere of the accretor, and the material has not yet mixed in at this stage, due to the continued injection of helium from the donor star.
 
+Eventually, the extended envelope of the donor star cannot be supported, as it has lost a substantial amount of material. This leads to the collapse of the envelope, and the donor becomes a compact helium star. Over the contact phase, the average mass transfer efficiency has been 62.62~per~cent, with the donor star losing \SI{7.81}{\msun} of material and the accretor star gaining \SI{4.89}{\msun} of material. The balance is assumed to be lost to the \gls{ism}. The instantaneous efficiency, shown in \Cref{fig:main_evolution} and \Cref{fig:main_evolution_STANDARD}, peaks at 100~per~cent immediately prior to the start and end of the contact phase, and post-contact stays that way for $\sim\SI{5}{\kilo\year}$ after contact terminates as the system settles into a stable state with roughly constant radii, masses, and separation.
+
 \subsection[Post-interaction and future history]{Post-interaction and future history (stage E--onwards)}\label{sec:future_history}
 
 The future evolution of these stars will be determined by the counterplay of multiple complex systems \citep{Renzo:2021}. The key players in the future evolution are rotation-induced mixing and thermohaline mixing. Rotation-induced mixing will occur if the star spins closer to its critical rotation rate. We do not include this type of mixing in our code, as a 1D code simply lacks the dimensionality to accurately compute the mixing profile in detail.
@@ -123,6 +125,8 @@ The first and most striking conclusion that we can draw from this result is that
 
 \section{Implications}
 
+We now examine some of the implications for this work and this model of mass transfer.
+
 \subsection{Spectroscopic masses}
 
 \alice
@@ -140,15 +144,23 @@ This phenomenon is not unique to one code or methodology. To name but four, it h
 
 If luminosities are systematically incorrect, as discussed above, then there would be a corresponding systematic incorrect calculation of the mass; that is, a traditional mass-luminosity relationship may not hold. We show in \Cref{fig:mass_luminosity_relationship} the relationship between the evolutionary mass and luminosity for both variable and non-variable composition accretion cases, as evolved in \autoref{sec:future_history}. We also display this for integer mass single-star models. Unsurprisingly, the non-variable accretion case evolves like a \SI{24}{\msun} model -- the initial mass of the model when this single-star evolution began was \SI{23.71}{\msun}, and the abundance profile typifies a single star; since the mass transfer was hydrogen-dominated, the profile is not inverted and thus resembles a single star.
 
-On the other hand, the variable accretion case would (if observed) initially appear to be more massive than a \SI{24}{\msun} star (despite being \SI{23.66}{\msun} initially), eventually appearing to be approximately \SI{21}{\msun} -- i.e., $\sim$\SI{3}{\msun} less massive than it actually would be.
+On the other hand, the variable accretion case would (if observed) initially appear to be more massive than a \SI{24}{\msun} star (despite being \SI{23.66}{\msun} initially), eventually appearing to be approximately \SI{21}{\msun} -- i.e., $\sim$\SI{3}{\msun} less massive than it actually would be. Thermohaline mixing suppresses this change somewhat, but even with stronger thermohaline mixing still ultimately results in an accretor that is systematically different to a non-variable composition accretion model.
 
 Consequently, any masses inferred from spectroscopy or luminosity measurements may be an underestimate of the true (evolutionary) mass. This would affect, for example, the inferred masses of compact objects and thus may have implications for our understanding of the progenitors of gravitational waves.
 
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width=\textwidth]{images/HeliumRich/Figure_6.pdf}
+    \includegraphics[width=\textwidth]{images/HeliumRich/mass_luminosity.pdf}
     \caption[The (evolutionary) mass-luminosity relationship in the presence and absence of variable composition accretion.]{The (evolutionary) mass-luminosity relationship in the presence and absence of variable composition accretion. Also shown are the curves for reference models of between $M_\text{ZAMS}=\SI{21}{\msun}$ and \SI{26}{\msun}, which were evolved as a single star.}
     \label{fig:mass_luminosity_relationship}
 \end{figure}
 
+\subsection{WN/O3 stars}
+
+The spectral class of these stars is another interesting question. They are overluminous for their mass, have helium-rich surfaces, and are hotter than expected for their luminosity. Otherwise, the general behaviour of the post-interaction accretors evolved as single stars is generally typical of main-sequence stars. This suggests that they may be the elusive WN/O3 progenitors \citep{Massey:2023}. These stars have previously been suggested to be the helium \textit{donors} from a binary interaction \citep{Gotberg:2018, Smith:2018}.
+
+Whether these are donor products or accretor products will require further investigation, though we note that their relative isolation compared to other massive stars \citep{Smith:2018} and apparent single-star nature \citep{Massey:2023} does suggest that they could be accretor stars.
+
 \section{Chapter Summary}
+
+We have exhibited a case study of a close \SI[parse-numbers=false]{30+10}{\msun} binary, in which mass transfer becomes dominated by helium. By contrasting this to a binary with hydrogen-dominated mass transfer, we have shown that this results in an atypical composition profile that produces unexpected accretors. These accretors have systematically different luminosity compared to their hydrogen-dominated alternatives, translating to a different (incorrect) inferred mass.
