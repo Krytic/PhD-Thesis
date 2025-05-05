@@ -1,203 +1,166 @@
 % !TEX root = ../main.tex
-\chapter{Detailed Models of Overcontact Binary Stars}\label{chap:close_contact}
+\chapter{Helium Rich Mass Transfer}\label{chap:he_mass_transfer}
 
-\chapterEpigraph{There are more things in Heaven and Earth, Horatio, than are dreamt of in your philosophy.}{Hamlet}
+\chapterEpigraph{All hands, this is the captain. Begin prepping all stations for first contact.}{Captain Ed Mercer}
 
-\lettrine[lines=3]{A}{s previously discussed, stars} undergoing mass transfer will generally experience \gls{rlof} during their lifetimes. In a binary where both stars are undergoing mass transfer, both stars may undergo \gls{rlof} simultaneously, resulting in a contact binary system in which both stars physically touch. Contact binaries are not uncommon -- they form one in every approximately 100 main-sequence stars \citep{Rucinski:1998} and 39 in every 100 binary systems \citep{Green:2023}.
+\lettrine[lines=3]{S}{ince the force between two} objects due to gravity scales like $F\sim\frac{1}{r_\text{sep}}$, another question naturally arises during the consideration of contact binaries. For sufficiently close binaries, one can imagine that mass transfer through \gls{rlof} or tidal effects could become reasonably strong, stripping the hydrogen envelope of a main sequence (or shortly post-main sequence) star and exposing the helium-enriched core underneath. If this stripping does not cause the star to retreat within its Roche lobe, then this core material would continue to be accreted, creating helium-enriched matter streams accreting onto its companion.
 
-The evolution is also complex. Sufficiently close binaries may overflow their $\mathcal{L}_2$ points, or create mergers on exceptionally short timescales -- typically $P_\text{orb}\lesssim\SI{2}{\day}$, but periods as low as $P_\text{orb}=\SI{85}{\minute}$ \citep{El-badry:2022} are possible in theory or $\sim\SI{167}{\minute}$ in practice \citep{Koen:2022}.
+As discussed in \Cref{sec:binary_evolution}, the presence of a companion measurably alters the evolution of a star. Typically this manifests as allowing matter to be exchanged between the components or the gravity of one star warping the photosphere of the other. In this chapter we focus on the first instance, where mass transfer occurs between two stars. In particular, we consider a binary system with \gls{zams} masses of \SI[parse-numbers=false]{30+10}{\msun}, and an initial period of $10^{0.6}\approx$ \SI{3.98}{\day}. We specifically explore this case as a case study on the effect of helium enriched mass transfer, and in \Cref{chap:population_properties} we will explore the effect that this has on a grid of close binaries.
 
-\section{Observations of contact binaries}
+The general background for this section remains as elaborated in \Cref{chap:theoretical_background}, however our parameterisation requires us to delinate between two cases: that when variable composition accretion is enabled and the case where it is disabled. These correspond to setting the parameter IVARACC in \Cref{chap:param_config} to 1 or 0 respectively.
+
+\begin{table}[!htbp]
+    \centering
+    \begin{tabular}{l|cc}
+        \toprule
+            Stage & Letter & Section described \\
+        \midrule
+            Model begins      & A & \Cref{sec:pre_interaction_stages_a_b_} \\
+            \gls{rlof} begins & B & \Cref{sec:pre_contact_stages_b_c_} \\
+            Contact begins    & C & \Cref{sec:contact_phase_stages_c_d_} \\
+            Contact ends      & D & \Cref{sec:post_contact_stages_d_e_} \\
+            \gls{rlof} ends   & E & \Cref{sec:future_history} \\
+        \bottomrule
+    \end{tabular}
+    \caption{The five major stages of the evolution of our binary.}
+    \label{tab:binary_stages}
+\end{table}
+
+\section{Evolution overview}
+
+The major stages of the binary's evolution can be broken up into five main stages, explored in the following section. Each stage is assigned a label, which is delineated in \Cref{tab:binary_stages} -- in brief, the lexicographic ordering reflects temporal evolution of the binary. That is to say, (A) represents the \gls{zams}, (B) the start of \gls{rlof} on the donor, (C) the start of \gls{rlof} for the accretor, (D) the end of \gls{rlof} for the accretor, and (E) the end of \gls{rlof} for the donor. Unless otherwise indicated, at every stage we shall be discussing the variable composition accretion case. The full evolution for the variable (non-variable) accretion case is shown in \Cref{fig:main_evolution} (\Cref{fig:main_evolution_STANDARD}), with subplots showing the behaviour around the contact phase.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{images/HeliumRich/Figure_1.pdf}
+    \caption[The main evolution of a binary with variable composition accretion enabled.]{The main evolution of a \SI[parse-numbers=false]{30+10}{\msun} binary with variable composition accretion enabled. Clockwise from top: the HR diagram with stages in \Cref{fig:composition_profile_evolution} and \Cref{tab:binary_configuration_parameters}, the mass transfer efficiency, the separation / radius, the mass, and the surface abundances. In the lower four plots, the gray region shows the contact phase, and the plots are cropped to show the $\sim$\SI{13}{\kilo\year} on each side of the contact phase. The dashed line on each HR diagram track shows when the relevant star is overfilling $\mathcal{L}_1$, and contact is when both stars are dashed.}
+    \label{fig:main_evolution}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{images/HeliumRich/Figure_1_NOVARACC.pdf}
+    \caption{As for \Cref{fig:main_evolution}, but absent variable composition accretion.}
+    \label{fig:main_evolution_STANDARD}
+\end{figure}
+
+\subsection[Pre-interaction]{Pre-interaction (stages A--B)}\label{sec:pre_interaction_stages_a_b_}
+
+The pre-interaction phase of both stars is identical in both cases, as the key change enabling this work only begins when \gls{rlof} occurs. In both cases, it evolves as a fully detached binary for \SI{4.51}{\mega\year}, with the donor almost completing its main sequence evolution. Hydrogen is exhausted in the core, and a helium core develops. In both cases, as the donor nears the Hertzsprung gap hook, it inflates to fill its Roche lobe, causing matter to begin to be exchanged via \gls{rlof} and kick-starting the pre-contact phase.
+
+\subsection[Pre-contact]{Pre-contact (stages B--C)}\label{sec:pre_contact_stages_b_c_}
+
+When the donor swells to fill its Roche lobe, it begins to efficiently transfer material to its companion. The increased drag causes the orbit to become hardened; shrinking by approximately 23 per cent. The accretor begins to accrete material, bleeding angular momentum into the system and causing the accretor to spin up. As the contact phase nears, the accretor approaches 40 per cent of the critical rotation rate, as shown in \Cref{fig:stellar_profiles}. It reaches approximately 20 per cent when the contact phase begins.
+
+\begin{figure}[!htbp]
+    \centering
+    \begin{subfigure}[t]{0.45\columnwidth}
+        \centering
+        \includegraphics[width=\columnwidth]{images/HeliumRich/Figure_2_VARACC.pdf}
+        \caption{Variable composition accretion} \label{fig:stellar_profiles_variable}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.45\columnwidth}
+        \centering
+        \includegraphics[width=\columnwidth]{images/HeliumRich/Figure_2_NOVARACC.pdf}
+        \caption{Non-variable composition accretion} \label{fig:stellar_profiles_standard}
+    \end{subfigure}
+    \caption[The evolution of the radius, rotation rate, and luminosity in the presence of variable composition accretion, shown around the contact phase.]{The evolution of the radius, rotation rate, and luminosity in the presence of variable composition accretion, shown around the contact phase.}
+    \label{fig:stellar_profiles}
+\end{figure}
+
+\subsection[Contact phase]{Contact phase (stages C--D)}\label{sec:contact_phase_stages_c_d_}
+
+The accretion of matter from the donor star through \gls{rlof}, though limited by the thermal time-scale of the star, proceeds unimpeded. The increased rotation discussed above causes the accretor to break thermal equilibrium \citep[][and references therein]{Lau:2024}, expanding as it attempts to re-establish this. This attempt to re-establish thermal equilibrium is what both sustains and defines the contact phase.
+
+Because of the short initial period of the binary ($\approx\SI{3.98}{\day}$), a contact phase is not unexpected. However, the sustained mass transfer does proceed until the hydrogen-rich envelope of the star is depleted, and the helium-rich core is exposed. Accretion continues substantially unimpeded, now accreting helium-dominant material. As the mean molecular weight of the accreted material increases, the opacity of the accretor decreases.
+
+\subsection[Post-contact]{Post-contact (stages D--E)}\label{sec:post_contact_stages_d_e_}
+
+There is a clear and consistent difference between the post-contact models. As shown in the inset of \Cref{fig:hrd_comparison_var_novarr}, the models diverge shortly before the termination of the contact phase. At this point, however, the die is already cast and the Rubicon is crossed. The variable composition accretion model has become \SI{0.01}{\dex}, or $\sim$\SI{1.16}{\kilo\kelvin} hotter than the non-variable model. This in turn leads the variable composition accretor to be hotter and eventually more luminous than its non-variable composition accretion counterpart, a theme that is reflected once the post-interaction behaviour is to be studied.
+
+We thus examine the reasons for this apparent bifurcation. In \Cref{fig:composition_profile_evolution} we show the internal composition of the two stars in each binary at each timestep. Noticeably for stage (D), the accretion of helium-rich material has introduced a layer of helium \textit{atop} a layer of hydrogen, in the variable composition accretion case. This hydrogen is the original photosphere of the accretor, and the material has not yet mixed in at this stage, due to the continued injection of helium from the donor star.
+
+Eventually, the extended envelope of the donor star cannot be supported, as it has lost a substantial amount of material. This leads to the collapse of the envelope, and the donor becomes a compact helium star. Over the contact phase, the average mass transfer efficiency has been 62.62~per~cent, with the donor star losing \SI{7.81}{\msun} of material and the accretor star gaining \SI{4.89}{\msun} of material. The balance is assumed to be lost to the \gls{ism}. The instantaneous efficiency, shown in \Cref{fig:main_evolution} and \Cref{fig:main_evolution_STANDARD}, peaks at 100~per~cent immediately prior to the start and end of the contact phase, and post-contact stays that way for $\sim\SI{5}{\kilo\year}$ after contact terminates as the system settles into a stable state with roughly constant radii, masses, and separation.
+
+\subsection[Post-interaction and future history]{Post-interaction and future history (stage E--onwards)}\label{sec:future_history}
+
+The future evolution of these stars will be determined by the counterplay of multiple complex systems \citep{Renzo:2021}. The key players in the future evolution are rotation-induced mixing and thermohaline mixing. Rotation-induced mixing will occur if the star spins closer to its critical rotation rate. We do not include this type of mixing in our code, as a 1D code simply lacks the dimensionality to accurately compute the mixing profile in detail.
+
+The second effect is thermohaline mixing, which is the process by which an inverted mean molecular weight profile is stabilised by a temperature gradient \citep[e.g.,][]{Ulrich:1972, Kippenhahn:1980, Charbonnel:2007, Angelou:2011, Fraser:2022}, resulting in mixing where material with a heavier mean molecular weight sinks below lighter material. The primary concern with this effect is that the time-scale and therefore the efficiency of thermohaline mixing is highly uncertain. We display in \Cref{fig:hrd_comparison_var_novarr} the effect of varying the thermohaline mixing coefficient on the evolution of the variable composition accretion secondary. The evolution, both throughout the \gls{ms}, and crossing the Hertzsprung gap, is notably altered, with a change of approximately \SI{0.1}{\dex} in the temperature between maximum thermohaline mixing ($\alpha_\text{th}=0.1$) and no thermohaline mixing ($\alpha_\text{th}=0$; dashed black line). At the end of the evolution, as the thermohaline mixing models heat up, they undergo breathing pulses, which are of questionable physical origin \citep{Li:2021}, and can be removed by increasing the number of meshpoints in the model.
+
+\section{Atypical abundance profiles}
+
+Because the stars are quite close together and have a mass ratio of $\nicefrac{1}{3}$, when \gls{rlof} starts it is quite voracious, and becomes even more so during the contact phase. The donor star sheds its hydrogen-rich surface and material from the helium-rich core is exposed, which too becomes part of the accreted material. The material stream becomes increasingly helium-rich, depositing this material on top of a hydrogen-rich surface, causing the accretor to have an atypical abundance profile, as shown pictorally in \Cref{fig:composition_profile_evolution}. The net effect is that there is a helium-rich surface sitting atop a hydrogen-rich layer sitting atop a helium-rich core. At this stage thermohaline mixing is projected to occur, as there is an unstable composition gradient (owing to helium having a higher mean molecular weight than hydrogen).
+
+\input{chapters/tables/binary_configuration_parameters}
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[t]{0.45\columnwidth}
+        \centering
+        \includegraphics[width=\columnwidth]{images/HeliumRich/segmented_composition_profiles_mass_VARIABLE_BINARY.pdf}
+        \caption{Variable composition accretion} \label{fig:composition_profiles_stages}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.45\columnwidth}
+        \centering
+        \includegraphics[width=\columnwidth]{images/HeliumRich/segmented_composition_profiles_mass_STANDARD_BINARY.pdf}
+        \caption{Non-variable composition accretion} \label{fig:composition_profiles_stages_standard}
+    \end{subfigure}
+    \caption[The chemical composition of each star as a function of the stellar mass for the donor and accretor at the five key stages of the binary's lifetime.]{The chemical composition of each star as a function of the stellar mass for the donor and accretor at the five key stages of the binary's lifetime as detailed in \Cref{tab:binary_configuration_parameters}. Letters are as given in the same table. Each grid marking in the radial direction represents \SI{3}{\msun}.}
+    \label{fig:composition_profile_evolution}%_eddington}
+\end{figure}
+
+\section{Comparison between variable and non-variable composition accretion}
+
+In \Cref{fig:hrd_comparison_var_novarr} we display a comparative HR diagram between the cases of variable and non-variable composition accretion. In each case an \SI[parse-numbers=false]{30+10}{\msun} binary was evolved with the only difference between the two being whether material was allowed to have variable composition accretion or the standard accretion prescription.
+
+The first and most striking conclusion that we can draw from this result is that the companion is, in the variable composition accretion case, hotter and more luminous than the non-variable case.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/HeliumRich/Figure_4.pdf}
+    \caption[An HR diagram showing the evolution of our model both with and without the variable composition accretion prescription.]{An HR diagram showing the evolution of our model both with (black lines) and without (red lines) the variable composition accretion prescription. In the inset, the diamond shows the start of the contact phase (identical for both models), and the coloured crosses show the end of the contact phase for their respective models. The dotted lines show models with both thermohaline mixing and variable composition accretion enabled. Models with thermohaline mixing enabled were computed with 199 meshpoints, whereas ones without were computed with 999 meshpoints. The thermohaline mixing models undergo breathing pulses prior to model termination.}
+    \label{fig:hrd_comparison_var_novarr}
+\end{figure}
+
+\section{Implications}
+
+We now examine some of the implications for this work and this model of mass transfer.
+
+\subsection{Spectroscopic masses}
 
 \alice
 
-Observations of contact binaries date back to the 1940s \citep{Kuiper:1941}, and in the past eighty years the catalogue has grown to somewhere between $\sim\num{42000}$ \citep{Petrosky:2021} and $\sim\num{86000}$ \citep{Qian:2020} contact binaries, representing between 26.7 and 54.8 per cent of all observed binaries (those from the Washington Double Star catalogue; \citealt{Mason:2001}). The binaries we study in this chapter are summarised in \Cref{tab:overcontact_binaries}, and were originally compiled in \citet{Abdul-masih:2022}. Their sample focused on measuring the period stability of contact binaries and is thus subset of the known sample. They rejected a handful of other non O+O overcontact binaries, for reasons that include short-period von Zeipel-Kozai-Lidov oscillations, incomplete photometric / radial velocity fits, non-\gls{ms} binaries, unknown separations, and irregular light curves.
+Throughout the history of binary evolution theory, a consistent thread has been the consistent underprediction of the mass predicted by models (the ``evolutionary mass'') vs the mass inferred from spectroscopic studies of stars (the ``spectroscopic mass''). Summaries are found in works such as \citet{Herrero:1992, Massey:2009, Bouret:2013, Massey:2013, McEvoy:2015, Markova:2018, Ramachandran:2018, Bestenlehner:2020}. The reason has been left as either deficiencies in the physics of model atmospheres \citep{Herrero:1992} or non-included or not well-understood physics \citep{Bestenlehner:2020}.
 
-Ages for the six binaries have not been published, though a soft restriction can be placed on their evolutionary status; \citet{Abdul-masih:2022} compiles specifically \gls{ms} contact binaries, meaning their interactions must take place whilst the progenitor stars are on their respective main sequences. Nevertheless, we present inferred ages based on matches to the \gls{bpass} v2.2 models in \Cref{tab:hoki_matches}.
-
-\begin{table}
-    \centering
-    \begin{tabular}{c|c|c|c|c|c|c|c|c}
-        \toprule
-        Binary name & $M_1$ & $M_2$ & $P$ & Z & $\log T_1$ & $\log L_1$ & $\log T_2$ & Ref. \\
-        \midrule
-        LSS 3074       & $14.8 \pm 2.2$ & $17.2 \pm 4.2$ & $2.183 \pm 1$         & 0.020$^a$ & $4.6 \pm 0.2$    & $5.15 \pm 0.2$   & $4.53 \pm 0.5$   & A \\
-        MY Cam         & $37.7 \pm 3.2$ & $31.6 \pm 4.2$ & $1.175^{+6}_{-1.175}$ & 0.020$^a$ & $4.62 \pm 0.2$   & $5.2 \pm 0.5$    & $4.59 \pm 0.5$   & B \\
-        SMC 108086     & $16.9 \pm 1.2$ & $14.3 \pm 5.1$ & $0.883 \pm 0.88$      & 0.004$^b$ & $4.53 \pm 0.1$   & $4.608 \pm 0.4$  & $4.48 \pm 0.5$   & C \\
-        TU Mus         & $16.7 \pm 1.6$ & $10.4 \pm 1.4$ & $1.387 \pm 1$         & 0.020$^c$ & $4.57 \pm 0.2$   & $5.02 \pm 0.4$   & $4.54 \pm 0.5$   & D \\
-        V382 Cyg$^d$   & $26.1 \pm 3.2$ & $19.0 \pm 4.2$ & $1.886 \pm 1$         & 0.020$^e$ & $4.57 \pm 0.2$   & $5.47 \pm 0.4$   & $4.58 \pm 0.5$   & E \\
-        VFTS 352       & $28.6 \pm 3.6$ & $28.9 \pm 1.8$ & $1.124^{+2}_{-1.124}$ & 0.010$^f$ & $4.63 \pm 0.45$  & $5.19 \pm 0.5$   & $4.61 \pm 0.5$   & F \\
-
-        \bottomrule
-    \end{tabular}
-        \caption[Search parameters for the six close-contact binaries compiled in \citet{Abdul-masih:2022}, as used in our fitting to the BPASS v2.2.1 grid.]{Search parameters for the six close-contact binaries compiled in \citet{Abdul-masih:2022}, as used in our fitting to the BPASS v2.2.1 grid. The uncertainties presented are not the physical uncertainties on their parameters, but instead represent the size of the range that we search within, e.g., $P=1.175^{+6}_{-1.175}$ indicates that we match on all periods between 0 and \SI{7.165}{\day} inclusive. Masses and Luminosities are measured relative to solar, periods are measured in days, and temperatures measured in Kelvin. \textbf{Notes:} $^a$Source paper assumes solar metallicity with no further qualification $^b$Using the mean metallicity of the SMC $^c$Based on \citet{Andersen:1975} claiming 0.021 and \citet{Terrell:2003} confirming a comparison with synthetic spectra ``does not support a carbon content, and therefore metallicity, far from the solar value'' $^d$ A mass ratio inversion occurred for this binary \citep[see][]{Martins:2017} and hence we use the definition of ``primary'' from within the paper when reporting in this table. $^e$Using the mean metallicity of the Milky Way $^f$As \citet{Crowther:2018} reports ``half-solar'' for the Tarantula Nebula, the host nebula of VFTS 352. \textbf{References}: A: \citet{Raucq:2017}, B: \citet{Lorenzo:2014}, C: \citet{Hilditch:2005}, D: \citet{Penny:2008}, E: \citet{Martins:2017}, F: \citet{Almeida:2015}}
-    \label{tab:overcontact_binaries}
-\end{table}
-
-\subsection{Progenitor history}
-
-We now examine each of the overcontact systems in detail, providing observational context to each system.
-
-\subsubsection{LSS 3074}
-
-The binarity of LSS 3074 \citep{Raucq:2017} was first observed in 1985 by \citet{Morrell:1990} with an observed period of \SI{2.19}{\day}, with its HeI and HeII spectra causing the authors to conclude that it was an O4f+ and O6-7 binary, with inclination-weighted masses of $M_1\sin^3 i = \SI{8}{\msun}$ and $M_2\sin^3 i = \SI{9}{\msun}$. With later measurements of the inclinations to be $i\approx\ang{24}$, these masses were refined to $M_1 = \SI{17.2}{\msun}$ and $M_2=\SI{14.8}{\msun}$. It is located behind the Coalsack Nebula, at a distance of \SI{2256}{\pc}, with a B-band magnitude of \SI{12.81}{\mag} \citep{Stephenson:1971}. It has a fillout factor $f=1.05$.\footnote{A fillout factor is a measurement of the degree of which a system overfills its Roche lobes, with $1 < f < 2$ denoting an overcontact binary, and a high fillout factor representing a more swelled and in-contact system.}
-
-\subsubsection{MY Camelopardalis}
-
-MY Camelopardalis \citep[MY Cam;][]{Lorenzo:2014} is a binary in the cluster Alicante 1, and its binarity was established in 2003 by \citet{Negueruela:2003}. It is likely to be a very massive merger progenitor, though is barely in contact with $f=1.01$ \citep{Abdul-masih:2022}.
-
-\subsubsection{SMC 108086}
-
-OGLE SMC-SC10 108086 \citep[SMC 108086;][]{Hilditch:2005} is a O9 + O9.5/B0 binary. It is a system deeply in contact, with $f=1.70$ \citep{Hilditch:2005, Abdul-masih:2022} -- the deepest known -- and has a short period of $P=\SI{0.88}{\day}$. It is located at a distance of \SI{56.5}{\kilo\pc}, in the \gls{smc}.
-
-\subsubsection{TU Muscae}
-
-TU Muscae \citep[TU Mus;][]{Penny:2008} is an O8V + B0V binary discovered by \citet{Oosterhoff:1928, Oosterhoff:1930}. Its binarity was confirmed as late as 1971, in \citet{Knipe:1971}. The system was profiled in \citet{Andersen:1975}, who concluded that, based on comparison to theoretical models by \citet{Stothers:1972, Stothers:1973}, the system was of solar composition ($Z=0.021\approx\si{\zsun}$) and on the main sequence with $X_\text{H}=0.739$. It has a fillout factor of $f=1.12$.
-
-\subsubsection{V382 Cygni}
-
-V382 Cygni \citep[V382 Cyg;][]{Martins:2017} is an O6.5 + O6 binary whose components are oblate spheroids (deduced from the $\beta$-Lyrae light curves; \citealt{Pearce:1952}). It was originally discovered by \citet{Morgenroth:1935, Petrov:1946}. It has a fillout factor of $f=1.10$.
-
-\subsubsection{VFTS 352}
-
-VFTS 352 was detected in the VLT-FLAMES survey of the Tarantula Nebula \citep{Evans:2011} and is the most recent detection in our sample. The Tarantula Nebula / 30 Doradus is a large H(II) region in the \gls{lmc}. The progenitor of VFTS 352 is likely an equal mass, short period binary with no strong helium or nitrogen surface abundances \citep{Abdul-masih:2019}, which may be due to biases in the CNO abundances, or similar, in that atmospheric study. It has a fillout factor of $f=1.28$.
-
-\subsection{Data matching with BPASS v2.2}\label{sec:BPASS_data_matching}
-
-We perform our data matching using the \codename{Hoki} code \citep{Stevance:2020a}. The search parameters are shown in \Cref{tab:overcontact_binaries}. We query the \gls{bpass} v2.2.1 dataset and record whether or not they enter the (widened) parameter values. Parameters are widened as some of the periods are tighter than the \gls{bpass} bins and thus can be missed in the search.
-
-The matching values \codename{Hoki} finds are shown in \Cref{tab:hoki_matches}. The primary models are also shown on \Cref{fig:hoki_matches_HRD_primaries}. We also report in the table the inferred ages at match, which lie between $\mu_{\log(\text{age})}=6.13$ (for MY Cam) and $\mu_{\log(\text{age})}=7.14$ (for TU Mus).
-
-\input{chapters/tables/BPASS_v2_match_table}
-
-\begin{figure}
-    \centering
-    \begin{subfigure}[t]{0.49\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{images/overcontact_binaries/LSS_3074_hoki.pdf}
-        \caption{LSS 3074}
-        \label{fig:hoki_LSS_3074}
-    \end{subfigure}%
-    \begin{subfigure}[t]{0.49\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{images/overcontact_binaries/MY_Cam_hoki.pdf}
-        \caption{MY Camelopardalis}
-        \label{fig:hoki_MY_Cam}
-    \end{subfigure}
-
-    \begin{subfigure}[t]{0.49\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{images/overcontact_binaries/SMC_108086_hoki.pdf}
-        \caption{SMC 108086}
-        \label{fig:hoki_SMC_108086}
-    \end{subfigure}%
-    \begin{subfigure}[t]{0.49\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{images/overcontact_binaries/TU_Mus_hoki.pdf}
-        \caption{TU Muscae}
-        \label{fig:hoki_TU_Mus}
-    \end{subfigure}
-
-    \begin{subfigure}[t]{0.49\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{images/overcontact_binaries/V382_Cyg_hoki.pdf}
-        \caption{V382 Cygni}
-        \label{fig:hoki_V382_Cyg}
-    \end{subfigure}%
-    \begin{subfigure}[t]{0.49\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{images/overcontact_binaries/VFTS_352_hoki.pdf}
-        \caption{VFTS 352}
-        \label{fig:hoki_VFTS_352}
-    \end{subfigure}
-
-    \caption[BPASS v2.2.1 primary models for the matches obtained by \codename{Hoki} for the parameters in \Cref{tab:overcontact_binaries}.]{BPASS v2.2.1 primary models for the matches obtained by \codename{Hoki} for the parameters in \Cref{tab:overcontact_binaries}. The legend key is the BPASS stellar model file name (omitting the ``sneplot-'' prefix common to every entry), and is broken down into its parts in \Cref{tab:hoki_matches}.}
-    \label{fig:hoki_matches_HRD_primaries}
-\end{figure}
-
-\section{Forward evolution}
-
-Having now established the \gls{zams} parameters for our binaries, we can take these as input to our \codename{stars} code to determine their future history. We set up a grid, with $m_1 \in \left[5, 60\right], m_2 \in\left[5, m_1\right),$ and $\log~P\in\left[0.6, 1.2\right]$. We take steps of $\delta m=\SI{5}{\msun}$ and $\delta\log~P=\SI{0.1}{\dex}$. The mass space is set up to enforce a mass ratio of $q < 1$. There are two reasons for this:
+This phenomenon is not unique to one code or methodology. To name but four, it has been observed in:
 
 \begin{enumerate}
-    \item We do not consider $q = 1$ -- equal mass binaries -- as equal masses induce extra effects on the \gls{ms} that \codename{stars} is unable to effectively model,
-    \item We do not consider $q > 1$, as this is equivalent to a relabelling of $m_1\to m_2$ and $m_2\to m_1$; that is, binary evolution is symmetric under the exchange of mass.
+    \item BONNSAI (work in \citealt{Bestenlehner:2020}, BONNSAI in \citealt{Schneider:2014}),
+    \item the work of \citet{Maeder:1990} \citep{Herrero:1992},
+    \item the Geneva tracks (work by \citealt{Markova:2018}, Geneva code by \citealt{Ekstrom:2012}), and
+    \item the PoWR code (work by \citealt{Ramachandran:2018}, PoWR code in \citealt{Grafener:2002, Hamann:2003, Sander:2015}).
 \end{enumerate}
 
-We also compute the grid at three metallicities: z020, z010, and z004, corresponding to the three metallicities in \Cref{tab:overcontact_binaries} and \Cref{tab:hoki_matches}. An example model run for a $Z=0.020=Z_\odot, m_1=\SI{30}{\msun}, m_2=\SI{10}{\msun}, \log~P=\SI{0.6}{\day}$ is shown in \Cref{fig:sample_model_run}. This model corresponds to a potential progenitor of LSS 3074.
+If luminosities are systematically incorrect, as discussed above, then there would be a corresponding systematic incorrect calculation of the mass; that is, a traditional mass-luminosity relationship may not hold. We show in \Cref{fig:mass_luminosity_relationship} the relationship between the evolutionary mass and luminosity for both variable and non-variable composition accretion cases, as evolved in \autoref{sec:future_history}. We also display this for integer mass single-star models. Unsurprisingly, the non-variable accretion case evolves like a \SI{24}{\msun} model -- the initial mass of the model when this single-star evolution began was \SI{23.71}{\msun}, and the abundance profile typifies a single star; since the mass transfer was hydrogen-dominated, the profile is not inverted and thus resembles a single star.
+
+On the other hand, the variable accretion case would (if observed) initially appear to be more massive than a \SI{24}{\msun} star (despite being \SI{23.66}{\msun} initially), eventually appearing to be approximately \SI{21}{\msun} -- i.e., $\sim$\SI{3}{\msun} less massive than it actually would be. Thermohaline mixing suppresses this change somewhat, but even with stronger thermohaline mixing still ultimately results in an accretor that is systematically different to a non-variable composition accretion model.
+
+Consequently, any masses inferred from spectroscopy or luminosity measurements may be an underestimate of the true (evolutionary) mass. This would affect, for example, the inferred masses of compact objects and thus may have implications for our understanding of the progenitors of gravitational waves.
 
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width=\textwidth]{images/overcontact_binaries/Sample_Overcontact_Binary_LSS3074.png}
-    \caption[A sample grid execution run, matching the ZAMS parameters of LSS 3074]{A sample grid execution run, matching the ZAMS parameters of LSS 3074. The top panel is an HR diagram of both stars, with core abundance exhaustion marked as symbols on the figure. The bottom two panels are Kippenhahn diagrams showing both the convective zones of the stars, and the cores.}
-    \label{fig:sample_model_run}
+    \includegraphics[width=\textwidth]{images/HeliumRich/mass_luminosity.pdf}
+    \caption[The (evolutionary) mass-luminosity relationship in the presence and absence of variable composition accretion.]{The (evolutionary) mass-luminosity relationship in the presence and absence of variable composition accretion. Also shown are the curves for reference models of between $M_\text{ZAMS}=\SI{21}{\msun}$ and \SI{26}{\msun}, which were evolved as a single star.}
+    \label{fig:mass_luminosity_relationship}
 \end{figure}
 
-In \Cref{fig:parameter_coverage} we also display the coverage map in $\log T_\text{eff}~/~\log L$ space of our grid at each metallicity as a density map.
+\subsection{WN/O3 stars}
 
-\begin{figure}[!htbp]
-    \centering
-    \includegraphics[width=\textwidth]{images/overcontact_binaries/Parameter_Coverage.png}
-    \caption[The location in HR-space that the grid we compute occupies, for the three metallicities we presently cover.]{The location in HR-space that the grid we compute occupies, for the three metallicities we presently cover.}
-    \label{fig:parameter_coverage}
-\end{figure}
+The spectral class of these stars is another interesting question. They are overluminous for their mass, have helium-rich surfaces, and are hotter than expected for their luminosity. Otherwise, the general behaviour of the post-interaction accretors evolved as single stars is generally typical of main-sequence stars. This suggests that they may be the elusive WN/O3 progenitors \citep{Massey:2023}. These stars have previously been suggested to be the helium \textit{donors} from a binary interaction \citep{Gotberg:2018, Smith:2018}.
 
-\section{Matches to observed close contact models}
-
-From our coarse grid, we are able to identify matches to the observed systems. We first interpolate the matches found by \codename{Hoki} onto our coarse grid. Specifically, in order to preserve the mass ratio as best as possible, we interpolate $m_1$ onto the grid, and then calculate $m_2$ as
-
-\begin{equation}
-    m_2 = \text{round}\left(q\times m_1\right)
-\end{equation}
-
-where the round function interpolates back onto the grid. Our matches for the systems LSS 3074, MY Cam, V382 Cygni, and VFTS 352 are shown in \Cref{fig:gridmatches}. We observe that on this coarse grid, we match V382 Cyg on two models:
-
-\begin{enumerate}
-    \item $m_1=\SI{30}{\msun}$, $m_2=\SI{15}{\msun}$, $\log P=\SI{0.6}{\day}$, from an age of \SI{63606358}{\year} to \SI{63611433}{\year} (i.e., a matching time of \SI{5075}{\year}), and
-    \item $m_1=\SI{40}{\msun}$, $m_2=\SI{10}{\msun}$, $\log P=\SI{0.6}{\day}$, from an age of \SI{34366921}{\year} to \SI{34373848}{\year} (i.e., a matching time of \SI{6927}{\year}).
-\end{enumerate}
-
-We also note an absence of matches for two of our systems: TU Mus and SMC 108086
-
-\begin{figure}
-    \centering
-    \begin{subfigure}[t]{0.49\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{images/overcontact_binaries/grid_matches/LSS_3074.png}
-        \caption{LSS 3074}
-        \label{fig:gridmatch_LSS_3074}
-    \end{subfigure}%
-    \begin{subfigure}[t]{0.49\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{images/overcontact_binaries/grid_matches/MY_Cam.png}
-        \caption{MY Cam}
-        \label{fig:gridmatch_MY_Cam}
-    \end{subfigure}
-
-    \begin{subfigure}[t]{0.49\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{images/overcontact_binaries/grid_matches/V382_Cyg.png}
-        \caption{V382 Cyg}
-        \label{fig:gridmatch_V382_Cyg}
-    \end{subfigure}%
-    \begin{subfigure}[t]{0.49\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{images/overcontact_binaries/grid_matches/VFTS_352.png}
-        \caption{VFTS 352}
-        \label{fig:gridmatch_VFTS_352}
-    \end{subfigure}
-
-    \caption[Detailed models of the close contact binaries found in \Cref{sec:BPASS_data_matching}.]{Detailed models of the close contact binaries found in \Cref{sec:BPASS_data_matching}. Not shown are SMC 108086 and TU Mus, which both only have matches outside of the coarse grid. Also not shown is a match for MY Cam, which has a primary which is more massive than the grid.}
-    \label{fig:gridmatches}
-\end{figure}
-
-\section{Exotic binaries arising from contact systems}
-
-\subsection{Double contact systems}\label{sec:multiply_interacting}
-
-\subsection{Reverse mass transfer}\label{sec:reverse_MT}
-
-\subsection{Overflow through \texorpdfstring{$\mathcal{L}_2$}{the outer Lagrange point}}
+Whether these are donor products or accretor products will require further investigation, though we note that their relative isolation compared to other massive stars \citep{Smith:2018} and apparent single-star nature \citep{Massey:2023} does suggest that they could be accretor stars.
 
 \section{Chapter Summary}
 
+We have exhibited a case study of a close \SI[parse-numbers=false]{30+10}{\msun} binary, in which mass transfer becomes dominated by helium. By contrasting this to a binary with hydrogen-dominated mass transfer, we have shown that this results in an atypical composition profile that produces unexpected accretors. These accretors have systematically different luminosity compared to their hydrogen-dominated alternatives, translating to a different (incorrect) inferred mass.

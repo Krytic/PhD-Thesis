@@ -35,6 +35,7 @@
 \makefancy
 
 \begin{abstract}
+    \addcontentsline{toc}{chapter}{Abstract}
     \input{abstract.tex}
 
     \vspace*{\fill}
@@ -47,6 +48,7 @@
 \placeopeningquote
 
 \ifx\supervisorcopy\undefined
+\addcontentsline{toc}{chapter}{Acknowledgements}
 \IfFileExists{acknowledgements.tex}{\input{acknowledgements.tex}}
 \fi
 

@@ -110,7 +110,7 @@ such that \Cref{eq:mass_fracs} becomes
 Of note, abundances are not always in the literature referred to in this fashion. In some works, such as \citet{Asplund:2021}, abundances are reported in the form $\mathcal{X}_i=12+\log_{10}\left(\nicefrac{\text{X}_i}{\text{H}}\right)$. To convert between the two, the relationship
 
 \begin{equation}
-    \mathcal{X}_i = 12+\log_{10}\left(\frac{\frac{Z\times X_{i, \text{init}}}{56}}{0.75-2.5Z}\right)
+    \mathcal{X}_i = 12+\log_{10}\left(\frac{Z\times \frac{X_{i, \text{init}}}{56}}{0.75-2.5Z}\right)
 \end{equation}
 
 is employed, where $X_{i,\text{init}}$ is the initial mass fraction of a given element (which we take from \citealt{Grevesse:1993}).
@@ -181,7 +181,7 @@ is employed, where $X_{i,\text{init}}$ is the initial mass fraction of a given e
 
 \subsection{Evolutionary Pathways}
 
-In this section, we examine the three major regimes of stellar evolution for single-stars: low-mass, intermediate-mass, and massive stars. We do not consider stars above $M_\text{ZAMS}\approx\SI{80}{\msun}$ in this thesis \todo{why?}
+In this section, we examine the three major regimes of stellar evolution for single-stars: low-mass, intermediate-mass, and massive stars. Stars above $M_\text{ZAMS}\approx\SI{80}{\msun}$ are out of the scope of this thesis -- although they exist, and the \gls{bpass} \gls{imf} reaches \SI{300}{\msun}, the systems of interest in future chapters are at most $\sim\SI{80}{\msun}$, and thus very massive stars are out of scope for this work.
 
 \subsubsection{Low-Mass Stars: \texorpdfstring{$\SI{0.08}{\msun} < M < \SI{2}{\msun}$}{Stars with between 0.08 and 2 times the mass of the sun}}\label{sec:low_mass_stars}
 

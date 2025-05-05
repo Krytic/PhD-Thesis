@@ -1,10 +1,9 @@
-compile.sh
 pandoctemplate.md
 latex-toc-markdown
 rendered_chapters/
-scripts/
 *.py
 !/chapters/listings/*.py
+!/scripts/*.py
 _minted-main/
 
 # LaTeX files
