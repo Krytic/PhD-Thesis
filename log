@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.1)  15 MAY 2025 15:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.1)  15 MAY 2025 15:32
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -3016,12 +3016,12 @@ Package pdftex.def Info: images/TheorySection/helium_flash_kippenhahn.pdf  used
 \pydata@fh@0=\write14
 \openout14 = `_FAD58DE7366495DB4650CFEFAC2FCD61.data.minted'.
 
-runsystem(latexminted config  --timestamp 20250515152801 FAD58DE7366495DB4650CF
+runsystem(latexminted config  --timestamp 20250515153201 FAD58DE7366495DB4650CF
 EFAC2FCD61)...executed.
 
 
 (./_FAD58DE7366495DB4650CFEFAC2FCD61.config.minted)
-runsystem(latexminted cleanconfig  --timestamp 20250515152801 FAD58DE7366495DB4
+runsystem(latexminted cleanconfig  --timestamp 20250515153201 FAD58DE7366495DB4
 650CFEFAC2FCD61)...executed.
 
 
