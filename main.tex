@@ -135,14 +135,17 @@
       (numb) {\thechapter};
     \node[rotate=90,anchor=south,inner sep=0pt,font=\huge] at ([xshift=-5pt]numb.west) {\color{main-accent}\chaptertitlename};
     }
-  }{0pt}{\stepcounter{abspagecounter}\zlabel{meta:chap:\theabspagecounter}\writecurrentchap{\chaptertitlename-\thechapter}\huge\selectfont\bfseries\color{main-accent}#1}[\vskip5pt\Large\color{main-accent}\protect{\pgfornament[width=0.3\textwidth]{89}}]
+  }{0pt}{\stepcounter{abspagecounter}\zlabel{meta:chap:\theabspagecounter}\writecurrentchap{\chaptertitlename-\thechapter}\huge\selectfont\bfseries\color{main-accent}#1}[\vskip5pt\Large\color{main-accent}\protect{\pgfornament[width=0.3\textwidth]{88}}]
 
 \titleformat{name=\chapter,numberless}[block]
   {\normalfont\filcenter}
-  {}{0pt}{\stepcounter{abspagecounter}\zlabel{meta:chap:\theabspagecounter}\writecurrentchap{#1}\huge\selectfont\color{main-accent}#1}[\vskip5pt\Large\color{main-accent}\protect{\pgfornament[width=0.3\textwidth]{89}}]
+  {}{0pt}{\stepcounter{abspagecounter}\zlabel{meta:chap:\theabspagecounter}\writecurrentchap{#1}\huge\selectfont\color{main-accent}#1}[\vskip5pt\Large\color{main-accent}\protect{\pgfornament[width=0.3\textwidth]{88}}]
 
 \titlespacing*{\chapter}
   {0pt}{75pt}{10pt}
+
+\titlespacing*{name=\chapter, numberless}
+  {0pt}{25pt}{10pt}
 
 \newcommand*\cleartoleftpage{%
   \clearpage

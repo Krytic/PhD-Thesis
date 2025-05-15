@@ -5,7 +5,7 @@
 
 \lettrine[lines=3]{S}{ince the force between two} objects due to gravity scales like $F\sim\frac{1}{r_\text{sep}}$, another question naturally arises during the consideration of contact binaries. For sufficiently close binaries, one can imagine that mass transfer through \gls{rlof} or tidal effects could become reasonably strong, stripping the hydrogen envelope of a main sequence (or shortly post-main sequence) star and exposing the helium-enriched core underneath. If this stripping does not cause the star to retreat within its Roche lobe, then this core material would continue to be accreted, creating helium-enriched matter streams accreting onto its companion.
 
-As discussed in \Cref{sec:binary_evolution}, the presence of a companion measurably alters the evolution of a star. Typically this manifests as allowing matter to be exchanged between the components or the gravity of one star warping the photosphere of the other. In this chapter we focus on the first instance, where mass transfer occurs between two stars. In particular, we consider a binary system with \gls{zams} masses of \SI[parse-numbers=false]{30+10}{\msun}, and an initial period of $10^{0.6}\approx$ \SI{3.98}{\day}. We specifically explore this case as a case study on the effect of helium enriched mass transfer, and in \Cref{chap:population_properties} we will explore the effect that this has on a grid of close binaries.
+As discussed in \Cref{sec:binary_evolution}, the presence of a companion measurably alters the evolution of a star. Typically this manifests as allowing matter to be exchanged between the components or the gravity of one star warping the photosphere of the other. In this chapter we focus on the first instance, where mass transfer occurs between two stars. In particular, we consider a binary system with \gls{zams} masses of \SI[parse-numbers=false]{30+10}{\msun}, and an initial period of $10^{0.6}\approx$ \SI{3.98}{\day}. We specifically explore this case as a case study on the effect of helium enriched mass transfer. Future work will be needed to examine the prevalence of the effect of this mass transfer on a grid of close binaries.
 
 The general background for this section remains as elaborated in \Cref{chap:theoretical_background}, however our parameterisation requires us to delinate between two cases: that when variable composition accretion is enabled and the case where it is disabled. These correspond to setting the parameter IVARACC in \Cref{chap:param_config} to 1 or 0 respectively.
 
@@ -70,9 +70,40 @@ When the donor swells to fill its Roche lobe, it begins to efficiently transfer 
 
 \subsection[Contact phase]{Contact phase (stages C--D)}\label{sec:contact_phase_stages_c_d_}
 
-The accretion of matter from the donor star through \gls{rlof}, though limited by the thermal time-scale of the star, proceeds unimpeded. The increased rotation discussed above causes the accretor to break thermal equilibrium \citep[][and references therein]{Lau:2024}, expanding as it attempts to re-establish this. This attempt to re-establish thermal equilibrium is what both sustains and defines the contact phase.
+When the primary star exceeds its Roche lobe during its main sequence, it begins to efficiently transfer material onto the secondary. This mass transfer shrinks the orbital separation of the binary by about 23 per cent, and causes the secondary to swell and fill its own Roche lobe, forming a contact binary. The evolution in the lead up to, during, and immediately after the contact phase is shown in \Cref{fig:main_evolution}. Notably, when the system becomes a contact binary, the separation shrinks dramatically owing to conservation of angular momentum. This results in a final period of $\sim\SI{2.8}{\day}$.
 
-Because of the short initial period of the binary ($\approx\SI{3.98}{\day}$), a contact phase is not unexpected. However, the sustained mass transfer does proceed until the hydrogen-rich envelope of the star is depleted, and the helium-rich core is exposed. Accretion continues substantially unimpeded, now accreting helium-dominant material. As the mean molecular weight of the accreted material increases, the opacity of the accretor decreases.
+Because of the short initial period of the binary, this stellar model is an example of a system that experiences a contact phase. This is due to the large amount of mass transferred in the immediate lead-up to this phase, causing the accretor to react by increasing in radius. The process of generating and sustaining the contact phase can be broken down into the following stages, summarised in \Cref{fig:stellar_profiles}:
+
+\begin{enumerate}
+    \item In the immediate lead-up to the contact phase, the accretor begins to accrete material, causing it to spin up. The rotation rate also increases due to transfer of angular momentum and the accretor approaches 40 per cent of its critical rotation rate.
+    \item This accretion breaks thermal equilibrium in the accretor and causes it to expand \citep[][and references therein]{Lau:2024}
+    \item The donor dims slightly as the accretor brightens by 63.4 per cent.
+    \item The donor then begins to increase in luminosity, but the radius returns to approximately the size it was prior to the onset of RLOF, which is below the expected radius for a star of that luminosity.
+    \item The disruption of thermal equilibrium in the accretor powers the contact phase, which lasts for approximately \SI{5}{\kilo\year}.
+\end{enumerate}
+
+Eventually, the accretor shrinks within its Roche lobe and the contact phase terminates. The reason for this is that the accretor's mass has increased to such a point that its thermal timescale is now equivalent to the mass transfer rate from the donor star as shown in \Cref{fig:kelvin_helmholtz_timescale}. The accretor is thus able to achieve thermodynamic equilibrium and return to its more compact state. This shrinking is not due to the heavier helium-rich material that has been accreted, although as we note below, post-contact the accretor with variable composition accretion is smaller in radius due to this effect, as shown in \Cref{fig:hrd_comparison_var_novarr} and \Cref{tab:binary_configuration_parameters}.
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[t]{0.45\columnwidth}
+        \centering
+        \includegraphics[width=\columnwidth]{images/HeliumRich/Figure_5_VARACC.pdf}
+        \caption{Variable composition accretion} \label{fig:TKH_Variable}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.45\columnwidth}
+        \centering
+        \includegraphics[width=\columnwidth]{images/HeliumRich/Figure_5_NOVARACC.pdf}
+        \caption{Non-variable composition accretion} \label{fig:TKH_Standard}
+    \end{subfigure}
+    \caption[The Kelvin-Helmholtz time-scales of both stars in the variable and non-variable composition accretion regime.]{The Kelvin-Helmholtz time-scales of both stars in the variable and non-variable composition accretion regime. Here, SD means semi-detached (one star filling its Roche lobe), C means contact (both stars filling their Roche lobes), and D means fully detached (neither star filling its Roche lobe). Variable composition accretion prolongs the final detached phase and shrinks the contact phase. The solid black lines show the length $\tau$ of each phase -- thermal equilibrium is broken if $\tau_\text{KH}>\tau$, i.e., in the first semidetached phase and the contact phase.}
+    \label{fig:kelvin_helmholtz_timescale}
+\end{figure}
+
+
+% The accretion of matter from the donor star through \gls{rlof}, though limited by the thermal time-scale of the star, proceeds unimpeded. The increased rotation discussed above causes the accretor to break thermal equilibrium \citep[][and references therein]{Lau:2024}, expanding as it attempts to re-establish this. This attempt to re-establish thermal equilibrium is what both sustains and defines the contact phase.
+
+% Because of the short initial period of the binary ($\approx\SI{3.98}{\day}$), a contact phase is not unexpected. However, the sustained mass transfer does proceed until the hydrogen-rich envelope of the star is depleted, and the helium-rich core is exposed. Accretion continues substantially unimpeded, now accreting helium-dominant material. As the mean molecular weight of the accreted material increases, the opacity of the accretor decreases.
 
 \subsection[Post-contact]{Post-contact (stages D--E)}\label{sec:post_contact_stages_d_e_}
 
@@ -90,7 +121,30 @@ The second effect is thermohaline mixing, which is the process by which an inver
 
 \section{Atypical abundance profiles}
 
-Because the stars are quite close together and have a mass ratio of $\nicefrac{1}{3}$, when \gls{rlof} starts it is quite voracious, and becomes even more so during the contact phase. The donor star sheds its hydrogen-rich surface and material from the helium-rich core is exposed, which too becomes part of the accreted material. The material stream becomes increasingly helium-rich, depositing this material on top of a hydrogen-rich surface, causing the accretor to have an atypical abundance profile, as shown pictorally in \Cref{fig:composition_profile_evolution}. The net effect is that there is a helium-rich surface sitting atop a hydrogen-rich layer sitting atop a helium-rich core. At this stage thermohaline mixing is projected to occur, as there is an unstable composition gradient (owing to helium having a higher mean molecular weight than hydrogen).
+As previously discussed, the accretor star has an atypical mean molecular weight profile. The discrepancy can be most seen in \Cref{fig:abundances_line_plot}. If thermohaline mixing is included, it would at this stage act to attempt to homogenise the star, with the heavier helium material effectively sinking to the core of the star. The effect of this will vary depending on the efficiency of thermohaline mixing, which is not conclusively known. To that end, the model of \citet{Eggleton:1972, Kippenhahn:1980, Stancliffe:2007} is employed, where the free parameter $\alpha_\text{th}$ controlling the strength of thermohaline mixing is allowed to vary. $\alpha_\text{th}=0$ corresponds to no thermohaline mixing, whereas $\alpha_\text{th}=1$ represents strong (virtually instantaneous) thermohaline mixing.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{images/HeliumRich/abundances_line_plot.pdf}
+    \caption{The abundances of hydrogen and helium at the five critical stages of the binary evolution, shown as line plots.}
+    \label{fig:abundances_line_plot}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{images/HeliumRich/abundances_line_plot_near_detachment.pdf}
+    \caption[The helium abundance in the accretor near when the model detaches.]{The helium abundance in the accretor near when the model detaches. The star contracts as mass transfer ends, resulting in a $\sim\SI{9}{\rsun}$ accretor 300 models after collapse, compared to $\sim\SI{11.5}{\rsun}$ 300 models before (a difference of $\sim\SI{1.6}{\kilo\year}$).}
+    \label{fig:abundances_line_plot}
+\end{figure}
+
+We show in \Cref{fig:hrd_with_thermohaline_mixing_all_values} the effect that thermohaline mixing has on the accretor. Varying the thermohaline mixing coefficients allows for the shape of the HR diagram track to change noticeably, with the locations of the hook changing, as well as the trajectory as the model crosses the Hertzsprung gap. However, and critically, even the most efficient thermohaline mixing included -- $\alpha_\text{th}=0.1$ -- was unable to return the model to its location on the HR diagram, even though it homogenised the model only within a few timesteps.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{images/HeliumRich/HR_diagram_with_all_thermohaline.pdf}
+    \caption[An HR diagram of the post-mass transfer secondary model evolved as a single star with different thermohaline mixing coefficients.]{An HR diagram of the post-mass transfer secondary model evolved as a single star with different thermohaline mixing coefficients. The diagram has been truncated to have the $y$-axis begin at $\log L=5$, with the input model shown in faint grey. The ``variable accretion'' and ``non-variable accretion'' models were evolved with thermohaline mixing entirely disabled and with 199 meshpoints. The thermohaline mixing models were evolved with 999 meshpoints, and all experience breathing pulses prior to model termination.}
+    \label{fig:hrd_with_thermohaline_mixing_all_values}
+\end{figure}
 
 \input{chapters/tables/binary_configuration_parameters}
 
@@ -114,7 +168,11 @@ Because the stars are quite close together and have a mass ratio of $\nicefrac{1
 
 In \Cref{fig:hrd_comparison_var_novarr} we display a comparative HR diagram between the cases of variable and non-variable composition accretion. In each case an \SI[parse-numbers=false]{30+10}{\msun} binary was evolved with the only difference between the two being whether material was allowed to have variable composition accretion or the standard accretion prescription.
 
-The first and most striking conclusion that we can draw from this result is that the companion is, in the variable composition accretion case, hotter and more luminous than the non-variable case.
+The first and most striking conclusion that we can draw from this result is that the companion is, in the variable composition accretion case, hotter and more luminous than the non-variable case. As previously mentioned, even near-instantaneous thermohaline mixing to homogenise the star was insufficient to return the accretor to a position on the HR diagram typified by non-variable accretion models.
+
+Indeed, none of our single-star models are able to replicate the non-variable composition accretion model. However, a \SI{30}{\msun} model has a similar luminosity to the accretor but its surface temperature is \SI{0.15}{\dex} ($\sim\SI{9.6}{\kilo\kelvin}$) higher. This is due to the lower opacity of the helium-rich surface of the accretor. Similarly, we see that during the main sequence the accretor with variable composition accretion is also approximately \SI{0.15}{\dex} ($\sim\SI{11.3}{\kilo\kelvin}$) hotter in surface temperature than the non-variable composition accretion model.
+
+\Cref{fig:hrd_comparison_var_novarr} shows that when thermohaline mixing is included we see this temperature difference decrease to approximately \SI{0.1}{\dex} ($\sim\SI{1.54}{\kilo\kelvin}$). Although thermohaline mixing has a bigger difference on the accretor tracks earlier in the main-sequence evolution than at the end of the main-sequence closer where the tracks are more similar in their evolutionary path.
 
 \begin{figure}[!htbp]
     \centering
