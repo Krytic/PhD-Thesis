@@ -1,75 +1,193 @@
 % !TEX root = ../../main.tex
-\chapter{Parameter Configuration}\label{chap:param_config}
+\chapter{Bespoke Overcontact Binary Models}\label{chap:appendix:bespoke_models}
 
-In this appendix we list the default parameters chosen for our binary evolution runs, as detailed in \autoref{chap:numerical_methods_stars}.
+In this appendix, we present the results of our bespoke overcontact binaries as established in \Cref{sec:forward_evolution}. Shown are three parameter configurations, corresponding to the fiducial (normal period) grid in \Cref{fig:bespoke_binaries_normal}, and our $\pm\SI{0.1}{\dex}$ period grid \Cref{fig:bespoke_binaries_wider,fig:bespoke_binaries_shorter}. \todo{Rearrange these...}
 
-\begin{table}[!htbp]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% NORMAL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}
     \centering
-    \begin{tabular}{rll|rll|rll}
-    \toprule
-       Parameter & Value     & Comment   &   Parameter & Value     & Comment   &   Parameter & Value     & Comment   \\
-    \midrule
-             NM2 & 199       & Meshpoints &         ICL & 1         &           &         IT1 & 40        &           \\
-             ION & 2         &           &         IT2 & 20        &           &         IAM & 1         &           \\
-             JIN & 15        &           &         IOP & 5         &           &         OUT & 15        &           \\
-            INUC & 0         &           &         NCH & 3         &           &         IBC & 0         &           \\
-              JP & 1         &           &         ICN & 0         &           &         ITH & 1         &           \\
-            IML1 & 5         & Mass loss (*1) &     IX & 1         &           &        IML2 & 5         & Mass loss (*2) \\
-              IY & 1         &           &       ISGTH & 0         &           &          IZ & 1         &           \\
-             IMO & 0         &           &       IMODE & 2         &           &       IDIFF & 0         &           \\
-           NWRT1 & 100       &           &         EPS & $10^{-6}$ &           &       NWRT2 & 1         &           \\
-             DEL & 0.01      &           &       NWRT3 & 2         &           &         DHO & $10^{-8}$ &           \\
-           NWRT4 & 1         &           &         DT3 & 0         &           &       NWRT5 & 0         &           \\
-             DDD & 1.0       &           &       NSAVE & 10        &           &       NMONT & 0         &           \\
-             DT1 & 0.1       &           &         DT2 & 1.2       &           &         CT1 & 3.0       &           \\
-             CT2 & 3.0       &           &         CT3 & 0.05      &           &         CT4 & 0.01      &           \\
-             CT5 & 0.6       &           &         CT6 & 0.35      &           &         CT7 & 0.45      &           \\
-             CT8 & $10^{-4}$ &           &         CT9 & 0.1       &           &        CT10 & 0.3       &           \\
-    \bottomrule
-    \end{tabular}
-    \label{tab:general_initial_conditions}
-    \caption[Our general initial conditions.]{Our general initial conditions. Unless otherwise described, these are assumed to be enabled for all runs.}
-\end{table}
-\begin{table}
+
+    \begin{subfigure}[t]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/bespoke_binaries/normal/LSS 3074.pdf}
+        \caption{LSS 3074}
+        \label{fig:bespoke_normal_LSS_3074}
+    \end{subfigure}
+
+    \begin{subfigure}[t]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/bespoke_binaries/normal/MY Cam.pdf}
+        \caption{MY Camelopardalis}
+        \label{fig:bespoke_MY_Cam_normal}
+    \end{subfigure}
+\end{figure}%
+\begin{figure}\ContinuedFloat
     \centering
-    \begin{tabular}{rll|rll|rll}
-    \toprule
-       Parameter & Value     & Comment   &   Parameter & Value     & Comment   &   Parameter & Value     & Comment   \\
-    \midrule
-              ZS & 0.02      &           &       ALPHA & 1.925     &           &          CH & 0.7       &           \\
-              CC & 0.173     &           &          CN & 0.053     &           &          CO & 0.482     &           \\
-             CNE & 0.099     &           &         CMG & 0.038     &           &         CSI & 0.08      &           \\
-             CFE & 0.072     &           &         RCD & $10^{6}$  &           &          OS & 0.12      &           \\
-             RML & 0         &           &         RMG & 0         &           &         ECA & 0         &           \\
-              XF & 0.1       &           &          DR & 0.001     &           &         RMT & 1000.0    &           \\
-             RHL & 0         &           &          AC & 0         &           &         AK1 & 1.0       &           \\
-             AK2 & $10^{-4}$ &           &         ECT & 0         &           &         TRB & 0         &           \\
-            IRAM & 1         &           &        IRS1 & 1         &           &       VROT1 & 0         &           \\
-            IRS2 & 1         &           &       VROT2 & 10.0      &           &        FMAC & 1.0       &           \\
-             FAM & 0         &           &        IVMC & 0         &           &        TRC1 & 700.0     &           \\
-            IVMS & 0         &           &        TRC2 & 0         &           &        MWTS & 0         &           \\
-            IAGB & 0         &           &      ISGFAC & 0         &           &    FACSGMIN & 0.01      &           \\
-         SGTHFAC & 0         &           &      ISTART & 0         &           &         HKH & 1.0       &           \\
-             GFF & 10.0      & Removed   &       NNMOD & 0         &           &        CEPR & 0         & \gls{cee} prescription \\
-         ALPHACE & 1.0       &           &           - & -         & -         &           - & -         & -         \\
-    \bottomrule
-     \end{tabular}
-    \label{tab:general_initial_conditions_cont}
-    \contcaption{Continued}
-\end{table}
 
-The possible mass loss prescriptions (IML1/IML2) are:
+    \begin{subfigure}[t]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/bespoke_binaries/normal/SMC 108086.pdf}
+        \caption{SMC 108086}
+        \label{fig:bespoke_SMC_108086_normal}
+    \end{subfigure}
+\end{figure}%
+\begin{figure}\ContinuedFloat
+    \centering
 
-\begin{enumerate}
-  \setcounter{enumi}{-1}
-  \item No mass loss
-  \item \citet{Reimers:1975}
-  \item \citet{Bloecker:1995}
-  \item \citet{Vassiliadis:1993}
-  \item \citet{De_jager:1988, Nugis:2000, Vink:2001} with interpolation errors described in \citet{Richards:2024}
-  \item \citet{De_jager:1988, Nugis:2000, Vink:2001} \citep[described in][]{Eldridge:2017}
-  \item \citet{De_jager:1988, Nugis:2000, Vink:2001} with slowly turning on \gls{wr} rates described in \citet{Richards:2024}
-  \item \citet{De_jager:1988, Nugis:2000, Vink:2001} with no \gls{wr} rates, described in \citet{Richards:2024}
-  \item Unimplemented
-  \item \gls{zams} evolution to a specific \gls{zams} mass, custom routine by Jan Eldridge
-\end{enumerate}
+    \begin{subfigure}[t]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/bespoke_binaries/normal/TU Mus.pdf}
+        \caption{TU Muscae}
+        \label{fig:bespoke_TU_Mus_normal}
+    \end{subfigure}
+
+    \begin{subfigure}[t]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/bespoke_binaries/normal/V382 Cyg.pdf}
+        \caption{V382 Cygni}
+        \label{fig:bespoke_V382_Cyg_normal}
+    \end{subfigure}
+
+\end{figure}%
+\begin{figure}\ContinuedFloat
+    \centering
+
+    \begin{subfigure}[t]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/bespoke_binaries/normal/VFTS 352.pdf}
+        \caption{VFTS 352}
+        \label{fig:bespoke_VFTS_352_normal}
+    \end{subfigure}
+
+    \caption[The results of our bespoke binary evolution for normal periods.]{The results of our bespoke binary evolution for \textbf{normal} periods. In these plots, orange lines represent the donors, and blue lines represent the accretors.}
+    \label{fig:bespoke_binaries_normal}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% WIDER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}
+    \centering
+
+    \begin{subfigure}[t]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/bespoke_binaries/wider/LSS 3074.pdf}
+        \caption{LSS 3074}
+        \label{fig:bespoke_LSS_3074_wider}
+    \end{subfigure}
+
+    \begin{subfigure}[t]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/bespoke_binaries/wider/MY Cam.pdf}
+        \caption{MY Camelopardalis}
+        \label{fig:bespoke_MY_Cam_wider}
+    \end{subfigure}
+\end{figure}%
+\begin{figure}\ContinuedFloat
+    \centering
+
+    \begin{subfigure}[t]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/bespoke_binaries/wider/SMC 108086.pdf}
+        \caption{SMC 108086}
+        \label{fig:bespoke_SMC_108086_wider}
+    \end{subfigure}
+\end{figure}%
+\begin{figure}\ContinuedFloat
+    \centering
+
+    \begin{subfigure}[t]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/bespoke_binaries/wider/TU Mus.pdf}
+        \caption{TU Muscae}
+        \label{fig:bespoke_TU_Mus_wider}
+    \end{subfigure}
+
+    \begin{subfigure}[t]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/bespoke_binaries/wider/V382 Cyg.pdf}
+        \caption{V382 Cygni}
+        \label{fig:bespoke_V382_Cyg_wider}
+    \end{subfigure}
+
+\end{figure}%
+\begin{figure}\ContinuedFloat
+    \centering
+
+    \begin{subfigure}[t]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/bespoke_binaries/wider/VFTS 352.pdf}
+        \caption{VFTS 352}
+        \label{fig:bespoke_VFTS_352_wider}
+    \end{subfigure}
+
+    \caption[The results of our bespoke binary evolution for wider periods.]{The results of our bespoke binary evolution for \textbf{wider} periods. In these plots, orange lines represent the donors, and blue lines represent the accretors.}
+    \label{fig:bespoke_binaries_wider}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SHORTER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}
+    \centering
+
+    \begin{subfigure}[t]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/bespoke_binaries/shorter/LSS 3074.pdf}
+        \caption{LSS 3074}
+        \label{fig:bespoke_shorter_LSS_3074}
+    \end{subfigure}
+
+    \begin{subfigure}[t]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/bespoke_binaries/shorter/MY Cam.pdf}
+        \caption{MY Camelopardalis}
+        \label{fig:bespoke_MY_Cam_shorter}
+    \end{subfigure}
+\end{figure}%
+\begin{figure}\ContinuedFloat
+    \centering
+
+    \begin{subfigure}[t]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/bespoke_binaries/shorter/SMC 108086.pdf}
+        \caption{SMC 108086}
+        \label{fig:bespoke_SMC_108086_shorter}
+    \end{subfigure}
+\end{figure}%
+\begin{figure}\ContinuedFloat
+    \centering
+
+    \begin{subfigure}[t]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/bespoke_binaries/shorter/TU Mus.pdf}
+        \caption{TU Muscae}
+        \label{fig:bespoke_TU_Mus_shorter}
+    \end{subfigure}
+
+    \begin{subfigure}[t]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/bespoke_binaries/shorter/V382 Cyg.pdf}
+        \caption{V382 Cygni}
+        \label{fig:bespoke_V382_Cyg_shorter}
+    \end{subfigure}
+
+\end{figure}%
+\begin{figure}\ContinuedFloat
+    \centering
+
+    \begin{subfigure}[t]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/bespoke_binaries/shorter/VFTS 352.pdf}
+        \caption{VFTS 352}
+        \label{fig:bespoke_VFTS_352_shorter}
+    \end{subfigure}
+
+    \caption[The results of our bespoke binary evolution for shorter periods.]{The results of our bespoke binary evolution for \textbf{shorter} periods. In these plots, orange lines represent the donors, and blue lines represent the accretors.}
+    \label{fig:bespoke_binaries_shorter}
+\end{figure}

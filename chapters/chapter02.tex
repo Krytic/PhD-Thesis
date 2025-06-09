@@ -60,13 +60,13 @@ where $\epsilon$ is the rate of energy energation per unit mass, $\kappa$ is the
 In addition to \Cref{eq:stellar_structure}, an \gls{eos} demanding $\rho=\rho(P, T)$ is desired. We take our \gls{eos} from \citet{Pols:1995}, which built upon that in \citet{Eggleton:1973}. Critically, Pols' \gls{eos} includes the dissociation of molecular hydrogen, Coulomb interactions, and pressure ionization, which \citet{Eggleton:1973} lacked. The \gls{eos} is an approximation to Fermi-Dirac statistics, and originates from the free energy
 
 \begin{equation}
-    F(V, T, N_\text{e}, N_\text{e}) = -\frac13 aT^4 V + kT\sum_i N_\text{i} \pqty{\ln\frac{N_\text{i} h^3}{\omega_i V\pqty{2\pi m_i kT}^\frac32}-1+\frac{\chi_i}{kT}}+F_\text{e}(N_\text{e}, V, T)+\Delta F_\text{e}(N_\text{e}, V, T)
+    F(V, T, N_\text{e}, N_\text{e}) = -\frac13 aT^4 V + kT\sum_i N_\text{i} \pqty{\ln\frac{N_\text{i} h^3}{\omega_i V\pqty{2\pi m_i kT}^\frac32}-1+\frac{\chi_i}{kT}}+F_\text{e}(N_\text{e}, V, T)+\Delta F_\text{e}(N_\text{e}, V, T).
 \end{equation}
 
 These equations represent conservation of mass, hydrostatic equilibrium, energy transport, and thermal equilibrium, respectively. Knowing constants $\epsilon, \kappa$, we have four equations with four unknowns. It is usually convenient to use the \textit{Rosseland mean} opacity,
 
 \begin{equation}
-    \frac{1}{\kappa} = \frac{\pi}{acT^3}\int_0^\infty \frac{1}{\kappa_\nu}\pdv{B}{T}~\mathrm{d}\nu
+    \frac{1}{\kappa} = \frac{\pi}{acT^3}\int_0^\infty \frac{1}{\kappa_\nu}\pdv{B}{T}~\mathrm{d}\nu,
 \end{equation}
 
 where $a$ is the radiation density constant ($a=\SI{7.57e-15}{\erg\per\cubic\cm\per\quartic\kelvin}$) and $B$ is the black-body intensity at frequency $\nu$ and temperature $T$. The function $\kappa_\nu$ is obtainable from atom-electron-photon interaction \citep{Eldridge:2004a}: bound-bound, bound-free, free-free (bremsstrahlung) transitions, and electron scattering. $\kappa_\nu$ is thus related to the scattering cross-section $\sigma_\nu = \int_0^{2\pi}\int_0^\pi \dv{\sigma}{\Omega}\sin\theta\, \mathrm{d}{\theta}\, \mathrm{d}{\phi}$. The Rosseland mean becomes
@@ -113,7 +113,7 @@ Of note, abundances are not always in the literature referred to in this fashion
     \mathcal{X}_i = 12+\log_{10}\left(\frac{Z\times \frac{X_{i, \text{init}}}{56}}{0.75-2.5Z}\right)
 \end{equation}
 
-is employed, where $X_{i,\text{init}}$ is the initial mass fraction of a given element (which we take from \citealt{Grevesse:1993}).
+is employed, where $X_{i,\text{init}}$ is the initial mass fraction of a given element (which we take from \citealt{Grevesse:1993}, summarised in \Cref{tab:initial_abundances}).
 
 \begin{table}[!htbp]
     \centering
@@ -129,8 +129,8 @@ is employed, where $X_{i,\text{init}}$ is the initial mass fraction of a given e
 
         \hline
     \end{tabular}
-    \caption{caption here}
-    \label{tab:tablename}
+    \caption[The unweighted initial abundances by mass of our models, unless otherwise stated.]{The unweighted initial abundances by mass of our models, unless otherwise stated. Metals are then weighted by metallicity, such that, for example, the carbon abundance is $0.173\times0.020=0.00346$. The balance is assumed to be in Helium.}
+    \label{tab:initial_abundances}
 \end{table}
 
 % \subsubsection{hydrogen burning: the \acrshort{pp_chain}}
@@ -193,8 +193,7 @@ After the ignition of helium, these stars cross the so-called Hertzsprung Gap --
 
 \subsubsection{Intermediate-Mass Stars: \texorpdfstring{$\SI{2}{\msun} < M < \SI{8}{\msun}$}{Stars with between 2 and 8 times the mass of the sun}}\label{sec:intermediate_mass_stars}
 
-Intermediate mass stars exist above the threshold for the helium flash to occur. Helium ignition is not degenerate and the development of a helium core is not i
-mpeded. As the star ascends the \gls{agb}, the core becomes helium-exhausted and it becomes a red giant, with a radius many hundreds or even thousands of times greater than the Sun. Its mass, sustained prior to the \gls{agb} via nuclear fusion, begins to decrease. An example of intermediate-mass evolution is shown in \Cref{fig:intermediate_mass}.
+Intermediate mass stars exist above the threshold for the helium flash to occur. Helium ignition is not degenerate and the development of a helium core is not impeded. As the star ascends the \gls{agb}, the core becomes helium-exhausted and it becomes a red giant, with a radius many hundreds or even thousands of times greater than the Sun. Its mass, sustained prior to the \gls{agb} via nuclear fusion, begins to decrease. An example of intermediate-mass evolution is shown in \Cref{fig:intermediate_mass}.
 
 \begin{figure}[!htbp]
     \centering
@@ -278,7 +277,7 @@ Massive stars are the key focal objects of this thesis, and in many ways offer s
 
 \subsection{Stellar Atmospheres}
 
-As a final note in the evolution of a single star, we must briefly address what occurs about the photosphere of the star. A star is not a planet -- there is no firm, opaque boundary demarcating the inner of a star from the outer. The common definition of the ``surface'' of a star is the surface of last scattering (equivalently, the photosphere), which is the point radially in which the mean free path $\ell$ of a photon emitted from the core of the star becomes meaningfully long (internally, $\ell_\gamma\sim\SI{2}{\cm}$, externally, $\ell_\gamma\sim\SI{4.4}{\pc}$).\footnote{The mean free path is a function of the particle under consideration: for a neutrino, internally $\ell_\nu\sim\SI{32}{\pc}$ and externally $\ell_\nu\sim\SI{81}{\ronna\pc}\sim 3\times10^{18}$ times the diameter of the observable Universe.} However, outflows from the star as well as the potential interaction of a partner in a common-envelope event mean that this surface is not necessarily firm: there is no sharp turn from stellar material to empty space. Thus, the simulation of stellar atmospheres is of interest to the stellar astrophysicist.
+As a final note in the evolution of a single star, we must briefly address what occurs about the photosphere of the star. A star is not a planet -- there is no firm, opaque boundary demarcating the inner of a star from the outer. The common definition of the ``surface'' of a star is the surface of last scattering (equivalently, the photosphere), which is the point radially in which the mean free path $\ell_\gamma$ of a photon emitted from the core of the star becomes meaningfully long (internally, $\ell_\gamma\sim\SI{2}{\cm}$, externally, $\ell_\gamma\sim\SI{4.4}{\pc}$).\footnote{The mean free path is a function of the particle under consideration: for a neutrino, internally $\ell_\nu\sim\SI{32}{\pc}$ and externally $\ell_\nu\sim\SI{81}{\ronna\pc}\sim 3\times10^{18}$ times the diameter of the observable Universe.} However, outflows from the star as well as the potential interaction of a partner in a common-envelope event mean that this surface is not necessarily firm: there is no sharp turn from stellar material to empty space. Thus, the simulation of stellar atmospheres is of interest to the stellar astrophysicist.
 
 However, this introduces another rather large layer of complexity. The synthesis of stellar spectra is not a trivial task, even without considering the complexity of evolving the star simultaneously. \citet{Groh:2014} is one of the very few instances of coupled spectroscopic calculations with evolutionary calculations, which only evolved a single star. Moreover, this thesis is concerned with detailed modelling of the stellar \textit{interior}, and thus the atmosphere is an interesting sidenote, but one we shall not pursue.
 
@@ -502,7 +501,7 @@ where $T$ is the period of the binary, $M_1$ and $M_2$ the constituent masses, $
 
 \subsection{Roche Lobes}\label{sec:roche_lobes}
 
-A binary system is complicated by the presence of its companions in several different ways. As alluded to in the previous section, the presence of a companion warps space-time in such a way that material can be quite distorted from a sphere or oblate spheroid but still remain gravitationally bound to the system. In the extremal case, a star can grow to fill or even exceed its Roche Lobe, which is the tear-drop shaped equipotential surface within which material remains gravitationally bound to its star. In \Cref{fig:roche_potentials} we display these equipotential surfaces for a range of different mass ratios. It is pertinent to note that the shape of all of the Roche Lobes change rapidly at low mass rations, however at higher mass ratios the shapes change less rapidly. In an equal-mass ratio binary, the binary configuration has rotational symmetry about the $\mathcal{L}_1$ point, and reflectional symmetry about the $x$-axis and the line $y=\mathcal{L}_1$.
+A binary system is complicated by the presence of its companions in several different ways. As alluded to in the previous section, the presence of a companion warps space-time in such a way that material can be quite distorted from a sphere or oblate spheroid but still remain gravitationally bound to the system. In the extremal case, a star can grow to fill or even exceed its Roche Lobe, which is the tear-drop shaped equipotential surface within which material remains gravitationally bound to its star. In \Cref{fig:roche_potentials} we display these equipotential surfaces for a range of different mass ratios. It is pertinent to note that the shape of all of the Roche Lobes change rapidly at low mass ratios, however at higher mass ratios the shapes change less rapidly. In an equal-mass ratio binary, the binary configuration has rotational symmetry about the $\mathcal{L}_1$ point, and reflectional symmetry about the $x$-axis and the line $y=\mathcal{L}_1$.
 
 \begin{figure}[!htbp]
     \centering
@@ -511,7 +510,7 @@ A binary system is complicated by the presence of its companions in several diff
     \label{fig:roche_potentials}
 \end{figure}
 
-There are two primary Roche Lobe points we consider: the $\mathcal{L}_1$ point and the $\mathcal{L}_2$ point. The $\mathcal{L}_1$ point (also known as the inner Lagrangian point) is the nexus between the two stars, the $\mathcal{L}_2$ point (the outer Lagrangian point) is located on the other side of the secondary to the inner point. The dimensionless $x$-ordinate of the $\mathcal{L}_1$ point, $\xi$, measured in terms of the separation $a$, is given as the solution to
+There are two primary Roche Lobe points we consider: the $\mathcal{L}_1$ point and the $\mathcal{L}_2$ point. The $\mathcal{L}_1$ point (also known as the inner Lagrangian point) exists on the line connecting the centres of the two stars, the $\mathcal{L}_2$ point (the outer Lagrangian point) is located on the other side of the secondary to the inner point. The dimensionless $x$-ordinate of the $\mathcal{L}_1$ point, $\xi$, measured in terms of the separation $a$, is given as the solution to
 
 \begin{equation}
     0=\xi-\frac{\xi_2}{\pqty{\xi-\xi_1}^2}-\frac{\xi_1}{\pqty{\xi-\xi_2}^2},\label{eq:roche_lobe_condition}
@@ -724,7 +723,7 @@ Our mass loss rate for each star is constructed from these four terms as
 
 \subsubsection{Wind mass-loss}
 
-Wind mass loss computations are (generally) performed using a mix of theoretical and empiricial mass-loss rate prescriptions of \cite{De_jager:1988} and \citet{Vink:2001}. The precise scheme is detailed in \citet{Eldridge:2017}.\footnote{In other codes such as \textsc{Mesa}, this is referred to as the ``Dutch'' mass loss prescription owing to the nationality of the authors of \citet{De_jager:1988, Nugis:2000, Vink:2001}.} There are two critical modifications we make to their scheme.
+Wind mass loss computations are (generally) performed using a mix of theoretical and empiricial mass-loss rate prescriptions of \cite{De_jager:1988} and \citet{Vink:2001}. The precise scheme is detailed in \citet{Eldridge:2017}.\footnote{In other codes such as \codename{MESA}, this is referred to as the ``Dutch'' mass loss prescription owing to the nationality of the authors of \citet{De_jager:1988, Nugis:2000, Vink:2001}.} There are two critical modifications we make to their scheme.
 
 The first modification surrounds the transition into the \gls{wr} regime. Traditionally this has been a sharp transition when the surface hydrogen mass fraction becomes less than 0.4 and the surface temperature is above \SI[print-unity-mantissa=false]{1e4}{\kelvin}. This is a reasonable approximation, though if a star reaches this phase and is \textit{not} yet a \gls{wr} star, the code will fail. To account for this we gradually turn on these enhanced \gls{wr} rates when this condition approaches, smoothing the transition.
 
@@ -742,7 +741,7 @@ Matter extruded from the Lagrangian points is assumed to transfer with a mass lo
     \dot{M}_\text{RLOF} = \min\left(k\mathcal{R}\left(\frac{R}{R_\text{RL}}\right)^3,10^{-2}\right) \unit{\msun\per\year}.
 \end{equation}
 
-Here, $k$ (referred to in our code as RMT) parameterises effectively how much of the star we permit to exist outside of its Roche lobe before it is accreted -- i.e., the voracity of \gls{rlof}. The choice of this can be somewhat arbitrary. \citet{Hurley:2002} for example took $k=\num{3e-6}\min\left\{M_1, 5\right\}^2$, where the coefficient was ``chosen by experiment to ensure that the mass transfer is steady'', and warned that for degenerate stars a more appropriate choice would be to increase this by a factor of $10^3$. Instead, we choose to adopt $k=10^3$ outright with no dependence on the mass, finding instead that this replicated other work -- allowing efficient \gls{rlof} -- best.
+Here, $k$ (referred to in our code as RMT) parameterises effectively how much of the star we permit to exist outside of its Roche lobe before it is accreted -- i.e., the voracity of \gls{rlof}. The choice of this can be somewhat arbitrary. \citet{Hurley:2002} for example took $k=\num{3e-6}\min\left\{M_1, 5\right\}^2$, where the coefficient was ``chosen by experiment to ensure that the mass transfer is steady'', and warned that for degenerate stars a more appropriate choice would be to increase this by a factor of $10^3$. We choose to adopt $k=\num{3e-6}\times10^3=\num{3e-3}$, with no dependence on the mass. This permits the star to overfill its Roche lobe even in tight binaries, but still allows efficient mass transfer.
 
 Matter exceeding $\mathcal{L}_2$ (the outer Lagrange point) does not currently receive special treatment. The implications of $\mathcal{L}_2$ overflow are significant. This ejection will lead to unstable mass transfer, shrinking the orbit and likely inducing a \gls{cee} event \citep{Fragos:2023}. There is debate about the appropriate treatment here. \citet{Linial:2017} indexes the $\mathcal{L}_2$ rate to the $\mathcal{L}_1$ rate via an efficiency parameter. \citet{Li:2013} considers the case analogous to $\mathcal{L}_1$ outflow, where material outflowing from $\mathcal{L}_2$ acts to retard the angular momentum. In their notation $\dv{J}{t}=-\epsilon\dot{M}_1 a_{L2}^2\omega$ (compare $\dv{J}{t}=-\beta\dot{M}_1 a_{L1}^2\omega$ for \gls{rlof} through $\mathcal{L}_1$) for controllable parameters $\beta$ and $\epsilon$. The ambiguity of treatment leads to some codes to terminate at the onset of $\mathcal{L}_2$ outflow, such as \codename{Posydon} \citep{Fragos:2023}. $\mathcal{L}_2$ outflow requires stars to be in reasonably tight orbits ($\sim\SI{2}{\day})$, which we will approach, but none of our stars will enter this regime, and thus we do not afford it special treatment.
 
@@ -760,7 +759,7 @@ where $\omega$ and $\omega_\text{crit}$ are the spin rate and critical spin rate
     I = \frac25 M_\text{c}R_\text{c}^2 + \sum_{k=1}^N \frac23 \left(m_k-m_{k+1}\right)r_k^2,
 \end{equation}
 
-where $m_k$ is the mass internal to meshpoint $k$ (sim. for $r_k$), and a subscript of c refers to the central meshpoint. It is assumed that the central meshpoint sits atop a solid sphere, hence $\frac25$ as its prefactor.
+where $m_k$ is the mass internal to meshpoint $k$ (similar for $r_k$), and a subscript of c refers to the central meshpoint. It is assumed that the central meshpoint sits atop a solid sphere, hence $\frac25$ as its prefactor.
 
 \subsubsection{Bondi-Hoyle wind accretion}
 
@@ -863,7 +862,7 @@ where $z_t$ is the redshift corresponding to lookback time $t$, given by the sol
 with $t_\text{H}$ the Hubble time, and $\Omega_\text{M}, \Omega_\text{k}, \Omega_\Lambda$ the matter density, curvature parameter, and cosmological constant density parameter of the Universe. In general this integral does not have a solution, however in the case of $\Lambda$CDM with Hubble constant $H_0=\SI{70}{\km\per\second\per\mega\pc}$ as outlined above, an exact solution for redshift is
 
 \begin{equation}
-z = \pqty{\frac{a}{\sinh\pqty{\frac{b \operatorname{asinh}{\left(a \right)} + t}{b}}}}^\frac23 - 1
+z = \pqty{\frac{a}{\sinh\pqty{\frac{b \operatorname{asinh}{\left(a \right)} + t}{b}}}}^\frac23 - 1,
 \end{equation}
 
 where $a = \sqrt{\frac73}, b = \frac{1}{105\sqrt{0.7}}$.\footnote{In general in a flat Universe (with $\Omega_\text{k}=0$), $a=\sqrt{\frac{\Omega_\Lambda}{\Omega_\text{M}}}$, and $b=\frac{1}{H_0}\frac{2}{3\sqrt{\Omega_\text{M}}}$. This integral was computed via \textsc{Sympy}.} Detail on how the convolution in \Cref{eq:event_rate_distribution} is computed may be found in \citet{Richards:2021}.
@@ -891,7 +890,7 @@ Having now discussed the evolution of stars from a theoretical perspective, it b
 
 \mediaepigraph{And through the night, behind the wheel, the mileage clicking west\\I think upon Mackenzie, David Thompson and the rest\\Who cracked the mountain ramparts and did show a path for me\\To race the roaring Fraser to the sea.}{Northwest Passage}{Stan Rogers}
 
-In 1959, Louis George Henyey published his method for automatic stellar evolution \citep{Henyey:1959}. Prior to this -- and the widespread disperal of the computer -- a model was treated as a mathematical process and thus was computed, often labouriously, by hand. For instance, in \citet{Eggleton:1967}, Eggleton writes that
+In 1959, Louis George Henyey published his method for automatic stellar evolution \citep{Henyey:1959}. Prior to this -- and the widespread availability of the computer -- a model was treated as a mathematical process and thus was computed, often labouriously, by hand. For instance, in \citet{Eggleton:1967}, Eggleton writes that
 
 \begin{fanciful}
     Since we have seen in Section 3 that the structure of the flame zone can be obtained independently (almost) of the rest of the star, it is reasonable to expect that [thermal] instabilities of the type considered by Schwarzchild \& H\"arm can also be examined in this way, so that the considerable labour of computing the structure of an entire star can be avoided.
@@ -961,13 +960,13 @@ Placement of the mesh is controlled by the derivative $\pdv{\mathcal{Q}}{k}$, wh
     \eval{\pdv{\mathcal{Q}}{k}}{k}-\eval{\pdv{\mathcal{Q}}{k}}{k+1} = 0.
 \end{equation}
 
-The mesh is thus adaptive (insofar as it changes to place meshpoints where they are needed for evolution) and non-Lagrangian (insofar as the derivative is not at constant mass coordinate). It is sometimes referred to as an Eggletonian mesh. If one desires to make the mesh viscous (i.e., partially Lagrangian), one can follow \citet{Stancliffe:2004} and write, for $0\leq\gamma\leq1$,
+The mesh is thus adaptive (insofar as it changes to place meshpoints where they are needed for evolution), non-Lagrangian (insofar as the derivative is not at constant mass coordinate), and inviscid (insofar as the gradient of $\mathcal{Q}$ is constant through meshpoint number). This combination of requirements is sometimes referred to as an Eggletonian mesh. If one desires to make the mesh viscous, one can follow \citet{Stancliffe:2004} and write, for $0\leq\gamma\leq1$,
 
 \begin{equation}
     \pqty{\eval{\pdv{\mathcal{Q}}{k}}{k}-\eval{\pdv{\mathcal{Q}}{k}}{k+1}}\pqty{1-\gamma} + \gamma\pqty{\eval{\pdv{m}{t}}{k}} = 0,
 \end{equation}
 
-where now the parameter $\gamma$ is a weighting coefficient such that if $\gamma=1$, then the mesh spacing function is irrelevant and the parameters are spaced equally in mass, and if $\gamma=0$, the original mesh spacing function is used. In between, if $\gamma=\gamma\pqty{k, \dd{t}}$, then parts of the mesh are allowed to be Lagrangian and parts non-Lagrangian; the mesh is said to be \textit{viscous}. We typically keep the mesh non-viscous and non-Lagrangian, as a viscous mesh is most useful for \gls{agb} evolution and evolving through thermal pulses.
+where now the parameter $\gamma$ is a weighting coefficient such that if $\gamma=1$, then the mesh spacing function is irrelevant and the parameters are spaced equally in mass, and if $\gamma=0$, the original mesh spacing function is used. In between, if $\gamma=\gamma\pqty{k, \dd{t}}$, then parts of the mesh are allowed to be Lagrangian and parts non-Lagrangian. We typically keep the mesh non-viscous and non-Lagrangian, as a viscous mesh is most useful for \gls{agb} evolution and evolving through thermal pulses.
 
 More detail is provided in \citet{Eggleton:1971} for the original mesh spacing function, and \citet{Stancliffe:2004} for the binary mesh spacing function.
 
@@ -1019,7 +1018,7 @@ The method to overcome this numerical instability is involved and not fully impl
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=\textwidth]{images/TheorySection/helium_flash_kippenhahn.pdf}
-    \caption[The helium flash shown on a Kippenhahn diagram.]{The helium flash (gray dashed line) shown on a Kippenhahn diagram. There is a slight discontinuity in the helium core mass (blue) due to a perfect match not existing in the $\SI{3}{\msun}$ reference model. The total mass is shown as the solid gray line, and the \acrshort{CO_core} mass is shown in red. The green lines show the boundaries of the convective regions of the star. \todo{vectorize}}
+    \caption[The helium flash shown on a Kippenhahn diagram.]{The helium flash (gray line) shown on a Kippenhahn diagram. The total mass is shown as the solid gray line, and the \acrshort{CO_core} mass is shown in red. The green lines show the boundaries of the convective regions of the star. Due to computational limitations in the rendering of the model, only every 20 timesteps were sampled for the plot.}
     \label{fig:pseudoevolved_kippenhahn}
 \end{figure}
 
@@ -1029,7 +1028,7 @@ The major modifications we have made to the \codename{stars} code are as follows
 
 Firstly, the floating-point precision has been increased to double precision for all variables. This has minor effects on the evolved models, insofar as they are generally able to evolve to slightly further stages. This step has previously been undertaken, however not all variables were correctly converted. This did not invalidate any models previous versions of the \codename{stars} code has generated; rather it means they terminated slightly earlier than the point to which they may have been able to evolve.%they may have been able to evolve to.
 
-As part of this, we also undertook a reasonably extensive refactor of the codebase. Whilst some of the code remains as originally written, it is now more compliant with modern programming practices and is in some sense easier to alter with new routines.
+As part of this, we also undertook an extensive refactor of the codebase. Whilst some of the code remains as originally written, it is now more compliant with modern programming practices and is in some sense easier to alter with new routines.
 
 We have also improved mass loss interpolation in the \codename{massloss.f} routine. Whilst not changing the underlying assumption that mass transfer is governed by \citet{De_jager:1988, Vink:2001} (\Cref{sec:mass_transfer}), we have improved the transition between typical O-type mass loss and WR mass loss rates by slowing turning on the WR mass loss rate as the surface hydrogen abundance drops below 0.4. The transition was previously abrupt and would cause the code to fail due to numerical instability if a non-WR star entered this regime.
 
