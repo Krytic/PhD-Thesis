@@ -11,6 +11,6 @@ if os.path.exists('main.todos') and not os.path.exists('TODOLIST'):
         line = line.replace(r'\%', '%') + "\n"
         new_lines.append(line)
 
-    with open('../TODOLIST', 'w') as f:
+    with open('TODOLIST', 'w') as f:
         f.seek(0)
         f.writelines(new_lines)

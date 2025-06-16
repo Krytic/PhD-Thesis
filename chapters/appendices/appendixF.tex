@@ -10,11 +10,33 @@ We construct our wind mass loss rates as follows. The total pre-WR mass loss is 
 % \end{equation}
 
 \begin{align}
-    \log\dot{M}_\text{de Jager} &= -\sum_{n=0}^5 \sum_{\substack{i=0\\j=n-i}}^n a_{ij}\cos\left(i\arccos x_1\right)\cos\left(j\arccos x_2\right),\\
+    \log\dot{M}_\text{de Jager} &= -\sum_{n=0}^6 \sum_{\substack{i=0\\j=n-i}}^n a_{ij}\cos\left(i\arccos x_1\right)\cos\left(j\arccos x_2\right),\label{eq:chebyshev}\\
     \dot{M}_\text{pre-WR} &= \sqrt{\frac{Z}{Z_\odot}}10^{\log\dot{M}_\text{de Jager}},\label{eq:pre-wr-ml}
 \end{align}
 
-where $x_1 = \frac{\log T-4.05}{0.75}$, $x_2=\frac{\log L-4.6}{2.1}$, and the coefficients $a_{ij}$ are given in Table VI of \citet{De_jager:1988}. We interpolate the bi-stability jump around \SI{25}{\kilo\kelvin} \citep[see, for example,][]{Pauldrach:1990, Vink:1999} with the following regime. Define the constants
+where $x_1 = \frac{\log T-4.05}{0.75}$, $x_2=\frac{\log L-4.6}{2.1}$, and the coefficients $a_{ij}$ are given by
+
+\begin{equation}
+    a_{ij} = \begin{pmatrix}
+      6.34916 &  -5.04240 &  -0.83426 &  -1.13925 & -0.12202 \\
+      3.41678 &   0.15629 &   2.96244 &   0.33659 &  0.57576 \\
+     -1.08683 &   0.41952 &  -1.37272 &  -1.07493 &        - \\
+      0.13095 &  -0.09825 &   0.13025 &         - &        - \\
+      0.22427 &   0.46591 &         - &         - &        - \\
+      0.11968 &         - &         - &         - &        - \\
+    \end{pmatrix}.
+\end{equation}
+
+This mass loss rate is based upon the rates for 271 stars, the majority of which are Population I. Individual terms in the summation are Chebyshev polynomials of the first kind, restricted over the domain $\log~T_\text{eff}\in\left[3.3, 4.8\right]$, $\log~L\in\left[2.5, 6.7\right]$. As the free parameters here are temperature and luminosity, the result can be plotted over a \gls{hrd}. The results of this are shown in \Cref{fig:hrd_chebyshev}. Generally we constrain the inputs to the arccosine function to be between $-1 \leq x \leq 1$, which permits them to be defined outside of the defined area from \citet{De_jager:1988}; the effect of this is shown in the right-hand panel of \Cref{fig:hrd_chebyshev}. Without this restriction, the mass loss rates are simply undefined there, and are thus set to zero within the code.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{images/TheorySection/chebyshev_polynomials.pdf}
+    \caption[The Chebyshev polynomial expansion of \Cref{eq:chebyshev}.]{The Chebyshev polynomial expansion of \Cref{eq:chebyshev}. A \SI{10}{\msun} model is overplotted in black for reference.}
+    \label{fig:hrd_chebyshev}
+\end{figure}
+
+We interpolate the bi-stability jump around \SI{25}{\kilo\kelvin} \citep[see, for example,][]{Pauldrach:1990, Vink:1999} with the following regime. Define the constants
 
 \begin{align}
     R_1 &= \left(\frac{Z}{Z_\odot}\right)^{0.13},\label{eq:R1}\\
