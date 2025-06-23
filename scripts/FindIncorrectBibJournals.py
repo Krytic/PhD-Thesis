@@ -16,6 +16,8 @@ for entry in library.entries:
         name = name.replace('{', '').replace('}', '').lower().strip()
         if name == name.upper():
             name = name[0].upper() + name[1:]
+        if name.lower() == 'archaeology':
+            continue
     except KeyError:
         continue
     key_name_pairs[key] = name.replace(r'\&', '&')
@@ -125,9 +127,10 @@ else:
                            *OOOOOOOOOOOOOOOOOOOOO*
                                 ""ooooooooo""
 
-╔═══════════════════════════════════════════════════════════════════════════╗
-║                   All citation keys are TeXed! Nice job.                  ║
-╚═══════════════════════════════════════════════════════════════════════════╝
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                  All relevant citation keys are TeXed! Nice job.             ║
+╚══════════════════════════════════════════════════════════════════════════════╝
 """)
 
 print()

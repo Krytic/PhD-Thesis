@@ -1,6 +1,3 @@
-\let\oepi\epigraph
-\renewcommand{\epigraph}[2]{\epigraphlist{#1}{#2}\oepi{#1}{#2}}
-
 \makeatletter
 \newcommand{\openingquote}[2]{\gdef\@openquote{#1}\gdef\@openauthor{#2}}
 \newcommand{\openingquotealign}{center}
@@ -124,103 +121,46 @@
 \newsavebox{\epi@textbox}
 \newsavebox{\epi@sourcebox}
 \newlength\epi@finalwidth
-\renewcommand{\epigraph}[2]{%
-  \vspace{\beforeepigraphskip}
-  {\epigraphsize\begin{\epigraphflush}
-  \epi@finalwidth=\z@
-  \sbox\epi@textbox{%
-     \varwidth{\epigraphwidth}
-     \begin{\textflush}\epitextfont#1\end{\textflush}
-     \endvarwidth
-  }%
-  \epi@finalwidth=\wd\epi@textbox
-  \sbox\epi@sourcebox{%
-     \varwidth{\epigraphwidth}
-     \begin{\sourceflush}\episourcefont#2\end{\sourceflush}%
-     \endvarwidth
-  }%
-  \ifdim\wd\epi@sourcebox>\epi@finalwidth
-     \epi@finalwidth=\wd\epi@sourcebox
-  \fi
-  \leavevmode\vbox{
-     \hb@xt@\epi@finalwidth{\hfil\box\epi@textbox}
-     \vskip1.75ex
-     \hrule height \epigraphrule
-     \vskip.75ex
-     \hb@xt@\epi@finalwidth{\hfil\box\epi@sourcebox}
-  }%
-  \end{\epigraphflush}
-  \vspace{\afterepigraphskip}}}
+% \renewcommand{\epigraph}[2]{%
+%   \vspace{\beforeepigraphskip}
+%   {\epigraphsize\begin{\epigraphflush}
+%   \epi@finalwidth=\z@
+%   \sbox\epi@textbox{%
+%      \varwidth{\epigraphwidth}
+%      \begin{\textflush}\epitextfont#1\end{\textflush}
+%      \endvarwidth
+%   }%
+%   \epi@finalwidth=\wd\epi@textbox
+%   \sbox\epi@sourcebox{%
+%      \varwidth{\epigraphwidth}
+%      \begin{\sourceflush}\episourcefont#2\end{\sourceflush}%
+%      \endvarwidth
+%   }%
+%   \ifdim\wd\epi@sourcebox>\epi@finalwidth
+%      \epi@finalwidth=\wd\epi@sourcebox
+%   \fi
+%   \leavevmode\vbox{
+%      \hb@xt@\epi@finalwidth{\hfil\box\epi@textbox}
+%      \vskip1.75ex
+%      \hrule height \epigraphrule
+%      \vskip.75ex
+%      \hb@xt@\epi@finalwidth{\hfil\box\epi@sourcebox}
+%   }%
+%   \end{\epigraphflush}
+%   \vspace{\afterepigraphskip}}}
 
 
-\newcommand{\inplaceEpigraph}[4][\fill]{%
-  \vspace{#1}
-  {\epigraphsize\begin{center}
-     \begin{center}\epitextfont#2\end{center}
-     \vspace{-5px}
-     \rule{#4\textwidth}{.4pt}
-     \vspace{-10px}
-     \begin{center}\episourcefont#3\end{center}%
-      \end{center}
-  }%
-  \vspace{#1}
-  }
-
+\renewcommand{\epigraph}[3][0.5]{\begin{tcolorbox}[enhanced jigsaw,flush right,title={#3},halign=right,detach title,fonttitle=\scshape\color{black},after upper={\vspace{0.3em}\par\hfill--- \tcbtitle},colback=black!3!white,text width={#1\textwidth},boxrule=0mm,left=1mm,right=5mm,before skip=30pt,after skip=20pt,borderline east={1mm}{0pt}{black}]{\itshape #2}\end{tcolorbox}}
 
 \newcommand{\mediaepigraph}[4][by]{\epigraph{#2}{\textit{#3}, #1\ #4}}
-\newcommand{\showepigraph}[3]{\epigraph{#1}{\textit{#2}, ``#3''}}
-
-\newcommand{\translationEpigraph}[3]{%
-  \vspace{\beforeepigraphskip}
-  \vbox{%
-    \setlength{\epigraphwidth}{0.48\textwidth}
-    \xpatchcmd{\@epitext}{{minipage}}{{minipage}[t]}{}{}%
-    \xpatchcmd{\@epitext}{1\\}{1}{}{}%
-    \epigraphsize
-    \begin{\epigraphflush}
-    \begin{minipage}[b]{0.48\textwidth}
-      \@epitext{\epitextfont#1}
-      \@episource{\episourcefont#3\strut}%
-    \end{minipage}\hfill\vline\hfill
-    \begin{minipage}[b]{0.48\textwidth}
-      \@epitext{\begin{flushleft}\epitextfont#2\end{flushleft}}
-      \@episource{\begin{flushleft}\episourcefont#3\strut\end{flushleft}}%
-    \end{minipage}%
-    \end{\epigraphflush}%
-  }%
-  \nointerlineskip
-  \vspace*{\afterepigraphskip}%
-  \ifepigraphnoindent\@afterheading\fi
-}
 
 \newcommand{\twinEpigraphs}[4]{%
-  \vspace*{\fill}
-  \noindent
-  \begin{tcbraster}[raster columns=2,raster equal height=rows,valign=bottom,enhanced,opacityfill=0,frame hidden]
-    \begin{tcolorbox}
-    {\epigraphsize\begin{center}
-     \begin{center}\epitextfont#1\end{center}%
-     % \vspace{-5px}
-     \rule{\textwidth}{.4pt}
-     % \vspace{-20px}
-     \begin{center}\episourcefont#2\end{center}%
-    \end{center}
-    }
-    \end{tcolorbox}
-    \begin{tcolorbox}
-    {\epigraphsize\begin{center}
-     \begin{center}\epitextfont#3\end{center}%
-     % \vspace{-5px}
-     \rule{\textwidth}{.4pt}
-     % \vspace{-20px}
-     \begin{center}\episourcefont#4\end{center}%
-    \end{center}
-    }
-    \end{tcolorbox}
-  \end{tcbraster}
-  \vspace*{\fill}
+\begin{tcolorbox}[enhanced jigsaw,sidebyside,sidebyside align=bottom,segmentation style={draw=black,solid,line width=1mm},colback=black!3!white,text width=\textwidth,boxrule=0mm,left=1mm,right=0mm,before skip=10pt,after skip=20pt]%
+{\begin{flushright}{\textit{#1}}\\\phantom{ }\par\hfill\scshape\color{black}--- #2\end{flushright}}%
+\tcblower%
+{\begin{flushleft}{\textit{#3}}\\\phantom{ }\par\scshape\color{black}--- #4\end{flushleft}}%
+\end{tcolorbox}%
 }
-
 
 
 \newcommand{\fancifulepigraph}[4]{%

@@ -14,10 +14,10 @@ We construct our wind mass loss rates as follows. The total pre-WR mass loss is 
     \dot{M}_\text{pre-WR} &= \sqrt{\frac{Z}{Z_\odot}}10^{\log\dot{M}_\text{de Jager}},\label{eq:pre-wr-ml}
 \end{align}
 
-where $x_1 = \frac{\log T-4.05}{0.75}$, $x_2=\frac{\log L-4.6}{2.1}$, and the coefficients $a_{ij}$ are given by
+where $x_1 = \frac{\log T-4.05}{0.75}$, $x_2=\frac{\log L-4.6}{2.1}$, and the coefficients $a_{ij}$ are given by the entries in the matrix
 
 \begin{equation}
-    a_{ij} = \begin{pmatrix}
+    \mat{a} = \begin{pmatrix}
       6.34916 &  -5.04240 &  -0.83426 &  -1.13925 & -0.12202 \\
       3.41678 &   0.15629 &   2.96244 &   0.33659 &  0.57576 \\
      -1.08683 &   0.41952 &  -1.37272 &  -1.07493 &        - \\
@@ -32,17 +32,17 @@ This mass loss rate is based upon the rates for 271 stars, the majority of which
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=\textwidth]{images/TheorySection/chebyshev_polynomials.pdf}
-    \caption[The Chebyshev polynomial expansion of \Cref{eq:chebyshev}.]{The Chebyshev polynomial expansion of \Cref{eq:chebyshev}. A \SI{10}{\msun} model is overplotted in black for reference.}
+    \caption[The Chebyshev polynomial expansion of \Cref{eq:chebyshev}.]{The Chebyshev polynomial expansion of \Cref{eq:chebyshev}. A \SI{10}{\msun} model is overplotted in black for reference. The ``bounded parameters'' plot restricts the arguments to $\arccos$ in \Cref{eq:chebyshev} to be between $-1\leq x_i\leq 1$.}
     \label{fig:hrd_chebyshev}
 \end{figure}
 
 We interpolate the bi-stability jump around \SI{25}{\kilo\kelvin} \citep[see, for example,][]{Pauldrach:1990, Vink:1999} with the following regime. Define the constants
 
 \begin{align}
-    R_1 &= \left(\frac{Z}{Z_\odot}\right)^{0.13},\label{eq:R1}\\
-    R_2 &= -c_1+c_2\log\left(\frac{L}{c_{16}}\right)-c_3\log\left(\frac{M}{c_{15}}\right)-c_4\log\left(1.3R_1\right)+c_5\log\left(\frac{T}{c_{14}}\right)-c_6\left(\log\left[\frac{T}{c_{14}}\right]\right)^2+c_7\log\left(\frac{Z}{Z_\odot}\right),\label{eq:R2} \\
+    C_1 &= \left(\frac{Z}{Z_\odot}\right)^{0.13},\label{eq:R1}\\
+    C_2 &= -c_1+c_2\log\left(\frac{L}{c_{16}}\right)-c_3\log\left(\frac{M}{c_{15}}\right)-c_4\log\left(1.3C_1\right)+c_5\log\left(\frac{T}{c_{14}}\right)-c_6\left(\log\left[\frac{T}{c_{14}}\right]\right)^2+c_7\log\left(\frac{Z}{Z_\odot}\right),\label{eq:R2} \\
     &\text{and} \notag\\
-    R_3 &= -c_8+c_9\log\left(\frac{L}{c_{16}}\right)-c_{10}\log\left(\frac{M}{c_{15}}\right)-c_{11}\log\left(0.65R_1\right)+c_{12}\log\left(\frac{T}{2\times 10^4}\right)+c_{13}\log\left(\frac{Z}{Z_\odot}\right),\label{eq:R3}
+    C_3 &= -c_8+c_9\log\left(\frac{L}{c_{16}}\right)-c_{10}\log\left(\frac{M}{c_{15}}\right)-c_{11}\log\left(0.65C_1\right)+c_{12}\log\left(\frac{T}{2\times 10^4}\right)+c_{13}\log\left(\frac{Z}{Z_\odot}\right),\label{eq:R3}
 \end{align}
 
 where the constants $c_i$ are given in \Cref{tab:bistability_constants}.
@@ -69,10 +69,10 @@ Our mass loss rate becomes:
 
 \begin{equation}
     \dot{M}_\text{BS} = \begin{cases}
-        \frac{(T-T_1)10^{R_3}+(T_2-T)\dot{M}_\text{pre-WR}}{2.5\times 10^3} & T_1 < T < T_2 \\
-        10^{R_2} & T_2 \leq T \leq T_3 \\
-        \frac{(T-T_3)10^{R_2}+(T_4-T)10^{R_3})}{5 \times 10^3} & T_3 < T < T_4 \\
-        \frac{(6T_1-T)10^{R_2}+(T-5T_1)\dot{M}_\text{pre-WR}}{10^4} & 5T_1 < T < 6T_1 \\
+        \frac{(T-T_1)10^{C_3}+(T_2-T)\dot{M}_\text{pre-WR}}{2.5\times 10^3} & T_1 < T < T_2 \\
+        10^{C_2} & T_2 \leq T \leq T_3 \\
+        \frac{(T-T_3)10^{C_2}+(T_4-T)10^{C_3})}{5 \times 10^3} & T_3 < T < T_4 \\
+        \frac{(6T_1-T)10^{C_2}+(T-5T_1)\dot{M}_\text{pre-WR}}{10^4} & 5T_1 < T < 6T_1 \\
         \dot{M}_\text{pre-WR} & \text{otherwise}
     \end{cases}
 \end{equation}
@@ -117,7 +117,7 @@ such that our total mass loss rate becomes (provided $X_\text{H} < 10^{-3}$ and 
     \end{cases},
 \end{equation}
 
-where $\mathcal{X}=\frac{\frac13 X_\text{C}+\frac14 X_\text{O}}{X_\text{He}}$. The total \citet{Vink:2001} mass-loss rate is then
+where $\mathcal{X}=\frac{\frac13 X_\text{C}+\frac14 X_\text{O}}{X_\text{He}}$. The total wind mass-loss rate is then
 
 \begin{equation}
     \dot{M}_\text{wind} = \begin{cases}
@@ -129,6 +129,6 @@ where $\mathcal{X}=\frac{\frac13 X_\text{C}+\frac14 X_\text{O}}{X_\text{He}}$. T
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=\textwidth]{images/TheorySection/double_bistability_jump.pdf}
-    \caption[An illustration of the bi-stability jumps in the mass loss prescription.]{An illustration of the bi-stability jumps in the mass-loss prescription. This illustration was computed for a $\SI{21}{\msun}$ star. \textit{Left plot:} The lower bi-stability jump,  \textit{Right plot:} Shown in blue is the cool side of the bi-stability jump, where $R_3$ (\Cref{eq:R3}) is the interpolation, and shown in red is the hot side, where $R_2$ (\Cref{eq:R2}) is the interpolation.}
+    \caption[An illustration of the bi-stability jumps in the mass loss prescription.]{An illustration of the bi-stability jumps in the mass-loss prescription. This illustration was computed for a $\SI{21}{\msun}$ star. \textit{Left plot:} The lower bi-stability jump,  \textit{Right plot:} The upper bi-stability jump. Shown in blue is the cool side of the bi-stability jump, where $C_3$ (\Cref{eq:R3}) is the interpolation, and shown in red is the hot side, where $C_2$ (\Cref{eq:R2}) is the interpolation.}
     \label{fig:bistability}
 \end{figure}

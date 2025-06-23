@@ -3,7 +3,7 @@
 
 \chapterEpigraph{Se'i lua'i lou le 'ulu taumamao.\\Pick the breadfruits on the far-off branches first}{S\=amoan proverb}
 
-\lettrine[lines=3]{I}{n this chapter, we provide a} brief account of the evolution of a star from a theoretical perspective, from its formation to post-supernova. We will discuss both the case of a single isolated star, and an isolated binary star system. It is pertinent to note that our binaries will be assumed to have formed together at birth -- thus having the same age -- rather than by, for example, the dynamical capture of a runaway star in a globular cluster, which introduces extra effects and considerations. %This process can be modelled by evolving a single star to a certain point, and then enabling binary evolution.
+\lettrine[lines=3]{I}{n this chapter, we provide a} brief account of the evolution of a star from a theoretical perspective, from its formation to post-supernova. We will discuss both the case of a single isolated star, and an isolated binary star system. It is pertinent to note that our binaries will be assumed to have formed together at birth -- thus having the same age -- rather than by, for example, the dynamical capture of a runaway star in a globular cluster, which introduces extra effects and considerations.
 
 \section{Stellar Formation}\label{sec:stellar_formation}
 
@@ -37,13 +37,13 @@ or, via a master equation,
     \ce{6^2_1H -> 2^4_2He + 2^1_1H + 2^1_0n + \SI{43.2}{\mega\electronvolt}},
 \end{equation}
 
-with intermediate products which remain stable and are thus omitted for simplicity. The burning of $^{2}_{1}$H -- deuterium -- occurs for a short fraction of the lifetime of the star, before core hydrogen burning begins in earnest. This energy release will sustain the star throughout its lifetime, providing outwards pressure resisting gravity pulling the star inwards, in a balance termed \textit{hydrostatic equilibrium}. Once hydrogen fusion has begun, we say that the star has reached \gls{zams}, and is now on the \textit{main sequence}, where it will spend approximately 90\% of its lifetime.
+with intermediate products which remain stable and are thus omitted for simplicity. The burning of $^{2}_{1}$H -- deuterium -- occurs for a short fraction of the lifetime of the star, before core hydrogen burning begins in earnest. This energy release will sustain the star throughout its lifetime, providing outwards pressure resisting gravity pulling the star inwards, in a balance termed \textit{hydrostatic equilibrium}. Once hydrogen fusion has begun, we say that the star has reached \gls{zams}, and is now on the \gls{ms}, where it will spend approximately 90\% of its lifetime.
 
 \section{Stellar Evolution}
 
 \mediaepigraph{It did not last: the Devil howling ``Ho! Let Einstein be!'' restored the status quo.}{Answer to Pope's Epitaph for Sir Isaac Newton}{J. C. Squire}
 
-Now that our protostar has evolved onto the main sequence, it has become a star in its own right. Over the next few million years, it will continue to burn hydrogen into helium, forming a helium core. It is at this point that the evolution encounters a number of bifurcation points, depending on the mass and chemical composition of the star. In general, while the star lives, the four equations of stellar structure hold,
+Now that our protostar has evolved onto the \gls{ms}, it has become a star in its own right. Over the next few million years, it will continue to burn hydrogen into helium, forming a helium core. It is at this point that the evolution encounters a number of bifurcation points, depending on the mass and chemical composition of the star. In general, while the star lives, the four equations of stellar structure hold,
 
 \begin{equation}
     \left.\begin{array}{lll}
@@ -135,7 +135,7 @@ is employed, where $X_{i,\text{init}}$ is the initial mass fraction of a given e
 
 % \subsubsection{hydrogen burning: the \acrshort{pp_chain}}
 
-% A star spends $\sim90\%$ of its lifetime on the main sequence, which is where it burns protons (bare hydrogen atoms) into helium. This reaction is called the \gls{pp_chain}, and can be broken up into three potential paths. All three paths begin with the reaction \todo{finish}
+% A star spends $\sim90\%$ of its lifetime on the \gls{ms}, which is where it burns protons (bare hydrogen atoms) into helium. This reaction is called the \gls{pp_chain}, and can be broken up into three potential paths. All three paths begin with the reaction \todo{finish}
 
 % \begin{enumerate}
 %     \item \gls{pp1}:
@@ -187,7 +187,7 @@ In this section, we examine the three major regimes of stellar evolution for sin
 
 Stars below $\approx\SI{0.5}{\msun}$ do not ignite helium, and become helium \glspl{wd}. Above this, they ignite helium degenerately in their cores, leading to thermal runaway. The star can peak at a luminosity close to $10^{11} L_\odot$ (approximately 100 times the peak luminosity of SN 1987A, per Figure 5 of \citet{Arnett:1989}). However, this peak in luminosity is attributable to nuclear fusion in the core, and the energy does not reach the surface, let alone escape into the \gls{ism} -- rather, it is absorbed into the outer layers of the star. During this extremely brief thermal runaway, the luminosity begins to settle and the star is able to continue evolving. Models of low mass stars fail at this stage and care is required to evolve them. This phenomena is called the \textit{helium flash} and is discussed further in \Cref{sec:numerical_instabilities}.
 
-After the ignition of helium, these stars cross the so-called Hertzsprung Gap -- the region where very few stars are observed empirically. This region is bounded (on a colour-magnitude diagram, which is a transform of the \gls{hrd}) by the points $\pqty{M_v, B-V}=\left\{\pqty{2,0.5}, \pqty{-7, 0.1}, \pqty{-6, 1.6}\right\}$ \citep{Hoyle:1960}, where $M_v$ is the V-band magnitude (magnitude in the visual band), and $B-V$ is the colour index of the star. The phenomenon of a gap existing is attributable to the fact that stars cross this gap exceedingly quickly: whereas it spends $\sim90\%$ of its life on the main sequence, it spends $\sim2\%$ of its life crossing the Hertzsprung gap \citep{Hoyle:1960}.
+After the ignition of helium, these stars cross the so-called Hertzsprung Gap -- the region where very few stars are observed empirically. This region is bounded (on a colour-magnitude diagram, which is a transform of the \gls{hrd}) by the points $\pqty{M_v, B-V}=\left\{\pqty{2,0.5}, \pqty{-7, 0.1}, \pqty{-6, 1.6}\right\}$ \citep{Hoyle:1960}, where $M_v$ is the V-band magnitude (magnitude in the visual band), and $B-V$ is the colour index of the star. The phenomenon of a gap existing is attributable to the fact that stars cross this gap exceedingly quickly: whereas it spends $\sim90\%$ of its life on the \gls{ms}, it spends $\sim2\%$ of its life crossing the Hertzsprung gap \citep{Hoyle:1960}.
 
 % \footnote{The relationship between a colour-magnitude diagram and the \gls{hrd} is that $\log L=0.4\pqty{M_{\text{bol},\odot}-M_{\text{bol},*}}\simeq0.4\pqty{4.74-M_{v,*}-\text{BC}}$, $\log T=\log\pqty{4600\pqty{\frac{1}{0.92\pqty{B-V}+1.7}+\frac{1}{0.92\pqty{B-V}+0.62}}}$, where BC is a bolometric correction which depends on the stellar type. This expression for the temperature is a fit provided by \citet{Ballesteros:2012}.}
 
@@ -204,7 +204,7 @@ Intermediate mass stars exist above the threshold for the helium flash to occur.
 
 \subsubsection{Massive Stars: \texorpdfstring{$\SI{8}{\msun} < M < \SI{80}{\msun}$}{Stars with between 8 and 80 times the mass of the sun}}\label{sec:massive_stars}
 
-Massive stars are the key focal objects of this thesis, and in many ways offer some of the most exciting phenomena we can probe. In \Cref{fig:hr_diagram_massive_stars} we show the variety of evolution that this regime has, alongside the \gls{zams} track from \SI{8}{\msun} to \SI{90}{\msun}. The key features are as follows. When a massive star exhausts its supply of hydrogen in its core and evolves off the main sequence to begin burning helium, it generally bypasses the Hertzsprung gap and evolves up the \gls{rgb}. From here, stars below $\approx\SI{15}{\msun}$ generally engage in a ``blue loop'', where is remains at a roughly constant radius whilst increasing in temperature, before cooling at a slightly higher luminosity. This is due to excess helium being burned in shells above the core \citep{Walmswell:2015}. We note that our models include blue loops, as shown in \Cref{fig:hr_diagram_massive_stars} and \Cref{fig:hr_diagram_8msun_star}.
+Massive stars are the key focal objects of this thesis, and in many ways offer some of the most exciting phenomena we can probe. In \Cref{fig:hr_diagram_massive_stars} we show the variety of evolution that this regime has, alongside the \gls{zams} track from \SI{8}{\msun} to \SI{90}{\msun}. The key features are as follows. When a massive star exhausts its supply of hydrogen in its core and evolves off the \gls{ms} to begin burning helium, it generally bypasses the Hertzsprung gap and evolves up the \gls{rgb}. From here, stars below $\approx\SI{15}{\msun}$ generally engage in a ``blue loop'', where is remains at a roughly constant radius whilst increasing in temperature, before cooling at a slightly higher luminosity. This is due to excess helium being burned in shells above the core \citep{Walmswell:2015}. We note that our models include blue loops, as shown in \Cref{fig:hr_diagram_massive_stars} and \Cref{fig:hr_diagram_8msun_star}.
 
 \begin{figure}[!htbp]
     \centering
@@ -385,11 +385,20 @@ There is another class of supernovae we consider in this thesis, namely type Ia 
 % \begin{figure}[!htbp]
 %     \centering
 %     \includegraphics[width=\textwidth]{images/StellarSynthesis/single_vs_binary.png}
-%     \caption[The evolution of an \SI{10}{\msun} (leftmost) and \SI{8}{\msun} (centermost) star as both single stars and as a binary with a period of \SI{30}{\day} (rightmost).]{The evolution of an \SI{10}{\msun} (leftmost) and \SI{8}{\msun} (centermost) star as both single stars and as a binary with a period of \SI{30}{\day} (rightmost). Roche lobe overflow occurs for the primary when it begins to cross the Hertzsprung gap, and for the secondary shortly off the main sequence.}
+%     \caption[The evolution of an \SI{10}{\msun} (leftmost) and \SI{8}{\msun} (centermost) star as both single stars and as a binary with a period of \SI{30}{\day} (rightmost).]{The evolution of an \SI{10}{\msun} (leftmost) and \SI{8}{\msun} (centermost) star as both single stars and as a binary with a period of \SI{30}{\day} (rightmost). Roche lobe overflow occurs for the primary when it begins to cross the Hertzsprung gap, and for the secondary shortly off the \acrshort{ms}.}
 %     \label{fig:single_vs_binary}
 % \end{figure}
 
 Introducing a second star into the mix complicates the evolution. Whereas before a star losing mass (through, for example, stellar winds) was assumed to eject it into the \gls{ism}, it may now accrete that material directly onto its companion. In addition, either star may in principle increase in radius enough to overlap with its companion, or even touch surfaces -- introducing new dynamics into the mix.
+
+The most marked change for a binary compared to a single star is that its trajectory on the \gls{hrd} is altered. The \gls{ms} is changed somewhat, but (for longer than $\sim$\SI{5}{\day} periods) the interaction takes place post-\gls{ms} and is shown in \Cref{fig:hrd_binary_effects}.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{images/TheorySection/interaction_effect.pdf}
+    \caption[The \acrshort{hrd} for an \SI{21}{\msun} star with an (unshown) \SI{10}{\msun} companion with varying period.]{The \acrshort{hrd} for an \SI{21}{\msun} star with an (unshown) \SI{10}{\msun} companion with varying period. In this figure, only the initial binary period was free to change between runs. Short periods interact closer to the \acrshort{ms}. The evolution was terminated 1,000 models after the primary star achieved \acrshort{rlof} for the first time.}
+    \label{fig:hrd_binary_effects}
+\end{figure}
 
 \subsection{Binary star kinematics}\label{sec:binary_kinematics}
 
@@ -710,7 +719,7 @@ Mass transfer can broadly be sectioned into four main categories:
 
 \begin{enumerate}
     \item $\dot{M}_\text{wind}$, where matter is lost through stellar winds,
-    \item $\dot{M}_\text{RLOF}$, where matter is transferred through one (or more) of a binary's Lagrange points (cf. \Cref{sec:roche_lobes}),
+    \item $\dot{M}_\text{RLOF}$, where matter is transferred through one (or more) of a the Lagrange points in a binary (cf. \Cref{sec:roche_lobes}),
     \item $\dot{M}_\text{acc}$, where matter is transferred through accretion (or interaction with a disk), and
     \item $\dot{M}_\text{Bondi}$, where matter proceeds through a \citet{Bondi:1944} type mechanism.
 \end{enumerate}
@@ -753,7 +762,7 @@ Our wind accretion and \gls{rlof} accretion rates are taken from \citet{Bondi:19
     \dot{M}_\text{acc} = \min\left(\dot{M}_\text{RLOF}, \frac{M}{T_\text{KH}}\mathcal{R}\left(1-\frac{\omega}{0.8\omega_\text{crit}}\right)\right),
 \end{equation}
 
-where $\omega$ and $\omega_\text{crit}$ are the spin rate and critical spin rate of the star. We generally assume that the star is composed of individually rotating shells of variable thickness. If $N$ is the number of meshpoints that the star is composed of (for our cases, normally $N=199$), then the moment of inertia is given by
+where $\omega$ and $\omega_\text{crit}$ are the spin rate and critical spin rate of the star. We generally assume that the star is composed of individually rotating shells of variable thickness.\footnote{Also known as shellular rotation.} If $N$ is the number of meshpoints that the star is composed of (for our cases, normally $N=199$), then the moment of inertia is given by
 
 \begin{equation}
     I = \frac25 M_\text{c}R_\text{c}^2 + \sum_{k=1}^N \frac23 \left(m_k-m_{k+1}\right)r_k^2,
@@ -825,7 +834,7 @@ The merger rate of a population of compact binaries at time $t$ after formation 
     m(t) = \text{number of binaries for which $T_\text{c} + T_\text{rej} + T_\text{evo} < t$},\label{eq:definition_of_merger_rate}
 \end{equation}
 
-where $T_\text{c}$ is the coalescence time, $T_\text{rej}$ is the rejuvenation age (the age at which the primary star last accreted mass), and $T_\text{evo}$ is the evolution time-scale (the length of time the primary spends on the main sequence). $m(t)$ is called the \gls{dtd} of a population.
+where $T_\text{c}$ is the coalescence time, $T_\text{rej}$ is the rejuvenation age (the age at which the primary star last accreted mass), and $T_\text{evo}$ is the evolution time-scale (the length of time the primary spends on the \gls{ms}). $m(t)$ is called the \gls{dtd} of a population.
 
 However, the underlying assumption in this is that the population was formed after an instantaneous burst of star-forming activity at time $t=0$, which is clearly unphysical. We must account for the so-called \gls{sfrd} $\psi(z)$, assumed to be taken from \citet{Madau:2014}:
 
@@ -883,8 +892,6 @@ Having now discussed the evolution of stars from a theoretical perspective, it b
 \subsection{The Cambridge \codename{stars} code}\label{chap:numerical_methods_stars}
 
 % \mediaepigraph{She emerged into the open air, like a fish leaping from the water. Beneath her, the mists covered the nighttime land like an enormous white blanket. Around her, there was only open air. Unsettling, strange. Above her, a million stars -- normally visible only to Allomancers -- watched her like the eyes of those long dead.}{The Hero of Ages}{Brandon Sanderson}
-
-\mediaepigraph{But as constant dropping wears away a stone, constant progression, comparatively imperceptible in its course, attains to immense distances after the lapse of time.}{Anno Domini 2000, or, Women's Destiny}{Sir Julius Vogel}
 
 \subsubsection{Brief History}
 
@@ -1070,4 +1077,4 @@ The core of \codename{Kaitiaki} is the \mintinline{Python}{STARSController()} in
 
 \epigraph{If in the first act you have hung a pistol on the wall, then in the following one it should be fired. Otherwise don't put it there.}{Anton Chekhov}
 
-In this Chapter, we have explored the evolution of stars from pre-main sequence evolution to supernova, accounting for the effects of binary interaction. This represents the state of the field as at the commencement of this work. In future chapters we will detail the relevant changes we have made to these prescriptions, motivating the work we have performed.
+In this Chapter, we have explored the evolution of stars from pre-\gls{ms} evolution to supernova, accounting for the effects of binary interaction. This represents the state of the field as at the commencement of this work. In future chapters we will detail the relevant changes we have made to these prescriptions, motivating the work we have performed.
