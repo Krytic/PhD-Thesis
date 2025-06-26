@@ -68,6 +68,16 @@ We perform our data matching using the \codename{Hoki} code \citep{Stevance:2020
 
 The matching values \codename{Hoki} finds are shown in \Cref{tab:hoki_matches}. The primary models are also shown on \Cref{fig:hoki_matches_HRD_primaries}. We also report in the table the inferred ages at match, which lie between $\mu_{\log(\text{age})}=6.13$ (for MY Cam) and $\mu_{\log(\text{age})}=7.14$ (for TU Mus).
 
+We note two key caveats in our search criteria. Our search error bars are widened, in some cases substantially. The known parameters in \citet{Abdul-masih:2022} are so tightly constrained that the parameter grid spacing in \gls{bpass} becomes significant, and thus the search bars must be widened to account for this.
+
+Secondly, luminosities are not uniformly reported for the companions across the grid. In particular, the companion luminosity for VFTS 352 is unreported, and thus we approximate it using the Stefan-Boltzmann law,
+
+\begin{equation}
+    \frac{L}{L_\odot} = \left(\frac{R}{R_\odot}\right)^2 \left(\frac{T}{T_\odot}\right)^4,
+\end{equation}
+
+where $T_\odot=\SI{5778}{\kelvin}$. This induces two assumptions: that the companion is a perfect blackbody, and that it is spherical. The first assumption is typically assumed regardless, and the secondary is a necessary condition of our 1D stellar evolution approach. Although the star is, physically, distorted with a fillout factor of $f=1.28$, the key assumption underpinning 1D stellar evolution is spherical symmetry. Nevertheless, the illustration on the \gls{hrd} is for illustrative purposes only. Since the binaries in this sample are eclipsing binaries, the most confident parameters we could fit to are the masses and radii.
+
 \input{chapters/tables/BPASS_v2_match_table}
 
 \begin{figure}
@@ -111,7 +121,7 @@ The matching values \codename{Hoki} finds are shown in \Cref{tab:hoki_matches}. 
         \label{fig:hoki_VFTS_352}
     \end{subfigure}
 
-    \caption[BPASS v2.2.1 primary models for the matches obtained by \codename{Hoki} for the parameters in \Cref{tab:overcontact_binaries}.]{BPASS v2.2.1 primary models for the matches obtained by \codename{Hoki} for the parameters in \Cref{tab:overcontact_binaries}. The legend key is the BPASS stellar model file name (omitting the ``sneplot-'' prefix common to every entry), and is broken down into its parts in \Cref{tab:hoki_matches}.}
+    \caption[BPASS v2.2.1 primary models for the matches obtained by \codename{Hoki} for the parameters in \Cref{tab:overcontact_binaries}.]{BPASS v2.2.1 primary models for the matches obtained by \codename{Hoki} for the parameters in \Cref{tab:overcontact_binaries}. The legend key is the BPASS stellar model file name (omitting the ``sneplot-'' prefix common to every entry), and is broken down into its parts in \Cref{tab:hoki_matches}. The overplotted observed systems do not match every system, and the search error bars were widened somewhat as a result (see \Cref{tab:overcontact_binaries} for details).}
     \label{fig:hoki_matches_HRD_primaries}
 \end{figure}
 
