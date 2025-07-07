@@ -19,6 +19,7 @@ print -P "%F{green}Generated word count files%f "
 
 print -P "%F{green}Preprocessing Stage I (parsing todos)...%f "
 python scripts/ParseTodos.py
+python scripts/parsequotes.py
 rm main.todos
 
 cp wc.txt ../live_website/PhD/wc.txt
