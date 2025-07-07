@@ -17,27 +17,45 @@ Stars are born in clouds of gas and dust. Due to inhomegeneities in the dust for
     M_\text{J} = \pqty{\frac{10k_\text{B}T}{3\pqty{\gamma-1}\mu m_\text{H}G}}^\frac32 \pqty{\frac{3}{4\pi\rho}}^\frac12 \sim \pqty{\frac{10k_\text{B}T}{G}R}^\frac32 \pqty{\frac{1}{M}}^\frac12,
 \end{equation}
 
-where the similarity is taking $\gamma=\frac53, \mu=\frac12$ for an adiabatic gas composed of H(II), then gravity becomes the dominant force in the clumps of gas. This causes a protostar to form. Generally speaking, this protostar slowly gains more mass from its surroundings \citep{Mckee:2007} and, as it does so, increases in temperature. When the core temperature reaches $\SI[parse-numbers=false]{10^7}{\kelvin}$, the hydrogen in the core begins to fuse into helium via the reaction chain
+where the similarity is taking $\gamma=\frac53, \mu=\frac12$ for an adiabatic gas composed of H(II), then gravity becomes the dominant force in the clumps of gas. This causes a protostar to form. Generally speaking, this protostar slowly gains more mass from its surroundings \citep{Mckee:2007} and, as it does so, increases in temperature. When the core temperature reaches $\SI[parse-numbers=false]{10^7}{\kelvin}$, the \gls{pp_chain} begins. Bare protons are combined to form deuterium, positrons, and neutrinos. The positrons annihilate with electrons, producing photons, and the deuterium fuses with another proton to produce helium-3:
 
 \begin{align*}
-    \ce{^2_1H + ^2_1H &-> ^3_2He + ^1_0n + \SI{3.27}{\mega\electronvolt}} \\
-    \ce{^2_1H + ^3_2He &-> ^4_2He + ^1_1H + \SI{18.3}{\mega\electronvolt}}.
+    \ce{^1H + ^1H &-> ^2H + e^+ + \nu_e} \\
+    \ce{e^+ + e^- &-> \gamma} \\
+    \ce{^1H + ^2H &-> ^3He + \gamma}.
 \end{align*}
 
-This is aided by two further hydrogen to helium reactions:
+The three constituent parts of the \gls{pp_chain} are the \gls{pp1}, the \gls{pp2}, and the \gls{pp3}. Which path the star takes is dependent on the temperature:
 
-\begin{align*}
-    \ce{^2_1H + ^2_1H &-> ^3_1He + ^1_1H + \SI{4.03}{\mega\electronvolt}} \\
-    \ce{^2_1H + ^3_1H &-> ^4_2He + ^1_0n + \SI{17.59}{\mega\electronvolt}},
-\end{align*}
+\begin{itemize}
+    \item The \gls{pp1} dominates at low temperatures, and is given by the reaction
 
-or, via a master equation,
+    \begin{equation*}
+        \ce{^3He + ^3He -> ^4He + 2^1H}.
+    \end{equation*}
 
-\begin{equation}
-    \ce{6^2_1H -> 2^4_2He + 2^1_1H + 2^1_0n + \SI{43.2}{\mega\electronvolt}},
-\end{equation}
+    \item The \gls{pp2} dominates at temperatures $>\SI{1.4e7}{\kelvin}$, and is given by the reaction chain
 
-with intermediate products which remain stable and are thus omitted for simplicity. The burning of $^{2}_{1}$H -- deuterium -- occurs for a short fraction of the lifetime of the star, before core hydrogen burning begins in earnest. This energy release will sustain the star throughout its lifetime, providing outwards pressure resisting gravity pulling the star inwards, in a balance termed \textit{hydrostatic equilibrium}. Once hydrogen fusion has begun, we say that the star has reached \gls{zams}, and is now on the \gls{ms}, where it will spend approximately 90\% of its lifetime.
+    \begin{align*}
+        \ce{^3He + 4^He &-> ^7Be + \gamma} \\
+        \ce{^7Be + e^-  &-> ^7Li + \nu_e} \\
+        \ce{^7Li + ^1H  &-> 2^4He}. \\
+    \end{align*}
+
+    \item The \gls{pp3} dominates at temperatures $>\SI{2.3e7}{\kelvin}$, and is given by the reaction chain
+
+    \begin{align*}
+        \ce{^7Be + ^1H &-> ^8B + \gamma} \\
+        \ce{^8B        &-> ^8Be^* + e^+ + \nu_e} \\
+        \ce{^8Be^*     &-> 2^4He}, \\
+    \end{align*}
+
+    where a superscript asterisk denotes an unstable excited state.
+\end{itemize}
+
+All three paths in the \gls{pp_chain} ultimately produce $^4$He, with the key output difference being the total energy per $^4$He atom; the energy yield is highest for the \gls{pp1}, and smallest for the \gls{pp3}.
+
+The burning of $^2$H -- deuterium -- occurs for a short fraction of the lifetime of the star, before core hydrogen burning begins in earnest. This energy release will sustain the star throughout its lifetime, providing outwards pressure resisting gravity pulling the star inwards, in a balance termed \textit{hydrostatic equilibrium}. Once hydrogen fusion has begun, we say that the star has reached \gls{zams}, and is now on the \gls{ms}, where it will spend approximately 90\% of its lifetime.
 
 \section{Stellar Evolution}
 
@@ -63,7 +81,7 @@ In addition to \Cref{eq:stellar_structure}, an \gls{eos} demanding $\rho=\rho(P,
     F(V, T, N_\text{e}, N_\text{e}) = -\frac13 aT^4 V + kT\sum_i N_\text{i} \pqty{\ln\frac{N_\text{i} h^3}{\omega_i V\pqty{2\pi m_i kT}^\frac32}-1+\frac{\chi_i}{kT}}+F_\text{e}(N_\text{e}, V, T)+\Delta F_\text{e}(N_\text{e}, V, T).
 \end{equation}
 
-These equations represent conservation of mass, hydrostatic equilibrium, energy transport, and thermal equilibrium, respectively. Knowing constants $\epsilon, \kappa$, we have four equations with four unknowns. It is usually convenient to use the \textit{Rosseland mean} opacity,
+These equations represent conservation of mass, hydrostatic equilibrium, energy transport, and thermal equilibrium, respectively. Knowing constants $\epsilon, \kappa$, we have four equations with four unknowns. It is usually convenient to use the \textit{Rosseland mean} opacity \citep{Rosseland:1924},
 
 \begin{equation}
     \frac{1}{\kappa} = \frac{\pi}{acT^3}\int_0^\infty \frac{1}{\kappa_\nu}\pdv{B}{T}~\mathrm{d}\nu,
@@ -89,7 +107,141 @@ All told, in the simplest sense, the internal \textit{structure} of the star can
 
 \alice
 
-A star contains at its core a complex nuclear furnace. Since stars are born in hydrogen-rich regions of space and obtain high enough pressures in the core to ignite fusion, the star will be sustained by the burning of predominantly hydrogen and helium. We thus group the elements into hydrogen, helium, and metals (which we define as anything with atomic number $\geq3$, i.e., lithium and heavier elements). It is convenient to speak of the mass fraction of the element, i.e., the fraction by mass of a star that is a certain element. For our purposes, this is expressible as
+A star contains at its core a complex, multi-layered, nuclear furnace. As one atom approaches another, it must overcome the natural electrostatic repulsion so that the strong nuclear force ensures fusion occurs. This requires the bombarding atom to tunnel through the Coulomb barrier, instigating fusion.
+
+We have already discussed the \gls{pp_chain}, fusing hydrogen into helium and up to beryllium. The two remaining parts of the story are the triple-$\alpha$ process and the CNO cycle. The triple-$\alpha$ process generates carbon, and is given by the reactions \citep{Carroll:2017}\footnote{The reversible reaction is due to Beryllium-8 being unstable; its half-life is on the order of $\SI{1e-16}{\second}$, and it decays back to 2$^4_2$He if it does not react further.}
+
+\begin{align*}
+    \ce{^4_2He + ^4_2He &\rightleftharpoons ^8_4Be}, \\
+    \ce{^8_4Be + ^4_2He &-> ^12_6C + 2\gamma}. \\
+    % \ce{^12_6C + ^4_2He &-> ^16_8O + \gamma{} + \SI{7.162}{\mega\electronvolt}},
+\end{align*}
+
+The CNO cycle generates elements up to fluorine via a branched cyclic reaction The reactions are presented here, and are summarised in a flow chart in \Cref{fig:cno_cycle_schematic}. The start of the cycle, pre-branch, is given by
+
+\begin{align*}
+    \ce{^1H + ^{12}C &-> ^{13}N + \gamma} \\
+    \ce{^{13}N       &-> ^{13}C + e^+ + \nu_e} \\
+    \ce{^1H + ^{13}C &-> ^{14}N + \gamma} \\
+    \ce{^1H + ^{14}N &-> ^{15}O + \gamma} \\
+    \ce{      ^{15}O &-> ^{15}N + e^+ + \nu_e} \\
+\end{align*}
+
+Here, the reaction branches when $^{15}$N undergoes a proton capture. In 1 in every 2500 captures, the reaction branches to produce (at its heaviest) fluorine, in the \textit{NO cycle}:
+
+\begin{align*}
+    \ce{^1H + ^{15}N &-> ^{16}O + \gamma} \\
+    \ce{^1H + ^{16}O &-> ^{17}F + \gamma} \\
+    \ce{      ^{17}F &-> ^{17}O + e^+ + \nu_e} \\
+    \ce{^1H + ^{17}O &-> ^{14}N + ^4He}. \\
+\end{align*}
+
+In the remaining cases, the reaction instead produces carbon-12, in the conclusion of the \textit{CN cycle}:
+
+\begin{equation*}
+    \ce{^1H + ^{15}N -> ^{12}C + ^4He + \gamma}.
+\end{equation*}
+
+\begin{figure}[!htbp]
+    \centering
+    \begin{tikzpicture}[xscale=2.5, yscale=2]
+        \begin{tikz}
+            \node (dummy) at (0,0) {};
+            \node (begin) at (-1, 1) {Begin (triple-$\alpha$ process)};
+
+            \node (C12) at (0, 0) {$^{12}$C};
+            \node (N13) at (0,-1) {$^{13}$N};
+            \node (C13) at (0,-2) {$^{13}$C};
+            \node (N14) at (0,-3) {$^{14}$N};
+            \node (O15) at (0,-4) {$^{15}$O};
+            \node (N15) at (0,-5) {$^{15}$N};
+            \node (O16) at (0,-6) {$^{16}$O};
+            \node (F17) at (0,-7) {$^{17}$F};
+            \node (O17) at (0,-8) {$^{17}$O};
+
+            \node (proton1) at (-1, 0) {$^1$H};
+            \node (proton2) at (-1, -2) {$^1$H};
+            \node (proton3) at (-1, -4) {$^1$H};
+            \node (proton4) at (-1, -5) {$^1$H};
+            \node (proton5) at (-1, -6) {$^1$H};
+            \node (proton6) at (-1, -8) {$^1$H};
+
+            \node (photon1) at (1, 0) {$\gamma$};
+            \node (photon2) at (1,-2) {$\gamma$};
+            \node (photon3) at (1,-3) {$\gamma$};
+            \node (photon4) at (1,-4) {$\gamma$};
+            \node (photon5) at (1,-6) {$\gamma$};
+            \node (photon6) at (1,-7) {$\gamma$};
+
+            \node (photon7) at (2, -6) {$\gamma$};
+            \node (helium1) at (3, -5) {$^4$He};
+
+            \node (helium2) at (1, -9) {$^4$He};
+
+            \node (e+1) at  (1, -1 +0.5) {e$^+$};
+            \node (nue1) at (1, -1 -0.5) {$\nu_\text{e}$};
+            \node (e+2) at  (1, -5 +0.5) {e$^+$};
+            \node (nue2) at (1, -5 -0.5) {$\nu_\text{e}$};
+            \node (e+3) at  (1, -8 +0.5) {e$^+$};
+            \node (nue3) at (1, -8 -0.5) {$\nu_\text{e}$};
+
+            \draw[->] (begin) -- (C12);
+
+            \draw[->] (C12) -- (N13); % node[above,midway,sloped]; {produces};
+            \draw[->,dotted] (N13) -- (C13); % node[below,midway,sloped] {decays to};
+            \draw[->] (C13) -- (N14); % node[above,midway,sloped]; {produces};
+            \draw[->] (N14) -- (O15); % node[above,midway,sloped]; {produces};
+            \draw[->,dotted] (O15) -- (N15); % node[below,midway,sloped] {decays to};
+            \draw[->] (N15) -- (O16) node[below,midway,sloped] {1/2500};
+            \draw[->] (O16) -- (F17); % node[above,midway,sloped]; {produces};
+            \draw[->,dotted] (F17) -- (O17); % node[below,midway,sloped] {decays to};
+
+            \draw[->] (N15) -- (2, -5) node[above,midway,sloped] {2499/2500} -- (2, 1) -- (0, 1) -- (C12);
+
+            \draw[->] (2, -5) -- (photon7);
+            \draw[->] (2, -5) -- (helium1);
+
+            \draw[->,dashed] (proton1) -- (C12); % node[below,midway,sloped] {bombardment};
+            \draw[->,dashed] (proton2) -- (C13); % node[below,midway,sloped] {bombardment};
+            \draw[->,dashed] (proton3) -- (N14); % node[above,midway,sloped] {bombardment};
+            \draw[->,dashed] (proton4) -- (N15); % node[below,midway,sloped] {bombardment};
+            \draw[->,dashed] (proton5) -- (O16); % node[below,midway,sloped] {bombardment};
+            \draw[->,dashed] (proton6) -- (O17); % node[below,midway,sloped] {bombardment};
+
+            \draw[->] (C12) -- (photon1); % node[above,midway,sloped] {and};
+            \draw[->] (C13) -- (photon2); % node[above,midway,sloped] {and};
+            \draw[->] (N14) -- (photon3); % node[above,midway,sloped] {and};
+            \draw[->] (O15) -- (photon4); % node[above,midway,sloped] {and};
+            \draw[->] (O16) -- (photon5); % node[above,midway,sloped] {and};
+            \draw[->] (F17) -- (photon6); % node[above,midway,sloped] {and};
+
+            \draw[->] (N13) -- (e+1); % node[above,midway,sloped] {and};
+            \draw[->] (N13) -- (nue1); % node[below,midway,sloped] {and};
+            \draw[->] (N15) -- (e+2); % node[above,midway,sloped] {and};
+            \draw[->] (N15) -- (nue2); % node[below,midway,sloped] {and};
+            \draw[->] (O17) -- (e+3); % node[above,midway,sloped] {and};
+            \draw[->] (O17) -- (nue3); % node[below,midway,sloped] {and};
+
+            \draw[->] (O17) -- (0, -9) --++ (-2, 0) -- (-2,-3) -- (N14);
+
+            \draw[->] (0, -9) -- (helium2); % node[above,midway,sloped] {and};
+
+            % legend
+
+            \filldraw[densely dashdotted, fill=black!5] (1.5,-9) rectangle (3.5, -6.5);
+
+            \node at (2.5, -6.9) {\Large \textbf{Key}};
+
+            \draw[->,dotted] (2, -8.5) -- (3, -8.5) node[above,midway,sloped] {Radioactive decay};
+            \draw[->,dashed] (2, -8) -- (3, -8) node[above,midway,sloped] {Proton bombardment};
+            \draw[->] (2, -7.5) -- (3, -7.5) node[above,midway,sloped] {Reaction product};
+        \end{tikz}
+    \end{tikzpicture}
+    \caption[A schematic of the CNO cycle.]{A schematic of the CNO cycle. The reaction cycle begins with the triple-$\alpha$ process, producing one $^{12}$C atom from four $^4$He atoms. From there, it is essentially self-sustaining, provided there are protons available to bombard the reactants.}
+    \label{fig:cno_cycle_schematic}
+\end{figure}
+
+Further reactions essentially proceed similarly, and the core can produce up to iron before the reaction becomes endothermic. However, these elements do not dominate the star, with the exception of forming a \gls{CO_core} and \gls{ONe_core} later in the evolution of the star. We thus group the elements into hydrogen, helium, and metals (which we define as anything with atomic number $\geq3$, i.e., lithium and heavier elements). It is convenient to speak of the mass fraction of the element, i.e., the fraction by mass of a star that is a certain element. For our purposes, this is expressible as
 
 \begin{equation}
 	X+Y+\sum_{i=3}^{118} \sum_{j} {}^{i}_{j}\text{X} = 1, \label{eq:mass_fracs}
@@ -181,7 +333,7 @@ is employed, where $X_{i,\text{init}}$ is the initial mass fraction of a given e
 
 \subsection{Evolutionary Pathways}
 
-In this section, we examine the three major regimes of stellar evolution for single-stars: low-mass, intermediate-mass, and massive stars. Stars above $M_\text{ZAMS}\approx\SI{80}{\msun}$ are out of the scope of this thesis -- although they exist, and the \gls{bpass} \gls{imf} reaches \SI{300}{\msun}, the systems of interest in future chapters are at most $\sim\SI{80}{\msun}$, and thus very massive stars are out of scope for this work.
+In this section, we examine the three major regimes of stellar evolution for single-stars: low-mass, intermediate-mass, and massive stars. Stars above $M_\text{ZAMS}\approx\SI{80}{\msun}$ are out of the scope of this thesis -- although they exist, and the \gls{bpass} \gls{imf} reaches \SI{300}{\msun} \citep{Eldridge:2017}, the systems of interest in future chapters are at most $\sim\SI{80}{\msun}$, and thus very massive stars are out of scope for this work.
 
 \subsubsection{Low-Mass Stars: \texorpdfstring{$\SI{0.08}{\msun} < M < \SI{2}{\msun}$}{Stars with between 0.08 and 2 times the mass of the sun}}\label{sec:low_mass_stars}
 
@@ -208,7 +360,7 @@ Massive stars are the key focal objects of this thesis, and in many ways offer s
 
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width=\textwidth]{images/TheorySection/10_msun_jumps.pdf}
+    \includegraphics[width=\textwidth]{images/TheorySection/10_msun_jumps_new.pdf}
     \caption[The evolution of stars in the range $0.5-80\unit{\msun}$.]{The evolution of stars in the range $0.5-80\unit{\msun}$. The dashed black line represents the \acrfull{zams}, which is the origin point of all of our models, and (in this plot) extends from \SI{0.5}{\msun} to \SI{300}{\msun}. The blue triangle is the (highly approximate) bounds of the Hertzsprung gap. Crosses indicate binaries in the Double Eclipsing Binaries catalogue \citep[DEBCAT;][]{Southworth:2015}, and illustrate the apparent ``zone of avoidance'' that defines the Hertzsprung gap. The script that generates this figure is provided in \Cref{chap:appendix:code_samples}.}
     \label{fig:hr_diagram_massive_stars}
 \end{figure}
@@ -999,15 +1151,7 @@ where $d_1$ and $d_2$ are pre-determined control parameters. Most commonly we ta
 
 \subsubsection{Numerical instabilities}\label{sec:numerical_instabilities}
 
-Stellar modelling is a nontrivial endeavour and there are many cases where the code can fail seemingly arbitrarily. The largest cause of numerical instability is the helium flash, which occurs in low-mass stars between about $\SI{0.8}{\msun} \lesssim M_\text{ZAMS} \lesssim \SI{2.5}{\msun}$. In this band, the triple-$\alpha$ process, given by the reactions \citep{Carroll:2017}\footnote{The reversible reaction is due to Beryllium-8 being unstable; its half-life is on the order of $\SI{1e-16}{\second}$, and it decays back to 2$^4_2$He if it does not react further.}
-
-\begin{align*}
-    \ce{^4_2He + ^4_2He &\rightleftharpoons ^8_4Be - \SI{0.0918}{\mega\electronvolt}}, \\
-    \ce{^8_4Be + ^4_2He &-> ^12_6C + 2\gamma{} + \SI{7.367}{\mega\electronvolt}}, \\
-    % \ce{^12_6C + ^4_2He &-> ^16_8O + \gamma{} + \SI{7.162}{\mega\electronvolt}},
-\end{align*}
-
-occurs within a highly electron-degenerate helium core. As a result, the temperature of the star increases sharply during this process, leading to thermal runaway. This temperature increase in turn results in an increase in the luminosity (which peaks at $\sim\SI{1e10}{\lsun}$). The flash itself -- being the period of thermal runaway -- occurs on the order of a few minutes, though the spike in luminosity lasts approximately $\SI{7}{\mega\year}$ (for the $\SI{2.51}{\msun}$ star shown in \Cref{fig:thermal_pulses_he_flash}).
+Stellar modelling is a nontrivial endeavour and there are many cases where the code can fail seemingly arbitrarily. The largest cause of numerical instability is the helium flash, which occurs in low-mass stars between about $\SI{0.8}{\msun} \lesssim M_\text{ZAMS} \lesssim \SI{2.5}{\msun}$. In this band, the triple-$\alpha$ process occurs within a highly electron-degenerate helium core. As a result, the temperature of the star increases sharply during this process, leading to thermal runaway. This temperature increase in turn results in an increase in the luminosity (which peaks at $\sim\SI{1e10}{\lsun}$). The flash itself -- being the period of thermal runaway -- occurs on the order of a few minutes, though the spike in luminosity lasts approximately $\SI{7}{\mega\year}$ (for the $\SI{2.51}{\msun}$ star shown in \Cref{fig:thermal_pulses_he_flash}).
 
 A method termed ``pseudoevolution'' can be used to overcome this source of error. Briefly, a complete model (termed the \textit{reference model}) of a \SI{3}{\msun} star is evolved with a full model description saved at every timestep. When the helium flash occurs in a model (heuristically, $0.1 \leq M_\text{He} / \unit{\msun} \leq 0.55$ and $\log T_\text{c} / \unit{\kelvin} > 7.9$), we query the reference model for a model with the same helium core mass as the failed model. Using a custom subroutine in \codename{stars}, we turn off all nuclear and thermal burning and remove mass from the reference model to match the mass of the failed model. This model is then allowed to evolve as per normal, having overcome the helium flash. We note that this is not a \textit{perfect} method, as this does induce discontinuities in the plots, as shown in \Cref{fig:pseudoevolved_kippenhahn}, though these are essentially insignificant.
 

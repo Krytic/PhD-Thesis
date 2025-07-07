@@ -16,7 +16,9 @@ Ergo, any attempt at understanding gravitational waves must be founded in a stro
 
 Furthermore, a sound understanding of the evolution of stars has impacts beyond gravitational wave astronomy. As the interiors of stars are complex nuclear furnaces, they are responsible for producing most of the elements in the Universe heavier than Hydrogen \citep{Burbidge:1957}. In fact, of the elements lighter than Uranium, the only elements not substantially produced in stellar processes (such as through kilonovae or in supernovae) are technetium, promethium (which both lack stable isotopes),\footnote{There are technetium stars, and promethium has been observed in some atmospheres \citep{Cowley:2004}, however these processes do not generally pollute their environment.} boron, beryllium (which both are produced via cosmic ray fission), and some formation channels of lithium.
 
-From the perspective of Universal building blocks, stars are also the focal point of planetary systems, and provide the theoretical right conditions for the formation of life. Without a solid theory of stellar evolution, one is unable to describe the likelihood of extraterrestrial life within the Universe.
+Starlight is also a critical requirement for probing the observable Universe. Photons are the means by which many astrophysical observations are made. Thus, a complete picture of the births, lives, and deaths of stars -- and the compact remnants that they may leave after the supernova -- is essential to understand spectra, nucleosynthetic yields, chemical abundances, and supernovae. These models also allow us to probe remnant mass distributions, characteristics of supernovae progenitors, and the binary interactions that define the majority of the stars in the Universe. This picture is incomplete without stellar structure and evolution models.
+
+From the perspective of Universal structure and habitability, stars are also the focal point of planetary systems, and provide the theoretical right conditions for the formation of life. The protoplanetary discs that form around stars depend on the host star's mass and luminosity. Without a complete picture of stellar evolution, one is unable to describe the likelihood of extraterrestrial life within the Universe.
 
 \section{Observational astronomy}
 
@@ -67,7 +69,7 @@ In religious scripture, celestial navigation has oft been a fixture, such as in 
     \end{scripture}
 \end{fanciful}
 
-Despite this deep cultural connection to the stars, what we would now call Astronomy is a somewhat recent invention. Arguably conventional (and in some sense, ``correct'') astronomy arose in the 16th century CE with Copernicus proposing the heliocentric model of the solar system, which was confirmed by Galileo in the 17th century CE \citep{Carroll:2017} -- although Galileo's refusal to recant his claims did result in his being convicted of heresy for 300 years.
+Despite this deep cultural connection to the stars, what we would now call Astronomy is a somewhat recent invention. Arguably conventional (and in some sense, ``correct'') astronomy arose in the 16th century CE with Copernicus proposing the heliocentric model of the solar system, which was confirmed by Galileo in the 17th century CE \citep{Carroll:2017} -- although Galileo's refusal to recant his claims did result in his being convicted of heresy for 300 years. The 17th century brought about the establishment of orbital mechanics with the work of Kepler (based upon the observations of Tycho Brahe), and the discovery of gravity by Newton.
 
 The early 20th century saw a veritable renaissance in both the observational and theoretical spheres. On the one hand, developments such as the theories of Special Relativity in 1905 \citep{Einstein:1905}, \gls{gr} in 1917 \citep{Einstein:1917}, and the predictions of gravitational waves \citep{Poincare:1906, Einstein:1916} led to theoretical revolutions. Around this time, Arthur Eddington began working on determining the internal structure and evolution of stars \citep{Eddington:1916, Eddington:1920}, and \citet{Gamow:1928} put forth the idea of quantum tunneling allowing elements to overcomb the Coloumb barrier. On the other hand, the innovations of \citet{Payne:1925} in showing that stars are composed of mostly Hydrogen and Helium, \citet{Baade:1934} in distinguishing ``super-novae'' from ``common novae'', \citet{Chandrasekhar:1935} in establishing the idea of the ``Chandrasekhar mass'' (the limiting mass of a white dwarf), \citet{Hoyle:1946} in developing the foundation of the nuclear reaction of elements heavier than Hydrogen in stars, \citet{Salpeter:1955} in developing the \gls{imf}, \citet{Burbidge:1957} in truly developing the theory of stellar nucleosynthesis, \citet{Henyey:1955} and \citet{Hayashi:1961} in exploring the pre-main sequence evolution of stars were key to kickstarting entire branches of astronomy such as spectroscopy and computational astrophysics.
 
@@ -81,7 +83,7 @@ Modelling the evolution of a star is a nontrivial endeavour. Stars reach interna
 
 It is nigh impossible to achieve and sustain these conditions to experimentally test any physical phenomena. That said, missions such as the Parker Solar Probe have made flyby missions into the atmosphere of the Sun, though broadening the sample size to two stars -- using Proxima Centauri, the nearest star to Earth aside from the Sun -- would require travelling at approximately 0.1$c$ for 40 years to reach. If instead we were to send the Parker Solar Probe travelling at a constant velocity of its top velocity of $\sim\SI{176471}{\meter\per\second}$, it would take approximately 7200 years to reach Proxima Centauri. Needless to say, physical experimentation with a star is difficult.
 
-\subsection{Population Synthesis and Stellar Modelling}
+\subsection{Stellar Modelling and Population Synthesis}
 
 Because of these factors, one often turns to computer simulations to model the interiors of stars. The question turns from physical experimentation to mathematical ones, and the idea of a \textit{stellar model} becomes useful. A stellar model is a calculation performed such that the internal structure (the present state of physical quantities) and evolution (how these quantities change over time) are determined. Computing these parameters is nontrivial. As will be developed in \Cref{chap:theoretical_background}, the simplest model of a star is a series of four coupled differential equations describing the internal pressure, temperature, luminosity, and mass distributions. However, including ``extra'' physics greatly increases the complexity of the problem; \citet{Henyey:1964} developed methods of solving the equations of structure and evolution that turn the problem into matrix inversion, at the cost of the central ``Henyey matrix'' being thousands of elements in size.
 
@@ -102,6 +104,8 @@ Each of these approaches informs the other two, and all play important roles in 
 \subsubsection{Population Synthesis with Detailed Binary Models}
 
 A detailed population synthesis code uses detailed model sets, where the interior state of the stars is computed, and coupled to the orbital evolution equations. In this regime, observables such as mass transfer are explicitly calculated and solved for from the exact equations of state, structure, and evolution of the binary. By doing this, one follows the binary evolution in a reasonable amount of detail, obfuscating fine detail and (generally) asymmetry in the star in favour of recovering the larger-scale structure.
+
+An example of such a code is the \gls{bpass} code \citep{Eldridge:2017}, which uses a custom version of the Cambridge \codename{stars} code for the stellar modelling and a bespoke proprietary code named \codename{Tui} for the population synthesis. The key approach in the present version of \gls{bpass} is to model the primary star in detail until it undergoes a supernova, whilst approximating the evolution of the secondary. After the primary supernova, the secondary is then evolved in detail with the primary treated as a point mass. After the secondary supernova, the parameters of the remnants -- if any -- can thus be fed into a postprocessing code to have their orbital equations solved for further.
 
  %computes pairings of detailed models. One can in principle examine the output models to determine at any point the progenitor history. For example, when recording the sources of compact object coalescenes, one can place a prior on the mass of the components at their respective \gls{zams} positions, to only record binaries with a certain mass, or who at some point undergo a particular kind of mass transfer. In other regimes, this would need to be done in post-processing, potentially by querying the input distribution also.
 
@@ -127,20 +131,13 @@ We now describe the placement of this work within the field, and outline the key
 
 \subsection{Research themes}
 
-There are essentially three major themes guiding this research.
+There are essentially two major themes guiding this research.
 
 %! begin transclude copy themes
 \begin{enumerate}[I.]
-	\item Can we methodologically overcome the typical cases in which stellar models fail:
-	\begin{enumerate}
-		\item \gls{rlof},
-		\item \gls{cee}, and
-		\item The helium flash
-	\end{enumerate}
+	\item Can we study contact binary systems, and refine our treatment of \gls{rlof} to overcome numerical issues inherent in these models?
 
 	\item Can we develop a testing regime for the natal supernova kick, which relies on more observations than just isolated pulsar velocities?
-
-	\item What modifications are required to be made to our stellar modelling code in preparation for the next major \acrshort{bpass} release?
 \end{enumerate}
 %! end transclude copy themes
 
@@ -152,12 +149,12 @@ This thesis is, broadly, a tour of the structure and evolution of binary stars f
 
 \begin{enumerate}
 	\item In \Cref{chap:theoretical_background}, we provide the necessary theoretical background for future chapters, critically examine the pieces of software and numerical methods employed in this work, and discuss the logistics of running this single-thread grid-based code as a multiprocessed code on a distributed cluster.
-    \item In \Cref{chap:he_mass_transfer}, we explore the regime in which mass transfer is assumed to become helium-rich, and the effects on the future evolution of these binaries. (Themes I, III)
+    \item In \Cref{chap:he_mass_transfer}, we explore the regime in which mass transfer is assumed to become helium-rich, and the effects on the future evolution of these binaries. (Theme I)
 	\item In \Cref{chap:close_contact}, we present the results of our stellar evolution codes in the interesting case when both stars almost (or in some instances, do) touch. (Theme I)
 	\item In \Cref{chap:natal_kicks}, we examine the kinematics of the post-supernova inspiral and the mechanics of the natal supernova kick. (Theme II)
-	\item In \Cref{chap:conclusion}, we review the thesis and conclude. (Themes I, II, III)
-	\item In \Cref{chap:appendix:code_samples}, we provide the \codename{Kaitiaki} code necessary to generate the models for certain stellar evolution plots throughout the thesis. (Themes I, III)
-	\item In \Cref{chap:appendix:code_versions}, we list the codes employed and their versions, as well as the default parameter choices we make for our stellar evolution models (Themes I, III).
+	\item In \Cref{chap:conclusion}, we review the thesis and conclude. (Themes I, II)
+	\item In \Cref{chap:appendix:code_samples}, we provide the \codename{Kaitiaki} code necessary to generate the models for certain stellar evolution plots throughout the thesis. (Theme I)
+	\item In \Cref{chap:appendix:code_versions}, we list the codes employed and their versions, as well as the default parameter choices we make for our stellar evolution models (Theme I).
 	\item In \Cref{chap:ligo_contour_results}, we present period-eccentricity distributions for the \acrshort{lvk} \acrshort{o3} contour (Theme II).
     \item In \Cref{chap:appendix:bespoke_models}, we present the bespoke contact binary models that we discuss in \Cref{chap:close_contact} (Theme I).
     \item In \Cref{chap:additional_derivations}, we present additional derivations for key theoretical expressions from \Cref{chap:theoretical_background}.
