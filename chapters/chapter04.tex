@@ -176,9 +176,55 @@ In terms of periods, we examine the models at three periods. First is the fiduci
     \label{fig:matches_MVP_primaries}
 \end{figure}
 
-\subsection{Notable binaries}
+% \subsection{Notable binaries}
 
-The results of our forward evolution are shown in \Cref{fig:bespoke_binaries_wider,fig:bespoke_binaries_normal,fig:bespoke_binaries_shorter}. We also show summary plots for the six close-contact binaries in \Cref{fig:matches_MVP_primaries}, where the primary
+The results of our forward evolution are shown in \Cref{fig:bespoke_binaries_wider,fig:bespoke_binaries_normal,fig:bespoke_binaries_shorter}. We also show summary plots for the six close-contact binaries in \Cref{fig:matches_MVP_primaries}, where we plot the primary mass against the primary radius. As the six contact binaries are all eclipsing binaries, the masses and radii are the most well-constrained parameters.
+
+As a result, however, there is a dearth of matching models. LSS 3074, TU Muscae, and V382 Cygni are the only three systems with any matches to the observed masses and periods, which are enumerate in \Cref{tab:matches_mvps}. We also take each of the matching models and display them in \Cref{fig:donors_mvps} (donors) and \Cref{fig:accretors_mvps} (accretors). There are fourteen matching models in total.
+
+\begin{table}[!htbp]
+    \centering
+
+    \begin{tabular}{c|cccc|ccc}
+        \toprule
+        Star & $Z$ & $M_1$ / \si{\msun} & $q$ & $\log P~/~\si{\day}$ & Age at begin / \si{\mega\year} & Age at end / \si{\mega\year} & Match length / \si{\kilo\year} \\
+        \midrule
+        LSS 3074 & z020 & 30 & 0.3 & 0.7 & 6.1087 & 6.1141 & 5.43 \\
+        LSS 3074 & z020 & 30 & 0.3 & 0.5 & 5.4656 & 6.1309 & 665.33 \\
+        \midrule
+        TU Mus & z020 & 25 & 0.3 & 0.3 & 3.2888 & 3.2934 & 4.63 \\
+        TU Mus & z020 & 24 & 0.3 & 0.3 & 3.5528 & 3.5574 & 4.61 \\
+        TU Mus & z020 & 23 & 0.3 & 0.3 & 3.8383 & 3.8415 & 3.28 \\
+        TU Mus & z020 & 16 & 0.6 & 0.5 & 5.3727 & 7.1860 & 1813.26 \\
+        TU Mus$^*$ & z020 & 16 & 0.6 & 0.3 & 5.1722 & 6.9546 & 1782.43 \\
+        TU Mus$^*$ & z020 & 16 & 0.6 & 0.3 & 7.3024 & 7.3026 & 0.27 \\
+        \midrule
+        V382 Cyg & z020 & 50 & 0.2 & 0.7 & 3.0350 & 3.0399 & 4.96 \\
+        V382 Cyg & z020 & 40 & 0.3 & 0.5 & 2.9967 & 2.9982 & 1.45 \\
+        V382 Cyg & z020 & 40 & 0.4 & 0.5 & 3.2253 & 3.6514 & 426.16 \\
+        V382 Cyg & z020 & 30 & 0.4 & 0.7 & 2.3847 & 2.6565 & 271.78 \\
+        V382 Cyg & z020 & 30 & 0.4 & 0.5 & 2.2749 & 2.5998 & 324.97 \\
+        V382 Cyg & z020 & 30 & 0.5 & 0.7 & 2.3662 & 2.6543 & 288.04 \\
+        V382 Cyg & z020 & 30 & 0.5 & 0.5 & 2.2768 & 2.6024 & 325.57 \\
+        \bottomrule
+    \end{tabular}
+    \caption[The matches in primary mass/primary radius to our overcontact models.]{The matches in primary mass/primary radius to our overcontact models. Shown here are the \acrshort{zams} parameters. An asterisk next to the star name indicates that the binary undergoes two periods where it matches the donor mass/radius, and each match is shown.}
+    \label{tab:matches_mvps}
+\end{table}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{images/overcontact_binaries/donors_mvp.pdf}
+    \caption[The mass-radius plots for our donor models.]{The mass-radius plots for our donor models that match their observations. The tracks are restricted to whilst the donor is still undergoing core hydrogen fusion.}
+    \label{fig:donors_mvps}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{images/overcontact_binaries/accretors_mvp.pdf}
+    \caption[The mass-radius plots for our accretor models.]{The mass-radius plots for our accretor models that match their observations. The tracks are restricted to whilst the donor is still undergoing core hydrogen fusion.}
+    \label{fig:accretors_mvps}
+\end{figure}
 
 \section{Matches to observed close contact models}
 
