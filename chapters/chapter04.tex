@@ -182,35 +182,36 @@ The results of our forward evolution are shown in \Cref{fig:bespoke_binaries_wid
 
 As a result, however, there is a dearth of matching models. LSS 3074, TU Muscae, and V382 Cygni are the only three systems with any matches to the observed masses and periods, which are enumerate in \Cref{tab:matches_mvps}. We also take each of the matching models and display them in \Cref{fig:donors_mvps} (donors) and \Cref{fig:accretors_mvps} (accretors). There are fourteen matching models in total.
 
-\begin{table}[!htbp]
+\begin{sidewaystable}[!htbp]
     \centering
 
-    \begin{tabular}{c|cccc|ccc}
+    \begin{tabular}{c|cccc|ccc|cccc}
         \toprule
-        Star & $Z$ & $M_1$ / \si{\msun} & $q$ & $\log P~/~\si{\day}$ & Age at begin / \si{\mega\year} & Age at end / \si{\mega\year} & Match length / \si{\kilo\year} \\
+        \multirow{2}{*}{Binary} & \multicolumn{4}{c|}{\gls{zams} parameters} & \multicolumn{3}{c|}{Ages} & \multicolumn{4}{c}{Match details} \\
+         & $Z$ & $M_1$ / \si{\msun} & $q$ & $\log P~/~\si{\day}$ & Begin / \si{\mega\year} & End / \si{\mega\year} & Length / \si{\kilo\year} & $M_1$ / \si{\msun} & $R_1$ / \si{\rsun} & $M_2$ / \si{\msun} & $R_2$ / \si{\rsun} \\
         \midrule
-        LSS 3074 & z020 & 30 & 0.3 & 0.7 & 6.1087 & 6.1141 & 5.43 \\
-        LSS 3074 & z020 & 30 & 0.3 & 0.5 & 5.4656 & 6.1309 & 665.33 \\
+        LSS 3074 & z020 & 30 & 0.3 & 0.7 & 6.1087 & 6.1141 & 5.43 & $13.37\pm0.01$ & $7.40\pm0.33$ & $17.96\pm0.00$ & $4.82\pm0.00$ \\
+        LSS 3074 & z020 & 30 & 0.3 & 0.5 & 5.4656 & 6.1309 & 665.33 & $13.73\pm0.63$ & $8.03\pm0.03$ & $18.39\pm0.27$ & $4.82\pm0.03$ \\
         \midrule
-        TU Mus & z020 & 25 & 0.3 & 0.3 & 3.2888 & 3.2934 & 4.63 \\
-        TU Mus & z020 & 24 & 0.3 & 0.3 & 3.5528 & 3.5574 & 4.61 \\
-        TU Mus & z020 & 23 & 0.3 & 0.3 & 3.8383 & 3.8415 & 3.28 \\
-        TU Mus & z020 & 16 & 0.6 & 0.5 & 5.3727 & 7.1860 & 1813.26 \\
-        TU Mus$^*$ & z020 & 16 & 0.6 & 0.3 & 5.1722 & 6.9546 & 1782.43 \\
-        TU Mus$^*$ & z020 & 16 & 0.6 & 0.3 & 7.3024 & 7.3026 & 0.27 \\
+        TU Mus & z020 & 25 & 0.3 & 0.3 & 3.2888 & 3.2934 & 4.63 & $16.50\pm0.59$ & $7.20\pm0.29$ & $11.55\pm0.54$ & $6.17\pm0.06$ \\
+        TU Mus & z020 & 24 & 0.3 & 0.3 & 3.5528 & 3.5574 & 4.61 & $16.01\pm0.57$ & $7.24\pm0.27$ & $10.92\pm0.50$ & $6.15\pm0.04$ \\
+        TU Mus & z020 & 23 & 0.3 & 0.3 & 3.8383 & 3.8415 & 3.28 & $15.77\pm0.41$ & $7.42\pm0.17$ & $10.07\pm0.32$ & $6.13\pm0.01$ \\
+        TU Mus & z020 & 16 & 0.6 & 0.5 & 5.3727 & 7.1860 & 1813.26 & $15.91\pm0.01$ & $7.18\pm0.29$ & $9.58\pm0.00$ & $4.36\pm0.04$ \\
+        TU Mus$^*$ & z020 & 16 & 0.6 & 0.3 & 5.1722 & 6.9546 & 1782.43 & $15.90\pm0.01$ & $7.18\pm0.29$ & $9.58\pm0.00$ & $4.37\pm0.04$ \\
+        TU Mus$^*$ & z020 & 16 & 0.6 & 0.3 & 7.3024 & 7.3026 & 0.27 & $15.12\pm0.01$ & $7.69\pm0.01$ & $10.33\pm0.01$ & $5.02\pm0.01$ \\
         \midrule
-        V382 Cyg & z020 & 50 & 0.2 & 0.7 & 3.0350 & 3.0399 & 4.96 \\
-        V382 Cyg & z020 & 40 & 0.3 & 0.5 & 2.9967 & 2.9982 & 1.45 \\
-        V382 Cyg & z020 & 40 & 0.4 & 0.5 & 3.2253 & 3.6514 & 426.16 \\
-        V382 Cyg & z020 & 30 & 0.4 & 0.7 & 2.3847 & 2.6565 & 271.78 \\
-        V382 Cyg & z020 & 30 & 0.4 & 0.5 & 2.2749 & 2.5998 & 324.97 \\
-        V382 Cyg & z020 & 30 & 0.5 & 0.7 & 2.3662 & 2.6543 & 288.04 \\
-        V382 Cyg & z020 & 30 & 0.5 & 0.5 & 2.2768 & 2.6024 & 325.57 \\
+        V382 Cyg & z020 & 50 & 0.2 & 0.7 & 3.0350 & 3.0399 & 4.96 & $27.18\pm0.19$ & $9.43\pm0.11$ & $21.16\pm0.17$ & $4.79\pm0.04$ \\
+        V382 Cyg & z020 & 40 & 0.3 & 0.5 & 2.9967 & 2.9982 & 1.45 & $24.70\pm0.19$ & $9.40\pm0.11$ & $20.05\pm0.19$ & $6.40\pm0.30$ \\
+        V382 Cyg & z020 & 40 & 0.4 & 0.5 & 3.2253 & 3.6514 & 426.16 & $23.61\pm0.41$ & $9.54\pm0.03$ & $26.69\pm0.21$ & $6.72\pm0.02$ \\
+        V382 Cyg & z020 & 30 & 0.4 & 0.7 & 2.3847 & 2.6565 & 271.78 & $29.24\pm0.03$ & $9.43\pm0.10$ & $12.00\pm0.00$ & $4.70\pm0.01$ \\
+        V382 Cyg & z020 & 30 & 0.4 & 0.5 & 2.2749 & 2.5998 & 324.97 & $29.17\pm0.04$ & $9.40\pm0.12$ & $12.00\pm0.00$ & $4.70\pm0.01$ \\
+        V382 Cyg & z020 & 30 & 0.5 & 0.7 & 2.3662 & 2.6543 & 288.04 & $29.24\pm0.03$ & $9.42\pm0.10$ & $14.98\pm0.00$ & $5.48\pm0.02$ \\
+        V382 Cyg & z020 & 30 & 0.5 & 0.5 & 2.2768 & 2.6024 & 325.57 & $29.17\pm0.04$ & $9.40\pm0.12$ & $14.98\pm0.00$ & $5.49\pm0.02$ \\
         \bottomrule
     \end{tabular}
-    \caption[The matches in primary mass/primary radius to our overcontact models.]{The matches in primary mass/primary radius to our overcontact models. Shown here are the \acrshort{zams} parameters. An asterisk next to the star name indicates that the binary undergoes two periods where it matches the donor mass/radius, and each match is shown.}
+    \caption[The matches in primary mass/primary radius to our overcontact models.]{The matches in primary mass/primary radius to our overcontact models. Shown here are the \gls{zams} parameters. An asterisk next to the star name indicates that the binary undergoes two periods where it matches the donor mass/radius, and each match is shown. Quoted uncertainties are the 1$\sigma$ confidence levels, and all quantities are (for brevity) always rounded to 2dp.}
     \label{tab:matches_mvps}
-\end{table}
+\end{sidewaystable}
 
 \begin{figure}[!htbp]
     \centering
@@ -226,54 +227,77 @@ As a result, however, there is a dearth of matching models. LSS 3074, TU Muscae,
     \label{fig:accretors_mvps}
 \end{figure}
 
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{images/overcontact_binaries/matching_hrds.pdf}
+    \caption[\acrshortpl{hrd} for the matching overcontact binary models.]{\glspl{hrd} for the matching overcontact binary models. Also shown are the crosses representing the locations of the observed systems as reported in their original papers. The secondary luminosities in particular are not well constrained, and thus their locations must be taken with caution.}
+    \label{fig:accretors_mvps}
+\end{figure}
+
 \section{Matches to observed close contact models}
 
-% From our coarse grid, we are able to identify matches to the observed systems. We first interpolate the matches found by \codename{Hoki} onto our coarse grid. Specifically, in order to preserve the mass ratio as best as possible, we interpolate $m_1$ onto the grid, and then calculate $m_2$ as
+\begin{sidewaystable}[!htbp]
+    \centering
 
-% \begin{equation}
-%     m_2 = \text{round}\left(q\times m_1\right)
-% \end{equation}
+    \begin{tabular}{c|ccc|cccc|cccc|cc}
+        \toprule
+        \multirow{2}{*}{Binary} & \multicolumn{3}{c|}{\gls{zams} parameters} & \multicolumn{4}{c|}{Fiducial details} & \multicolumn{4}{c|}{Match details} & \multicolumn{2}{c}{Matches} \\
+        & $M_1$ & $q$ & $\log P$ & $M_1$ & $R_1$ & $M_2$ & $R_2$ & $M_1$ & $R_1$ & $M_2$ & $R_2$ & *1 & *2 \\
+        \midrule
+        LSS 3074 & 30 & 0.3 & 0.7 & $14.8\pm2.2$ & $7.5\pm0.6$ & $17.2\pm4.2$ & $8.2\pm0.7$ & $13.37\pm0.01$ & $7.40\pm0.33$ & $17.96\pm0.00$ & $4.82\pm0.00$ & \cmark & \xmark$_\text{R}$ \\
+        LSS 3074 & 30 & 0.3 & 0.5 & $14.8\pm2.2$ & $7.5\pm0.6$ & $17.2\pm4.2$ & $8.2\pm0.7$ & $13.73\pm0.63$ & $8.03\pm0.03$ & $18.39\pm0.27$ & $4.82\pm0.03$ & \cmark & \xmark$_\text{R}$ \\
+        \midrule
+        TU Mus & 25 & 0.3 & 0.3 & $16.7\pm1.6$ & $7.2\pm0.5$ & $10.4\pm1.4$ & $5.7\pm0.5$ & $16.50\pm0.59$ & $7.20\pm0.29$ & $11.55\pm0.54$ & $6.17\pm0.06$ & \cmark & \cmark \\
+        TU Mus & 24 & 0.3 & 0.3 & $16.7\pm1.6$ & $7.2\pm0.5$ & $10.4\pm1.4$ & $5.7\pm0.5$ & $16.01\pm0.57$ & $7.24\pm0.27$ & $10.92\pm0.50$ & $6.15\pm0.04$ & \cmark & \cmark \\
+        TU Mus & 23 & 0.3 & 0.3 & $16.7\pm1.6$ & $7.2\pm0.5$ & $10.4\pm1.4$ & $5.7\pm0.5$ & $15.77\pm0.41$ & $7.42\pm0.17$ & $10.07\pm0.32$ & $6.13\pm0.01$ & \cmark & \cmark \\
+        TU Mus & 16 & 0.6 & 0.5 & $16.7\pm1.6$ & $7.2\pm0.5$ & $10.4\pm1.4$ & $5.7\pm0.5$ & $15.91\pm0.01$ & $7.18\pm0.29$ & $9.58\pm0.00$ & $4.36\pm0.04$ & \cmark & \xmark$_\text{R}$ \\
+        TU Mus$^*$ & 16 & 0.6 & 0.3 & $16.7\pm1.6$ & $7.2\pm0.5$ & $10.4\pm1.4$ & $5.7\pm0.5$ & $15.90\pm0.01$ & $7.18\pm0.29$ & $9.58\pm0.00$ & $4.37\pm0.04$ & \cmark & \xmark$_\text{R}$ \\
+        TU Mus$^*$ & 16 & 0.6 & 0.3 & $16.7\pm1.6$ & $7.2\pm0.5$ & $10.4\pm1.4$ & $5.7\pm0.5$ & $15.12\pm0.01$ & $7.69\pm0.01$ & $10.33\pm0.01$ & $5.02\pm0.01$ & \cmark & \xmark$_\text{R}$ \\
+        \midrule
+        V382 Cyg & 50 & 0.2 & 0.7 & $26.1\pm3.2$ & $9.4\pm0.2$ & $19.0\pm4.2$ & $8.7\pm0.2$ & $27.18\pm0.19$ & $9.43\pm0.11$ & $21.16\pm0.17$ & $4.79\pm0.04$ & \cmark & \xmark$_\text{R}$ \\
+        V382 Cyg & 40 & 0.3 & 0.5 & $26.1\pm3.2$ & $9.4\pm0.2$ & $19.0\pm4.2$ & $8.7\pm0.2$ & $24.70\pm0.19$ & $9.40\pm0.11$ & $20.05\pm0.19$ & $6.40\pm0.30$ & \cmark & \xmark$_\text{R}$ \\
+        V382 Cyg & 40 & 0.4 & 0.5 & $26.1\pm3.2$ & $9.4\pm0.2$ & $19.0\pm4.2$ & $8.7\pm0.2$ & $23.61\pm0.41$ & $9.54\pm0.03$ & $26.69\pm0.21$ & $6.72\pm0.02$ & \cmark & \xmark$_\text{MR}$ \\
+        V382 Cyg & 30 & 0.4 & 0.7 & $26.1\pm3.2$ & $9.4\pm0.2$ & $19.0\pm4.2$ & $8.7\pm0.2$ & $29.24\pm0.03$ & $9.43\pm0.10$ & $12.00\pm0.00$ & $4.70\pm0.01$ & \cmark & \xmark$_\text{MR}$ \\
+        V382 Cyg & 30 & 0.4 & 0.5 & $26.1\pm3.2$ & $9.4\pm0.2$ & $19.0\pm4.2$ & $8.7\pm0.2$ & $29.17\pm0.04$ & $9.40\pm0.12$ & $12.00\pm0.00$ & $4.70\pm0.01$ & \cmark & \xmark$_\text{MR}$ \\
+        V382 Cyg & 30 & 0.5 & 0.7 & $26.1\pm3.2$ & $9.4\pm0.2$ & $19.0\pm4.2$ & $8.7\pm0.2$ & $29.24\pm0.03$ & $9.42\pm0.10$ & $14.98\pm0.00$ & $5.48\pm0.02$ & \cmark & \xmark$_\text{R}$ \\
+        V382 Cyg & 30 & 0.5 & 0.5 & $26.1\pm3.2$ & $9.4\pm0.2$ & $19.0\pm4.2$ & $8.7\pm0.2$ & $29.17\pm0.04$ & $9.40\pm0.12$ & $14.98\pm0.00$ & $5.49\pm0.02$ & \cmark & \xmark$_\text{R}$ \\
+        \bottomrule
+    \end{tabular}
+    \caption[The fiducial vs. matched parameters for each of the fourteen overcontact matches we find.]{The fiducial vs. matched parameters for each of the fourteen overcontact matches we find. An asterisk next to the star name indicates that the binary undergoes two periods where it matches the donor mass/radius, and each match is shown. In the ``matches'' column, \cmark represents that both the masses and the radii overlap for a given model, and \xmark represents that at least one of the parameters does not match. In these instances, the parameter(s) which do not match are shown as subscripts next to the cross.}
+    \label{tab:matches_against_fiducial}
+\end{sidewaystable}
 
-% where the round function interpolates back onto the grid. Our matches for the systems LSS 3074, MY Cam, V382 Cygni, and VFTS 352 are shown in \Cref{fig:gridmatches}. We observe that on this coarse grid, we match V382 Cyg on two models:
+The matches that we find are shown in \Cref{tab:matches_against_fiducial} next to their search parameters. Three of the binaries have matches on mass and radius for both stars simultaneously. The balance generally do not match on the companion radius, with three systems also failing to match on the companion mass as well. We consider a mass or radius to have overlapped to its fiducial value if the error bars at all overlap, and caveat that the reported error bars on the fiducial parameters are the search uncertainties, as per \Cref{tab:overcontact_binaries}.
 
-% \begin{enumerate}
-%     \item $m_1=\SI{30}{\msun}$, $m_2=\SI{15}{\msun}$, $\log P=\SI{0.6}{\day}$, from an age of \SI{63606358}{\year} to \SI{63611433}{\year} (i.e., a matching time of \SI{5075}{\year}), and
-%     \item $m_1=\SI{40}{\msun}$, $m_2=\SI{10}{\msun}$, $\log P=\SI{0.6}{\day}$, from an age of \SI{34366921}{\year} to \SI{34373848}{\year} (i.e., a matching time of \SI{6927}{\year}).
-% \end{enumerate}
+The three matching systems all model TU Muscae. We show in \Cref{fig:TU_Muscae_fits} the \glspl{hrd} and Kippenhahn diagrams of these three matches. The relative positions of the observations on the \gls{hrd} suggest that a mass ratio inversion occured for this system, and thus our labellings of the primary/secondary are incorrect.
 
-% We also note an absence of matches for two of our systems: TU Mus and SMC 108086
+\begin{figure}
+    \centering
+    \begin{subfigure}[t]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/match_1.pdf}
+        \caption{The first match for TU Muscae.}
+        \label{fig:TU_Muscae_Match1}
+    \end{subfigure}
 
-% \begin{figure}
-%     \centering
-%     \begin{subfigure}[t]{0.49\textwidth}
-%         \centering
-%         \includegraphics[width=\textwidth]{images/overcontact_binaries/grid_matches/LSS_3074.png}
-%         \caption{LSS 3074}
-%         \label{fig:gridmatch_LSS_3074}
-%     \end{subfigure}%
-%     \begin{subfigure}[t]{0.49\textwidth}
-%         \centering
-%         \includegraphics[width=\textwidth]{images/overcontact_binaries/grid_matches/MY_Cam.png}
-%         \caption{MY Cam}
-%         \label{fig:gridmatch_MY_Cam}
-%     \end{subfigure}
+    \begin{subfigure}[t]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/match_2.pdf}
+        \caption{The second match for TU Muscae.}
+        \label{fig:TU_Muscae_Match2}
+    \end{subfigure}
+\end{figure}%
+\begin{figure}\ContinuedFloat
+    \begin{subfigure}[t]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/match_3.pdf}
+        \caption{The third match for TU Muscae.}
+        \label{fig:TU_Muscae_Match3}
+    \end{subfigure}
 
-%     \begin{subfigure}[t]{0.49\textwidth}
-%         \centering
-%         \includegraphics[width=\textwidth]{images/overcontact_binaries/grid_matches/V382_Cyg.png}
-%         \caption{V382 Cyg}
-%         \label{fig:gridmatch_V382_Cyg}
-%     \end{subfigure}%
-%     \begin{subfigure}[t]{0.49\textwidth}
-%         \centering
-%         \includegraphics[width=\textwidth]{images/overcontact_binaries/grid_matches/VFTS_352.png}
-%         \caption{VFTS 352}
-%         \label{fig:gridmatch_VFTS_352}
-%     \end{subfigure}
-
-%     \caption[Detailed models of the close contact binaries found in \Cref{sec:BPASS_data_matching}.]{Detailed models of the close contact binaries found in \Cref{sec:BPASS_data_matching}. Not shown are SMC 108086 and TU Mus, which both only have matches outside of the coarse grid. Also not shown is a match for MY Cam, which has a primary which is more massive than the grid.}
-%     \label{fig:gridmatches}
-% \end{figure}
+    \caption[The three fits for TU Muscae we recover.]{The three fits for TU Muscae we recover. Shown here are the \glspl{hrd} and the Kippenhahn diagrams for both the donor and the accretor. In the Kippenhahn diagrams, the blue line is the helium core, and the red is the \gls{CO_core}.}
+    \label{fig:TU_Muscae_fits}
+\end{figure}
 
 \section{Exotic binaries arising from contact systems}
 
