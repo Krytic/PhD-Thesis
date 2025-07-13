@@ -1,7 +1,6 @@
 % !TEX root = ../../main.tex
 \begin{table}
     \centering
-    \newcommand{\oldstrech}{\arraystretch}
     \renewcommand{\arraystretch}{1.2}
     \begin{tabular}{c|l|c|c|c|c||c|c}
          \toprule
@@ -46,7 +45,7 @@
 
          \bottomrule
     \end{tabular}
-    \renewcommand{\arraystretch}{\oldstrech}
+    \renewcommand{\arraystretch}{\basestretch}
     \caption[Matches from the \textsc{Hoki} \citep{Stevance:2020a} software.]{Matches from the \textsc{Hoki} \citep{Stevance:2020a} software. Masses are measured in solar masses, periods in days, and ages in years. Ages were computed as the mean of the ages in log-space where a match occurs, and similar for the standard deviations.}
     \label{tab:hoki_matches}
 \end{table}

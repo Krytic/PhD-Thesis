@@ -153,12 +153,80 @@ In the remaining cases, the reaction instead produces carbon-12, in the conclusi
 
 \begin{figure}[!htbp]
     \centering
-    \begin{tikzpicture}[xscale=2.5, yscale=2]
+    \begin{tikzpicture}[xscale=2, yscale=1.5]
         \begin{tikz}
             \node (dummy) at (0,0) {};
-            \node (begin) at (-1, 1) {Begin (triple-$\alpha$ process)};
+
+            \draw[dashed, magenta] (1.5, 5.5) rectangle (3.5, 1.5);
+            \node[magenta] at (2.5, 5.3) {\gls{pp_chain}};
+
+            \draw[dashed, cyan] (-0.5, 4.5) rectangle (1.5, 1.5);
+            \node[cyan] at (0.5, 4.3) {\gls{pp1}};
+
+            \draw[dashed, red] (-3.5, 3.5) rectangle (-0.5, 1.5);
+            \node[red] at (-2, 3.3) {Triple-$\alpha$ process};
+
+            \draw[dashed, blue] (-2.5, 1.5) rectangle (4, -9.5);
+            \node[blue] at (0.5, 1.3) {CNO cycle};
+
+            % pp-chain
+
+            \node (H1-1) at (3, 3) {$^1$H};
+            \node (H1-2) at (3, 2) {$^1$H};
+            \node (H2) at (2, 3) {$^2$H};
+            \node (H1-3) at (2, 2) {$^1$H};
+            \node (He3) at (0.5, 3) {$^3$He};
+
+            \node (upper-H1-1) at (3, 4) {$^1$H};
+            \node (upper-H1-2) at (3, 5) {$^1$H};
+            \node (upper-H2) at (2, 4) {$^2$H};
+            \node (upper-H1-3) at (2, 5) {$^1$H};
+            \node (upper-He3) at (0.5, 4) {$^3$He};
+
+            \draw[dashed, ->] (H1-2) -- (H1-1);
+            \draw[dashed, ->] (H1-3) -- (H2);
+            \draw[->] (H1-1) -- (H2);
+            \draw[->] (H2) -- (He3);
+
+            \draw[dashed, ->] (upper-H1-2) -- (upper-H1-1);
+            \draw[dashed, ->] (upper-H1-3) -- (upper-H2);
+            \draw[->] (upper-H1-1) -- (upper-H2);
+            \draw[->] (upper-H2) -- (upper-He3);
+
+            \node (H1-byproduct1) at (1, 2) {$^1$H};
+            \node (H1-byproduct2) at (0, 2) {$^1$H};
+
+            \draw[->] (upper-He3) -- (He3);
+            \draw[->] (He3) -- (H1-byproduct1);
+            \draw[->] (He3) -- (H1-byproduct2);
+
+            \node (He4-2) at (-2, 3) {$^{4}$He};
+
+            \draw[->] (He3) -- (He4-2);
+
+            % Triple-alpha process
+            \node (He4-1) at (-3, 3) {$^{4}$He};
+
+            \node (Be8) at (-2, 2) {$^{8}$Be$^*$};
+            \node (He4-3) at (-3, 2) {$^{4}$He};
 
             \node (C12) at (0, 0) {$^{12}$C};
+            \node (2photons) at (-1, 2) {$2\gamma$};
+
+            \draw[->] (He4-1) -- (He4-2);
+            \draw[->] (He4-2) -- (Be8);
+
+            \draw[->] (He4-3) -- (Be8);
+            \draw[->] (Be8) -- (C12);
+            \draw[->] (Be8) -- (2photons);
+
+            \node (dots1) at (-3, 4) {$\dots$}; % These get produced via their own pp-chains
+            \node (dots2) at (-3, 1) {$\dots$};
+
+            \draw[->] (dots1) -- (He4-1);
+            \draw[->] (dots2) -- (He4-3);
+
+            % CNO cycle
             \node (N13) at (0,-1) {$^{13}$N};
             \node (C13) at (0,-2) {$^{13}$C};
             \node (N14) at (0,-3) {$^{14}$N};
@@ -194,18 +262,18 @@ In the remaining cases, the reaction instead produces carbon-12, in the conclusi
             \node (e+3) at  (1, -8 +0.5) {e$^+$};
             \node (nue3) at (1, -8 -0.5) {$\nu_\text{e}$};
 
-            \draw[->] (begin) -- (C12);
+            % \draw[->] (begin) -- (C12);
 
             \draw[->] (C12) -- (N13); % node[above,midway,sloped]; {produces};
             \draw[->,dotted] (N13) -- (C13); % node[below,midway,sloped] {decays to};
             \draw[->] (C13) -- (N14); % node[above,midway,sloped]; {produces};
             \draw[->] (N14) -- (O15); % node[above,midway,sloped]; {produces};
             \draw[->,dotted] (O15) -- (N15); % node[below,midway,sloped] {decays to};
-            \draw[->] (N15) -- (O16) node[below,midway,sloped] {1/2500};
+            \draw[->] (N15) -- (O16) node[below,midway,sloped] {\tiny{1/2500}};
             \draw[->] (O16) -- (F17); % node[above,midway,sloped]; {produces};
             \draw[->,dotted] (F17) -- (O17); % node[below,midway,sloped] {decays to};
 
-            \draw[->] (N15) -- (2, -5) node[above,midway,sloped] {2499/2500} -- (2, 1) -- (0, 1) -- (C12);
+            \draw[->] (N15) -- (2, -5) node[above,midway,sloped] {\tiny{2499/2500}} -- (2, 1) -- (0, 1) -- (C12);
 
             \draw[->] (2, -5) -- (photon7);
             \draw[->] (2, -5) -- (helium1);
@@ -246,7 +314,7 @@ In the remaining cases, the reaction instead produces carbon-12, in the conclusi
             \draw[->] (2, -7.5) -- (3, -7.5) node[above,midway,sloped] {Reaction product};
         \end{tikz}
     \end{tikzpicture}
-    \caption[A schematic of the CNO cycle.]{A schematic of the CNO cycle. The reaction cycle begins with the triple-$\alpha$ process, producing one $^{12}$C atom from four $^4$He atoms. From there, it is essentially self-sustaining, provided there are protons available to bombard the reactants.}
+    \caption[A schematic of the reactions leading up to the CNO cycle.]{A schematic of the reactions leading up to the CNO cycle. The \gls{pp1} chain is replaced by the \gls{pp2}/\gls{pp3} chain, depending on the temperature of the star. The \glspl{pp_chain} generating the $^4$He atoms on the leftmost side of the chain are omitted for simplicity. Once the $^{15}$N atom has been produced, the reaction cycle is essentially self-sustaining, provided there are protons available to bombard the reactants.}
     \label{fig:cno_cycle_schematic}
 \end{figure}
 
