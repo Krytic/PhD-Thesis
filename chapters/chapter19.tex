@@ -1,4 +1,5 @@
 % !TEX root = ../main.tex
+% !aim: we review the thesis and conclude. (Themes I, II)
 \chapter{Conclusion}\label{chap:conclusion}
 
 % \chapterEpigraph{Take-off is optional. Landing is mandatory.}{First rule of aviation}
@@ -20,17 +21,36 @@ In this chapter, we examine these themes in detail and review the implications o
 
 \mediaepigraph{Oh! I have slipped the surly bonds of Earth\\And danced the skies on laughter-silvered wings;\\...\\And, while with silent lifting mind I've trod\\The high untrespassed sanctity of space,\\Put out my hand, and touched the face of God.}{High Flight}{John Magee Jr.}
 
+In \Cref{chap:he_mass_transfer}, we introduced the notion of helium-rich mass transfer, that being when the mass transfer within a binary continues for a high rate for a long time, thus stripping material from the exposed core of a donor. We found that this produced small differences in the contact phase which were magnified in the post-contact phase. We found that, on net, this produced hotter and at times more luminous accretors in binaries, and concluded that these are potential formation channels for stars such as WN/O3 stars, and may in part explain the discrepancy between spectroscopic and evolutionary masses that persist throughout various modelling efforts.
+
+In \Cref{chap:natal_kicks}, we examined the form and structure of the natal supernova kick. We introduced the \citet{Bray:2016} kick and, by direct comparison with the \citet{Hobbs:2005} kick, developed a testing pipeline with multiple orthogonal constraints. In turn, we were able to constrain the Bray kick based on four fundamental phenomena: the detected \gls{lvk} merger rate (\Cref{sec:merger_rates}), the observed period-eccentricity distribution of Galactic \glspl{bns} (\Cref{sec:per_ecc_dist}), the observed isolated pulsar velocity distribution (\Cref{sec:ssk_vels}), and the existence of \glspl{ussne} (\Cref{sec:ussne_production}). We found that the region of the parameter space that was able to replicate all four phenomena was 1~per~cent of the search region, and concluded that the optimal form of the kick was
+
+\begin{equation}
+    v_\text{kick} = 115^{+40}_{-55} \left(\frac{m_\text{ejecta}}{m_\text{remnant}}\right)+15^{+10}_{-15} \unit{\kilo\meter\per\second}.
+\end{equation}
+
+In \Cref{chap:close_contact}, we began to search for \gls{bpass} matches to six observed close-contact binaries as compiled in \citet{Abdul-masih:2022}. We found 31 matches in the \gls{bpass} v2.2 dataset. Using these 31 matches as a starting grid, and allowing for $\pm\SI{0.1}{\dex}$ in the period grid, we found 15 matching models in total, for LSS 3074, TU Muscae, and V382 Cygni. Of these, three of the models of TU Muscae were found to match the observed masses and radii, with the others all matching on the donors and most frequently failing to match on the radii of the accretors. This was found to not be of large concern, as the companion radius is the most difficult to constrain parameter of the four for an eclipsing binary.
+
 \section{Limitations}
 
 \epigraph{Though in reviewing the incidents of my administration I am unconscious of intentional error, I am nevertheless too sensible of my defects not to think it probable that I may have committed many errors.}{George Washington}
 
-% It is a well-known remark, though attributed to no individual, that Mother Nature is indifferent to humanity. She is also indifferent to our choice of parameters -- whilst we can finetune our parameter selection to approximate to essentially arbitrary precision, we have ultimately used \todo{...?}
+There are three major limitations to our study: that we have assumed circular orbits, that we have focused predominantly on O-type stars, and that we have had to make sometimes seemingly arbitrary parameter choices in order for the code to perform. These are detailed in the following subsections.
 
-\begin{enumerate}
-    \item circular orbits
-    \item o-type stars
-    \item parameter selection
-\end{enumerate}
+\subsection{Circular Orbits}
+
+A common thread throughout the detailed model tracks in this work is the assumption of a circular orbit. Binary stars are not obliged to be circular, and indeed \citet{Moe:2017} suggest quite the opposite; that the eccentricity distribution varies with the stellar type. Generalising our results to arbitrary eccentricity is, however, a complex undertaking for potentially little payoff. \citet{Eldridge:2017} argues, and \citet{Hurley:2002} shows, that the result of a binary computation is the same for an elliptical orbit and a circular orbit, if the circle has a radius equal to the semi-latus rectum of the ellipse. This is illustrated geometrically in \Cref{fig:ellipse_geometry}.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{images/conclusion/ellipse_geometry}
+    \caption[The geometry of an ellipse and the circle with a radius equal to the semi-latus rectum.]{The geometry of an ellipse and the circle with a radius equal to the semi-latus rectum. The ellipse was chosen arbitrarily to have $a = 3, b = 2$.}
+    \label{fig:ellipse_geometry}
+\end{figure}
+
+\subsection{Our parameter choices}
+
+Most of our parameter choices have in some way been physically motivated; for instance the choice of $k$ in \Cref{sec:_acrfull_rlof}, corresponding to the efficiency of \gls{rlof}, was chosen via a combination of work by \citet{Hurley:2002} and \citet{Claeys:2014}. Stellar modelling is a nonlinear task, and the clearest example of this in this thesis is the thermohaline mixing coefficients $\alpha_\text{th}$ in \Cref{chap:he_mass_transfer}, where the interior composition profile was changed quite substantially depending on the strength of the thermohaline mixing. Most of these somewhat arbitrary parameter choices are a reflection of uncertainty in the physics; thermohaline mixing in particular is a difficult process to constrain.
 
 \section{Suggested Future Work}
 
@@ -38,4 +58,31 @@ In this chapter, we examine these themes in detail and review the implications o
 
 \alice
 
-In the future,
+There are multiple avenues open to future research questions with the \codename{stars} code, and in this section we outline but a few.
+
+\Cref{chap:natal_kicks} examined the form and structure of the natal supernova kick, with a particular emphasis on \citet{Bray:2016} type kicks. Looking forward, \gls{lvk} \gls{o4} will soon release, offering more constraints on the observed \gls{bns} merger rate density. In addition...
+
+\Cref{chap:close_contact} explored a rather limited parameter space. The question thus remains, \textit{to what extent do the conclusions drawn hold true on a population of binary stars}, and to much the same extent, \textit{do the population prevalences derived from the \gls{bpass} v2 models match those from a grid of these models}? Exploration of the parameter space is firmly a big data project. For a reasonably trivial grid of $m_1 \in [5, 100] \unit{\msun}$ in steps of \SI{5}{\msun}, $q\in [0, 0.9]$ in steps of 0.1, and $\log P\in[0.5, 3]$ in steps of \SI{0.5}{\dex}, one arrives at 1200 models. Models typically take, conservatively, between \SI{20}{\minute} and \SI{60}{\minute} to run on the cluster, which has up to 72 cores available for use. \Cref{tab:runtimes_for_full_grids} shows some estimated runtimes for different grid fidelities given this setup. An investigation into the population properties would likely need to use model B as a coarse grid and model D as a finer grid, though the span of periods is wider here than is strictly necessary.
+
+\begin{table}[!htbp]
+    \centering
+
+    \begin{tabular}{c|cccc|ccc}
+    \toprule
+     & \multicolumn{4}{c|}{Grid Specification} & \multicolumn{3}{c}{Runtime (DD:HH:MM:SS)} \\
+    Model Name & $\Delta m_1$ & $\Delta q$ & $\Delta \log P$ & $N_\text{models}$ & $\SI{20}{\minute}$ & $\SI{40}{\minute}$ & $\SI{60}{\minute}$ \\
+    \midrule
+        A & 5 & 0.1 & 0.5 & 1200  & 00:05:33:20 & 00:11:06:40 & 00:16:40:00 \\
+        B & 5 & 0.1 & 0.1 & 5200  & 01:00:04:26 & 02:00:08:53 & 03:00:13:20 \\
+        C & 1 & 0.1 & 0.5 & 5760  & 01:02:40:00 & 02:05:20:00 & 03:08:00:00 \\
+        D & 1 & 0.1 & 0.1 & 24960 & 04:19:33:20 & 09:15:06:40 & 14:10:40:00 \\
+    \bottomrule
+    \end{tabular}
+
+    \caption[The runtimes for a grid of \codename{stars} models on a 72-core cluster, assuming each model takes $\SI{20}{\minute}$/$\SI{40}{\minute}$/$\SI{60}{\minute}$ respectively.]{The runtimes for a grid of \codename{stars} models on a 72-core cluster, assuming each model takes $\SI{20}{\minute}$/$\SI{40}{\minute}$/$\SI{60}{\minute}$ respectively. This calculation assumes all cores begin operating simultaneously, and that runs are homogeneous; that any two runs have the same run time. In this grid, $m_1 \in [5, 100] \unit{\msun}, q\in [0, 0.9],$ and $\log P\in[0.5, 3]$.}
+    \label{tab:runtimes_for_full_grids}
+\end{table}
+
+Looking towards the western horizon, the \gls{bpass} project and other similar population synthesis codes will soon be releasing new versions. The \codename{stars} code seems uniquely positioned, especially compared to alternatives such as \codename{mesa}, to offer new and exciting insights into the field of binary stellar evolution.
+
+\epigraph{And that is something you might not have known.}{Tom Scott}

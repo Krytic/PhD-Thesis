@@ -1,4 +1,5 @@
 % !TEX root = ../main.tex
+% !aim: we present the results of our stellar evolution codes in the interesting case when both stars almost (or in some instances, do) touch. (Theme I)
 \chapter{Detailed Models of Overcontact Binary Stars}\label{chap:close_contact}
 
 \chapterEpigraph{The fault, dear Brutus, is not in our stars, but in ourselves.}{Julius Caesar, Act I, Scene II}
@@ -129,15 +130,58 @@ To determine the likely future history of this sample, we must use the \codename
     \label{fig:hoki_matches_HRD_primaries}
 \end{figure}
 
+\begin{figure}
+    \centering
+    \begin{subfigure}[t]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/LSS_3074_v2_MvP.pdf}
+        \caption{LSS 3074}
+        \label{fig:mvp_hoki_LSS_3074}
+    \end{subfigure}%
+    \begin{subfigure}[t]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/MY_Cam_v2_MvP.pdf}
+        \caption{MY Camelopardalis}
+        \label{fig:mvp_hoki_MY_Cam}
+    \end{subfigure}
+
+    \begin{subfigure}[t]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/SMC_108086_v2_MvP.pdf}
+        \caption{SMC 108086}
+        \label{fig:mvp_hoki_SMC_108086}
+    \end{subfigure}%
+    \begin{subfigure}[t]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/TU_Mus_v2_MvP.pdf}
+        \caption{TU Muscae}
+        \label{fig:mvp_hoki_TU_Mus}
+    \end{subfigure}
+
+    \begin{subfigure}[t]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/V382_Cyg_v2_MvP.pdf}
+        \caption{V382 Cygni}
+        \label{fig:mvp_hoki_V382_Cyg}
+    \end{subfigure}%
+    \begin{subfigure}[t]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/overcontact_binaries/VFTS_352_v2_MvP.pdf}
+        \caption{VFTS 352}
+        \label{fig:mvp_hoki_VFTS_352}
+    \end{subfigure}
+
+    \caption[\acrshort{bpass} v2 model tracks for our six close-contact binaries.]{\acrshort{bpass} v2 model tracks for our six close-contact binaries. Models shown are restricted to only during their core hydrogen burning phase, which for this plot we assume to be when the helium core mass $M_\text{He} < \SI[print-unity-mantissa=false]{1e-5}{\msun}$. The $x$-axis is limited to double the maximum value of the observed radius.}
+    \label{fig:matches_MVP_primaries_v2}
+\end{figure}
+
 The full future history is completed by examining the remnants. To account for the uncertainties present in the natal kick prescription (\Cref{chap:natal_kicks}), we consider three kick prescriptions: the \citet{Hobbs:2005} and \citet{Richards:2023} kicks from \Cref{chap:natal_kicks}, and the bimodal \citet{Verbunt:2017} kick. For each binary, we compute the post-supernova kick parameters $M_1, M_2, a_0$ and $e_0$ in the same way as in \Cref{chap:natal_kicks}, and use these to calculate the coalescence time in \si{\giga\year}.
 
-For each system, we record the type of binary left after the secondary supernova -- \gls{nsbh}, \gls{bhwd}, \gls{nswd}, \gls{bns}, \gls{bbh}. If the mean eccentricity is less than zero or strictly greater than one, we record it as an Unbound system, and present the percentage of systems in which the binary unbinds. If the binary remains bound, we present the coalescence time, which is allowed to be arbitrarily large (with the largest being \SI{1.75}{\peta\year}).
+For each system, we record the type of binary left after the secondary supernova -- \gls{nsbh}, \gls{bhwd}, \gls{nswd}, \gls{bns}, \gls{bbh}. If the mean eccentricity is less than zero or strictly greater than one, we record it as an Unbound system, and present the percentage of systems in which the binary unbinds. If the binary remains bound, we present the coalescence time, which is allowed to be arbitrarily large (with the largest being \SI{1.75}{\peta\year}). In practice arbitrarily large coalescence times are likely unphysical, with \unit{\peta\year} coalescence times approaching the end of the stelliferous era. Nevertheless, we include them as predictions made by the integration of the equations of \citet{Peters:1964}.
 
 We assume that a white dwarf is left if the \gls{CO_core} mass of the star is less than \SI{1.38}{\msun}, the total mass of the star is less than \SI{1.5}{\msun}, or if core carbon burning does not occur. Otherwise, we assume that remnants with $M_\text{rem} \leq \SI{2.5}{\msun}$ leave behind a \gls{ns}, and otherwise a \gls{bh} is left.
 
-We present these results in \Cref{tab:remnant_types}. We can see a number of extremely low-mass \glspl{wd}, the lightest of which are \SI{0.28}{\msun}, barely above the current lowest-mass \gls{wd} \citep[\SI{0.17}{\msun};][]{Kilic:2007}. It is possible that these may be numerical artefacts, and that the supernova has either destroyed the star leaving effectively no remnant, or that the stars merged during the supernova event. This would be compounded by the stars appearing to be unbound, with high frequency. The \codename{tui} code does not record whether a merger occurs during the supernova, so this is not possible to test given the current architecture of the data.
-
-\input{chapters/tables/remnant_table}
+We present these results in \Cref{chap:overcontact_binary_remnants}. We can see a number of extremely low-mass \glspl{wd}, the lightest of which are \SI{0.28}{\msun}, barely above the current lowest-mass \gls{wd} \citep[\SI{0.17}{\msun};][]{Kilic:2007}. It is possible that these may be numerical artefacts, and that the supernova has either destroyed the star leaving effectively no remnant, or that the stars merged during the supernova event. This would be compounded by the stars appearing to be unbound, with high frequency. The \codename{tui} code does not record whether a merger occurs during the supernova, so this is not possible to test given the current architecture of the data.
 
 \section{Forward evolution}\label{sec:forward_evolution}
 
@@ -186,7 +230,7 @@ In terms of periods, we examine the models at three periods. First is the fiduci
         \label{fig:hoki_VFTS_352}
     \end{subfigure}
 
-    \caption[Detailed model tracks for our six close-contact binaries.]{Detailed model tracks for our six close-contact binaries. Models shown are restricted to only during their core hydrogen burning phase. The $x$-axis is limited to double the maximum value of the observed period.}
+    \caption[Detailed model tracks for our six close-contact binaries.]{Detailed model tracks for our six close-contact binaries. Models shown are restricted to only during their core hydrogen burning phase. The $x$-axis is limited to double the maximum value of the observed radius.}
     \label{fig:matches_MVP_primaries}
 \end{figure}
 
@@ -255,7 +299,7 @@ As a result, however, there is a dearth of matching models. LSS 3074, TU Muscae,
 
     \begin{tabular}{c|ccc|cccc|cccc|cc}
         \toprule
-        \multirow{2}{*}{Binary} & \multicolumn{3}{c|}{\gls{zams} parameters} & \multicolumn{4}{c|}{Fiducial details} & \multicolumn{4}{c|}{Match details} & \multicolumn{2}{c}{Matches} \\
+        \multirow{2}{*}{Binary} & \multicolumn{3}{c|}{\gls{zams} parameters} & \multicolumn{4}{c|}{Observed details} & \multicolumn{4}{c|}{Match details} & \multicolumn{2}{c}{Matches} \\
         & $M_1$ & $q$ & $\log P$ & $M_1$ & $R_1$ & $M_2$ & $R_2$ & $M_1$ & $R_1$ & $M_2$ & $R_2$ & *1 & *2 \\
         \midrule
         LSS 3074 & 30 & 0.3 & 0.7 & $14.8\pm2.2$ & $7.5\pm0.6$ & $17.2\pm4.2$ & $8.2\pm0.7$ & $13.37\pm0.01$ & $7.40\pm0.33$ & $17.96\pm0.00$ & $4.82\pm0.00$ & \cmark & \xmark$_\text{R}$ \\
@@ -277,11 +321,11 @@ As a result, however, there is a dearth of matching models. LSS 3074, TU Muscae,
         V382 Cyg & 30 & 0.5 & 0.5 & $26.1\pm3.2$ & $9.4\pm0.2$ & $19.0\pm4.2$ & $8.7\pm0.2$ & $29.17\pm0.04$ & $9.40\pm0.12$ & $14.98\pm0.00$ & $5.49\pm0.02$ & \cmark & \xmark$_\text{R}$ \\
         \bottomrule
     \end{tabular}
-    \caption[The fiducial vs. matched parameters for each of the fourteen overcontact matches we find.]{The fiducial vs. matched parameters for each of the fourteen overcontact matches we find. An asterisk next to the star name indicates that the binary undergoes two periods where it matches the donor mass/radius, and each match is shown. In the ``matches'' column, \cmark represents that both the masses and the radii overlap for a given model, and \xmark represents that at least one of the parameters does not match. In these instances, the parameter(s) which do not match are shown as subscripts next to the cross.}
+    \caption[The observed vs. matched parameters for each of the fourteen overcontact matches we find.]{The observed vs. matched parameters for each of the fourteen overcontact matches we find. An asterisk next to the star name indicates that the binary undergoes two periods where it matches the donor mass/radius, and each match is shown. In the ``matches'' column, \cmark represents that both the masses and the radii overlap for a given model, and \xmark represents that at least one of the parameters does not match. In these instances, the parameter(s) which do not match are shown as subscripts next to the cross.}
     \label{tab:matches_against_fiducial}
 \end{sidewaystable}
 
-The matches that we find are shown in \Cref{tab:matches_against_fiducial} next to their search parameters. Three of the binaries have matches on mass and radius for both stars simultaneously. The balance generally do not match on the companion radius, with three systems also failing to match on the companion mass as well. We consider a mass or radius to have overlapped to its fiducial value if the error bars at all overlap, and caveat that the reported error bars on the fiducial parameters are the search uncertainties, as per \Cref{tab:overcontact_binaries}.
+The matches that we find are shown in \Cref{tab:matches_against_fiducial} next to their search parameters. Three of the binaries have matches on mass and radius for both stars simultaneously. The balance generally do not match on the companion radius, with three systems also failing to match on the companion mass as well. We consider a mass or radius to have overlapped to its observed value if the error bars at all overlap, and caveat that the reported error bars on the observed parameters are the search uncertainties, as per \Cref{tab:overcontact_binaries}.
 
 The three matching systems all model TU Muscae. We show in \Cref{fig:TU_Muscae_fits} the \glspl{hrd} and Kippenhahn diagrams of these three matches. The relative positions of the observations on the \gls{hrd} suggest that a mass ratio inversion occured for this system, and thus our labellings of the primary/secondary are incorrect.
 
@@ -318,17 +362,21 @@ The three matches for TU Muscae differ only by their initial masses. The primary
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{images/overcontact_binaries/TU_Muscae_full_match_abundance_profiles.pdf}
-    \caption[The abundance profile of hydrogen, helium, carbon, and oxygen in the matching model of TU Muscae.]{The abundance profile of hydrogen, helium, carbon, and oxygen in the matching model of TU Muscae. Nitrogen is not shown, as the abundance of nitrogen through the model is low. Neon and magnesium were not recorded in this run.}
+    \caption[The abundance profile of hydrogen, helium, carbon, and oxygen in the best matching model of TU Muscae.]{The abundance profile of hydrogen, helium, carbon, and oxygen in the best matching model of TU Muscae. Nitrogen is not shown, as the abundance of nitrogen through the model is low. Neon and magnesium were not recorded in this run.}
     \label{fig:TU_Muscae_abundance_profile}
 \end{figure}
 
-\section{Exotic binaries arising from contact systems}
+% \section{Exotic binaries arising from contact systems}
 
-\subsection{Double contact systems}\label{sec:multiply_interacting}
+% \subsection{Double contact systems}\label{sec:multiply_interacting}
 
-\subsection{Reverse mass transfer}\label{sec:reverse_MT}
+% \subsection{Reverse mass transfer}\label{sec:reverse_MT}
 
-\subsection{Overflow through \texorpdfstring{$\mathcal{L}_2$}{the outer Lagrange point}}
+% \subsection{Overflow through \texorpdfstring{$\mathcal{L}_2$}{the outer Lagrange point}}
+
+\section{Discussion}
+
+The most obvious limitation is that we were able to only produce three matching systems on one of the six close-contact binaries. \Cref{fig:matches_MVP_primaries} shows that, especially for SMC 108086 and MY Caamelopardalis, the parameter space exploration was insufficient and that, were the space widened, more matches may be able to be found.
 
 \section{Chapter Summary}
 

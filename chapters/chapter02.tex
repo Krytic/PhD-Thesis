@@ -1,4 +1,5 @@
 % !TEX root = ../main.tex
+% !aim: we provide the necessary theoretical background for future chapters, critically examine the pieces of software and numerical methods employed in this work, and discuss the logistics of running this single-thread grid-based code as a multiprocessed code on a distributed cluster.
 \chapter{Theoretical Background}\label{chap:theoretical_background}
 
 \chapterEpigraph{Se'i lua'i lou le 'ulu taumamao.\\Pick the breadfruits on the far-off branches first}{S\=amoan proverb}
@@ -969,7 +970,7 @@ The second modification we have made is that if a star has a hydrogen exhausted 
 
 Mathematically, the computation for $\dot{M}_\text{wind}$ is more involved, though follows the same essential structure as \citet{Vink:2001}. Details are provided in \Cref{chap:mass_loss_construction}.
 
-\subsubsection{\acrfull{rlof}}
+\subsubsection{\acrfull{rlof}}\label{sec:_acrfull_rlof}
 
 % \mediaepigraph{Your [roeche loebe overflaew] partner deserves better traetment!}{Baron from the Baronies}{Dimension 20: Fantasy High: Sophomore Year}
 
@@ -979,7 +980,7 @@ Matter extruded from the Lagrangian points is assumed to transfer with a mass lo
     \dot{M}_\text{RLOF} = \min\left(k\mathcal{R}\left(\frac{R}{R_\text{RL}}\right)^3,10^{-2}\right) \unit{\msun\per\year}.
 \end{equation}
 
-Here, $k$ (referred to in our code as RMT) parameterises effectively how much of the star we permit to exist outside of its Roche lobe before it is accreted -- i.e., the voracity of \gls{rlof}. The choice of this can be somewhat arbitrary. \citet{Hurley:2002} for example took $k=\num{3e-6}\min\left\{M_1, 5\right\}^2$, where the coefficient was ``chosen by experiment to ensure that the mass transfer is steady'', and warned that for degenerate stars a more appropriate choice would be to increase this by a factor of $10^3$. We choose to adopt $k=\num{3e-6}\times10^3=\num{3e-3}$, with no dependence on the mass. This permits the star to overfill its Roche lobe even in tight binaries, but still allows efficient mass transfer.
+Here, $k$ (referred to in our code as RMT) parameterises effectively how much of the star we permit to exist outside of its Roche lobe before it is accreted -- i.e., the voracity of \gls{rlof}. The choice of this can be somewhat arbitrary. \citet{Hurley:2002} for example took $k=\num{3e-6}\min\left\{M_1, 5\right\}^2$, where the coefficient was ``chosen by experiment to ensure that the mass transfer is steady'', and warned that for degenerate stars a more appropriate choice would be to increase this by a factor of $10^3$, corroborated by \citet{Claeys:2014}. We choose to adopt $k=\num{3e-6}\times10^3=\num{3e-3}$, with no dependence on the mass. This permits the star to overfill its Roche lobe even in tight binaries, but still allows efficient mass transfer.
 
 Matter exceeding $\mathcal{L}_2$ (the outer Lagrange point) does not currently receive special treatment. The implications of $\mathcal{L}_2$ overflow are significant. This ejection will lead to unstable mass transfer, shrinking the orbit and likely inducing a \gls{cee} event \citep{Fragos:2023}. There is debate about the appropriate treatment here. \citet{Linial:2017} indexes the $\mathcal{L}_2$ rate to the $\mathcal{L}_1$ rate via an efficiency parameter. \citet{Li:2013} considers the case analogous to $\mathcal{L}_1$ outflow, where material outflowing from $\mathcal{L}_2$ acts to retard the angular momentum. In their notation $\dv{J}{t}=-\epsilon\dot{M}_1 a_{L2}^2\omega$ (compare $\dv{J}{t}=-\beta\dot{M}_1 a_{L1}^2\omega$ for \gls{rlof} through $\mathcal{L}_1$) for controllable parameters $\beta$ and $\epsilon$. The ambiguity of treatment leads to some codes to terminate at the onset of $\mathcal{L}_2$ outflow, such as \codename{Posydon} \citep{Fragos:2023}. $\mathcal{L}_2$ outflow requires stars to be in reasonably tight orbits ($\sim\SI{2}{\day})$, which we will approach, but none of our stars will enter this regime, and thus we do not afford it special treatment.
 
@@ -1028,7 +1029,17 @@ Generalising this to an eccentric orbit causes the first argument in \Cref{eq:bo
 ``If you wish.''\\
 ``I don’t wish. Get on with the story.''}{Rhythm of War}{Brandon Sanderson}
 
-After a supernova, the star leaves behind its core as a compact remnant. Generally, these are either black holes or neutron stars. The interior of a neutron star is reasonably complex, with superfluid neutrons within the crust \citep{Lattimer:2001} and a latticed core-crust interface \citep{Rueda:2014}, with ``pasta phases'' at the interface \citep{Zdunik:2017}. The interior of a black hole is impossible to observationally probe without violating causality. Their orbital motions are now deterministic from four initial parameters: $m_1, m_2, a$, and $e$. Given their high masses and small radii, we may approximate them as point masses, and thus their motion is now wholly determined by the emission of gravitational radiation through (detectable) gravitational waves. The pertinent equations of motion are given by \citet{Peters:1964}, namely,
+After a supernova, the star leaves behind its core as a compact remnant. Generally, these are either black holes or neutron stars. The interior of a neutron star is reasonably complex, with superfluid neutrons within the crust \citep{Lattimer:2001} and a latticed core-crust interface \citep{Rueda:2014}, with ``pasta phases'' at the interface \citep{Zdunik:2017}. The interior of a black hole is impossible to observationally probe without violating causality.
+
+The supernova ejects some fraction of material $M_\text{ej}$, leaving behind a remnant of mass $M_\text{rem}$. \citet{Eldridge:2004} gives a relationship between ejecta, remnant, and stellar masses by assuming a supernova releases \SI[print-unity-mantissa=false]{1e46}{\joule} of energy, of which 1~per~cent is transferred into the envelope. The full relation between the binding energy $U$, the stellar mass $M_*$, and the ejecta and remnant masses is thus
+
+\begin{equation}
+    \int_{M_\text{rem}}^{M_*} \left(U-\frac{GM}{r(M)}\right)\dd{M} = \SI[print-unity-mantissa=false]{1e44}{\joule},
+\end{equation}
+
+where $r(M)$ is the radius of the sphere containing mass $M$ of the star.
+
+The orbital motions of a binary system post-secondary supernova are now deterministic from four initial parameters: $m_1, m_2, a$, and $e$. Given their high masses and small radii, we may approximate them as point masses, and thus their motion is now wholly determined by the emission of gravitational radiation through (detectable) gravitational waves. The pertinent equations of motion are given by \citet{Peters:1964}, namely,
 
 \begin{align}
     \dv{a}{t} &= \frac{-\beta}{a^3\left(1-e^2\right)^\frac72}\left(1+\frac{73}{24}e^2+\frac{37}{96}e^4\right), \label{eq:dadt}\\
@@ -1055,7 +1066,7 @@ then the time from the second supernova to the conclusion of the inspiral, terme
 
 The derivations for \Cref{eq:dadt,eq:dedt,eq:coalescence_time} are given in \Cref{chap:additional_derivations}. The integral has no closed-form solution, and a numerical integrator is typically used to compute the coalescence time. However, some approximations such as \citet{Mandel:2021a} do exist and approximate the coalescence time rather well over the entire range of mass ratios.
 
-\subsection{Merger Rates of compact binaries}
+\subsection{Merger rates of compact binaries}
 
 The merger rate of a population of compact binaries at time $t$ after formation can be formalised via the heuristic
 
@@ -1085,7 +1096,7 @@ where $\hat{\Gamma}$ and $\Gamma$ are the upper incomplete and complete Gamma fu
     \Psi(z,Z) = 0.015\int_{z_1}^{z_2} \frac{(1+z)^{2.7}}{1+\left(\frac{1+z}{2.9}\right)^{5.6}}\frac{\hat{\Gamma}\left[0.84, \left(\frac{Z}{Z_\odot}\right)^2\cdot 10^{0.3z}\right]}{\Gamma\left(0.84\right)}~\mathrm{d}z,
 \end{equation}
 
-where $z_1$ and $z_2$ are the redshifts of our bin edges. The event rate as a function of time, $\mathcal{R}(t)$, is therefore given by
+where $z_1$ and $z_2$ are the redshifts of our bin edges. The event rate as a function of time, $\mathcal{R}(t)$, is therefore given by the convolution
 
 \begin{equation}
     \mathcal{R}(t) = \Psi(z_t) * m(t),\label{eq:event_rate_distribution} %= \int_0^\infty m(z_t) \cdot 0.015\int_{z_1}^{z_2} \frac{(1+z-z')^{2.7}}{1+\left(\frac{1+z-z'}{2.9}\right)^{5.6}}\frac{\hat{\Gamma}\left[0.84, \left(\frac{Z}{Z_\odot}\right)^2\cdot 10^{0.3(z-z')}\right]}{\Gamma\left(0.84\right)}~\mathrm{d}z~\mathrm{d}z',
@@ -1097,13 +1108,13 @@ where $z_t$ is the redshift corresponding to lookback time $t$, given by the sol
     t = t_\text{H} \int_0^{z_t} \frac{\dd{z^\prime}}{\pqty{1+z^\prime}\sqrt{\Omega_\text{M}\pqty{1+z^\prime}^3+\Omega_\text{k}\pqty{1+z^\prime}^2+\Omega_\Lambda}},
 \end{equation}
 
-with $t_\text{H}$ the Hubble time, and $\Omega_\text{M}, \Omega_\text{k}, \Omega_\Lambda$ the matter density, curvature parameter, and cosmological constant density parameter of the Universe. In general this integral does not have a solution, however in the case of $\Lambda$CDM with Hubble constant $H_0=\SI{70}{\km\per\second\per\mega\pc}$ as outlined above, an exact solution for redshift is
+with $t_\text{H}$ the Hubble time, and $\Omega_\text{M}, \Omega_\text{k}, \Omega_\Lambda$ the matter density, curvature parameter, and cosmological constant density parameter of the Universe. In general this integral does not have a closed-form solution, however in the case of a flat Universe with $\Omega_\text{k}=0$, an exact solution for redshift\footnote{Integral was computed via \codename{Sympy}.} is
 
 \begin{equation}
-z = \pqty{\frac{a}{\sinh\pqty{\frac{b \operatorname{asinh}{\left(a \right)} + t}{b}}}}^\frac23 - 1,
+z = \pqty{\frac{a}{\sinh\pqty{\operatorname{asinh}{\left(a \right)}+\frac{t}{b}}}}^\frac23 - 1,
 \end{equation}
 
-where $a = \sqrt{\frac73}, b = \frac{1}{105\sqrt{0.7}}$.\footnote{In general in a flat Universe (with $\Omega_\text{k}=0$), $a=\sqrt{\frac{\Omega_\Lambda}{\Omega_\text{M}}}$, and $b=\frac{1}{H_0}\frac{2}{3\sqrt{\Omega_\text{M}}}$. This integral was computed via \textsc{Sympy}.} Detail on how the convolution in \Cref{eq:event_rate_distribution} is computed may be found in \citet{Richards:2021}.
+where $a=\sqrt{\frac{\Omega_\Lambda}{\Omega_\text{M}}}$, and $b=\frac{1}{H_0}\frac{2}{3\sqrt{\Omega_\text{M}}}$. Detail on how the convolution in \Cref{eq:event_rate_distribution} is computed may be found in \citet{Richards:2021}.
 
 \section{Numerical implementation}
 
@@ -1246,7 +1257,7 @@ The method to overcome this numerical instability is involved and not fully impl
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=\textwidth]{images/TheorySection/helium_flash_kippenhahn.pdf}
-    \caption[The helium flash shown on a Kippenhahn diagram.]{The helium flash (gray line) shown on a Kippenhahn diagram. The total mass is shown as the solid gray line, and the \acrshort{CO_core} mass is shown in red. The green lines show the boundaries of the convective regions of the star. Due to computational limitations in the rendering of the model, only every 20 timesteps were sampled for the plot.}
+    \caption[The helium flash shown on a Kippenhahn diagram.]{The helium flash (gray line) shown on a Kippenhahn diagram. The total mass is shown as the solid gray line, and the \acrshort{CO_core} mass is shown in red. The green lines show the boundaries of the convective regions of the star.}
     \label{fig:pseudoevolved_kippenhahn}
 \end{figure}
 

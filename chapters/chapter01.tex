@@ -1,5 +1,5 @@
 % !TEX root = ../main.tex
-
+%! aim: we introduce the thesis
 \chapter{Introduction}\label{chap:introduction}
 
 % \epigraph{``If you're in a bath at the bottom of a lake, are you in a bath, or in a canoe?'' Then you're in a bath, because if its sunk, its a shit canoe}{KatDoesMaths}
@@ -147,18 +147,21 @@ There are essentially two major themes guiding this research.
 
 This thesis is, broadly, a tour of the structure and evolution of binary stars from \gls{zams} to their eventual merger, and has been structured to approximately follow this life cycle. The thesis is structured as follows:
 
+% begin structure
 \begin{enumerate}
-	\item In \Cref{chap:theoretical_background}, we provide the necessary theoretical background for future chapters, critically examine the pieces of software and numerical methods employed in this work, and discuss the logistics of running this single-thread grid-based code as a multiprocessed code on a distributed cluster.
+    \item In \Cref{chap:theoretical_background}, we provide the necessary theoretical background for future chapters, critically examine the pieces of software and numerical methods employed in this work, and discuss the logistics of running this single-thread grid-based code as a multiprocessed code on a distributed cluster.
     \item In \Cref{chap:he_mass_transfer}, we explore the regime in which mass transfer is assumed to become helium-rich, and the effects on the future evolution of these binaries. (Theme I)
-	\item In \Cref{chap:close_contact}, we present the results of our stellar evolution codes in the interesting case when both stars almost (or in some instances, do) touch. (Theme I)
-	\item In \Cref{chap:natal_kicks}, we examine the kinematics of the post-supernova inspiral and the mechanics of the natal supernova kick. (Theme II)
-	\item In \Cref{chap:conclusion}, we review the thesis and conclude. (Themes I, II)
-	\item In \Cref{chap:appendix:code_samples}, we provide the \codename{Kaitiaki} code necessary to generate the models for certain stellar evolution plots throughout the thesis. (Theme I)
-	\item In \Cref{chap:appendix:code_versions}, we list the codes employed and their versions, as well as the default parameter choices we make for our stellar evolution models (Theme I).
-	\item In \Cref{chap:ligo_contour_results}, we present period-eccentricity distributions for the \acrshort{lvk} \acrshort{o3} contour (Theme II).
+    \item In \Cref{chap:natal_kicks}, we examine the kinematics of the post-supernova inspiral and the mechanics of the natal supernova kick. (Theme II)
+    \item In \Cref{chap:close_contact}, we present the results of our stellar evolution codes in the interesting case when both stars almost (or in some instances, do) touch. (Theme I)
+    \item In \Cref{chap:conclusion}, we review the thesis and conclude. (Themes I, II)
+    \item In \Cref{chap:appendix:code_samples}, we provide the \codename{Kaitiaki} code necessary to generate the models for certain stellar evolution plots throughout the thesis. (Theme I)
+    \item In \Cref{chap:appendix:code_versions}, we list the codes employed and their versions, as well as the default parameter choices we make for our stellar evolution models (Theme I).
+    \item In \Cref{chap:ligo_contour_results}, we present period-eccentricity distributions for the \acrshort{lvk} \acrshort{o3} contour (Theme II).
     \item In \Cref{chap:appendix:bespoke_models}, we present the bespoke contact binary models that we discuss in \Cref{chap:close_contact} (Theme I).
+    \item In \Cref{chap:overcontact_binary_remnants}, we enumerate the predicted remnants produced by the overcontact binaries in \Cref{chap:close_contact}.
     \item In \Cref{chap:additional_derivations}, we present additional derivations for key theoretical expressions from \Cref{chap:theoretical_background}.
     \item In \Cref{chap:mass_loss_construction}, we detail how our wind mass-loss rates are constructed.
 \end{enumerate}
+% end structure
 
 We now move into the more detailed background, and outlay the theory that underpins all of our models.

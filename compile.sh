@@ -6,6 +6,7 @@ print -P '%F{green}Preprocessing thesis...%f '
 python scripts/OrderCodeVersionTable.py
 python scripts/ReallocateBibTokens.py
 python scripts/Trineify.py -ow y
+python scripts/BuildStructure.py
 python scripts/Transclusions.py
 
 latexmk -shell-escape -pdf main.tex
@@ -17,7 +18,7 @@ date --iso-8601='seconds' | tr '\n' ',' >> wc.txt
 pdftotext main.pdf - | tr -d '.' | wc -w >> wc.txt
 print -P "%F{green}Generated word count files%f "
 
-print -P "%F{green}Preprocessing Stage I (parsing todos)...%f "
+print -P "%F{green}Postprocessing Stage I (parsing todos & quotes)...%f "
 python scripts/ParseTodos.py
 python scripts/parsequotes.py
 rm main.todos
