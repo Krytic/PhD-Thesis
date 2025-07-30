@@ -47,6 +47,7 @@
 \usepackage{rotating}
 \usepackage{pifont}% http://ctan.org/pkg/pifont
 \usepackage{pdflscape}
+\usepackage{pgfplots}
 
 \scripturesetup{
   % font=\small,
@@ -61,7 +62,38 @@
 
 \captionsetup{labelfont=bf}
 
-\usetikzlibrary{calc}
+\usetikzlibrary{calc,intersections, pgfplots.fillbetween}
+\makeatletter
+\def\tikz@arc@opt[#1]{% over-write!
+  {%
+    \tikzset{every arc/.try,#1}%
+    \pgfkeysgetvalue{/tikz/start angle}\tikz@s
+    \pgfkeysgetvalue{/tikz/end angle}\tikz@e
+    \pgfkeysgetvalue{/tikz/delta angle}\tikz@d
+    \ifx\tikz@s\pgfutil@empty%
+      \pgfmathsetmacro\tikz@s{\tikz@e-\tikz@d}
+    \else
+      \ifx\tikz@e\pgfutil@empty%
+        \pgfmathsetmacro\tikz@e{\tikz@s+\tikz@d}
+      \fi%
+    \fi
+    \tikz@arc@moveto
+    \xdef\pgf@marshal{\noexpand%
+    \tikz@do@arc{\tikz@s}{\tikz@e}
+      {\pgfkeysvalueof{/tikz/x radius}}
+      {\pgfkeysvalueof{/tikz/y radius}}}%
+  }%
+  \pgf@marshal%
+  \tikz@arcfinal%
+}
+\let\tikz@arc@moveto\relax
+\def\tikz@arc@movetolineto#1{%
+  \def\tikz@arc@moveto{\tikz@@@parse@polar{\tikz@arc@@movetolineto#1}(\tikz@s:\pgfkeysvalueof{/tikz/x radius} and \pgfkeysvalueof{/tikz/y radius})}}
+\def\tikz@arc@@movetolineto#1#2{#1{\pgfpointadd{#2}{\tikz@last@position@saved}}}
+\tikzset{%
+  move to start/.code=\tikz@arc@movetolineto\pgfpathmoveto,%
+  line to start/.code=\tikz@arc@movetolineto\pgfpathlineto}
+\makeatother
 
 \def\supervisorcopy{}
 
@@ -377,23 +409,17 @@
 
     \newpage
 
-    % \index{Appendices}
-
-    % \appendix % From here onwards, chapters are numbered with letters, as is the appendix convention
-
     \begin{appendices}
-
-    \crefalias{chapter}{appendix}
-    \foreach \i in {A, B, ..., Z} {%
-        \edef\FileName{chapters/appendices/appendix\i}%     The % here are necessary to eliminate any
-        \IfFileExists{\FileName}{%  spurious spaces that may get inserted
-            \input{\FileName}%       at these points
-        }
-    }
-
+      \crefalias{chapter}{appendix}
+      \foreach \i in {A, B, ..., Z} {%
+          \edef\FileName{chapters/appendices/appendix\i}%     The % here are necessary to eliminate any
+          \IfFileExists{\FileName}{%                          spurious spaces that may get inserted
+              \input{\FileName}%                              at these points
+          }
+      }
     \end{appendices}
 
-    \backmatter % Denotes the end of the main document content
+    \backmatter%                                              Denotes the end of the main document content
     \makelessfancy
     \bibliographystyle{mnras}
     \bibliography{thesis.bib}

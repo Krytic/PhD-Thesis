@@ -124,7 +124,6 @@ We have already discussed the \gls{pp_chain}, fusing hydrogen into helium and up
 \begin{align*}
     \ce{^4_2He + ^4_2He &\rightleftharpoons ^8_4Be}, \\
     \ce{^8_4Be + ^4_2He &-> ^12_6C + 2\gamma}. \\
-    % \ce{^12_6C + ^4_2He &-> ^16_8O + \gamma{} + \SI{7.162}{\mega\electronvolt}},
 \end{align*}
 
 The CNO cycle generates elements up to fluorine via a branched cyclic reaction. The reactions are presented here, and are summarised in a flow chart in \Cref{fig:cno_cycle_schematic}. The start of the cycle, pre-branch, is given by
@@ -263,46 +262,44 @@ In the remaining cases, the reaction instead produces carbon-12, in the conclusi
             \node (e+3) at  (1, -8 +0.5) {e$^+$};
             \node (nue3) at (1, -8 -0.5) {$\nu_\text{e}$};
 
-            % \draw[->] (begin) -- (C12);
-
-            \draw[->] (C12) -- (N13); % node[above,midway,sloped]; {produces};
-            \draw[->,dotted] (N13) -- (C13); % node[below,midway,sloped] {decays to};
-            \draw[->] (C13) -- (N14); % node[above,midway,sloped]; {produces};
-            \draw[->] (N14) -- (O15); % node[above,midway,sloped]; {produces};
-            \draw[->,dotted] (O15) -- (N15); % node[below,midway,sloped] {decays to};
+            \draw[->] (C12) -- (N13);
+            \draw[->,dotted] (N13) -- (C13);
+            \draw[->] (C13) -- (N14);
+            \draw[->] (N14) -- (O15);
+            \draw[->,dotted] (O15) -- (N15);
             \draw[->] (N15) -- (O16) node[below,midway,sloped] {\tiny{1/2500}};
-            \draw[->] (O16) -- (F17); % node[above,midway,sloped]; {produces};
-            \draw[->,dotted] (F17) -- (O17); % node[below,midway,sloped] {decays to};
+            \draw[->] (O16) -- (F17);
+            \draw[->,dotted] (F17) -- (O17);
 
             \draw[->] (N15) -- (2, -5) node[above,midway,sloped] {\tiny{2499/2500}} -- (2, 1) -- (0, 1) -- (C12);
 
             \draw[->] (2, -5) -- (photon7);
             \draw[->] (2, -5) -- (helium1);
 
-            \draw[->,dashed] (proton1) -- (C12); % node[below,midway,sloped] {bombardment};
-            \draw[->,dashed] (proton2) -- (C13); % node[below,midway,sloped] {bombardment};
-            \draw[->,dashed] (proton3) -- (N14); % node[above,midway,sloped] {bombardment};
-            \draw[->,dashed] (proton4) -- (N15); % node[below,midway,sloped] {bombardment};
-            \draw[->,dashed] (proton5) -- (O16); % node[below,midway,sloped] {bombardment};
-            \draw[->,dashed] (proton6) -- (O17); % node[below,midway,sloped] {bombardment};
+            \draw[->,dashed] (proton1) -- (C12);
+            \draw[->,dashed] (proton2) -- (C13);
+            \draw[->,dashed] (proton3) -- (N14);
+            \draw[->,dashed] (proton4) -- (N15);
+            \draw[->,dashed] (proton5) -- (O16);
+            \draw[->,dashed] (proton6) -- (O17);
 
-            \draw[->] (C12) -- (photon1); % node[above,midway,sloped] {and};
-            \draw[->] (C13) -- (photon2); % node[above,midway,sloped] {and};
-            \draw[->] (N14) -- (photon3); % node[above,midway,sloped] {and};
-            \draw[->] (O15) -- (photon4); % node[above,midway,sloped] {and};
-            \draw[->] (O16) -- (photon5); % node[above,midway,sloped] {and};
-            \draw[->] (F17) -- (photon6); % node[above,midway,sloped] {and};
+            \draw[->] (C12) -- (photon1);
+            \draw[->] (C13) -- (photon2);
+            \draw[->] (N14) -- (photon3);
+            \draw[->] (O15) -- (photon4);
+            \draw[->] (O16) -- (photon5);
+            \draw[->] (F17) -- (photon6);
 
-            \draw[->] (N13) -- (e+1); % node[above,midway,sloped] {and};
-            \draw[->] (N13) -- (nue1); % node[below,midway,sloped] {and};
-            \draw[->] (N15) -- (e+2); % node[above,midway,sloped] {and};
-            \draw[->] (N15) -- (nue2); % node[below,midway,sloped] {and};
-            \draw[->] (O17) -- (e+3); % node[above,midway,sloped] {and};
-            \draw[->] (O17) -- (nue3); % node[below,midway,sloped] {and};
+            \draw[->] (N13) -- (e+1);
+            \draw[->] (N13) -- (nue1);
+            \draw[->] (N15) -- (e+2);
+            \draw[->] (N15) -- (nue2);
+            \draw[->] (O17) -- (e+3);
+            \draw[->] (O17) -- (nue3);
 
             \draw[->] (O17) -- (0, -9) --++ (-2, 0) -- (-2,-3) -- (N14);
 
-            \draw[->] (0, -9) -- (helium2); % node[above,midway,sloped] {and};
+            \draw[->] (0, -9) -- (helium2);
 
             % legend
 
@@ -363,52 +360,6 @@ is employed, where $X_{i,\text{init}}$ is the initial mass fraction of a given e
     \label{tab:initial_abundances}
 \end{table}
 
-% \subsubsection{hydrogen burning: the \acrshort{pp_chain}}
-
-% A star spends $\sim90\%$ of its lifetime on the \gls{ms}, which is where it burns protons (bare hydrogen atoms) into helium. This reaction is called the \gls{pp_chain}, and can be broken up into three potential paths. All three paths begin with the reaction \todo{finish}
-
-% \begin{enumerate}
-%     \item \gls{pp1}:
-%     \item \gls{pp2}:
-%     \item \gls{pp3}:
-% \end{enumerate}
-
-% \subsubsection{The metallicity of the Sun}
-
-% It is often convenient to index our metallicities relative to that of the Sun. To do this, we of course need to know the chemical composition of the Sun. We ignore virtually every isotope of every element in favour of \ce{^56_26Fe} in particular. This is for a few reasons: it is the most stable element of fusion (nuclides higher than \ce{^56_26Fe} will undergo fission to it and nuclides lower than \ce{^56_26Fe} will fuse towards it), it is very abundant observationally, and its absorption lines in spectra are easily distinguishable. Thus we can base our metallicity calculations via a quantity known as the iron-abundance ratio,
-
-% \begin{equation}
-%     \left[\text{Fe/H}\right] = \left.\log_{10}\pqty{\frac{N_\text{Fe}}{N_\text{H}}}\right|_\text{star}-\left.\log_{10}\pqty{\frac{N_\text{Fe}}{N_\text{H}}}\right|_\text{sun},
-% \end{equation}
-
-% where $N_\text{H}$ ($N_\text{Fe}$) is the number of hydrogen (Iron) atoms per unit volume of the sun or star. Mechanically this is represented by
-
-% \begin{equation}
-%     N_\text{X} = N_A \frac{M}{m_\text{X}}
-% \end{equation}
-
-% where $N_A$ is Avogadro's constant ($\sim\SI{6.022e23}{\per\mol}$), $M$ is the mass of element X in the star, and $m_\text{X}$ is the relevant molar mass. For instance, imagining a hypothetical iron-rich star of mass $M$ consisting of 50\% hydrogen and 50\% iron, the [Fe/H] would be
-
-% \begin{align*}
-%     \text{[Fe/H]} &= \left.\log_{10}\pqty{\frac{N_A \frac{M_\text{Fe}}{m_\text{Fe}}}{N_A \frac{M_\text{H}}{m_\text{H}}}}\right|_\text{star}-\left.\log_{10}\pqty{\frac{N_A \frac{M_\text{Fe}}{m_\text{Fe}}}{N_A \frac{M_\text{H}}{m_\text{H}}}}\right|_\text{sun} \\
-%     &= \left.\log_{10}\pqty{\frac{M_\text{Fe}m_\text{H}}{m_\text{Fe}M_\text{H}}}\right|_\text{star}-\left.\log_{10}\pqty{\frac{M_\text{Fe}m_\text{H}}{m_\text{Fe}M_\text{H}}}\right|_\text{sun} \\
-%     &= \left.\log_{10}\pqty{\frac{0.5M m_\text{H}}{m_\text{Fe}\times0.5 M}}\right|_\text{star}-\left.\log_{10}\pqty{\frac{0.002 M_\odot m_\text{H}}{m_\text{Fe}\times0.92 M_\odot}}\right|_\text{sun} \\
-%     &= \left.\log_{10}\pqty{\frac{m_\text{H}}{m_\text{Fe}}}\right|_\text{star}-\left.\log_{10}\pqty{\frac{0.002 M_\odot m_\text{H}}{m_\text{Fe}\times0.92 M_\odot}}\right|_\text{sun} \\
-%     &\sim 2.66
-% \end{align*}
-
-% \todo{if this bit stays, 92\% of the sun being hydrogen and 0.2\% being iron needs a source}
-
-% In this regime, we can express the metallicity as approximately
-
-% \begin{equation}
-%     \mathcal{Z} = 10^{\left[\text{Fe/H}\right]} \mathcal{Z}_\odot,
-% \end{equation}
-% {}
-% and thus by knowing the simple iron content of the Sun or star, we can approximate the metallicity. Our iron-rich ``star'' would thus have a metallicity of approximately 460 times that of the sun.
-
-% \citet{Asplund:2021} presents an estimate \todo{finish sentence}
-
 \subsection{Evolutionary Pathways}
 
 In this section, we examine the three major regimes of stellar evolution for single-stars: low-mass, intermediate-mass, and massive stars. Stars above $M_\text{ZAMS}\approx\SI{80}{\msun}$ are out of the scope of this thesis -- although they exist, and the \gls{bpass} \gls{imf} reaches \SI{300}{\msun} \citep{Eldridge:2017}, the systems of interest in future chapters are at most $\sim\SI{80}{\msun}$, and thus very massive stars are out of scope for this work.
@@ -418,8 +369,6 @@ In this section, we examine the three major regimes of stellar evolution for sin
 Stars below $\approx\SI{0.5}{\msun}$ do not ignite helium, and become helium \glspl{wd}. Above this, they ignite helium degenerately in their cores, leading to thermal runaway. The star can peak at a luminosity close to $10^{11} L_\odot$ (approximately 100 times the peak luminosity of SN 1987A, per Figure 5 of \citet{Arnett:1989}). However, this peak in luminosity is attributable to nuclear fusion in the core, and the energy does not reach the surface, let alone escape into the \gls{ism} -- rather, it is absorbed into the outer layers of the star. During this extremely brief thermal runaway, the luminosity begins to settle and the star is able to continue evolving. Models of low mass stars fail at this stage and care is required to evolve them. This phenomena is called the \textit{helium flash} and is discussed further in \Cref{sec:numerical_instabilities}.
 
 After the ignition of helium, these stars cross the so-called Hertzsprung Gap -- the region where very few stars are observed empirically. This region is bounded (on a colour-magnitude diagram, which is a transform of the \gls{hrd}) by the points $\pqty{M_v, B-V}=\left\{\pqty{2,0.5}, \pqty{-7, 0.1}, \pqty{-6, 1.6}\right\}$ \citep{Hoyle:1960}, where $M_v$ is the V-band magnitude (magnitude in the visual band), and $B-V$ is the colour index of the star. The phenomenon of a gap existing is attributable to the fact that stars cross this gap exceedingly quickly: whereas it spends $\sim90\%$ of its life on the \gls{ms}, it spends $\sim2\%$ of its life crossing the Hertzsprung gap \citep{Hoyle:1960}.
-
-% \footnote{The relationship between a colour-magnitude diagram and the \gls{hrd} is that $\log L=0.4\pqty{M_{\text{bol},\odot}-M_{\text{bol},*}}\simeq0.4\pqty{4.74-M_{v,*}-\text{BC}}$, $\log T=\log\pqty{4600\pqty{\frac{1}{0.92\pqty{B-V}+1.7}+\frac{1}{0.92\pqty{B-V}+0.62}}}$, where BC is a bolometric correction which depends on the stellar type. This expression for the temperature is a fit provided by \citet{Ballesteros:2012}.}
 
 \subsubsection{Intermediate-Mass Stars: \texorpdfstring{$\SI{2}{\msun} < M < \SI{8}{\msun}$}{Stars with between 2 and 8 times the mass of the sun}}\label{sec:intermediate_mass_stars}
 
@@ -450,61 +399,6 @@ Massive stars are the key focal objects of this thesis, and in many ways offer s
     \label{fig:hr_diagram_8msun_star}
 \end{figure}
 
-% \subsection{Relativistic corrections}\label{sec:relativity_exists}
-
-% \epigraph{There's a trick you can use in mathematics called ``not worrying about it''}{Matt Parker}
-
-% This analysis has presumed Newtonian mechanics. However, the mass of stars puts them formally into the general relativistic regime, and thus strictly speaking we should treat this as a problem in full GR. In this approach, we would solve the Einstein Field Equations for the interior of the star:
-
-% \begin{equation}
-%     G_{\mu\nu} + \Lambda g_{\mu\nu} = \kappa T_{\mu\nu},
-% \end{equation}
-
-% with cosmological constant $\Lambda$, stress-energy $T_{\mu\nu}$, and the Einstein tensor $G_{\mu\nu}$ given by
-
-% \begin{align}
-%     G_{\mu\nu} &= R_{\mu\nu}-\frac12 g_{\mu\nu}R \\
-%     &= \tensor{R}{^\lambda_{\mu\lambda\nu}}-\frac12 g_{\mu\nu}\tensor{R}{^\sigma_\sigma} \\
-%     &= \tensor{R}{^\lambda_{\mu\lambda\nu}}-\frac12 g_{\mu\nu}g^{\sigma\gamma}R_{\sigma\gamma} \\
-%     &= \sum_\lambda\tensor{R}{^\lambda_{\mu\lambda\nu}}-\frac12 g_{\mu\nu}\sum_\sigma\sum_\gamma\sum_\alpha g^{\sigma\gamma}\tensor{R}{^\alpha_{\sigma\alpha\gamma}}\label{eq:reintroduce_summands} \\
-%     &= \sum_\lambda\pqty{\tensor{\Gamma}{^\lambda_{\mu\nu,\lambda}}-\tensor{\Gamma}{^\lambda_{\mu\lambda,\nu}}+\sum_\xi\tensor{\Gamma}{^\lambda_{\xi\lambda}}\tensor{\Gamma}{^ \xi_{\mu\nu}}-\sum_\xi\tensor{\Gamma}{^\lambda_{\xi\nu}}\tensor{\Gamma}{^\xi_{\mu\lambda}}} \notag\\
-%     &\phantom{=}-\frac12 g_{\mu\nu}\sum_\sigma\sum_\gamma\sum_\alpha g^{\sigma\gamma}\pqty{\tensor{\Gamma}{^\alpha_{\sigma\gamma,\alpha}}-\tensor{\Gamma}{^\alpha_{\sigma\alpha,\gamma}}+\sum_\xi\tensor{\Gamma}{^\alpha_{\xi\alpha}}\tensor{\Gamma}{^\xi_{\sigma\gamma}}-\sum_\xi\tensor{\Gamma}{^\alpha_{\xi\gamma}}\tensor{\Gamma}{^\xi_{\sigma\alpha}}},
-% \end{align}
-
-% where there is still tensorial shorthand:
-
-% \begin{equation}
-%     \tensor{\Gamma}{^\gamma_{\beta\mu}} \equiv \frac12\sum_\alpha g^{\alpha\gamma}\pqty{g_{\alpha\beta,\mu}+g_{\alpha\mu,\beta}-g_{\beta\mu,\alpha}},
-% \end{equation}
-
-% and the comma-derivative notation is
-
-% \begin{equation}
-%     \phi_{,\mu} \equiv \pdv{\phi}{x^\mu},
-% \end{equation}
-
-% such that, for example,
-
-% \begin{equation*}
-%     g_{\alpha\beta,\mu} = \pdv{g_{\alpha\beta}}{x^\mu}.
-% \end{equation*}
-
-% In \Cref{eq:reintroduce_summands}, we explicitly reinsert the summation symbols to illustrate the number of simultaneous summations that are taking place implicitly. As one can see, this reasonably simple expression balloons quickly into something intractable by hand and time-consuming to evaluate computationally. Although the metric tensor is generally four-dimensional,\footnote{And thus the summation indices run from 1 to 4} such as the Friedmann-Lema\^itre-Robertson-Walker metric \citep{Friedmann:1922, Lemaitre:1931, Robertson:1935, Walker:1937} describing the expansion of the Universe,
-
-
-% \begin{equation*}
-%     g_{\mu\nu} = \begin{pmatrix}
-%             -1 & 0 & 0 & 0 \\
-%             0 & a(t)^2 & 0 & 0 \\
-%             0 & 0 & r^2 & 0 \\
-%             0 & 0 & 0 & r^2\sin^2\theta
-%     \end{pmatrix},
-% \end{equation*}
-
-% it often lacks a closed form, especially on large-scale chaotic behaviour that cannot be locally ``washed out'' (such as how on Universal scales, individual stars can be ignored to describe the homogeneity and isotropy of the Universe), and is obtained via numerical methods.
-
-% This is also not considering complications of writing the stress-energy tensor $T_{\mu\nu}$, which may have its own complex form (again, assuming a closed-form solution \textit{exists}) determined via fluid-mechanical processes. All told, there are 64 equations to be solved instead of 4. In addition, the 64 solutions are ``worse'' to solve: harder to integrate by hand, and requiring greater time complexity. Numerical relativity codes typically simulate one star for the order of kiloseconds of its lifetime \citep[see, for an example,][]{Ud-doula:2013}, and even the most efficient codes take longer than our codes to run. For instance, the \codename{Phantom} \gls{mhd} code \citep{Price:2018} can take several days to run high-resolution models. Consequently, for the number of stars we wish to simulate, we choose to adopt a Newtonian framework.
-
 \subsection{Stellar Atmospheres}
 
 As a final note in the evolution of a single star, we must briefly address what occurs about the photosphere of the star. A star is not a planet -- there is no firm, opaque boundary demarcating the inner of a star from the outer. The common definition of the ``surface'' of a star is the surface of last scattering (equivalently, the photosphere), which is the point radially in which the mean free path $\ell_\gamma$ of a photon emitted from the core of the star becomes meaningfully long (internally, $\ell_\gamma\sim\SI{2}{\cm}$, externally, $\ell_\gamma\sim\SI{4.4}{\pc}$).\footnote{The mean free path is a function of the particle under consideration: for a neutrino, internally $\ell_\nu\sim\SI{32}{\pc}$ and externally $\ell_\nu\sim\SI{81}{\ronna\pc}\sim 3\times10^{18}$ times the diameter of the observable Universe.} However, outflows from the star as well as the potential interaction of a partner in a common-envelope event mean that this surface is not necessarily firm: there is no sharp turn from stellar material to empty space. Thus, the simulation of stellar atmospheres is of interest to the stellar astrophysicist.
@@ -512,8 +406,6 @@ As a final note in the evolution of a single star, we must briefly address what 
 However, this introduces another rather large layer of complexity. The synthesis of stellar spectra is not a trivial task, even without considering the complexity of evolving the star simultaneously. \citet{Groh:2014} is one of the very few instances of coupled spectroscopic calculations with evolutionary calculations, which only evolved a single star. Moreover, this thesis is concerned with detailed modelling of the stellar \textit{interior}, and thus the atmosphere is an interesting sidenote, but one we shall not pursue.
 
 \section{Supernovae}
-
-% \epigraph{He went to the Door and they all followed him. He raised his head and roared "Now it is time!" then louder "Time!"; then so loud that it could have shaken the stars, "\textit{TIME}." The Door flew open.}{C.S Lewis, \textit{The Last Battle}}
 
 \twinEpigraphs{And on the pedestal these words appear:\\
 ``My name is Ozymandias, king of kings:\\
@@ -569,9 +461,6 @@ In any case, the breaking of hydrostatic equilibrium results generally results i
         \node[text width=4cm,align=center,leaf] (typeIIp) at (4*\XScale,-4*\YScale) {Type II-P};
         \node[text width=4cm,align=center,leaf] (typeIIl) at (6*\XScale,-4*\YScale) {Type II-L};
 
-        % \node[text width=4cm,align=center,decisionpoint] (wacky) at (-2*\XScale,-4*\YScale) {Does not fit into other categories};
-        % \node[leaf,text width=2cm,align=center] (typeIIpec) at (1*\XScale,-4*\YScale) {Type IIpec};
-
         \draw[-{Stealth[length=3mm, width=2mm]}] (hydrogen) -> (typeI) node[above,sloped,midway,no] {No};
         \draw[-{Stealth[length=3mm, width=2mm]}] (typeI) -> (typeIa) node[above,sloped,midway,yes] {Yes};
         \draw[-{Stealth[length=3mm, width=2mm]}] (typeI) -> (typeIbc) node[above,sloped,midway,no] {No};
@@ -586,10 +475,8 @@ In any case, the breaking of hydrostatic equilibrium results generally results i
         \draw[-{Stealth[length=3mm, width=2mm]}] (typeIIpl) -> (typeIIp) node[above,sloped,midway,ambig] {Plateau};
         \draw[-{Stealth[length=3mm, width=2mm]}] (typeIIpl) -> (typeIIl) node[above,sloped,midway,ambig] {Decrease};
 
-        % \draw[-{Stealth[length=3mm, width=2mm]}] (wacky) -> (typeIIpec);
         \draw[-{Stealth[length=3mm, width=2mm]}] (supernova) -> (hydrogen);
-        % \draw[-{Stealth[length=3mm, width=2mm]}] (supernova) to [bend right] (wacky);
-        % \draw[-{Stealth[length=3mm, width=2mm]}] (typeIIpl) -> (typeIIpec) node[above,sloped,midway,ambig] {Something else};
+
     \end{tikzpicture}
     \caption[A rough outline of supernova classification.]{A rough outline of supernova classification. One can see that the presence of hydrogen lines distinguishes a Type I from Type II supernova. Type II supernova subtypes are determined by the behaviour of their light curves -- how the apparent magnitude changes against time -- and thus are determined by the luminosity of the supernova, something detailed models are not able to model. On the other hand, the presence of hydrogen/silicon/helium in the supernova is something that detailed codes \textit{are} able to model. There are further delineations into Type Ia/b/c-pec and Type IIpec, denoting peculiar supernovae, however these are rare and are in some sense exception categories, where the behaviour does not fit nicely into a taxonomy tree.}
     \label{fig:supernova_taxonomy}
@@ -609,15 +496,6 @@ Importantly for the nucleosynthesis of iron-group and heavier elements (which ca
 There is another class of supernovae we consider in this thesis, namely type Ia supernovae. These are formed when a \gls{wd} star exceeds the maximum mass by which electron degeneracy pressure can sustain the star. This mass is termed the Chandrasekhar mass, $M_\text{ch}\approx\SI{1.44}{\msun}$, and is derived in \Cref{chap:additional_derivations}. When material accretes onto a white dwarf, its mass will increase, and if the accretion does not stop, the mass will exceed the Chandrasekhar mass. This means electron degeneracy pressure is no longer able to sustain the star, and the core collapses further into a Type Ia (or thermonuclear) supernova.
 
 \section{Two to tango: Binary Evolution}\label{sec:binary_evolution}
-
-% In \Cref{fig:single_vs_binary} we display in three subplots the evolution of an \SI{8}{\msun} single star, a \SI{10}{\msun} single star, and an \SI[parse-numbers=false]{8+10}{\msun} binary with a period of \SI{30}{\day}. The code to run this binary model is given in \Cref{binary_generation}.
-
-% \begin{figure}[!htbp]
-%     \centering
-%     \includegraphics[width=\textwidth]{images/StellarSynthesis/single_vs_binary.png}
-%     \caption[The evolution of an \SI{10}{\msun} (leftmost) and \SI{8}{\msun} (centermost) star as both single stars and as a binary with a period of \SI{30}{\day} (rightmost).]{The evolution of an \SI{10}{\msun} (leftmost) and \SI{8}{\msun} (centermost) star as both single stars and as a binary with a period of \SI{30}{\day} (rightmost). Roche lobe overflow occurs for the primary when it begins to cross the Hertzsprung gap, and for the secondary shortly off the \acrshort{ms}.}
-%     \label{fig:single_vs_binary}
-% \end{figure}
 
 Introducing a second star into the mix complicates the evolution. Whereas before a star losing mass (through, for example, stellar winds) was assumed to eject it into the \gls{ism}, it may now accrete that material directly onto its companion. In addition, either star may in principle increase in radius enough to overlap with its companion, or even touch surfaces -- introducing new dynamics into the mix.
 
@@ -652,88 +530,7 @@ where $T$ is the period of the binary, $M_1$ and $M_2$ the constituent masses, $
 
 \begin{figure}[!htbp]
     \centering
-    % \begin{tikzpicture}
-    %     \draw[gray, thick] (-3, 0) -- (0, 0);
-    %     \draw[gray, thick] (1.5, 0) -- (0, 0);
-    %     \filldraw[blue] (0, 0) circle (2pt);
-
-    %     \node (a) at (-1.5,0.4) {$x_2$};
-    %     \draw[<-] (-3, 0.4) -- (a);
-    %     \draw[->] (a) -- (0,0.4);
-
-    %     \node (b) at (0.75,-0.4) {$x_1$};
-    %     \draw[<-] (0, -0.4) -- (b);
-    %     \draw[->] (b) -- (1.5, -0.4);
-
-    %     \filldraw[black] (-3,0) circle (2pt) node[anchor=east] {$M_2$};
-    %     \filldraw[black] (1.5, 0) circle (2pt) node[anchor=west] {$M_1$};
-
-    %     \node (drawtoB) at (1.1,0.4) {$v_1$};
-    %     \node (drawtoA) at (-2.6,-0.4) {$v_2$};
-
-    %     \draw[->] (-3, 0) edge[bend right] (drawtoA);
-    %     \draw[->] (1.5, 0) edge[bend right] (drawtoB);
-    % \end{tikzpicture}
-    \begin{tikzpicture}
-        \def\xOne{-10}    % x-coordinate of first vertex
-        \def\yOne{0}    % y-coordinate of first vertex
-        \def\xTwo{1.5}    % x-coordinate of second vertex
-        \def\yTwo{0}    % y-coordinate of second vertex
-        \def\fX{0}      % x-coordinate of focus
-        \def\fY{0}      % y-coordinate of focus
-
-        % Calculations
-        \pgfmathsetmacro{\Cx}{(\xOne+\xTwo)/2} % Center x
-        \pgfmathsetmacro{\Cy}{(\yOne+\yTwo)/2} % Center y
-        \pgfmathsetmacro{\xOneMid}{(\xOne+\fX)/2} % midpoint of x1 and barycenter
-
-        \pgfmathsetmacro{\xTwoMid}{(\xTwo+\fX)/2} % midpoint of x2 and barycenter
-
-        \pgfmathsetmacro{\a}{sqrt((\xTwo-\xOne)^2 + (\yTwo-\yOne)^2)/2} % Semi-major axis
-        \pgfmathsetmacro{\c}{sqrt((\fX-\Cx)^2 + (\fY-\Cy)^2)} % Distance to focus
-        \pgfmathsetmacro{\b}{sqrt(\a^2 - \c^2)} % Semi-minor axis
-        \pgfmathsetmacro{\theta}{atan2(\yTwo-\yOne, \xTwo-\xOne)} % Rotation angle
-
-        \pgfmathsetmacro{\xOneArrowOrd}{\xOne+0.1};
-        \pgfmathsetmacro{\xTwoArrowOrd}{\xTwo-0.1};
-
-        \pgfmathsetmacro{\xOneArrowX}{\xOneArrowOrd};
-        \pgfmathsetmacro{\xTwoArrowX}{\xTwoArrowOrd};
-
-        \pgfmathsetmacro{\xOneArrowY}{\Cy + \a*sin(\theta)*cos(deg(\xOneArrowX)) + \b*cos(\theta)*sin(deg(\xOneArrowX))};
-
-        \pgfmathsetmacro{\xTwoArrowY}{\Cy + \a*sin(\theta)*cos(deg(\xTwoArrowX)) + \b*cos(\theta)*sin(deg(\xTwoArrowX))};
-
-        % Plot the ellipse
-        \draw[thick, lightgray, domain=0:360, samples=200]
-            plot ({\Cx + \a*cos(\theta)*cos(\x) - \b*sin(\theta)*sin(\x)},
-                  {\Cy + \a*sin(\theta)*cos(\x) + \b*cos(\theta)*sin(\x)});
-
-        \draw[gray, thick] (\xOne, \yOne) -- (0, 0);
-        \draw[gray, thick] (\xTwo, \yTwo) -- (0, 0);
-        \filldraw[blue] (0, 0) circle (2pt);
-
-        \node (a) at (\xOneMid, \yOne+0.4) {$r_2$};
-        \draw[<-] (\xOne, \yOne+0.4) -- (a);
-        \draw[->] (a) -- (\fX, \yOne+0.4);
-
-        \node (b) at (\xTwoMid, \yTwo-0.4) {$r_1$};
-        \draw[<-] (\fX, \yTwo-0.4) -- (b);
-        \draw[->] (b) -- (\xTwo, \yTwo-0.4);
-
-        \filldraw[black] (\xOne, \yOne) circle (2.5pt) node[anchor=east] {$M_2$};
-        \filldraw[black] (\xTwo, \yTwo) circle (2.5pt) node[anchor=west] {$M_1$};
-
-        \node (drawtoB) at (\xTwo, 0.8) {$v_1$};
-        \node (drawtoA) at (\xOne, -0.8) {$v_2$};
-
-        \draw[->] (\xOne, \yOne) -- (drawtoA);
-        \draw[->] (\xTwo, \yTwo) -- (drawtoB);
-
-        \draw[<->,red, thick] (\Cx, \Cy-0.6) -- (\Cx+\a, \Cy-0.6) node[below, midway] {$a$};
-        \draw[<->, red, thick] (\Cx, \Cy+2pt) -- (\Cx, \Cy+\b) node[below, midway, sloped] {$b=a\sqrt{1-e^2}$};
-        \filldraw[black] (\Cx, \Cy) circle (2pt);
-    \end{tikzpicture}
+    \input{chapters/figures/binary_schematic}
     \caption[A schematic of a simple binary star system.]{A schematic of a simple binary star system with eccentricity $e$, semimajor axis $a$, and semiminor axis $b$. The centre of mass (barycentre) is shown as a blue dot. Here, $M_1$ is the heavier star, which orbits at a smaller distance $r_1$ to the barycentre by Kepler's first and Newton's second laws. The elliptical orbital trajectory is shown in grey. Figure adapted from \citet{Richards:2021}.}
     \label{fig:bss_schematic}
 \end{figure}
@@ -757,78 +554,7 @@ There are two primary Roche Lobe points we consider: the $\mathcal{L}_1$ point a
 
 where $\xi_1=\frac{M_2}{M_1+M_2}$, and $\xi_2=\frac{M_1}{M_1+M_2}$.
 
-% i.e.,
-
-% \begin{equation}
-%     0=\frac{\xi_2\xi-\xi_2\xi_1}{\pqty{\xi^2+\xi_1^2-2\xi\xi_1+\eta^2}^\frac32}+\frac{\xi_1\xi-\xi_1\xi_2}{\pqty{\xi^2+\xi_2^2-2\xi\xi_2+\eta^2}^\frac32}+\xi,
-% \end{equation}
-
 This is a quintic expression in $\xi$, and solving this results in the real $\xi$-ordinates of five extrema. The extrema are labelled $\mathcal{L}_1$ through $\mathcal{L}_5$. $\mathcal{L}_1, \mathcal{L}_2, \mathcal{L}_3$ are saddle points of the potential, and $\mathcal{L}_4$ and $\mathcal{L}_5$ are maxima. No analytical function for $\xi$ exists unless either or both of $\xi_1, \xi_2$ are zero (which would only be the case for a single star, and thus the Roche lobe would not exist in the first instance), thus we must make approximations.
-
-%First, we note that if $q=\frac{M_2}{M_1}$ the $\xi_1, \xi_2$ coefficients can be written as
-
-% \begin{equation}
-%     \xi_1 = \frac{q}{1+q},\qquad\xi_2 = \frac{1}{q+1}.
-% \end{equation}
-
-% Define $z=1+q$, and then \Cref{eq:roche_lobe_condition} becomes
-
-% \begin{align}
-%     0 &= \xi-\frac{1}{z}\frac{1}{\pqty{\xi-\frac{q}{z}}^2}-\frac{q}{z}\frac{1}{\pqty{\xi-\frac{1}{z}}^2} \\
-%     &= \xi-\frac{z}{\pqty{z\xi-q}^2}-\frac{qz}{\pqty{z\xi-1}^2},
-% \end{align}
-
-% which may be rearranged to
-
-% \begin{equation}
-%     \xi=\frac{z}{\pqty{z\xi-q}^2}+\frac{qz}{\pqty{z\xi-1}^2}.
-% \end{equation}
-
-% With tedious algebra it can be shown that this condition is equivalent to a quintic in $\xi$ with coefficients
-
-% \begin{equation}
-%     0=\sum_{n=0}^5 \pqty{-1}^{n+1} a_n\xi^n~\text{where}~\left\{\begin{array}{rl}
-%         a_0 &= q^4+q^3+q+1 \\
-%         a_1 &= 2q^3 +7q^2+6q+2 \\
-%         a_2 &= 4q^3 +9q^2+6q+1 \\
-%         a_3 &= q^2+2q+1\\
-%         a_4 &= 2q^4+8q^3+12q^2+8q+2\\
-%         a_5 &= q^4+4q^3 +6q^2+4q+1
-%     \end{array}\right.
-% \end{equation}
-
-% with solutions given by the eigenvalues of the companion matrix, i.e., $\xi$ obeys
-
-% \begin{equation}
-%     0 = \det\begin{pmatrix}
-%        -\xi & 0 & 0 & 0 &  \frac{q^4+q^3+q+1}{q^4+4q^3+6q^2+4q+1} \\
-%         1 & -\xi & 0 & 0 & -\frac{2q^3+7q^2+6q+2}{q^4+4q^3+6q^2+4q+1} \\
-%         0 & 1 & -\xi & 0 &  \frac{4q^3 +9q^2+6q+1}{q^4+4q^3+6q^2+4q+1} \\
-%         0 & 0 & 1 & -\xi & -\frac{q^2+2q+1}{q^4+4q^3+6q^2+4q+1} \\
-%         0 & 0 & 0 & 1 &  \frac{2q^4+8q^3+12q^2+8q+2}{q^4+4q^3+6q^2+4q+1}-\xi \\
-%     \end{pmatrix},
-% \end{equation}
-
-% which may be written more conveniently as
-
-% \begin{equation}
-%     0 = \det\begin{pmatrix}{}
-%        -\xi & 0 & 0 & 0 &  -2z \\
-%         1 & -\xi & 0 & 0 & \frac{-2z^3-q^2}{z^4} \\
-%         0 & 1 & -\xi & 0 &  \frac{4q+1}{z^2} \\
-%         0 & 0 & 1 & -\xi & -\frac{1}{z^2} \\
-%         0 & 0 & 0 & 1 &  2-\xi \\
-%     \end{pmatrix}.\label{eq:determinant_formula_for_RL}
-% \end{equation}
-
-% This reduces to the quintic
-
-% \begin{equation}
-%     \xi^5 - 2\xi^4+\frac{1}{z^2}\xi^3-\frac{4q+1}{z^2}\xi^2-\frac{-2z^3-q^2}{z^4}+2z = 0.\label{eq:quintic_formula_for_RL}
-% \end{equation}
-
-% Solving either \Cref{eq:determinant_formula_for_RL} or \Cref{eq:quintic_formula_for_RL} admits an exact solution for
-
 
 \subsubsection{The \texorpdfstring{$\mathcal{L}_1$}{inner Lagrangian} point}
 
@@ -874,71 +600,6 @@ and $R_\text{L}(q)$ is given by \Cref{eq:RL1_eggleton}.
 
 We note that \citet{Marchant:2016} uses an inverse mass ratio definition compared to \citet{Eggleton:1983}, that is, \citet{Marchant:2016} takes $q_\text{Marchant}=\frac{M_1}{M_2}$ whereas \citet{Eggleton:1983} takes $q_\text{Eggleton}=\frac{M_2}{M_1}=\frac{1}{q_\text{Marchant}}$. This is accounted for in \Cref{eq:RL2_marchant} such that the mass ratios are consistent (and we take $q=q_\text{Eggleton}$), but other texts do not necessarily differentiate or describe the difference.
 
-% \subsubsection{The \texorpdfstring{$\mathcal{L}_3/\mathcal{L}_4/\mathcal{L}_5$}{other Lagrange} points}
-
-% Along the $\eta$-axis, the partial derivative in \Cref{eq:pdv_of_roche_potential} reads instead
-
-% \begin{equation}
-% \pdv{V}{\eta} = - \frac{G \left(M_{1} + M_{2}\right)}{a} \left(- \frac{2 \xi_1}{\left(\eta^{2} + \left(\xi- \xi_1\right)^{2}\right)^{\frac{3}{2}}}\eta + \eta\right)\, .
-% \end{equation}
-
-% The non-trivial root is given by
-
-% \begin{equation}
-% 0 = - \frac{2 \xi_1}{\left(\eta^{2} + \left(\xi- \xi_1\right)^{2}\right)^{\frac{3}{2}}}\, .
-% \end{equation}
-
-% \begin{equation}
-% - \frac{G \left(M_{1} + M_{2}\right)}{a} \left(- \frac{2 M_{2} \eta}{\left(M_{1} + M_{2}\right) \left(\eta^{2} + \left(- \frac{M_{2}}{M_{1} + M_{2}} + \xi\right)^{2}\right)^{\frac{3}{2}}} + \eta\right)
-% \end{equation}
-
-
-% \subsection{Common Envelope Evolution}
-
-% Now we turn to one of the highly uncertain phases of binary evolution. If one star's radius $R_1$ grows enough such that the radius is greater than the separation between the two binaries, i.e., $R_1 > a$, we say that the star has entered \gls{cee}. There are several effects that occur here. Firstly, due to orbital drag from the donor star (*1), the recipient star (*2) will shrink in orbit, i.e., the stars will come closer together. The relationship between the initial separation and the final separation is debated, and here we review some of the most common prescriptions.
-
-% First, the condition for \gls{cee} to occur is that $R_1 > a$. For a star to reach this radius its Roche Lobe, denoted $R_\text{L}$, must also be greater than this radius.% The Roche Lobe is the tear-drop shaped equipotential surface whose apex is at the inner Lagrangian point $\mathcal{L}_1$. To motivate this claim, consider a star whose Roche Lobe is less than the separation
-
-% The formula approximating the Roche Lobe (to 1\% error in mass ratio $q$) is, per \citet{Eggleton:1983},
-
-% \begin{equation}
-%     \frac{R_\text{L}}{a} = \frac{R_\text{L}}{a} = \frac{0.49q^\frac23}{0.6q^\frac23+\ln\pqty{1+q^\frac13}}
-% \end{equation}
-
-% Note that the condition that $R_1 > a$ can be manipulated to $R_\text{L} > a$, or $\frac{R_\text{L}}{a}>1$. This is true over the reals for $0.21 < q < 0.29$. Note that this $q$ is not the \textit{initial} (\gls{zams}) mass ratio, but is instead the mass ratio at a given instant. Moreover, this is not a sufficient condition for \gls{cee} to occur (that is, we are not claiming that if this mass ratio is met, the star must be undergoing \gls{cee}), but rather a necessary condition for when \gls{cee} is even possible in the first instance.
-
-% \subsubsection{The \texorpdfstring{$\alpha-\lambda$}{alpha-lambda} prescription}
-
-% The most common \gls{cee} prescription is the $\alpha-\lambda$ prescription, which takes
-
-% \begin{equation}
-%         \frac{m_1m_{1,\text{env}}}{\lambda R_1} = \alpha_\text{CE} \pqty{-\frac{Gm_1m_2}{2a_\text{i}}+\frac{Gm_{1,\text{c}}m_2}{2a_\text{f}}}
-% \end{equation}
-
-% where a subscript ``c'' denotes a core mass and a subscript ``env'' denotes an envelope mass. There are apparently two free parameters: $\alpha_\text{CE}$, the fraction of the orbital energy used to eject the envelope (or ``common envelope efficiency'' parameter):
-
-% \begin{equation}
-%     \Delta E_\text{orb} = \alpha_\text{CE} E_\text{bind}
-% \end{equation}
-
-% and $\lambda$, a structure constant related to the density distribution \citep{De_kool:1990}. $\lambda$ is a local parameter -- dependent on the structure of the star -- and $\alpha_\text{CE}$ is commonly taken as a global parameter $\sim$ 1 \citep{Ivanova:2013}, though \citet{Scherbak:2023} has recently suggested $\alpha_\text{CE}\sim\frac13$ is more appropriate. It is common, though unphysical, to take the combined parameter $\alpha_\text{CE}\lambda$ as the \textit{global} free parameter. We will in general not follow this approach; as defined, $\lambda$ depends on the stellar structure and the stellar binding energy. Hence, assuming it free to vary let alone able to be globally affixed is not a logical choice other than to save computational time.
-
-% \subsubsection{The \texorpdfstring{$\gamma$}{gamma} prescription}
-
-% The $\gamma$ prescription arises as a consideration of conservation of angular momentum. Let $J$ be the orbital angular momentum of the binary. Then the $\gamma$ prescription takes
-
-% \begin{equation}
-%     \frac{\Delta J_\text{lost}}{J_\text{i}} = \frac{J_\text{i}-J_\text{f}}{J_\text{i}} = \gamma\frac{m_1-m_{1,\text{c}}}{m_1+m_2}.
-% \end{equation}
-
-% Once an expression for $J_\text{f}$ is found, one can transform it into the period via
-
-% \begin{equation}
-%     a_\text{f} = \frac{m_1 m_2 \sqrt{1-e^2} P_0}{J_\text{f}},
-% \end{equation}
-
-% where masses are in solar masses, the orbital period is in years, and the semi-major axis is in \si{\AU} \citep{Eggen:1963}.
-
 \subsection{Mass Transfer}\label{sec:mass_transfer}
 
 \alice
@@ -972,12 +633,10 @@ Mathematically, the computation for $\dot{M}_\text{wind}$ is more involved, thou
 
 \subsubsection{\acrfull{rlof}}\label{sec:_acrfull_rlof}
 
-% \mediaepigraph{Your [roeche loebe overflaew] partner deserves better traetment!}{Baron from the Baronies}{Dimension 20: Fantasy High: Sophomore Year}
-
 Matter extruded from the Lagrangian points is assumed to transfer with a mass loss rate similar to \citet{Hurley:2002}. We take
 
 \begin{equation}
-    \dot{M}_\text{RLOF} = \min\left(k\mathcal{R}\left(\frac{R}{R_\text{RL}}\right)^3,10^{-2}\right) \unit{\msun\per\year}.
+        \dot{M}_{\text{RLOF},i} = k \cdot\max\left(\ln\left(\frac{R_{i}}{R_{\text{RL},i}}\right), 0\right)^3 \left(\frac{M_{i}}{M_\odot}\right)^2~\si{\msun\per\year}.\label{eq:accretion_ML_rate}
 \end{equation}
 
 Here, $k$ (referred to in our code as RMT) parameterises effectively how much of the star we permit to exist outside of its Roche lobe before it is accreted -- i.e., the voracity of \gls{rlof}. The choice of this can be somewhat arbitrary. \citet{Hurley:2002} for example took $k=\num{3e-6}\min\left\{M_1, 5\right\}^2$, where the coefficient was ``chosen by experiment to ensure that the mass transfer is steady'', and warned that for degenerate stars a more appropriate choice would be to increase this by a factor of $10^3$, corroborated by \citet{Claeys:2014}. We choose to adopt $k=\num{3e-6}\times10^3=\num{3e-3}$, with no dependence on the mass. This permits the star to overfill its Roche lobe even in tight binaries, but still allows efficient mass transfer.
@@ -989,7 +648,7 @@ Matter exceeding $\mathcal{L}_2$ (the outer Lagrange point) does not currently r
 Our wind accretion and \gls{rlof} accretion rates are taken from \citet{Bondi:1944, Hurley:2002}, and limits the accretion rate by the thermal timescale of the star. The prescription is that
 
 \begin{equation}
-    \dot{M}_\text{acc} = \min\left(\dot{M}_\text{RLOF}, \frac{M}{T_\text{KH}}\mathcal{R}\left(1-\frac{\omega}{0.8\omega_\text{crit}}\right)\right),
+    \dot{M}_\text{acc} = \min\left(\dot{M}_\text{RLOF}, \frac{M}{T_\text{KH}}\max\left(1-\frac{\omega}{0.8\omega_\text{crit}}, 0\right)\right),
 \end{equation}
 
 where $\omega$ and $\omega_\text{crit}$ are the spin rate and critical spin rate of the star. We generally assume that the star is composed of individually rotating shells of variable thickness.\footnote{Also known as shellular rotation.} If $N$ is the number of meshpoints that the star is composed of (for our cases, normally $N=199$), then the moment of inertia is given by
@@ -1099,7 +758,7 @@ where $\hat{\Gamma}$ and $\Gamma$ are the upper incomplete and complete Gamma fu
 where $z_1$ and $z_2$ are the redshifts of our bin edges. The event rate as a function of time, $\mathcal{R}(t)$, is therefore given by the convolution
 
 \begin{equation}
-    \mathcal{R}(t) = \Psi(z_t) * m(t),\label{eq:event_rate_distribution} %= \int_0^\infty m(z_t) \cdot 0.015\int_{z_1}^{z_2} \frac{(1+z-z')^{2.7}}{1+\left(\frac{1+z-z'}{2.9}\right)^{5.6}}\frac{\hat{\Gamma}\left[0.84, \left(\frac{Z}{Z_\odot}\right)^2\cdot 10^{0.3(z-z')}\right]}{\Gamma\left(0.84\right)}~\mathrm{d}z~\mathrm{d}z',
+    \mathcal{R}(t) = \Psi(z_t) * m(t),\label{eq:event_rate_distribution}
 \end{equation}
 
 where $z_t$ is the redshift corresponding to lookback time $t$, given by the solution to the equation
@@ -1130,8 +789,6 @@ Having now discussed the evolution of stars from a theoretical perspective, it b
 \end{enumerate}
 
 \subsection{The Cambridge \codename{stars} code}\label{chap:numerical_methods_stars}
-
-% \mediaepigraph{She emerged into the open air, like a fish leaping from the water. Beneath her, the mists covered the nighttime land like an enormous white blanket. Around her, there was only open air. Unsettling, strange. Above her, a million stars -- normally visible only to Allomancers -- watched her like the eyes of those long dead.}{The Hero of Ages}{Brandon Sanderson}
 
 \subsubsection{Brief History}
 
@@ -1265,7 +922,7 @@ The method to overcome this numerical instability is involved and not fully impl
 
 The major modifications we have made to the \codename{stars} code are as follows.
 
-Firstly, the floating-point precision has been increased to double precision for all variables. This has minor effects on the evolved models, insofar as they are generally able to evolve to slightly further stages. This step has previously been undertaken, however not all variables were correctly converted. This did not invalidate any models previous versions of the \codename{stars} code has generated; rather it means they terminated slightly earlier than the point to which they may have been able to evolve.%they may have been able to evolve to.
+Firstly, the floating-point precision has been increased to double precision for all variables. This has minor effects on the evolved models, insofar as they are generally able to evolve to slightly further stages. This step has previously been undertaken, however not all variables were correctly converted. This did not invalidate any models previous versions of the \codename{stars} code has generated; rather it means they terminated slightly earlier than the point to which they may have been able to evolve.
 
 As part of this, we also undertook an extensive refactor of the codebase. Whilst some of the code remains as originally written, it is now more compliant with modern programming practices and is in some sense easier to alter with new routines.
 
@@ -1304,8 +961,6 @@ The core of \codename{Kaitiaki} is the \mintinline{Python}{STARSController()} in
 \pythonfile[label=kaitiaki_runs]{A \codename{Kaitiaki} script to evolve a \SI{10}{\msun} star}{chapters/listings/kaitiaki_demo.py}
 
 \section{Chapter Summary}
-
-% \mediaepigraph{Looking up, he saw a thousand stars glittering in the deep velvet of a night with no moon. He knew them all, their stories and their names. He knew them in a familiar way, the way he knew his own hands.}{The Name of the Wind}{Patrick Rothfuss}
 
 \epigraph{If in the first act you have hung a pistol on the wall, then in the following one it should be fired. Otherwise don't put it there.}{Anton Chekhov}
 

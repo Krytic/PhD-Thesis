@@ -85,6 +85,258 @@ Hence the extrema of the potential $V$ are at the points $\xi$ where (taking $\e
 
 which was to be shown.
 
+\section{Kepler's Three Laws}\label{chap:keplers_laws}
+
+This section is adapted from \citet{Richards:2021}. Kepler's three laws such that they apply to binary stars are:
+
+\begin{enumerate}
+    \item All binary stars orbit the barycentre in an ellipse with the barycentre as a focus.
+    \item A line segment joining the two stars sweeps out equal areas during equal intervals of time.
+    \item The square of the period of each star is proportional to the cube of the semimajor axis (i.e., $T^2\propto a^3$).
+\end{enumerate}
+
+The derivations are presented below.
+
+\subsection{The First Law}\label{sec:keplers_first_law}
+
+\begin{figure}[!htbp]
+    \centering
+    \input{chapters/figures/binary_schematic}
+    \caption[A schematic of a simple binary star system.]{\Cref{fig:bss_schematic} again: A schematic of a simple binary star system with eccentricity $e$, semimajor axis $a$, and semiminor axis $b$. The centre of mass (barycentre) is shown as a blue dot. Here, $M_1$ is the heavier star, which orbits at a smaller distance $r_1$ to the barycentre by Kepler's first and Newton's second laws. The elliptical orbital trajectory is shown in grey. Figure adapted from \citet{Richards:2021}.}
+    \label{fig:bss_schematic_appendix}
+\end{figure}
+
+Given the orbital setup in \Cref{fig:bss_schematic_appendix}, the distance vector $\vec{r}$ between two stars in a binary is
+
+\begin{equation}
+    \vec{r} = \vec{r}_2 - \vec{r}_1,
+\end{equation}
+
+with the reduced mass
+
+\begin{equation}
+    \mu = \frac{M_1 M_2}{M_1+M_2},
+\end{equation}
+
+and total mass
+
+\begin{equation}
+    M = M_1 + M_2.
+\end{equation}
+
+Since the angular momentum vector is given by
+
+\begin{equation}
+    \vec{L} = \vec{r}\times\vec{p},
+\end{equation}
+
+its derivative is
+
+\begin{equation}
+    \dv{\vec{L}}{t} = \dv{\vec{r}}{t}\times\vec{p} + \vec{r}\times\dv{\vec{p}}{t} = 0,\label{eq:momentum_conserved}
+\end{equation}
+
+where the equality follows as $\vec{v}\equiv\dv{\vec{r}}{t}$ is parallel to $\vec{p}$, and $\vec{r}$ is parallel to $\dv{\vec{p}}{t}\equiv \vec{F}$. This is equivalent to a one-body problem where a mass $\mu=\frac{M_1 M_2}{M_1+M_2}$ orbits a central mass of mass $M_1+M_2$. The angular momentum is
+
+\begin{align}
+    \vec{L} &= \mu\vec{r}\times\vec{v} \label{eq:ang_mom_def}\\
+            &= \mu \abs{\vec{r}}\vu{r}\times\dv{}{t}\pqty{\abs{\vec{r}}\vu{r}} \notag\\
+            &= \mu \abs{\vec{r}}\vu{r}\times\pqty{\dv{r}{t}\vu{r}+r\dv{\vu{r}}{t}} \notag\\
+            &= -\dv{r}{t}\vu{r}\times\mu \abs{\vec{r}}\vu{r} - r\dv{\vu{r}}{t}\times\mu \abs{\vec{r}}\vu{r} \notag\\
+            &= -\dv{r}{t}\mu \abs{\vec{r}}\pqty{\vu{r}\times\vu{r}} - \abs{\vec{r}}^2\mu\pqty{\dv{\vu{r}}{t}\times\vu{r}} \notag\\
+            &= -\abs{\vec{r}}^2\mu\pqty{\dv{\vu{r}}{t}\times\vu{r}} \notag\\
+            &= \abs{\vec{r}}^2\mu\pqty{\vu{r}\times\dv{\vu{r}}{t}} \notag\\
+            &= \mu \abs{\vec{r}}^2\vu{r}\times\dv{\vu{r}}{t}. \label{eq:bss_ang_mom}
+\end{align}
+
+We seek an expression for $\abs{\vec{r}}$ to determine the trajectory of the stars. We write
+
+\begin{align*}
+    \vec{a}\times\vec{L} &= -\frac{GM}{\abs{\vec{r}}^2}\vu{r}\times\pqty{\mu \abs{\vec{r}}^2\vu{r}\times\dv{\vu{r}}{t}} \\
+    &= GM\mu\vu{r}\times\pqty{\vu{r}\times\dv{\vu{r}}{t}} \\
+    &= -GM\mu\bqty{\pqty{\vu{r}\cdot\dv{\vu{r}}{t}}\vu{r}-\pqty{\vu{r}\cdot\vu{r}}\dv{\vu{r}}{t}} \\
+    &= GM\mu\dv{\vu{r}}{t}.
+\end{align*}
+
+Now consider
+
+\begin{align}
+    \dv{}{t}\pqty{\vec{v}\times\vec{L}} &= \dv{\vec{v}}{t}\times\vec{L}+\vec{v}\times\dv{\vec{L}}{t} \notag\\
+    &= \vec{a}\times\vec{L} \notag\\
+    &= \dv{}{t} \left(GM\mu\vu{r}\right),
+\end{align}
+
+where $\dv{\vec{L}}{t}=0$ by \Cref{eq:momentum_conserved}. Hence
+
+\begin{equation}
+    \vec{v}\times\vec{L} = GM\mu\vu{r} + \vec{D},
+\end{equation}
+
+where $\vec{D}$ is a constant of integration that exists in the plane of the orbit. We can then introduce the vector $\vec{r}$ into this equation:
+
+\begin{align}
+    \vec{r}\cdot\pqty{\vec{v}\times\vec{L}} &= GM\mu \abs{\vec{r}}\vu{r}\cdot\vu{r}+\vec{r}\cdot\vec{D} \notag\\
+    \pqty{\vec{r}\times\vec{v}}\cdot L &= GM\mu r + rD\cos\theta.
+\end{align}
+
+Now by \Cref{eq:bss_ang_mom}, this is simply
+
+\begin{equation}
+    \frac{\abs{\vec{L}}^2}{\mu} = GM\mu \abs{\vec{r}}\pqty{1 + \frac{\abs{\vec{D}}\cos\theta}{GM\mu}}.
+\end{equation}
+
+We define the eccentricity of the ellipse as
+
+\begin{equation}
+    e = \frac{\abs{\vec{r}}}{GM\mu}
+\end{equation}
+
+and hence we have
+
+\begin{tcolorbox}[enhanced,title={Kepler's First Law}]
+    \begin{equation}
+        \abs{\vec{r}}=\frac{\abs{\vec{L}}^2 / \mu^2}{GM\pqty{1+e\cos\theta}},
+        \label{eq:keplers_first_law}
+    \end{equation}
+\end{tcolorbox}
+
+which is the equation defining an ellipse, provided that\footnote{Or equivalently that $\abs{\vec{D}}<GM\mu$, which we are free to select as required as the vector $\vec{D}$ is arbitrary.} $e<1$ -- thus proving the First Law. Since the general equation for an ellipse with semimajor axis $a$ is
+
+\begin{equation}
+    \abs{\vec{r}} = \frac{a\pqty{1-e^2}}{1+e\cos\theta}\quad\text{ for } 0 \leq e < 1,
+\end{equation}
+
+it is immediately apparent that we can write
+
+\begin{equation}
+    \abs{\vec{L}} = \mu\sqrt{GMa(1-e^2)},\label{eq:angular_momentum_elliptical_orbit}
+\end{equation}
+
+and since $\abs{\vec{L}}$ is constant by \Cref{eq:momentum_conserved}, presuming total mass $M$ remains constant we have that $\mu$ is constant as well.
+
+\subsection{The Second Law}
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        \pgfmathsetmacro{\rad}{4}
+
+        \draw [black,thick] (0,0) -- ({\rad*cos(30)}, {\rad*sin(30)});
+        \draw [black,thick] (0,0) -- ({\rad*cos(-30)}, {\rad*sin(-30)});
+
+        \node[rotate=-30] (rpos) at ({-0.1+((\rad-1)/2)*cos(-30)}, {-0.25+((\rad-1)/2)*sin(-30)}) {$r$};
+        \node[rotate=30] (drpos) at ({-0.08+(\rad*cos(30)+((\rad-1))*cos(30))/2}, {0.25+(\rad*sin(30)+((\rad-1))*sin(30))/2}) {$\dd{r}$};
+
+        \node[red] (rdtheta) at ({(\rad-1)-\rad/10}, 0) {$r\dd{\theta}$};
+
+        \draw[red,thick,domain=-26.5:-5,<-] plot ({(\rad-1-0.25)*cos(\x)}, {(\rad-1-0.25)*sin(\x)});
+        \draw[red,thick,domain=5:26.5,->] plot ({(\rad-1-0.25)*cos(\x)}, {(\rad-1-0.25)*sin(\x)});
+
+        \draw [black,thick,<-] ({-0.08+(\rad-1)*cos(30)},{0.25+(\rad-1)*sin(30)}) -- (drpos);
+        \draw [black,thick,->] (drpos) -- ({-0.08+(\rad)*cos(30)}, {0.25+(\rad)*sin(30)});
+
+        \draw [black,thick,<-] (-0.1,-0.25) -- (rpos);
+        \draw [black,thick,->] (rpos) -- ({-0.1+(\rad-1)*cos(-30)}, {-0.25+(\rad-1)*sin(-30)});
+
+        \draw [red,thick,domain=-30:30,name path=outer] plot ({\rad*cos(\x)}, {\rad*sin(\x)});
+        \draw [red,thick,domain=-30:30,name path=inner] plot ({(\rad-1)*cos(\x)}, {(\rad-1)*sin(\x)});
+        \draw [red,thick,domain=-30:30] plot ({(\rad/10)*cos(\x)}, {(\rad/10)*sin(\x)}) node[pos=.5, left] (dtheta) {$\dd{\theta}$};
+
+        \tikzfillbetween[of=inner and outer, on layer=ft]{gray, opacity=0.2};
+    \end{tikzpicture}
+    \caption[An infinitesimal area segment of an orbital trajectory.]{An infinitesimal area segment of an orbital trajectory. Given the definitions in the figure, we have the area of the shaded segment is $\dd{A}=\dd{r}(r\dd{\theta})=r\dd{r}\dd{\theta}$.}
+    \label{fig:secondlaw_sketch}
+\end{figure}
+
+Consider the area of an elliptical orbit (see the shaded area in \Cref{fig:secondlaw_sketch}). We have
+
+\begin{equation}
+    \dd{A} = \dd{r}\pqty{r\dd{\theta}} = r\dd{r}\dd{\theta},
+\end{equation}
+
+and integrating over $r$ gives
+
+\begin{equation}
+    \dd{A} = \frac12 r^2\dd{\theta},
+\end{equation}
+
+thus
+
+\begin{equation}
+    \dv{A}{t} = \frac12 r^2\dv{\theta}{t}.
+\end{equation}
+
+We can write the velocity of the star in the plane of the ellipse in terms of its radial component $\vec{v}_\text{r}$ and its angular component $\vec{v}_\theta$,
+
+\begin{equation}
+    \vec{v} = \vec{v}_\text{r} + \vec{v}_\theta = \dv{r}{t}\vu{r} + \abs{\vec{r}}\dv{\theta}{t}%\vu{\theta}.
+\end{equation}
+
+Importantly we have
+
+\begin{equation}
+    v_\theta = r\dv{\theta}{t},
+\end{equation}
+
+such that
+
+\begin{equation}
+    \dv{A}{t} = \frac12 r v_\theta.
+\end{equation}
+
+Since $r$ and $v_\theta$ are orthogonal, we have
+
+\begin{equation}
+    rv_\theta = \underbrace{\abs{\vec{r}\times\vec{\theta}} = \abs{\frac{\vec{L}}{\mu}}}_\text{by \Cref{eq:ang_mom_def}} = \frac{L}{\mu},
+\end{equation}
+
+hence
+
+\begin{tcolorbox}[enhanced,title={Kepler's Second Law}]
+    \begin{equation}
+        \dv{A}{t} = \frac12 \frac{L}{\mu}.
+        \label{eq:second_law}
+    \end{equation}
+\end{tcolorbox}
+
+By \Cref{eq:momentum_conserved}, $L$ is constant (and by \Cref{eq:angular_momentum_elliptical_orbit}, $\mu$ is constant as well), hence we have that $\dv{A}{t}$ is constant over the orbit, and Kepler's second law is established.
+
+\subsection{The Third Law}
+
+Let the period of the binary star system be given by $T$. The area of the ellipse swept out by the binary over its orbit is
+
+\begin{equation}
+    A = \int_0^T \dv{A}{t} \dd{t} = \frac12 \frac{L}{\mu}\int_0^T \dd{t} = \frac12 \frac{L}{\mu} T,
+\end{equation}
+
+and since the orbit is elliptical, this is equal to $\pi ab$, and thus
+
+\begin{equation}
+    \pi ab = \frac12 \frac{L}{\mu} T,
+\end{equation}
+
+or, equivalently,
+
+\begin{equation}
+    T^2 = \frac{4\pi^2a^2b^2\mu^2}{L^2}.
+\end{equation}
+
+Further, from the geometry of an ellipse we have
+
+\begin{equation}
+    b^2 = a^2\pqty{1-e^2}.
+\end{equation}
+
+Using this and \Cref{eq:angular_momentum_elliptical_orbit} in tandem, we have
+
+\begin{tcolorbox}[enhanced,title={Kepler's Third Law}]
+    \begin{equation}
+        T^2 = \frac{4\pi^2}{GM} a^3,
+    \end{equation}
+\end{tcolorbox}
+
+which proves Kepler's third law.
+
 \section{Equations of Motion of decaying binaries}
 
 The following derivation is adapted from the derivation presented in \citet{Richards:2021}. In this section we use a positive-definite metric signature ($\tr{\tens{\eta}}=+2$), and the Einstein summation convention where repeated indices are summed shall apply. Further, Greek indices span from 0 to 3, and Latin indices span from 1 to 3.
@@ -173,7 +425,7 @@ and $\varphi$ our angle parameter. The components of the tensor \tens{Q} are
     Q_{xy} = Q_{yx} &= \mu d^2\sin\varphi\cos\varphi,
 \end{align}
 
-with the rest vanishing, and with $\mu$ as the reduced mass. Now, as binary stars obey Kepler's laws, Kepler's orbit equation holds:
+with the rest vanishing, and with $\mu$ as the reduced mass. Now, as binary stars obey Kepler's laws, Kepler's orbit equation (\Cref{eq:keplers_first_law}) holds:
 
 \begin{equation}
     d = \frac{a(1-e^2)}{1+e\cos\dot{\varphi}},
@@ -182,7 +434,7 @@ with the rest vanishing, and with $\mu$ as the reduced mass. Now, as binary star
 whilst the angular velocity is given by
 
 \begin{equation}
-    \dot{\varphi} = \frac{\sqrt{G(M_1+M_2)a(1-e^2)}}{d^2}.
+    \dot{\varphi} = \frac{\sqrt{G(M_1+M_2)(1-e^2)a}}{d^2}.
 \end{equation}
 
 We therefore have
@@ -222,20 +474,20 @@ The average angular momentum is
 We now write the gravitational energy from the two-body problem,
 
 \begin{align}
-    E &= -\frac{GM_1M_2}{2a} \\
-    \implies \dv{E}{t} &= \frac{GM_1M_2}{2}\frac{1}{a^2}\dv{a}{t}.\label{eq:average_power_2body}
+    E &= -\frac{GM_1 M_2}{2a} \\
+    \implies \dv{E}{t} &= \frac{GM_1 M_2}{2}\frac{1}{a^2}\dv{a}{t}.\label{eq:average_power_2body}
 \end{align}
 
 Define the constant $\beta$ as
 
 \begin{equation}
-    \beta \equiv \frac{64}{5}\frac{G^3M_1M_2\pqty{M_1+M_2}}{c^5}.
+    \beta \equiv \frac{64}{5}\frac{G^3M_1 M_2\pqty{M_1+M_2}}{c^5}.
 \end{equation}
 
 Now insert \Cref{eq:average_power_2body} into \Cref{eq:average_power} to obtain
 
 \begin{align}
-    \dv{a}{t} &= -\frac{2a^2}{GM_1M_2}\frac{32}{5}\frac{G^4M_1^2M_2^2\pqty{M_1+M_2}}{c^5a^5\pqty{1-e^2}^\frac72}\pqty{1+\frac{73}{24}e^2+\frac{37}{96}e^4} \\
+    \dv{a}{t} &= -\frac{2a^2}{GM_1 M_2}\frac{32}{5}\frac{G^4M_1^2M_2^2\pqty{M_1+M_2}}{c^5a^5\pqty{1-e^2}^\frac72}\pqty{1+\frac{73}{24}e^2+\frac{37}{96}e^4} \\
     &= -\frac{\beta}{a^3\pqty{1-e^2}^\frac72}\pqty{1+\frac{73}{24}e^2+\frac{37}{96}e^4},
 \end{align}
 
@@ -351,7 +603,7 @@ for constant $c\in\mathbb{R}$. The boundary conditions are that when $t=0, a=a_0
     a(t) = \pqty{a_0^4-4\beta t}^\frac14 ,
 \end{equation}
 
-and imposing our first boundary condition we obtain the coalescence time
+and imposing our second boundary condition we obtain the coalescence time
 
 \begin{equation}
     T_\text{c} = \frac{a_0^4}{4\beta}.
@@ -447,7 +699,7 @@ The second step arises from taking $r=\alpha \zeta$ and changing the bounds of i
 Hence the total mass is
 
 \begin{align}
-    M = 4\pi \pqty{\frac{\pqty{n+1}K}{4\pi G}}^\frac32 \rho_\text{c}^\frac{3-n}{2n} \pqty{-\zeta^2 \dv{\theta}{\zeta}}_{\zeta=X_n}.
+    M = 4\pi \pqty{\frac{\pqty{n+1}K}{4\pi G}}^\frac32 \rho_\text{c}^\frac{3-n}{2n} \pqty{-\zeta^2 \dv{\theta}{\zeta}}_{\zeta=X_n}.\label{eq:mass_relationship_homology}
 \end{align}
 
 Or, as a proportionality relationship,
@@ -502,13 +754,141 @@ This is a polytrope with $n=3$ and
 As before, this material cannot remain bound to the star -- the radius tends to infinity at $n=3$ per \Cref{fig:polytropic_radii} -- so we have the maximum mass of a stable star supported by electron degeneracy pressure as
 
 \begin{equation}
-    M = 8.08\pi\pqty{\frac{K}{\pi G}} \approx \frac{5.75}{\mu^2} \unit{\msun},
+    M = 2.02\cdot4\pi\pqty{\frac{K}{\pi G}} \approx \frac{5.75}{\mu^2} \unit{\msun},
 \end{equation}
 
-i.e.,
+where the coefficient of 2.02 is evaluated numerically from the $\pqty{-\zeta^2 \dv{\theta}{\zeta}}_{\zeta=X_n}$ term in \Cref{eq:mass_relationship_homology}.
 
 \begin{equation}
     M = M_\text{ch} \equiv \SI{1.438}{\msun}.
 \end{equation}
 
 Which was to be shown.
+
+\section{Construction of the wind mass-loss rate}\label{chap:mass_loss_construction}
+
+We construct our wind mass loss rates as follows. The total pre-WR mass loss is given by \citet{De_jager:1988}, namely
+
+\begin{align}
+    \log\dot{M}_\text{de Jager} &= -\sum_{n=0}^6 \sum_{\substack{i=0\\j=n-i}}^n a_{ij}\cos\left(i\arccos x_1\right)\cos\left(j\arccos x_2\right),\label{eq:chebyshev}\\
+    \dot{M}_\text{pre-WR} &= \sqrt{\frac{Z}{Z_\odot}}10^{\log\dot{M}_\text{de Jager}},\label{eq:pre-wr-ml}
+\end{align}
+
+where $x_1 = \frac{\log T-4.05}{0.75}$, $x_2=\frac{\log L-4.6}{2.1}$, and the coefficients $a_{ij}$ are given by the entries in the matrix
+
+\begin{equation}
+    \mat{a} = \begin{pmatrix}
+      6.34916 &  -5.04240 &  -0.83426 &  -1.13925 & -0.12202 \\
+      3.41678 &   0.15629 &   2.96244 &   0.33659 &  0.57576 \\
+     -1.08683 &   0.41952 &  -1.37272 &  -1.07493 &        - \\
+      0.13095 &  -0.09825 &   0.13025 &         - &        - \\
+      0.22427 &   0.46591 &         - &         - &        - \\
+      0.11968 &         - &         - &         - &        - \\
+    \end{pmatrix}.
+\end{equation}
+
+This mass loss rate is based upon the rates for 271 stars, the majority of which are Population I. Individual terms in the summation are Chebyshev polynomials of the first kind, restricted over the domain $\log~T_\text{eff}\in\left[3.3, 4.8\right]$, $\log~L\in\left[2.5, 6.7\right]$. As the free parameters here are temperature and luminosity, the result can be plotted over a \gls{hrd}. The results of this are shown in \Cref{fig:hrd_chebyshev}. Generally we constrain the inputs to the arccosine function to be between $-1 \leq x \leq 1$, which permits them to be defined outside of the defined area from \citet{De_jager:1988}; the effect of this is shown in the right-hand panel of \Cref{fig:hrd_chebyshev}. Without this restriction, the mass loss rates are simply undefined there, and are thus set to zero within the code.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{images/TheorySection/chebyshev_polynomials.pdf}
+    \caption[The Chebyshev polynomial expansion of \Cref{eq:chebyshev}.]{The Chebyshev polynomial expansion of \Cref{eq:chebyshev}. A \SI{10}{\msun} model is overplotted in black for reference. The ``bounded parameters'' plot restricts the arguments to $\arccos$ in \Cref{eq:chebyshev} to be between $-1\leq x_i\leq 1$.}
+    \label{fig:hrd_chebyshev}
+\end{figure}
+
+We interpolate the bi-stability jump around \SI{25}{\kilo\kelvin} \citep[see, for example,][]{Pauldrach:1990, Vink:1999} with the following regime. Define the constants
+
+\begin{align}
+    C_1 &= \left(\frac{Z}{Z_\odot}\right)^{0.13},\label{eq:R1}\\
+    C_2 &= -c_1+c_2\log\left(\frac{L}{c_{16}}\right)-c_3\log\left(\frac{M}{c_{15}}\right)-c_4\log\left(1.3C_1\right)+c_5\log\left(\frac{T}{c_{14}}\right)-c_6\left(\log\left[\frac{T}{c_{14}}\right]\right)^2+c_7\log\left(\frac{Z}{Z_\odot}\right),\label{eq:R2} \\
+    &\text{and} \notag\\
+    C_3 &= -c_8+c_9\log\left(\frac{L}{c_{16}}\right)-c_{10}\log\left(\frac{M}{c_{15}}\right)-c_{11}\log\left(0.65C_1\right)+c_{12}\log\left(\frac{T}{2\times 10^4}\right)+c_{13}\log\left(\frac{Z}{Z_\odot}\right),\label{eq:R3}
+\end{align}
+
+where the constants $c_i$ are given in \Cref{tab:bistability_constants}.
+
+\begin{table}[!htbp]
+    \centering
+
+    \begin{tabular}{cc|cc|cc|cc}
+    \toprule
+        Constant & Value & Constant & Value & Constant & Value & Constant & Value \\
+    \midrule
+        $c_1$ & $6.697$ & $c_5$ & $0.933$ & $c_9$    & $2.210$ & $c_{13}$ & $0.85$  \\
+        $c_2$ & $2.194$ & $c_6$ & $10.92$ & $c_{10}$ & $1.339$ & $c_{14}$ & \SI{4e4}{\kelvin} \\
+        $c_3$ & $1.313$ & $c_7$ & $0.85$  & $c_{11}$ & $1.601$ & $c_{15}$ & \SI{30}{\msun} \\
+        $c_4$ & $1.226$ & $c_8$ & $6.688$ & $c_{12}$ & $1.07$  & $c_{16}$ & \SI[print-unity-mantissa=false]{1e5}{\lsun} \\
+    \bottomrule
+    \end{tabular}
+
+    \caption[The mass loss rate constants for interpolation around the bi-stability jump.]{The mass loss rate constants for interpolation around the bi-stability jump (\Cref{eq:R1,eq:R2,eq:R3}). This interpolation is shown pictorally in \Cref{fig:bistability}.}
+    \label{tab:bistability_constants}
+\end{table}
+
+Our mass loss rate becomes:
+
+\begin{equation}
+    \dot{M}_\text{BS} = \begin{cases}
+        \frac{(T-T_1)10^{C_3}+(T_2-T)\dot{M}_\text{pre-WR}}{2.5\times 10^3} & T_1 < T < T_2 \\
+        10^{C_2} & T_2 \leq T \leq T_3 \\
+        \frac{(T-T_3)10^{C_2}+(T_4-T)10^{C_3})}{5 \times 10^3} & T_3 < T < T_4 \\
+        \frac{(6T_1-T)10^{C_2}+(T-5T_1)\dot{M}_\text{pre-WR}}{10^4} & 5T_1 < T < 6T_1 \\
+        \dot{M}_\text{pre-WR} & \text{otherwise}
+    \end{cases}
+\end{equation}
+
+where $T_1=\SI{10}{\kilo\kelvin}, T_2=\SI{12.5}{\kilo\kelvin}, T_3=\SI{22.5}{\kilo\kelvin}, T_4=\SI{27.5}{\kilo\kelvin}$. This interpolation is shown in \Cref{fig:bistability}. We define
+
+\begin{equation}
+    \mathcal{M} = \sqrt{\frac{Z}{Z_\odot}}\times 10^{-13.6 + 1.63\log\left(\frac{L}{L_\odot}\right)+2.22\log X},
+\end{equation}
+
+where $X$ is the surface hydrogen abundance of the primary, and then define
+
+\begin{equation}
+    \dot{M}_\text{WNL} = \begin{cases}
+        5\left(\mathcal{M}-\dot{M}_\text{BS}\right)\left(0.42-X\right)+\dot{M}_\text{BS} & 0.42 > X > 0.4 \\
+        \mathcal{M} & \text{otherwise}
+    \end{cases}.
+\end{equation}
+
+Our total mass loss (provided the star has not depleted its surface helium, which will be discussed below) is now
+
+\begin{equation}
+    \dot{M}_\text{A} = \begin{cases}
+        10\dot{\mu}\left(\log T-3.9\right) + \dot{M}_\text{BS} & X < 0.42 \text{ and } \log T > 3.9 \\
+        \dot{M}_\text{WNL} & X > 0.42 \text{ and } \log T > 4.0 \\
+        \dot{M}_\text{BS} & \text{otherwise}
+    \end{cases},
+\end{equation}
+
+where $\dot{\mu}=\dot{M}_\text{WNL}-\dot{M}_\text{BS}$. Finally, if the surface helium depletes we modify the mass loss rate further, defining
+
+\begin{equation}
+    \dot{M}_\text{WC} = \sqrt{\frac{Z}{Z_\odot}}\times 10^{-8.3 + 0.84\log\left(\frac{L}{L_\odot}\right) + 2.04\log X_\text{He} + 1.04\log\left(1-X_\text{He}\right)}
+\end{equation}
+
+such that our total mass loss rate becomes (provided $X_\text{H} < 10^{-3}$ and $\log T > 4$)
+
+\begin{equation}
+    \dot{M}_\text{B} = \begin{cases}
+        100\left(\dot{M}_\text{WC} - \dot{M}_\text{WNL}\right)\left(\mathcal{X}-0.02\right)+\dot{M}_\text{WNL} & \mathcal{X} > 0.02 \\
+        \dot{M}_\text{WNL} & \mathcal{X} < 0.02
+    \end{cases},
+\end{equation}
+
+where $\mathcal{X}=\frac{\frac13 X_\text{C}+\frac14 X_\text{O}}{X_\text{He}}$. The total wind mass-loss rate is then
+
+\begin{equation}
+    \dot{M}_\text{wind} = \begin{cases}
+        \dot{M}_\text{B} & \text{surface helium depleted} \\
+        \dot{M}_\text{A} & \text{otherwise}
+    \end{cases}.\label{eq:vink_ml}
+\end{equation}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{images/TheorySection/double_bistability_jump.pdf}
+    \caption[An illustration of the bi-stability jumps in the mass loss prescription.]{An illustration of the bi-stability jumps in the mass-loss prescription. This illustration was computed for a $\SI{21}{\msun}$ star. \textit{Left plot:} The lower bi-stability jump,  \textit{Right plot:} The upper bi-stability jump. Shown in blue is the cool side of the bi-stability jump, where $C_3$ (\Cref{eq:R3}) is the interpolation, and shown in red is the hot side, where $C_2$ (\Cref{eq:R2}) is the interpolation.}
+    \label{fig:bistability}
+\end{figure}

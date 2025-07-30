@@ -2,17 +2,15 @@
 %! aim: we introduce the thesis
 \chapter{Introduction}\label{chap:introduction}
 
-% \epigraph{``If you're in a bath at the bottom of a lake, are you in a bath, or in a canoe?'' Then you're in a bath, because if its sunk, its a shit canoe}{KatDoesMaths}
-
 \chapterEpigraph{The only way to learn is by playing. The only way to win is by learning. And the only way to begin is by beginning.}{Sam Reich}
 
 \lettrine[lines=3]{A}{rguably the greatest advancement} in modern astronomy was the direct detection of gravitational waves -- the rippling of space-time as a result of the motion of massive celestial bodies -- on September 14, 2015. The \gls{ligo} collaboration detected the chirp of merging binary black holes, with masses $m_1=\SI[parse-numbers=false]{36^{+5}_{-4}}{\msun}$ and $m_2=\SI[parse-numbers=false]{29^{+4}_{-4}}{\msun}$ \citep{Abbott:2016}. This detection sparked the so-called ``gravitational wave era'', with detections in \gls{o4} reading a cadence of hundreds per year.\footnote{From the start of \gls{o4} in May 2023 to the end of December 2024, approximately 167 unretracted significant (false alarm rate of $<$\SI{1}{\per\month}) detections, averaging to a cadence of $\sim\SI{107}{\per\year}$.} These detections afford researchers probes of various physical phenomena. For instance, these merger events are some of the most energetic events in the Universe -- GW150914 peaked at a gravitational-wave luminosity of \SI{3.6e56}{\erg\per\second} \citep{Abbott:2016}, compared with the typical energy release of a \gls{ccsne} of $\sim$\SI[print-unity-mantissa=false]{1e53}{\erg} \citep{Hartmann:1999} -- and the merger of binary neutron stars are the predominant formation channels for most of the elements heavier than iron \citep[see, among others,][]{Eichler:1989, Arcavi:2017, Pian:2017, Smartt:2017}.
 
 In addition, the stochastic background of gravitational waves is a direct probe on early-Universe cosmology \citep{Christensen:2018}, though the frequency band that these gravitational waves span is between $10^{-9}$ and $\SI[parse-numbers=false]{10^{14}}{\hertz}$ \citep{Christensen:1992, Christensen:2018}, making detection of the stochastic background difficult. Indeed, it took eight years after the detection of gravitational waves for the stochastic background to be detected by the collaborative effort of \gls{nanograv} \citep{Agazie:2023}, the \gls{epta} \citep{Antoniadis:2023}, the \gls{ppta} \citep{Reardon:2023}, and the \gls{cpta} \citep{Xu:2023}.
 
-Beyond the stochastic background, the vast majority of gravitational wave sources involve stars at some point in their lives -- whether that be the merger of \gls{co}, the detonation of \gls{ccsne}, or the rotation of an isolated massive source such as a \gls{ns} or \gls{bh}. In these cases stars are either the immediate sources of gravitational waves, or the progenitors of the objects that are the sources. Only in extreme cases, such as the merger of galaxies or the motion of supermassive black holes, are stars not directly involved in the generation of gravitational waves (and even then, this is debatable).
+Beyond the stochastic background, the vast majority of gravitational wave sources involve stars at some point in their lives -- whether that be the merger of \acrlongpl{co}, the detonation of \gls{ccsne}, or the rotation of an isolated massive source such as a \gls{ns} or \gls{bh}. In these cases stars are either the immediate sources of gravitational waves, or the progenitors of the objects that are the sources. Only in extreme cases, such as the merger of galaxies or the motion of supermassive black holes, are stars not directly involved in the generation of gravitational waves (and even then, this is debatable).
 
-Ergo, any attempt at understanding gravitational waves must be founded in a strong theoretical understanding of stellar structure and evolution. Without theory, any observation is no more than a curiosity; it is with theoretical underpinning and models that insight can be gained. As most astrophysical sources of gravitational waves (i.e., not the stochastic background) are formed by the merger of two ``compact remnants'' -- black holes, white dwarfs, and neutron stars -- one must understand their formation and dynamics, and thus the evolution of progenitor stars into these remnants, as well.
+Ergo, any attempt at understanding gravitational waves must be founded in a strong theoretical understanding of stellar structure and evolution. Without theory, any observation is no more than a curiosity; it is with theoretical underpinning and models that insight can be gained. As most astrophysical sources of gravitational waves (i.e., not the stochastic background) are formed by the merger of two \glspl{co} -- black holes, white dwarfs, and neutron stars -- one must understand their formation and dynamics, and thus the evolution of progenitor stars into these remnants, as well.
 
 Furthermore, a sound understanding of the evolution of stars has impacts beyond gravitational wave astronomy. As the interiors of stars are complex nuclear furnaces, they are responsible for producing most of the elements in the Universe heavier than Hydrogen \citep{Burbidge:1957}. In fact, of the elements lighter than Uranium, the only elements not substantially produced in stellar processes (such as through kilonovae or in supernovae) are technetium, promethium (which both lack stable isotopes),\footnote{There are technetium stars, and promethium has been observed in some atmospheres \citep{Cowley:2004}, however these processes do not generally pollute their environment.} boron, beryllium (which both are produced via cosmic ray fission), and some formation channels of lithium.
 
@@ -22,7 +20,7 @@ From the perspective of Universal structure and habitability, stars are also the
 
 \section{Observational astronomy}
 
-\mediaepigraph{If the stars should appear one night in a thousand years, how would men believe and adore; and preserve for many generations the remembrance of the city of God which had been shown!}{Nature}{Ralph Waldo Emerson}% But every night come out these envoys of beauty, and light the universe with their admonishing smile.}{Nature}{Ralph Waldo Emerson}
+\mediaepigraph{If the stars should appear one night in a thousand years, how would men believe and adore; and preserve for many generations the remembrance of the city of God which had been shown!}{Nature}{Ralph Waldo Emerson}
 
 There are approximately 9000 stars visible in the night sky to the naked eye (with magnitudes brighter than 6.5), across both hemispheres \citep{Hoffleit:1964}, which are displayed in \Cref{fig:naked_night_sky}. The dark-adapted eye can see approximately as far as $\eta$ Carinae,\footnote{This is a debated topic; we use the definition that a ``star'' includes binaries and that the star is in the catalogue of \citet{Hoffleit:1964}, which rules out V762 Cas, the other commonly held ``farthest star''.} which is only approximately \SI{2300}{\pc} away.
 
@@ -49,8 +47,6 @@ Given the number of stars visible in the vast expanse of night, and their relati
 Knowledge of oceanic tides existed in the time of Ancient Greece, and was described by Ptolemy, who wrote in \textit{Tetrabiblos} that
 
 \fancifulepigraph{\greekscript ἀμπώτεις καὶ αἱ παλίρροιαι, καὶ αἱ τῶν πνευμάτων δὲ τροπαὶ μάλιστα περὶ τὰς τοιαύτας τῶν φωτῶν κεντρώσεις ἀποτελοῦνται πρὸς οὓς ἂν τῶν ἀνέμων ἐπὶ τὰ αὐτὰ τὸ πλάτος τῆς σελήνης τὰς προσνεύσεις ποιούμενον καταλαμβάνηται.}{For the hour by hour intensifications and relaxations of the weather vary in response to such positions of the stars as these, in the same way that the ebb and flow of the tide respond to the phases of the moon, and the changes in the air-currents are brought about especially at such appearances of the luminaries at the angles, in the direction of those winds towards which the latitude of the moon is found to be inclining.}{Ptolemy:2005}{Ptolemy:tetrabiblos}
-
-% (original work \citet{ptolemy_2005_tetrabiblos}, summary provided by \citet{tabarroni_1989})
 
 This knowledge flowed through to Dante, who wrote in the third part of the Divine Comedy, \textit{Paradiso}:
 
@@ -96,7 +92,7 @@ Broadly speaking, there are three approaches generating a population of stars, a
 \begin{enumerate}
     \item Rapid Population Synthesis,
     \item Detailed Population Synthesis, and
-    \item \gls{mhd} Simulations.
+    \item 3D Simulations.
 \end{enumerate}
 
 Each of these approaches informs the other two, and all play important roles in stellar modelling. Although we focus on detailed methods, we will briefly outline all three approaches here.
@@ -107,24 +103,16 @@ A detailed population synthesis code uses detailed model sets, where the interio
 
 An example of such a code is the \gls{bpass} code \citep{Eldridge:2017}, which uses a custom version of the Cambridge \codename{stars} code for the stellar modelling and a bespoke proprietary code named \codename{Tui} for the population synthesis. The key approach in the present version of \gls{bpass} is to model the primary star in detail until it undergoes a supernova, whilst approximating the evolution of the secondary. After the primary supernova, the secondary is then evolved in detail with the primary treated as a point mass. After the secondary supernova, the parameters of the remnants -- if any -- can thus be fed into a postprocessing code to have their orbital equations solved for further.
 
- %computes pairings of detailed models. One can in principle examine the output models to determine at any point the progenitor history. For example, when recording the sources of compact object coalescenes, one can place a prior on the mass of the components at their respective \gls{zams} positions, to only record binaries with a certain mass, or who at some point undergo a particular kind of mass transfer. In other regimes, this would need to be done in post-processing, potentially by querying the input distribution also.
-
-% cliffnotes max:
-% - detailed models internal variables + couples to the orbital equations
-% - rapid uses either single star models or fits to single star models to do the stellar evolution component and uses a hurley-type framework for binary interactions
-
 \subsubsection{Rapid Binary Population Synthesis}
 
 Rapid binary population synthesis models are instead either compilations of single-star evolutionary tracks that have been solved for using a code such as \codename{Mesa} \citep{Paxton:2011, Paxton:2013, Paxton:2015, Paxton:2018, Paxton:2019, Jermyn:2023}, fit to using approximations such as those of \citet{Hurley:2000} or \citet{Hurley:2002}, or interpolated between. These models are then coupled to the orbital evolution \textit{a posteriori} using a binary evolution framework, effectively approximating the computationally expensive part of binary evolution models to varying degrees of detail. This allows them to generate binary models on-the-fly, and optimise for this interaction, at the potential cost of missing more precise facets of binary evolution.
 
-% Rapid population synthesis methods exploit the statistical properties of stars in order to rapidly infer properties of populations of stars. However, they still require as input detailed stellar models -- for example, \codename{Compas} \citep{Team_compas_riley:2022} uses \codename{Mesa} \citep{Paxton:2011, Paxton:2013, Paxton:2015, Paxton:2018, Paxton:2019, Jermyn:2023} models as its input models. The clear limitation is that it is more difficult (though not impossible) to disentangle an input model track to determine the progenitor of a particular system.
+\subsubsection{3D Simulations}
 
-\subsubsection[3D MHD Simulations]{\acrshort{mhd} Simulations}
-
-\acrfull{mhd} and \gls{sph} simulations are the most detailed method of stellar modelling. The base principle is that the star is evaluated as a network of particles in a continuous media, and the evolution of the star is followed in theoretically atomic detail. For example, \codename{Phantom} \citep{Price:2018} is a \gls{sph} code which essentially models the star as a fluid, where the Lagrangian hydrodynamical equations are solved for in two-dimensional cells (termed ``particles''). Although these present the most detailed models, they are also the most time-intensive to solve. For a \gls{sph} code, the famous Navier-Stokes equation is invoked, which has no analytical solution but is computed in excruciating detail. As a result, most \gls{sph} models take weeks to run and simulate a star for kiloseconds of its lifetime, rather than for the millions (if not billions) of years detailed models are able to compute.
+3D simulations are the most detailed method of stellar modelling. The base principle is that the star is evaluated as a network of particles in a continuous media, and the evolution of the star is followed in theoretically atomic detail. For example, \codename{Phantom} \citep{Price:2018} is a \gls{sph} code which essentially models the star as a fluid, where the Lagrangian hydrodynamical equations are solved for in two-dimensional cells (termed ``particles''). Although these present the most detailed models, they are also the most time-intensive to solve. For a \gls{sph} code, the famous Navier-Stokes equation is invoked, which has no analytical solution but is computed in excruciating detail. As a result, most \gls{sph} models take weeks to run and simulate a star for kiloseconds of its lifetime, rather than for the millions (if not billions) of years detailed models are able to compute. Full population synthesis using 3D simulations is thus unlikely to be tenable without significant advances in computational techniques.
 
 Though it may seem that they serve the same niche and are therefore competing to be the ``better'' method of stellar modelling, detailed 1D models and \gls{mhd}/\gls{sph} models exist harmoniously with each other. The advancements in \gls{mhd}/\gls{sph} modelling inform the evolution of 1D models in a process known as ``3-to-1'', and the computational flexibility of 1D models offers insights into where 3D models wish to target to evolve, in a lock-step advancement method.
-% move to stellar modelling
+
 \section{This work}
 
 We now describe the placement of this work within the field, and outline the key aims this thesis sets out to answer. This thesis can be summarised as an endeavour to model the interior physics of interacting binary stars over certain near-extreme phenomena. We also aim to examine the post-supernova kinematics of binary systems. Thus, the area of interest of this thesis is effectively the entire lifetime of a binary system post-birth, with the critical exceptions of the moment of supernovae, and the interior physics of compact objects.
@@ -160,7 +148,6 @@ This thesis is, broadly, a tour of the structure and evolution of binary stars f
     \item In \Cref{chap:appendix:bespoke_models}, we present the bespoke contact binary models that we discuss in \Cref{chap:close_contact} (Theme I).
     \item In \Cref{chap:overcontact_binary_remnants}, we enumerate the predicted remnants produced by the overcontact binaries in \Cref{chap:close_contact}.
     \item In \Cref{chap:additional_derivations}, we present additional derivations for key theoretical expressions from \Cref{chap:theoretical_background}.
-    \item In \Cref{chap:mass_loss_construction}, we detail how our wind mass-loss rates are constructed.
 \end{enumerate}
 % end structure
 

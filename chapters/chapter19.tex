@@ -62,7 +62,7 @@ There are multiple avenues open to future research questions with the \codename{
 
 \Cref{chap:natal_kicks} examined the form and structure of the natal supernova kick, with a particular emphasis on \citet{Bray:2016} type kicks. Looking forward, \gls{lvk} \gls{o4} will soon release, offering more constraints on the observed \gls{bns} merger rate density. In addition...
 
-\Cref{chap:close_contact} explored a rather limited parameter space. The question thus remains, \textit{to what extent do the conclusions drawn hold true on a population of binary stars}, and to much the same extent, \textit{do the population prevalences derived from the \gls{bpass} v2 models match those from a grid of these models}? Exploration of the parameter space is firmly a big data project. For a reasonably trivial grid of $m_1 \in [5, 100] \unit{\msun}$ in steps of \SI{5}{\msun}, $q\in [0, 0.9]$ in steps of 0.1, and $\log P\in[0.5, 3]$ in steps of \SI{0.5}{\dex}, one arrives at 1200 models. Models typically take, conservatively, between \SI{20}{\minute} and \SI{60}{\minute} to run on the cluster, which has up to 72 cores available for use. \Cref{tab:runtimes_for_full_grids} shows some estimated runtimes for different grid fidelities given this setup. An investigation into the population properties would likely need to use model B as a coarse grid and model D as a finer grid, though the span of periods is wider here than is strictly necessary.
+\Cref{chap:close_contact} explored a rather limited parameter space. The question thus remains, \textit{to what extent do the conclusions drawn hold true on a population of binary stars}, and to much the same extent, \textit{do the population prevalences derived from the \gls{bpass} v2 models match those from a grid of these models}? Exploration of the parameter space is firmly a big data project. For a reasonably trivial grid of $m_1 \in [5, 100]~\unit{\msun}$ in steps of \SI{5}{\msun}, $q\in [0, 0.9]$ in steps of 0.1, and $\log P\in[0.5, 3]$ in steps of \SI{0.5}{\dex}, one arrives at 1200 models. Models typically take, conservatively, between \SI{20}{\minute} and \SI{60}{\minute} to run on the cluster, which has up to 72 cores available for use. \Cref{tab:runtimes_for_full_grids} shows some estimated runtimes for different grid fidelities given this setup. An investigation into the population properties would likely need to use model B as a coarse grid and model D as a finer grid, though the span of periods is wider here than is strictly necessary.
 
 \begin{table}[!htbp]
     \centering
@@ -79,10 +79,12 @@ There are multiple avenues open to future research questions with the \codename{
     \bottomrule
     \end{tabular}
 
-    \caption[The runtimes for a grid of \codename{stars} models on a 72-core cluster, assuming each model takes $\SI{20}{\minute}$/$\SI{40}{\minute}$/$\SI{60}{\minute}$ respectively.]{The runtimes for a grid of \codename{stars} models on a 72-core cluster, assuming each model takes $\SI{20}{\minute}$/$\SI{40}{\minute}$/$\SI{60}{\minute}$ respectively. This calculation assumes all cores begin operating simultaneously, and that runs are homogeneous; that any two runs have the same run time. In this grid, $m_1 \in [5, 100] \unit{\msun}, q\in [0, 0.9],$ and $\log P\in[0.5, 3]$.}
+    \caption[The runtimes for a grid of \codename{stars} models on a 72-core cluster, assuming each model takes $\SI{20}{\minute}$/$\SI{40}{\minute}$/$\SI{60}{\minute}$ respectively.]{The runtimes for a grid of \codename{stars} models on a 72-core cluster, assuming each model takes $\SI{20}{\minute}$/$\SI{40}{\minute}$/$\SI{60}{\minute}$ respectively. This calculation assumes all cores begin operating simultaneously, and that runs are homogeneous; that any two runs have the same run time. In this grid, $m_1 \in [5, 100]~\unit{\msun}, q\in [0, 0.9],$ and $\log P\in[0.5, 3]$.}
     \label{tab:runtimes_for_full_grids}
 \end{table}
 
-Looking towards the western horizon, the \gls{bpass} project and other similar population synthesis codes will soon be releasing new versions. The \codename{stars} code seems uniquely positioned, especially compared to alternatives such as \codename{mesa}, to offer new and exciting insights into the field of binary stellar evolution.
+\todo{Finish writing future plans}
+
+Looking towards the eastern horizon, the \gls{bpass} project and other similar population synthesis codes will soon be releasing new versions. The \codename{stars} code seems uniquely positioned, especially compared to alternatives such as \codename{mesa}, to offer new and exciting insights into the field of binary stellar evolution.
 
 \epigraph{And that is something you might not have known.}{Tom Scott}

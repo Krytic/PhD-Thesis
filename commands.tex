@@ -65,13 +65,20 @@
 \renewcommand{\vec}[1]{\ovec{\bm{#1}}}
 \newcommand{\vui}{{\bm{\hat{\textnormal{\bfseries\i}}}}}
 \newcommand{\vuj}{{\bm{\hat{\textnormal{\bfseries\j}}}}}
-\DeclareRobustCommand{\vu}[1]{{%
-  \ifcsname vu#1\endcsname
-     \csname vu#1\endcsname
-   \else
-    \bm{\hat{\mathbf{#1}}}%
-   \fi
-}}
+\DeclareRobustCommand{\vu}[1]{%
+  \begingroup
+    \edef\temp{#1}%
+    \ifcat a\temp
+      % #1 starts with a letter → check for pre-defined \vuX
+      \ifcsname vu#1\endcsname
+        \endgroup\csname vu#1\endcsname
+      \else
+        \endgroup\bm{\hat{\mathbf{#1}}}%
+      \fi
+    \else
+      \endgroup\bm{\hat{\mathbf{#1}}}%
+    \fi
+}
 
 % New definition of square root:
 % it renames \sqrt as \oldsqrt

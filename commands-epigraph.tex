@@ -150,18 +150,21 @@
 %   \vspace{\afterepigraphskip}}}
 
 
-\renewcommand{\epigraph}[3][0.5]{\begin{tcolorbox}[enhanced jigsaw,flush right,title={#3},halign=right,detach title,fonttitle=\scshape\color{black},after upper={\vspace{0.3em}\par\hfill--- \tcbtitle},colback=black!3!white,text width={#1\textwidth},boxrule=0mm,left=1mm,right=5mm,before skip=30pt,after skip=20pt,borderline east={1mm}{0pt}{black}]{\itshape #2}\end{tcolorbox}}
+\newlength{\episidewidth}
+\setlength{\episidewidth}{0mm}
+\newcommand{\episidecolor}{white}
 
-\newcommand{\mediaepigraph}[4][by]{\epigraph{#2}{\textit{#3}, #1\ #4}}
+\renewcommand{\epigraph}[3][0.5]{\begin{tcolorbox}[enhanced jigsaw,flush right,title={\lowercase{#3}},halign=right,detach title,fonttitle=\scshape\color{black},after upper={\vspace{0.3em}\par\hfill--- \tcbtitle},colback=white,text width={#1\textwidth},boxrule=0mm,left=-15mm,right=7mm,before skip=20pt,after skip=20pt,top=5mm,borderline east={\episidewidth}{0pt}{\episidecolor}]{\itshape #2}\end{tcolorbox}}
 
 \newcommand{\twinEpigraphs}[4]{%
-\begin{tcolorbox}[enhanced jigsaw,sidebyside,sidebyside align=bottom,segmentation style={draw=black,solid,line width=1mm},colback=black!3!white,text width=\textwidth,boxrule=0mm,left=1mm,right=0mm,before skip=10pt,after skip=20pt]%
-{\begin{flushright}{\textit{#1}}\\\phantom{ }\par\hfill\scshape\color{black}--- #2\end{flushright}}%
+\begin{tcolorbox}[enhanced jigsaw,sidebyside,sidebyside align=bottom,segmentation style={draw=\episidecolor,solid,line width=\episidewidth},colback=white,text width=\textwidth,boxrule=0mm,left=-5mm,right=0mm,before skip=20pt,after skip=20pt]%
+{\flushright{\itshape\small#1}\\\phantom{ }\par\hfill\scshape\color{black}--- \lowercase{#2}}%
 \tcblower%
-{\begin{flushleft}{\textit{#3}}\\\phantom{ }\par\scshape\color{black}--- #4\end{flushleft}}%
+{\flushleft{\itshape\small#3}\\\phantom{ }\par\scshape\color{black}--- \lowercase{#4}}%
 \end{tcolorbox}%
 }
 
+\newcommand{\mediaepigraph}[4][by]{\epigraph{#2}{\textit{#3}, #1\ #4}}
 
 \newcommand{\fancifulepigraph}[4]{%
   \begin{fanciful}
@@ -201,18 +204,18 @@
 \newcommand{\alice}{%
     \stepcounter{impossible}
     \ifnum\theimpossible=\numexpr\alice@listlen-1
-        \def\alice@ordinal{Last}
+        \def\alice@ordinal{last}
     \else
-        \def\alice@ordinal{\Ordinalstring{impossible}}
+        \def\alice@ordinal{\ordinalstring{impossible}}
     \fi
 
     \ifnum\theimpossible=0
-        \renewcommand{\alice@attr}{Alice in Wonderland}
+        \renewcommand{\alice@attr}{alice in wonderland}
     \else
-        \renewcommand{\alice@attr}{\alice@ordinal~of the Six Impossible Things}
+        \renewcommand{\alice@attr}{\alice@ordinal~of the six impossible things}
     \fi
     \renewcommand{\alice@phrase}{\alice@list[\theimpossible+1]}
-    \epigraph{\alice@phrase}{\alice@attr}
+    \epigraph{\alice@phrase}{\lowercase{\alice@attr}}
 }
 \makeatother
 
