@@ -1,8 +1,7 @@
 % !TEX root = ../main.tex
 % !aim: we present the results of our stellar evolution codes in the interesting case when both stars almost (or in some instances, do) touch. (Theme I)
-\chapter{Detailed Models of Overcontact Binary Stars}\label{chap:close_contact}
 
-\chapterEpigraph{I can remember... sitting on a rooftop. Looking up and wondering what the stars were. I assumed I’d never know.}{Hoid}
+\customchapter{Detailed Models of Overcontact Binary Stars}{I can remember... sitting on a rooftop. Looking up and wondering what the stars were. I assumed I’d never know.}{Hoid}\label{chap:close_contact}
 
 \lettrine[lines=3]{A}{s previously discussed, stars} undergoing mass transfer will generally experience \gls{rlof} during their lifetimes. In a binary where both stars are undergoing mass transfer, both stars may undergo \gls{rlof} simultaneously, resulting in a contact binary system in which both stars physically touch. Contact binaries are not uncommon -- they form one in every approximately 100 main-sequence stars \citep{Rucinski:1998} and 39 in every 100 binary systems \citep{Green:2023}.
 
@@ -37,7 +36,7 @@ Ages for the six binaries have not been published, though a soft restriction can
 
         \bottomrule
     \end{tabular}
-        \caption[Search parameters for the six close-contact binaries compiled in \citet{Abdul-masih:2022}, as used in our fitting to the BPASS v2.2.1 grid.]{Search parameters for the six close-contact binaries compiled in \citet{Abdul-masih:2022}, as used in our fitting to the BPASS v2.2.1 grid. The uncertainties presented are not the physical uncertainties on their parameters, but instead represent the size of the range that we search within, e.g., $P=1.175^{+6}_{-1.175}$ indicates that we match on all periods between 0 and \SI{7.165}{\day} inclusive. Masses and Luminosities are measured relative to Solar, periods are measured in days, and temperatures measured in Kelvin. \textbf{Notes:} $^a$Source paper assumes solar metallicity with no further qualification $^b$Using the mean metallicity of the SMC $^c$Based on \citet{Andersen:1975} claiming 0.021 and \citet{Terrell:2003} confirming a comparison with synthetic spectra ``does not support a carbon content, and therefore metallicity, far from the solar value'' $^d$A mass ratio inversion occurred for this binary \citep[see][]{Martins:2017} and hence we use the definition of ``primary'' from within the paper when reporting in this table. $^e$Using the mean metallicity of the Milky Way $^f$As \citet{Crowther:2018} reports ``half-solar'' for the Tarantula Nebula, the host nebula of VFTS 352. \textbf{References}: A: \citet{Raucq:2017}, B: \citet{Lorenzo:2014}, C: \citet{Hilditch:2005}, D: \citet{Penny:2008}, E: \citet{Martins:2017}, F: \citet{Almeida:2015}}
+        \caption[Search parameters for the six close-contact binaries compiled in \citet{Abdul-masih:2022}, as used in our fitting to the BPASS v2.2.1 grid.]{Search parameters for the six close-contact binaries compiled in \citet{Abdul-masih:2022}, as used in our fitting to the \gls{bpass} v2.2.1 grid. The uncertainties presented are not the physical uncertainties on their parameters, but instead represent the size of the range that we search within, e.g., $P=1.175^{+6}_{-1.175}$ indicates that we match on all periods between 0 and \SI{7.165}{\day} inclusive. Masses and Luminosities are measured relative to Solar, periods are measured in days, and temperatures measured in Kelvin. \textbf{Notes:} $^a$Source paper assumes solar metallicity with no further qualification $^b$Using the mean metallicity of the SMC $^c$Based on \citet{Andersen:1975} claiming 0.021 and \citet{Terrell:2003} confirming a comparison with synthetic spectra ``does not support a carbon content, and therefore metallicity, far from the solar value'' $^d$A mass ratio inversion occurred for this binary \citep[see][]{Martins:2017} and hence we use the definition of ``primary'' from within the paper when reporting in this table. $^e$Using the mean metallicity of the Milky Way $^f$As \citet{Crowther:2018} reports ``half-solar'' for the Tarantula Nebula, the host nebula of VFTS 352. \textbf{References}: A: \citet{Raucq:2017}, B: \citet{Lorenzo:2014}, C: \citet{Hilditch:2005}, D: \citet{Penny:2008}, E: \citet{Martins:2017}, F: \citet{Almeida:2015}}
     \label{tab:overcontact_binaries}
 \end{table}
 
@@ -82,7 +81,7 @@ We note two key caveats in our search criteria. Our search error bars are widene
 Secondly, luminosities are not uniformly reported for the companions across the grid. In particular, the companion luminosity for VFTS 352 is unreported, and thus we approximate it using the Stefan-Boltzmann law,
 
 \begin{equation}
-    \frac{L}{L_\odot} = \left(\frac{R}{R_\odot}\right)^2 \left(\frac{T}{T_\odot}\right)^4,
+    \frac{L}{L_\odot} = \left(\frac{R}{R_\odot}\right)^2 \left(\frac{T}{T_\odot}\right)^4,\label{eq:sb_law}
 \end{equation}
 
 where $T_\odot=\SI{5778}{\kelvin}$. This induces two assumptions: that the companion is a perfect blackbody, and that it is spherical. The first assumption is typically assumed regardless, and the secondary is a necessary condition of our 1D stellar evolution approach. Although the star is, physically, distorted with a fillout factor of $f=1.28$, the key assumption underpinning 1D stellar evolution is spherical symmetry. Nevertheless, the illustration on the \gls{hrd} is for illustrative purposes only. Since the binaries in this sample are eclipsing binaries, the most confident parameters we could fit to are the masses and radii.
@@ -133,7 +132,7 @@ To determine the likely future history of this sample, we must use the \codename
         \label{fig:hoki_VFTS_352}
     \end{subfigure}
 
-    \caption[BPASS v2.2.1 primary models for the matches obtained by \codename{Hoki} for the parameters in \Cref{tab:overcontact_binaries}.]{BPASS v2.2.1 primary models for the matches obtained by \codename{Hoki} for the parameters in \Cref{tab:overcontact_binaries}. The legend key is the BPASS stellar model file name (omitting the ``sneplot-'' prefix common to every entry), and is broken down into its parts in \Cref{tab:hoki_matches}. The overplotted observed systems do not match every system, and the search error bars were widened somewhat as a result (see \Cref{tab:overcontact_binaries} for details).}
+    \caption[BPASS v2.2.1 primary models for the matches obtained by \codename{Hoki} for the parameters in \Cref{tab:overcontact_binaries}.]{\gls{bpass} v2.2.1 primary models for the matches obtained by \codename{Hoki} for the parameters in \Cref{tab:overcontact_binaries}. The legend key is the \gls{bpass} stellar model file name (omitting the ``sneplot-'' prefix common to every entry), and is broken down into its parts in \Cref{tab:hoki_matches}. The overplotted observed systems do not match every system, and the search error bars were widened somewhat as a result (see \Cref{tab:overcontact_binaries} for details).}
     \label{fig:hoki_matches_HRD_primaries}
 \end{figure}
 
@@ -208,48 +207,48 @@ We examine the models at three periods. The first is the fiducial period, as rep
         \centering
         \includegraphics[width=\textwidth]{images/overcontact_binaries/LSS_3074_MvP.pdf}
         \caption{LSS 3074}
-        \label{fig:hoki_LSS_3074}
+        \label{fig:hoki_LSS_3074_mvp}
     \end{subfigure}%
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
         \includegraphics[width=\textwidth]{images/overcontact_binaries/MY_Cam_MvP.pdf}
         \caption{MY Camelopardalis}
-        \label{fig:hoki_MY_Cam}
+        \label{fig:hoki_MY_Cam_mvp}
     \end{subfigure}
 
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
         \includegraphics[width=\textwidth]{images/overcontact_binaries/SMC_108086_MvP.pdf}
         \caption{SMC 108086}
-        \label{fig:hoki_SMC_108086}
+        \label{fig:hoki_SMC_108086_mvp}
     \end{subfigure}%
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
         \includegraphics[width=\textwidth]{images/overcontact_binaries/TU_Mus_MvP.pdf}
         \caption{TU Muscae}
-        \label{fig:hoki_TU_Mus}
+        \label{fig:hoki_TU_Mus_mvp}
     \end{subfigure}
 
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
         \includegraphics[width=\textwidth]{images/overcontact_binaries/V382_Cyg_MvP.pdf}
         \caption{V382 Cygni}
-        \label{fig:hoki_V382_Cyg}
+        \label{fig:hoki_V382_Cyg_mvp}
     \end{subfigure}%
     \begin{subfigure}[t]{0.49\textwidth}
         \centering
         \includegraphics[width=\textwidth]{images/overcontact_binaries/VFTS_352_MvP.pdf}
         \caption{VFTS 352}
-        \label{fig:hoki_VFTS_352}
+        \label{fig:hoki_VFTS_352_mvp}
     \end{subfigure}
 
     \caption[Detailed model tracks for our six close-contact binaries.]{Detailed model tracks for our six close-contact binaries. Models shown are restricted to only during their core hydrogen burning phase. The $x$-axis is limited to double the maximum value of the observed radius.}
     \label{fig:matches_MVP_primaries}
 \end{figure}
 
-The results of our forward evolution are shown in \Cref{fig:bespoke_binaries_wider,fig:bespoke_binaries_normal,fig:bespoke_binaries_shorter}. We also show summary plots for the six close-contact binaries in \Cref{fig:matches_MVP_primaries}, where we plot the primary mass against the primary radius. As the six contact binaries are all eclipsing binaries, the masses and radii are the most well-constrained parameters.
+The results of our forward evolution are shown in \Cref{chap:appendix:bespoke_models}. We also show summary plots for the six close-contact binaries in \Cref{fig:matches_MVP_primaries}, where we plot the primary mass against the primary radius. As the six contact binaries are all eclipsing binaries, the masses and radii are the most well-constrained parameters.
 
-As a result, however, there is a dearth of matching models. LSS 3074, TU Muscae, and V382 Cygni are the only three systems with any matches to the observed masses and periods, which are enumerate in \Cref{tab:matches_mvps}. We also take each of the matching models and display them in \Cref{fig:donors_mvps} (donors) and \Cref{fig:accretors_mvps} (accretors). There are fourteen matching models in total.
+As a result, however, there is a dearth of matching models. LSS 3074, TU Muscae, and V382 Cygni are the only three systems with any matches to the observed masses and periods, which are enumerate in \Cref{tab:matches_mvps}. We also take each of the matching models and display them in \Cref{fig:model_mvps}. There are fourteen matching models in total.
 
 \begin{sidewaystable}[!htbp]
     \centering
@@ -284,23 +283,16 @@ As a result, however, there is a dearth of matching models. LSS 3074, TU Muscae,
 
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width=\textwidth]{images/overcontact_binaries/donors_mvp.pdf}
-    \caption[The mass-radius plots for our donor models.]{The mass-radius plots for our donor models that match their observations. The tracks are restricted to whilst the donor is still undergoing core hydrogen fusion.}
-    \label{fig:donors_mvps}
-\end{figure}
-
-\begin{figure}[!htbp]
-    \centering
-    \includegraphics[width=\textwidth]{images/overcontact_binaries/accretors_mvp.pdf}
-    \caption[The mass-radius plots for our accretor models.]{The mass-radius plots for our accretor models that match their observations. The tracks are restricted to whilst the donor is still undergoing core hydrogen fusion.}
-    \label{fig:accretors_mvps}
+    \includegraphics[width=\textwidth]{images/overcontact_binaries/model_mvp.pdf}
+    \caption[The mass-radius plots for our models.]{The mass-radius plots for our donor (orange) and accretor (blue) models that match their observations. The tracks are restricted to whilst the donor is still undergoing core hydrogen fusion, with the exception of one model which terminated on the main sequence and is marked on its plot.}
+    \label{fig:model_mvps}
 \end{figure}
 
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=\textwidth]{images/overcontact_binaries/matching_hrds.pdf}
     \caption[\acrshortpl{hrd} for the matching overcontact binary models.]{\glspl{hrd} for the matching overcontact binary models. Also shown are the crosses representing the locations of the observed systems as reported in their original papers. The secondary luminosities in particular are not well constrained, and thus their locations must be taken with caution.}
-    \label{fig:accretors_mvps}
+    \label{fig:accretors_hrds}
 \end{figure}
 
 \section{Matches to observed close contact models}
@@ -401,12 +393,14 @@ What then remains is to evaluate the goodness-of-fit of the detailed model code 
 
 The most obvious limitation is that we were able to only produce three matching systems on one of the six close-contact binaries. \Cref{fig:matches_MVP_primaries} shows that, especially for SMC 108086 and MY Camelopardalis, the parameter space exploration was insufficient and that, were the space widened, more matches may be able to be found.
 
-\todo{Finish discussion}
+The initial matches for systems, as listed in \Cref{tab:overcontact_binaries}, was performed as matches to positions on an \gls{hrd}, which presents difficulty. First, as contact binaries, the secondary luminosity is difficult to constrain, and the assumption of the Stefann-Boltzmann law (\Cref{eq:sb_law}) is unlikely to hold proper. This resulted in intentionally wide search bars, to encapsulate this uncertainty, but also resulted in binaries that are unlikely to actually match the search parameters.
+
+This entire study also relies on the \gls{bpass} v2 models to evaluate the \gls{zams} parameters of our models. Whilst tested against observations, this means uncertainties in \gls{bpass} are also inherent in uncertainties of our models. For the most part, this is of little concern. The key limitation of our approach is the fact that \gls{bpass} models the accretor as a point mass prior to the primary supernova \citep{Eldridge:2017}, contributing further to the aforementioned difficulty in constraining the search parameters for the accretor.
+
+In order to obviate these limitations, a wide grid in both primary and secondary mass could be computed. By doing so, one removes the dependence on the \gls{bpass} secondary grid and inherent uncertainties arising from \citet{Hurley:2002}, at the computational expense of having to search a much larger range of models for matches.
 
 \section{Chapter Summary}
 
-We started by compiling the six contact binaries in the sample of \citet{Abdul-masih:2022}. We matched these binaries to their \gls{zams} parameters using the BPASS and \codename{hoki} codes, finding between one and ten viable sets of initial parameters to each model. We also found their mean ages to be between \SI{1.34}{\mega\year} and \SI{13.8}{\mega\year}, depending on the model.
+We started by compiling the six contact binaries in the sample of \citet{Abdul-masih:2022}. We matched these binaries to their \gls{zams} parameters using the \gls{bpass} and \codename{hoki} codes, finding between one and ten viable sets of initial parameters to each model. We also found their mean ages to be between \SI{1.34}{\mega\year} and \SI{13.8}{\mega\year}, depending on the model.
 
-By forward-evolving them using the \codename{stars} code,
-
-\todo{Write summary}
+By forward-evolving them using the \codename{stars} code, we found that 14 model tracks matched, for LSS 3074, TU Mus, and V382 Cyg. We found that these matches were short compared to the lifetime of the binary, generally existing for $\sim\SI{200}{\kilo\year}$ -- $\sim\SI{600}{\kilo\year}$. Of the fourteen matches, we found that only three matched the observed masses and radii of both components in the binary, all for TU Mus on the shortest grid. We conjectured that this may be an artifact of the parameter space explored, and that a wider grid would enable us to find closer matches.

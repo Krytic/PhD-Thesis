@@ -5,6 +5,7 @@ from pikepdf import Pdf
 pdf = Pdf.open('PhD_Thesis.pdf')
 
 found_pages = [(0, 'Title')]
+j_indexes = []
 
 with open('main.chaps', 'r') as file:
     for line in file.readlines():
@@ -14,15 +15,21 @@ with open('main.chaps', 'r') as file:
         text = parts[0].strip()
         current_page = int(parts[1].strip())-1
 
-        if text.lower().startswith('bibliography'):
+        title = text.lower()
+
+        if title.startswith('chapter') or title.startswith('appendix'):
+            j_indexes.append(current_page)
+
+        if title.startswith('bibliography'):
             text = 'Bibliography'
 
-        if text.lower().startswith('contents'):
+        if title.startswith('contents'):
             text = 'Contents'
 
         print(f'Found {text} on page {current_page}')
 
         found_pages.append((current_page, text))
+
 
 for i, match in enumerate(found_pages):
     if i == len(found_pages) - 1:
@@ -41,5 +48,16 @@ for i, match in enumerate(found_pages):
     for page in pdf.pages[j:k]:
         dst.pages.append(page)
     dst.save(f'rendered_chapters/{match[1]}.pdf')
+
+# extract pages j to k
+print("Extracting the chapter cover pages")
+
+dst = Pdf.new()
+for j in j_indexes:
+    page = pdf.pages[j]
+    dst.pages.append(page)
+
+dst.save(f'rendered_chapters/chapter-cover-pages.pdf')
+
 
 pdf.close()

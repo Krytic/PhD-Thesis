@@ -48,6 +48,7 @@
 \usepackage{pifont}% http://ctan.org/pkg/pifont
 \usepackage{pdflscape}
 \usepackage{pgfplots}
+\usepackage{fmtcount}
 
 \scripturesetup{
   % font=\small,
@@ -96,6 +97,7 @@
 \makeatother
 
 \def\supervisorcopy{}
+% \def\printingcopy{}
 
 \makeatletter
 \newcommand{\coverimage}[1]{\gdef\@coverimage{#1}}
@@ -153,25 +155,69 @@
 \newlength\ChapWd
 \settowidth\ChapWd{\Huge\chaptertitlename}
 
+% \newcommand{\chapterEpigraph}[2]{\tikz[remember picture,overlay]
+%     {
+%     \node[fill=main-accent!50!white,font=\fontsize{10}{12}\selectfont\color{white},anchor=west, minimum height=\ChapWd, inner sep=0.5cm]
+%       at ([xshift=60pt,yshift=-60pt-0.5\ChapWd]current page.north west)
+%       (epigraphloc) {\begin{varwidth}{0.5\textwidth}#1\begin{flushright}\scshape-- #2\end{flushright}\end{varwidth}};
+%     }}
+
+
 \makeatletter
+\newcommand{\chapterEpigraph}[2]{\gdef\@nextchapquote{#1}\gdef\@nextchapauthor{#2}}
+\newcommand{\customchapter}[3]{\chapterEpigraph{#2}{#3}\chapter{#1}}
 \newwrite\chaptermetadata
 \newcounter{abspagecounter}
 \immediate\openout\chaptermetadata=\jobname.chaps
 \newcommand{\writecurrentchap}[1]{%
 \protected@write\chaptermetadata{}{#1, \zref@extract{meta:chap:\theabspagecounter}{abspage}}
 }
-\makeatother
+
+% \titleformat{\chapter}[display]
+%   {\normalfont\filcenter}
+%   {\tikz[remember picture,overlay]
+%     {
+%     \node[fill=main-accent,font=\fontsize{60}{72}\selectfont\color{white},anchor=east,minimum size=\ChapWd]
+%       at ([xshift=-60pt,yshift=-60pt-0.5\ChapWd]current page.north east)
+%       (numb) {\thechapter};
+%     \node[rotate=90,anchor=south,inner sep=0pt,font=\huge] at ([xshift=-5pt]numb.west) {\color{main-accent}\chaptertitlename};
+%     }
+%   }{0pt}{\stepcounter{abspagecounter}\zlabel{meta:chap:\theabspagecounter}\writecurrentchap{\chaptertitlename-\thechapter}\huge\selectfont\bfseries\color{main-accent}#1}[\vskip5pt\Large\color{main-accent}\protect{\pgfornament[width=0.3\textwidth]{88}}]
 
 \titleformat{\chapter}[display]
-  {\normalfont\filcenter}
-  {\tikz[remember picture,overlay]
-    {
-    \node[fill=main-accent,font=\fontsize{60}{72}\selectfont\color{white},anchor=east,minimum size=\ChapWd]
-      at ([xshift=-60pt,yshift=-60pt-0.5\ChapWd]current page.north east)
-      (numb) {\thechapter};
-    \node[rotate=90,anchor=south,inner sep=0pt,font=\huge] at ([xshift=-5pt]numb.west) {\color{main-accent}\chaptertitlename};
-    }
-  }{0pt}{\stepcounter{abspagecounter}\zlabel{meta:chap:\theabspagecounter}\writecurrentchap{\chaptertitlename-\thechapter}\huge\selectfont\bfseries\color{main-accent}#1}[\vskip5pt\Large\color{main-accent}\protect{\pgfornament[width=0.3\textwidth]{88}}]
+  {\normalfont\filcenter\newgeometry{inner=18mm,outer=18mm,top=18mm,bottom=18mm}}
+  { \thispagestyle{empty}
+    \begin{tikzpicture}[remember picture, overlay]
+        \node[anchor=north west] at (current page.north west){\pgfornament[width=2cm]{63}};
+        \node[anchor=north east] at (current page.north east){\pgfornament[width=2cm,symmetry=v]{63}};
+        \node[anchor=south west] at (current page.south west){\pgfornament[width=2cm,symmetry=h]{63}};
+        \node[anchor=south east] at (current page.south east){\pgfornament[width=2cm,symmetry=c]{63}};
+    \end{tikzpicture}
+    \vfill
+    \stepcounter{abspagecounter}
+    \zlabel{meta:chap:\theabspagecounter}
+    \writecurrentchap{\chaptertitlename-\thechapter}
+    \Huge{\fontfamily{Crimson-TLF}\selectfont
+          \MakeUppercase{\chaptertitlename}~\thechapter
+         }
+   }
+   {0.5cm}
+   {\huge{\fontfamily{Crimson-TLF}\selectfont#1}}
+   [\vskip2cm
+    \Large
+    \color{main-accent}
+    \protect{\pgfornament[width=0.05\textwidth]{8}} % formerly 89
+    \vskip2cm
+    \Large{\fontfamily{Crimson-TLF}\selectfont\color{black}\@nextchapquote}
+    \vskip0.5cm
+    \Large{\color{black}
+           \fontfamily{Crimson-TLF}\selectfont
+           \textit{---~\@nextchapauthor~---}
+          }
+    \vfill
+    \restoregeometry
+    \clearpage
+   ]
 
 \titleformat{name=\chapter,numberless}[block]
   {\normalfont\filcenter}
@@ -182,6 +228,7 @@
 
 \titlespacing*{name=\chapter, numberless}
   {0pt}{75pt}{10pt}
+
 
 \newcommand*\cleartoleftpage{%
   \clearpage
@@ -217,6 +264,17 @@
   \fancyhead[LE,LO]{\ifnum\value{chapter}>0 \nouppercase{\phantom{1}\leftmark}\fi}
   \fancyhead[CE,CO]{}
   \fancyhead[RE,RO]{\ifnum\value{chapter}>0 \nouppercase{\phantom{1}\rightmark}\fi}
+  \fancyfoot[LE,LO]{}
+  \fancyfoot[CE,CO]{Page \thepage\ of \pageref{LastPage}}
+  \fancyfoot[RE,RO]{}
+}
+
+\fancypagestyle{chaptitlepage}{%
+  \renewcommand{\footrulewidth}{0.1pt}
+  \renewcommand{\headrulewidth}{0.1pt}
+  \fancyhead[LE,LO]{\phantom{1}}
+  \fancyhead[CE,CO]{}
+  \fancyhead[RE,RO]{}
   \fancyfoot[LE,LO]{}
   \fancyfoot[CE,CO]{Page \thepage\ of \pageref{LastPage}}
   \fancyfoot[RE,RO]{}

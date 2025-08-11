@@ -1,8 +1,9 @@
 % !TEX root = ../main.tex
 % !aim: we provide the necessary theoretical background for future chapters, critically examine the pieces of software and numerical methods employed in this work, and discuss the logistics of running this single-thread grid-based code as a multiprocessed code on a distributed cluster.
-\chapter{Theoretical Background}\label{chap:theoretical_background}
 
-\chapterEpigraph{Se'i lua'i lou le 'ulu taumamao.\\Pick the breadfruits on the far-off branches first}{S\=amoan proverb}
+\customchapter{Theoretical Background}{A map is not the territory it represents, but, if correct, it has a similar structure to the territory, which accounts for its usefulness.}{Alfred Korzybski}\label{chap:theoretical_background}
+
+\chapterEpigraph
 
 \lettrine[lines=3]{I}{n this chapter, we provide a} brief account of the evolution of a star from a theoretical perspective, from its formation to post-supernova. We will discuss both the case of a single isolated star, and an isolated binary star system. It is pertinent to note that our binaries will be assumed to have formed together at birth -- thus having the same age -- rather than by, for example, the dynamical capture of a runaway star in a globular cluster, which introduces extra effects and considerations.
 
@@ -388,7 +389,7 @@ Massive stars are the key focal objects of this thesis, and in many ways offer s
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=\textwidth]{images/TheorySection/10_msun_jumps_new.pdf}
-    \caption[The evolution of stars in the range $0.5-80\unit{\msun}$.]{The evolution of stars in the range $0.5-80\unit{\msun}$. The dashed black line represents the \acrfull{zams}, which is the origin point of all of our models, and (in this plot) extends from \SI{0.5}{\msun} to \SI{300}{\msun}. The blue triangle is the (highly approximate) bounds of the Hertzsprung gap. Crosses indicate binaries in the Double Eclipsing Binaries catalogue \citep[DEBCAT;][]{Southworth:2015}, and illustrate the apparent ``zone of avoidance'' that defines the Hertzsprung gap. The script that generates this figure is provided in \Cref{chap:appendix:code_samples}.}
+    \caption[The evolution of stars in the range $0.5-80\unit{\msun}$.]{The evolution of stars in the range $0.5-80\unit{\msun}$. The dashed black line represents the \acrfull{zams}, which is the origin point of all of our models, and (in this plot) extends from \SI{0.5}{\msun} to \SI{300}{\msun}. The blue triangle is the (highly approximate) bounds of the Hertzsprung gap. Crosses indicate binaries in the Double Eclipsing Binaries catalogue \citep[DEBCAT;][]{Southworth:2015}, and illustrate the apparent ``zone of avoidance'' that defines the Hertzsprung gap.}
     \label{fig:hr_diagram_massive_stars}
 \end{figure}
 
@@ -493,7 +494,7 @@ Importantly for the nucleosynthesis of iron-group and heavier elements (which ca
 
 \subsection{Type Ia supernovae}
 
-There is another class of supernovae we consider in this thesis, namely type Ia supernovae. These are formed when a \gls{wd} star exceeds the maximum mass by which electron degeneracy pressure can sustain the star. This mass is termed the Chandrasekhar mass, $M_\text{ch}\approx\SI{1.44}{\msun}$, and is derived in \Cref{chap:additional_derivations}. When material accretes onto a white dwarf, its mass will increase, and if the accretion does not stop, the mass will exceed the Chandrasekhar mass. This means electron degeneracy pressure is no longer able to sustain the star, and the core collapses further into a Type Ia (or thermonuclear) supernova.
+There is another class of supernovae we consider in this thesis, namely type Ia supernovae. These are formed when a \gls{wd} star exceeds the maximum mass by which electron degeneracy pressure can sustain the star. This mass is termed the Chandrasekhar mass, $M_\text{ch}\approx\SI{1.44}{\msun}$. When material accretes onto a white dwarf, its mass will increase, and if the accretion does not stop, the mass will exceed the Chandrasekhar mass. This means electron degeneracy pressure is no longer able to sustain the star, and the core collapses further into a Type Ia (or thermonuclear) supernova.
 
 \section{Two to tango: Binary Evolution}\label{sec:binary_evolution}
 
@@ -512,7 +513,7 @@ The most marked change for a binary compared to a single star is that its trajec
 
 There are several formation channels for a binary star system. Binaries may be formed from birth (as discussed in \Cref{sec:stellar_formation}, with the caveat that in this scenario two clumps of gas form near each other), via fragmentation of a protostar's disc, dynamical capture of one star by another (comparable to one of the suggested origins of Phobos and Deimos, per \citet{Burns:1978}), or via a higher multiplicity system ejecting one or more of its constituent stars, perhaps via a natal supernova kick.
 
-In any case, once formed and the orbit is stabilised, binary systems obey Kepler's three laws. In the generalised binary regime, however, the assumption that $M_1\gg M_2$ (which underpins most statements of Kepler's laws) is not necessarily true -- for instance, the system LSS 3074 has two stellar components with \gls{zams} masses of approximately \SI{30}{\msun} and \SI{10}{\msun} \citep{Raucq:2017}. Moreover, the fact that there are two stars in orbit rather that one object orbiting another means that Kepler's laws must be stated more precisely. Formally, they can be expressed as (see the appendix of \citet{Richards:2021} for derivations):
+In any case, once formed and the orbit is stabilised, binary systems obey Kepler's three laws. In the generalised binary regime, however, the assumption that $M_1\gg M_2$ (which underpins most statements of Kepler's laws) is not necessarily true -- for instance, the system LSS 3074 has two stellar components with \gls{zams} masses of approximately \SI{30}{\msun} and \SI{10}{\msun} \citep{Raucq:2017}. Moreover, the fact that there are two stars in orbit rather that one object orbiting another means that Kepler's laws must be stated more precisely. Formally, they can be expressed as (see \Cref{chap:additional_derivations} for derivations):
 
 \begin{enumerate}
     \item All orbits are ellipses, with both stars orbiting a common barycentre at the focus of the ellipse,

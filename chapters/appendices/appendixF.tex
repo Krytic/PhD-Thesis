@@ -1,8 +1,6 @@
 % !TEX root = ../../main.tex
 % !aim: we present additional derivations for key theoretical expressions from \Cref{chap:theoretical_background}.
-\chapter{Additional Derivations}\label{chap:additional_derivations}
-
-\chapterEpigraph{Algebra’s like sheet music. The important thing isn’t can you read music, it’s can you \textit{hear} it. Can you hear the music, Robert?}{Niels Bohr, in Oppenheimer}
+\customchapter{Additional Derivations}{Algebra’s like sheet music. The important thing isn’t can you read music, it’s can you \textit{hear} it. Can you hear the music, Robert?}{Niels Bohr, in Oppenheimer}\label{chap:additional_derivations}
 
 In this section, we present additional derivations for expressions used in \Cref{chap:theoretical_background}.
 
@@ -77,7 +75,7 @@ Hence the extrema of the potential $V$ are at the points $\xi$ where (taking $\e
 
 % -ve sign on first two terms dumbass
 
-\begin{tcolorbox}
+\begin{tcolorbox}[enhanced,title={The formula for the Roche lobes of binary stars.}]
     \begin{equation}
         0=\xi-\frac{\xi_2}{\pqty{\xi-\xi_1}^2}-\frac{\xi_1}{\pqty{\xi-\xi_2}^2},
     \end{equation}
@@ -102,7 +100,7 @@ The derivations are presented below.
 \begin{figure}[!htbp]
     \centering
     \input{chapters/figures/binary_schematic}
-    \caption[A schematic of a simple binary star system.]{\Cref{fig:bss_schematic} again: A schematic of a simple binary star system with eccentricity $e$, semimajor axis $a$, and semiminor axis $b$. The centre of mass (barycentre) is shown as a blue dot. Here, $M_1$ is the heavier star, which orbits at a smaller distance $r_1$ to the barycentre by Kepler's first and Newton's second laws. The elliptical orbital trajectory is shown in grey. Figure adapted from \citet{Richards:2021}.}
+    \caption[A schematic of a simple binary star system.]{\Cref{fig:bss_schematic} again; A schematic of a simple binary star system with eccentricity $e$, semimajor axis $a$, and semiminor axis $b$. The centre of mass (barycentre) is shown as a blue dot. Here, $M_1$ is the heavier star, which orbits at a smaller distance $r_1$ to the barycentre by Kepler's first and Newton's second laws. The elliptical orbital trajectory is shown in grey. Figure adapted from \citet{Richards:2021}.}
     \label{fig:bss_schematic_appendix}
 \end{figure}
 
@@ -519,7 +517,7 @@ Multiplying each side of \Cref{eq:average_ang_mom} by $2L$ and substituting this
 
 which is our second equation. Hence we arrive at the coupled differential equations describing the decay of a binary star system:
 
-\begin{tcolorbox}
+\begin{tcolorbox}[enhanced,title={\hypersetup{citecolor=white}\citet{Peters:1964} equations for the inspiral of two compact objects}]
     \begin{subequations}
         \begin{align}
             \dv{a}{t} &= \frac{-\beta}{a^3\pqty{1-e^2}^\frac72}\pqty{1+\frac{73}{24}e^2+\frac{37}{96}e^4}\label{eq:peters_sma} \\
@@ -570,7 +568,7 @@ Now write this as $\dv{t}{e}$ and integrate to get the coalescence time:
 
 i.e.,
 
-\begin{tcolorbox}
+\begin{tcolorbox}[enhanced,title={The coalescence time of inspiralling compact objects}]
     \begin{equation}
         T_\text{c}(a_0, e_0) = \frac{12}{19}\frac{c_0^4}{\beta}\int_0^{e_0} \frac{e^\frac{22}{19}\pqty{1+\frac{121}{304}e^2}^\frac{1181}{2299}}{\pqty{1-e^2}^\frac32}\dd{e}
         \label{eq:coalescence_time_formal}
@@ -610,160 +608,6 @@ and imposing our second boundary condition we obtain the coalescence time
 \end{equation}
 
 But if $e\neq 0$, then the orbit is eccentric and the integral must be solved numerically, as no closed form solution exists.
-
-\section{The Chandrasekhar mass}
-
-The following derivation is adapted from the one in \citet{Eldridge:2018}.
-
-\subsection{The Lane-Emden equation}
-
-We begin from the equations of stellar structure, \Cref{eq:stellar_structure}. We take as our equation of state pressure to be to a power of density, i.e.,
-
-\begin{equation}
-    P\propto\rho^\gamma \implies P=K\rho^{1+\frac{1}{n}}
-    \label{eq:polytrope_defn}
-\end{equation}
-
-with $K$ a constant and $n$ (defined by $\gamma=1+\frac{1}{n}$) the so-called polytropic index. We use \Cref{eq:stellar_structure} to establish an ordinary differential equation for the pressure $P$.
-
-\begin{align}
-    \dv{P}{r} &= -\frac{Gm\rho}{r^2} \\
-    \frac{r^2}{\rho}\dv{P}{r} &= -Gm \\
-    \dv{}{r}\pqty{\frac{r^2}{\rho}\dv{P}{r}} &= -G\dv{m}{r} = -4\pi G\rho r^2 \\
-    \frac{1}{r^2}\dv{}{r}\pqty{\frac{r^2}{\rho}\dv{P}{r}} &= -4\pi G\rho.
-    \label{eq:yikes_ode}
-\end{align}
-
-To solve this differential equation, we introduce a dimensionless parameter $\theta$ defined by
-
-\begin{equation}
-    \rho = \rho_\text{c}\theta^n,
-\end{equation}
-
-with $\theta=1$ at $r=0$ and $\theta=0$ at $r=R$. The first constraint defines $\rho_\text{c}$ as the central density. Using this in \Cref{eq:polytrope_defn} we have
-
-\begin{align}
-    P &= K\pqty{\rho_\text{c}\theta^n}^{1+\frac{1}{n}} \\
-    &= K\rho_\text{c}^{1+\frac{1}{n}}\theta^{n\pqty{1+\frac{1}{n}}} \\
-    &= P_\text{c}\theta^{n+1}
-\end{align}
-
-again defining $P_\text{c}$ as the central pressure. Substituting this into \Cref{eq:yikes_ode} we have
-
-\begin{align}
-    \frac{1}{r^2}\dv{}{r}\pqty{\frac{r^2}{\rho}\bqty{K\rho_\text{c}^{1+\frac{1}{n}}\pqty{1+n}\theta^n\dv{\theta}{r}}} &= -4\pi G\rho \\
-    \frac{(n+1)K}{4\pi G}\frac{1}{r^2}\dv{}{r}\pqty{\frac{r^2}{\rho}\rho_\text{c}^{1+\frac{1}{n}}\theta^n\dv{\theta}{r}} &= -\rho_\text{c} \theta^n \\
-    \frac{(n+1)K}{4\pi G}\rho_\text{c}^{\frac{1}{n}}\frac{1}{r^2}\dv{}{r}\pqty{\frac{r^2}{\rho_\text{c}\theta^n}\theta^n\dv{\theta}{r}} &= -\theta^n \\
-    \frac{(n+1)K}{4\pi G}\rho_\text{c}^{\frac{1}{n}-1}\frac{1}{r^2}\dv{}{r}\pqty{r^2\dv{\theta}{r}} &= -\theta^n
-\end{align}
-
-Now we introduce the parameter $\zeta$ by defining
-
-\begin{equation}
-    r=\alpha\zeta \qquad\text{where}\qquad \alpha^2\equiv\frac{(n+1)K}{4\pi G}\rho_\text{c}^{\frac{1}{n}-1} \label{eq:r_def}
-\end{equation}
-
-therefore $\dd{r}=\alpha\dd{\zeta}$ and we have
-
-\begin{tcolorbox}
-    \begin{equation}
-        \frac{1}{\zeta^2}\dv{}{\zeta}\pqty{\zeta^2\dv{\theta}{\zeta}} = -\theta^n
-    \end{equation}
-\end{tcolorbox}
-
-which is known as the Lane-Emden Equation.
-
-\subsection{Mass and Radius relation}
-
-From the Lane-Emden equation, one can deduce the dimensionless radius $R$ of the star for a given polytropic index $n$ via $R=\alpha X_n$, where $X_n$ is the zero of $\theta$ in $\zeta$. From this definition, we have
-
-\begin{align}
-    R &= \alpha X_n \\
-    &\propto \sqrt{K\rho_\text{c}^{\frac{1}{n}-1}},
-\end{align}
-
-the proportionality constant being $\sqrt{\frac{n+1}{4\pi G}}$. Constructing the mass is similar, where the mass internal to radius $r$ is
-
-\begin{align}
-    m(r) &= \int_0^r 4\pi \rho r^\prime \dd{r^\prime} \\
-    &= 4\pi \rho_\text{c} \alpha^3 \int_0^\zeta  \theta^n \pqty{\zeta^\prime}^2 \dd{\zeta^\prime}.
-\end{align}
-
-The second step arises from taking $r=\alpha \zeta$ and changing the bounds of integration. Substituting in the Lane-Emden equation we obtain
-
-\begin{align}
-    m(r) &= -4\pi\rho_\text{c} \alpha^3 \int_0^\zeta \dv{}{{\zeta^\prime}} \pqty{\bqty{\zeta^\prime}^2 \dv{\theta}{{\zeta^\prime}}}\dd{\zeta^\prime} \\
-    &= -4\pi \rho_\text{c} \alpha^3 \zeta^2 \dv{\theta}{\zeta}.
-\end{align}
-
-Hence the total mass is
-
-\begin{align}
-    M = 4\pi \pqty{\frac{\pqty{n+1}K}{4\pi G}}^\frac32 \rho_\text{c}^\frac{3-n}{2n} \pqty{-\zeta^2 \dv{\theta}{\zeta}}_{\zeta=X_n}.\label{eq:mass_relationship_homology}
-\end{align}
-
-Or, as a proportionality relationship,
-
-\begin{equation}
-    M \propto K^\frac32 \rho_\text{c}^\frac{3-n}{2n}. \label{eq:M_propto_rho}
-\end{equation}
-
-The relationship between $M$ and $R$ is thus
-
-\begin{equation}
-    R \propto M^\frac{n-1}{n-3},
-\end{equation}
-
-for fixed $K$. There is a singularity at $n=3$, depicted in \Cref{fig:polytropic_radii} for stars in the range \SI{5}{\msun} to \SI{55}{\msun}. An $n=3$ polytrope corresponds to the equation of state $P\propto\rho^\frac43$, and by \Cref{eq:M_propto_rho}, has its mass independent of the radius or the density.
-
-\begin{figure}[!htbp]
-    \centering
-    \includegraphics[width=\textwidth]{images/Appendices/polytropic_radii.pdf}
-    \caption{The radius of stars of varying mass as a function of the polytropic index they are modelled at.}
-    \label{fig:polytropic_radii}
-\end{figure}
-
-\subsection{The limiting mass}
-
-The number density of electrons in a white dwarf is given by
-
-\begin{equation}
-    n = \frac{N}{V} = \frac{\rho}{\mu m_\text{H}},
-\end{equation}
-
-where $\mu$ is the mean molecular weight of an electron ($\mu=2$ in a stellar core) and $m_\text{H}$ is the mass of a hydrogen atom.
-
-A calculation of the degeneracy pressure of ultrarelativistic electrons in this configuration is beyond the scope of this thesis, but can be written as
-
-\begin{equation}
-    P_\text{degen} = \frac{c\hbar}{12\pi^2}\pqty{\frac{3\pi^2 N}{V}}^\frac43,
-\end{equation}
-
-and thus
-
-\begin{equation}
-    P_\text{degen} = \frac{c\hbar}{12\pi^2}\pqty{\frac{3\pi^2}{2m_\text{H}}}^\frac43 \rho^\frac43.
-\end{equation}
-
-This is a polytrope with $n=3$ and
-
-\begin{equation}
-    K = \frac{c\hbar}{12\pi^2}\pqty{\frac{3\pi^2}{2m_\text{H}}}^\frac43 = \SI{1.224e15}{\dyne\per\centi\meter\squared(\gram\per\centi\meter\cubed)^{-4/3}}
-\end{equation}
-
-As before, this material cannot remain bound to the star -- the radius tends to infinity at $n=3$ per \Cref{fig:polytropic_radii} -- so we have the maximum mass of a stable star supported by electron degeneracy pressure as
-
-\begin{equation}
-    M = 2.02\cdot4\pi\pqty{\frac{K}{\pi G}} \approx \frac{5.75}{\mu^2} \unit{\msun},
-\end{equation}
-
-where the coefficient of 2.02 is evaluated numerically from the $\pqty{-\zeta^2 \dv{\theta}{\zeta}}_{\zeta=X_n}$ term in \Cref{eq:mass_relationship_homology}.
-
-\begin{equation}
-    M = M_\text{ch} \equiv \SI{1.438}{\msun}.
-\end{equation}
-
-Which was to be shown.
 
 \section{Construction of the wind mass-loss rate}\label{chap:mass_loss_construction}
 

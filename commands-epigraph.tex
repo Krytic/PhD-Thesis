@@ -218,10 +218,3 @@
     \epigraph{\alice@phrase}{\lowercase{\alice@attr}}
 }
 \makeatother
-
-\newcommand{\chapterEpigraph}[2]{\tikz[remember picture,overlay]
-    {
-    \node[fill=main-accent!50!white,font=\fontsize{10}{12}\selectfont\color{white},anchor=west, minimum height=\ChapWd, inner sep=0.5cm]
-      at ([xshift=60pt,yshift=-60pt-0.5\ChapWd]current page.north west)
-      (epigraphloc) {\begin{varwidth}{0.5\textwidth}#1\begin{flushright}\scshape-- #2\end{flushright}\end{varwidth}};
-    }}

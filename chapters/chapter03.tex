@@ -1,8 +1,7 @@
 % !TEX root = ../main.tex
 % !aim: we explore the regime in which mass transfer is assumed to become helium-rich, and the effects on the future evolution of these binaries. (Theme I)
-\chapter{Helium Rich Mass Transfer}\label{chap:he_mass_transfer}
 
-\chapterEpigraph{All hands, this is the captain. Begin prepping all stations for first contact.}{Captain Ed Mercer}
+\customchapter{Helium Rich Mass Transfer}{All hands, this is the captain. Begin prepping all stations for first contact.}{Captain Ed Mercer}\label{chap:he_mass_transfer}
 
 \lettrine[lines=3]{S}{ince the force between two} objects due to gravity scales like $F\sim\frac{1}{r_\text{sep}}$, another question naturally arises during the consideration of contact binaries. For sufficiently close binaries, one can imagine that mass transfer through \gls{rlof} or tidal effects could become reasonably strong, stripping the hydrogen envelope of a main sequence (or shortly post-main sequence) star and exposing the helium-enriched core underneath. If this stripping does not cause the star to retreat within its Roche lobe, then this core material would continue to be accreted, creating helium-enriched matter streams accreting onto its companion.
 
@@ -209,13 +208,13 @@ Within the VCA model, the formation of an inverted mean molecular weight gradien
 
 \section{Implications}
 
-We now examine some of the implications for this work and this model of mass transfer.
+An important question to consider is what the VCA model would be observed as. Some of the parameters of the star are typical of single main sequence stars but with higher luminosities, helium-rich abundances, and higher surface temperatures they may be able to be identified from observations. The effective temperature of our VCA models is in the range of O5 to O3 stellar types. The hottest examples might therefore look similar to the WN/O3 stars identified by \citet{Massey:2023}, although it has previously been suggested that such stars were in fact the helium donors from binary interaction \citep{Gotberg:2018, Smith:2018}. The idea that the WN/O3 stars could in fact be the accretor stars does link well with their apparent single-star nature \citep{Massey:2023} and their relative isolation compared to other massive stars \citep{Smith:2018}, if their donor stars have already exploded in a core-collapse supernova. Alternatively, it is also possible that the accretors may be observed as luminous-blue variable (LBV) stars. \citet{Smith:2012} suggested that LBV stars may arise from accretors in binaries.
 
-\subsection{Prevalence}
+Given that the evolution of the accretor star remains different from that of a single star, the impact of VCA may provide at least part of the answer to some outstanding questions in stellar evolution. The first question is the known mass discrepancy for some stars between their spectroscopic and evolutionary masses \citep[e.g.][]{Herrero:1992, Massey:2009, Bouret:2013, Massey:2013, McEvoy:2015, Markova:2018, Ramachandran:2018, Bestenlehner:2020}. Comparing the luminosities of our accretor models with single-star models in \Cref{fig:mass-luminosity_relation}, we can see that a star with helium-rich accretion has a luminosity similar to a star that is 20~per~cent more massive. Such a difference may explain why for some stars' mass estimates can differ significantly.
 
-Although we have presented only one example of helium-rich mass transfer in this work, it is not unreasonable to assume that this process may be common. To estimate how often such evolution may occur, we have used the binary star population of models from the Binary Population and Spectral Synthesis (BPASS) v2.2 code suite \citep{Eldridge:2017, Stanway:2018}. BPASS only models one of the stars in a binary in detail at a time, but enable us to understand how many stars may experience helium-rich mass transfer.
+The second implication of our VCA model is that the higher effective temperatures of the models lead to more of a star's luminosity being radiated at wavelengths below \SI{912}{\angstrom} which can help drive ionisation of the surrounding media. This has important implications for understanding the nebula emission from the HII regions and reionization \citep[e.g.,][]{Stanway:2016, Eldridge:2022, Ghodla:2023}.
 
-We used an initial metallicity of $Z=0.020$ for the models, including every binary where the initial mass of the donor is greater than \SI{7}{\msun} and the accretor accretes more than 0.1~per~cent of its initial mass. For an instantaneous burst of a \SI[print-unity-mantissa=false]{1e6}{\msun} with an upper mass limit of 300~M$_{\odot}$, an inital mass function from \citet{Kroupa:2001} and initial binary parameter distribution from \citet{Moe:2017}, we find that 3543$\pm$68 binary stars undergo this phase of evolution, of which 34$\pm$1~per~cent accrete more than 5~per~cent of their initial mass. Of these 3543$\pm$68 models, 23$\pm$1~per~cent accrete material, which reaches a maximum helium abundance of greater than 0.8. Thus, the evolution of such accretors is common and is of vital importance to understand.
+Third, work has shown that mass transfer can lead to accretors with less bound envelopes \citep{Laplace:2021, Renzo:2023}, resulting in systems for which the energy required to explode the star in a supernova is decreased compared to an equivalent single-star model. As such, as in this case (where the mass transfer is sufficiently efficient that the final core collapse could give rise to unusual supernovae, i.e., an event that does not fit into one of the common supernovae types, IIP, IIL, IIb, Ib or Ic. The recent comprehensive work by \citet{Schneider:2025} shows how the accretors can have very different supernovae compared to single stars. We note that it is accepted that stellar mergers also give rise to unusual supernovae \citep[e.g.][]{Menon:2019} and future study is required to identify signatures in supernovae to differentiate between an accretor progenitor and the result of a stellar merger.
 
 \subsection{Spectroscopic masses}
 
@@ -245,17 +244,17 @@ Consequently, any masses inferred from spectroscopy or luminosity measurements m
     \label{fig:mass_luminosity_relationship}
 \end{figure}
 
-\subsection{WN/O3 stars}
-
-The spectral class of these stars is another interesting question. They are overluminous for their mass, have helium-rich surfaces, and are hotter than expected for their luminosity. Otherwise, the general behaviour of the post-interaction accretors evolved as single stars is generally typical of main-sequence stars. This suggests that they may be the elusive WN/O3 progenitors \citep{Massey:2023}. These stars have previously been suggested to be the helium \textit{donors} from a binary interaction \citep{Gotberg:2018, Smith:2018}.
-
-Whether these are donor products or accretor products will require further investigation, though we note that their relative isolation compared to other massive stars \citep{Smith:2018} and apparent single-star nature \citep{Massey:2023} does suggest that they could be accretor stars.
-
 \subsection{Supernovae}
 
 Previous work has shown that stellar rejuvenation leads to accretors with less bound envelopes \citep{Renzo:2023}, resulting in systems for which the energy required to collapse the core in a supernova is decreased compared to an equivalent single-star model. As such, rejuvenation such as in this case (where the mass transfer is sufficiently efficient that the accretor becomes rejuvenated) could give rise to unusual SNe. SN 1987A, the most widely studied supernova, is often conjectured to be the result of a binary merger \citep[e.g.,][]{Podsiadlowski:2017} due to its unusual explosion as a blue supergiant instead of a red supergiant, as predicted by theory. A rejuvenated star would appear younger, providing a potential avenue of formation for unusual stellar transients.
 
 The surface temperature of the accretor has important implications for the observations of SN progenitors. The donor in our presented model is massive enough to explode as a Type Ib/c SN. A number of observations exist of the pre-SN site of many Type Ib/c SNe \citep{Eldridge:2013, Eldridge:2016}. One issue is that in many of the observations not only is the progenitor unseen, so too is a massive main sequence star companion. We note that the higher surface temperature of the accretor makes it more difficult to detect in the optical bands which normally exist for this work. The different structure also makes it more difficult to predict the impact of the SN on the companion \citep{Hirai:2018}. Thus another reason to study the accretors in more detail is to understand the progenitor detections of Type Ib/c SNe when so few companions have been detected in post-SN observations \citep{Eldridge:2016}.
+
+\subsection{The prevalence of helium-rich mass transfer}
+
+Although we have presented only one example of helium-rich mass transfer in this work, it is not unreasonable to assume that this process may be common. To estimate how often such evolution may occur, we have used the binary star population of models from the Binary Population and Spectral Synthesis (BPASS) v2.2 code suite \citep{Eldridge:2017, Stanway:2018}. BPASS only models one of the stars in a binary in detail at a time, but enable us to understand how many stars may experience helium-rich mass transfer.
+
+We used an initial metallicity of $Z=0.020$ for the models, including every binary where the initial mass of the donor is greater than \SI{7}{\msun} and the accretor accretes more than 0.1~per~cent of its initial mass. For an instantaneous burst of a \SI[print-unity-mantissa=false]{1e6}{\msun} with an upper mass limit of 300~M$_{\odot}$, an inital mass function from \citet{Kroupa:2001} and initial binary parameter distribution from \citet{Moe:2017}, we find that 3543$\pm$68 binary stars undergo this phase of evolution, of which 34$\pm$1~per~cent accrete more than 5~per~cent of their initial mass. Of these 3543$\pm$68 models, 23$\pm$1~per~cent accrete material, which reaches a maximum helium abundance of greater than 0.8. Thus, the evolution of such accretors is common and is of vital importance to understand.
 
 \section{Chapter Summary}
 

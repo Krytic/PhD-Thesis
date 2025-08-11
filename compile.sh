@@ -9,7 +9,7 @@ python scripts/Trineify.py -ow y
 python scripts/BuildStructure.py
 python scripts/Transclusions.py
 
-latexmk -shell-escape -pdf main.tex
+latexmk --file-line-error -shell-escape -pdf main.tex
 
 print -P '%F{green}Compiled thesis using latexmk%f '
 

@@ -27,7 +27,7 @@ for chap in chaps:
             if line.startswith(BEGIN_AIM_TOKEN):
                 aim = line[len(BEGIN_AIM_TOKEN):].strip()
 
-            if line.startswith(r'\chapter'):
+            if line.startswith(r'\chapter') or line.startswith(r'\customchapter'):
                 loc = line.find(r"\label")
                 label = line[loc+7:-2]
 

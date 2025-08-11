@@ -1,8 +1,49 @@
 % !TEX root = ../../main.tex
 % !aim: we present the bespoke contact binary models that we discuss in \Cref{chap:close_contact} (Theme I).
-\chapter{Bespoke Overcontact Binary Models}\label{chap:appendix:bespoke_models}
+\customchapter{Bespoke Overcontact Binary Models}{All models are wrong, but some are useful.}{George E. P. Box}\label{chap:appendix:bespoke_models}
 
-In this appendix, we present the results of our bespoke overcontact binaries as established in \Cref{sec:forward_evolution}. Shown are three parameter configurations, corresponding to the fiducial (normal period) grid in \Cref{fig:bespoke_binaries_normal}, and our $\pm\SI{0.1}{\dex}$ period grid \Cref{fig:bespoke_binaries_wider} (wider periods) and \Cref{fig:bespoke_binaries_shorter} (shorter periods).
+In \Cref{tab:detailed_matches_cont}, we list the non-\acrshort{rlof} filling matches to observed contact binaries, contrasted with those that do undergo \gls{rlof} as enumerated in \Cref{tab:detailed_matches}. In \Cref{fig:bespoke_binaries_normal,fig:bespoke_binaries_wider,fig:bespoke_binaries_shorter}, we present the results of our bespoke overcontact binaries as established in \Cref{sec:forward_evolution}. Shown are three parameter configurations, corresponding to the fiducial (normal period) grid in \Cref{fig:bespoke_binaries_normal}, and our $\pm\SI{0.1}{\dex}$ period grid in \Cref{fig:bespoke_binaries_wider} (wider periods) and \Cref{fig:bespoke_binaries_shorter} (shorter periods).
+
+\renewcommand{\arraystretch}{1.2}
+\begin{sidewaystable}[!htbp]
+    \centering
+    \begin{tabular}{c|ccc|cc|cc|cc|cc}
+        \toprule
+             & \multicolumn{3}{c|}{ZAMS parameters} & \multicolumn{8}{c}{Match Parameters} \\
+             \midrule
+            System Name & $M_1$~[\unit{\msun}] & $M_2$~[\unit{\msun}] & $\log P~[\unit{\day}]$ & $M_1~[\unit{\msun}]$ & $M_2~[\unit{\msun}]$ & $\log R_1~[\unit{\rsun}]$ & $\log R_2~[\unit{\rsun}]$ & $\log T_1~[\unit{\kelvin}]$ & $\log T_1~[\unit{\kelvin}]$ & Star 1 RLOF & Star 2 RLOF \\
+        \midrule
+        SMC 108086 & 20.00 & 15.00 & 0.50 & 20.00 & 15.00 & 0.77 & 0.70 & 4.53 & 4.48 & \xmark & \xmark \\
+        SMC 108086 & 20.00 & 15.00 & 0.60 & 20.00 & 15.00 & 0.77 & 0.70 & 4.53 & 4.48 & \xmark & \xmark \\
+        SMC 108086 & 20.00 & 15.00 & 0.70 & 20.00 & 15.00 & 0.77 & 0.70 & 4.53 & 4.48 & \xmark & \xmark \\
+        SMC 108086 & 20.00 & 15.00 & 0.80 & 20.00 & 15.00 & 0.77 & 0.70 & 4.53 & 4.48 & \xmark & \xmark \\
+        SMC 108086 & 20.00 & 15.00 & 0.90 & 20.00 & 15.00 & 0.77 & 0.70 & 4.53 & 4.48 & \xmark & \xmark \\
+        SMC 108086 & 20.00 & 15.00 & 1.00 & 20.00 & 15.00 & 0.77 & 0.70 & 4.53 & 4.48 & \xmark & \xmark \\
+        SMC 108086 & 20.00 & 15.00 & 1.10 & 20.00 & 15.00 & 0.77 & 0.70 & 4.53 & 4.48 & \xmark & \xmark \\
+        SMC 108086 & 20.00 & 15.00 & 1.20 & 20.00 & 15.00 & 0.77 & 0.70 & 4.53 & 4.48 & \xmark & \xmark \\
+        V382 Cyg & 35.00 & 30.00 & 0.50 & 35.00 & 30.00 & 0.98 & 0.95 & 4.58 & 4.56 & \xmark & \xmark \\
+        V382 Cyg & 30.00 & 25.00 & 0.60 & 29.08 & 24.58 & 0.99 & 0.92 & 4.57 & 4.55 & \xmark & \xmark \\
+        V382 Cyg & 35.00 & 30.00 & 0.60 & 35.00 & 30.00 & 0.98 & 0.95 & 4.58 & 4.56 & \xmark & \xmark \\
+        V382 Cyg & 30.00 & 25.00 & 0.70 & 29.11 & 24.60 & 0.99 & 0.92 & 4.57 & 4.55 & \xmark & \xmark \\
+        V382 Cyg & 35.00 & 30.00 & 0.70 & 35.00 & 30.00 & 0.98 & 0.95 & 4.58 & 4.56 & \xmark & \xmark \\
+        V382 Cyg & 30.00 & 25.00 & 0.80 & 29.04 & 24.59 & 1.01 & 0.93 & 4.56 & 4.55 & \xmark & \xmark \\
+        V382 Cyg & 35.00 & 30.00 & 0.80 & 35.00 & 30.00 & 0.98 & 0.95 & 4.58 & 4.56 & \xmark & \xmark \\
+        V382 Cyg & 30.00 & 25.00 & 0.90 & 29.07 & 24.60 & 1.01 & 0.93 & 4.56 & 4.55 & \xmark & \xmark \\
+        V382 Cyg & 35.00 & 30.00 & 0.90 & 35.00 & 30.00 & 0.98 & 0.95 & 4.58 & 4.56 & \xmark & \xmark \\
+        V382 Cyg & 30.00 & 25.00 & 1.00 & 29.08 & 24.60 & 1.01 & 0.93 & 4.56 & 4.55 & \xmark & \xmark \\
+        V382 Cyg & 35.00 & 30.00 & 1.00 & 35.00 & 30.00 & 0.98 & 0.95 & 4.58 & 4.56 & \xmark & \xmark \\
+        V382 Cyg & 30.00 & 25.00 & 1.10 & 29.09 & 24.60 & 1.01 & 0.93 & 4.56 & 4.55 & \xmark & \xmark \\
+        V382 Cyg & 35.00 & 30.00 & 1.10 & 35.00 & 30.00 & 0.98 & 0.95 & 4.58 & 4.56 & \xmark & \xmark \\
+        V382 Cyg & 30.00 & 25.00 & 1.20 & 29.09 & 24.60 & 1.01 & 0.93 & 4.56 & 4.55 & \xmark & \xmark \\
+        V382 Cyg & 35.00 & 30.00 & 1.20 & 35.00 & 30.00 & 0.98 & 0.95 & 4.58 & 4.56 & \xmark & \xmark \\
+        \bottomrule
+    \end{tabular}
+    \caption[Matches from the \codename{Tui} code.]{Matches from the \codename{Tui} code. All parameters are rounded to two decimal places, and are given as at the first moment of matching. Only systems which do not fill their Roche lobes are shown, with the ones filling at least one component shown in \Cref{tab:detailed_matches}.}
+    \label{tab:detailed_matches_cont}
+\end{sidewaystable}
+\renewcommand{\arraystretch}{1.6}
+
+We present the results of our bespoke overcontact binaries as established in \Cref{sec:forward_evolution}. Shown are three parameter configurations, corresponding to the fiducial (normal period) grid in \Cref{fig:bespoke_binaries_normal}, and our $\pm\SI{0.1}{\dex}$ period grid \Cref{fig:bespoke_binaries_wider} (wider periods) and \Cref{fig:bespoke_binaries_shorter} (shorter periods).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% NORMAL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
