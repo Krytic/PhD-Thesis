@@ -337,14 +337,14 @@ The three matching systems all model TU Muscae. We show in \Cref{fig:TU_Muscae_f
     \begin{subfigure}[t]{\textwidth}
         \centering
         \includegraphics[width=\textwidth]{images/overcontact_binaries/match_1.pdf}
-        \caption{The first match for TU Muscae.}
+        \caption{The first match for TU Muscae ($M_1=\SI{25}{\msun}, M_2=\SI{7.5}{\msun}, \log~\left(P~/~\unit{\day}\right)=\num{0.3}$.}
         \label{fig:TU_Muscae_Match1}
     \end{subfigure}
 
     \begin{subfigure}[t]{\textwidth}
         \centering
         \includegraphics[width=\textwidth]{images/overcontact_binaries/match_2.pdf}
-        \caption{The second match for TU Muscae.}
+        \caption{The second match for TU Muscae ($M_1=\SI{24}{\msun}, M_2=\SI{7.2}{\msun}, \log~\left(P~/~\unit{\day}\right)=\num{0.3}$.}
         \label{fig:TU_Muscae_Match2}
     \end{subfigure}
 \end{figure}%
@@ -352,7 +352,7 @@ The three matching systems all model TU Muscae. We show in \Cref{fig:TU_Muscae_f
     \begin{subfigure}[t]{\textwidth}
         \centering
         \includegraphics[width=\textwidth]{images/overcontact_binaries/match_3.pdf}
-        \caption{The third match for TU Muscae.}
+        \caption{The third match for TU Muscae ($M_1=\SI{23}{\msun}, M_2=\SI{6.9}{\msun}, \log~\left(P~/~\unit{\day}\right)=\num{0.3}$.}
         \label{fig:TU_Muscae_Match3}
     \end{subfigure}
 
@@ -361,13 +361,6 @@ The three matching systems all model TU Muscae. We show in \Cref{fig:TU_Muscae_f
 \end{figure}
 
 The three matches for TU Muscae differ only by their initial masses. The primary masses are \SI{25}{\msun} (\Cref{fig:TU_Muscae_Match1}), \SI{24}{\msun} (\Cref{fig:TU_Muscae_Match2}), and \SI{23}{\msun} (\Cref{fig:TU_Muscae_Match3}). All three have initial periods of \SI[parse-numbers=false]{10^{0.3}}{\day} $\sim\SI{2}{\day}$, and all three have mass ratios of $\nicefrac{1}{3}$. Of these three matches, the closest match is the \SI{25}{\msun} progenitor in \Cref{fig:TU_Muscae_Match1}.
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.8\textwidth]{images/overcontact_binaries/TU_Muscae_full_match_abundance_profiles.pdf}
-    \caption[The abundance profile of hydrogen, helium, carbon, and oxygen in the best matching model of TU Muscae.]{The abundance profile of hydrogen, helium, carbon, and oxygen in the best matching model of TU Muscae. Nitrogen is not shown, as the abundance of nitrogen through the model is low. Neon and magnesium were not recorded in this run.}
-    \label{fig:TU_Muscae_abundance_profile}
-\end{figure}
 
 What then remains is to evaluate the goodness-of-fit of the detailed model code results. The three results are summarised in \Cref{tab:match_results_with_ages}. The three models all fulfil their matching criteria at similar ages to their v2 counterparts. The differences can be ascribed to two key factors. Firstly, the \gls{bpass} v2 ages were computed as matches on the HR diagram to primarily the donor, as \gls{bpass} v2 models the secondary as a point mass during the pre-supernova evolution of the donor. This is in contrast to the \codename{stars} matches, which matched masses and radii of \textit{both} stars. Secondly, the \gls{zams} periods were \SI{0.1}{\dex} wider than the ones used in the computation of the \codename{stars} model, and originate in our lower-period grid as described at the beginning of \Cref{sec:forward_evolution}.
 
@@ -388,6 +381,17 @@ What then remains is to evaluate the goodness-of-fit of the detailed model code 
     \caption[The match results with associated mean ages at match.]{The match results with associated mean ages at match. The \gls{bpass} v2 periods were computed with \SI{0.1}{\dex} periods higher, hence a slight mismatch in the ages is not unexpected. Ages from \gls{bpass} v2 were first presented in \Cref{tab:hoki_matches}, and ages from \codename{stars} are computed in the same way, although on masses and radii compared to temperatures and luminosities.}
     \label{tab:match_results_with_ages}
 \end{table}
+
+\subsection{The length of the contact phase}
+
+We also briefly investigate the mean length of the contact phase. For each binary in our sample, we determine the age at which it fills both Roche lobes, and the age at which it detaches. If the binary undergoes two contact phases, as is the case in one model of TU Muscae (see \Cref{tab:matches_mvps}), we record this information for each phase. If the binary is still in a contact phase at the end of the model sequence, we record the final age as the termination age. We find that as the initial period increases, the mean contact time of the binary decreases, as expected. We find that the mean contact time in the widest period grid is $\mu_\text{wide}=\SI{3.819}{\kilo\year}, \sigma_\text{wide}=\SI{1.723}{\kilo\year}$, of the normal period grid $\mu_\text{normal}=\SI{5.871}{\kilo\year}, \sigma_\text{normal}=\SI{2.773}{\kilo\year}$, and of the shorter period grid $\mu_\text{wide}=\SI{20.897}{\kilo\year}, \sigma_\text{wide}=\SI{73.755}{\kilo\year}$. We show in \Cref{fig:mean_contact_length_dependence} the dependence of the mean contact length on the intial parameters. For (comparatively) low initial primary masses $M_1\lesssim\SI{24}{\msun}$, there is no dependence. Comparatively, we can see that the mean contact length generally decreases with initial period and mass ratio.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{images/overcontact_binaries/mean_contact_length_dependence.pdf}
+    \caption[The dependence of the mean contact length on the initial parameters $\log P$, $M_1$, and $q$.]{The dependence of the mean contact length on the initial parameters $\log P$, $M_1$, and $q$. Error bars correspond to the standard deviations (i.e., $1\sigma$ uncertainties) of the measurements. The data points with no error bar only contain one model. One outlier, corresponding to $M_1=\SI{50}{\msun}, q=\si{0.2}, \log~\left(P~/~\unit{\day}\right)=\si{0.5}$, was manually removed, as it had a contact length of $\sim\SI{400}{\mega\year}$, and rendered the rest of the plot unreadable.}
+    \label{fig:mean_contact_length_dependence}
+\end{figure}
 
 \section{Discussion}
 
