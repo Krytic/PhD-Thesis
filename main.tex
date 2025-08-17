@@ -185,8 +185,9 @@
 %   }{0pt}{\stepcounter{abspagecounter}\zlabel{meta:chap:\theabspagecounter}\writecurrentchap{\chaptertitlename-\thechapter}\huge\selectfont\bfseries\color{main-accent}#1}[\vskip5pt\Large\color{main-accent}\protect{\pgfornament[width=0.3\textwidth]{88}}]
 
 \titleformat{\chapter}[display]
-  {\normalfont\filcenter\newgeometry{inner=18mm,outer=18mm,top=18mm,bottom=18mm}}
-  { \thispagestyle{empty}
+  {\normalfont\filcenter}
+  { %\newgeometry{inner=18mm,outer=18mm,top=18mm,bottom=18mm}
+    \thispagestyle{empty}
     \begin{tikzpicture}[remember picture, overlay]
         \node[anchor=north west] at (current page.north west){\pgfornament[width=2cm]{63}};
         \node[anchor=north east] at (current page.north east){\pgfornament[width=2cm,symmetry=v]{63}};
@@ -201,7 +202,7 @@
           \MakeUppercase{\chaptertitlename}~\thechapter
          }
    }
-   {0.5cm}
+   {0.0cm}
    {\huge{\fontfamily{Crimson-TLF}\selectfont#1}}
    [\vskip2cm
     \Large
@@ -216,15 +217,16 @@
           }
     \vfill
     \restoregeometry
-    \clearpage
+    % \clearpage
    ]
+\makeatother
 
 \titleformat{name=\chapter,numberless}[block]
   {\normalfont\filcenter}
   {}{0pt}{\stepcounter{abspagecounter}\zlabel{meta:chap:\theabspagecounter}\writecurrentchap{#1}\huge\selectfont\color{main-accent}#1}[\vskip5pt\Large\color{main-accent}\protect{\pgfornament[width=0.3\textwidth]{88}}]
 
 \titlespacing*{\chapter}
-  {0pt}{75pt}{10pt}
+  {0pt}{0pt}{10pt}
 
 \titlespacing*{name=\chapter, numberless}
   {0pt}{75pt}{10pt}

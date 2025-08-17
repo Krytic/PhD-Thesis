@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.1)  15 AUG 2025 12:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.1)  18 AUG 2025 08:42
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2338,7 +2338,7 @@ Package cleveref Info: no abbreviation of names on input line 7852.
 Package cleveref Info: include cross-reference names in hyperlinks on input lin
 e 7852.
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 419.
+Package hyperref Info: Option `colorlinks' set `true' on input line 421.
 \c@codesample=\count506
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -2348,95 +2348,95 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 458.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 460.
 LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 4
-58.
+60.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 458.
-LaTeX Font Info:    ... okay on input line 458.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 460.
+LaTeX Font Info:    ... okay on input line 460.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -2473,7 +2473,7 @@ LaTeX Font Info:    ... okay on input line 458.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Package chemgreek Info: Activating mapping `default' on line 458.
+Package chemgreek Info: Activating mapping `default' on line 460.
 
 (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -2511,9 +2511,9 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 458.
+or `english'. on input line 460.
 Package translations Info: no dictionary file `translations-basic-dictionary-gr
-eek.trsl' found. on input line 458.
+eek.trsl' found. on input line 460.
 \c@lstlisting=\count513
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
@@ -2530,9 +2530,9 @@ Package caption Info: End \AtBeginDocument code.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 458.
+ on input line 460.
 
-Package hyperref Info: Link coloring ON on input line 458.
+Package hyperref Info: Link coloring ON on input line 460.
 (./main.out) (./main.out)
 \@outlinefile=\write9
 \openout9 = `main.out'.
@@ -2858,38 +2858,6 @@ d on input line 74.
 
 ]) (./chapters/chapter01.tex
 Chapter 1.
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(51.21495pt, 511.8651pt, 51.21495pt)
-* v-part:(T,H,B)=(51.21495pt, 692.54008pt, 51.21495pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=511.8651pt
-* \textheight=692.54008pt
-* \oddsidemargin=-21.05504pt
-* \evensidemargin=-21.05504pt
-* \topmargin=-51.12253pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
 
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 63.pgf)
@@ -2899,43 +2867,6 @@ Chapter 1.
 63.pgf)
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 63.pgf)
-
-[1
-
-]
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(51.21495pt, 511.8651pt, 51.21495pt)
-* v-part:(T,H,B)=(51.21495pt, 692.54008pt, 51.21495pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=511.8651pt
-* \textheight=692.54008pt
-* \oddsidemargin=-21.05504pt
-* \evensidemargin=-21.05504pt
-* \topmargin=-51.12253pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 63.pgf)
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
@@ -2947,7 +2878,7 @@ Chapter 1.
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 8.pgf)
 
-[2
+[1
 
 ]
 Package lettrine.sty Info: Targeted height = 45.07639pt
@@ -2955,15 +2886,11 @@ Package lettrine.sty Info: Targeted height = 45.07639pt
 (lettrine.sty)             Lettrine height = 45.018pt (A);
 (lettrine.sty)             reported on input line 5.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-[3
-
+[2
 
 ]
-<images/Introduction/NightSkyMap.pdf, id=1132, 386.1316pt x 210.86598pt>
+<images/Introduction/NightSkyMap.pdf, id=1128, 386.1316pt x 210.86598pt>
 File: images/Introduction/NightSkyMap.pdf Graphic file (type pdf)
 <use images/Introduction/NightSkyMap.pdf>
 Package pdftex.def Info: images/Introduction/NightSkyMap.pdf  used on input lin
@@ -2971,9 +2898,9 @@ e 27.
 (pdftex.def)             Requested size: 491.94817pt x 268.65588pt.
 
 
-[4]
+[3]
 
-[5 <./images/Introduction/NightSkyMap.pdf>]
+[4 <./images/Introduction/NightSkyMap.pdf>]
 Overfull \hbox (2.22168pt too wide) in paragraph at lines 47--47
 [] [] 
  []
@@ -2988,104 +2915,39 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[6]
+[5]
 Underfull \vbox (badness 4779) has occurred while \output is active []
 
 
 
+[6]
+
 [7]
 
 [8]
-
-[9]
 Underfull \vbox (badness 3547) has occurred while \output is active []
 
 
 
-[10]
+[9]
 
-[11]) (./chapters/chapter02.tex
+[10]) (./chapters/chapter02.tex
 
-[12]
-Chapter 2.
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(51.21495pt, 511.8651pt, 51.21495pt)
-* v-part:(T,H,B)=(51.21495pt, 692.54008pt, 51.21495pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=511.8651pt
-* \textheight=692.54008pt
-* \oddsidemargin=-21.05504pt
-* \evensidemargin=-21.05504pt
-* \topmargin=-51.12253pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+[11]
 
-
-(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-63.pgf)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-63.pgf)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-63.pgf)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-63.pgf)
-
-[13
+[12
 
 ]
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(51.21495pt, 511.8651pt, 51.21495pt)
-* v-part:(T,H,B)=(51.21495pt, 692.54008pt, 51.21495pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=511.8651pt
-* \textheight=692.54008pt
-* \oddsidemargin=-21.05504pt
-* \evensidemargin=-21.05504pt
-* \topmargin=-51.12253pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+Chapter 2.
 
-
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+63.pgf)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+63.pgf)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+63.pgf)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+63.pgf)
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 63.pgf)
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
@@ -3097,9 +2959,7 @@ Chapter 2.
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 8.pgf)
 
-[14
-
-]
+[13]
 Package lettrine.sty Info: Targeted height = 45.07639pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 45.13507pt (I);
@@ -3109,31 +2969,33 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[15
-
+[14
 
 ]
 
-[16{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.en
+[15{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.en
 c}]
-Underfull \vbox (badness 1297) has occurred while \output is active []
 
-
+[16]
 
 [17]
-
-[18]
 
 LaTeX Warning: Float too large for page by 6.04662pt on input line 311.
 
 
+Underfull \vbox (badness 2126) has occurred while \output is active []
+
+
+
+[18]
 
 [19]
+Underfull \vbox (badness 2486) has occurred while \output is active []
+
+
 
 [20]
-
-[21]
-<images/TheorySection/intermediate_mass.pdf, id=1550, 437.30702pt x 420.30763pt
+<images/TheorySection/intermediate_mass.pdf, id=1546, 437.30702pt x 420.30763pt
 >
 File: images/TheorySection/intermediate_mass.pdf Graphic file (type pdf)
 <use images/TheorySection/intermediate_mass.pdf>
@@ -3142,17 +3004,17 @@ put line 373.
 (pdftex.def)             Requested size: 491.94817pt x 472.85132pt.
 
 
-[22]
+[21]
 
-[23 <./images/TheorySection/intermediate_mass.pdf>]
-<images/TheorySection/10_msun_jumps_new.pdf, id=1590, 406.66756pt x 261.72638pt
+[22 <./images/TheorySection/intermediate_mass.pdf>]
+<images/TheorySection/10_msun_jumps_new.pdf, id=1587, 406.66756pt x 261.72638pt
 >
 File: images/TheorySection/10_msun_jumps_new.pdf Graphic file (type pdf)
 <use images/TheorySection/10_msun_jumps_new.pdf>
 Package pdftex.def Info: images/TheorySection/10_msun_jumps_new.pdf  used on in
 put line 384.
 (pdftex.def)             Requested size: 491.94817pt x 316.61801pt.
-<images/TheorySection/8_msun_star_annotated.pdf, id=1595, 406.66756pt x 403.335
+<images/TheorySection/8_msun_star_annotated.pdf, id=1592, 406.66756pt x 403.335
 04pt>
 File: images/TheorySection/8_msun_star_annotated.pdf Graphic file (type pdf)
 <use images/TheorySection/8_msun_star_annotated.pdf>
@@ -3161,16 +3023,16 @@ n input line 391.
 (pdftex.def)             Requested size: 491.94817pt x 487.92612pt.
 
 
-[24 <./images/TheorySection/10_msun_jumps_new.pdf>]
+[23 <./images/TheorySection/10_msun_jumps_new.pdf>]
 
-[25 <./images/TheorySection/8_msun_star_annotated.pdf>]
+[24 <./images/TheorySection/8_msun_star_annotated.pdf>]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/scsl' instead on input line 410.
 
 
 
-[26]
+[25]
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
@@ -3196,18 +3058,21 @@ Overfull \hbox (32.5547pt too wide) in paragraph at lines 474--475
  [][] 
  []
 
-<images/TheorySection/BEPN_HalfLife.pdf, id=1681, 401.21892pt x 419.86316pt>
+<images/TheorySection/BEPN_HalfLife.pdf, id=1678, 401.21892pt x 419.86316pt>
 File: images/TheorySection/BEPN_HalfLife.pdf Graphic file (type pdf)
 <use images/TheorySection/BEPN_HalfLife.pdf>
 Package pdftex.def Info: images/TheorySection/BEPN_HalfLife.pdf  used on input 
 line 483.
 (pdftex.def)             Requested size: 491.94817pt x 514.84618pt.
 
+Underfull \vbox (badness 3312) has occurred while \output is active []
 
-[27]
 
-[28 <./images/TheorySection/BEPN_HalfLife.pdf>]
-<images/TheorySection/interaction_effect.pdf, id=1733, 416.34825pt x 218.82526p
+
+[26]
+
+[27 <./images/TheorySection/BEPN_HalfLife.pdf>]
+<images/TheorySection/interaction_effect.pdf, id=1730, 416.34825pt x 218.82526p
 t>
 File: images/TheorySection/interaction_effect.pdf Graphic file (type pdf)
 <use images/TheorySection/interaction_effect.pdf>
@@ -3216,7 +3081,7 @@ nput line 500.
 (pdftex.def)             Requested size: 491.94817pt x 258.5588pt.
 
 
-[29 <./images/TheorySection/interaction_effect.pdf>]
+[28 <./images/TheorySection/interaction_effect.pdf>]
 (./chapters/figures/binary_schematic.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -3225,7 +3090,7 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
-<images/TheorySection/roche_potentials.pdf, id=1767, 412.09822pt x 553.88676pt>
+<images/TheorySection/roche_potentials.pdf, id=1764, 412.09822pt x 553.88676pt>
 
 File: images/TheorySection/roche_potentials.pdf Graphic file (type pdf)
 <use images/TheorySection/roche_potentials.pdf>
@@ -3234,19 +3099,19 @@ ut line 538.
 (pdftex.def)             Requested size: 418.15894pt x 562.03276pt.
 
 
+[29]
+
 [30]
 
-[31]
-
-[32 <./images/TheorySection/roche_potentials.pdf>]
-<images/TheorySection/RLs_Eggleton_Formula.pdf, id=1821, 412.09822pt x 179.6648
+[31 <./images/TheorySection/roche_potentials.pdf>]
+<images/TheorySection/RLs_Eggleton_Formula.pdf, id=1817, 412.09822pt x 179.6648
 7pt>
 File: images/TheorySection/RLs_Eggleton_Formula.pdf Graphic file (type pdf)
 <use images/TheorySection/RLs_Eggleton_Formula.pdf>
 Package pdftex.def Info: images/TheorySection/RLs_Eggleton_Formula.pdf  used on
  input line 565.
 (pdftex.def)             Requested size: 491.94817pt x 214.47824pt.
-<images/TheorySection/eggleton_justification.pdf, id=1830, 405.77869pt x 175.99
+<images/TheorySection/eggleton_justification.pdf, id=1826, 405.77869pt x 175.99
 821pt>
 File: images/TheorySection/eggleton_justification.pdf Graphic file (type pdf)
 <use images/TheorySection/eggleton_justification.pdf>
@@ -3258,9 +3123,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[33 <./images/TheorySection/RLs_Eggleton_Formula.pdf> <./images/TheorySection/e
+[32 <./images/TheorySection/RLs_Eggleton_Formula.pdf> <./images/TheorySection/e
 ggleton_justification.pdf>]
-<images/TheorySection/marchant_justification.pdf, id=1868, 405.77869pt x 175.99
+<images/TheorySection/marchant_justification.pdf, id=1864, 405.77869pt x 175.99
 821pt>
 File: images/TheorySection/marchant_justification.pdf Graphic file (type pdf)
 <use images/TheorySection/marchant_justification.pdf>
@@ -3269,12 +3134,14 @@ on input line 590.
 (pdftex.def)             Requested size: 491.94817pt x 213.38547pt.
 
 
-[34 <./images/TheorySection/marchant_justification.pdf>]
+[33 <./images/TheorySection/marchant_justification.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrfull' on input line 628.
 
 
+
+[34]
 
 [35]
 
@@ -3284,12 +3151,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [38]
 
-[39]
-
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\lowercase' on input line 785.
 
 
+
+[39]
 
 [40]
 
@@ -3298,9 +3165,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [42]
 
 [43]
-
-[44]
-<images/TheorySection/thermal_pulses_and_he_flash.pdf, id=2185, 444.52837pt x 4
+<images/TheorySection/thermal_pulses_and_he_flash.pdf, id=2182, 444.52837pt x 4
 00.55727pt>
 File: images/TheorySection/thermal_pulses_and_he_flash.pdf Graphic file (type p
 df)
@@ -3308,7 +3173,7 @@ df)
 Package pdftex.def Info: images/TheorySection/thermal_pulses_and_he_flash.pdf  
 used on input line 903.
 (pdftex.def)             Requested size: 491.94817pt x 443.30974pt.
-<images/TheorySection/helium_flash_kippenhahn.pdf, id=2186, 417.00099pt x 273.2
+<images/TheorySection/helium_flash_kippenhahn.pdf, id=2183, 417.00099pt x 273.2
 1553pt>
 File: images/TheorySection/helium_flash_kippenhahn.pdf Graphic file (type pdf)
 <use images/TheorySection/helium_flash_kippenhahn.pdf>
@@ -3317,18 +3182,18 @@ Package pdftex.def Info: images/TheorySection/helium_flash_kippenhahn.pdf  used
 (pdftex.def)             Requested size: 491.94817pt x 322.34149pt.
 
 
-[45]
+[44]
 
-[46 <./images/TheorySection/thermal_pulses_and_he_flash.pdf>]
+[45 <./images/TheorySection/thermal_pulses_and_he_flash.pdf>]
 
-[47 <./images/TheorySection/helium_flash_kippenhahn.pdf>]
+[46 <./images/TheorySection/helium_flash_kippenhahn.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\lowercase' on input line 929.
 
 
 
-[48]
+[47]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\lowercase' on input line 949.
@@ -3336,11 +3201,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 \pydata@fh@0=\write13
 \openout13 = `_FAD58DE7366495DB4650CFEFAC2FCD61.data.minted'.
 
-runsystem(latexminted config  --timestamp 20250815125311 FAD58DE7366495DB4650CF
+runsystem(latexminted config  --timestamp 20250818084252 FAD58DE7366495DB4650CF
 EFAC2FCD61)...executed.
 
 (./_FAD58DE7366495DB4650CFEFAC2FCD61.config.minted)
-runsystem(latexminted cleanconfig  --timestamp 20250815125311 FAD58DE7366495DB4
+runsystem(latexminted cleanconfig  --timestamp 20250818084252 FAD58DE7366495DB4
 650CFEFAC2FCD61)...executed.
 
 
@@ -3362,7 +3227,7 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
 
 
-[49]
+[48]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -3372,86 +3237,21 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
 ) (./chapters/chapter03.tex
 
-[50]
-Chapter 3.
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(51.21495pt, 511.8651pt, 51.21495pt)
-* v-part:(T,H,B)=(51.21495pt, 692.54008pt, 51.21495pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=511.8651pt
-* \textheight=692.54008pt
-* \oddsidemargin=-21.05504pt
-* \evensidemargin=-21.05504pt
-* \topmargin=-51.12253pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+[49]
 
-
-(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-63.pgf)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-63.pgf)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-63.pgf)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-63.pgf)
-
-[51
+[50
 
 ]
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(51.21495pt, 511.8651pt, 51.21495pt)
-* v-part:(T,H,B)=(51.21495pt, 692.54008pt, 51.21495pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=511.8651pt
-* \textheight=692.54008pt
-* \oddsidemargin=-21.05504pt
-* \evensidemargin=-21.05504pt
-* \topmargin=-51.12253pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+Chapter 3.
 
-
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+63.pgf)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+63.pgf)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+63.pgf)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+63.pgf)
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 63.pgf)
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
@@ -3463,28 +3263,17 @@ Chapter 3.
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 8.pgf)
 
-[52
-
-]
+[51]
 Package lettrine.sty Info: Targeted height = 45.07639pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 45.018pt (S);
 (lettrine.sty)             reported on input line 6.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-[53
-
+[52
 
 ]
-Underfull \vbox (badness 1082) has occurred while \output is active []
-
-
-
-[54]
-<images/HeliumRich/meshpoint_sum.pdf, id=2379, 420.6509pt x 238.5756pt>
+<images/HeliumRich/meshpoint_sum.pdf, id=2368, 420.6509pt x 238.5756pt>
 File: images/HeliumRich/meshpoint_sum.pdf Graphic file (type pdf)
 <use images/HeliumRich/meshpoint_sum.pdf>
 Package pdftex.def Info: images/HeliumRich/meshpoint_sum.pdf  used on input lin
@@ -3492,26 +3281,28 @@ e 57.
 (pdftex.def)             Requested size: 491.94817pt x 279.02675pt.
 
 
-[55 <./images/HeliumRich/meshpoint_sum.pdf>]
-<images/HeliumRich/Figure_1.pdf, id=2431, 469.22185pt x 530.35849pt>
+[53]
+
+[54 <./images/HeliumRich/meshpoint_sum.pdf>]
+<images/HeliumRich/Figure_1.pdf, id=2430, 469.22185pt x 530.35849pt>
 File: images/HeliumRich/Figure_1.pdf Graphic file (type pdf)
 <use images/HeliumRich/Figure_1.pdf>
 Package pdftex.def Info: images/HeliumRich/Figure_1.pdf  used on input line 70.
 
 (pdftex.def)             Requested size: 491.94817pt x 556.04312pt.
-<images/HeliumRich/Figure_1_NOVARACC.pdf, id=2436, 469.22185pt x 530.35849pt>
+<images/HeliumRich/Figure_1_NOVARACC.pdf, id=2435, 469.22185pt x 530.35849pt>
 File: images/HeliumRich/Figure_1_NOVARACC.pdf Graphic file (type pdf)
 <use images/HeliumRich/Figure_1_NOVARACC.pdf>
 Package pdftex.def Info: images/HeliumRich/Figure_1_NOVARACC.pdf  used on input
  line 77.
 (pdftex.def)             Requested size: 491.94817pt x 556.04312pt.
-<images/HeliumRich/Figure_2_VARACC.pdf, id=2440, 239.62408pt x 259.76584pt>
+<images/HeliumRich/Figure_2_VARACC.pdf, id=2439, 239.62408pt x 259.76584pt>
 File: images/HeliumRich/Figure_2_VARACC.pdf Graphic file (type pdf)
 <use images/HeliumRich/Figure_2_VARACC.pdf>
 Package pdftex.def Info: images/HeliumRich/Figure_2_VARACC.pdf  used on input l
 ine 94.
 (pdftex.def)             Requested size: 221.37517pt x 239.99425pt.
-<images/HeliumRich/Figure_2_NOVARACC.pdf, id=2441, 239.62408pt x 259.76584pt>
+<images/HeliumRich/Figure_2_NOVARACC.pdf, id=2440, 239.62408pt x 259.76584pt>
 File: images/HeliumRich/Figure_2_NOVARACC.pdf Graphic file (type pdf)
 <use images/HeliumRich/Figure_2_NOVARACC.pdf>
 Package pdftex.def Info: images/HeliumRich/Figure_2_NOVARACC.pdf  used on input
@@ -3519,21 +3310,18 @@ Package pdftex.def Info: images/HeliumRich/Figure_2_NOVARACC.pdf  used on input
 (pdftex.def)             Requested size: 221.37517pt x 239.99425pt.
 
 
-[56]
+[55]
 
-[57 <./images/HeliumRich/Figure_1.pdf>]
+[56 <./images/HeliumRich/Figure_1.pdf>]
 
-[58 <./images/HeliumRich/Figure_1_NOVARACC.pdf>]
-
-[59 <./images/HeliumRich/Figure_2_VARACC.pdf> <./images/HeliumRich/Figure_2_NOV
-ARACC.pdf>]
-<images/HeliumRich/Figure_5_VARACC.pdf, id=2569, 238.75992pt x 155.09836pt>
+[57 <./images/HeliumRich/Figure_1_NOVARACC.pdf>]
+<images/HeliumRich/Figure_5_VARACC.pdf, id=2526, 238.75992pt x 155.09836pt>
 File: images/HeliumRich/Figure_5_VARACC.pdf Graphic file (type pdf)
 <use images/HeliumRich/Figure_5_VARACC.pdf>
 Package pdftex.def Info: images/HeliumRich/Figure_5_VARACC.pdf  used on input l
 ine 126.
 (pdftex.def)             Requested size: 221.37517pt x 143.80923pt.
-<images/HeliumRich/Figure_5_NOVARACC.pdf, id=2570, 231.24886pt x 155.09836pt>
+<images/HeliumRich/Figure_5_NOVARACC.pdf, id=2527, 231.24886pt x 155.09836pt>
 File: images/HeliumRich/Figure_5_NOVARACC.pdf Graphic file (type pdf)
 <use images/HeliumRich/Figure_5_NOVARACC.pdf>
 Package pdftex.def Info: images/HeliumRich/Figure_5_NOVARACC.pdf  used on input
@@ -3541,9 +3329,12 @@ Package pdftex.def Info: images/HeliumRich/Figure_5_NOVARACC.pdf  used on input
 (pdftex.def)             Requested size: 221.37517pt x 148.48329pt.
 
 
-[60 <./images/HeliumRich/Figure_5_VARACC.pdf> <./images/HeliumRich/Figure_5_NOV
+[58 <./images/HeliumRich/Figure_2_VARACC.pdf> <./images/HeliumRich/Figure_2_NOV
 ARACC.pdf>]
-<images/HeliumRich/abundances_line_plot_with_demarcations.pdf, id=2618, 459.155
+
+[59 <./images/HeliumRich/Figure_5_VARACC.pdf> <./images/HeliumRich/Figure_5_NOV
+ARACC.pdf>]
+<images/HeliumRich/abundances_line_plot_with_demarcations.pdf, id=2617, 459.155
 pt x 205.1353pt>
 File: images/HeliumRich/abundances_line_plot_with_demarcations.pdf Graphic file
  (type pdf)
@@ -3551,7 +3342,7 @@ File: images/HeliumRich/abundances_line_plot_with_demarcations.pdf Graphic file
 Package pdftex.def Info: images/HeliumRich/abundances_line_plot_with_demarcatio
 ns.pdf  used on input line 158.
 (pdftex.def)             Requested size: 491.94817pt x 219.79933pt.
-<images/HeliumRich/abundances_line_plot_near_detachment.pdf, id=2619, 410.34518
+<images/HeliumRich/abundances_line_plot_near_detachment.pdf, id=2618, 410.34518
 pt x 273.30441pt>
 File: images/HeliumRich/abundances_line_plot_near_detachment.pdf Graphic file (
 type pdf)
@@ -3559,7 +3350,12 @@ type pdf)
 Package pdftex.def Info: images/HeliumRich/abundances_line_plot_near_detachment
 .pdf  used on input line 165.
 (pdftex.def)             Requested size: 491.94817pt x 327.65504pt.
-<images/HeliumRich/HR_diagram_with_all_thermohaline.pdf, id=2621, 406.66756pt x
+
+
+[60 <./images/HeliumRich/abundances_line_plot_with_demarcations.pdf>]
+
+[61 <./images/HeliumRich/abundances_line_plot_near_detachment.pdf>]
+<images/HeliumRich/HR_diagram_with_all_thermohaline.pdf, id=2663, 406.66756pt x
  264.14566pt>
 File: images/HeliumRich/HR_diagram_with_all_thermohaline.pdf Graphic file (type
  pdf)
@@ -3567,7 +3363,8 @@ File: images/HeliumRich/HR_diagram_with_all_thermohaline.pdf Graphic file (type
 Package pdftex.def Info: images/HeliumRich/HR_diagram_with_all_thermohaline.pdf
   used on input line 174.
 (pdftex.def)             Requested size: 491.94817pt x 319.54468pt.
- (./chapters/tables/binary_configuration_parameters.tex
+
+(./chapters/tables/binary_configuration_parameters.tex
 Overfull \hbox (52.87926pt too wide) in paragraph at lines 5--27
  [][] 
  []
@@ -3578,25 +3375,17 @@ Overfull \hbox (39.36424pt too wide) in paragraph at lines 3--60
  []
 
 )
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
+[62 <./images/HeliumRich/HR_diagram_with_all_thermohaline.pdf>]
 
-
-[61]
-
-[62 <./images/HeliumRich/abundances_line_plot_with_demarcations.pdf> <./images/
-HeliumRich/abundances_line_plot_near_detachment.pdf>]
-
-[63 <./images/HeliumRich/HR_diagram_with_all_thermohaline.pdf>]
-
-[64]
-<images/HeliumRich/Figure_4.pdf, id=2705, 438.79344pt x 407.93324pt>
+[63]
+<images/HeliumRich/Figure_4.pdf, id=2703, 438.79344pt x 407.93324pt>
 File: images/HeliumRich/Figure_4.pdf Graphic file (type pdf)
 <use images/HeliumRich/Figure_4.pdf>
 Package pdftex.def Info: images/HeliumRich/Figure_4.pdf  used on input line 194
 .
 (pdftex.def)             Requested size: 491.94817pt x 457.35516pt.
-<images/HeliumRich/abundances_line_plot_thermohalinemixing.pdf, id=2706, 459.15
+<images/HeliumRich/abundances_line_plot_thermohalinemixing.pdf, id=2704, 459.15
 5pt x 448.89249pt>
 File: images/HeliumRich/abundances_line_plot_thermohalinemixing.pdf Graphic fil
 e (type pdf)
@@ -3606,44 +3395,23 @@ ing.pdf  used on input line 203.
 (pdftex.def)             Requested size: 491.94817pt x 480.98148pt.
 
 
-Package natbib Warning: Citation `Smith:2012' on page 65 undefined on input lin
+Package natbib Warning: Citation `Smith:2012' on page 64 undefined on input lin
 e 211.
 
-
-
-[65]
-
-[66 <./images/HeliumRich/Figure_4.pdf>]
-
-[67 <./images/HeliumRich/abundances_line_plot_thermohalinemixing.pdf>]
 
 LaTeX Warning: Reference `fig:mass-luminosity_relation' on page 1 undefined on 
 input line 213.
 
 
-Package natbib Warning: Citation `Stanway:2016' on page 68 undefined on input l
-ine 215.
 
+[64]
 
-Package natbib Warning: Citation `Eldridge:2022' on page 68 undefined on input 
-line 215.
+[65 <./images/HeliumRich/Figure_4.pdf>]
 
+[66 <./images/HeliumRich/abundances_line_plot_thermohalinemixing.pdf>]
 
-Package natbib Warning: Citation `Laplace:2021' on page 68 undefined on input l
-ine 217.
-
-
-Package natbib Warning: Citation `Schneider:2025' on page 68 undefined on input
- line 217.
-
-
-Package natbib Warning: Citation `Menon:2019' on page 68 undefined on input lin
-e 217.
-
-
-
-[68]
-<images/HeliumRich/mass_luminosity.pdf, id=2855, 409.73708pt x 221.60303pt>
+[67]
+<images/HeliumRich/mass_luminosity.pdf, id=2879, 409.73708pt x 221.60303pt>
 File: images/HeliumRich/mass_luminosity.pdf Graphic file (type pdf)
 <use images/HeliumRich/mass_luminosity.pdf>
 Package pdftex.def Info: images/HeliumRich/mass_luminosity.pdf  used on input l
@@ -3651,49 +3419,12 @@ ine 242.
 (pdftex.def)             Requested size: 491.94817pt x 266.07445pt.
 
 
-[69 <./images/HeliumRich/mass_luminosity.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[68 <./images/HeliumRich/mass_luminosity.pdf>]
 
+[69]) (./chapters/chapter04.tex
 
-
-[70]) (./chapters/chapter04.tex
-
-[71]
-
-[72]
+[70]
 Chapter 4.
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(51.21495pt, 511.8651pt, 51.21495pt)
-* v-part:(T,H,B)=(51.21495pt, 692.54008pt, 51.21495pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=511.8651pt
-* \textheight=692.54008pt
-* \oddsidemargin=-21.05504pt
-* \evensidemargin=-21.05504pt
-* \topmargin=-51.12253pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
 
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 63.pgf)
@@ -3703,43 +3434,6 @@ Chapter 4.
 63.pgf)
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 63.pgf)
-
-[73
-
-]
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(51.21495pt, 511.8651pt, 51.21495pt)
-* v-part:(T,H,B)=(51.21495pt, 692.54008pt, 51.21495pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=511.8651pt
-* \textheight=692.54008pt
-* \oddsidemargin=-21.05504pt
-* \evensidemargin=-21.05504pt
-* \topmargin=-51.12253pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 63.pgf)
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
@@ -3751,7 +3445,7 @@ Chapter 4.
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 8.pgf)
 
-[74
+[71
 
 ]
 Package lettrine.sty Info: Targeted height = 45.07639pt
@@ -3759,21 +3453,13 @@ Package lettrine.sty Info: Targeted height = 45.07639pt
 (lettrine.sty)             Lettrine height = 45.07657pt (T);
 (lettrine.sty)             reported on input line 5.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-[75
-
+[72
 
 ]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
-[76]
-<images/NatalKicks/Grid_Regions.pdf, id=3026, 609.91904pt x 578.41486pt>
+[73]
+<images/NatalKicks/Grid_Regions.pdf, id=3030, 609.91904pt x 578.41486pt>
 File: images/NatalKicks/Grid_Regions.pdf Graphic file (type pdf)
 <use images/NatalKicks/Grid_Regions.pdf>
 Package pdftex.def Info: images/NatalKicks/Grid_Regions.pdf  used on input line
@@ -3781,9 +3467,9 @@ Package pdftex.def Info: images/NatalKicks/Grid_Regions.pdf  used on input line
 (pdftex.def)             Requested size: 491.94817pt x 466.54529pt.
 
 
-[77]
+[74]
 
-[78 <./images/NatalKicks/Grid_Regions.pdf>]
+[75 <./images/NatalKicks/Grid_Regions.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\lowercase' on input line 79.
@@ -3791,16 +3477,16 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (./_minted/D2F87C5905A9FDDFC5F552A595254F62.highlight.minted)
 (./_minted/4BA2B83BBA9055655EEA1E85AE1083E7.highlight.minted)
 (./_minted/4BA2B83BBA9055655EEA1E85AE1083E7.highlight.minted)
+(./_minted/D2F87C5905A9FDDFC5F552A595254F62.highlight.minted)
 
-[79] (./_minted/D2F87C5905A9FDDFC5F552A595254F62.highlight.minted)
-(./_minted/4BA2B83BBA9055655EEA1E85AE1083E7.highlight.minted)
-<images/NatalKicks/varying_de.pdf, id=3153, 425.42302pt x 260.83746pt>
+[76] (./_minted/4BA2B83BBA9055655EEA1E85AE1083E7.highlight.minted)
+<images/NatalKicks/varying_de.pdf, id=3162, 425.42302pt x 260.83746pt>
 File: images/NatalKicks/varying_de.pdf Graphic file (type pdf)
 <use images/NatalKicks/varying_de.pdf>
 Package pdftex.def Info: images/NatalKicks/varying_de.pdf  used on input line 1
 11.
 (pdftex.def)             Requested size: 491.94817pt x 301.63634pt.
-<images/NatalKicks/runtime.pdf, id=3156, 435.70543pt x 260.83746pt>
+<images/NatalKicks/runtime.pdf, id=3165, 435.70543pt x 260.83746pt>
 File: images/NatalKicks/runtime.pdf Graphic file (type pdf)
 <use images/NatalKicks/runtime.pdf>
 Package pdftex.def Info: images/NatalKicks/runtime.pdf  used on input line 118.
@@ -3808,10 +3494,10 @@ Package pdftex.def Info: images/NatalKicks/runtime.pdf  used on input line 118.
 (pdftex.def)             Requested size: 491.94817pt x 294.51602pt.
 
 
-[80]
+[77]
 
-[81 <./images/NatalKicks/varying_de.pdf>]
-<images/NatalKicks/EventRate_Distribution_Both.pdf, id=3218, 493.40585pt x 304.
+[78 <./images/NatalKicks/varying_de.pdf>]
+<images/NatalKicks/EventRate_Distribution_Both.pdf, id=3224, 493.40585pt x 304.
 47673pt>
 File: images/NatalKicks/EventRate_Distribution_Both.pdf Graphic file (type pdf)
 
@@ -3819,15 +3505,7 @@ File: images/NatalKicks/EventRate_Distribution_Both.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/NatalKicks/EventRate_Distribution_Both.pdf  use
 d on input line 132.
 (pdftex.def)             Requested size: 491.94817pt x 303.59325pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[82 <./images/NatalKicks/runtime.pdf>]
-
-[83 <./images/NatalKicks/EventRate_Distribution_Both.pdf>]
-<images/NatalKicks/PE_dists_six_panel.pdf, id=3338, 392.70343pt x 278.75076pt>
+<images/NatalKicks/PE_dists_six_panel.pdf, id=3249, 392.70343pt x 278.75076pt>
 File: images/NatalKicks/PE_dists_six_panel.pdf Graphic file (type pdf)
 <use images/NatalKicks/PE_dists_six_panel.pdf>
 Package pdftex.def Info: images/NatalKicks/PE_dists_six_panel.pdf  used on inpu
@@ -3835,8 +3513,12 @@ t line 143.
 (pdftex.def)             Requested size: 491.94817pt x 349.20746pt.
 
 
-[84 <./images/NatalKicks/PE_dists_six_panel.pdf>]
-<images/NatalKicks/LogBayesFactors_Both.pdf, id=3429, 493.40585pt x 297.24658pt
+[79 <./images/NatalKicks/runtime.pdf>]
+
+[80 <./images/NatalKicks/EventRate_Distribution_Both.pdf>]
+
+[81 <./images/NatalKicks/PE_dists_six_panel.pdf>]
+<images/NatalKicks/LogBayesFactors_Both.pdf, id=3434, 493.40585pt x 297.24658pt
 >
 File: images/NatalKicks/LogBayesFactors_Both.pdf Graphic file (type pdf)
 <use images/NatalKicks/LogBayesFactors_Both.pdf>
@@ -3845,16 +3527,16 @@ put line 187.
 (pdftex.def)             Requested size: 491.94817pt x 296.38408pt.
 
 
-[85]
+[82]
 
-[86 <./images/NatalKicks/LogBayesFactors_Both.pdf>]
-<images/NatalKicks/bray_vs_hobbs.pdf, id=3548, 410.02875pt x 261.72638pt>
+[83 <./images/NatalKicks/LogBayesFactors_Both.pdf>]
+<images/NatalKicks/bray_vs_hobbs.pdf, id=3553, 410.02875pt x 261.72638pt>
 File: images/NatalKicks/bray_vs_hobbs.pdf Graphic file (type pdf)
 <use images/NatalKicks/bray_vs_hobbs.pdf>
 Package pdftex.def Info: images/NatalKicks/bray_vs_hobbs.pdf  used on input lin
 e 210.
 (pdftex.def)             Requested size: 491.94817pt x 314.03413pt.
-<images/NatalKicks/ks_test.pdf, id=3577, 773.4521pt x 441.33182pt>
+<images/NatalKicks/ks_test.pdf, id=3582, 773.4521pt x 441.33182pt>
 File: images/NatalKicks/ks_test.pdf Graphic file (type pdf)
 <use images/NatalKicks/ks_test.pdf>
 Package pdftex.def Info: images/NatalKicks/ks_test.pdf  used on input line 219.
@@ -3865,8 +3547,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[87 <./images/NatalKicks/bray_vs_hobbs.pdf>]
-<images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png, id=3598, 480.71594pt
+[84 <./images/NatalKicks/bray_vs_hobbs.pdf>]
+<images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png, id=3602, 480.71594pt
  x 334.1283pt>
 File: images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png Graphic file (ty
 pe png)
@@ -3879,12 +3561,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[88 <./images/NatalKicks/ks_test.pdf>]
+[85 <./images/NatalKicks/ks_test.pdf>]
 
-[89 <./images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png>]
+[86 <./images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png>]
 
-[90]
-<images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.pdf, id=3724
+[87]
+<images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.pdf, id=3729
 , 457.49043pt x 320.24017pt>
 File: images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.pdf Gra
 phic file (type pdf)
@@ -3894,20 +3576,20 @@ _modeltype2.pdf  used on input line 268.
 (pdftex.def)             Requested size: 491.94817pt x 344.37364pt.
 
 
-[91 <./images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.pdf>]
-<images/NatalKicks/Best_Model_Params.pdf, id=3804, 848.1813pt x 377.88795pt>
+[88 <./images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.pdf>]
+<images/NatalKicks/Best_Model_Params.pdf, id=3809, 848.1813pt x 377.88795pt>
 File: images/NatalKicks/Best_Model_Params.pdf Graphic file (type pdf)
 <use images/NatalKicks/Best_Model_Params.pdf>
 Package pdftex.def Info: images/NatalKicks/Best_Model_Params.pdf  used on input
  line 277.
 (pdftex.def)             Requested size: 491.94817pt x 219.18092pt.
-<images/NatalKicks/grid_shifting_peaks.pdf, id=3817, 498.4246pt x 299.03899pt>
+<images/NatalKicks/grid_shifting_peaks.pdf, id=3822, 498.4246pt x 299.03899pt>
 File: images/NatalKicks/grid_shifting_peaks.pdf Graphic file (type pdf)
 <use images/NatalKicks/grid_shifting_peaks.pdf>
 Package pdftex.def Info: images/NatalKicks/grid_shifting_peaks.pdf  used on inp
 ut line 288.
 (pdftex.def)             Requested size: 491.94817pt x 295.15973pt.
-<images/NatalKicks/event_rate_history_local.pdf, id=3820, 423.62088pt x 402.446
+<images/NatalKicks/event_rate_history_local.pdf, id=3825, 423.62088pt x 402.446
 17pt>
 File: images/NatalKicks/event_rate_history_local.pdf Graphic file (type pdf)
 <use images/NatalKicks/event_rate_history_local.pdf>
@@ -3916,94 +3598,33 @@ n input line 295.
 (pdftex.def)             Requested size: 491.94817pt x 467.3844pt.
 
 
-[92 <./images/NatalKicks/Best_Model_Params.pdf>]
+[89 <./images/NatalKicks/Best_Model_Params.pdf>]
 
-[93 <./images/NatalKicks/grid_shifting_peaks.pdf>]
+[90 <./images/NatalKicks/grid_shifting_peaks.pdf>]
 
-[94 <./images/NatalKicks/event_rate_history_local.pdf>]
+[91 <./images/NatalKicks/event_rate_history_local.pdf>]
 
-[95]) (./chapters/chapter05.tex
+[92]
 
-[96]
-Chapter 5.
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(51.21495pt, 511.8651pt, 51.21495pt)
-* v-part:(T,H,B)=(51.21495pt, 692.54008pt, 51.21495pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=511.8651pt
-* \textheight=692.54008pt
-* \oddsidemargin=-21.05504pt
-* \evensidemargin=-21.05504pt
-* \topmargin=-51.12253pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+[93]
 
+[94]) (./chapters/chapter05.tex
 
-(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-63.pgf)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-63.pgf)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-63.pgf)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-63.pgf)
+[95]
 
-[97
+[96
 
 ]
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(51.21495pt, 511.8651pt, 51.21495pt)
-* v-part:(T,H,B)=(51.21495pt, 692.54008pt, 51.21495pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=511.8651pt
-* \textheight=692.54008pt
-* \oddsidemargin=-21.05504pt
-* \evensidemargin=-21.05504pt
-* \topmargin=-51.12253pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+Chapter 5.
 
-
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+63.pgf)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+63.pgf)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+63.pgf)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+63.pgf)
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 63.pgf)
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
@@ -4015,9 +3636,7 @@ Chapter 5.
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 8.pgf)
 
-[98
-
-]
+[97]
 Package lettrine.sty Info: Targeted height = 45.07639pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 45.018pt (A);
@@ -4027,81 +3646,79 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[99
-
+[98
 
 ]
+Underfull \vbox (badness 4303) has occurred while \output is active []
 
-[100]
 
-[101] (./chapters/tables/BPASS_v2_match_table.tex)
+
+[99]
+
+[100] (./chapters/tables/BPASS_v2_match_table.tex)
 (./chapters/tables/detailed_matches.tex
 Overfull \hbox (4.64542pt too wide) in paragraph at lines 3--37
 [][] 
  []
 
-
-
-[102]
-
-[103])
-<images/overcontact_binaries/LSS_3074_hoki.pdf, id=4322, 211.74048pt x 137.439p
+)
+<images/overcontact_binaries/LSS_3074_hoki.pdf, id=4365, 211.74048pt x 137.439p
 t>
 File: images/overcontact_binaries/LSS_3074_hoki.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/LSS_3074_hoki.pdf>
 Package pdftex.def Info: images/overcontact_binaries/LSS_3074_hoki.pdf  used on
  input line 98.
 (pdftex.def)             Requested size: 241.0573pt x 156.47235pt.
-<images/overcontact_binaries/MY_Cam_hoki.pdf, id=4323, 211.74048pt x 137.3948pt
+<images/overcontact_binaries/MY_Cam_hoki.pdf, id=4366, 211.74048pt x 137.3948pt
 >
 File: images/overcontact_binaries/MY_Cam_hoki.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/MY_Cam_hoki.pdf>
 Package pdftex.def Info: images/overcontact_binaries/MY_Cam_hoki.pdf  used on i
 nput line 104.
 (pdftex.def)             Requested size: 241.0573pt x 156.42204pt.
-<images/overcontact_binaries/SMC_108086_hoki.pdf, id=4324, 215.99055pt x 137.39
+<images/overcontact_binaries/SMC_108086_hoki.pdf, id=4367, 215.99055pt x 137.39
 48pt>
 File: images/overcontact_binaries/SMC_108086_hoki.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/SMC_108086_hoki.pdf>
 Package pdftex.def Info: images/overcontact_binaries/SMC_108086_hoki.pdf  used 
 on input line 111.
 (pdftex.def)             Requested size: 241.0573pt x 153.34232pt.
-<images/overcontact_binaries/TU_Mus_hoki.pdf, id=4325, 215.99055pt x 137.3948pt
+<images/overcontact_binaries/TU_Mus_hoki.pdf, id=4368, 215.99055pt x 137.3948pt
 >
 File: images/overcontact_binaries/TU_Mus_hoki.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/TU_Mus_hoki.pdf>
 Package pdftex.def Info: images/overcontact_binaries/TU_Mus_hoki.pdf  used on i
 nput line 117.
 (pdftex.def)             Requested size: 241.0573pt x 153.34232pt.
-<images/overcontact_binaries/V382_Cyg_hoki.pdf, id=4326, 211.74048pt x 137.3948
+<images/overcontact_binaries/V382_Cyg_hoki.pdf, id=4369, 211.74048pt x 137.3948
 pt>
 File: images/overcontact_binaries/V382_Cyg_hoki.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/V382_Cyg_hoki.pdf>
 Package pdftex.def Info: images/overcontact_binaries/V382_Cyg_hoki.pdf  used on
  input line 124.
 (pdftex.def)             Requested size: 241.0573pt x 156.42204pt.
-<images/overcontact_binaries/VFTS_352_hoki.pdf, id=4327, 211.74048pt x 137.3948
+<images/overcontact_binaries/VFTS_352_hoki.pdf, id=4370, 211.74048pt x 137.3948
 pt>
 File: images/overcontact_binaries/VFTS_352_hoki.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/VFTS_352_hoki.pdf>
 Package pdftex.def Info: images/overcontact_binaries/VFTS_352_hoki.pdf  used on
  input line 130.
 (pdftex.def)             Requested size: 241.0573pt x 156.42204pt.
-<images/overcontact_binaries/LSS_3074_v2_MvP.pdf, id=4334, 221.39435pt x 149.40
+<images/overcontact_binaries/LSS_3074_v2_MvP.pdf, id=4377, 221.39435pt x 149.40
 98pt>
 File: images/overcontact_binaries/LSS_3074_v2_MvP.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/LSS_3074_v2_MvP.pdf>
 Package pdftex.def Info: images/overcontact_binaries/LSS_3074_v2_MvP.pdf  used 
 on input line 143.
 (pdftex.def)             Requested size: 241.0573pt x 162.68018pt.
-<images/overcontact_binaries/MY_Cam_v2_MvP.pdf, id=4335, 221.39435pt x 149.4098
+<images/overcontact_binaries/MY_Cam_v2_MvP.pdf, id=4378, 221.39435pt x 149.4098
 pt>
 File: images/overcontact_binaries/MY_Cam_v2_MvP.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/MY_Cam_v2_MvP.pdf>
 Package pdftex.def Info: images/overcontact_binaries/MY_Cam_v2_MvP.pdf  used on
  input line 149.
 (pdftex.def)             Requested size: 241.0573pt x 162.68018pt.
-<images/overcontact_binaries/SMC_108086_v2_MvP.pdf, id=4336, 221.39435pt x 149.
+<images/overcontact_binaries/SMC_108086_v2_MvP.pdf, id=4379, 221.39435pt x 149.
 4098pt>
 File: images/overcontact_binaries/SMC_108086_v2_MvP.pdf Graphic file (type pdf)
 
@@ -4109,21 +3726,21 @@ File: images/overcontact_binaries/SMC_108086_v2_MvP.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/SMC_108086_v2_MvP.pdf  use
 d on input line 156.
 (pdftex.def)             Requested size: 241.0573pt x 162.68018pt.
-<images/overcontact_binaries/TU_Mus_v2_MvP.pdf, id=4337, 224.19904pt x 149.4098
+<images/overcontact_binaries/TU_Mus_v2_MvP.pdf, id=4380, 224.19904pt x 149.4098
 pt>
 File: images/overcontact_binaries/TU_Mus_v2_MvP.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/TU_Mus_v2_MvP.pdf>
 Package pdftex.def Info: images/overcontact_binaries/TU_Mus_v2_MvP.pdf  used on
  input line 162.
 (pdftex.def)             Requested size: 241.0573pt x 160.65114pt.
-<images/overcontact_binaries/V382_Cyg_v2_MvP.pdf, id=4338, 221.39435pt x 149.40
+<images/overcontact_binaries/V382_Cyg_v2_MvP.pdf, id=4381, 221.39435pt x 149.40
 98pt>
 File: images/overcontact_binaries/V382_Cyg_v2_MvP.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/V382_Cyg_v2_MvP.pdf>
 Package pdftex.def Info: images/overcontact_binaries/V382_Cyg_v2_MvP.pdf  used 
 on input line 169.
 (pdftex.def)             Requested size: 241.0573pt x 162.68018pt.
-<images/overcontact_binaries/VFTS_352_v2_MvP.pdf, id=4339, 221.39435pt x 149.40
+<images/overcontact_binaries/VFTS_352_v2_MvP.pdf, id=4382, 221.39435pt x 149.40
 98pt>
 File: images/overcontact_binaries/VFTS_352_v2_MvP.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/VFTS_352_v2_MvP.pdf>
@@ -4132,115 +3749,122 @@ on input line 175.
 (pdftex.def)             Requested size: 241.0573pt x 162.68018pt.
 
 
-[104]
+[101]
 
-[105]
+[102]
 
-[106 <./images/overcontact_binaries/LSS_3074_hoki.pdf> <./images/overcontact_bi
+[103]
+
+[104 <./images/overcontact_binaries/LSS_3074_hoki.pdf> <./images/overcontact_bi
 naries/MY_Cam_hoki.pdf> <./images/overcontact_binaries/SMC_108086_hoki.pdf> <./
 images/overcontact_binaries/TU_Mus_hoki.pdf> <./images/overcontact_binaries/V38
 2_Cyg_hoki.pdf> <./images/overcontact_binaries/VFTS_352_hoki.pdf>]
 
-[107 <./images/overcontact_binaries/LSS_3074_v2_MvP.pdf> <./images/overcontact_
+[105 <./images/overcontact_binaries/LSS_3074_v2_MvP.pdf> <./images/overcontact_
 binaries/MY_Cam_v2_MvP.pdf> <./images/overcontact_binaries/SMC_108086_v2_MvP.pd
 f> <./images/overcontact_binaries/TU_Mus_v2_MvP.pdf> <./images/overcontact_bina
 ries/V382_Cyg_v2_MvP.pdf> <./images/overcontact_binaries/VFTS_352_v2_MvP.pdf>]
-<images/overcontact_binaries/LSS_3074_MvP.pdf, id=4504, 221.39435pt x 149.4098p
+
+[106]
+<images/overcontact_binaries/LSS_3074_MvP.pdf, id=4560, 221.39435pt x 149.4098p
 t>
 File: images/overcontact_binaries/LSS_3074_MvP.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/LSS_3074_MvP.pdf>
 Package pdftex.def Info: images/overcontact_binaries/LSS_3074_MvP.pdf  used on 
 input line 208.
 (pdftex.def)             Requested size: 241.0573pt x 162.68018pt.
-<images/overcontact_binaries/MY_Cam_MvP.pdf, id=4505, 221.39435pt x 149.4098pt>
+<images/overcontact_binaries/MY_Cam_MvP.pdf, id=4561, 221.39435pt x 149.4098pt>
 
 File: images/overcontact_binaries/MY_Cam_MvP.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/MY_Cam_MvP.pdf>
 Package pdftex.def Info: images/overcontact_binaries/MY_Cam_MvP.pdf  used on in
 put line 214.
 (pdftex.def)             Requested size: 241.0573pt x 162.68018pt.
-<images/overcontact_binaries/SMC_108086_MvP.pdf, id=4506, 221.39435pt x 149.409
+<images/overcontact_binaries/SMC_108086_MvP.pdf, id=4562, 221.39435pt x 149.409
 8pt>
 File: images/overcontact_binaries/SMC_108086_MvP.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/SMC_108086_MvP.pdf>
 Package pdftex.def Info: images/overcontact_binaries/SMC_108086_MvP.pdf  used o
 n input line 221.
 (pdftex.def)             Requested size: 241.0573pt x 162.68018pt.
-<images/overcontact_binaries/TU_Mus_MvP.pdf, id=4507, 224.19904pt x 149.4098pt>
+<images/overcontact_binaries/TU_Mus_MvP.pdf, id=4563, 224.19904pt x 149.4098pt>
 
 File: images/overcontact_binaries/TU_Mus_MvP.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/TU_Mus_MvP.pdf>
 Package pdftex.def Info: images/overcontact_binaries/TU_Mus_MvP.pdf  used on in
 put line 227.
 (pdftex.def)             Requested size: 241.0573pt x 160.65114pt.
-<images/overcontact_binaries/V382_Cyg_MvP.pdf, id=4508, 221.39435pt x 149.4098p
+<images/overcontact_binaries/V382_Cyg_MvP.pdf, id=4564, 221.39435pt x 149.4098p
 t>
 File: images/overcontact_binaries/V382_Cyg_MvP.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/V382_Cyg_MvP.pdf>
 Package pdftex.def Info: images/overcontact_binaries/V382_Cyg_MvP.pdf  used on 
 input line 234.
 (pdftex.def)             Requested size: 241.0573pt x 162.68018pt.
-<images/overcontact_binaries/VFTS_352_MvP.pdf, id=4509, 221.39435pt x 149.4098p
+<images/overcontact_binaries/VFTS_352_MvP.pdf, id=4565, 221.39435pt x 149.4098p
 t>
 File: images/overcontact_binaries/VFTS_352_MvP.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/VFTS_352_MvP.pdf>
 Package pdftex.def Info: images/overcontact_binaries/VFTS_352_MvP.pdf  used on 
 input line 240.
 (pdftex.def)             Requested size: 241.0573pt x 162.68018pt.
-<images/overcontact_binaries/model_mvp.pdf, id=4514, 418.68083pt x 463.14445pt>
+<images/overcontact_binaries/model_mvp.pdf, id=4570, 418.68083pt x 463.14445pt>
 
 File: images/overcontact_binaries/model_mvp.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/model_mvp.pdf>
 Package pdftex.def Info: images/overcontact_binaries/model_mvp.pdf  used on inp
 ut line 286.
 (pdftex.def)             Requested size: 491.94817pt x 544.22307pt.
-<images/overcontact_binaries/matching_hrds.pdf, id=4515, 414.43076pt x 463.1444
+<images/overcontact_binaries/matching_hrds.pdf, id=4571, 414.43076pt x 463.1444
 5pt>
 File: images/overcontact_binaries/matching_hrds.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/matching_hrds.pdf>
 Package pdftex.def Info: images/overcontact_binaries/matching_hrds.pdf  used on
  input line 293.
 (pdftex.def)             Requested size: 491.94817pt x 549.79893pt.
-<images/overcontact_binaries/match_1.pdf, id=4519, 430.6958pt x 273.30441pt>
+<images/overcontact_binaries/match_1.pdf, id=4575, 430.6958pt x 273.30441pt>
 File: images/overcontact_binaries/match_1.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/match_1.pdf>
 Package pdftex.def Info: images/overcontact_binaries/match_1.pdf  used on input
  line 339.
 (pdftex.def)             Requested size: 491.94817pt x 312.17496pt.
-<images/overcontact_binaries/match_2.pdf, id=4520, 430.6958pt x 273.30441pt>
+<images/overcontact_binaries/match_2.pdf, id=4576, 430.6958pt x 273.30441pt>
 File: images/overcontact_binaries/match_2.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/match_2.pdf>
 Package pdftex.def Info: images/overcontact_binaries/match_2.pdf  used on input
  line 346.
 (pdftex.def)             Requested size: 491.94817pt x 312.17496pt.
-<images/overcontact_binaries/match_3.pdf, id=4521, 430.6958pt x 273.30441pt>
+<images/overcontact_binaries/match_3.pdf, id=4577, 430.6958pt x 273.30441pt>
 File: images/overcontact_binaries/match_3.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/match_3.pdf>
 Package pdftex.def Info: images/overcontact_binaries/match_3.pdf  used on input
  line 354.
 (pdftex.def)             Requested size: 491.94817pt x 312.17496pt.
 
+Underfull \vbox (badness 5924) has occurred while \output is active []
 
-[108]
 
-[109 <./images/overcontact_binaries/LSS_3074_MvP.pdf> <./images/overcontact_bin
+
+[107]
+
+[108 <./images/overcontact_binaries/LSS_3074_MvP.pdf> <./images/overcontact_bin
 aries/MY_Cam_MvP.pdf> <./images/overcontact_binaries/SMC_108086_MvP.pdf> <./ima
 ges/overcontact_binaries/TU_Mus_MvP.pdf> <./images/overcontact_binaries/V382_Cy
 g_MvP.pdf> <./images/overcontact_binaries/VFTS_352_MvP.pdf>]
 
-[110]
+[109]
 
-[111 <./images/overcontact_binaries/model_mvp.pdf>]
+[110 <./images/overcontact_binaries/model_mvp.pdf>]
 
-[112 <./images/overcontact_binaries/matching_hrds.pdf>]
+[111 <./images/overcontact_binaries/matching_hrds.pdf>]
 
-[113]
+[112]
 
-[114 <./images/overcontact_binaries/match_1.pdf> <./images/overcontact_binaries
+[113 <./images/overcontact_binaries/match_1.pdf> <./images/overcontact_binaries
 /match_2.pdf>]
 
-[115 <./images/overcontact_binaries/match_3.pdf>]
-<images/overcontact_binaries/mean_contact_length_dependence.pdf, id=4750, 417.0
+[114 <./images/overcontact_binaries/match_3.pdf>]
+<images/overcontact_binaries/mean_contact_length_dependence.pdf, id=4807, 417.0
 5663pt x 508.7076pt>
 File: images/overcontact_binaries/mean_contact_length_dependence.pdf Graphic fi
 le (type pdf)
@@ -4250,91 +3874,26 @@ ence.pdf  used on input line 391.
 (pdftex.def)             Requested size: 491.94817pt x 600.09122pt.
 
 
-[116]
+[115]
 
-[117 <./images/overcontact_binaries/mean_contact_length_dependence.pdf>])
+[116 <./images/overcontact_binaries/mean_contact_length_dependence.pdf>])
 (./chapters/chapter19.tex
 
-[118]
-Chapter 6.
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(51.21495pt, 511.8651pt, 51.21495pt)
-* v-part:(T,H,B)=(51.21495pt, 692.54008pt, 51.21495pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=511.8651pt
-* \textheight=692.54008pt
-* \oddsidemargin=-21.05504pt
-* \evensidemargin=-21.05504pt
-* \topmargin=-51.12253pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+[117]
 
-
-(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-63.pgf)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-63.pgf)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-63.pgf)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-63.pgf)
-
-[119
+[118
 
 ]
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(51.21495pt, 511.8651pt, 51.21495pt)
-* v-part:(T,H,B)=(51.21495pt, 692.54008pt, 51.21495pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=511.8651pt
-* \textheight=692.54008pt
-* \oddsidemargin=-21.05504pt
-* \evensidemargin=-21.05504pt
-* \topmargin=-51.12253pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+Chapter 6.
 
-
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+63.pgf)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+63.pgf)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+63.pgf)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+63.pgf)
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 63.pgf)
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
@@ -4346,83 +3905,39 @@ Chapter 6.
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 8.pgf)
 
-[120
-
-]
+[119]
 Package lettrine.sty Info: Targeted height = 45.07639pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 45.07657pt (T);
 (lettrine.sty)             reported on input line 7.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-[121
-
+[120
 
 ]
-
-[122]
-<images/conclusion/ellipse_geometry.pdf, id=4841, 406.66756pt x 261.72638pt>
+<images/conclusion/ellipse_geometry.pdf, id=4892, 406.66756pt x 261.72638pt>
 File: images/conclusion/ellipse_geometry.pdf Graphic file (type pdf)
 <use images/conclusion/ellipse_geometry.pdf>
 Package pdftex.def Info: images/conclusion/ellipse_geometry.pdf  used on input 
 line 45.
 (pdftex.def)             Requested size: 491.94817pt x 316.61801pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
+[121]
 
+[122 <./images/conclusion/ellipse_geometry.pdf>])
 
-[123 <./images/conclusion/ellipse_geometry.pdf>]
+[123]
 
-[124])
+[124]
 
-[125]
+[125
 
-[126
 
 ]
 
-[127
-
-]
-
-[128] (./chapters/appendices/appendixA.tex
+[126] (./chapters/appendices/appendixA.tex
 Appendix A.
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(51.21495pt, 511.8651pt, 51.21495pt)
-* v-part:(T,H,B)=(51.21495pt, 692.54008pt, 51.21495pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=511.8651pt
-* \textheight=692.54008pt
-* \oddsidemargin=-21.05504pt
-* \evensidemargin=-21.05504pt
-* \topmargin=-51.12253pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
 
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 63.pgf)
@@ -4432,43 +3947,6 @@ Appendix A.
 63.pgf)
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 63.pgf)
-
-[129
-
-]
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(51.21495pt, 511.8651pt, 51.21495pt)
-* v-part:(T,H,B)=(51.21495pt, 692.54008pt, 51.21495pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=511.8651pt
-* \textheight=692.54008pt
-* \oddsidemargin=-21.05504pt
-* \evensidemargin=-21.05504pt
-* \topmargin=-51.12253pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 63.pgf)
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
@@ -4480,7 +3958,7 @@ Appendix A.
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 8.pgf)
 
-[130
+[127
 
 ] (./_minted/D2F87C5905A9FDDFC5F552A595254F62.highlight.minted)
 (./_minted/61C09423888B84D5A1AF76249C96D3B1.highlight.minted)
@@ -4496,20 +3974,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[131
-
+[128
 
 ]
-Missing character: There is no c in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no k in font nullfont!
-
-
-[132]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -4528,7 +3995,17 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
 
 
-[133]
+[129]
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+
+
+[130]
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -4538,86 +4015,21 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
 ) (./chapters/appendices/appendixB.tex
 
-[134]
-Appendix B.
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(51.21495pt, 511.8651pt, 51.21495pt)
-* v-part:(T,H,B)=(51.21495pt, 692.54008pt, 51.21495pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=511.8651pt
-* \textheight=692.54008pt
-* \oddsidemargin=-21.05504pt
-* \evensidemargin=-21.05504pt
-* \topmargin=-51.12253pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+[131]
 
-
-(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-63.pgf)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-63.pgf)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-63.pgf)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-63.pgf)
-
-[135
+[132
 
 ]
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(51.21495pt, 511.8651pt, 51.21495pt)
-* v-part:(T,H,B)=(51.21495pt, 692.54008pt, 51.21495pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=511.8651pt
-* \textheight=692.54008pt
-* \oddsidemargin=-21.05504pt
-* \evensidemargin=-21.05504pt
-* \topmargin=-51.12253pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+Appendix B.
 
-
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+63.pgf)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+63.pgf)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+63.pgf)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+63.pgf)
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 63.pgf)
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
@@ -4629,28 +4041,26 @@ Appendix B.
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 8.pgf)
 
-[136
-
-]
+[133]
 Overfull \hbox (2.6883pt too wide) in paragraph at lines 63--86
  [][] 
  []
 
 
-Underfull \vbox (badness 5832) has occurred while \output is active []
 
-
-
-[137
-
+[134
 
 ]
 
-[138]
+[135]
 
-[139]) (./chapters/appendices/appendixC.tex
+[136]) (./chapters/appendices/appendixC.tex
 
-[140]
+[137]
+
+[138
+
+]
 Appendix C.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -4660,38 +4070,6 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrshort' on input line 3.
 
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(51.21495pt, 511.8651pt, 51.21495pt)
-* v-part:(T,H,B)=(51.21495pt, 692.54008pt, 51.21495pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=511.8651pt
-* \textheight=692.54008pt
-* \oddsidemargin=-21.05504pt
-* \evensidemargin=-21.05504pt
-* \topmargin=-51.12253pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
 
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 63.pgf)
@@ -4701,43 +4079,6 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 63.pgf)
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 63.pgf)
-
-[141
-
-]
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(51.21495pt, 511.8651pt, 51.21495pt)
-* v-part:(T,H,B)=(51.21495pt, 692.54008pt, 51.21495pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=511.8651pt
-* \textheight=692.54008pt
-* \oddsidemargin=-21.05504pt
-* \evensidemargin=-21.05504pt
-* \topmargin=-51.12253pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 63.pgf)
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
@@ -4749,10 +4090,8 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 8.pgf)
 
-[142
-
-]
-<images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png, id=5064, 427.5975p
+[139]
+<images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png, id=5113, 427.5975p
 t x 606.8271pt>
 File: images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png Graphic file (
 type png)
@@ -4762,45 +4101,16 @@ Package pdftex.def Info: images/NatalKicks/PeriodEccentricityDiagrams-O3Contour
 (pdftex.def)             Requested size: 439.19719pt x 623.28185pt.
 ) (./chapters/appendices/appendixD.tex
 
-[143
-
+[140
 
 ]
 
-[144 <./images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png>]
+[141 <./images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png>]
+
+[142
+
+]
 Appendix D.
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(51.21495pt, 511.8651pt, 51.21495pt)
-* v-part:(T,H,B)=(51.21495pt, 692.54008pt, 51.21495pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=511.8651pt
-* \textheight=692.54008pt
-* \oddsidemargin=-21.05504pt
-* \evensidemargin=-21.05504pt
-* \topmargin=-51.12253pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
 
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 63.pgf)
@@ -4810,43 +4120,6 @@ Appendix D.
 63.pgf)
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 63.pgf)
-
-[145
-
-]
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(51.21495pt, 511.8651pt, 51.21495pt)
-* v-part:(T,H,B)=(51.21495pt, 692.54008pt, 51.21495pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=511.8651pt
-* \textheight=692.54008pt
-* \oddsidemargin=-21.05504pt
-* \evensidemargin=-21.05504pt
-* \topmargin=-51.12253pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 63.pgf)
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
@@ -4858,14 +4131,12 @@ Appendix D.
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 8.pgf)
 
-[146
-
-]
+[143]
 Overfull \hbox (4.64542pt too wide) in paragraph at lines 10--41
  [][] 
  []
 
-<images/overcontact_binaries/bespoke_binaries/normal/LSS 3074.pdf, id=5099, 412
+<images/overcontact_binaries/bespoke_binaries/normal/LSS 3074.pdf, id=5150, 412
 .09822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/normal/LSS 3074.pdf Graphic 
 file (type pdf)
@@ -4873,7 +4144,7 @@ file (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/normal/LS
 S 3074.pdf  used on input line 57.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
-<images/overcontact_binaries/bespoke_binaries/normal/MY Cam.pdf, id=5100, 412.0
+<images/overcontact_binaries/bespoke_binaries/normal/MY Cam.pdf, id=5151, 412.0
 9822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/normal/MY Cam.pdf Graphic fi
 le (type pdf)
@@ -4881,7 +4152,7 @@ le (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/normal/MY
  Cam.pdf  used on input line 64.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
-<images/overcontact_binaries/bespoke_binaries/normal/SMC 108086.pdf, id=5101, 4
+<images/overcontact_binaries/bespoke_binaries/normal/SMC 108086.pdf, id=5152, 4
 12.09822pt x 548.72067pt>
 File: images/overcontact_binaries/bespoke_binaries/normal/SMC 108086.pdf Graphi
 c file (type pdf)
@@ -4889,7 +4160,7 @@ c file (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/normal/SM
 C 108086.pdf  used on input line 74.
 (pdftex.def)             Requested size: 491.94817pt x 655.04541pt.
-<images/overcontact_binaries/bespoke_binaries/normal/TU Mus.pdf, id=5102, 412.0
+<images/overcontact_binaries/bespoke_binaries/normal/TU Mus.pdf, id=5153, 412.0
 9822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/normal/TU Mus.pdf Graphic fi
 le (type pdf)
@@ -4897,7 +4168,7 @@ le (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/normal/TU
  Mus.pdf  used on input line 84.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
-<images/overcontact_binaries/bespoke_binaries/normal/V382 Cyg.pdf, id=5103, 412
+<images/overcontact_binaries/bespoke_binaries/normal/V382 Cyg.pdf, id=5154, 412
 .09822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/normal/V382 Cyg.pdf Graphic 
 file (type pdf)
@@ -4905,7 +4176,7 @@ file (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/normal/V3
 82 Cyg.pdf  used on input line 91.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
-<images/overcontact_binaries/bespoke_binaries/normal/VFTS 352.pdf, id=5104, 412
+<images/overcontact_binaries/bespoke_binaries/normal/VFTS 352.pdf, id=5155, 412
 .09822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/normal/VFTS 352.pdf Graphic 
 file (type pdf)
@@ -4913,7 +4184,7 @@ file (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/normal/VF
 TS 352.pdf  used on input line 102.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
-<images/overcontact_binaries/bespoke_binaries/wider/LSS 3074.pdf, id=5105, 412.
+<images/overcontact_binaries/bespoke_binaries/wider/LSS 3074.pdf, id=5156, 412.
 09822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/wider/LSS 3074.pdf Graphic f
 ile (type pdf)
@@ -4921,7 +4192,7 @@ ile (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/wider/LSS
  3074.pdf  used on input line 120.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
-<images/overcontact_binaries/bespoke_binaries/wider/MY Cam.pdf, id=5106, 412.09
+<images/overcontact_binaries/bespoke_binaries/wider/MY Cam.pdf, id=5157, 412.09
 822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/wider/MY Cam.pdf Graphic fil
 e (type pdf)
@@ -4929,7 +4200,7 @@ e (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/wider/MY 
 Cam.pdf  used on input line 127.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
-<images/overcontact_binaries/bespoke_binaries/wider/SMC 108086.pdf, id=5107, 41
+<images/overcontact_binaries/bespoke_binaries/wider/SMC 108086.pdf, id=5158, 41
 2.09822pt x 548.72067pt>
 File: images/overcontact_binaries/bespoke_binaries/wider/SMC 108086.pdf Graphic
  file (type pdf)
@@ -4937,7 +4208,7 @@ File: images/overcontact_binaries/bespoke_binaries/wider/SMC 108086.pdf Graphic
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/wider/SMC
  108086.pdf  used on input line 137.
 (pdftex.def)             Requested size: 491.94817pt x 655.04541pt.
-<images/overcontact_binaries/bespoke_binaries/wider/TU Mus.pdf, id=5108, 412.09
+<images/overcontact_binaries/bespoke_binaries/wider/TU Mus.pdf, id=5159, 412.09
 822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/wider/TU Mus.pdf Graphic fil
 e (type pdf)
@@ -4945,7 +4216,7 @@ e (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/wider/TU 
 Mus.pdf  used on input line 147.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
-<images/overcontact_binaries/bespoke_binaries/wider/V382 Cyg.pdf, id=5109, 412.
+<images/overcontact_binaries/bespoke_binaries/wider/V382 Cyg.pdf, id=5160, 412.
 09822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/wider/V382 Cyg.pdf Graphic f
 ile (type pdf)
@@ -4953,7 +4224,7 @@ ile (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/wider/V38
 2 Cyg.pdf  used on input line 154.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
-<images/overcontact_binaries/bespoke_binaries/wider/VFTS 352.pdf, id=5110, 412.
+<images/overcontact_binaries/bespoke_binaries/wider/VFTS 352.pdf, id=5161, 412.
 09822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/wider/VFTS 352.pdf Graphic f
 ile (type pdf)
@@ -4961,7 +4232,7 @@ ile (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/wider/VFT
 S 352.pdf  used on input line 165.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
-<images/overcontact_binaries/bespoke_binaries/shorter/LSS 3074.pdf, id=5111, 41
+<images/overcontact_binaries/bespoke_binaries/shorter/LSS 3074.pdf, id=5162, 41
 2.09822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/shorter/LSS 3074.pdf Graphic
  file (type pdf)
@@ -4969,7 +4240,7 @@ File: images/overcontact_binaries/bespoke_binaries/shorter/LSS 3074.pdf Graphic
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/shorter/L
 SS 3074.pdf  used on input line 183.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
-<images/overcontact_binaries/bespoke_binaries/shorter/MY Cam.pdf, id=5112, 412.
+<images/overcontact_binaries/bespoke_binaries/shorter/MY Cam.pdf, id=5163, 412.
 09822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/shorter/MY Cam.pdf Graphic f
 ile (type pdf)
@@ -4977,7 +4248,7 @@ ile (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/shorter/M
 Y Cam.pdf  used on input line 190.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
-<images/overcontact_binaries/bespoke_binaries/shorter/SMC 108086.pdf, id=5113, 
+<images/overcontact_binaries/bespoke_binaries/shorter/SMC 108086.pdf, id=5164, 
 412.09822pt x 548.72067pt>
 File: images/overcontact_binaries/bespoke_binaries/shorter/SMC 108086.pdf Graph
 ic file (type pdf)
@@ -4985,7 +4256,7 @@ ic file (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/shorter/S
 MC 108086.pdf  used on input line 200.
 (pdftex.def)             Requested size: 491.94817pt x 655.04541pt.
-<images/overcontact_binaries/bespoke_binaries/shorter/TU Mus.pdf, id=5114, 412.
+<images/overcontact_binaries/bespoke_binaries/shorter/TU Mus.pdf, id=5165, 412.
 09822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/shorter/TU Mus.pdf Graphic f
 ile (type pdf)
@@ -4993,7 +4264,7 @@ ile (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/shorter/T
 U Mus.pdf  used on input line 210.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
-<images/overcontact_binaries/bespoke_binaries/shorter/V382 Cyg.pdf, id=5115, 41
+<images/overcontact_binaries/bespoke_binaries/shorter/V382 Cyg.pdf, id=5166, 41
 2.09822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/shorter/V382 Cyg.pdf Graphic
  file (type pdf)
@@ -5001,7 +4272,7 @@ File: images/overcontact_binaries/bespoke_binaries/shorter/V382 Cyg.pdf Graphic
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/shorter/V
 382 Cyg.pdf  used on input line 217.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
-<images/overcontact_binaries/bespoke_binaries/shorter/VFTS 352.pdf, id=5116, 41
+<images/overcontact_binaries/bespoke_binaries/shorter/VFTS 352.pdf, id=5167, 41
 2.09822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/shorter/VFTS 352.pdf Graphic
  file (type pdf)
@@ -5011,121 +4282,55 @@ FTS 352.pdf  used on input line 228.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
 ) (./chapters/appendices/appendixE.tex
 
-[147
-
+[144
 
 ]
 
-[148]
+[145]
 
-[149 <./images/overcontact_binaries/bespoke_binaries/normal/LSS 3074.pdf> <./im
+[146 <./images/overcontact_binaries/bespoke_binaries/normal/LSS 3074.pdf> <./im
 ages/overcontact_binaries/bespoke_binaries/normal/MY Cam.pdf>]
 
-[150 <./images/overcontact_binaries/bespoke_binaries/normal/SMC 108086.pdf>]
+[147 <./images/overcontact_binaries/bespoke_binaries/normal/SMC 108086.pdf>]
 
-[151 <./images/overcontact_binaries/bespoke_binaries/normal/TU Mus.pdf> <./imag
+[148 <./images/overcontact_binaries/bespoke_binaries/normal/TU Mus.pdf> <./imag
 es/overcontact_binaries/bespoke_binaries/normal/V382 Cyg.pdf>]
 
-[152 <./images/overcontact_binaries/bespoke_binaries/normal/VFTS 352.pdf>]
+[149 <./images/overcontact_binaries/bespoke_binaries/normal/VFTS 352.pdf>]
 
-[153 <./images/overcontact_binaries/bespoke_binaries/wider/LSS 3074.pdf> <./ima
+[150 <./images/overcontact_binaries/bespoke_binaries/wider/LSS 3074.pdf> <./ima
 ges/overcontact_binaries/bespoke_binaries/wider/MY Cam.pdf>]
 
-[154 <./images/overcontact_binaries/bespoke_binaries/wider/SMC 108086.pdf>]
+[151 <./images/overcontact_binaries/bespoke_binaries/wider/SMC 108086.pdf>]
 
-[155 <./images/overcontact_binaries/bespoke_binaries/wider/TU Mus.pdf> <./image
+[152 <./images/overcontact_binaries/bespoke_binaries/wider/TU Mus.pdf> <./image
 s/overcontact_binaries/bespoke_binaries/wider/V382 Cyg.pdf>]
 
-[156 <./images/overcontact_binaries/bespoke_binaries/wider/VFTS 352.pdf>]
+[153 <./images/overcontact_binaries/bespoke_binaries/wider/VFTS 352.pdf>]
 
-[157 <./images/overcontact_binaries/bespoke_binaries/shorter/LSS 3074.pdf> <./i
+[154 <./images/overcontact_binaries/bespoke_binaries/shorter/LSS 3074.pdf> <./i
 mages/overcontact_binaries/bespoke_binaries/shorter/MY Cam.pdf>]
 
-[158 <./images/overcontact_binaries/bespoke_binaries/shorter/SMC 108086.pdf>]
+[155 <./images/overcontact_binaries/bespoke_binaries/shorter/SMC 108086.pdf>]
 
-[159 <./images/overcontact_binaries/bespoke_binaries/shorter/TU Mus.pdf> <./ima
+[156 <./images/overcontact_binaries/bespoke_binaries/shorter/TU Mus.pdf> <./ima
 ges/overcontact_binaries/bespoke_binaries/shorter/V382 Cyg.pdf>]
 
-[160 <./images/overcontact_binaries/bespoke_binaries/shorter/VFTS 352.pdf>]
-Appendix E.
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(51.21495pt, 511.8651pt, 51.21495pt)
-* v-part:(T,H,B)=(51.21495pt, 692.54008pt, 51.21495pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=511.8651pt
-* \textheight=692.54008pt
-* \oddsidemargin=-21.05504pt
-* \evensidemargin=-21.05504pt
-* \topmargin=-51.12253pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+[157 <./images/overcontact_binaries/bespoke_binaries/shorter/VFTS 352.pdf>]
 
-
-(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-63.pgf)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-63.pgf)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-63.pgf)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-63.pgf)
-
-[161
+[158
 
 ]
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(51.21495pt, 511.8651pt, 51.21495pt)
-* v-part:(T,H,B)=(51.21495pt, 692.54008pt, 51.21495pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=511.8651pt
-* \textheight=692.54008pt
-* \oddsidemargin=-21.05504pt
-* \evensidemargin=-21.05504pt
-* \topmargin=-51.12253pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+Appendix E.
 
-
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+63.pgf)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+63.pgf)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+63.pgf)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
+63.pgf)
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 63.pgf)
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
@@ -5137,15 +4342,18 @@ Appendix E.
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 8.pgf)
 
-[162
-
-] (./chapters/tables/remnant_table.tex))
+[159] (./chapters/tables/remnant_table.tex))
 (./chapters/appendices/appendixF.tex
 
-[163
-
+[160
 
 ]
+
+[161]
+
+[162]
+
+[163]
 
 [164]
 
@@ -5156,49 +4364,7 @@ Appendix E.
 [167]
 
 [168]
-
-[169]
-
-[170]
-
-[171]
-
-[172
-
-]
 Appendix F.
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(51.21495pt, 511.8651pt, 51.21495pt)
-* v-part:(T,H,B)=(51.21495pt, 692.54008pt, 51.21495pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=511.8651pt
-* \textheight=692.54008pt
-* \oddsidemargin=-21.05504pt
-* \evensidemargin=-21.05504pt
-* \topmargin=-51.12253pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
 
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 63.pgf)
@@ -5208,41 +4374,6 @@ Appendix F.
 63.pgf)
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 63.pgf)
-
-[173]
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(51.21495pt, 511.8651pt, 51.21495pt)
-* v-part:(T,H,B)=(51.21495pt, 692.54008pt, 51.21495pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=511.8651pt
-* \textheight=692.54008pt
-* \oddsidemargin=-21.05504pt
-* \evensidemargin=-21.05504pt
-* \topmargin=-51.12253pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 63.pgf)
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
@@ -5254,19 +4385,13 @@ Appendix F.
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 8.pgf)
 
-[174
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[175
-
+[169
 
 ]
 
-[176] (./chapters/figures/binary_schematic.tex
+[170
+
+] (./chapters/figures/binary_schematic.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -5275,17 +4400,11 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
 
-[177]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[171]
 
+[172]
 
-
-[178]
-Underfull \vbox (badness 1442) has occurred while \output is active []
-
-
-
-[179]
+[173]
 
 Package pgfplots Warning: 'fill between': Could not activate graphics layer 'ft
 '. Filled path will be on top of the other ones. Please ensure that 'ft' is som
@@ -5294,28 +4413,34 @@ ewhere in the layer list (or set '/tikz/fill between/on layer='). on input line
 
 Missing character: There is no ; in font nullfont!
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+[174]
+Underfull \vbox (badness 3907) has occurred while \output is active []
+
+
+
+[175]
+
+[176]
+
+[177]
+
+[178]
+
+[179]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [180]
 
 [181]
 
 [182]
-
-[183]
-
-[184]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[185]
-
-[186]
-
-[187]
-
-[188]
-<images/TheorySection/chebyshev_polynomials.pdf, id=5954, 395.80457pt x 266.897
+<images/TheorySection/chebyshev_polynomials.pdf, id=5990, 395.80457pt x 266.897
 37pt>
 File: images/TheorySection/chebyshev_polynomials.pdf Graphic file (type pdf)
 <use images/TheorySection/chebyshev_polynomials.pdf>
@@ -5323,49 +4448,62 @@ Package pdftex.def Info: images/TheorySection/chebyshev_polynomials.pdf  used o
 n input line 638.
 (pdftex.def)             Requested size: 491.94817pt x 331.74345pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3199) has occurred while \output is active []
 
 
 
-[189]
+[183]
 
-[190 <./images/TheorySection/chebyshev_polynomials.pdf>]
-<images/TheorySection/double_bistability_jump.pdf, id=6015, 449.05397pt x 274.4
+[184 <./images/TheorySection/chebyshev_polynomials.pdf>]
+
+[185]
+<images/TheorySection/double_bistability_jump.pdf, id=6061, 449.05397pt x 274.4
 3884pt>
 File: images/TheorySection/double_bistability_jump.pdf Graphic file (type pdf)
 <use images/TheorySection/double_bistability_jump.pdf>
 Package pdftex.def Info: images/TheorySection/double_bistability_jump.pdf  used
  on input line 735.
 (pdftex.def)             Requested size: 491.94817pt x 300.66505pt.
+)
 
+[186]
 
-[191])
+[187 <./images/TheorySection/double_bistability_jump.pdf>]
 
-[192 <./images/TheorySection/double_bistability_jump.pdf>] (./main.bbl
+[188
+
+] (./main.bbl
 LaTeX Info: Redefining \VAN on input line 1.
 
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 88.pgf)
 
-[193
-
+[189
 
 
 
 pdfTeX warning: pdflatex: pop empty color page stack 0
 ]
 
-[194]
+[190]
 
-[195]
+[191]
 
-[196]
-Underfull \hbox (badness 1048) in paragraph at lines 507--511
+[192]
+
+[193]
+Underfull \hbox (badness 1048) in paragraph at lines 524--528
 []\T1/cmr/m/n/10 Hamacher D. W., Barsa J., Passi S., Tapim A., 2019, In-dige-no
 us use of stel-lar scin-til-la-tion to pre-
  []
 
 
+
+[194]
+
+[195]
+
+[196]
 
 [197]
 
@@ -5375,19 +4513,11 @@ us use of stel-lar scin-til-la-tion to pre-
 
 [200]
 
-[201]
+[201])
 
 [202]
 
-[203]
-
-[204]
-
-[205])
-
-[206]
-
-[207
+[203
 
 ]
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
@@ -5415,7 +4545,7 @@ Package natbib Warning: There were undefined citations.
 
 
 
-[208] 
+[204] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (./main.aux)
  ***********
@@ -5430,10 +4560,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 7E58AECBD0FE11E2272A121463F2A131;20361.
  ) 
 Here is how much of TeX's memory you used:
- 75913 strings out of 473190
- 1794640 string characters out of 5715807
- 2784860 words of memory out of 5000000
- 96606 multiletter control sequences out of 15000+600000
+ 75951 strings out of 473190
+ 1795354 string characters out of 5715807
+ 2785459 words of memory out of 5000000
+ 96634 multiletter control sequences out of 15000+600000
  616206 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,20n,96p,2405b,2156s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -5495,10 +4625,10 @@ r/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/
 local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/lo
 cal/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb></usr/loca
 l/texlive/2025/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (230 pages, 16280006 bytes).
+Output written on main.pdf (226 pages, 16290998 bytes).
 PDF statistics:
- 6876 PDF objects out of 7423 (max. 8388607)
- 5856 compressed objects within 59 object streams
- 1005 named destinations out of 1200 (max. 500000)
+ 6943 PDF objects out of 7423 (max. 8388607)
+ 5926 compressed objects within 60 object streams
+ 1015 named destinations out of 1200 (max. 500000)
  1540 words of extra memory for PDF output out of 10000 (max. 10000000)
 
