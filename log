@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.1)  18 AUG 2025 08:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.1)  18 AUG 2025 08:47
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -3201,11 +3201,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 \pydata@fh@0=\write13
 \openout13 = `_FAD58DE7366495DB4650CFEFAC2FCD61.data.minted'.
 
-runsystem(latexminted config  --timestamp 20250818084252 FAD58DE7366495DB4650CF
+runsystem(latexminted config  --timestamp 20250818084727 FAD58DE7366495DB4650CF
 EFAC2FCD61)...executed.
 
 (./_FAD58DE7366495DB4650CFEFAC2FCD61.config.minted)
-runsystem(latexminted cleanconfig  --timestamp 20250818084252 FAD58DE7366495DB4
+runsystem(latexminted cleanconfig  --timestamp 20250818084727 FAD58DE7366495DB4
 650CFEFAC2FCD61)...executed.
 
 
@@ -3395,11 +3395,7 @@ ing.pdf  used on input line 203.
 (pdftex.def)             Requested size: 491.94817pt x 480.98148pt.
 
 
-Package natbib Warning: Citation `Smith:2012' on page 64 undefined on input lin
-e 211.
-
-
-LaTeX Warning: Reference `fig:mass-luminosity_relation' on page 1 undefined on 
+LaTeX Warning: Reference `fig:mass_luminosity_relation' on page 1 undefined on 
 input line 213.
 
 
@@ -3411,7 +3407,7 @@ input line 213.
 [66 <./images/HeliumRich/abundances_line_plot_thermohalinemixing.pdf>]
 
 [67]
-<images/HeliumRich/mass_luminosity.pdf, id=2879, 409.73708pt x 221.60303pt>
+<images/HeliumRich/mass_luminosity.pdf, id=2882, 409.73708pt x 221.60303pt>
 File: images/HeliumRich/mass_luminosity.pdf Graphic file (type pdf)
 <use images/HeliumRich/mass_luminosity.pdf>
 Package pdftex.def Info: images/HeliumRich/mass_luminosity.pdf  used on input l
@@ -3459,7 +3455,7 @@ Package lettrine.sty Info: Targeted height = 45.07639pt
 ]
 
 [73]
-<images/NatalKicks/Grid_Regions.pdf, id=3030, 609.91904pt x 578.41486pt>
+<images/NatalKicks/Grid_Regions.pdf, id=3033, 609.91904pt x 578.41486pt>
 File: images/NatalKicks/Grid_Regions.pdf Graphic file (type pdf)
 <use images/NatalKicks/Grid_Regions.pdf>
 Package pdftex.def Info: images/NatalKicks/Grid_Regions.pdf  used on input line
@@ -3480,13 +3476,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (./_minted/D2F87C5905A9FDDFC5F552A595254F62.highlight.minted)
 
 [76] (./_minted/4BA2B83BBA9055655EEA1E85AE1083E7.highlight.minted)
-<images/NatalKicks/varying_de.pdf, id=3162, 425.42302pt x 260.83746pt>
+<images/NatalKicks/varying_de.pdf, id=3165, 425.42302pt x 260.83746pt>
 File: images/NatalKicks/varying_de.pdf Graphic file (type pdf)
 <use images/NatalKicks/varying_de.pdf>
 Package pdftex.def Info: images/NatalKicks/varying_de.pdf  used on input line 1
 11.
 (pdftex.def)             Requested size: 491.94817pt x 301.63634pt.
-<images/NatalKicks/runtime.pdf, id=3165, 435.70543pt x 260.83746pt>
+<images/NatalKicks/runtime.pdf, id=3168, 435.70543pt x 260.83746pt>
 File: images/NatalKicks/runtime.pdf Graphic file (type pdf)
 <use images/NatalKicks/runtime.pdf>
 Package pdftex.def Info: images/NatalKicks/runtime.pdf  used on input line 118.
@@ -3497,7 +3493,7 @@ Package pdftex.def Info: images/NatalKicks/runtime.pdf  used on input line 118.
 [77]
 
 [78 <./images/NatalKicks/varying_de.pdf>]
-<images/NatalKicks/EventRate_Distribution_Both.pdf, id=3224, 493.40585pt x 304.
+<images/NatalKicks/EventRate_Distribution_Both.pdf, id=3227, 493.40585pt x 304.
 47673pt>
 File: images/NatalKicks/EventRate_Distribution_Both.pdf Graphic file (type pdf)
 
@@ -3505,7 +3501,7 @@ File: images/NatalKicks/EventRate_Distribution_Both.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/NatalKicks/EventRate_Distribution_Both.pdf  use
 d on input line 132.
 (pdftex.def)             Requested size: 491.94817pt x 303.59325pt.
-<images/NatalKicks/PE_dists_six_panel.pdf, id=3249, 392.70343pt x 278.75076pt>
+<images/NatalKicks/PE_dists_six_panel.pdf, id=3252, 392.70343pt x 278.75076pt>
 File: images/NatalKicks/PE_dists_six_panel.pdf Graphic file (type pdf)
 <use images/NatalKicks/PE_dists_six_panel.pdf>
 Package pdftex.def Info: images/NatalKicks/PE_dists_six_panel.pdf  used on inpu
@@ -3518,7 +3514,7 @@ t line 143.
 [80 <./images/NatalKicks/EventRate_Distribution_Both.pdf>]
 
 [81 <./images/NatalKicks/PE_dists_six_panel.pdf>]
-<images/NatalKicks/LogBayesFactors_Both.pdf, id=3434, 493.40585pt x 297.24658pt
+<images/NatalKicks/LogBayesFactors_Both.pdf, id=3437, 493.40585pt x 297.24658pt
 >
 File: images/NatalKicks/LogBayesFactors_Both.pdf Graphic file (type pdf)
 <use images/NatalKicks/LogBayesFactors_Both.pdf>
@@ -3530,13 +3526,13 @@ put line 187.
 [82]
 
 [83 <./images/NatalKicks/LogBayesFactors_Both.pdf>]
-<images/NatalKicks/bray_vs_hobbs.pdf, id=3553, 410.02875pt x 261.72638pt>
+<images/NatalKicks/bray_vs_hobbs.pdf, id=3556, 410.02875pt x 261.72638pt>
 File: images/NatalKicks/bray_vs_hobbs.pdf Graphic file (type pdf)
 <use images/NatalKicks/bray_vs_hobbs.pdf>
 Package pdftex.def Info: images/NatalKicks/bray_vs_hobbs.pdf  used on input lin
 e 210.
 (pdftex.def)             Requested size: 491.94817pt x 314.03413pt.
-<images/NatalKicks/ks_test.pdf, id=3582, 773.4521pt x 441.33182pt>
+<images/NatalKicks/ks_test.pdf, id=3585, 773.4521pt x 441.33182pt>
 File: images/NatalKicks/ks_test.pdf Graphic file (type pdf)
 <use images/NatalKicks/ks_test.pdf>
 Package pdftex.def Info: images/NatalKicks/ks_test.pdf  used on input line 219.
@@ -3548,7 +3544,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [84 <./images/NatalKicks/bray_vs_hobbs.pdf>]
-<images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png, id=3602, 480.71594pt
+<images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png, id=3605, 480.71594pt
  x 334.1283pt>
 File: images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png Graphic file (ty
 pe png)
@@ -3566,7 +3562,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [86 <./images/NatalKicks/individual_pdfs_with_cdf_and_hobbs.png>]
 
 [87]
-<images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.pdf, id=3729
+<images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.pdf, id=3732
 , 457.49043pt x 320.24017pt>
 File: images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.pdf Gra
 phic file (type pdf)
@@ -3577,19 +3573,19 @@ _modeltype2.pdf  used on input line 268.
 
 
 [88 <./images/NatalKicks/All_Three_Constraints_with_USSNe_and_modeltype2.pdf>]
-<images/NatalKicks/Best_Model_Params.pdf, id=3809, 848.1813pt x 377.88795pt>
+<images/NatalKicks/Best_Model_Params.pdf, id=3812, 848.1813pt x 377.88795pt>
 File: images/NatalKicks/Best_Model_Params.pdf Graphic file (type pdf)
 <use images/NatalKicks/Best_Model_Params.pdf>
 Package pdftex.def Info: images/NatalKicks/Best_Model_Params.pdf  used on input
  line 277.
 (pdftex.def)             Requested size: 491.94817pt x 219.18092pt.
-<images/NatalKicks/grid_shifting_peaks.pdf, id=3822, 498.4246pt x 299.03899pt>
+<images/NatalKicks/grid_shifting_peaks.pdf, id=3825, 498.4246pt x 299.03899pt>
 File: images/NatalKicks/grid_shifting_peaks.pdf Graphic file (type pdf)
 <use images/NatalKicks/grid_shifting_peaks.pdf>
 Package pdftex.def Info: images/NatalKicks/grid_shifting_peaks.pdf  used on inp
 ut line 288.
 (pdftex.def)             Requested size: 491.94817pt x 295.15973pt.
-<images/NatalKicks/event_rate_history_local.pdf, id=3825, 423.62088pt x 402.446
+<images/NatalKicks/event_rate_history_local.pdf, id=3828, 423.62088pt x 402.446
 17pt>
 File: images/NatalKicks/event_rate_history_local.pdf Graphic file (type pdf)
 <use images/NatalKicks/event_rate_history_local.pdf>
@@ -3662,63 +3658,63 @@ Overfull \hbox (4.64542pt too wide) in paragraph at lines 3--37
  []
 
 )
-<images/overcontact_binaries/LSS_3074_hoki.pdf, id=4365, 211.74048pt x 137.439p
+<images/overcontact_binaries/LSS_3074_hoki.pdf, id=4368, 211.74048pt x 137.439p
 t>
 File: images/overcontact_binaries/LSS_3074_hoki.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/LSS_3074_hoki.pdf>
 Package pdftex.def Info: images/overcontact_binaries/LSS_3074_hoki.pdf  used on
  input line 98.
 (pdftex.def)             Requested size: 241.0573pt x 156.47235pt.
-<images/overcontact_binaries/MY_Cam_hoki.pdf, id=4366, 211.74048pt x 137.3948pt
+<images/overcontact_binaries/MY_Cam_hoki.pdf, id=4369, 211.74048pt x 137.3948pt
 >
 File: images/overcontact_binaries/MY_Cam_hoki.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/MY_Cam_hoki.pdf>
 Package pdftex.def Info: images/overcontact_binaries/MY_Cam_hoki.pdf  used on i
 nput line 104.
 (pdftex.def)             Requested size: 241.0573pt x 156.42204pt.
-<images/overcontact_binaries/SMC_108086_hoki.pdf, id=4367, 215.99055pt x 137.39
+<images/overcontact_binaries/SMC_108086_hoki.pdf, id=4370, 215.99055pt x 137.39
 48pt>
 File: images/overcontact_binaries/SMC_108086_hoki.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/SMC_108086_hoki.pdf>
 Package pdftex.def Info: images/overcontact_binaries/SMC_108086_hoki.pdf  used 
 on input line 111.
 (pdftex.def)             Requested size: 241.0573pt x 153.34232pt.
-<images/overcontact_binaries/TU_Mus_hoki.pdf, id=4368, 215.99055pt x 137.3948pt
+<images/overcontact_binaries/TU_Mus_hoki.pdf, id=4371, 215.99055pt x 137.3948pt
 >
 File: images/overcontact_binaries/TU_Mus_hoki.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/TU_Mus_hoki.pdf>
 Package pdftex.def Info: images/overcontact_binaries/TU_Mus_hoki.pdf  used on i
 nput line 117.
 (pdftex.def)             Requested size: 241.0573pt x 153.34232pt.
-<images/overcontact_binaries/V382_Cyg_hoki.pdf, id=4369, 211.74048pt x 137.3948
+<images/overcontact_binaries/V382_Cyg_hoki.pdf, id=4372, 211.74048pt x 137.3948
 pt>
 File: images/overcontact_binaries/V382_Cyg_hoki.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/V382_Cyg_hoki.pdf>
 Package pdftex.def Info: images/overcontact_binaries/V382_Cyg_hoki.pdf  used on
  input line 124.
 (pdftex.def)             Requested size: 241.0573pt x 156.42204pt.
-<images/overcontact_binaries/VFTS_352_hoki.pdf, id=4370, 211.74048pt x 137.3948
+<images/overcontact_binaries/VFTS_352_hoki.pdf, id=4373, 211.74048pt x 137.3948
 pt>
 File: images/overcontact_binaries/VFTS_352_hoki.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/VFTS_352_hoki.pdf>
 Package pdftex.def Info: images/overcontact_binaries/VFTS_352_hoki.pdf  used on
  input line 130.
 (pdftex.def)             Requested size: 241.0573pt x 156.42204pt.
-<images/overcontact_binaries/LSS_3074_v2_MvP.pdf, id=4377, 221.39435pt x 149.40
+<images/overcontact_binaries/LSS_3074_v2_MvP.pdf, id=4380, 221.39435pt x 149.40
 98pt>
 File: images/overcontact_binaries/LSS_3074_v2_MvP.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/LSS_3074_v2_MvP.pdf>
 Package pdftex.def Info: images/overcontact_binaries/LSS_3074_v2_MvP.pdf  used 
 on input line 143.
 (pdftex.def)             Requested size: 241.0573pt x 162.68018pt.
-<images/overcontact_binaries/MY_Cam_v2_MvP.pdf, id=4378, 221.39435pt x 149.4098
+<images/overcontact_binaries/MY_Cam_v2_MvP.pdf, id=4381, 221.39435pt x 149.4098
 pt>
 File: images/overcontact_binaries/MY_Cam_v2_MvP.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/MY_Cam_v2_MvP.pdf>
 Package pdftex.def Info: images/overcontact_binaries/MY_Cam_v2_MvP.pdf  used on
  input line 149.
 (pdftex.def)             Requested size: 241.0573pt x 162.68018pt.
-<images/overcontact_binaries/SMC_108086_v2_MvP.pdf, id=4379, 221.39435pt x 149.
+<images/overcontact_binaries/SMC_108086_v2_MvP.pdf, id=4382, 221.39435pt x 149.
 4098pt>
 File: images/overcontact_binaries/SMC_108086_v2_MvP.pdf Graphic file (type pdf)
 
@@ -3726,21 +3722,21 @@ File: images/overcontact_binaries/SMC_108086_v2_MvP.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/SMC_108086_v2_MvP.pdf  use
 d on input line 156.
 (pdftex.def)             Requested size: 241.0573pt x 162.68018pt.
-<images/overcontact_binaries/TU_Mus_v2_MvP.pdf, id=4380, 224.19904pt x 149.4098
+<images/overcontact_binaries/TU_Mus_v2_MvP.pdf, id=4383, 224.19904pt x 149.4098
 pt>
 File: images/overcontact_binaries/TU_Mus_v2_MvP.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/TU_Mus_v2_MvP.pdf>
 Package pdftex.def Info: images/overcontact_binaries/TU_Mus_v2_MvP.pdf  used on
  input line 162.
 (pdftex.def)             Requested size: 241.0573pt x 160.65114pt.
-<images/overcontact_binaries/V382_Cyg_v2_MvP.pdf, id=4381, 221.39435pt x 149.40
+<images/overcontact_binaries/V382_Cyg_v2_MvP.pdf, id=4384, 221.39435pt x 149.40
 98pt>
 File: images/overcontact_binaries/V382_Cyg_v2_MvP.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/V382_Cyg_v2_MvP.pdf>
 Package pdftex.def Info: images/overcontact_binaries/V382_Cyg_v2_MvP.pdf  used 
 on input line 169.
 (pdftex.def)             Requested size: 241.0573pt x 162.68018pt.
-<images/overcontact_binaries/VFTS_352_v2_MvP.pdf, id=4382, 221.39435pt x 149.40
+<images/overcontact_binaries/VFTS_352_v2_MvP.pdf, id=4385, 221.39435pt x 149.40
 98pt>
 File: images/overcontact_binaries/VFTS_352_v2_MvP.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/VFTS_352_v2_MvP.pdf>
@@ -3766,75 +3762,75 @@ f> <./images/overcontact_binaries/TU_Mus_v2_MvP.pdf> <./images/overcontact_bina
 ries/V382_Cyg_v2_MvP.pdf> <./images/overcontact_binaries/VFTS_352_v2_MvP.pdf>]
 
 [106]
-<images/overcontact_binaries/LSS_3074_MvP.pdf, id=4560, 221.39435pt x 149.4098p
+<images/overcontact_binaries/LSS_3074_MvP.pdf, id=4563, 221.39435pt x 149.4098p
 t>
 File: images/overcontact_binaries/LSS_3074_MvP.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/LSS_3074_MvP.pdf>
 Package pdftex.def Info: images/overcontact_binaries/LSS_3074_MvP.pdf  used on 
 input line 208.
 (pdftex.def)             Requested size: 241.0573pt x 162.68018pt.
-<images/overcontact_binaries/MY_Cam_MvP.pdf, id=4561, 221.39435pt x 149.4098pt>
+<images/overcontact_binaries/MY_Cam_MvP.pdf, id=4564, 221.39435pt x 149.4098pt>
 
 File: images/overcontact_binaries/MY_Cam_MvP.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/MY_Cam_MvP.pdf>
 Package pdftex.def Info: images/overcontact_binaries/MY_Cam_MvP.pdf  used on in
 put line 214.
 (pdftex.def)             Requested size: 241.0573pt x 162.68018pt.
-<images/overcontact_binaries/SMC_108086_MvP.pdf, id=4562, 221.39435pt x 149.409
+<images/overcontact_binaries/SMC_108086_MvP.pdf, id=4565, 221.39435pt x 149.409
 8pt>
 File: images/overcontact_binaries/SMC_108086_MvP.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/SMC_108086_MvP.pdf>
 Package pdftex.def Info: images/overcontact_binaries/SMC_108086_MvP.pdf  used o
 n input line 221.
 (pdftex.def)             Requested size: 241.0573pt x 162.68018pt.
-<images/overcontact_binaries/TU_Mus_MvP.pdf, id=4563, 224.19904pt x 149.4098pt>
+<images/overcontact_binaries/TU_Mus_MvP.pdf, id=4566, 224.19904pt x 149.4098pt>
 
 File: images/overcontact_binaries/TU_Mus_MvP.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/TU_Mus_MvP.pdf>
 Package pdftex.def Info: images/overcontact_binaries/TU_Mus_MvP.pdf  used on in
 put line 227.
 (pdftex.def)             Requested size: 241.0573pt x 160.65114pt.
-<images/overcontact_binaries/V382_Cyg_MvP.pdf, id=4564, 221.39435pt x 149.4098p
+<images/overcontact_binaries/V382_Cyg_MvP.pdf, id=4567, 221.39435pt x 149.4098p
 t>
 File: images/overcontact_binaries/V382_Cyg_MvP.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/V382_Cyg_MvP.pdf>
 Package pdftex.def Info: images/overcontact_binaries/V382_Cyg_MvP.pdf  used on 
 input line 234.
 (pdftex.def)             Requested size: 241.0573pt x 162.68018pt.
-<images/overcontact_binaries/VFTS_352_MvP.pdf, id=4565, 221.39435pt x 149.4098p
+<images/overcontact_binaries/VFTS_352_MvP.pdf, id=4568, 221.39435pt x 149.4098p
 t>
 File: images/overcontact_binaries/VFTS_352_MvP.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/VFTS_352_MvP.pdf>
 Package pdftex.def Info: images/overcontact_binaries/VFTS_352_MvP.pdf  used on 
 input line 240.
 (pdftex.def)             Requested size: 241.0573pt x 162.68018pt.
-<images/overcontact_binaries/model_mvp.pdf, id=4570, 418.68083pt x 463.14445pt>
+<images/overcontact_binaries/model_mvp.pdf, id=4573, 418.68083pt x 463.14445pt>
 
 File: images/overcontact_binaries/model_mvp.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/model_mvp.pdf>
 Package pdftex.def Info: images/overcontact_binaries/model_mvp.pdf  used on inp
 ut line 286.
 (pdftex.def)             Requested size: 491.94817pt x 544.22307pt.
-<images/overcontact_binaries/matching_hrds.pdf, id=4571, 414.43076pt x 463.1444
+<images/overcontact_binaries/matching_hrds.pdf, id=4574, 414.43076pt x 463.1444
 5pt>
 File: images/overcontact_binaries/matching_hrds.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/matching_hrds.pdf>
 Package pdftex.def Info: images/overcontact_binaries/matching_hrds.pdf  used on
  input line 293.
 (pdftex.def)             Requested size: 491.94817pt x 549.79893pt.
-<images/overcontact_binaries/match_1.pdf, id=4575, 430.6958pt x 273.30441pt>
+<images/overcontact_binaries/match_1.pdf, id=4578, 430.6958pt x 273.30441pt>
 File: images/overcontact_binaries/match_1.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/match_1.pdf>
 Package pdftex.def Info: images/overcontact_binaries/match_1.pdf  used on input
  line 339.
 (pdftex.def)             Requested size: 491.94817pt x 312.17496pt.
-<images/overcontact_binaries/match_2.pdf, id=4576, 430.6958pt x 273.30441pt>
+<images/overcontact_binaries/match_2.pdf, id=4579, 430.6958pt x 273.30441pt>
 File: images/overcontact_binaries/match_2.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/match_2.pdf>
 Package pdftex.def Info: images/overcontact_binaries/match_2.pdf  used on input
  line 346.
 (pdftex.def)             Requested size: 491.94817pt x 312.17496pt.
-<images/overcontact_binaries/match_3.pdf, id=4577, 430.6958pt x 273.30441pt>
+<images/overcontact_binaries/match_3.pdf, id=4580, 430.6958pt x 273.30441pt>
 File: images/overcontact_binaries/match_3.pdf Graphic file (type pdf)
 <use images/overcontact_binaries/match_3.pdf>
 Package pdftex.def Info: images/overcontact_binaries/match_3.pdf  used on input
@@ -3864,7 +3860,7 @@ g_MvP.pdf> <./images/overcontact_binaries/VFTS_352_MvP.pdf>]
 /match_2.pdf>]
 
 [114 <./images/overcontact_binaries/match_3.pdf>]
-<images/overcontact_binaries/mean_contact_length_dependence.pdf, id=4807, 417.0
+<images/overcontact_binaries/mean_contact_length_dependence.pdf, id=4810, 417.0
 5663pt x 508.7076pt>
 File: images/overcontact_binaries/mean_contact_length_dependence.pdf Graphic fi
 le (type pdf)
@@ -3915,7 +3911,7 @@ Package lettrine.sty Info: Targeted height = 45.07639pt
 [120
 
 ]
-<images/conclusion/ellipse_geometry.pdf, id=4892, 406.66756pt x 261.72638pt>
+<images/conclusion/ellipse_geometry.pdf, id=4895, 406.66756pt x 261.72638pt>
 File: images/conclusion/ellipse_geometry.pdf Graphic file (type pdf)
 <use images/conclusion/ellipse_geometry.pdf>
 Package pdftex.def Info: images/conclusion/ellipse_geometry.pdf  used on input 
@@ -4091,7 +4087,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 8.pgf)
 
 [139]
-<images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png, id=5113, 427.5975p
+<images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png, id=5116, 427.5975p
 t x 606.8271pt>
 File: images/NatalKicks/PeriodEccentricityDiagrams-O3Contour.png Graphic file (
 type png)
@@ -4136,7 +4132,7 @@ Overfull \hbox (4.64542pt too wide) in paragraph at lines 10--41
  [][] 
  []
 
-<images/overcontact_binaries/bespoke_binaries/normal/LSS 3074.pdf, id=5150, 412
+<images/overcontact_binaries/bespoke_binaries/normal/LSS 3074.pdf, id=5153, 412
 .09822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/normal/LSS 3074.pdf Graphic 
 file (type pdf)
@@ -4144,7 +4140,7 @@ file (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/normal/LS
 S 3074.pdf  used on input line 57.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
-<images/overcontact_binaries/bespoke_binaries/normal/MY Cam.pdf, id=5151, 412.0
+<images/overcontact_binaries/bespoke_binaries/normal/MY Cam.pdf, id=5154, 412.0
 9822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/normal/MY Cam.pdf Graphic fi
 le (type pdf)
@@ -4152,7 +4148,7 @@ le (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/normal/MY
  Cam.pdf  used on input line 64.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
-<images/overcontact_binaries/bespoke_binaries/normal/SMC 108086.pdf, id=5152, 4
+<images/overcontact_binaries/bespoke_binaries/normal/SMC 108086.pdf, id=5155, 4
 12.09822pt x 548.72067pt>
 File: images/overcontact_binaries/bespoke_binaries/normal/SMC 108086.pdf Graphi
 c file (type pdf)
@@ -4160,7 +4156,7 @@ c file (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/normal/SM
 C 108086.pdf  used on input line 74.
 (pdftex.def)             Requested size: 491.94817pt x 655.04541pt.
-<images/overcontact_binaries/bespoke_binaries/normal/TU Mus.pdf, id=5153, 412.0
+<images/overcontact_binaries/bespoke_binaries/normal/TU Mus.pdf, id=5156, 412.0
 9822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/normal/TU Mus.pdf Graphic fi
 le (type pdf)
@@ -4168,7 +4164,7 @@ le (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/normal/TU
  Mus.pdf  used on input line 84.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
-<images/overcontact_binaries/bespoke_binaries/normal/V382 Cyg.pdf, id=5154, 412
+<images/overcontact_binaries/bespoke_binaries/normal/V382 Cyg.pdf, id=5157, 412
 .09822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/normal/V382 Cyg.pdf Graphic 
 file (type pdf)
@@ -4176,7 +4172,7 @@ file (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/normal/V3
 82 Cyg.pdf  used on input line 91.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
-<images/overcontact_binaries/bespoke_binaries/normal/VFTS 352.pdf, id=5155, 412
+<images/overcontact_binaries/bespoke_binaries/normal/VFTS 352.pdf, id=5158, 412
 .09822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/normal/VFTS 352.pdf Graphic 
 file (type pdf)
@@ -4184,7 +4180,7 @@ file (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/normal/VF
 TS 352.pdf  used on input line 102.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
-<images/overcontact_binaries/bespoke_binaries/wider/LSS 3074.pdf, id=5156, 412.
+<images/overcontact_binaries/bespoke_binaries/wider/LSS 3074.pdf, id=5159, 412.
 09822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/wider/LSS 3074.pdf Graphic f
 ile (type pdf)
@@ -4192,7 +4188,7 @@ ile (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/wider/LSS
  3074.pdf  used on input line 120.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
-<images/overcontact_binaries/bespoke_binaries/wider/MY Cam.pdf, id=5157, 412.09
+<images/overcontact_binaries/bespoke_binaries/wider/MY Cam.pdf, id=5160, 412.09
 822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/wider/MY Cam.pdf Graphic fil
 e (type pdf)
@@ -4200,7 +4196,7 @@ e (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/wider/MY 
 Cam.pdf  used on input line 127.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
-<images/overcontact_binaries/bespoke_binaries/wider/SMC 108086.pdf, id=5158, 41
+<images/overcontact_binaries/bespoke_binaries/wider/SMC 108086.pdf, id=5161, 41
 2.09822pt x 548.72067pt>
 File: images/overcontact_binaries/bespoke_binaries/wider/SMC 108086.pdf Graphic
  file (type pdf)
@@ -4208,7 +4204,7 @@ File: images/overcontact_binaries/bespoke_binaries/wider/SMC 108086.pdf Graphic
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/wider/SMC
  108086.pdf  used on input line 137.
 (pdftex.def)             Requested size: 491.94817pt x 655.04541pt.
-<images/overcontact_binaries/bespoke_binaries/wider/TU Mus.pdf, id=5159, 412.09
+<images/overcontact_binaries/bespoke_binaries/wider/TU Mus.pdf, id=5162, 412.09
 822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/wider/TU Mus.pdf Graphic fil
 e (type pdf)
@@ -4216,7 +4212,7 @@ e (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/wider/TU 
 Mus.pdf  used on input line 147.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
-<images/overcontact_binaries/bespoke_binaries/wider/V382 Cyg.pdf, id=5160, 412.
+<images/overcontact_binaries/bespoke_binaries/wider/V382 Cyg.pdf, id=5163, 412.
 09822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/wider/V382 Cyg.pdf Graphic f
 ile (type pdf)
@@ -4224,7 +4220,7 @@ ile (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/wider/V38
 2 Cyg.pdf  used on input line 154.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
-<images/overcontact_binaries/bespoke_binaries/wider/VFTS 352.pdf, id=5161, 412.
+<images/overcontact_binaries/bespoke_binaries/wider/VFTS 352.pdf, id=5164, 412.
 09822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/wider/VFTS 352.pdf Graphic f
 ile (type pdf)
@@ -4232,7 +4228,7 @@ ile (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/wider/VFT
 S 352.pdf  used on input line 165.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
-<images/overcontact_binaries/bespoke_binaries/shorter/LSS 3074.pdf, id=5162, 41
+<images/overcontact_binaries/bespoke_binaries/shorter/LSS 3074.pdf, id=5165, 41
 2.09822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/shorter/LSS 3074.pdf Graphic
  file (type pdf)
@@ -4240,7 +4236,7 @@ File: images/overcontact_binaries/bespoke_binaries/shorter/LSS 3074.pdf Graphic
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/shorter/L
 SS 3074.pdf  used on input line 183.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
-<images/overcontact_binaries/bespoke_binaries/shorter/MY Cam.pdf, id=5163, 412.
+<images/overcontact_binaries/bespoke_binaries/shorter/MY Cam.pdf, id=5166, 412.
 09822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/shorter/MY Cam.pdf Graphic f
 ile (type pdf)
@@ -4248,7 +4244,7 @@ ile (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/shorter/M
 Y Cam.pdf  used on input line 190.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
-<images/overcontact_binaries/bespoke_binaries/shorter/SMC 108086.pdf, id=5164, 
+<images/overcontact_binaries/bespoke_binaries/shorter/SMC 108086.pdf, id=5167, 
 412.09822pt x 548.72067pt>
 File: images/overcontact_binaries/bespoke_binaries/shorter/SMC 108086.pdf Graph
 ic file (type pdf)
@@ -4256,7 +4252,7 @@ ic file (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/shorter/S
 MC 108086.pdf  used on input line 200.
 (pdftex.def)             Requested size: 491.94817pt x 655.04541pt.
-<images/overcontact_binaries/bespoke_binaries/shorter/TU Mus.pdf, id=5165, 412.
+<images/overcontact_binaries/bespoke_binaries/shorter/TU Mus.pdf, id=5168, 412.
 09822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/shorter/TU Mus.pdf Graphic f
 ile (type pdf)
@@ -4264,7 +4260,7 @@ ile (type pdf)
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/shorter/T
 U Mus.pdf  used on input line 210.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
-<images/overcontact_binaries/bespoke_binaries/shorter/V382 Cyg.pdf, id=5166, 41
+<images/overcontact_binaries/bespoke_binaries/shorter/V382 Cyg.pdf, id=5169, 41
 2.09822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/shorter/V382 Cyg.pdf Graphic
  file (type pdf)
@@ -4272,7 +4268,7 @@ File: images/overcontact_binaries/bespoke_binaries/shorter/V382 Cyg.pdf Graphic
 Package pdftex.def Info: images/overcontact_binaries/bespoke_binaries/shorter/V
 382 Cyg.pdf  used on input line 217.
 (pdftex.def)             Requested size: 491.94817pt x 315.75668pt.
-<images/overcontact_binaries/bespoke_binaries/shorter/VFTS 352.pdf, id=5167, 41
+<images/overcontact_binaries/bespoke_binaries/shorter/VFTS 352.pdf, id=5170, 41
 2.09822pt x 264.50415pt>
 File: images/overcontact_binaries/bespoke_binaries/shorter/VFTS 352.pdf Graphic
  file (type pdf)
@@ -4440,7 +4436,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [181]
 
 [182]
-<images/TheorySection/chebyshev_polynomials.pdf, id=5990, 395.80457pt x 266.897
+<images/TheorySection/chebyshev_polynomials.pdf, id=5993, 395.80457pt x 266.897
 37pt>
 File: images/TheorySection/chebyshev_polynomials.pdf Graphic file (type pdf)
 <use images/TheorySection/chebyshev_polynomials.pdf>
@@ -4457,7 +4453,7 @@ Underfull \vbox (badness 3199) has occurred while \output is active []
 [184 <./images/TheorySection/chebyshev_polynomials.pdf>]
 
 [185]
-<images/TheorySection/double_bistability_jump.pdf, id=6061, 449.05397pt x 274.4
+<images/TheorySection/double_bistability_jump.pdf, id=6064, 449.05397pt x 274.4
 3884pt>
 File: images/TheorySection/double_bistability_jump.pdf Graphic file (type pdf)
 <use images/TheorySection/double_bistability_jump.pdf>
@@ -4541,10 +4537,6 @@ us use of stel-lar scin-til-la-tion to pre-
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 87.pgf)
 
-Package natbib Warning: There were undefined citations.
-
-
-
 [204] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (./main.aux)
@@ -4560,10 +4552,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 7E58AECBD0FE11E2272A121463F2A131;20361.
  ) 
 Here is how much of TeX's memory you used:
- 75951 strings out of 473190
- 1795354 string characters out of 5715807
- 2785459 words of memory out of 5000000
- 96634 multiletter control sequences out of 15000+600000
+ 75955 strings out of 473190
+ 1795423 string characters out of 5715807
+ 2785529 words of memory out of 5000000
+ 96637 multiletter control sequences out of 15000+600000
  616206 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,20n,96p,2405b,2156s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -4625,10 +4617,10 @@ r/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/
 local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/lo
 cal/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb></usr/loca
 l/texlive/2025/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (226 pages, 16290998 bytes).
+Output written on main.pdf (226 pages, 16291824 bytes).
 PDF statistics:
- 6943 PDF objects out of 7423 (max. 8388607)
- 5926 compressed objects within 60 object streams
- 1015 named destinations out of 1200 (max. 500000)
+ 6947 PDF objects out of 7423 (max. 8388607)
+ 5930 compressed objects within 60 object streams
+ 1016 named destinations out of 1200 (max. 500000)
  1540 words of extra memory for PDF output out of 10000 (max. 10000000)
 
