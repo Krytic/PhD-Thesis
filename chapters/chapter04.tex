@@ -2,7 +2,7 @@
 % !aim: we examine the kinematics of the post-supernova inspiral and the mechanics of the natal supernova kick. (Theme II)
 \customchapter{Post-Supernova Kinematics: The Natal Kick}{And the memories were lost long ago\\But at least you have beautiful ghosts.}{Taylor Swift}\label{chap:natal_kicks}
 
-\lettrine[lines=3]{T}{he terminus of a massive star's} life is a core-collapse supernova, when the hydrostatic equilibrium between the pressure of the star and its self-gravity is broken, and the stellar core collapses in on itself. Once the star reaches nuclear densities, neutron degeneracy is able to stabilise the remnant, causing a shockwave to propagate outwards from the core. The energy released is roughly an order of magnitude greater than the binding energy of the star \citep{Eldridge:2018}, resulting in the ejection of an amount of mass we denote $M_\text{ej}$ and leaving a remnant of mass $M_\text{rem}$ behind. If the ejection is asymmetric, the collapse endows the nascent remnant with a velocity $v_\text{k}$ whose overall direction is antialigned to the more massive ejecta. This motion is termed a natal supernova kick.
+\lettrine[lines=3]{T}{he terminus of a massive star's} life is a core-collapse supernova, when the hydrostatic equilibrium between the pressure of the star and its self-gravity is broken, and the stellar core collapses in on itself. Once the star reaches nuclear densities, neutron degeneracy is able to stabilise the remnant, causing a shockwave to propagate outwards from the core. The energy released is $\sim\SI[print-unity-mantissa=false]{1e53}{\erg}$, of which $\sim\SI[print-unity-mantissa=false]{1e51}{\erg}$ is transferred to the star \citep{Eldridge:2018}, resulting in the ejection of an amount of mass we denote $M_\text{ej}$ and leaving a remnant of mass $M_\text{rem}$ behind. If the ejection is asymmetric, the collapse endows the nascent remnant with a velocity $v_\text{k}$ whose overall direction is antialigned to the more massive ejecta. This motion is termed a natal supernova kick.
 
 Given an observation of the proper velocity of a compact remnant, it is in principle possible to trace its motion back and ascertain its kick velocity. However, this is not necessarily a straightforward endeavour. If the proper velocity is high and the remnant old, it has travelled quite a distance from its explosion site to be located at the point the observation has been taken. In addition, the star has potentially had its proper velocity modified by gravitational attraction from either other runaway stars or its host galaxy's potential. One would require the exact location in 3D space as well as the 3D velocity and remnant age in order to ascertain the motion, but from there the inverse problem becomes straightforward.
 
@@ -16,13 +16,13 @@ As a consequence of conservation of momentum, it can be shown that if the ejecta
 
 for free parameters $\alpha$ and $\beta$ (both measured in $\si{\km\per\second}$). Here, $M_\text{NS}$ is the mass of a \gls{ns}; if the kick is applied to a \gls{ns}, then $M_\text{NS}=M_\text{rem}$ and the coefficient reduces to unity. If the kick is applied to a \gls{bh}, then we can take $M_\text{NS}=\SI{1.4}{\msun}$, which serves to convert the distribution from one in velocity-space to one in momentum-space; see \citet{Bray:2016, Bray:2018, Richards:2023} for further detail.
 
-This parameterization introduces, effectively, four free parameters in $\alpha, \beta, \theta, \phi$ (the latter two being azimuthal and equatorial angles of the ejecta mass). We assume that the preferential axis is sampled uniformly across the $4\pi$ steradians of the star, and that our only two free parameters are $\alpha$ and $\beta$. It is pertinent to note two things due to this assumption: firstly, we are not assuming that the ejection occurs along one axis and that the kick is aligned along a different, random, axis. Rather, we are assuming that the asymmetric ejection occurs along a randomly sampled axis and that the kick is antialigned to that. The second note, explored further in \Cref{sec:natal_kick_prescriptions}, is that there is considerable uncertainty around the nature of the kick and the precise mechanism that causes it to eject along a given axis. This is the reason we sample the kick direction uniformly, though we will simulate sufficiently many systems (on the order of $\mathcal{O}(10^{12})$) that this will be marginalised over.
+This parameterization introduces, effectively, four free parameters in $\alpha, \beta, \theta, \phi$ (the latter two being azimuthal and equatorial angles of the ejecta mass). We assume that the preferential axis is sampled uniformly across the $4\pi$ steradians of the star, and that our only two free parameters are $\alpha$ and $\beta$. It is pertinent to note two things due to this assumption: firstly, we are not assuming that the ejection occurs along one axis and that the kick is aligned along a different, random, axis. Rather, we are assuming that the asymmetric ejection occurs along a randomly sampled axis and that a positive-velocity kick is antialigned to that. The second note, explored further in \Cref{sec:natal_kick_prescriptions}, is that there is considerable uncertainty around the nature of the kick and the precise mechanism that causes it to eject along a given axis. This is the reason we sample the kick direction uniformly, though we will simulate sufficiently many systems (on the order of $\mathcal{O}(10^{12})$) that this will be marginalised over.
 
 The existence of two free parameters, $\alpha$ and $\beta$, mean that a choice on the values must be made. The ``traditional'' way to choose these parameters, as outlined in \citet{Bray:2016, Bray:2018}, is to refine them based on isolated pulsar velocities. This methodology, however, has significant drawbacks. Notably, the reliance on one observation can engender biases in the result at the expense of no longer predicting accurate results for other observables. For instance, in the limit of \glspl{ussne} where the ejecta-remnant mass ratio becomes small, the fiducial kick in \citet{Bray:2018} would produce kick velocities that are strongly negative (indicating a strong kick aligned with the direction of motion of the ejecta), contrasted with the weak kicks we expect from these supernovae \citep[e.g.,][]{Willcox:2021}. It becomes evident that a new series of empirical tests are needed, whereupon more constraints than simply pulsar velocities are tested. In this Chapter, we outline four such tests that form the basis of the work of \citet{Richards:2023}. These tests -- using observed \gls{lvk} merger rates, period-eccentricity distributions of \glspl{bns}, isolated pulsar velocities, and production of \glspl{ussne} -- allow us to narrow the parameter space significantly, with the promise of future refinement with more observations (such as through \gls{lvk} \gls{o4}).
 
 \subsection{Parameter space}
 
-We perform our computation on three populations, termed \textsc{FineGrid}, \textsc{WideGrid}, and \textsc{Hobbs}, whose properties are outlined in \Cref{tab:populations}. These populations simulate 1,000 kicks per system sampled. The aim of the three populations is twofold. Firstly, by generating \textsc{FineGrid} and \textsc{WideGrid}, we are able to look both at fine detail in the region at which the most likely value is expected to lie and also the large-scale behaviour over wider parameter ranges.
+We perform our computation on three populations, termed \textsc{FineGrid}, \textsc{WideGrid}, and \textsc{Hobbs}, whose properties are outlined in \Cref{tab:populations}. These populations simulate 1,000 kicks per supernova in each stellar evolution model. The aim of the three populations is twofold. Firstly, by generating \textsc{FineGrid} and \textsc{WideGrid}, we are able to look both at fine detail in the region at which the most likely value is expected to lie and also the large-scale behaviour over wider parameter ranges.
 
 \begin{table}[h]
     \centering
@@ -78,7 +78,7 @@ where $\sigma=\SI{265}{\km\per\s}$ is the distribution parameter found by fit in
 
 \subsection{The \codename{Takahe} orbital evolution code}\label{chap:numerical_methods_takahe}
 
-As part of this work, we have developed the \codename{Takahe} binary evolution code, which solves the coupled equations of motion \Cref{eq:dadt} and \Cref{eq:dedt}. Originally, to facilitate the equations being solved rapidly, we wrote the code as a \codename{Python} wrapper to a \codename{Julia} \citep{Bezanson:2017} integrator. However, the \codename{PyJulia} library \citep{Arakaki:2023} proved to be fragile\footnote{It requires custom installation procedures (so cannot be included as a dependency in e.g. a \codename{Python} package), would hang with no discernible output or ability to ascertain why, and could not handle KeyboardInterrupt exceptions in \codename{Python}.} and is not in fact supported officially on recent Python versions. To facilitate the potential interoperability between \codename{Kaitiaki} and \codename{Takahe} (and to remove a prolonged loading time when the \codename{Julia} runtime was loaded, given that \codename{PyJulia} precompiles our modules), we elected to rewrite the core integrator into \codename{Python} and to optimise it using traditional \codename{Python} methods instead.
+As part of this work, we have developed the \codename{Takahe}\footnote{The Takah\=e is an endangered New Zealand bird, which is viewed as taonga to the Ng\=ai Tahu iwi. There are approximately 500 left, all in conservation areas in the Te Waipounamu / the South Island.} compact object binary orbit evolution code, which solves the coupled equations of motion \Cref{eq:dadt} and \Cref{eq:dedt}. Originally, to facilitate the equations being solved rapidly, we wrote the code as a \codename{Python} wrapper to a \codename{Julia} \citep{Bezanson:2017} integrator. However, the \codename{PyJulia} library \citep{Arakaki:2023} proved to be fragile\footnote{It requires custom installation procedures (so cannot be included as a dependency in e.g. a \codename{Python} package), would hang with no discernible output or ability to ascertain why, and could not handle KeyboardInterrupt exceptions in \codename{Python}.} and is not in fact supported officially on recent Python versions. To facilitate the potential interoperability between \codename{Kaitiaki} and \codename{Takahe} (and to remove a prolonged loading time when the \codename{Julia} runtime was loaded, given that \codename{PyJulia} precompiles our modules), we elected to rewrite the core integrator into \codename{Python} and to optimise it using traditional \codename{Python} methods instead.
 
 There are two relevant functions in \codename{Takahe}. The remaining functions are utility functions that allow us to (for instance) convert between lookback time / redshift, and period / separation. These functions are \mintinline{Python}{integrate_eoms()} (\Cref{integrate_eoms}), which solves the coupled differential equations for $\dv{a}{t}$ and $\dv{e}{t}$ (\Cref{eq:dadt} and \Cref{eq:dedt}), and \mintinline{Python}{integrate_timescale()} (\Cref{integrate_timescale}), which solves \Cref{eq:coalescence_time} for the coalescence time of the binary. With sufficient performance optimisations,\footnote{Primarily, just-in-time compilation with the \codename{Numba} \citep{Lam:2015} library.} \mintinline{Python}{integrate_timescale()} is able to achieve speeds of approximately 18,000 numerical integrations per second on an office PC\footnote{A Dell OptiPlex 7480 AIO with a 12-core \SI{3.1}{\giga\hertz} Intel Core i5-10500 CPU, running no other programs except for during the final few iterations.} on a sample of \gls{nsbh} binaries in the \gls{lisa} dataset (Tang, priv. comm.).
 
@@ -120,8 +120,9 @@ Algorithmically, both codes employ a simple Euler integration routine (where $f_
     \label{fig:algo_runtime}
 \end{figure}
 
+\section{Observational Constraints}
 
-\section{Merger Rates of BNS systems}\label{sec:merger_rates}
+\subsection{Merger Rates of BNS systems}\label{sec:merger_rates}
 
 The first test is to match the observed merger rates of \gls{bns} systems. To do this, we use the \gls{lvk} catalogue of results from \gls{o3}. The simplest test is to match the merger rate today, which we denote as $\mathcal{R}_0$, to that observed by \gls{lvk} \citep{LIGOVirgo:2021a, LIGOVirgo:2021b}. We display this in \Cref{fig:merger_rates} alongside the previously reported fiducial values of $\alpha=\SI{100}{\km\per\s}$ and $\beta=\SI{-170}{\km\per\s}$, the theoretical merger rate calculation performed by \citet{Eldridge:2019}, and the observed merger rates from \citet{LIGOVirgo:2021a} and \citet{LIGOVirgo:2021b}. We term the contour defined by \citet{LIGOVirgo:2021a} (in black) the ``\gls{ligo} contour''.
 
@@ -134,7 +135,7 @@ Selecting the value to calibrate to is not a straightforward task. Although the 
     \label{fig:merger_rates}
 \end{figure}
 
-\section{Period-Eccentricity Distributions}\label{sec:per_ecc_dist}
+\subsection{Period-Eccentricity Distributions}\label{sec:per_ecc_dist}
 
 Since in the absence of any mass transfer the motion of two compact binaries is wholly dependent on their initial separation and orbital eccentricity, they trace out paths in a two-dimensional phase space. In general, since binaries circularise over time, and by the emission of gravitational waves their orbits shrink, a binary will start in the high-period, high-eccentricity region of period-eccentricity space, and evolve towards the low-period, low-eccentricity region. As a result, given a population of binary stars, we can design a density plot, where the density is effectively the likelihood of a binary selected at random having the parameters we sample.
 
@@ -189,7 +190,7 @@ By doing this we effectively construct a Bayes-factor map, where $\ln\mathcal{K}
     \label{fig:log_bayes_both}
 \end{figure}
 
-\section{Single-Star Kick Velocities}\label{sec:ssk_vels}
+\subsection{Single-Star Kick Velocities}\label{sec:ssk_vels}
 
 The traditional methodology for refining a kick prescription is to consider the velocity distribution of isolated pulsars. Thus, given a suitable observational dataset, we would be able to compute the expected kick distribution and compare it, via a \gls{ks} test, to the observed data set. The \gls{ks} statistic between distributions $\mathcal{F}$ (the observed distribution) and $\mathcal{G}$ (the compared distribution) is given by
 
@@ -199,7 +200,7 @@ The traditional methodology for refining a kick prescription is to consider the 
 
 where cdf means the \gls{cdf} function, defined as the integral of the \gls{pdf}. Given the \gls{cdf} is bounded between 0 and 1 inclusive, the \gls{ks} statistic is also bounded between this region. A \gls{ks} statistic of 1 means that the compared distribution diverges perfectly from the observed distribution, whereas a \gls{ks} statistic of 0 means it matches perfectly. This test of divergence was the refinement performed in \citet{Bray:2016, Bray:2018}, hence we select this (with an independently generated dataset to those works) to be consistent with prior work.
 
-\subsection{Pulsar velocity dataset}
+\subsubsection{Pulsar velocity dataset}
 
 We use the same dataset of 81 pulsars from \citet{Willcox:2021}, and filter the dataset in the same way that they do. We remove millisecond pulsars, pulsars in globular clusters, and pulsars known to be in binaries, in order to homogenise the dataset. The \gls{pdf} and \gls{cdf} of \citet{Willcox:2021}, as well as those generated from \citet{Hobbs:2005} and \citet{Bray:2018}, is displayed in \Cref{fig:bray_vs_hobbs_vs_willcox_pdf}.
 
@@ -221,7 +222,7 @@ The \citet{Hobbs:2005} kick has a closed-form expression for the \gls{pdf} $P(v_
     \label{fig:ks_test_with_hobbs}
 \end{figure}
 
-\subsection{Comparison}
+\subsubsection{Comparison}
 
 \Cref{fig:ks_test_with_hobbs} shows the \gls{ks} statistic as a function of $\alpha$ and $\beta$ across our two parameter spaces. We also show the \gls{ks} statistic of the Hobbs kick, which has a value of 0.34. We find in general a valley of models with good agreement to \citet{Willcox:2021}, and find that the global minimum \gls{ks} statistic is at $\alpha=100, \beta=-180$ -- agreeing with the prior work of \citet{Bray:2018} (who find $\alpha=100, \beta=-170$).
 
@@ -236,7 +237,7 @@ We also show in \Cref{fig:some_individual_pdfs} a selection of four \glspl{pdf},
 
 The four values we present on the left side of \Cref{fig:some_individual_pdfs} correspond to $\alpha = \SI{100}{\km\per\s}, \beta=\SI{-170}{\km\per\s}$ for the fiducial Bray kick, $\alpha = \SI{180}{\km\per\s}, \beta = \SI{10}{\km\per\s}$ to represent the system with the highest $\ln\mathcal{K}$ value from \Cref{sec:per_ecc_dist}, $\alpha = \SI{170}{\km\per\s}, \beta = \SI{-10}{\km\per\s}$ the lowest, and $\alpha = \SI{40}{\km\per\s}, \beta = \SI{0}{\km\per\s}$ the system with low $\alpha$ and zero $\beta$, corresponding to a kick that would \textit{a priori} generate logical velocities in the \glspl{ussne} limit.
 
-\section{Production of Ultra-Stripped Supernovae}\label{sec:ussne_production}
+\subsection{Production of Ultra-Stripped Supernovae}\label{sec:ussne_production}
 
 As discussed earlier, the fiducial values of the Bray kick from \citet{Bray:2018} admit some problematic extremal cases. If $m_\text{ej}\to 0$, as is the case in a \gls{ussne}, the kick velocity would become negative. For instance, an ``average'' \gls{ussne} with $m_\text{ej}=\SI{0.15}{\msun}$ and $m_\text{rem}=\SI{1.45}{\msun}$ would have a kick velocity of $\sim\SI{-159}{\km\per\s}$. The concern here is twofold. Firstly, a negative kick velocity would mean that the velocity vector of the kick would be antialigned with the direction of the more massive remnant; this is a violation of conservation of momentum. Secondly, a kick with high magnitude means that, irrespective of the alignment of the kick, the kick itself is strong. As discussed in \citet{Willcox:2021}, \glspl{ussne} are associated with weak kicks, peaking at $v_\text{k}\sim\SI{30}{\km\per\s}$. This means that the fiducial Bray kick is unable to correctly account for \glspl{ussne}.
 
@@ -250,7 +251,7 @@ To account for these supernova kicks, we introduce a new constraint onto our par
 
 For every combination $\alpha, \beta$, we record whether it is capable of producing one \gls{ussne}. The constraint is that this heuristic is met. This constraint is extremely conservative, insofar as we do not constrain on the prevalence of \glspl{ussne} in our sample, but rather by whether or not they are possible at all. The reason for the conservatism here is that the rates of Type Ic \glspl{ussne} are expected to be very low. In the BPASS dataset, they comprise 1.8 per cent of all \glspl{ccsne} \citep{Stevance:2022}. The paucity of data alongside the paucity of observational evidence suggests a low rate, but since the prevalence is unknown, we place the conservative constraint of at least one \gls{ussne} to be agnostic. This effectively widens our error bars such that when the \glspl{ussne} rate is refined further, it will shrink the parameter space.
 
-\section{Refinement of the parameter space}
+\subsection{Refinement of the parameter space}
 
 We are now in a position to impose constrains on our parameter space based on the analysis provided above. We apply the following four constraints:
 

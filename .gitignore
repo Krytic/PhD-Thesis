@@ -5,6 +5,7 @@ rendered_chapters/
 !/chapters/listings/*.py
 !/scripts/*.py
 _minted-main/
+.*
 
 # LaTeX files
 ## Core latex/pdflatex auxiliary files:
