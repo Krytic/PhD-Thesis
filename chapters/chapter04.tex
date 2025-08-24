@@ -122,6 +122,8 @@ Algorithmically, both codes employ a simple Euler integration routine (where $f_
 
 \section{Observational Constraints}
 
+In this section, we outline the four tests we use to refine the acceptable parameters of the Bray kick.
+
 \subsection{Merger Rates of BNS systems}\label{sec:merger_rates}
 
 The first test is to match the observed merger rates of \gls{bns} systems. To do this, we use the \gls{lvk} catalogue of results from \gls{o3}. The simplest test is to match the merger rate today, which we denote as $\mathcal{R}_0$, to that observed by \gls{lvk} \citep{LIGOVirgo:2021a, LIGOVirgo:2021b}. We display this in \Cref{fig:merger_rates} alongside the previously reported fiducial values of $\alpha=\SI{100}{\km\per\s}$ and $\beta=\SI{-170}{\km\per\s}$, the theoretical merger rate calculation performed by \citet{Eldridge:2019}, and the observed merger rates from \citet{LIGOVirgo:2021a} and \citet{LIGOVirgo:2021b}. We term the contour defined by \citet{LIGOVirgo:2021a} (in black) the ``\gls{ligo} contour''.
@@ -304,13 +306,13 @@ Unfortunately, there is a paucity of observational evidence to confirm whether o
 
 There are limitations to this analysis. The first is that we did not preferentially weight our binaries. \citet{Tauris:2017} for example places particular weight on PSR J1930-1852, which is a particularly wide binary. Per \citet{Swiggum:2015} (who reported it), ``its unique spin and orbital parameters challenge models that describe BNS formation'', which implies that any credible model of \gls{bns} formation should replicate its orbital parameters. We did find in \Cref{fig:o3a_contour_figure} that some parameters had non-zero probability of replicating this pulsar, which indicates that the Bray kick is able to reproduce it.
 
-Secondly, we have assumed Newtonian mechanics. Formally, the derivations presented earlier (cf. \Cref{sec:binary_kinematics}) assumed general relativity for the existence of the gravitational wave equation,\footnote{Here, $\tensor{\bar{h}}{_{\mu\nu}}$ is the trace inverse of a weak perturbation to locally Minkowski spacetime with positive-definite trace, and $\Box$ is the d'Alembertian operator.}
+Secondly, we have assumed Newtonian (specifically, Keplerian) orbits. Formally, the derivations presented earlier (cf. \Cref{sec:binary_kinematics}) assumed general relativity for the existence of the gravitational wave equation,\footnote{Here, $\tensor{\bar{h}}{_{\mu\nu}}$ is the trace inverse of a weak perturbation to locally Minkowski spacetime with positive-definite trace, and $\Box$ is the d'Alembertian operator.}
 
 \begin{equation}
     \Box \tensor{\bar{h}}{_{\mu\nu}} = -\frac12 \sqrt{32\pi G}\tensor{T}{_{\mu\nu}},\label{eq:GW_spacetime_equation}
 \end{equation}
 
-but the injected physics was Newtonian (see \citet{Richards:2021} for a derivation). Strictly speaking, relativistic corrections apply to these kinematic equations too. To acconut for this, one would need to apply corrections to the two-body equation of motion, termed the post-Newtonian approximation. The general equation becomes
+but the injected physics was Newtonian (see \Cref{sec:equations_of_motion_of_decaying_binaries} for a derivation). Strictly speaking, relativistic corrections apply to these kinematic equations too, though these only become dominant when the two stars are closer than the \gls{isco}, given by $r_\text{isco}=\frac{6GM}{c^2}$, where matter can be exchanged. To acconut for this, one would need to apply corrections to the two-body equation of motion, termed the post-Newtonian approximation. The general equation becomes
 
 \begin{equation}
     \dv{\vec{v}}{t} = \frac{G\left(m_1+m_2\right)}{r^2}\left(-\hat{n} + \sum_{k=2}^N \frac{1}{c^k}\vec{A}_{\frac{k}{2}\text{PN}} \right),
@@ -324,7 +326,7 @@ Relativistic corrections also typically manifest in using more sophisticated spa
     \tensor{g}{_{\mu\nu}} = \tensor{\eta}{_{\mu\nu}}+\sqrt{32\pi G} \tensor{h}{_{\mu\nu}},
 \end{equation}
 
-where $\tensor{\eta}{_{\mu\nu}}$ is the positive-definite Minkowski metric. This ``weak-field'' approximation breaks down when a compact object enters within its companion's \gls{isco}, given by $r_\text{isco}=\frac{6GM}{c^2}$, where matter can be exchanged. Given gravitational waves result in strains on the order of $10^{-19}$ \citep{Van_zeist:2023}, representing observed fractional shifts on Earth smaller than the diameter of a proton, \citep{Moore:2014}, the weak field regime suits, and again modelling the relativistic corrections to the post-\gls{isco} regime only increases the merger rate by fractions of years.
+where $\tensor{\eta}{_{\mu\nu}}$ is the positive-definite Minkowski metric. This ``weak-field'' approximation breaks down when a compact object enters within its companion's \gls{isco}. Given gravitational waves result in strains on the order of $10^{-19}$ \citep{Van_zeist:2023}, representing observed fractional shifts on Earth smaller than the diameter of a proton, \citep{Moore:2014}, the weak field regime suits, and again modelling the relativistic corrections to the post-\gls{isco} regime only increases the merger rate by fractions of years.
 
 To contextualise this case study, other authors such as \citet{Mapelli:2018, Wiktorowicz:2019, Giacobbo:2020, Santoliquido:2021, Kapil:2023} have explored the parameter space of \gls{bns} kicks, though none have performed the analysis in the way we have. These works typically vary the progenitor population properties, in such a way that the formed binaries can in principle vary strongly. However, in our population synthesis procedure, we are able to effectively affix the physics between different models such that \textit{only} the kick velocities are expected to vary between individual populations. Since the Bray kick has two parameters which can be altered, we are able to modify the kick velocity without changing the physics, thus allowing us to isolate and study the kick mechanism alone.
 

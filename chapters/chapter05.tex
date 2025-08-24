@@ -3,7 +3,7 @@
 
 \customchapter{Detailed Models of Overcontact Binary Stars}{I can remember... sitting on a rooftop. Looking up and wondering what the stars were. I assumed I’d never know.}{Hoid}\label{chap:close_contact}
 
-\lettrine[lines=3]{A}{s previously discussed, stars} undergoing mass transfer will generally experience \gls{rlof} during their lifetimes. In a binary where both stars are undergoing mass transfer, both stars may undergo \gls{rlof} simultaneously, resulting in a contact binary system in which both stars physically touch. Contact binaries are not uncommon -- they form one in every approximately 100 main-sequence stars \citep{Rucinski:1998} and 39 in every 100 binary systems \citep{Green:2023}.
+\lettrine[lines=3]{A}{s previously discussed, stars} undergoing mass transfer will generally experience \gls{rlof} during their lifetimes. In a binary where both stars are undergoing mass transfer, both stars may undergo \gls{rlof} simultaneously, resulting in a contact binary system in which both stars physically touch. Contact binaries are not uncommon -- they form one in every approximately 100 low-mass main-sequence stars \citep{Rucinski:1998} and 39 in every 100 binary systems \citep{Green:2023}.
 
 Modelling their evolution generally offers insight into difficult-to-probe stellar phenomena and evolutionary phases, such as the common envelope phase of binary evolution, as well as providing vital insights into the immediate pre-merger environment of a binary system. They are characterised by extremely short periods -- typically with $P_\text{orb}\lesssim\SI{2}{\day}$, but potentially as low as $P_\text{orb}=\SI{85}{\minute}$ \citep{El-badry:2022} in theory or $\sim\SI{167}{\minute}$ in practice \citep{Koen:2022}. The lower bound of the period distribution is an element of some debate and ongoing research; \citet{Qian:2020} finds it to be $\SI{0.15}{\day}\sim\SI{200}{\minute}$, and \citet{Zhang:2023} finds it to be at $\SI{0.12}{\day}\sim\SI{170}{\minute}$. The contact binary phase of evolution can give rise to pre-supernova mergers, chemically abundant mass-transfer drastically altering the interior structure of the accretor (\Cref{chap:he_mass_transfer}), and other modified evolutionary behaviour of the binary due to interaction effects stronger than that of wider-period binaries.
 
@@ -11,7 +11,7 @@ As a result of this close interaction, contact binaries may also be a formation 
 
 Accurately modelling close-contact binaries, then, is of crucial importance to population synthesis models. Recent studies such as \citet{Menon:2021, Abdul-masih:2022, Sen:2022} have explored some of the close-contact binaries in the Magellanic Clouds. \citet{Menon:2021} for example finds that for both Magellanic Clouds the majority of contact binaries are expected to have total masses of under $\sim\SI{40}{\msun}$ and periods of less than $\sim\SI{1}{\day}$, and \citet{Abdul-masih:2022} finds that the sample of close-contact binaries that they analyse are likely to form with relatively longer periods than most systems.
 
-Despite the importance of modelling close-contact binaries, only $\sim25$ massive close-contact binaries are known to exist \citep{Abdul-masih:2023}. The paucity of observations is a reflection of the difficulty of distinguishing these systems from a more massive single star, especially since the two stars would share a common temperature \citep{Kuiper:1941} and thus similar observational properties. Spectroscopic observations also do not constrain physical parameters of contact binaries as well as they do for regular binaries (or single stars); for instance \citet{Gazeas:2021} discusses the O’Connell effect and surface spots of the stars as being sources that modulate the luminosity of the binaries, but especially of the secondary.
+Despite the importance of modelling close-contact binaries, only $\sim25$ massive close-contact binaries are known to exist \citep{Abdul-masih:2023}. There are more known so-called W Ursae Majoris variables, with 700 compiled in \citet{Latkovic:2021}. These stars, typified by their namesake W Ursa Majoris, are low-mass binaries, typically with mass ratios of $\sim0.3$, and similar surface temperatures, though this study focuses on massive binaries. The paucity of observations is a reflection of the difficulty of distinguishing these systems from a more massive single star, especially since the two stars would share a common temperature \citep{Kuiper:1941, Latkovic:2021} and thus similar observational properties. Spectroscopic observations also do not constrain physical parameters of contact binaries as well as they do for regular binaries (or single stars); for instance \citet{Gazeas:2021} discusses the O’Connell effect and surface spots of the stars as being sources that modulate the luminosity of the binaries, but especially of the secondary.
 
 \section{Observations of contact binaries}
 
@@ -19,7 +19,7 @@ Despite the importance of modelling close-contact binaries, only $\sim25$ massiv
 
 Observations of contact binaries date back to the 1940s \citep{Kuiper:1941}, and in the past eighty years the catalogue has grown to somewhere between $\sim\num{42000}$ \citep{Petrosky:2021} and $\sim\num{86000}$ \citep{Qian:2020} contact binaries, representing between 26.7 and 54.8 per cent of all observed binaries (those from the Washington Double Star catalogue; \citealt{Mason:2001}). The binaries we study in this chapter are summarised in \Cref{tab:overcontact_binaries}, and were originally compiled in \citet{Abdul-masih:2022}. Their sample focused on measuring the period stability of contact binaries and is thus subset of the known sample. They rejected a handful of other non O+O overcontact binaries, for reasons that include short-period von Zeipel-Kozai-Lidov oscillations, incomplete photometric / radial velocity fits, non-\gls{ms} binaries, unknown separations, and irregular light curves.
 
-Ages for the six binaries have not been published, though a soft restriction can be placed on their evolutionary status; since \citet{Abdul-masih:2022} compiles specifically \gls{ms} contact binaries, their interactions must take place whilst the progenitor stars are on their respective main sequences. Nevertheless, we present inferred ages based on matches to the \gls{bpass} v2.2 models in \Cref{tab:hoki_matches}.
+Ages for the six binaries have not been published, though a soft restriction can be placed on their evolutionary status; since \citet{Abdul-masih:2022} compiles specifically massive \gls{ms} contact binaries, their interactions must take place whilst the progenitor stars are on their respective main sequences. %Nevertheless, we present inferred ages based on matches to the \gls{bpass} v2.2 models in \Cref{tab:hoki_matches}.
 
 \begin{table}
     \centering
@@ -42,7 +42,7 @@ Ages for the six binaries have not been published, though a soft restriction can
 
 \subsection{Progenitor history}
 
-We now examine each of the overcontact systems in detail, providing observational context to each system. For each binary, we list a selection of key measurements, including the fillout factor for each star. A fillout factor is a measurement of the degree to which a system overfills its Roche lobes, with $1 < f < 2$ denoting an overcontact binary, and a high fillout factor representing a more swelled and in-contact system.
+We now discuss each of the overcontact systems in detail, providing observational context to each system. For each binary, we list a selection of key measurements, including the fillout factor for each star. A fillout factor is a measurement of the degree to which a system overfills its Roche lobes, with $1 < f < 2$ denoting an overcontact binary, and a high fillout factor representing a more swelled and in-contact system. This definition of the fillout factor is a property of the \textit{system}, not the \textit{constituent stars}, and originates from \citet{Mochnacki:1972}.
 
 \subsubsection{LSS 3074}
 
@@ -70,26 +70,33 @@ VFTS 352 was detected in the VLT-FLAMES survey of the Tarantula Nebula \citep{Ev
 
 \subsection{Data matching with BPASS v2.2}\label{sec:BPASS_data_matching}
 
-We perform our data matching using the \codename{Hoki} code \citep{Stevance:2020a}. The search parameters are shown in \Cref{tab:overcontact_binaries}. We query the \gls{bpass} v2.2.1 dataset and record whether or not they enter the (widened) parameter values. Parameters are widened as some of the periods are tighter than the \gls{bpass} bins and thus can be missed in the search.
+To contrain the nature and prior evolution of these contact binaries we attempt to match stellar models from the \gls{bpass} v2.2 models to these binaries. We perform our data matching using the \codename{Hoki} code \citep{Stevance:2020a}. We look for matches in massses, periods, temperature/luminosity of the primary, and temperature of the secondary. The luminosity of the secondary in each case is less constrained, and in some cases unpublished. The search parameters are shown in \Cref{tab:overcontact_binaries}. We query the \gls{bpass} v2.2.1 dataset and record whether or not they enter the (widened) parameter values. Parameters are widened as some of the periods are tighter than the \gls{bpass} bins and thus can be missed in the search.
 
-\input{chapters/tables/BPASS_v2_match_table}
+We note three key caveats in our search criteria.
+
+\begin{enumerate}
+    \item We have performed our matching based on parameters which are difficult to constrain for an eclipsing binary. The better choice would be to match primarily on the masses/radii, which are known more precisely for eclipsing binaries (as the measurement dependence is on the times of first and second contact, and the relative velocity of the stars, which can be determined through radial velocity measurements). This realisation was made too late for the search to be re-performed, and thus we must be content with the wider error bars on the search parameters this necessitates. Matching on six parameters instead of four also means that our results are more likely to be outliers; they may either be overfits or not fit at all, with both a result of necessarily matching on more parameters.
+
+    \item As a consequence of the first caveat, the search error bars are widened, in some cases substantially. The known parameters in \citet{Abdul-masih:2022} are so tightly constrained that the parameter grid spacing in \gls{bpass} becomes significant, and thus the search bars must be widened to account for this.
+
+    This is also made manifest by the approximations in \gls{bpass} v2. \gls{bpass} uses the approximations of \citet{Hurley:2000} for the secondary radius, temperature, and luminosity. Thus, we widen our parameters for the secondary to compensate for this approximation.
+
+    \item As alluded to previously, luminosities are not uniformly reported for the companions across the grid. In particular, the companion luminosity for VFTS 352 is unreported, and thus we approximate it using the Stefan-Boltzmann law,
+
+    \begin{equation}
+        \frac{L}{L_\odot} = \left(\frac{R}{R_\odot}\right)^2 \left(\frac{T}{T_\odot}\right)^4,\label{eq:sb_law}
+    \end{equation}
+
+    where $T_\odot=\SI{5778}{\kelvin}$. This induces two assumptions: that the companion is a perfect blackbody, and that it is spherical. The first assumption is typically assumed regardless, and the secondary is a necessary condition of our 1D stellar evolution approach. Although the star is, physically, distorted with a fillout factor of $f=1.28$, the key assumption underpinning 1D stellar evolution is spherical symmetry.
+\end{enumerate}
 
 The matching values \codename{Hoki} finds are shown in \Cref{tab:hoki_matches}. The primary models are also shown on \Cref{fig:hoki_matches_HRD_primaries}. We also report in the table the inferred ages at match, which lie between $\mu_{\log(\text{age})}=6.13$ (for MY Cam) and $\mu_{\log(\text{age})}=7.14$ (for TU Mus).
 
-We note two key caveats in our search criteria. Our search error bars are widened, in some cases substantially. The known parameters in \citet{Abdul-masih:2022} are so tightly constrained that the parameter grid spacing in \gls{bpass} becomes significant, and thus the search bars must be widened to account for this.
-
-Secondly, luminosities are not uniformly reported for the companions across the grid. In particular, the companion luminosity for VFTS 352 is unreported, and thus we approximate it using the Stefan-Boltzmann law,
-
-\begin{equation}
-    \frac{L}{L_\odot} = \left(\frac{R}{R_\odot}\right)^2 \left(\frac{T}{T_\odot}\right)^4,\label{eq:sb_law}
-\end{equation}
-
-where $T_\odot=\SI{5778}{\kelvin}$. This induces two assumptions: that the companion is a perfect blackbody, and that it is spherical. The first assumption is typically assumed regardless, and the secondary is a necessary condition of our 1D stellar evolution approach. Although the star is, physically, distorted with a fillout factor of $f=1.28$, the key assumption underpinning 1D stellar evolution is spherical symmetry. Nevertheless, the illustration on the \gls{hrd} is for illustrative purposes only. Since the binaries in this sample are eclipsing binaries, the most confident parameters we could fit to are the masses and radii.
+\input{chapters/tables/BPASS_v2_match_table}
 
 \input{chapters/tables/detailed_matches}
 
 To determine the likely future history of this sample, we must use the \codename{tui} code to match pre- and post-supernova models. To that end, in \Cref{tab:detailed_matches}, we enumerate every resultant match to the observed parameters from \Cref{tab:overcontact_binaries}. For each match, we display the masses, radii, and effective temperatures of each star in the binary. We also track whether the stars are -- at the time of match -- filling their Roche lobes.
-
 
 \begin{figure}
     \centering
@@ -181,25 +188,85 @@ To determine the likely future history of this sample, we must use the \codename
     \label{fig:matches_MVP_primaries_v2}
 \end{figure}
 
-The full future history is completed by examining the remnants. To account for the uncertainties present in the natal kick prescription (\Cref{chap:natal_kicks}), we consider three kick prescriptions: the \citet{Hobbs:2005} and \citet{Richards:2023} kicks from \Cref{chap:natal_kicks}, and the bimodal \citet{Verbunt:2017} kick. The \citet{Hobbs:2005} and \citet{Richards:2023} kicks were described in \Cref{chap:natal_kicks}, and the \citet{Verbunt:2017} kick motivates its choice with a second peak at lower kick velocities to account for phenomena such as electron-capture supernovae and \glspl{ussne}. It samples the kick velocity from a modified Maxwellian distribution, a la \citet{Hobbs:2005}, though the distribution is given by
+Our modelling shows that all of these contact binaries survive their contact phase, eventually exiting to continue on as semi-detached and detached binaries. Importantly, none overflow their $\mathcal{L}_2$ points -- which is commonly taken as a precursor signal of a merger event in other codes such as \codename{posydon} \citep{Fragos:2023} -- and none of them merge. As they evolve, as shown in \Cref{tab:remnant_types}, the primary typically ends up as a helium star or \gls{wr} star, and the secondaries become more massive, typically with a post-contact mass ratio inversion occuring.
+
+The full future history is completed by examining the remnants both after the primary and secondary supernova. To account for the uncertainties present in the natal kick prescription (\Cref{chap:natal_kicks}), we consider three kick prescriptions: the \citet{Hobbs:2005} and \citet{Richards:2023} kicks from \Cref{chap:natal_kicks}, and the bimodal \citet{Verbunt:2017} kick. The \citet{Hobbs:2005} and \citet{Richards:2023} kicks were described in \Cref{chap:natal_kicks}, and the \citet{Verbunt:2017} kick motivates its choice with a second peak at lower kick velocities to account for phenomena such as electron-capture supernovae and \glspl{ussne}. It samples the kick velocity from a modified Maxwellian distribution, a la \citet{Hobbs:2005}, though the distribution is given by
 
 \begin{equation}
     P(v_\text{k})~\mathrm{d}v_\text{k} = \sqrt{\frac{2}{\pi}} v_\text{k}^2\left[\frac{w}{\sigma_1^3}\exp\left(-\frac{v_\text{k}^2}{2\sigma_1^2}\right)+\frac{1-w}{\sigma_1^3}\exp\left(-\frac{v_\text{k}^2}{2\sigma_1^2}\right)\right],
 \end{equation}
 
-where $\sigma_1=\SI{75}{\km\per\s}$ and $\sigma_2=\SI{316}{\km\per\s}$ are the distribution parameters and $w=0.42$ is the weight of the lower peak. For each binary, we compute the post-supernova kick parameters $M_1, M_2, a_0$ and $e_0$ in the same way as in \Cref{chap:natal_kicks}, and use these to calculate the coalescence time in \si{\giga\year}.
+where $\sigma_1=\SI{75}{\km\per\s}$ and $\sigma_2=\SI{316}{\km\per\s}$ are the distribution parameters and $w=0.42$ is the weight of the lower peak. For each binary, we compute the post-supernova kick parameters $M_1, M_2, a_0$ and $e_0$ in the same way as in \Cref{chap:natal_kicks}, and -- after the secondary supernova -- use these to calculate the coalescence time in \si{\giga\year}.
 
-For each system, we record the type of binary left after the secondary supernova -- \gls{nsbh}, \gls{bhwd}, \gls{nswd}, \gls{bns}, \gls{bbh}. If the mean eccentricity is less than zero or strictly greater than one, we record it as an Unbound system, and present the percentage of systems in which the binary unbinds. If the binary remains bound, we present the coalescence time, which is allowed to be arbitrarily large (with the largest being \SI{1.75}{\peta\year}). In practice arbitrarily large coalescence times are likely unphysical, with \unit{\peta\year} coalescence times approaching the end of the stelliferous era. Nevertheless, we include them as predictions made by the integration of the equations of \citet{Peters:1964}.
+For each system, we record the type of binary left after the secondary supernova -- \gls{nsbh}, \gls{bhwd}, \gls{nswd}, \gls{bns}, \gls{bbh}. If the mean eccentricity is less than zero or strictly greater than one, we record it as an Unbound system, and present the percentage of systems in which the binary unbinds. If the binary remains bound, we present the coalescence time, which is allowed to be arbitrarily large (with the largest being \SI{1.75}{\peta\year}). In practice, arbitrarily large coalescence times are likely unphysical, with \unit{\peta\year} coalescence times approaching the end of the stelliferous era. Nevertheless, we include them as predictions made by the integration of the equations of \citet{Peters:1964}.
 
 We assume that a white dwarf is left if the \gls{CO_core} mass of the star is less than \SI{1.38}{\msun}, the total mass of the star is less than \SI{1.5}{\msun}, or if core carbon burning does not occur. Otherwise, we assume that remnants with $M_\text{rem} \leq \SI{2.5}{\msun}$ leave behind a \gls{ns}, and otherwise a \gls{bh} is left.
 
-We present these results in \Cref{chap:overcontact_binary_remnants}. We can see a number of extremely low-mass \glspl{wd}, the lightest of which are \SI{0.28}{\msun}, barely above the current lowest-mass \gls{wd} \citep[\SI{0.17}{\msun};][]{Kilic:2007}. It is possible that these may be numerical artefacts, and that the supernova has either destroyed the star leaving effectively no remnant, or that the stars merged during the supernova event. This would be compounded by the stars appearing to be unbound, with high frequency. The \codename{tui} code does not record whether a merger occurs during the supernova, so this is not possible to test given the current architecture of the data.
+Across the three kick models, in approximately 55.2~per~cent of the binaries, the binary remains bound after the secondary supernova. Most of the unbound models (44.4~per~cent) originate from the \citet{Verbunt:2017} kick, and the \citet{Richards:2023} kick from \Cref{chap:natal_kicks} contributes 17.8~per~cent of the unbound models. The bound models typically have initial post-secondary-supernova periods of tens of years, with a notable outlier in MY Camelopardalis, which has two systems with separations $>\SI{100}{\rsun}$, creating large periods.
 
-\section{Forward evolution}\label{sec:forward_evolution}
+\begin{table}[!htbp]
+    \centering
 
-Having now established the \gls{zams} parameters for our binaries, we can take these as input to our \codename{stars} code to determine their future history. For each matched model, we extract the masses and periods, and then use these as input to our stellar modelling code. In particular, we use the modifications earlier described that enable helium-rich mass transfer.
+    \begin{tabular}{l|ccc}
+    \toprule
+    Binary & $\overline{a_0}$ [\unit{\rsun}] & $\overline{e_0} [no. dim]$ & $\overline{P_0} [\unit{\year}]$ \\
+    \midrule
+        LSS 3074 & $6.77 \pm 0.10$ & $0.55 \pm 0.09$ & $23.2 \pm 0.6$ \\
+        MY Cam & $70.17 \pm 0.10$ & $0.68 \pm 0.07$ & $909.4 \pm 0.7$ \\
+        SMC 108086 & $8.05 \pm 0.16$ & $0.67 \pm 0.12$ & $27.9 \pm 0.8$ \\
+        TU Mus & $7.69 \pm 0.20$ & $0.59 \pm 0.12$ & $33.0 \pm 0.9$ \\
+        V382 Cyg & $17.38 \pm 0.08$ & $0.66 \pm 0.06$ & $86.9 \pm 0.6$ \\
+        VFTS 352 & $29.62 \pm 0$ & $0.9 \pm 0$ & $118.2 \pm 0$ \\
+    \bottomrule
+    \end{tabular}
 
-We examine the models at three periods. The first is the fiducial period, as reported from the \codename{Hoki} code. The second is a set of binaries with identical parameters except for periods \SI{0.1}{\dex} higher, and the third is binaries with periods \SI{0.1}{\dex} lower. Our aim, in evaluating the expanded period grid, is to determine the sensitivity of the grid to this parameter choice, given that the major aim of this chapter is to investigate, effectively, short-period binaries.
+    \label{tab:remnant_mean_parameters}
+    \caption[The mean post-secondary-supernova parameters for the bound remnants of our binary models.]{The mean post-secondary-supernova parameters for the bound remnants of our binary models. Uncertainties are the 1$\sigma$ uncertainties from taking the mean across all parameters, and the uncertainty on VFTS 352 is due to there only being one bound remnant in the calculation. Individual kick prescriptions are not distinguished for this calculation.}
+\end{table}
+
+A wide variety of remnants are possible; these are summarised below:
+
+\begin{enumerate}
+    \item LSS 3074
+        \begin{itemize}
+            \item NS-NS (9 occurences)
+            \item NS-WD (3 occurences)
+        \end{itemize}
+    \item MY Cam
+        \begin{itemize}
+            \item NS-NS (5 occurences)
+            \item BH-NS (4 occurences)
+            \item NS-WD (3 occurences)
+            \item NS-BH (1 occurence)
+        \end{itemize}
+    \item SMC 108086
+        \begin{itemize}
+            \item NS-NS (15 occurences)
+            \item NS-WD (2 occurences)
+        \end{itemize}
+    \item TU Mus
+        \begin{itemize}
+            \item NS-NS (7 occurences)
+            \item NS-WD (2 occurences)
+        \end{itemize}
+    \item V382 Cyg
+        \begin{itemize}
+            \item NS-NS (7 occurences)
+            \item NS-WD (1 occurence)
+        \end{itemize}
+    \item VFTS 352
+        \begin{itemize}
+            \item BH-BH (1 occurence)
+        \end{itemize}
+\end{enumerate}
+
+We present the full table of results in \Cref{chap:overcontact_binary_remnants}. We can see a number of extremely low-mass \glspl{wd}, the lightest of which are \SI{0.28}{\msun}, barely above the current lowest-mass \gls{wd} \citep[\SI{0.17}{\msun};][]{Kilic:2007}. It is possible that these may be numerical artefacts, and that the supernova has either destroyed the star leaving effectively no remnant, or that the stars merged during the supernova event. This would be compounded by the stars appearing to be unbound, with high frequency. The \codename{tui} code does not record whether a merger occurs during the supernova, so this is not possible to test given the current architecture of the data.
+
+\section{Creation of bespoke binary star evolution models}\label{sec:forward_evolution}
+
+Having now established the \gls{zams} parameters for our binaries, we can take these as input to our \codename{stars} code to determine their future history. For each matched model, we use the initial masses and periods as inputs to the \codename{stars} evolution code. We use the \codename{Aotearoa stars} binary star evolution program as described in \Cref{chap:theoretical_background,chap:he_mass_transfer}.
+
+While we use the periods from the BPASS model fits we also expand our search to two extra periods per pair of initial masses. The first is the fiducial period, as reported from the \codename{Hoki} code. The second is a set of binaries with identical parameters except for periods \SI{0.1}{\dex} higher, and the third is binaries with periods \SI{0.1}{\dex} lower. Our aim, in evaluating the expanded period grid, is to determine the sensitivity of the grid to this parameter choice, given that the major aim of this chapter is to investigate, effectively, short-period binaries.
 
 \begin{figure}
     \centering
@@ -242,7 +309,7 @@ We examine the models at three periods. The first is the fiducial period, as rep
         \label{fig:hoki_VFTS_352_mvp}
     \end{subfigure}
 
-    \caption[Detailed model tracks for our six close-contact binaries.]{Detailed model tracks for our six close-contact binaries. Models shown are restricted to only during their core hydrogen burning phase. The $x$-axis is limited to double the maximum value of the observed radius.}
+    \caption[Detailed model tracks for our six close-contact binaries.]{Detailed model tracks for our six close-contact binaries. Solid (dashed) lines represent the donor (accretor). Models shown are restricted to only during the core hydrogen burning phase of the donor. The $x$-axis is limited to double the maximum value of the observed radius of either star.}
     \label{fig:matches_MVP_primaries}
 \end{figure}
 
@@ -324,13 +391,13 @@ As a result, however, there is a dearth of matching models. LSS 3074, TU Muscae,
         V382 Cyg & 30 & 0.5 & 0.5 & $26.1\pm3.2$ & $9.4\pm0.2$ & $19.0\pm4.2$ & $8.7\pm0.2$ & $29.17\pm0.04$ & $9.40\pm0.12$ & $14.98\pm0.00$ & $5.49\pm0.02$ & \cmark & \xmark$_\text{R}$ \\
         \bottomrule
     \end{tabular}
-    \caption[The observed vs. matched parameters for each of the fourteen overcontact matches we find.]{The observed vs. matched parameters for each of the fourteen overcontact matches we find. An asterisk next to the star name indicates that the binary undergoes two periods where it matches the donor mass/radius, and each match is shown. In the ``matches'' column, \cmark represents that both the masses and the radii overlap for a given model, and \xmark represents that at least one of the parameters does not match. In these instances, the parameter(s) which do not match are shown as subscripts next to the cross.}
+    \caption[The observed vs. matched parameters for each of the fourteen overcontact matches we find.]{The observed vs. matched parameters for each of the fourteen overcontact matches we find. An asterisk next to the star name indicates that the binary undergoes two periods where it matches the donor mass/radius, and each match is shown. In the ``matches'' column, \cmark~represents that both the masses and the radii overlap for a given model, and \xmark~represents that at least one of the parameters does not match. In these instances, the parameter(s) which do not match are shown as subscripts next to the cross.}
     \label{tab:matches_against_fiducial}
 \end{sidewaystable}
 
 The matches that we find are shown in \Cref{tab:matches_against_fiducial} next to their search parameters. Three of the binaries have matches on mass and radius for both stars simultaneously. The balance generally do not match on the companion radius, with three systems also failing to match on the companion mass as well. We consider a mass or radius to have overlapped to its observed value if the error bars at all overlap, and caveat that the reported error bars on the observed parameters are the search uncertainties, as per \Cref{tab:overcontact_binaries}.
 
-The three matching systems all model TU Muscae. We show in \Cref{fig:TU_Muscae_fits} the \glspl{hrd} and Kippenhahn diagrams of these three matches. The relative positions of the observations on the \gls{hrd} suggest that a mass ratio inversion occured for this system, and thus our labellings of the primary/secondary are incorrect.
+The three systems which match on both the primary and secondary mass and radius all model TU Muscae. We show in \Cref{fig:TU_Muscae_fits} the \glspl{hrd} and Kippenhahn diagrams of these three matches. The relative positions of the observations on the \gls{hrd} suggest that a mass ratio inversion occured for this system, and thus our labellings of the primary/secondary are incorrect.
 
 \begin{figure}
     \centering
@@ -395,16 +462,22 @@ We also briefly investigate the mean length of the contact phase. For each binar
 
 \section{Discussion}
 
+% another key conclusion - bespoke models that follow both stars in detail can achieve an accurate fit to the observed binaries! thus detailed secondary modelling is a key part of making accurate binary models,
+
+% all codes that approximate the evolution of secondaries and the impact of mass transfer therefore have a systematic error in their predictions of stellar evolution
+
 The most obvious limitation is that we were able to only produce three matching systems on one of the six close-contact binaries. \Cref{fig:matches_MVP_primaries} shows that, especially for SMC 108086 and MY Camelopardalis, the parameter space exploration was insufficient and that, were the space widened, more matches may be able to be found.
+
+In addition, the systems here were assumed to be initially nonrotating. Adjusting the initial rotation rate of either or both stars may allow us to obtain a better fit, however this immediately increases the number of models one would need to consider, as there is no immediate prior on what the initial rotation rate of the star(s) would need to be.
 
 The initial matches for systems, as listed in \Cref{tab:overcontact_binaries}, was performed as matches to positions on an \gls{hrd}, which presents difficulty. First, as contact binaries, the secondary luminosity is difficult to constrain, and the assumption of the Stefann-Boltzmann law (\Cref{eq:sb_law}) is unlikely to hold proper. This resulted in intentionally wide search bars, to encapsulate this uncertainty, but also resulted in binaries that are unlikely to actually match the search parameters.
 
-This entire study also relies on the \gls{bpass} v2 models to evaluate the \gls{zams} parameters of our models. Whilst tested against observations, this means uncertainties in \gls{bpass} are also inherent in uncertainties of our models. For the most part, this is of little concern. The key limitation of our approach is the fact that \gls{bpass} models the accretor as a point mass prior to the primary supernova \citep{Eldridge:2017}, contributing further to the aforementioned difficulty in constraining the search parameters for the accretor.
+This study also relies on the \gls{bpass} v2 models to evaluate the \gls{zams} parameters of our models. \gls{bpass} uses the approximations from \citet{Hurley:2000} to approximate the evolution of the secondary star, contributing further to the aforementioned difficulty in constraining the search parameters for the accretor.
 
-In order to obviate these limitations, a wide grid in both primary and secondary mass could be computed. By doing so, one removes the dependence on the \gls{bpass} secondary grid and inherent uncertainties arising from \citet{Hurley:2002}, at the computational expense of having to search a much larger range of models for matches.
+In order to obviate these limitations, a wide grid in both primary and secondary mass could be computed. By doing so, one removes the dependence on the \gls{bpass} secondary grid and inherent uncertainties arising from \citet{Hurley:2000}, at the computational expense of having to search a much larger range of models for matches.
 
 \section{Chapter Summary}
 
-We started by compiling the six contact binaries in the sample of \citet{Abdul-masih:2022}. We matched these binaries to their \gls{zams} parameters using the \gls{bpass} and \codename{hoki} codes, finding between one and ten viable sets of initial parameters to each model. We also found their mean ages to be between \SI{1.34}{\mega\year} and \SI{13.8}{\mega\year}, depending on the model.
+We started by compiling the six contact binaries in the sample of \citet{Abdul-masih:2022}. We matched these binaries to their \gls{zams} parameters using the \gls{bpass} v2.2 and \codename{hoki} codes, finding between one and ten viable sets of initial parameters to each model. We also found their mean ages to be between \SI{1.34}{\mega\year} and \SI{13.8}{\mega\year}, depending on the model. We also used the \gls{bpass} v2.2 models to predict the eventual outcome of these contact binaries, and found that a range of possible compact object binaries could occur, with initial periods on the order of tens of years.
 
-By forward-evolving them using the \codename{stars} code, we found that 14 model tracks matched, for LSS 3074, TU Mus, and V382 Cyg. We found that these matches were short compared to the lifetime of the binary, generally existing for $\sim\SI{200}{\kilo\year}$ -- $\sim\SI{600}{\kilo\year}$. Of the fourteen matches, we found that only three matched the observed masses and radii of both components in the binary, all for TU Mus on the shortest grid. We conjectured that this may be an artifact of the parameter space explored, and that a wider grid would enable us to find closer matches.
+By using the BPASS fits as a starting point for the initial parameters of the contact binaries, we created bespoke binary evolution models for the contact binaries with the STARS code, we found that 14 model tracks matched, for LSS 3074, TU Muscae, and V382 Cygni. We found that these matches were short compared to the lifetime of the binary, generally existing for $\sim\SI{200}{\kilo\year}$ -- $\sim\SI{600}{\kilo\year}$. Of the fourteen matches, we found that only three matched the observed masses and radii of both components in the binary, all for TU Muscae on the shortest grid. The models for LSS 3074 and V382 Cygni, as well as three of the models for TU Muscae were unable to match the radius of the secondary, and three of the models for V382 Cygni were unable to match the secondary mass as well. We conjectured that this may be an artifact of the parameter space explored, and that a wider grid would enable us to find closer matches.
