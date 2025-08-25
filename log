@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.1)  25 AUG 2025 19:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.1)  25 AUG 2025 19:52
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2733,20 +2733,17 @@ LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/scsl' instead on input line 79.
 
+)
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[11]
 
+[12
 
-
-[11])
-
-[12]
+]
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 88.pgf) (./main.toc
 
 [13
-
-
 
 pdfTeX warning: pdflatex: pop empty color page stack 0
 ]
@@ -2762,6 +2759,9 @@ pdfTeX warning: pdflatex: pop empty color page stack 0
 [16]
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 88.pgf) (./main.lof
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [17
 
@@ -2798,19 +2798,17 @@ r/m/n/10 60 []$
 \openout12 = `main.lot'.
 
  (./main.gls
-Underfull \vbox (badness 2726) has occurred while \output is active []
-
-
 
 [21
 
 pdfTeX warning: pdflatex: pop empty color page stack 0
 ]
 
-[22]
+[22
+
+]
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 88.pgf) [23
-
 
 
 
@@ -3245,11 +3243,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 \pydata@fh@0=\write13
 \openout13 = `_FAD58DE7366495DB4650CFEFAC2FCD61.data.minted'.
 
-runsystem(latexminted config  --timestamp 20250825193557 FAD58DE7366495DB4650CF
+runsystem(latexminted config  --timestamp 20250825195203 FAD58DE7366495DB4650CF
 EFAC2FCD61)...executed.
 
 (./_FAD58DE7366495DB4650CFEFAC2FCD61.config.minted)
-runsystem(latexminted cleanconfig  --timestamp 20250825193557 FAD58DE7366495DB4
+runsystem(latexminted cleanconfig  --timestamp 20250825195203 FAD58DE7366495DB4
 650CFEFAC2FCD61)...executed.
 
 
@@ -4566,15 +4564,9 @@ ope Ejec-tion and Bi-nary Neu-tron Star
 
 [207]
 
-[208]
+[208])
 
-[209])
-
-[210]
-
-[211
-
-]
+[209]
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 89.pgf)
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
@@ -4596,7 +4588,9 @@ ope Ejec-tion and Bi-nary Neu-tron Star
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
 87.pgf)
 
-[212] 
+[210
+
+] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (./main.aux)
  ***********
@@ -4607,8 +4601,8 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: F6136273A083EAA67DC927D20CD91F17;20763.
  ) 
 Here is how much of TeX's memory you used:
- 76116 strings out of 473190
- 1798302 string characters out of 5715807
+ 76114 strings out of 473190
+ 1798286 string characters out of 5715807
  2787717 words of memory out of 5000000
  96735 multiletter control sequences out of 15000+600000
  616907 words of font info for 150 fonts, out of 8000000 for 9000
@@ -4673,10 +4667,10 @@ local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/lo
 cal/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/loca
 l/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb></usr/local/
 texlive/2025/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (240 pages, 16402454 bytes).
+Output written on main.pdf (238 pages, 16401389 bytes).
 PDF statistics:
- 7302 PDF objects out of 7423 (max. 8388607)
- 6269 compressed objects within 63 object streams
- 1074 named destinations out of 1200 (max. 500000)
+ 7292 PDF objects out of 7423 (max. 8388607)
+ 6261 compressed objects within 63 object streams
+ 1072 named destinations out of 1200 (max. 500000)
  1543 words of extra memory for PDF output out of 10000 (max. 10000000)
 
