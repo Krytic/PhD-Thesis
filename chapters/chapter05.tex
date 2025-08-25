@@ -75,7 +75,7 @@ To contrain the nature and prior evolution of these contact binaries we attempt 
 We note three key caveats in our search criteria.
 
 \begin{enumerate}
-    \item We have performed our matching based on parameters which are difficult to constrain for an eclipsing binary. The better choice would be to match primarily on the masses/radii, which are known more precisely for eclipsing binaries (as the measurement dependence is on the times of first and second contact, and the relative velocity of the stars, which can be determined through radial velocity measurements). This realisation was made too late for the search to be re-performed, and thus we must be content with the wider error bars on the search parameters this necessitates. Matching on six parameters instead of four also means that our results are more likely to be outliers; they may either be overfits or not fit at all, with both a result of necessarily matching on more parameters.
+    \item We have performed our matching based on parameters which are difficult to constrain for an eclipsing binary. The better choice would be to match primarily on the masses/radii, which are known more precisely for eclipsing binaries (as the measurement dependence is on the times of first and second contact, and the relative velocity of the stars, which can be determined through radial velocity measurements). The rationale is that the BPASS v2.2 models use the \citet{Hurley:2000} approximations, which become highly approximate during the mass transfer phase -- resulting in the mass, temperature, and luminosity of the companion becoming more approximate during mass transfer. Consequently, we must preference matching on the donor parameters over the accretor parameters, though we include the accretor mass and effective temperature to allow for it to have some influence on the output models. This also means that we must be content with the wider error bars on the search parameters this necessitates. Matching on six parameters instead of four also means that our results are more likely to be outliers; they may either be overfits or not fit at all, with both a result of necessarily matching on more parameters.
 
     \item As a consequence of the first caveat, the search error bars are widened, in some cases substantially. The known parameters in \citet{Abdul-masih:2022} are so tightly constrained that the parameter grid spacing in \gls{bpass} becomes significant, and thus the search bars must be widened to account for this.
 
@@ -211,12 +211,12 @@ Across the three kick models, in approximately 55.2~per~cent of the binaries, th
     \toprule
     Binary & $\overline{a_0}$ [\unit{\rsun}] & $\overline{e_0} [no. dim]$ & $\overline{P_0} [\unit{\year}]$ \\
     \midrule
-        LSS 3074 & $6.77 \pm 0.10$ & $0.55 \pm 0.09$ & $23.2 \pm 0.6$ \\
-        MY Cam & $70.17 \pm 0.10$ & $0.68 \pm 0.07$ & $909.4 \pm 0.7$ \\
-        SMC 108086 & $8.05 \pm 0.16$ & $0.67 \pm 0.12$ & $27.9 \pm 0.8$ \\
-        TU Mus & $7.69 \pm 0.20$ & $0.59 \pm 0.12$ & $33.0 \pm 0.9$ \\
-        V382 Cyg & $17.38 \pm 0.08$ & $0.66 \pm 0.06$ & $86.9 \pm 0.6$ \\
-        VFTS 352 & $29.62 \pm 0$ & $0.9 \pm 0$ & $118.2 \pm 0$ \\
+        LSS 3074 & $6.77 \pm 0.10$ & $0.55 \pm 0.09$ & $1.433 \pm 0.034$ \\
+        MY Cam & $70.17 \pm 0.10$ & $0.68 \pm 0.07$ & $56.23 \pm 0.05$ \\
+        SMC 108086 & $8.05 \pm 0.16$ & $0.67 \pm 0.12$ & $1.72 \pm 0.05$ \\
+        TU Mus & $7.69 \pm 0.20$ & $0.59 \pm 0.12$ & $2.04 \pm 0.05$ \\
+        V382 Cyg & $17.38 \pm 0.08$ & $0.66 \pm 0.06$ & $5.376 \pm 0.034$ \\
+        VFTS 352 & $29.62 \pm 0$ & $0.9 \pm 0$ & $7.31 \pm 0$ \\
     \bottomrule
     \end{tabular}
 
