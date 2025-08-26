@@ -145,6 +145,13 @@ Eventually, the accretor shrinks within its Roche lobe and the contact phase ter
 
 \subsection[Post-contact]{Post-contact (stages D--E)}\label{sec:post_contact_stages_d_e_}
 
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{images/HeliumRich/Figure_4.pdf}
+    \caption[A \acrlong{hrd} showing the evolution of our model both with and without the VCA prescription.]{An \gls{hrd} showing the evolution of our model both with (black lines) and without (red lines) the VCA prescription. In the inset, the diamond shows the start of the contact phase (identical for both models), and the coloured crosses show the end of the contact phase for their respective models. The dotted lines show models with both thermohaline mixing and VCA enabled. Models with thermohaline mixing enabled were computed with 199 meshpoints, whereas ones without were computed with 999 meshpoints. The thermohaline mixing models undergo breathing pulses prior to model termination.}
+    \label{fig:hrd_comparison_var_novarr}
+\end{figure}
+
 There is a clear and consistent difference between the post-contact models. As shown in the inset of \Cref{fig:hrd_comparison_var_novarr}, the models diverge shortly before the termination of the contact phase. At this point, however, the process has become irreversible. The VCA model has become \SI{0.01}{\dex}, or $\sim$\SI{1.16}{\kilo\kelvin} hotter than the NVCA model. This in turn leads the VCA accretor to be hotter and eventually more luminous than its NVCA counterpart, a theme that is reflected once the post-interaction behaviour is to be studied.
 
 We thus examine the reasons for this bifurcation. In \Cref{fig:abundances_line_plot} we show the internal composition of the two stars in each binary at each timestep. Noticeably for stage (D), the accretion of helium-rich material has introduced a layer of helium \textit{atop} a layer of hydrogen, in the VCA case. This hydrogen is the original photosphere of the accretor, and the material has not yet mixed in at this stage, due to the continued injection of helium from the donor star.
@@ -196,13 +203,6 @@ Indeed, none of our single-star models are able to replicate the NVCA model. How
 
 Within the VCA model, the formation of an inverted mean molecular weight gradient means that thermohaline mixing must be considered. In \Cref{fig:hrd_comparison_var_novarr} we can see that higher values of $\alpha_\text{th}$ lead to a more rapid decrease in surface temperature by approximately 0.05 to \SI{0.08}{\dex}. The most efficient thermohaline mixing that we include removes the composition gradient in a few time-steps (see \Cref{fig:thermohaline_mixing_internal_profiles_lineplot}), but it remains hotter and more luminous throughout the main sequence compared to the NVCA model. This is because while the composition gradient is removed the star has a higher helium abundance.
 \Cref{fig:hrd_comparison_var_novarr} shows that when thermohaline mixing is included we see this temperature difference decrease to approximately \SI{0.1}{\dex} ($\sim\SI{1.54}{\kilo\kelvin}$). Thermohaline mixing has a bigger difference on the accretor tracks earlier in the main sequence evolution than at the end of the main sequence, where the tracks are more similar in their evolutionary path.
-
-\begin{figure}[!htbp]
-    \centering
-    \includegraphics[width=\textwidth]{images/HeliumRich/Figure_4.pdf}
-    \caption[A \acrlong{hrd} showing the evolution of our model both with and without the VCA prescription.]{An \gls{hrd} showing the evolution of our model both with (black lines) and without (red lines) the VCA prescription. In the inset, the diamond shows the start of the contact phase (identical for both models), and the coloured crosses show the end of the contact phase for their respective models. The dotted lines show models with both thermohaline mixing and VCA enabled. Models with thermohaline mixing enabled were computed with 199 meshpoints, whereas ones without were computed with 999 meshpoints. The thermohaline mixing models undergo breathing pulses prior to model termination.}
-    \label{fig:hrd_comparison_var_novarr}
-\end{figure}
 
 %
 

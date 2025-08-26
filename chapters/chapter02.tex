@@ -109,7 +109,7 @@ All told, in the simplest sense, the internal \textit{structure} of the star can
 
 \alice
 
-A star contains at its core a complex, multi-layered, nuclear furnace. As one atom approaches another, it must overcome the natural electrostatic repulsion so that the strong nuclear force ensures fusion occurs. This requires the bombarding atom to tunnel through the Coulomb barrier, instigating fusion.
+A star contains at its core a complex, multi-layered, nuclear furnace. As one atom approaches another, it must overcome the natural electrostatic repulsion so that the strong nuclear force ensures fusion occurs. This requires the bombarding atom to tunnel through the Coulomb barrier \citet{Gamow:1928}, instigating fusion.
 
 We have already discussed the \gls{pp_chain}, fusing hydrogen into helium and up to beryllium. The two remaining parts of the story are the triple-$\alpha$ process and the CNO cycle. The triple-$\alpha$ process generates carbon, and is given by the reactions \citep{Carroll:2017}\footnote{The reversible reaction is due to Beryllium-8 being unstable; its half-life is on the order of $\SI{1e-16}{\second}$, and it decays back to 2$^4_2$He if it does not react further.}
 
@@ -382,14 +382,14 @@ Massive stars are the key focal objects of this thesis, and in many ways offer s
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=\textwidth]{images/TheorySection/10_msun_jumps_new.pdf}
-    \caption[The evolution of stars in the range $0.5-80\unit{\msun}$.]{The evolution of stars in the range $0.5-80\unit{\msun}$. The dashed black line represents the \acrfull{zams}, which is the origin point of all of our models, and (in this plot) extends from \SI{0.5}{\msun} to \SI{300}{\msun}. The blue triangle is the (highly approximate) bounds of the Hertzsprung gap. Crosses indicate binaries in the Double Eclipsing Binaries catalogue \citep[DEBCAT;][]{Southworth:2015}, and illustrate the apparent ``zone of avoidance'' that defines the Hertzsprung gap.}
+    \caption[The evolution of stars in the range $0.5-80\unit{\msun}$.]{The evolution of stars in the range $0.5-80\unit{\msun}$. The dashed black line represents the \acrfull{zams}, which is the origin point of all of our models, and (in this plot) extends from \SI{0.5}{\msun} to \SI{300}{\msun}. The blue triangle is the (highly approximate) bounds of the Hertzsprung gap. Crosses indicate binaries in the Double Eclipsing Binaries catalogue \citep[DEBCAT;][]{Southworth:2015}, and illustrate the apparent ``zone of avoidance'' that defines the Hertzsprung gap. Blue crosses are primaries, and orange crosses are secondaries.}
     \label{fig:hr_diagram_massive_stars}
 \end{figure}
 
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=\textwidth]{images/TheorySection/8_msun_star_annotated.pdf}
-    \caption[The evolution of an \SI{8}{\msun} star.]{The evolution of an \SI{8}{\msun} star. Highlighted is the star's \acrfull{zams}, \acrfull{tams}, the blue loop, and the \acrfull{agb}. The Hertzsprung gap is also highlighted. In this particular model, numerical instabilities in the leftmost (hottest) region of the plot have been highlighted in pink. This is normally removed in postprocessing though has been left in as an illustration.}
+    \caption[The evolution of an \SI{8}{\msun} star.]{The evolution of an \SI{8}{\msun} star. Highlighted is the star's \acrfull{zams}, \acrfull{tams}, the blue loop, and the \acrfull{agb}. The Hertzsprung gap is also highlighted. In this particular model, the star achieves CNO equilibrium in the leftmost (hottest) region of the plot, highlighted in pink.}
     \label{fig:hr_diagram_8msun_star}
 \end{figure}
 
@@ -546,7 +546,7 @@ There are two primary Roche Lobe points we consider: the $\mathcal{L}_1$ point a
     0=\xi-\frac{\xi_2}{\pqty{\xi-\xi_1}^2}-\frac{\xi_1}{\pqty{\xi-\xi_2}^2},\label{eq:roche_lobe_condition}
 \end{equation}
 
-where $\xi_1=\frac{M_2}{M_1+M_2}$, and $\xi_2=\frac{M_1}{M_1+M_2}$.
+where $\xi_1=\frac{M_2}{M_1+M_2}$, and $\xi_2=\frac{M_1}{M_1+M_2}$. This expression is derived in \Cref{chap:additional_derivations}
 
 This is a quintic expression in $\xi$, and solving this results in the real $\xi$-ordinates of five extrema. The extrema are labelled $\mathcal{L}_1$ through $\mathcal{L}_5$. $\mathcal{L}_1, \mathcal{L}_2, \mathcal{L}_3$ are saddle points of the potential, and $\mathcal{L}_4$ and $\mathcal{L}_5$ are maxima. No analytical function for $\xi$ exists unless either or both of $\xi_1, \xi_2$ are zero (which would only be the case for a single star, and thus the Roche lobe would not exist in the first instance), thus we must make approximations.
 
@@ -684,7 +684,7 @@ Generalising this to an eccentric orbit causes the first argument in \Cref{eq:bo
 
 After a supernova, the star leaves behind its core as a compact remnant. Generally, these are either black holes or neutron stars. The interior of a neutron star is reasonably complex, with superfluid neutrons within the crust \citep{Lattimer:2001} and a latticed core-crust interface \citep{Rueda:2014}, with ``pasta phases'' at the interface \citep{Zdunik:2017}. The interior of a black hole is impossible to observationally probe without violating causality.
 
-The supernova ejects some fraction of material $M_\text{ej}$, leaving behind a remnant of mass $M_\text{rem}$. \citet{Eldridge:2004} gives a relationship between ejecta, remnant, and stellar masses by assuming a supernova releases \SI[print-unity-mantissa=false]{1e46}{\joule} of energy, of which 1~per~cent is transferred into the envelope. The full relation between the binding energy $U$, the stellar mass $M_*$, and the ejecta and remnant masses is thus
+The supernova ejects some fraction of material $M_\text{ej}$, leaving behind a remnant of mass $M_\text{rem}$. \citet{Eldridge:2004} gives a relationship between ejecta, remnant, and stellar masses by assuming a supernova releases \SI[print-unity-mantissa=false]{1e46}{\joule} ($=$\SI[print-unity-mantissa=false]{1e53}{\erg}) of energy, of which 1~per~cent is transferred into the envelope. The full relation between the binding energy $U$, the stellar mass $M_*$, and the ejecta and remnant masses is thus
 
 \begin{equation}
     \int_{M_\text{rem}}^{M_*} \left(U-\frac{GM}{r(M)}\right)\dd{M} = \SI[print-unity-mantissa=false]{1e44}{\joule},
@@ -826,7 +826,7 @@ The matrix inversion is simple Gauss-Jordan inversion, which is of complexity cl
 
 \subsubsection{Initial Condition Selection}
 
-In this section we provide an account for the selection of our general initial conditions. Unless otherwise noted in this thesis, it is assumed that the values will be using the parameters described here and in \Cref{chap:param_config}.
+In this section we provide an account for the selection of our general initial conditions. Unless otherwise noted in this thesis, it is assumed that the values will be using the parameters described here and in \Cref{chap:appendix:code_versions}.
 
 In our implementation of \gls{mlt} \citep{Vitense:1953, Bohm-vitense:1958, Cox:1968}, we use an \gls{mlt} parameter of $\alpha_\text{\gls{mlt}}=1.985$, selected via calibration against a model of the Sun. This is effectively a dissipativity parameter, and represents the depth at which a parcel of matter penetrates into a lower layer before becoming fully dissipated. The value was selected by modelling a \SI{1}{\msun} star and varying only the mixing length parameter until it had a lumonosity of \SI{1}{\lsun} and a radius of \SI{1}{\rsun}, at the present age of the Sun.
 
@@ -841,7 +841,7 @@ Instead of being equally spaced \textit{radially}, these mesh points are taken t
     &\phantom{=} + \ln\left(\frac{c_6M^\frac23}{M + M^\frac23}\right) - c_3\ln\left(\frac{R^2}{c_8}+1\right),
 \end{align}
 
-where $P, T, M, R$ are the total pressures, temperatures, masses, and radii of each star, the constants $c_i$ are user controllable and given in \Cref{chap:param_config}, $P_\text{He}$ is the pressure in the helium-burning shell, and
+where $P, T, M, R$ are the total pressures, temperatures, masses, and radii of each star, the constants $c_i$ are user controllable and given in \Cref{chap:appendix:code_versions}, $P_\text{He}$ is the pressure in the helium-burning shell, and
 
 \begin{equation}
     c_\text{H} = \begin{cases}
@@ -876,7 +876,7 @@ The \codename{STARS} code utilises an adaptive timestep control mechanism, where
     \Delta = \frac{d_\text{opt}}{\sum_i \sum_j \left|\delta x_{ij}\right|},\label{eq:timestep_selection}
 \end{equation}
 
-where $d_\text{opt}$ is a pre-defined target timestep (typically taken to be $\sim 1$, unless otherwise specified; see \Cref{chap:param_config} for our selections), and $\delta x_{ij}$ is the change in variable $x_i$ at meshpoint $j$. In this calculation, luminosity is explicity excluded as this would cause the timestep to explode during certain points of the star's life-time. A new timestep, $d^\prime$, is selected from the previous timestep $d$ by
+where $d_\text{opt}$ is a pre-defined target timestep (typically taken to be $\sim 1$, unless otherwise specified; see \Cref{chap:appendix:code_versions} for our selections), and $\delta x_{ij}$ is the change in variable $x_i$ at meshpoint $j$. In this calculation, luminosity is explicity excluded as this would cause the timestep to explode during certain points of the star's lifetime. A new timestep, $d^\prime$, is selected from the previous timestep $d$ by
 
 \begin{equation}
     d^\prime = \begin{cases}
@@ -890,7 +890,7 @@ where $d_1$ and $d_2$ are pre-determined control parameters. Most commonly we ta
 
 \subsubsection{Numerical instabilities}\label{sec:numerical_instabilities}
 
-Stellar modelling is a nontrivial endeavour and there are many cases where the code can fail seemingly arbitrarily. The largest cause of numerical instability is the helium flash, which occurs in low-mass stars between about $\SI{0.8}{\msun} \lesssim M_\text{ZAMS} \lesssim \SI{2.5}{\msun}$. In this band, the triple-$\alpha$ process occurs within a highly electron-degenerate helium core. As a result, the temperature of the star increases sharply during this process, leading to thermal runaway. This temperature increase in turn results in an increase in the luminosity (which peaks at $\sim\SI{1e10}{\lsun}$). The flash itself -- being the period of thermal runaway -- occurs on the order of a few minutes, though the spike in luminosity lasts approximately $\SI{7}{\mega\year}$ (for the $\SI{2.51}{\msun}$ star shown in \Cref{fig:thermal_pulses_he_flash}).
+Stellar modelling is a nontrivial endeavour and there are many cases where the code can fail seemingly arbitrarily. The largest cause of numerical instability is the helium flash, which occurs in low-mass stars between about $\SI{0.8}{\msun} \lesssim M_\text{ZAMS} \lesssim \SI{2.5}{\msun}$. In this band, the triple-$\alpha$ process occurs within a highly electron-degenerate helium core. As a result, the temperature of the star increases sharply during this process, leading to thermal runaway. This temperature increase in turn results in an increase in the luminosity (which peaks at $\sim\SI[print-unity-mantissa=false]{1e10}{\lsun}$). The flash itself -- being the period of thermal runaway -- occurs on the order of a few minutes, though the spike in luminosity lasts approximately $\SI{7}{\mega\year}$ (for the $\SI{2.51}{\msun}$ star shown in \Cref{fig:thermal_pulses_he_flash}).
 
 A method termed ``pseudoevolution'' can be used to overcome this source of error. Briefly, a complete model (termed the \textit{reference model}) of a \SI{3}{\msun} star is evolved with a full model description saved at every timestep. When the helium flash occurs in a model (heuristically, $0.1 \leq M_\text{He} / \unit{\msun} \leq 0.55$ and $\log T_\text{c} / \unit{\kelvin} > 7.9$), we query the reference model for a model with the same helium core mass as the failed model. Using a custom subroutine in \codename{stars}, we turn off all nuclear and thermal burning and remove mass from the reference model to match the mass of the failed model. This model is then allowed to evolve as per normal, having overcome the helium flash. We note that this is not a \textit{perfect} method, as this does induce discontinuities in the plots, as shown in \Cref{fig:pseudoevolved_kippenhahn}, though these are essentially insignificant.
 
