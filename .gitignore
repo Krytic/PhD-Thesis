@@ -322,8 +322,8 @@ wc.txt
 wc.txt.bak
 
 # Nobody sees this yet O.O
-acknowledgements.tex
-declaration_forms/
+# acknowledgements.tex
+# declaration_forms/
 
 # The final thing -- way big!
 PhD_Thesis.pdf
