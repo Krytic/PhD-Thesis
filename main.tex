@@ -1,4 +1,5 @@
-\documentclass[twoside]{book}
+\documentclass[twoside,a4paper]{book}
+% \documentclass[twoside]{book}
 \usepackage{anyfontsize}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -125,15 +126,15 @@
 \tcbuselibrary{minted}
 
 \makeatletter
-\AddToHookNext{shipout/background}{
-  \begin{tikzpicture}[remember picture,overlay]
-  \node at (current page.center) {
-    % \includegraphics[width=\paperwidth]{images/Cover.png}
-    % \includegraphics[width=\paperwidth]{images/Alt_Cover_Page.jpg}
-    \includegraphics[width=\paperwidth]{\@coverimage}
-  };
-  \end{tikzpicture}
-}
+% \AddToHookNext{shipout/background}{
+%   \begin{tikzpicture}[remember picture,overlay]
+%   \node at (current page.center) {
+%     % \includegraphics[width=\paperwidth]{images/Cover.png}
+%     % \includegraphics[width=\paperwidth]{images/Alt_Cover_Page.jpg}
+%     \includegraphics[width=\paperwidth]{\@coverimage}
+%   };
+%   \end{tikzpicture}
+% }
 
 \AtEndEnvironment{abstract}{\begin{center}{\small\textbf{Cover Image:}~\@coverattr}\end{center}}
 \makeatother

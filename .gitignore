@@ -1,6 +1,6 @@
 pandoctemplate.md
 latex-toc-markdown
-rendered_chapters/
+#rendered_chapters/
 *.py
 !/chapters/listings/*.py
 !/scripts/*.py
@@ -322,9 +322,9 @@ wc.txt
 wc.txt.bak
 
 # Nobody sees this yet O.O
-# acknowledgements.tex
-# declaration_forms/
+acknowledgements.tex
+declaration_forms/
 
 # The final thing -- way big!
-PhD_Thesis.pdf
+#PhD_Thesis.pdf
 main.pdf
