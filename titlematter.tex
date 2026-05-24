@@ -18,7 +18,7 @@
         \vspace*{\fill}
 
         \Large
-        {\fontfamily{lmss}\selectfont\color{black}A thesis submitted in fulfilment of the requirements of the degree of Doctor of Philosophy in Physics, the University of Auckland, 2025. This thesis is for examination purposes only and is confidential to the examination process.}
+        {\fontfamily{lmss}\selectfont\color{black}A thesis submitted in fulfilment of the requirements of the degree of Doctor of Philosophy in Physics, the University of Auckland, 2026.}% This thesis is for examination purposes only and is confidential to the examination process.}
         \vspace*{\fill}
     \end{center}
 \end{titlepage}
@@ -61,12 +61,8 @@
 \printglossary[type=\acronymtype, nonumberlist]
 \endgroup
 
-\foreach \i in {00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, ...,19} {%
-    \edef\DecFileName{declaration_forms/Chapter\i.pdf}%
-    \IfFileExists{\DecFileName}{
-        \includepdf[pages=-]{\DecFileName}
-    }
-}
+\includepdf[pages=-]{declaration_forms/Chapter04.pdf}
+\includepdf[pages=-]{declaration_forms/Chapter06.pdf}
 
 \renewcommand{\headrulewidth}{0.1pt}
 

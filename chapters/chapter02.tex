@@ -11,7 +11,7 @@ In this chapter, unless context otherwise requires, we use the following convent
 
 \epigraph{Nature and nature's laws lay hid in night: God said, ``Let Newton be!'' and all was light.}{Alexander Pope}
 
-From the point of view of stellar evolution, which starts in earnest at the \gls{zams}, the formation of stars is interesting but ultimately has little to no impact on the nuclear evolution of the star besides setting the initial mass. We provide a short recap of stellar formation here as scene-setting, but our stellar evolution models assume that a gas cloud has already collapsed and we have a star at its \gls{zams}.
+From the point of view of stellar evolution, which starts in earnest at the \gls{zams}, the formation of stars is interesting but ultimately has little to no impact on the nuclear evolution of the star besides setting the initial mass and composition. We provide a short recap of stellar formation here as scene-setting, but our stellar evolution models assume that a gas cloud has already collapsed and we have a star at its \gls{zams}.
 
 Stars are born in clouds of gas and dust. Due to inhomegeneities in the dust formation, some regions become more dense than others. When a region of this gas with adiabatic constant $\gamma$ and mean molecular weight $\mu$ reaches the so-called Jeans Mass,
 
@@ -69,8 +69,8 @@ Now that our protostar has evolved onto the \gls{ms}, it has become a star in it
     \left.\begin{array}{lll}
         \dv{m}{r} &= 4\pi r^2\rho & \text{(mass continuity)}, \\
         \dv{p}{r} &= -\frac{GM\rho}{r^2} & \text{(hydrostatic equilibrium)},\\
-        \dv{T}{r} &= -\frac{3\kappa\rho L}{64\pi r^2\sigma T^3} & \text{(energy transport), and} \\
-        \dv{L}{r} &= 4\pi r^2\rho\epsilon & \text{(thermal equilibrium)},
+        \dv{T}{r} &= -\frac{3\kappa\rho L}{64\pi r^2\sigma T^3} & \text{(radiative energy transport), and} \\
+        \dv{L}{r} &= 4\pi r^2\rho\epsilon & \text{(energy generation)},
     \end{array}\right\}
     \label{eq:stellar_structure}
 \end{equation}
@@ -360,9 +360,9 @@ In this section, we examine the three major regimes of stellar evolution for sin
 
 \subsubsection{Low-Mass Stars: \texorpdfstring{$\SI{0.08}{\msun} < M < \SI{2}{\msun}$}{Stars with between 0.08 and 2 times the mass of the sun}}\label{sec:low_mass_stars}
 
-Stars below $\approx\SI{0.5}{\msun}$ do not ignite helium, and become helium \glspl{wd}. Above this, they ignite helium degenerately in their cores, leading to thermal runaway. The star can peak at a luminosity close to $10^{11} L_\odot$ (approximately 100 times the peak luminosity of SN 1987A, per Figure 5 of \citet{Arnett:1989}). However, this peak in luminosity is attributable to nuclear fusion in the core, and the energy does not reach the surface, let alone escape into the \gls{ism} -- rather, it is absorbed into the outer layers of the star. During this extremely brief thermal runaway, the luminosity begins to settle and the star is able to continue evolving. Models of low mass stars fail at this stage and care is required to evolve them. This phenomena is called the \textit{helium flash} and is discussed further in \Cref{sec:numerical_instabilities}.
+Stars below $\approx\SI{0.5}{\msun}$ do not ignite helium, and become helium \glspl{wd}. Above this, they ignite helium degenerately in their cores, leading to thermal runaway. The star can peak at a luminosity close to $10^{11} L_\odot$ (approximately 100 times the peak luminosity of SN 1987A, per Figure 5 of \citet{Arnett:1989}). However, this peak in luminosity is attributable to nuclear fusion in the core, and the energy does not reach the surface, let alone escape into the \gls{ism} -- rather, the energy expands the electron-degenerate core, removing the degeneracy. During this extremely brief thermal runaway, the luminosity begins to settle and the star is able to continue evolving. Models of low mass stars often fail at this stage and care is required to evolve them. This phenomena is called the \textit{helium flash} and is discussed further in \Cref{sec:numerical_instabilities}.
 
-After the ignition of helium, these stars cross the so-called Hertzsprung Gap -- the region where very few stars are observed empirically. This region is bounded (on a colour-magnitude diagram, which is a transform of the \gls{hrd}) by the points $\pqty{M_v, B-V}=\left\{\pqty{2,0.5}, \pqty{-7, 0.1}, \pqty{-6, 1.6}\right\}$ \citep{Hoyle:1960}, where $M_v$ is the V-band magnitude (magnitude in the visual band), and $B-V$ is the colour index of the star. The phenomenon of a gap existing is attributable to the fact that stars cross this gap exceedingly quickly: whereas it spends $\sim90\%$ of its life on the \gls{ms}, it spends $\sim2\%$ of its life crossing the Hertzsprung gap \citep{Hoyle:1960}.
+After the ignition of helium, these stars cross the so-called Hertzsprung Gap -- the region between the main sequence and the \gls{rgb} where very few stars are observed empirically.\footnote{This region is bounded (on a colour-magnitude diagram, which is a transform of the \acrlong{hrd}) by the points $\pqty{M_v, B-V}=\left\{\pqty{2,0.5}, \pqty{-7, 0.1}, \pqty{-6, 1.6}\right\}$ \citep{Hoyle:1960}, where $M_v$ is the V-band magnitude (magnitude in the visual band), and $B-V$ is the colour index of the star.} The phenomenon of a gap existing is attributable to the fact that stars cross this gap on their thermal timescale: whereas it spends $\sim90\%$ of its life on the \gls{ms}, it spends $\sim2\%$ of its life crossing the Hertzsprung gap \citep{Hoyle:1960} as it transitions from core hydrogen burning to shell burning. After the gap, it will begin to ascend the \gls{rgb}.
 
 \subsubsection{Intermediate-Mass Stars: \texorpdfstring{$\SI{2}{\msun} < M < \SI{8}{\msun}$}{Stars with between 2 and 8 times the mass of the sun}}\label{sec:intermediate_mass_stars}
 
@@ -487,7 +487,14 @@ Importantly for the nucleosynthesis of iron-group and heavier elements (which ca
 
 \subsection{Type Ia supernovae}
 
-There is another class of supernovae we consider in this thesis, namely type Ia supernovae. These are formed when a \gls{wd} star exceeds the maximum mass by which electron degeneracy pressure can sustain the star. This mass is termed the Chandrasekhar mass, $M_\text{ch}\approx\SI{1.44}{\msun}$. When material accretes onto a white dwarf, its mass will increase, and if the accretion does not stop, the mass will exceed the Chandrasekhar mass. This means electron degeneracy pressure is no longer able to sustain the star, and the core collapses further into a Type Ia (or thermonuclear) supernova.
+There is another class of supernovae we consider in this thesis, namely type Ia supernovae. These are formed in two major channels:
+
+\begin{enumerate}
+    \item When a \gls{wd} star exceeds the maximum mass by which electron degeneracy pressure can sustain the star. This mass is termed the Chandrasekhar mass, $M_\text{ch}\approx\SI{1.44}{\msun}$. When material accretes onto a white dwarf, its mass will increase, and if the accretion does not stop, the mass will exceed the Chandrasekhar mass. This means electron degeneracy pressure is no longer able to sustain the star, and the core collapses further into a Type Ia (or thermonuclear) supernova.
+    \item During the merger of a CO \gls{wd} binary in which a super-Chandrasekhar \gls{wd} or potentially helium- or carbon-burning star is produced \citet{Webbink:1984, Ruiter:2025}.
+\end{enumerate}
+
+For a more thorough discussion on type Ia supernovae, the reader is referred to \citet{Ruiter:2025} for a review.
 
 \section{Two to tango: Binary Evolution}\label{sec:binary_evolution}
 
@@ -570,7 +577,7 @@ We show the circle with this radius $R_\text{L}$ in \Cref{fig:eggleton_approx_sc
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=\textwidth]{images/TheorySection/eggleton_justification.pdf}
-    \caption[The volume of the Roche Lobe computed numerically through Monte-Carlo integration vs the volume assuming \Cref{eq:RL1_eggleton}.]{The volume of the Roche Lobe computed numerically through Monte-Carlo integration (orange) vs the volume assuming \Cref{eq:RL1_eggleton} (blue). The Eggleton approximation fits well to the volume, with around 1 per cent error across the entire mass ratio range (truncated here to $q\leq 1$).}
+    \caption[The volume of the Roche Lobe computed numerically through Monte-Carlo integration vs the volume assuming \Cref{eq:RL1_eggleton}.]{The volume of the Roche Lobe computed numerically through Monte-Carlo integration (orange) vs the volume assuming \Cref{eq:RL1_eggleton} (blue). The Eggleton approximation fits well to the volume, with around 1 per cent error across the entire mass ratio range (truncated here to $q\leq 1$). The orange band is the uncertainty range as computed by a Monte-Carlo integrator from pyAstronomy \citep{Czesla:2019}, and is a binomial standard deviation.}
     \label{fig:eggleton_approx}
 \end{figure}
 
@@ -894,9 +901,9 @@ Stellar modelling is a nontrivial endeavour and there are many cases where the c
 
 A method termed ``pseudoevolution'' can be used to overcome this source of error. Briefly, a complete model (termed the \textit{reference model}) of a \SI{3}{\msun} star is evolved with a full model description saved at every timestep. When the helium flash occurs in a model (heuristically, $0.1 \leq M_\text{He} / \unit{\msun} \leq 0.55$ and $\log T_\text{c} / \unit{\kelvin} > 7.9$), we query the reference model for a model with the same helium core mass as the failed model. Using a custom subroutine in \codename{stars}, we turn off all nuclear and thermal burning and remove mass from the reference model to match the mass of the failed model. This model is then allowed to evolve as per normal, having overcome the helium flash. We note that this is not a \textit{perfect} method, as this does induce discontinuities in the plots, as shown in \Cref{fig:pseudoevolved_kippenhahn}, though these are essentially insignificant.
 
-The other stage where low-mass stars are prone to fail is during a thermal pulse \citep{Schwarzschild:1965, Schwarzschild:1967}. The mass range for thermal pulses is broader, from $\sim\SI{0.8}{\msun}$ to $\sim\SI{8}{\msun}$. A thermal pulse occurs as a star ascends the \gls{agb}; as a \gls{CO_core} or \gls{ONe_core} has developed, shells of burning helium and hydrogen (separated by a region of almost pure helium) sit atop the core \citep{Pols:2001}. As the intershell region dissipates due to dredge up or helium burning, hydrogen burning reignites in the hydrogen shell. As both shells burn (at the same rate), the helium-burning shell becomes unstable and eventually a process of thermal runaway begins (similar to the helium flash, except off-core). This causes a spike in the luminosity, termed a thermal pulse. This can persist for many pulses -- \citet{Stancliffe:2006} observes pulses before model termination, while \citet{Stancliffe:2005} observes 17 pulses for a model similar to those in \Cref{fig:thermal_pulses_he_flash}.
+The other stage where low-mass stars are prone to fail is during a thermal pulse \citep{Schwarzschild:1965, Schwarzschild:1967}. The mass range for thermal pulses is broader, from $\sim\SI{0.8}{\msun}$ to $\sim\SI{8}{\msun}$. A thermal pulse occurs as a star ascends the \gls{agb}; as a \gls{CO_core} or \gls{ONe_core} has developed, shells of burning helium and hydrogen (separated by a region of almost pure helium) sit atop the core \citep{Pols:2001}. As the intershell region dissipates due to dredge up or helium burning, hydrogen burning reignites in the hydrogen shell. As both shells burn (at the same rate), the helium-burning shell becomes unstable and eventually a process of thermal runaway begins due to the instability of a thin shell. This causes a spike in the luminosity, termed a thermal pulse. This can persist for many pulses -- \citet{Stancliffe:2006} observes pulses before model termination, while \citet{Stancliffe:2005} observes 17 pulses for a model similar to those in \Cref{fig:thermal_pulses_he_flash,}.
 
-The method to overcome this numerical instability is involved and not fully implemented in \codename{STARS}. Briefly, the number of meshpoints must be drastically increases near the onset of thermal pulses; up to 999 instead of the typical 199/499. The timestep must also be forcibly decreased; thermal pulses typically last for around a year \citep{Pols:2001} so the timestep must be reduced to not miss them (and to not have the modulus of the change in parameters -- $\sum_i \sum_j \left|\delta x_{ij}\right|$ in \Cref{eq:timestep_selection} -- and thus the error, increase too much). This method was implemented to generate \Cref{fig:thermal_pulses_he_flash}, though only two pulses were achievable.
+The method to overcome this numerical instability is involved and not fully implemented in \codename{STARS}. Briefly, the number of meshpoints must be drastically increases near the onset of thermal pulses; up to 999 instead of the typical 199/499. The timestep must also be forcibly decreased; thermal pulses typically last for around a year \citep{Pols:2001}, and up to $\sim\SI[print-unity-mantissa=false]{1e2}{\year}$ \citep{Karakas:2014}, so the timestep must be reduced to not miss them (and to not have the modulus of the change in parameters -- $\sum_i \sum_j \left|\delta x_{ij}\right|$ in \Cref{eq:timestep_selection} -- and thus the error, increase too much). This method was implemented to generate \Cref{fig:thermal_pulses_he_flash}, though only two pulses were achievable.
 
 \begin{figure}[!htbp]
     \centering
@@ -922,7 +929,7 @@ As part of this, we also undertook an extensive refactor of the codebase. Whilst
 
 We have also improved mass loss interpolation in the \codename{massloss.f} routine. Whilst not changing the underlying assumption that mass transfer is governed by \citet{De_jager:1988, Vink:2001} (\Cref{sec:mass_transfer}), we have improved the transition between typical O-type mass loss and WR mass loss rates by slowing turning on the WR mass loss rate as the surface hydrogen abundance drops below 0.4. The transition was previously abrupt and would cause the code to fail due to numerical instability if a non-WR star entered this regime.
 
-Similarly to this, the code now manually reduces the timestep in the run-up to, during, and after the contact binary phase. Evolution during this phase breaks thermal equilibrium (i.e., the star evolves on a longer timescale than its Kelvin-Helmholtz time-scale) and hence the evolution can change rapidly as the star attempts to adjust back to thermal equilibrium. The contact phase, for example, typically last for between 100-200 \unit{\kilo\year} in our models.
+Similarly to this, the code now manually reduces the timestep in the run-up to, during, and after the contact binary phase. Evolution during this phase breaks thermal equilibrium (i.e., the star evolves on a shorter timescale than its Kelvin-Helmholtz time-scale) and hence the evolution can change rapidly as the star attempts to adjust back to thermal equilibrium. The contact phase, for example, typically last for between 100-200 \unit{\kilo\year} in our models.
 
 We have also begun implementing an $\alpha-\lambda$ treatment of \gls{cee}, though we stress that this has not been rigorously tested yet, and is thus disabled for the majority of our models.
 

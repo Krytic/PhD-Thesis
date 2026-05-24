@@ -50,6 +50,7 @@
 \usepackage{pdflscape}
 \usepackage{pgfplots}
 \usepackage{fmtcount}
+\usepackage[xcolor]{changebar}
 
 \scripturesetup{
   % font=\small,
@@ -116,7 +117,7 @@
 % \coverattr{The mass profile of a \SI{10}{\msun} star from zero-age main sequence until the end of the asymptotic giant branch. Author's own work.}
 
 \coverimage{images/CoverPage_MW.png}
-\coverattr{The Milky Way over Ulu\underline{r}u. Image by Eddie Yip, released under a CC-BY-SA license: \url{https://www.flickr.com/photos/eddiextcteam/28311312421/}. Image taken on Arrernte Country.}
+\coverattr{}%The Milky Way over Ulu\underline{r}u. Image by Eddie Yip, released under a CC-BY-SA license: \url{https://www.flickr.com/photos/eddiextcteam/28311312421/}. Image taken on Arrernte Country.}
 
 \definecolor{main-accent}{RGB}{0,45,97}  % Blue
 % \definecolor{main-accent}{RGB}{206,45,79} % Raspberry red
@@ -136,7 +137,7 @@
 %   \end{tikzpicture}
 % }
 
-\AtEndEnvironment{abstract}{\begin{center}{\small\textbf{Cover Image:}~\@coverattr}\end{center}}
+% \AtEndEnvironment{abstract}{\begin{center}{\small\textbf{Cover Image:}~\@coverattr}\end{center}}
 \makeatother
 
 % \bibliographystyle{apalike}
@@ -463,21 +464,23 @@
 
     \newpage
 
-    \foreach \i in {00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, ...,19} {%
-        \edef\FileName{chapters/chapter\i}%     The % here are necessary to eliminate any
-        \IfFileExists{\FileName}{\input{\FileName}}
-    }
+    \input{chapters/chapter01}
+    \input{chapters/chapter02}
+    \input{chapters/chapter03}
+    \input{chapters/chapter04}
+    \input{chapters/chapter05}
+    \input{chapters/chapter19}
 
     \newpage
 
     \begin{appendices}
       \crefalias{chapter}{appendix}
-      \foreach \i in {A, B, ..., Z} {%
-          \edef\FileName{chapters/appendices/appendix\i}%     The % here are necessary to eliminate any
-          \IfFileExists{\FileName}{%                          spurious spaces that may get inserted
-              \input{\FileName}%                              at these points
-          }
-      }
+      \input{chapters/appendices/appendixA}
+      \input{chapters/appendices/appendixB}
+      \input{chapters/appendices/appendixC}
+      \input{chapters/appendices/appendixD}
+      \input{chapters/appendices/appendixE}
+      \input{chapters/appendices/appendixF}
     \end{appendices}
 
     \backmatter%                                              Denotes the end of the main document content

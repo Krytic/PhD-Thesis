@@ -46,6 +46,19 @@ rm -f main-autopp.todos
 
 notify-send --hint int:transient:1 "Thesis Compiler" "Main compilation finished. Postprocessing is about to begin -- input required."
 
+# # now we get a latexdiff...
+# print -P "%F{green}Generating latexdiff...%f "
+# latexdiff main_old.tex main.tex --flatten --preamble=preamble_diff.tex > diff.tex
+# print -P "%F{green}Compiling latexdiff...%f "
+# latexmk --file-line-error -shell-escape -pdf diff.tex
+# latexmk -f -c diff.tex
+# rm -f diff.chaps
+# rm -f diff.todos
+# rm -f diff.cb
+# rm -f diff.cb2
+# rm -f main.cb
+# rm -f main.cb2
+
 read -q "REPLY?Commit work to GitHub? " -n 1 -r
 echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
