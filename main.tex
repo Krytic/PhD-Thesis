@@ -117,7 +117,7 @@
 % \coverattr{The mass profile of a \SI{10}{\msun} star from zero-age main sequence until the end of the asymptotic giant branch. Author's own work.}
 
 \coverimage{images/CoverPage_MW.png}
-\coverattr{}%The Milky Way over Ulu\underline{r}u. Image by Eddie Yip, released under a CC-BY-SA license: \url{https://www.flickr.com/photos/eddiextcteam/28311312421/}. Image taken on Arrernte Country.}
+\coverattr{The Milky Way over Ulu\underline{r}u. Image by Eddie Yip, released under a CC-BY-SA license: \url{https://www.flickr.com/photos/eddiextcteam/28311312421/}. Image taken on Arrernte Country.}
 
 \definecolor{main-accent}{RGB}{0,45,97}  % Blue
 % \definecolor{main-accent}{RGB}{206,45,79} % Raspberry red
@@ -127,17 +127,17 @@
 \tcbuselibrary{minted}
 
 \makeatletter
-% \AddToHookNext{shipout/background}{
-%   \begin{tikzpicture}[remember picture,overlay]
-%   \node at (current page.center) {
-%     % \includegraphics[width=\paperwidth]{images/Cover.png}
-%     % \includegraphics[width=\paperwidth]{images/Alt_Cover_Page.jpg}
-%     \includegraphics[width=\paperwidth]{\@coverimage}
-%   };
-%   \end{tikzpicture}
-% }
+\AddToHookNext{shipout/background}{
+  \begin{tikzpicture}[remember picture,overlay]
+  \node at (current page.center) {
+    % \includegraphics[width=\paperwidth]{images/Cover.png}
+    % \includegraphics[width=\paperwidth]{images/Alt_Cover_Page.jpg}
+    \includegraphics[width=\paperwidth]{\@coverimage}
+  };
+  \end{tikzpicture}
+}
 
-% \AtEndEnvironment{abstract}{\begin{center}{\small\textbf{Cover Image:}~\@coverattr}\end{center}}
+\AtEndEnvironment{abstract}{\begin{center}{\small\textbf{Cover Image:}~\@coverattr}\end{center}}
 \makeatother
 
 % \bibliographystyle{apalike}
@@ -191,10 +191,11 @@
   { %\newgeometry{inner=18mm,outer=18mm,top=18mm,bottom=18mm}
     \thispagestyle{empty}
     \begin{tikzpicture}[remember picture, overlay]
-        \node[anchor=north west] at (current page.north west){\pgfornament[width=2cm]{63}};
-        \node[anchor=north east] at (current page.north east){\pgfornament[width=2cm,symmetry=v]{63}};
-        \node[anchor=south west] at (current page.south west){\pgfornament[width=2cm,symmetry=h]{63}};
-        \node[anchor=south east] at (current page.south east){\pgfornament[width=2cm,symmetry=c]{63}};
+        \newcommand\insetlength{5}
+        \node[anchor=north west] at ([xshift=\insetlength*1mm+5mm,yshift=-\insetlength*1mm]current page.north west){\pgfornament[width=2cm]{63}};
+        \node[anchor=north east] at ([xshift=-\insetlength*1mm,yshift=-\insetlength*1mm]current page.north east){\pgfornament[width=2cm,symmetry=v]{63}};
+        \node[anchor=south west] at ([xshift=\insetlength*1mm+5mm,yshift=\insetlength*1mm]current page.south west){\pgfornament[width=2cm,symmetry=h]{63}};
+        \node[anchor=south east] at ([xshift=-\insetlength*1mm,yshift=\insetlength*1mm]current page.south east){\pgfornament[width=2cm,symmetry=c]{63}};
     \end{tikzpicture}
     \vfill
     \stepcounter{abspagecounter}
